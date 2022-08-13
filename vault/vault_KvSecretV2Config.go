@@ -1,0 +1,65 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type KvSecretV2Config struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// JSON-encoded secret data to write.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#data_json KvSecretV2#data_json}
+	DataJson *string `field:"required" json:"dataJson" yaml:"dataJson"`
+	// Path where KV-V2 engine is mounted.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#mount KvSecretV2#mount}
+	Mount *string `field:"required" json:"mount" yaml:"mount"`
+	// Full name of the secret.
+	//
+	// For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#name KvSecretV2#name}
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// This flag is required if cas_required is set to true on either the secret or the engine's config.
+	//
+	// In order for a write to be successful, cas must be set to the current version of the secret.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas KvSecretV2#cas}
+	Cas *float64 `field:"optional" json:"cas" yaml:"cas"`
+	// If set to true, permanently deletes all versions for the specified key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+	DeleteAllVersions interface{} `field:"optional" json:"deleteAllVersions" yaml:"deleteAllVersions"`
+	// If set to true, disables reading secret from Vault; note: drift won't be detected.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#disable_read KvSecretV2#disable_read}
+	DisableRead interface{} `field:"optional" json:"disableRead" yaml:"disableRead"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#id KvSecretV2#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Target namespace. (requires Enterprise).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#namespace KvSecretV2#namespace}
+	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
+	// An object that holds option settings.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#options KvSecretV2#options}
+	Options *map[string]*string `field:"optional" json:"options" yaml:"options"`
+}
+

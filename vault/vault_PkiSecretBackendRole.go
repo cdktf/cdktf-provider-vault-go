@@ -1,0 +1,2258 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-vault-go/vault/v2/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-vault-go/vault/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role vault_pki_secret_backend_role}.
+type PkiSecretBackendRole interface {
+	cdktf.TerraformResource
+	AllowAnyName() interface{}
+	SetAllowAnyName(val interface{})
+	AllowAnyNameInput() interface{}
+	AllowBareDomains() interface{}
+	SetAllowBareDomains(val interface{})
+	AllowBareDomainsInput() interface{}
+	AllowedDomains() *[]*string
+	SetAllowedDomains(val *[]*string)
+	AllowedDomainsInput() *[]*string
+	AllowedDomainsTemplate() interface{}
+	SetAllowedDomainsTemplate(val interface{})
+	AllowedDomainsTemplateInput() interface{}
+	AllowedOtherSans() *[]*string
+	SetAllowedOtherSans(val *[]*string)
+	AllowedOtherSansInput() *[]*string
+	AllowedSerialNumbers() *[]*string
+	SetAllowedSerialNumbers(val *[]*string)
+	AllowedSerialNumbersInput() *[]*string
+	AllowedUriSans() *[]*string
+	SetAllowedUriSans(val *[]*string)
+	AllowedUriSansInput() *[]*string
+	AllowGlobDomains() interface{}
+	SetAllowGlobDomains(val interface{})
+	AllowGlobDomainsInput() interface{}
+	AllowIpSans() interface{}
+	SetAllowIpSans(val interface{})
+	AllowIpSansInput() interface{}
+	AllowLocalhost() interface{}
+	SetAllowLocalhost(val interface{})
+	AllowLocalhostInput() interface{}
+	AllowSubdomains() interface{}
+	SetAllowSubdomains(val interface{})
+	AllowSubdomainsInput() interface{}
+	Backend() *string
+	SetBackend(val *string)
+	BackendInput() *string
+	BasicConstraintsValidForNonCa() interface{}
+	SetBasicConstraintsValidForNonCa(val interface{})
+	BasicConstraintsValidForNonCaInput() interface{}
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClientFlag() interface{}
+	SetClientFlag(val interface{})
+	ClientFlagInput() interface{}
+	CodeSigningFlag() interface{}
+	SetCodeSigningFlag(val interface{})
+	CodeSigningFlagInput() interface{}
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	Country() *[]*string
+	SetCountry(val *[]*string)
+	CountryInput() *[]*string
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EmailProtectionFlag() interface{}
+	SetEmailProtectionFlag(val interface{})
+	EmailProtectionFlagInput() interface{}
+	EnforceHostnames() interface{}
+	SetEnforceHostnames(val interface{})
+	EnforceHostnamesInput() interface{}
+	ExtKeyUsage() *[]*string
+	SetExtKeyUsage(val *[]*string)
+	ExtKeyUsageInput() *[]*string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GenerateLease() interface{}
+	SetGenerateLease(val interface{})
+	GenerateLeaseInput() interface{}
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KeyBits() *float64
+	SetKeyBits(val *float64)
+	KeyBitsInput() *float64
+	KeyType() *string
+	SetKeyType(val *string)
+	KeyTypeInput() *string
+	KeyUsage() *[]*string
+	SetKeyUsage(val *[]*string)
+	KeyUsageInput() *[]*string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Locality() *[]*string
+	SetLocality(val *[]*string)
+	LocalityInput() *[]*string
+	MaxTtl() *string
+	SetMaxTtl(val *string)
+	MaxTtlInput() *string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	// The tree node.
+	Node() constructs.Node
+	NoStore() interface{}
+	SetNoStore(val interface{})
+	NoStoreInput() interface{}
+	NotBeforeDuration() *string
+	SetNotBeforeDuration(val *string)
+	NotBeforeDurationInput() *string
+	Organization() *[]*string
+	SetOrganization(val *[]*string)
+	OrganizationInput() *[]*string
+	Ou() *[]*string
+	SetOu(val *[]*string)
+	OuInput() *[]*string
+	PolicyIdentifier() PkiSecretBackendRolePolicyIdentifierList
+	PolicyIdentifierInput() interface{}
+	PolicyIdentifiers() *[]*string
+	SetPolicyIdentifiers(val *[]*string)
+	PolicyIdentifiersInput() *[]*string
+	PostalCode() *[]*string
+	SetPostalCode(val *[]*string)
+	PostalCodeInput() *[]*string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	Province() *[]*string
+	SetProvince(val *[]*string)
+	ProvinceInput() *[]*string
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	RequireCn() interface{}
+	SetRequireCn(val interface{})
+	RequireCnInput() interface{}
+	ServerFlag() interface{}
+	SetServerFlag(val interface{})
+	ServerFlagInput() interface{}
+	StreetAddress() *[]*string
+	SetStreetAddress(val *[]*string)
+	StreetAddressInput() *[]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Ttl() *string
+	SetTtl(val *string)
+	TtlInput() *string
+	UseCsrCommonName() interface{}
+	SetUseCsrCommonName(val interface{})
+	UseCsrCommonNameInput() interface{}
+	UseCsrSans() interface{}
+	SetUseCsrSans(val interface{})
+	UseCsrSansInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutPolicyIdentifier(value interface{})
+	ResetAllowAnyName()
+	ResetAllowBareDomains()
+	ResetAllowedDomains()
+	ResetAllowedDomainsTemplate()
+	ResetAllowedOtherSans()
+	ResetAllowedSerialNumbers()
+	ResetAllowedUriSans()
+	ResetAllowGlobDomains()
+	ResetAllowIpSans()
+	ResetAllowLocalhost()
+	ResetAllowSubdomains()
+	ResetBasicConstraintsValidForNonCa()
+	ResetClientFlag()
+	ResetCodeSigningFlag()
+	ResetCountry()
+	ResetEmailProtectionFlag()
+	ResetEnforceHostnames()
+	ResetExtKeyUsage()
+	ResetGenerateLease()
+	ResetId()
+	ResetKeyBits()
+	ResetKeyType()
+	ResetKeyUsage()
+	ResetLocality()
+	ResetMaxTtl()
+	ResetNamespace()
+	ResetNoStore()
+	ResetNotBeforeDuration()
+	ResetOrganization()
+	ResetOu()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPolicyIdentifier()
+	ResetPolicyIdentifiers()
+	ResetPostalCode()
+	ResetProvince()
+	ResetRequireCn()
+	ResetServerFlag()
+	ResetStreetAddress()
+	ResetTtl()
+	ResetUseCsrCommonName()
+	ResetUseCsrSans()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for PkiSecretBackendRole
+type jsiiProxy_PkiSecretBackendRole struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowAnyName() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAnyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowAnyNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowAnyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowBareDomains() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowBareDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowBareDomainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowBareDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedDomainsTemplate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedDomainsTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedDomainsTemplateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedDomainsTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedOtherSans() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedOtherSans",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedOtherSansInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedOtherSansInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedSerialNumbers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedSerialNumbers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedSerialNumbersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedSerialNumbersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSans() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUriSans",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSansInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUriSansInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowGlobDomains() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowGlobDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowGlobDomainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowGlobDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowIpSans() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIpSans",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowIpSansInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowIpSansInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowLocalhost() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowLocalhost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowLocalhostInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowLocalhostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowSubdomains() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubdomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowSubdomainsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubdomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Backend() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) BackendInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backendInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) BasicConstraintsValidForNonCa() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"basicConstraintsValidForNonCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) BasicConstraintsValidForNonCaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"basicConstraintsValidForNonCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ClientFlag() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clientFlag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ClientFlagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clientFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CodeSigningFlag() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeSigningFlag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CodeSigningFlagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeSigningFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Country() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"country",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CountryInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"countryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) EmailProtectionFlag() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailProtectionFlag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) EmailProtectionFlagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"emailProtectionFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) EnforceHostnames() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceHostnames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) EnforceHostnamesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enforceHostnamesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ExtKeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extKeyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ExtKeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extKeyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) GenerateLease() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"generateLease",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) GenerateLeaseInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"generateLeaseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyBits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keyBits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyBitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keyBitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) KeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Locality() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"locality",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) LocalityInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"localityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) MaxTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) MaxTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NoStore() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noStore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NoStoreInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noStoreInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NotBeforeDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NotBeforeDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Organization() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"organization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) OrganizationInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"organizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Ou() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ou",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) OuInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ouInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PolicyIdentifier() PkiSecretBackendRolePolicyIdentifierList {
+	var returns PkiSecretBackendRolePolicyIdentifierList
+	_jsii_.Get(
+		j,
+		"policyIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PolicyIdentifierInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"policyIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PolicyIdentifiers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policyIdentifiers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PolicyIdentifiersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policyIdentifiersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PostalCode() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"postalCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) PostalCodeInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"postalCodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Province() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"province",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ProvinceInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"provinceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) RequireCn() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireCn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) RequireCnInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requireCnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ServerFlag() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverFlag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ServerFlagInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"serverFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) StreetAddress() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streetAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) StreetAddressInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"streetAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) Ttl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) TtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) UseCsrCommonName() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsrCommonName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) UseCsrCommonNameInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsrCommonNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSans() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsrSans",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useCsrSansInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
+	_init_.Initialize()
+
+	j := jsiiProxy_PkiSecretBackendRole{}
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.PkiSecretBackendRole",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.PkiSecretBackendRole",
+		[]interface{}{scope, id, config},
+		p,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowAnyName(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowAnyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowBareDomains(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowBareDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomains(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowedDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomainsTemplate(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowedDomainsTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedOtherSans(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowedOtherSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedSerialNumbers(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowedSerialNumbers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedUriSans(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"allowedUriSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowGlobDomains(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowGlobDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowIpSans(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowIpSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowLocalhost(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowLocalhost",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetAllowSubdomains(val interface{}) {
+	_jsii_.Set(
+		j,
+		"allowSubdomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetBackend(val *string) {
+	_jsii_.Set(
+		j,
+		"backend",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetBasicConstraintsValidForNonCa(val interface{}) {
+	_jsii_.Set(
+		j,
+		"basicConstraintsValidForNonCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetClientFlag(val interface{}) {
+	_jsii_.Set(
+		j,
+		"clientFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetCodeSigningFlag(val interface{}) {
+	_jsii_.Set(
+		j,
+		"codeSigningFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetCountry(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"country",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetEmailProtectionFlag(val interface{}) {
+	_jsii_.Set(
+		j,
+		"emailProtectionFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetEnforceHostnames(val interface{}) {
+	_jsii_.Set(
+		j,
+		"enforceHostnames",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetExtKeyUsage(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"extKeyUsage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetGenerateLease(val interface{}) {
+	_jsii_.Set(
+		j,
+		"generateLease",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetKeyBits(val *float64) {
+	_jsii_.Set(
+		j,
+		"keyBits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetKeyType(val *string) {
+	_jsii_.Set(
+		j,
+		"keyType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetKeyUsage(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"keyUsage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetLocality(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"locality",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetMaxTtl(val *string) {
+	_jsii_.Set(
+		j,
+		"maxTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetNamespace(val *string) {
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetNoStore(val interface{}) {
+	_jsii_.Set(
+		j,
+		"noStore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetNotBeforeDuration(val *string) {
+	_jsii_.Set(
+		j,
+		"notBeforeDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetOrganization(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"organization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetOu(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"ou",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetPolicyIdentifiers(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"policyIdentifiers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetPostalCode(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"postalCode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetProvince(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"province",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetRequireCn(val interface{}) {
+	_jsii_.Set(
+		j,
+		"requireCn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetServerFlag(val interface{}) {
+	_jsii_.Set(
+		j,
+		"serverFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetStreetAddress(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"streetAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetTtl(val *string) {
+	_jsii_.Set(
+		j,
+		"ttl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrCommonName(val interface{}) {
+	_jsii_.Set(
+		j,
+		"useCsrCommonName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrSans(val interface{}) {
+	_jsii_.Set(
+		j,
+		"useCsrSans",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func PkiSecretBackendRole_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.PkiSecretBackendRole",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func PkiSecretBackendRole_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-vault.PkiSecretBackendRole",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		p,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		p,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		p,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		p,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		p,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		p,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		p,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) PutPolicyIdentifier(value interface{}) {
+	_jsii_.InvokeVoid(
+		p,
+		"putPolicyIdentifier",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowAnyName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowAnyName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowBareDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowBareDomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedDomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedDomainsTemplate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedDomainsTemplate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedOtherSans() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedOtherSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedSerialNumbers() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedSerialNumbers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedUriSans() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedUriSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowGlobDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowGlobDomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowIpSans() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowIpSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowLocalhost() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowLocalhost",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowSubdomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowSubdomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetBasicConstraintsValidForNonCa() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBasicConstraintsValidForNonCa",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetClientFlag() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetClientFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetCodeSigningFlag() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCodeSigningFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetCountry() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCountry",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetEmailProtectionFlag() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEmailProtectionFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetEnforceHostnames() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnforceHostnames",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetExtKeyUsage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExtKeyUsage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetGenerateLease() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetGenerateLease",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetKeyBits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyBits",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetKeyType() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyType",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetKeyUsage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyUsage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetLocality() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLocality",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetMaxTtl() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMaxTtl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetNoStore() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNoStore",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetNotBeforeDuration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotBeforeDuration",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOrganization",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetOu() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOu",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetPolicyIdentifier() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPolicyIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetPolicyIdentifiers() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPolicyIdentifiers",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetPostalCode() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPostalCode",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetProvince() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetProvince",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetRequireCn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRequireCn",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetServerFlag() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServerFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetStreetAddress() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetStreetAddress",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetTtl() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTtl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetUseCsrCommonName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUseCsrCommonName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetUseCsrSans() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUseCsrSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		p,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

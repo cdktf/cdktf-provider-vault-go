@@ -1,0 +1,676 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-vault-go/vault/v2/jsii"
+
+	"github.com/hashicorp/cdktf-provider-vault-go/vault/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type DatabaseSecretBackendConnectionMysqlLegacyOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	ConnectionUrl() *string
+	SetConnectionUrl(val *string)
+	ConnectionUrlInput() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DatabaseSecretBackendConnectionMysqlLegacy
+	SetInternalValue(val *DatabaseSecretBackendConnectionMysqlLegacy)
+	MaxConnectionLifetime() *float64
+	SetMaxConnectionLifetime(val *float64)
+	MaxConnectionLifetimeInput() *float64
+	MaxIdleConnections() *float64
+	SetMaxIdleConnections(val *float64)
+	MaxIdleConnectionsInput() *float64
+	MaxOpenConnections() *float64
+	SetMaxOpenConnections(val *float64)
+	MaxOpenConnectionsInput() *float64
+	Password() *string
+	SetPassword(val *string)
+	PasswordInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Username() *string
+	SetUsername(val *string)
+	UsernameInput() *string
+	UsernameTemplate() *string
+	SetUsernameTemplate(val *string)
+	UsernameTemplateInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionUrl()
+	ResetMaxConnectionLifetime()
+	ResetMaxIdleConnections()
+	ResetMaxOpenConnections()
+	ResetPassword()
+	ResetUsername()
+	ResetUsernameTemplate()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DatabaseSecretBackendConnectionMysqlLegacyOutputReference
+type jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ConnectionUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ConnectionUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) InternalValue() *DatabaseSecretBackendConnectionMysqlLegacy {
+	var returns *DatabaseSecretBackendConnectionMysqlLegacy
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxConnectionLifetime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxConnectionLifetime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxConnectionLifetimeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxConnectionLifetimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxIdleConnections() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxIdleConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxIdleConnectionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxIdleConnectionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxOpenConnections() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxOpenConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) MaxOpenConnectionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxOpenConnectionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) Password() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) PasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) Username() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"username",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) UsernameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) UsernameTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) UsernameTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usernameTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDatabaseSecretBackendConnectionMysqlLegacyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMysqlLegacyOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.DatabaseSecretBackendConnectionMysqlLegacyOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDatabaseSecretBackendConnectionMysqlLegacyOutputReference_Override(d DatabaseSecretBackendConnectionMysqlLegacyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.DatabaseSecretBackendConnectionMysqlLegacyOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetConnectionUrl(val *string) {
+	_jsii_.Set(
+		j,
+		"connectionUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionMysqlLegacy) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetMaxConnectionLifetime(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxConnectionLifetime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetMaxIdleConnections(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxIdleConnections",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetMaxOpenConnections(val *float64) {
+	_jsii_.Set(
+		j,
+		"maxOpenConnections",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetPassword(val *string) {
+	_jsii_.Set(
+		j,
+		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetUsername(val *string) {
+	_jsii_.Set(
+		j,
+		"username",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) SetUsernameTemplate(val *string) {
+	_jsii_.Set(
+		j,
+		"usernameTemplate",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetConnectionUrl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetConnectionUrl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetMaxConnectionLifetime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxConnectionLifetime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetMaxIdleConnections() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxIdleConnections",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetMaxOpenConnections() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMaxOpenConnections",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsername",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ResetUsernameTemplate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUsernameTemplate",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

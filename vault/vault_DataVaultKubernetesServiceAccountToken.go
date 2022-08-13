@@ -1,0 +1,871 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-vault-go/vault/v2/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-vault-go/vault/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token}.
+type DataVaultKubernetesServiceAccountToken interface {
+	cdktf.TerraformDataSource
+	Backend() *string
+	SetBackend(val *string)
+	BackendInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClusterRoleBinding() interface{}
+	SetClusterRoleBinding(val interface{})
+	ClusterRoleBindingInput() interface{}
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	KubernetesNamespace() *string
+	SetKubernetesNamespace(val *string)
+	KubernetesNamespaceInput() *string
+	LeaseDuration() *float64
+	LeaseId() *string
+	LeaseRenewable() cdktf.IResolvable
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	RawOverrides() interface{}
+	Role() *string
+	SetRole(val *string)
+	RoleInput() *string
+	ServiceAccountName() *string
+	ServiceAccountNamespace() *string
+	ServiceAccountToken() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Ttl() *string
+	SetTtl(val *string)
+	TtlInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetClusterRoleBinding()
+	ResetId()
+	ResetNamespace()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTtl()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for DataVaultKubernetesServiceAccountToken
+type jsiiProxy_DataVaultKubernetesServiceAccountToken struct {
+	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Backend() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backend",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) BackendInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backendInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ClusterRoleBinding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterRoleBinding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ClusterRoleBindingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"clusterRoleBindingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) KubernetesNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) KubernetesNamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kubernetesNamespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) LeaseDuration() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"leaseDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) LeaseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leaseId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) LeaseRenewable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"leaseRenewable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) RoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ServiceAccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ServiceAccountNamespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountNamespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ServiceAccountToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Ttl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+func NewDataVaultKubernetesServiceAccountToken(scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) DataVaultKubernetesServiceAccountToken {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataVaultKubernetesServiceAccountToken{}
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.DataVaultKubernetesServiceAccountToken",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+func NewDataVaultKubernetesServiceAccountToken_Override(d DataVaultKubernetesServiceAccountToken, scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.DataVaultKubernetesServiceAccountToken",
+		[]interface{}{scope, id, config},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetBackend(val *string) {
+	_jsii_.Set(
+		j,
+		"backend",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetClusterRoleBinding(val interface{}) {
+	_jsii_.Set(
+		j,
+		"clusterRoleBinding",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetKubernetesNamespace(val *string) {
+	_jsii_.Set(
+		j,
+		"kubernetesNamespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetNamespace(val *string) {
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetRole(val *string) {
+	_jsii_.Set(
+		j,
+		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) SetTtl(val *string) {
+	_jsii_.Set(
+		j,
+		"ttl",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func DataVaultKubernetesServiceAccountToken_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.DataVaultKubernetesServiceAccountToken",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func DataVaultKubernetesServiceAccountToken_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-vault.DataVaultKubernetesServiceAccountToken",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		d,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		d,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ResetClusterRoleBinding() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClusterRoleBinding",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ResetId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ResetTtl() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTtl",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataVaultKubernetesServiceAccountToken) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

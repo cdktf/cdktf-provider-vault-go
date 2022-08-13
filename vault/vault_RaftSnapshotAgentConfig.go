@@ -1,0 +1,1720 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-vault-go/vault/v2/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-vault-go/vault/v2/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config vault_raft_snapshot_agent_config}.
+type RaftSnapshotAgentConfig interface {
+	cdktf.TerraformResource
+	AwsAccessKeyId() *string
+	SetAwsAccessKeyId(val *string)
+	AwsAccessKeyIdInput() *string
+	AwsS3Bucket() *string
+	SetAwsS3Bucket(val *string)
+	AwsS3BucketInput() *string
+	AwsS3DisableTls() interface{}
+	SetAwsS3DisableTls(val interface{})
+	AwsS3DisableTlsInput() interface{}
+	AwsS3EnableKms() interface{}
+	SetAwsS3EnableKms(val interface{})
+	AwsS3EnableKmsInput() interface{}
+	AwsS3Endpoint() *string
+	SetAwsS3Endpoint(val *string)
+	AwsS3EndpointInput() *string
+	AwsS3ForcePathStyle() interface{}
+	SetAwsS3ForcePathStyle(val interface{})
+	AwsS3ForcePathStyleInput() interface{}
+	AwsS3KmsKey() *string
+	SetAwsS3KmsKey(val *string)
+	AwsS3KmsKeyInput() *string
+	AwsS3Region() *string
+	SetAwsS3Region(val *string)
+	AwsS3RegionInput() *string
+	AwsS3ServerSideEncryption() interface{}
+	SetAwsS3ServerSideEncryption(val interface{})
+	AwsS3ServerSideEncryptionInput() interface{}
+	AwsSecretAccessKey() *string
+	SetAwsSecretAccessKey(val *string)
+	AwsSecretAccessKeyInput() *string
+	AwsSessionToken() *string
+	SetAwsSessionToken(val *string)
+	AwsSessionTokenInput() *string
+	AzureAccountKey() *string
+	SetAzureAccountKey(val *string)
+	AzureAccountKeyInput() *string
+	AzureAccountName() *string
+	SetAzureAccountName(val *string)
+	AzureAccountNameInput() *string
+	AzureBlobEnvironment() *string
+	SetAzureBlobEnvironment(val *string)
+	AzureBlobEnvironmentInput() *string
+	AzureContainerName() *string
+	SetAzureContainerName(val *string)
+	AzureContainerNameInput() *string
+	AzureEndpoint() *string
+	SetAzureEndpoint(val *string)
+	AzureEndpointInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	FilePrefix() *string
+	SetFilePrefix(val *string)
+	FilePrefixInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	GoogleDisableTls() interface{}
+	SetGoogleDisableTls(val interface{})
+	GoogleDisableTlsInput() interface{}
+	GoogleEndpoint() *string
+	SetGoogleEndpoint(val *string)
+	GoogleEndpointInput() *string
+	GoogleGcsBucket() *string
+	SetGoogleGcsBucket(val *string)
+	GoogleGcsBucketInput() *string
+	GoogleServiceAccountKey() *string
+	SetGoogleServiceAccountKey(val *string)
+	GoogleServiceAccountKeyInput() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	IntervalSeconds() *float64
+	SetIntervalSeconds(val *float64)
+	IntervalSecondsInput() *float64
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LocalMaxSpace() *float64
+	SetLocalMaxSpace(val *float64)
+	LocalMaxSpaceInput() *float64
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	// The tree node.
+	Node() constructs.Node
+	PathPrefix() *string
+	SetPathPrefix(val *string)
+	PathPrefixInput() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Retain() *float64
+	SetRetain(val *float64)
+	RetainInput() *float64
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetAwsAccessKeyId()
+	ResetAwsS3Bucket()
+	ResetAwsS3DisableTls()
+	ResetAwsS3EnableKms()
+	ResetAwsS3Endpoint()
+	ResetAwsS3ForcePathStyle()
+	ResetAwsS3KmsKey()
+	ResetAwsS3Region()
+	ResetAwsS3ServerSideEncryption()
+	ResetAwsSecretAccessKey()
+	ResetAwsSessionToken()
+	ResetAzureAccountKey()
+	ResetAzureAccountName()
+	ResetAzureBlobEnvironment()
+	ResetAzureContainerName()
+	ResetAzureEndpoint()
+	ResetFilePrefix()
+	ResetGoogleDisableTls()
+	ResetGoogleEndpoint()
+	ResetGoogleGcsBucket()
+	ResetGoogleServiceAccountKey()
+	ResetId()
+	ResetLocalMaxSpace()
+	ResetNamespace()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetRetain()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for RaftSnapshotAgentConfig
+type jsiiProxy_RaftSnapshotAgentConfig struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsAccessKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsAccessKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsAccessKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3Bucket() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3Bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3BucketInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3BucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3DisableTls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3DisableTls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3DisableTlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3DisableTlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3EnableKms() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3EnableKms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3EnableKmsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3EnableKmsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3Endpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3Endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3EndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3EndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3ForcePathStyle() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3ForcePathStyle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3ForcePathStyleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3ForcePathStyleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3KmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3KmsKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3Region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsS3RegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3ServerSideEncryption() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3ServerSideEncryption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsS3ServerSideEncryptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"awsS3ServerSideEncryptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSecretAccessKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSecretAccessKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSecretAccessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSessionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSessionToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AwsSessionTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"awsSessionTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAccountKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAccountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAccountKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAccountKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAccountName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureAccountNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureAccountNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureBlobEnvironment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureBlobEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureBlobEnvironmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureBlobEnvironmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureContainerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureContainerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureContainerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureContainerNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) AzureEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"azureEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) FilePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) FilePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleDisableTls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleDisableTls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleDisableTlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"googleDisableTlsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleGcsBucket() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleGcsBucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleGcsBucketInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleGcsBucketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleServiceAccountKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleServiceAccountKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) GoogleServiceAccountKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"googleServiceAccountKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) IntervalSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"intervalSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) IntervalSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"intervalSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) LocalMaxSpace() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localMaxSpace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) LocalMaxSpaceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"localMaxSpaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) PathPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) PathPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) Retain() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) RetainInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
+	_init_.Initialize()
+
+	j := jsiiProxy_RaftSnapshotAgentConfig{}
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.RaftSnapshotAgentConfig",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource.
+func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.RaftSnapshotAgentConfig",
+		[]interface{}{scope, id, config},
+		r,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsAccessKeyId(val *string) {
+	_jsii_.Set(
+		j,
+		"awsAccessKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Bucket(val *string) {
+	_jsii_.Set(
+		j,
+		"awsS3Bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3DisableTls(val interface{}) {
+	_jsii_.Set(
+		j,
+		"awsS3DisableTls",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3EnableKms(val interface{}) {
+	_jsii_.Set(
+		j,
+		"awsS3EnableKms",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Endpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"awsS3Endpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ForcePathStyle(val interface{}) {
+	_jsii_.Set(
+		j,
+		"awsS3ForcePathStyle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3KmsKey(val *string) {
+	_jsii_.Set(
+		j,
+		"awsS3KmsKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Region(val *string) {
+	_jsii_.Set(
+		j,
+		"awsS3Region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ServerSideEncryption(val interface{}) {
+	_jsii_.Set(
+		j,
+		"awsS3ServerSideEncryption",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSecretAccessKey(val *string) {
+	_jsii_.Set(
+		j,
+		"awsSecretAccessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSessionToken(val *string) {
+	_jsii_.Set(
+		j,
+		"awsSessionToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountKey(val *string) {
+	_jsii_.Set(
+		j,
+		"azureAccountKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountName(val *string) {
+	_jsii_.Set(
+		j,
+		"azureAccountName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureBlobEnvironment(val *string) {
+	_jsii_.Set(
+		j,
+		"azureBlobEnvironment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureContainerName(val *string) {
+	_jsii_.Set(
+		j,
+		"azureContainerName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"azureEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetFilePrefix(val *string) {
+	_jsii_.Set(
+		j,
+		"filePrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleDisableTls(val interface{}) {
+	_jsii_.Set(
+		j,
+		"googleDisableTls",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"googleEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleGcsBucket(val *string) {
+	_jsii_.Set(
+		j,
+		"googleGcsBucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleServiceAccountKey(val *string) {
+	_jsii_.Set(
+		j,
+		"googleServiceAccountKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetIntervalSeconds(val *float64) {
+	_jsii_.Set(
+		j,
+		"intervalSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLocalMaxSpace(val *float64) {
+	_jsii_.Set(
+		j,
+		"localMaxSpace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetName(val *string) {
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetNamespace(val *string) {
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetPathPrefix(val *string) {
+	_jsii_.Set(
+		j,
+		"pathPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetRetain(val *float64) {
+	_jsii_.Set(
+		j,
+		"retain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftSnapshotAgentConfig) SetStorageType(val *string) {
+	_jsii_.Set(
+		j,
+		"storageType",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func RaftSnapshotAgentConfig_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.RaftSnapshotAgentConfig",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func RaftSnapshotAgentConfig_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-vault.RaftSnapshotAgentConfig",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		r,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		r,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		r,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		r,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		r,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		r,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		r,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsAccessKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsAccessKeyId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3Bucket() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3Bucket",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3DisableTls() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3DisableTls",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3EnableKms() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3EnableKms",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3Endpoint() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3Endpoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3ForcePathStyle() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3ForcePathStyle",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3KmsKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3KmsKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3Region() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3Region",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsS3ServerSideEncryption() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsS3ServerSideEncryption",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsSecretAccessKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsSecretAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAwsSessionToken() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAwsSessionToken",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureAccountKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureAccountName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureAccountName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureBlobEnvironment() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureBlobEnvironment",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureContainerName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureContainerName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetAzureEndpoint() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAzureEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetFilePrefix() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFilePrefix",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetGoogleDisableTls() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGoogleDisableTls",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetGoogleEndpoint() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGoogleEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetGoogleGcsBucket() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGoogleGcsBucket",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetGoogleServiceAccountKey() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGoogleServiceAccountKey",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetLocalMaxSpace() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetLocalMaxSpace",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ResetRetain() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetRetain",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		r,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		r,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

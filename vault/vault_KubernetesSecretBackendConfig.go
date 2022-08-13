@@ -1,0 +1,93 @@
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+import (
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type KubernetesSecretBackendConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Where the secret backend will be mounted.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#path KubernetesSecretBackend#path}
+	Path *string `field:"required" json:"path" yaml:"path"`
+	// Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}
+	AuditNonHmacRequestKeys *[]*string `field:"optional" json:"auditNonHmacRequestKeys" yaml:"auditNonHmacRequestKeys"`
+	// Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#audit_non_hmac_response_keys KubernetesSecretBackend#audit_non_hmac_response_keys}
+	AuditNonHmacResponseKeys *[]*string `field:"optional" json:"auditNonHmacResponseKeys" yaml:"auditNonHmacResponseKeys"`
+	// Default lease duration for tokens and secrets in seconds.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#default_lease_ttl_seconds KubernetesSecretBackend#default_lease_ttl_seconds}
+	DefaultLeaseTtlSeconds *float64 `field:"optional" json:"defaultLeaseTtlSeconds" yaml:"defaultLeaseTtlSeconds"`
+	// Human-friendly description of the mount.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#description KubernetesSecretBackend#description}
+	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Disable defaulting to the local CA certificate and service account JWT when running in a Kubernetes pod.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#disable_local_ca_jwt KubernetesSecretBackend#disable_local_ca_jwt}
+	DisableLocalCaJwt interface{} `field:"optional" json:"disableLocalCaJwt" yaml:"disableLocalCaJwt"`
+	// Enable the secrets engine to access Vault's external entropy source.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#external_entropy_access KubernetesSecretBackend#external_entropy_access}
+	ExternalEntropyAccess interface{} `field:"optional" json:"externalEntropyAccess" yaml:"externalEntropyAccess"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#id KubernetesSecretBackend#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// A PEM-encoded CA certificate used by the secret engine to verify the Kubernetes API server certificate.
+	//
+	// Defaults to the local pod’s CA if found, or otherwise the host's root CA set.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#kubernetes_ca_cert KubernetesSecretBackend#kubernetes_ca_cert}
+	KubernetesCaCert *string `field:"optional" json:"kubernetesCaCert" yaml:"kubernetesCaCert"`
+	// The Kubernetes API URL to connect to.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#kubernetes_host KubernetesSecretBackend#kubernetes_host}
+	KubernetesHost *string `field:"optional" json:"kubernetesHost" yaml:"kubernetesHost"`
+	// Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#local KubernetesSecretBackend#local}
+	Local interface{} `field:"optional" json:"local" yaml:"local"`
+	// Maximum possible lease duration for tokens and secrets in seconds.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#max_lease_ttl_seconds KubernetesSecretBackend#max_lease_ttl_seconds}
+	MaxLeaseTtlSeconds *float64 `field:"optional" json:"maxLeaseTtlSeconds" yaml:"maxLeaseTtlSeconds"`
+	// Target namespace. (requires Enterprise).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#namespace KubernetesSecretBackend#namespace}
+	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
+	// Specifies mount type specific options that are passed to the backend.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#options KubernetesSecretBackend#options}
+	Options *map[string]*string `field:"optional" json:"options" yaml:"options"`
+	// Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#seal_wrap KubernetesSecretBackend#seal_wrap}
+	SealWrap interface{} `field:"optional" json:"sealWrap" yaml:"sealWrap"`
+	// The JSON web token of the service account used by the secrets engine to manage Kubernetes credentials.
+	//
+	// Defaults to the local pod’s JWT if found.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#service_account_jwt KubernetesSecretBackend#service_account_jwt}
+	ServiceAccountJwt *string `field:"optional" json:"serviceAccountJwt" yaml:"serviceAccountJwt"`
+}
+
