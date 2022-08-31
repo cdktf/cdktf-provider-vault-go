@@ -1,0 +1,96 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOktaAuthBackendGroupA_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetGroupNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func validateNewOktaAuthBackendGroupAParameters(scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) error {
+	return nil
+}
+

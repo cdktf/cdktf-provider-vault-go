@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) WrapsSet() *bool {
 func NewDatabaseSecretsMountPostgresqlList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountPostgresqlList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountPostgresqlListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountPostgresqlList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountPostgresqlList_Override(d DatabaseSecretsMountPostgr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlList) Get(index *float64) DatabaseSecretsMountPostgresqlOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountPostgresqlOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlList) Get(index *float64) Datab
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

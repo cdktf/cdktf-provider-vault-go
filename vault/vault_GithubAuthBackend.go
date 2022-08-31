@@ -685,6 +685,9 @@ func (j *jsiiProxy_GithubAuthBackend) TuneInput() interface{} {
 func NewGithubAuthBackend(scope constructs.Construct, id *string, config *GithubAuthBackendConfig) GithubAuthBackend {
 	_init_.Initialize()
 
+	if err := validateNewGithubAuthBackendParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GithubAuthBackend{}
 
 	_jsii_.Create(
@@ -707,7 +710,10 @@ func NewGithubAuthBackend_Override(g GithubAuthBackend, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetBaseUrl(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetBaseUrl(val *string) {
+	if err := j.validateSetBaseUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -715,7 +721,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetConnection(val interface{}) {
+func (j *jsiiProxy_GithubAuthBackend)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -723,7 +732,7 @@ func (j *jsiiProxy_GithubAuthBackend) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetCount(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -731,7 +740,7 @@ func (j *jsiiProxy_GithubAuthBackend) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -739,7 +748,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetDescription(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -747,7 +759,7 @@ func (j *jsiiProxy_GithubAuthBackend) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GithubAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -755,7 +767,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetId(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -763,7 +778,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GithubAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -771,7 +789,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetNamespace(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -779,7 +800,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetOrganization(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetOrganization(val *string) {
+	if err := j.validateSetOrganizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"organization",
@@ -787,7 +811,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetOrganizationId(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetOrganizationId(val *float64) {
+	if err := j.validateSetOrganizationIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"organizationId",
@@ -795,7 +822,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetOrganizationId(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetPath(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -803,7 +833,7 @@ func (j *jsiiProxy_GithubAuthBackend) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GithubAuthBackend)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -811,7 +841,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GithubAuthBackend)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -819,7 +852,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenBoundCidrs(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenBoundCidrs",
@@ -827,7 +863,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenBoundCidrs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenExplicitMaxTtl(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenExplicitMaxTtl",
@@ -835,7 +874,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenExplicitMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenMaxTtl(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenMaxTtl",
@@ -843,7 +885,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenNoDefaultPolicy(val interface{}) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNoDefaultPolicy",
@@ -851,7 +896,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenNoDefaultPolicy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenNumUses(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNumUses",
@@ -859,7 +907,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenNumUses(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenPeriod(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPeriod",
@@ -867,7 +918,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenPolicies(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPolicies",
@@ -875,7 +929,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenTtl(val *float64) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenTtl",
@@ -883,7 +940,10 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackend) SetTokenType(val *string) {
+func (j *jsiiProxy_GithubAuthBackend)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -911,6 +971,9 @@ func (j *jsiiProxy_GithubAuthBackend) SetTokenType(val *string) {
 func GithubAuthBackend_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGithubAuthBackend_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -935,6 +998,9 @@ func GithubAuthBackend_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GithubAuthBackend) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -943,6 +1009,9 @@ func (g *jsiiProxy_GithubAuthBackend) AddOverride(path *string, value interface{
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -956,6 +1025,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetAnyMapAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -969,6 +1041,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetBooleanAttribute(terraformAttribute *st
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -982,6 +1057,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetBooleanMapAttribute(terraformAttribute 
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -995,6 +1073,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetListAttribute(terraformAttribute *strin
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1008,6 +1089,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetNumberAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1021,6 +1105,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetNumberListAttribute(terraformAttribute 
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1034,6 +1121,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetNumberMapAttribute(terraformAttribute *
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1047,6 +1137,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetStringAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GithubAuthBackend) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1060,6 +1153,9 @@ func (g *jsiiProxy_GithubAuthBackend) GetStringMapAttribute(terraformAttribute *
 }
 
 func (g *jsiiProxy_GithubAuthBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1073,6 +1169,9 @@ func (g *jsiiProxy_GithubAuthBackend) InterpolationForAttribute(terraformAttribu
 }
 
 func (g *jsiiProxy_GithubAuthBackend) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",
@@ -1081,6 +1180,9 @@ func (g *jsiiProxy_GithubAuthBackend) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (g *jsiiProxy_GithubAuthBackend) PutTune(value interface{}) {
+	if err := g.validatePutTuneParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"putTune",

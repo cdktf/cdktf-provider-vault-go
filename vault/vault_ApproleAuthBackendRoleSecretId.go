@@ -515,6 +515,9 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) WrappingTtlInput() *string {
 func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) ApproleAuthBackendRoleSecretId {
 	_init_.Initialize()
 
+	if err := validateNewApproleAuthBackendRoleSecretIdParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ApproleAuthBackendRoleSecretId{}
 
 	_jsii_.Create(
@@ -537,7 +540,10 @@ func NewApproleAuthBackendRoleSecretId_Override(a ApproleAuthBackendRoleSecretId
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetBackend(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -545,7 +551,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetCidrList(val *[]*string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetCidrList(val *[]*string) {
+	if err := j.validateSetCidrListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cidrList",
@@ -553,7 +562,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetCidrList(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetConnection(val interface{}) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -561,7 +573,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetCount(val *float64) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -569,7 +581,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -577,7 +589,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -585,7 +597,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetId(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -593,7 +608,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -601,7 +619,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetMetadata(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetMetadata(val *string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"metadata",
@@ -609,7 +630,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetMetadata(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetNamespace(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -617,7 +641,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -625,7 +649,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -633,7 +660,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetRoleName(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetRoleName(val *string) {
+	if err := j.validateSetRoleNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleName",
@@ -641,7 +671,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetRoleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetSecretId(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetSecretId(val *string) {
+	if err := j.validateSetSecretIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretId",
@@ -649,7 +682,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetSecretId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetWithWrappedAccessor(val interface{}) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetWithWrappedAccessor(val interface{}) {
+	if err := j.validateSetWithWrappedAccessorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"withWrappedAccessor",
@@ -657,7 +693,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetWithWrappedAccessor(val in
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetWrappingTtl(val *string) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetWrappingTtl(val *string) {
+	if err := j.validateSetWrappingTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrappingTtl",
@@ -685,6 +724,9 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) SetWrappingTtl(val *string) {
 func ApproleAuthBackendRoleSecretId_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateApproleAuthBackendRoleSecretId_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -709,6 +751,9 @@ func ApproleAuthBackendRoleSecretId_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -717,6 +762,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) AddOverride(path *string, val
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -730,6 +778,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetAnyMapAttribute(terraformA
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -743,6 +794,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetBooleanAttribute(terraform
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -756,6 +810,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetBooleanMapAttribute(terraf
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -769,6 +826,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetListAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -782,6 +842,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberAttribute(terraformA
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -795,6 +858,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberListAttribute(terraf
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -808,6 +874,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetNumberMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -821,6 +890,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetStringAttribute(terraformA
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -834,6 +906,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) GetStringMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -847,6 +922,9 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) InterpolationForAttribute(ter
 }
 
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

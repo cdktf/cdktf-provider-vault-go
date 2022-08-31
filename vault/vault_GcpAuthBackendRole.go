@@ -817,6 +817,9 @@ func (j *jsiiProxy_GcpAuthBackendRole) TypeInput() *string {
 func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) GcpAuthBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewGcpAuthBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GcpAuthBackendRole{}
 
 	_jsii_.Create(
@@ -839,7 +842,10 @@ func NewGcpAuthBackendRole_Override(g GcpAuthBackendRole, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetAddGroupAliases(val interface{}) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetAddGroupAliases(val interface{}) {
+	if err := j.validateSetAddGroupAliasesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"addGroupAliases",
@@ -847,7 +853,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetAddGroupAliases(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetAllowGceInference(val interface{}) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetAllowGceInference(val interface{}) {
+	if err := j.validateSetAllowGceInferenceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowGceInference",
@@ -855,7 +864,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetAllowGceInference(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -863,7 +875,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundInstanceGroups(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundInstanceGroups(val *[]*string) {
+	if err := j.validateSetBoundInstanceGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundInstanceGroups",
@@ -871,7 +886,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundInstanceGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundLabels(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundLabels(val *[]*string) {
+	if err := j.validateSetBoundLabelsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundLabels",
@@ -879,7 +897,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundLabels(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundProjects(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundProjects(val *[]*string) {
+	if err := j.validateSetBoundProjectsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundProjects",
@@ -887,7 +908,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundProjects(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundRegions(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundRegions(val *[]*string) {
+	if err := j.validateSetBoundRegionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundRegions",
@@ -895,7 +919,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundRegions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundServiceAccounts(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundServiceAccounts(val *[]*string) {
+	if err := j.validateSetBoundServiceAccountsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundServiceAccounts",
@@ -903,7 +930,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundServiceAccounts(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetBoundZones(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetBoundZones(val *[]*string) {
+	if err := j.validateSetBoundZonesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundZones",
@@ -911,7 +941,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetBoundZones(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -919,7 +952,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -927,7 +960,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -935,7 +968,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -943,7 +976,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetId(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -951,7 +987,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -959,7 +998,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetMaxJwtExp(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetMaxJwtExp(val *string) {
+	if err := j.validateSetMaxJwtExpParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxJwtExp",
@@ -967,7 +1009,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetMaxJwtExp(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -975,7 +1020,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -983,7 +1028,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -991,7 +1039,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetRole(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -999,7 +1050,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenBoundCidrs",
@@ -1007,7 +1061,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenExplicitMaxTtl",
@@ -1015,7 +1072,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenMaxTtl(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenMaxTtl",
@@ -1023,7 +1083,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNoDefaultPolicy",
@@ -1031,7 +1094,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenNumUses(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNumUses",
@@ -1039,7 +1105,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenNumUses(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenPeriod(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPeriod",
@@ -1047,7 +1116,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenPolicies(val *[]*string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPolicies",
@@ -1055,7 +1127,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenTtl(val *float64) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenTtl",
@@ -1063,7 +1138,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetTokenType(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -1071,7 +1149,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetTokenType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GcpAuthBackendRole) SetType(val *string) {
+func (j *jsiiProxy_GcpAuthBackendRole)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -1099,6 +1180,9 @@ func (j *jsiiProxy_GcpAuthBackendRole) SetType(val *string) {
 func GcpAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGcpAuthBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1123,6 +1207,9 @@ func GcpAuthBackendRole_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -1131,6 +1218,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) AddOverride(path *string, value interface
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1144,6 +1234,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1157,6 +1250,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1170,6 +1266,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1183,6 +1282,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetListAttribute(terraformAttribute *stri
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1196,6 +1298,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetNumberAttribute(terraformAttribute *st
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1209,6 +1314,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetNumberListAttribute(terraformAttribute
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1222,6 +1330,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1235,6 +1346,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetStringAttribute(terraformAttribute *st
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1248,6 +1362,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) GetStringMapAttribute(terraformAttribute 
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1261,6 +1378,9 @@ func (g *jsiiProxy_GcpAuthBackendRole) InterpolationForAttribute(terraformAttrib
 }
 
 func (g *jsiiProxy_GcpAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

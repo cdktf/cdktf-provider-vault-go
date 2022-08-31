@@ -261,6 +261,9 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) TerraformResou
 func NewDataVaultIdentityEntityAliasesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataVaultIdentityEntityAliasesOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultIdentityEntityAliasesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultIdentityEntityAliasesOutputReference{}
 
 	_jsii_.Create(
@@ -282,7 +285,10 @@ func NewDataVaultIdentityEntityAliasesOutputReference_Override(d DataVaultIdenti
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -290,7 +296,10 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -298,7 +307,10 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetInternalValue(val *DataVaultIdentityEntityAliases) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference)SetInternalValue(val *DataVaultIdentityEntityAliases) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -306,7 +318,10 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetInternalVal
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -314,7 +329,10 @@ func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -336,6 +354,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) ComputeFqn() *
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -349,6 +370,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetAnyMapAttri
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -362,6 +386,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetBooleanAttr
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -375,6 +402,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetBooleanMapA
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -388,6 +418,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetListAttribu
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -401,6 +434,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberAttri
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -414,6 +450,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberListA
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -427,6 +466,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetNumberMapAt
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -440,6 +482,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetStringAttri
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -466,6 +511,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) InterpolationA
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -479,6 +527,9 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) InterpolationF
 }
 
 func (d *jsiiProxy_DataVaultIdentityEntityAliasesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -332,6 +332,9 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) TerraformResourceType() *st
 func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) DataVaultIdentityOidcClientCreds {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultIdentityOidcClientCredsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultIdentityOidcClientCreds{}
 
 	_jsii_.Create(
@@ -354,7 +357,7 @@ func NewDataVaultIdentityOidcClientCreds_Override(d DataVaultIdentityOidcClientC
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -362,7 +365,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -370,7 +373,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetDependsOn(val *[]*string
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -378,7 +381,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetForEach(val cdktf.ITerra
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetId(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -386,7 +392,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -394,7 +403,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetLifecycle(val *cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetName(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -402,7 +414,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -410,7 +425,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -438,6 +453,9 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) SetProvider(val cdktf.Terra
 func DataVaultIdentityOidcClientCreds_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultIdentityOidcClientCreds_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -462,6 +480,9 @@ func DataVaultIdentityOidcClientCreds_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -470,6 +491,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) AddOverride(path *string, v
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -483,6 +507,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetAnyMapAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -496,6 +523,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetBooleanAttribute(terrafo
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -509,6 +539,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetBooleanMapAttribute(terr
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -522,6 +555,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetListAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -535,6 +571,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -548,6 +587,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberListAttribute(terr
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -561,6 +603,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetNumberMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -574,6 +619,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetStringAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -587,6 +635,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) GetStringMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -600,6 +651,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) InterpolationForAttribute(t
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcClientCreds) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

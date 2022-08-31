@@ -1273,6 +1273,9 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewPkiSecretBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PkiSecretBackendRole{}
 
 	_jsii_.Create(
@@ -1295,7 +1298,10 @@ func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowAnyName(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowAnyName(val interface{}) {
+	if err := j.validateSetAllowAnyNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowAnyName",
@@ -1303,7 +1309,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowAnyName(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowBareDomains(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowBareDomains(val interface{}) {
+	if err := j.validateSetAllowBareDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowBareDomains",
@@ -1311,7 +1320,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowBareDomains(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomains(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedDomains(val *[]*string) {
+	if err := j.validateSetAllowedDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedDomains",
@@ -1319,7 +1331,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomains(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomainsTemplate(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedDomainsTemplate(val interface{}) {
+	if err := j.validateSetAllowedDomainsTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedDomainsTemplate",
@@ -1327,7 +1342,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedDomainsTemplate(val interface
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedOtherSans(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedOtherSans(val *[]*string) {
+	if err := j.validateSetAllowedOtherSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedOtherSans",
@@ -1335,7 +1353,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedOtherSans(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedSerialNumbers(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedSerialNumbers(val *[]*string) {
+	if err := j.validateSetAllowedSerialNumbersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedSerialNumbers",
@@ -1343,7 +1364,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedSerialNumbers(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedUriSans(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedUriSans(val *[]*string) {
+	if err := j.validateSetAllowedUriSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedUriSans",
@@ -1351,7 +1375,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowedUriSans(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowGlobDomains(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowGlobDomains(val interface{}) {
+	if err := j.validateSetAllowGlobDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowGlobDomains",
@@ -1359,7 +1386,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowGlobDomains(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowIpSans(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowIpSans(val interface{}) {
+	if err := j.validateSetAllowIpSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowIpSans",
@@ -1367,7 +1397,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowIpSans(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowLocalhost(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowLocalhost(val interface{}) {
+	if err := j.validateSetAllowLocalhostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowLocalhost",
@@ -1375,7 +1408,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowLocalhost(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetAllowSubdomains(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowSubdomains(val interface{}) {
+	if err := j.validateSetAllowSubdomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowSubdomains",
@@ -1383,7 +1419,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetAllowSubdomains(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -1391,7 +1430,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetBasicConstraintsValidForNonCa(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetBasicConstraintsValidForNonCa(val interface{}) {
+	if err := j.validateSetBasicConstraintsValidForNonCaParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"basicConstraintsValidForNonCa",
@@ -1399,7 +1441,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetBasicConstraintsValidForNonCa(val in
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetClientFlag(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetClientFlag(val interface{}) {
+	if err := j.validateSetClientFlagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientFlag",
@@ -1407,7 +1452,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetClientFlag(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetCodeSigningFlag(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetCodeSigningFlag(val interface{}) {
+	if err := j.validateSetCodeSigningFlagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"codeSigningFlag",
@@ -1415,7 +1463,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetCodeSigningFlag(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1423,7 +1474,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1431,7 +1482,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetCountry(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetCountry(val *[]*string) {
+	if err := j.validateSetCountryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"country",
@@ -1439,7 +1493,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetCountry(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1447,7 +1501,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetEmailProtectionFlag(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetEmailProtectionFlag(val interface{}) {
+	if err := j.validateSetEmailProtectionFlagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"emailProtectionFlag",
@@ -1455,7 +1512,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetEmailProtectionFlag(val interface{})
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetEnforceHostnames(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetEnforceHostnames(val interface{}) {
+	if err := j.validateSetEnforceHostnamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforceHostnames",
@@ -1463,7 +1523,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetEnforceHostnames(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetExtKeyUsage(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetExtKeyUsage(val *[]*string) {
+	if err := j.validateSetExtKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"extKeyUsage",
@@ -1471,7 +1534,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetExtKeyUsage(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1479,7 +1542,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetGenerateLease(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetGenerateLease(val interface{}) {
+	if err := j.validateSetGenerateLeaseParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"generateLease",
@@ -1487,7 +1553,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetGenerateLease(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetId(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1495,7 +1564,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetKeyBits(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetKeyBits(val *float64) {
+	if err := j.validateSetKeyBitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyBits",
@@ -1503,7 +1575,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetKeyBits(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetKeyType(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetKeyType(val *string) {
+	if err := j.validateSetKeyTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyType",
@@ -1511,7 +1586,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetKeyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetKeyUsage(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetKeyUsage(val *[]*string) {
+	if err := j.validateSetKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyUsage",
@@ -1519,7 +1597,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetKeyUsage(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1527,7 +1608,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetLocality(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetLocality(val *[]*string) {
+	if err := j.validateSetLocalityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"locality",
@@ -1535,7 +1619,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetLocality(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetMaxTtl(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetMaxTtl(val *string) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -1543,7 +1630,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetMaxTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetName(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1551,7 +1641,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -1559,7 +1652,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetNoStore(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetNoStore(val interface{}) {
+	if err := j.validateSetNoStoreParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"noStore",
@@ -1567,7 +1663,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetNoStore(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetNotBeforeDuration(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetNotBeforeDuration(val *string) {
+	if err := j.validateSetNotBeforeDurationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"notBeforeDuration",
@@ -1575,7 +1674,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetNotBeforeDuration(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetOrganization(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetOrganization(val *[]*string) {
+	if err := j.validateSetOrganizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"organization",
@@ -1583,7 +1685,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetOrganization(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetOu(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetOu(val *[]*string) {
+	if err := j.validateSetOuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ou",
@@ -1591,7 +1696,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetOu(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetPolicyIdentifiers(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetPolicyIdentifiers(val *[]*string) {
+	if err := j.validateSetPolicyIdentifiersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyIdentifiers",
@@ -1599,7 +1707,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetPolicyIdentifiers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetPostalCode(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetPostalCode(val *[]*string) {
+	if err := j.validateSetPostalCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"postalCode",
@@ -1607,7 +1718,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetPostalCode(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1615,7 +1726,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetProvince(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetProvince(val *[]*string) {
+	if err := j.validateSetProvinceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"province",
@@ -1623,7 +1737,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetProvince(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1631,7 +1748,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetRequireCn(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetRequireCn(val interface{}) {
+	if err := j.validateSetRequireCnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requireCn",
@@ -1639,7 +1759,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetRequireCn(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetServerFlag(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetServerFlag(val interface{}) {
+	if err := j.validateSetServerFlagParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverFlag",
@@ -1647,7 +1770,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetServerFlag(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetStreetAddress(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetStreetAddress(val *[]*string) {
+	if err := j.validateSetStreetAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"streetAddress",
@@ -1655,7 +1781,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetStreetAddress(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetTtl(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetTtl(val *string) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -1663,7 +1792,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrCommonName(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetUseCsrCommonName(val interface{}) {
+	if err := j.validateSetUseCsrCommonNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useCsrCommonName",
@@ -1671,7 +1803,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrCommonName(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrSans(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRole)SetUseCsrSans(val interface{}) {
+	if err := j.validateSetUseCsrSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useCsrSans",
@@ -1699,6 +1834,9 @@ func (j *jsiiProxy_PkiSecretBackendRole) SetUseCsrSans(val interface{}) {
 func PkiSecretBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePkiSecretBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1723,6 +1861,9 @@ func PkiSecretBackendRole_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -1731,6 +1872,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) AddOverride(path *string, value interfa
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1744,6 +1888,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1757,6 +1904,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanAttribute(terraformAttribute 
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1770,6 +1920,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1783,6 +1936,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetListAttribute(terraformAttribute *st
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1796,6 +1952,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetNumberAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1809,6 +1968,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetNumberListAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1822,6 +1984,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetNumberMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1835,6 +2000,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetStringAttribute(terraformAttribute *
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1848,6 +2016,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) GetStringMapAttribute(terraformAttribut
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1861,6 +2032,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) InterpolationForAttribute(terraformAttr
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",
@@ -1869,6 +2043,9 @@ func (p *jsiiProxy_PkiSecretBackendRole) OverrideLogicalId(newLogicalId *string)
 }
 
 func (p *jsiiProxy_PkiSecretBackendRole) PutPolicyIdentifier(value interface{}) {
+	if err := p.validatePutPolicyIdentifierParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"putPolicyIdentifier",

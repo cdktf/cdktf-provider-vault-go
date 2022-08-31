@@ -882,6 +882,9 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UseCsrValuesInput() int
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
+	if err := validateNewPkiSecretBackendRootSignIntermediateParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PkiSecretBackendRootSignIntermediate{}
 
 	_jsii_.Create(
@@ -904,7 +907,10 @@ func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSign
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetAltNames(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetAltNames(val *[]*string) {
+	if err := j.validateSetAltNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"altNames",
@@ -912,7 +918,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetAltNames(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetBackend(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -920,7 +929,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetBackend(val *string)
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCommonName(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetCommonName(val *string) {
+	if err := j.validateSetCommonNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"commonName",
@@ -928,7 +940,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCommonName(val *stri
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetConnection(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -936,7 +951,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCount(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -944,7 +959,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCount(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCountry(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetCountry(val *string) {
+	if err := j.validateSetCountryParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"country",
@@ -952,7 +970,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCountry(val *string)
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCsr(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetCsr(val *string) {
+	if err := j.validateSetCsrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"csr",
@@ -960,7 +981,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetCsr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -968,7 +989,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetDependsOn(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetExcludeCnFromSans(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetExcludeCnFromSans(val interface{}) {
+	if err := j.validateSetExcludeCnFromSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"excludeCnFromSans",
@@ -976,7 +1000,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetExcludeCnFromSans(va
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -984,7 +1008,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetForEach(val cdktf.IT
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetFormat(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetFormat(val *string) {
+	if err := j.validateSetFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"format",
@@ -992,7 +1019,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetFormat(val *string) 
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetId(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1000,7 +1030,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetIpSans(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetIpSans(val *[]*string) {
+	if err := j.validateSetIpSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ipSans",
@@ -1008,7 +1041,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetIpSans(val *[]*strin
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1016,7 +1052,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetLifecycle(val *cdktf
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetLocality(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetLocality(val *string) {
+	if err := j.validateSetLocalityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"locality",
@@ -1024,7 +1063,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetLocality(val *string
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetMaxPathLength(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetMaxPathLength(val *float64) {
+	if err := j.validateSetMaxPathLengthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxPathLength",
@@ -1032,7 +1074,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetMaxPathLength(val *f
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetNamespace(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -1040,7 +1085,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetNamespace(val *strin
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOrganization(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetOrganization(val *string) {
+	if err := j.validateSetOrganizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"organization",
@@ -1048,7 +1096,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOrganization(val *st
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOtherSans(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetOtherSans(val *[]*string) {
+	if err := j.validateSetOtherSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"otherSans",
@@ -1056,7 +1107,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOtherSans(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOu(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetOu(val *string) {
+	if err := j.validateSetOuParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ou",
@@ -1064,7 +1118,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetOu(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetPermittedDnsDomains(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPermittedDnsDomains(val *[]*string) {
+	if err := j.validateSetPermittedDnsDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"permittedDnsDomains",
@@ -1072,7 +1129,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetPermittedDnsDomains(
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetPostalCode(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetPostalCode(val *string) {
+	if err := j.validateSetPostalCodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"postalCode",
@@ -1080,7 +1140,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetPostalCode(val *stri
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1088,7 +1148,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvider(val cdktf.T
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvince(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetProvince(val *string) {
+	if err := j.validateSetProvinceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"province",
@@ -1096,7 +1159,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvince(val *string
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1104,7 +1170,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetProvisioners(val *[]
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetRevoke(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetRevoke(val interface{}) {
+	if err := j.validateSetRevokeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"revoke",
@@ -1112,7 +1181,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetRevoke(val interface
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetStreetAddress(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetStreetAddress(val *string) {
+	if err := j.validateSetStreetAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"streetAddress",
@@ -1120,7 +1192,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetStreetAddress(val *s
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetTtl(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetTtl(val *string) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -1128,7 +1203,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetUriSans(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetUriSans(val *[]*string) {
+	if err := j.validateSetUriSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"uriSans",
@@ -1136,7 +1214,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetUriSans(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetUseCsrValues(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetUseCsrValues(val interface{}) {
+	if err := j.validateSetUseCsrValuesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useCsrValues",
@@ -1164,6 +1245,9 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) SetUseCsrValues(val int
 func PkiSecretBackendRootSignIntermediate_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePkiSecretBackendRootSignIntermediate_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1188,6 +1272,9 @@ func PkiSecretBackendRootSignIntermediate_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -1196,6 +1283,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) AddOverride(path *strin
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1209,6 +1299,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetAnyMapAttribute(terr
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1222,6 +1315,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanAttribute(ter
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1235,6 +1331,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetBooleanMapAttribute(
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1248,6 +1347,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetListAttribute(terraf
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1261,6 +1363,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberAttribute(terr
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1274,6 +1379,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberListAttribute(
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1287,6 +1395,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetNumberMapAttribute(t
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1300,6 +1411,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetStringAttribute(terr
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1313,6 +1427,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) GetStringMapAttribute(t
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1326,6 +1443,9 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) InterpolationForAttribu
 }
 
 func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

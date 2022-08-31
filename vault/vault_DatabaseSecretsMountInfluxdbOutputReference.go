@@ -531,6 +531,9 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) VerifyConnection
 func NewDatabaseSecretsMountInfluxdbOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountInfluxdbOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountInfluxdbOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference{}
 
 	_jsii_.Create(
@@ -552,7 +555,10 @@ func NewDatabaseSecretsMountInfluxdbOutputReference_Override(d DatabaseSecretsMo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -560,7 +566,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetAllowedRoles(
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -568,7 +577,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -576,7 +588,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetConnectTimeout(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetConnectTimeout(val *float64) {
+	if err := j.validateSetConnectTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectTimeout",
@@ -584,7 +599,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetConnectTimeou
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -592,7 +610,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetData(val *map
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetHost(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"host",
@@ -600,7 +621,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetHost(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetInsecureTls(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecureTls",
@@ -608,7 +632,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetInsecureTls(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -616,7 +643,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -624,7 +654,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -632,7 +665,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPassword(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPemBundle(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPemBundle(val *string) {
+	if err := j.validateSetPemBundleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pemBundle",
@@ -640,7 +676,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPemBundle(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPemJson(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPemJson(val *string) {
+	if err := j.validateSetPemJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pemJson",
@@ -648,7 +687,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPemJson(val *
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -656,7 +698,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPluginName(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPort(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"port",
@@ -664,7 +709,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetPort(val *flo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -672,7 +720,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetRootRotationS
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -680,7 +731,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -688,7 +742,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTls(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetTls(val interface{}) {
+	if err := j.validateSetTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls",
@@ -696,7 +753,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetTls(val inter
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -704,7 +764,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetUsername(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -712,7 +775,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetUsernameTempl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -734,6 +800,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ComputeFqn() *st
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -747,6 +816,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetAnyMapAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -760,6 +832,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetBooleanAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -773,6 +848,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetBooleanMapAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -786,6 +864,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetListAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -799,6 +880,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -812,6 +896,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberListAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -825,6 +912,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetNumberMapAttr
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -838,6 +928,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetStringAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -864,6 +957,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) InterpolationAsL
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -973,6 +1069,9 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) ResetVerifyConne
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

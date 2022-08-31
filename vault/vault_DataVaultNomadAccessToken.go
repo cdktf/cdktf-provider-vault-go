@@ -355,6 +355,9 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) TerraformResourceType() *string {
 func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) DataVaultNomadAccessToken {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultNomadAccessTokenParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultNomadAccessToken{}
 
 	_jsii_.Create(
@@ -377,7 +380,10 @@ func NewDataVaultNomadAccessToken_Override(d DataVaultNomadAccessToken, scope co
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetBackend(val *string) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -385,7 +391,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -393,7 +399,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -401,7 +407,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -409,7 +415,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetForEach(val cdktf.ITerraformIte
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetId(val *string) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -417,7 +426,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -425,7 +437,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetLifecycle(val *cdktf.TerraformR
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -433,7 +448,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -441,7 +456,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetProvider(val cdktf.TerraformPro
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) SetRole(val *string) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -469,6 +487,9 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) SetRole(val *string) {
 func DataVaultNomadAccessToken_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultNomadAccessToken_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -493,6 +514,9 @@ func DataVaultNomadAccessToken_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -501,6 +525,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) AddOverride(path *string, value in
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -514,6 +541,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetAnyMapAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -527,6 +557,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetBooleanAttribute(terraformAttri
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -540,6 +573,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetBooleanMapAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -553,6 +589,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetListAttribute(terraformAttribut
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -566,6 +605,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -579,6 +621,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -592,6 +637,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetNumberMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -605,6 +653,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetStringAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -618,6 +669,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) GetStringMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -631,6 +685,9 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) InterpolationForAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultNomadAccessToken) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

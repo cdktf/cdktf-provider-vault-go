@@ -1,0 +1,88 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultGenericSecret) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDataVaultGenericSecret_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetVersionParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultGenericSecret) validateSetWithLeaseStartTimeParameters(val interface{}) error {
+	return nil
+}
+
+func validateNewDataVaultGenericSecretParameters(scope constructs.Construct, id *string, config *DataVaultGenericSecretConfig) error {
+	return nil
+}
+

@@ -817,6 +817,9 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewCertAuthBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CertAuthBackendRole{}
 
 	_jsii_.Create(
@@ -839,7 +842,10 @@ func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedCommonNames(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedCommonNames(val *[]*string) {
+	if err := j.validateSetAllowedCommonNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedCommonNames",
@@ -847,7 +853,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedCommonNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedDnsSans(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedDnsSans(val *[]*string) {
+	if err := j.validateSetAllowedDnsSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedDnsSans",
@@ -855,7 +864,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedDnsSans(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedEmailSans(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedEmailSans(val *[]*string) {
+	if err := j.validateSetAllowedEmailSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedEmailSans",
@@ -863,7 +875,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedEmailSans(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedNames(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedNames(val *[]*string) {
+	if err := j.validateSetAllowedNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedNames",
@@ -871,7 +886,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedNames(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedOrganizationalUnits(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedOrganizationalUnits(val *[]*string) {
+	if err := j.validateSetAllowedOrganizationalUnitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedOrganizationalUnits",
@@ -879,7 +897,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedOrganizationalUnits(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedOrganizationUnits(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedOrganizationUnits(val *[]*string) {
+	if err := j.validateSetAllowedOrganizationUnitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedOrganizationUnits",
@@ -887,7 +908,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedOrganizationUnits(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetAllowedUriSans(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetAllowedUriSans(val *[]*string) {
+	if err := j.validateSetAllowedUriSansParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedUriSans",
@@ -895,7 +919,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetAllowedUriSans(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -903,7 +930,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetCertificate(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -911,7 +941,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_CertAuthBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -919,7 +952,7 @@ func (j *jsiiProxy_CertAuthBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -927,7 +960,7 @@ func (j *jsiiProxy_CertAuthBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -935,7 +968,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetDisplayName(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"displayName",
@@ -943,7 +979,7 @@ func (j *jsiiProxy_CertAuthBackendRole) SetDisplayName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CertAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -951,7 +987,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetId(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -959,7 +998,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CertAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -967,7 +1009,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetName(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -975,7 +1020,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -983,7 +1031,7 @@ func (j *jsiiProxy_CertAuthBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CertAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -991,7 +1039,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetProvider(val cdktf.TerraformProvider)
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CertAuthBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -999,7 +1050,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetRequiredExtensions(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetRequiredExtensions(val *[]*string) {
+	if err := j.validateSetRequiredExtensionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requiredExtensions",
@@ -1007,7 +1061,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetRequiredExtensions(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenBoundCidrs",
@@ -1015,7 +1072,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenExplicitMaxTtl",
@@ -1023,7 +1083,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenMaxTtl(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenMaxTtl",
@@ -1031,7 +1094,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNoDefaultPolicy",
@@ -1039,7 +1105,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenNoDefaultPolicy(val interface{})
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenNumUses(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNumUses",
@@ -1047,7 +1116,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenNumUses(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenPeriod(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPeriod",
@@ -1055,7 +1127,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenPolicies(val *[]*string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPolicies",
@@ -1063,7 +1138,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenTtl(val *float64) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenTtl",
@@ -1071,7 +1149,10 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) SetTokenType(val *string) {
+func (j *jsiiProxy_CertAuthBackendRole)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -1099,6 +1180,9 @@ func (j *jsiiProxy_CertAuthBackendRole) SetTokenType(val *string) {
 func CertAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCertAuthBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1123,6 +1207,9 @@ func CertAuthBackendRole_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -1131,6 +1218,9 @@ func (c *jsiiProxy_CertAuthBackendRole) AddOverride(path *string, value interfac
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1144,6 +1234,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetAnyMapAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1157,6 +1250,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetBooleanAttribute(terraformAttribute *
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1170,6 +1266,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetBooleanMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1183,6 +1282,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetListAttribute(terraformAttribute *str
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1196,6 +1298,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetNumberAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1209,6 +1314,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetNumberListAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1222,6 +1330,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetNumberMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1235,6 +1346,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetStringAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1248,6 +1362,9 @@ func (c *jsiiProxy_CertAuthBackendRole) GetStringMapAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1261,6 +1378,9 @@ func (c *jsiiProxy_CertAuthBackendRole) InterpolationForAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_CertAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

@@ -1,0 +1,128 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetAllowedRolesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetConnectionUrlParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetDataParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetMaxConnectionLifetimeParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetMaxIdleConnectionsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetMaxOpenConnectionsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPluginNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetUsernameTemplateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetVerifyConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func validateNewDatabaseSecretsMountMysqlRdsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+	return nil
+}
+

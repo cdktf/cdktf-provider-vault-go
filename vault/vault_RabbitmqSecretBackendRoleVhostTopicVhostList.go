@@ -111,6 +111,9 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) WrapsSet() *boo
 func NewRabbitmqSecretBackendRoleVhostTopicVhostList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RabbitmqSecretBackendRoleVhostTopicVhostList {
 	_init_.Initialize()
 
+	if err := validateNewRabbitmqSecretBackendRoleVhostTopicVhostListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewRabbitmqSecretBackendRoleVhostTopicVhostList_Override(r RabbitmqSecretBa
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) ComputeFqn() *s
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) Get(index *float64) RabbitmqSecretBackendRoleVhostTopicVhostOutputReference {
+	if err := r.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns RabbitmqSecretBackendRoleVhostTopicVhostOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) Get(index *floa
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicVhostList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

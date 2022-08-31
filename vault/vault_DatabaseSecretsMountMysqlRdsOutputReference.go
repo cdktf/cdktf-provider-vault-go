@@ -462,6 +462,9 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) VerifyConnection
 func NewDatabaseSecretsMountMysqlRdsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountMysqlRdsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountMysqlRdsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference{}
 
 	_jsii_.Create(
@@ -483,7 +486,10 @@ func NewDatabaseSecretsMountMysqlRdsOutputReference_Override(d DatabaseSecretsMo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -491,7 +497,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetAllowedRoles(
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -499,7 +508,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -507,7 +519,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -515,7 +530,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetConnectionUrl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -523,7 +541,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetData(val *map
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -531,7 +552,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -539,7 +563,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxConnection
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -547,7 +574,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxIdleConnec
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -555,7 +585,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetMaxOpenConnec
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -563,7 +596,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -571,7 +607,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetPassword(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -579,7 +618,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetPluginName(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -587,7 +629,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetRootRotationS
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -595,7 +640,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -603,7 +651,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -611,7 +662,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetUsername(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -619,7 +673,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetUsernameTempl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -641,6 +698,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ComputeFqn() *st
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -654,6 +714,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetAnyMapAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -667,6 +730,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetBooleanAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -680,6 +746,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetBooleanMapAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -693,6 +762,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetListAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -706,6 +778,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -719,6 +794,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberListAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -732,6 +810,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetNumberMapAttr
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -745,6 +826,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetStringAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -771,6 +855,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) InterpolationAsL
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -880,6 +967,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetVerifyConne
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

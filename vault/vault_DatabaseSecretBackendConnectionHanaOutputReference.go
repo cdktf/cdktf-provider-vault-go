@@ -319,6 +319,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) UsernameI
 func NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionHanaOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionHanaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference{}
 
 	_jsii_.Create(
@@ -340,7 +343,10 @@ func NewDatabaseSecretBackendConnectionHanaOutputReference_Override(d DatabaseSe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -348,7 +354,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -356,7 +365,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -364,7 +376,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetConnec
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetDisableEscaping(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetDisableEscaping(val interface{}) {
+	if err := j.validateSetDisableEscapingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableEscaping",
@@ -372,7 +387,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetDisabl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionHana) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionHana) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -380,7 +398,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -388,7 +409,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxCon
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -396,7 +420,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxIdl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -404,7 +431,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetMaxOpe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -412,7 +442,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetPasswo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -420,7 +453,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -428,7 +464,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -450,6 +489,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) ComputeFq
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -463,6 +505,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetAnyMap
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetBoolea
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -502,6 +553,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetListAt
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -515,6 +569,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -528,6 +585,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -541,6 +601,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetNumber
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -554,6 +617,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetString
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -580,6 +646,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Interpola
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -649,6 +718,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) ResetUser
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

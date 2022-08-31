@@ -505,6 +505,9 @@ func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApiInput() interface{} {
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
+	if err := validateNewAzureSecretBackendParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureSecretBackend{}
 
 	_jsii_.Create(
@@ -527,7 +530,10 @@ func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetClientId(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetClientId(val *string) {
+	if err := j.validateSetClientIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientId",
@@ -535,7 +541,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetClientSecret(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetClientSecret(val *string) {
+	if err := j.validateSetClientSecretParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientSecret",
@@ -543,7 +552,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetClientSecret(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetConnection(val interface{}) {
+func (j *jsiiProxy_AzureSecretBackend)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -551,7 +563,7 @@ func (j *jsiiProxy_AzureSecretBackend) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetCount(val *float64) {
+func (j *jsiiProxy_AzureSecretBackend)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -559,7 +571,7 @@ func (j *jsiiProxy_AzureSecretBackend) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AzureSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -567,7 +579,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetDescription(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -575,7 +590,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetEnvironment(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetEnvironment(val *string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environment",
@@ -583,7 +601,7 @@ func (j *jsiiProxy_AzureSecretBackend) SetEnvironment(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -591,7 +609,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetId(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -599,7 +620,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -607,7 +631,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetNamespace(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -615,7 +642,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetPath(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -623,7 +653,7 @@ func (j *jsiiProxy_AzureSecretBackend) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureSecretBackend)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -631,7 +661,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AzureSecretBackend)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -639,7 +672,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetSubscriptionId(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subscriptionId",
@@ -647,7 +683,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetSubscriptionId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetTenantId(val *string) {
+func (j *jsiiProxy_AzureSecretBackend)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -655,7 +694,10 @@ func (j *jsiiProxy_AzureSecretBackend) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackend) SetUseMicrosoftGraphApi(val interface{}) {
+func (j *jsiiProxy_AzureSecretBackend)SetUseMicrosoftGraphApi(val interface{}) {
+	if err := j.validateSetUseMicrosoftGraphApiParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useMicrosoftGraphApi",
@@ -683,6 +725,9 @@ func (j *jsiiProxy_AzureSecretBackend) SetUseMicrosoftGraphApi(val interface{}) 
 func AzureSecretBackend_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAzureSecretBackend_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -707,6 +752,9 @@ func AzureSecretBackend_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AzureSecretBackend) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -715,6 +763,9 @@ func (a *jsiiProxy_AzureSecretBackend) AddOverride(path *string, value interface
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -728,6 +779,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -741,6 +795,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -754,6 +811,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -767,6 +827,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetListAttribute(terraformAttribute *stri
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -780,6 +843,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetNumberAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -793,6 +859,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetNumberListAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -806,6 +875,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -819,6 +891,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetStringAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureSecretBackend) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -832,6 +907,9 @@ func (a *jsiiProxy_AzureSecretBackend) GetStringMapAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AzureSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -845,6 +923,9 @@ func (a *jsiiProxy_AzureSecretBackend) InterpolationForAttribute(terraformAttrib
 }
 
 func (a *jsiiProxy_AzureSecretBackend) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

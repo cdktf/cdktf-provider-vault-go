@@ -1129,6 +1129,9 @@ func (j *jsiiProxy_AdSecretBackend) UseTokenGroupsInput() interface{} {
 func NewAdSecretBackend(scope constructs.Construct, id *string, config *AdSecretBackendConfig) AdSecretBackend {
 	_init_.Initialize()
 
+	if err := validateNewAdSecretBackendParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AdSecretBackend{}
 
 	_jsii_.Create(
@@ -1151,7 +1154,10 @@ func NewAdSecretBackend_Override(a AdSecretBackend, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetAnonymousGroupSearch(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetAnonymousGroupSearch(val interface{}) {
+	if err := j.validateSetAnonymousGroupSearchParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"anonymousGroupSearch",
@@ -1159,7 +1165,10 @@ func (j *jsiiProxy_AdSecretBackend) SetAnonymousGroupSearch(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetBackend(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -1167,7 +1176,10 @@ func (j *jsiiProxy_AdSecretBackend) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetBinddn(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetBinddn(val *string) {
+	if err := j.validateSetBinddnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"binddn",
@@ -1175,7 +1187,10 @@ func (j *jsiiProxy_AdSecretBackend) SetBinddn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetBindpass(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetBindpass(val *string) {
+	if err := j.validateSetBindpassParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bindpass",
@@ -1183,7 +1198,10 @@ func (j *jsiiProxy_AdSecretBackend) SetBindpass(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetCaseSensitiveNames(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetCaseSensitiveNames(val interface{}) {
+	if err := j.validateSetCaseSensitiveNamesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caseSensitiveNames",
@@ -1191,7 +1209,10 @@ func (j *jsiiProxy_AdSecretBackend) SetCaseSensitiveNames(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetCertificate(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetCertificate(val *string) {
+	if err := j.validateSetCertificateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"certificate",
@@ -1199,7 +1220,10 @@ func (j *jsiiProxy_AdSecretBackend) SetCertificate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetClientTlsCert(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetClientTlsCert(val *string) {
+	if err := j.validateSetClientTlsCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientTlsCert",
@@ -1207,7 +1231,10 @@ func (j *jsiiProxy_AdSecretBackend) SetClientTlsCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetClientTlsKey(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetClientTlsKey(val *string) {
+	if err := j.validateSetClientTlsKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientTlsKey",
@@ -1215,7 +1242,10 @@ func (j *jsiiProxy_AdSecretBackend) SetClientTlsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetConnection(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1223,7 +1253,7 @@ func (j *jsiiProxy_AdSecretBackend) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetCount(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1231,7 +1261,10 @@ func (j *jsiiProxy_AdSecretBackend) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetDefaultLeaseTtlSeconds(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetDefaultLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtlSeconds",
@@ -1239,7 +1272,10 @@ func (j *jsiiProxy_AdSecretBackend) SetDefaultLeaseTtlSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetDenyNullBind(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetDenyNullBind(val interface{}) {
+	if err := j.validateSetDenyNullBindParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"denyNullBind",
@@ -1247,7 +1283,7 @@ func (j *jsiiProxy_AdSecretBackend) SetDenyNullBind(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AdSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1255,7 +1291,10 @@ func (j *jsiiProxy_AdSecretBackend) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetDescription(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -1263,7 +1302,10 @@ func (j *jsiiProxy_AdSecretBackend) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetDiscoverdn(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetDiscoverdn(val interface{}) {
+	if err := j.validateSetDiscoverdnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"discoverdn",
@@ -1271,7 +1313,7 @@ func (j *jsiiProxy_AdSecretBackend) SetDiscoverdn(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AdSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1279,7 +1321,10 @@ func (j *jsiiProxy_AdSecretBackend) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetFormatter(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetFormatter(val *string) {
+	if err := j.validateSetFormatterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"formatter",
@@ -1287,7 +1332,10 @@ func (j *jsiiProxy_AdSecretBackend) SetFormatter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetGroupattr(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetGroupattr(val *string) {
+	if err := j.validateSetGroupattrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupattr",
@@ -1295,7 +1343,10 @@ func (j *jsiiProxy_AdSecretBackend) SetGroupattr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetGroupdn(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetGroupdn(val *string) {
+	if err := j.validateSetGroupdnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupdn",
@@ -1303,7 +1354,10 @@ func (j *jsiiProxy_AdSecretBackend) SetGroupdn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetGroupfilter(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetGroupfilter(val *string) {
+	if err := j.validateSetGroupfilterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupfilter",
@@ -1311,7 +1365,10 @@ func (j *jsiiProxy_AdSecretBackend) SetGroupfilter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetId(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1319,7 +1376,10 @@ func (j *jsiiProxy_AdSecretBackend) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetInsecureTls(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecureTls",
@@ -1327,7 +1387,10 @@ func (j *jsiiProxy_AdSecretBackend) SetInsecureTls(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetLastRotationTolerance(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetLastRotationTolerance(val *float64) {
+	if err := j.validateSetLastRotationToleranceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastRotationTolerance",
@@ -1335,7 +1398,10 @@ func (j *jsiiProxy_AdSecretBackend) SetLastRotationTolerance(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetLength(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetLength(val *float64) {
+	if err := j.validateSetLengthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"length",
@@ -1343,7 +1409,10 @@ func (j *jsiiProxy_AdSecretBackend) SetLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AdSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1351,7 +1420,10 @@ func (j *jsiiProxy_AdSecretBackend) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetLocal(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"local",
@@ -1359,7 +1431,10 @@ func (j *jsiiProxy_AdSecretBackend) SetLocal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetMaxLeaseTtlSeconds(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetMaxLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxLeaseTtlSeconds",
@@ -1367,7 +1442,10 @@ func (j *jsiiProxy_AdSecretBackend) SetMaxLeaseTtlSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetMaxTtl(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -1375,7 +1453,10 @@ func (j *jsiiProxy_AdSecretBackend) SetMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetNamespace(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -1383,7 +1464,10 @@ func (j *jsiiProxy_AdSecretBackend) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetPasswordPolicy(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetPasswordPolicy(val *string) {
+	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passwordPolicy",
@@ -1391,7 +1475,7 @@ func (j *jsiiProxy_AdSecretBackend) SetPasswordPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AdSecretBackend)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1399,7 +1483,10 @@ func (j *jsiiProxy_AdSecretBackend) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1407,7 +1494,10 @@ func (j *jsiiProxy_AdSecretBackend) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetRequestTimeout(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetRequestTimeout(val *float64) {
+	if err := j.validateSetRequestTimeoutParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requestTimeout",
@@ -1415,7 +1505,10 @@ func (j *jsiiProxy_AdSecretBackend) SetRequestTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetStarttls(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetStarttls(val interface{}) {
+	if err := j.validateSetStarttlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"starttls",
@@ -1423,7 +1516,10 @@ func (j *jsiiProxy_AdSecretBackend) SetStarttls(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetTlsMaxVersion(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetTlsMaxVersion(val *string) {
+	if err := j.validateSetTlsMaxVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsMaxVersion",
@@ -1431,7 +1527,10 @@ func (j *jsiiProxy_AdSecretBackend) SetTlsMaxVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetTlsMinVersion(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetTlsMinVersion(val *string) {
+	if err := j.validateSetTlsMinVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsMinVersion",
@@ -1439,7 +1538,10 @@ func (j *jsiiProxy_AdSecretBackend) SetTlsMinVersion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetTtl(val *float64) {
+func (j *jsiiProxy_AdSecretBackend)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -1447,7 +1549,10 @@ func (j *jsiiProxy_AdSecretBackend) SetTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUpndomain(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetUpndomain(val *string) {
+	if err := j.validateSetUpndomainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"upndomain",
@@ -1455,7 +1560,10 @@ func (j *jsiiProxy_AdSecretBackend) SetUpndomain(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUrl(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -1463,7 +1571,10 @@ func (j *jsiiProxy_AdSecretBackend) SetUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUsePre111GroupCnBehavior(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetUsePre111GroupCnBehavior(val interface{}) {
+	if err := j.validateSetUsePre111GroupCnBehaviorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usePre111GroupCnBehavior",
@@ -1471,7 +1582,10 @@ func (j *jsiiProxy_AdSecretBackend) SetUsePre111GroupCnBehavior(val interface{})
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUserattr(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetUserattr(val *string) {
+	if err := j.validateSetUserattrParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userattr",
@@ -1479,7 +1593,10 @@ func (j *jsiiProxy_AdSecretBackend) SetUserattr(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUserdn(val *string) {
+func (j *jsiiProxy_AdSecretBackend)SetUserdn(val *string) {
+	if err := j.validateSetUserdnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userdn",
@@ -1487,7 +1604,10 @@ func (j *jsiiProxy_AdSecretBackend) SetUserdn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend) SetUseTokenGroups(val interface{}) {
+func (j *jsiiProxy_AdSecretBackend)SetUseTokenGroups(val interface{}) {
+	if err := j.validateSetUseTokenGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"useTokenGroups",
@@ -1515,6 +1635,9 @@ func (j *jsiiProxy_AdSecretBackend) SetUseTokenGroups(val interface{}) {
 func AdSecretBackend_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAdSecretBackend_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1539,6 +1662,9 @@ func AdSecretBackend_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AdSecretBackend) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -1547,6 +1673,9 @@ func (a *jsiiProxy_AdSecretBackend) AddOverride(path *string, value interface{})
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1560,6 +1689,9 @@ func (a *jsiiProxy_AdSecretBackend) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1573,6 +1705,9 @@ func (a *jsiiProxy_AdSecretBackend) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1586,6 +1721,9 @@ func (a *jsiiProxy_AdSecretBackend) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1599,6 +1737,9 @@ func (a *jsiiProxy_AdSecretBackend) GetListAttribute(terraformAttribute *string)
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1612,6 +1753,9 @@ func (a *jsiiProxy_AdSecretBackend) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1625,6 +1769,9 @@ func (a *jsiiProxy_AdSecretBackend) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1638,6 +1785,9 @@ func (a *jsiiProxy_AdSecretBackend) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1651,6 +1801,9 @@ func (a *jsiiProxy_AdSecretBackend) GetStringAttribute(terraformAttribute *strin
 }
 
 func (a *jsiiProxy_AdSecretBackend) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1664,6 +1817,9 @@ func (a *jsiiProxy_AdSecretBackend) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AdSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1677,6 +1833,9 @@ func (a *jsiiProxy_AdSecretBackend) InterpolationForAttribute(terraformAttribute
 }
 
 func (a *jsiiProxy_AdSecretBackend) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

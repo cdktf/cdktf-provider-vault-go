@@ -198,6 +198,9 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) VhostInpu
 func NewRabbitmqSecretBackendRoleVhostTopicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RabbitmqSecretBackendRoleVhostTopicOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewRabbitmqSecretBackendRoleVhostTopicOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference{}
 
 	_jsii_.Create(
@@ -219,7 +222,10 @@ func NewRabbitmqSecretBackendRoleVhostTopicOutputReference_Override(r RabbitmqSe
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -227,7 +233,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -235,7 +244,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetComple
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetHost(val *string) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetHost(val *string) {
+	if err := j.validateSetHostParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"host",
@@ -243,7 +255,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetHost(v
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -251,7 +266,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetIntern
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -259,7 +277,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetTerraf
 	)
 }
 
-func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -281,6 +302,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) ComputeFq
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -294,6 +318,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetAnyMap
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -307,6 +334,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBoolea
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -320,6 +350,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetBoolea
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -333,6 +366,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetListAt
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -346,6 +382,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +398,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -372,6 +414,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetNumber
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -385,6 +430,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetString
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -411,6 +459,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Interpola
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -424,6 +475,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Interpola
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) PutVhost(value interface{}) {
+	if err := r.validatePutVhostParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"putVhost",
@@ -440,6 +494,9 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) ResetVhos
 }
 
 func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

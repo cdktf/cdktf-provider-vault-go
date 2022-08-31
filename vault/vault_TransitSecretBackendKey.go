@@ -678,6 +678,9 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
+	if err := validateNewTransitSecretBackendKeyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TransitSecretBackendKey{}
 
 	_jsii_.Create(
@@ -700,7 +703,10 @@ func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constr
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetAllowPlaintextBackup(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetAllowPlaintextBackup(val interface{}) {
+	if err := j.validateSetAllowPlaintextBackupParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowPlaintextBackup",
@@ -708,7 +714,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetAllowPlaintextBackup(val interfac
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetAutoRotateInterval(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetAutoRotateInterval(val *float64) {
+	if err := j.validateSetAutoRotateIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoRotateInterval",
@@ -716,7 +725,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetAutoRotateInterval(val *float64) 
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetAutoRotatePeriod(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetAutoRotatePeriod(val *float64) {
+	if err := j.validateSetAutoRotatePeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"autoRotatePeriod",
@@ -724,7 +736,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetAutoRotatePeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetBackend(val *string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -732,7 +747,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetConnection(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -740,7 +758,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetConvergentEncryption(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetConvergentEncryption(val interface{}) {
+	if err := j.validateSetConvergentEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"convergentEncryption",
@@ -748,7 +769,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetConvergentEncryption(val interfac
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetCount(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -756,7 +777,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetDeletionAllowed(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetDeletionAllowed(val interface{}) {
+	if err := j.validateSetDeletionAllowedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deletionAllowed",
@@ -764,7 +788,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetDeletionAllowed(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -772,7 +796,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetDerived(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetDerived(val interface{}) {
+	if err := j.validateSetDerivedParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"derived",
@@ -780,7 +807,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetDerived(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetExportable(val interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetExportable(val interface{}) {
+	if err := j.validateSetExportableParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"exportable",
@@ -788,7 +818,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetExportable(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -796,7 +826,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetId(val *string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -804,7 +837,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -812,7 +848,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetMinDecryptionVersion(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetMinDecryptionVersion(val *float64) {
+	if err := j.validateSetMinDecryptionVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minDecryptionVersion",
@@ -820,7 +859,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetMinDecryptionVersion(val *float64
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetMinEncryptionVersion(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetMinEncryptionVersion(val *float64) {
+	if err := j.validateSetMinEncryptionVersionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minEncryptionVersion",
@@ -828,7 +870,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetMinEncryptionVersion(val *float64
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetName(val *string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -836,7 +881,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetNamespace(val *string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -844,7 +892,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -852,7 +900,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -860,7 +911,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) SetType(val *string) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -888,6 +942,9 @@ func (j *jsiiProxy_TransitSecretBackendKey) SetType(val *string) {
 func TransitSecretBackendKey_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTransitSecretBackendKey_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -912,6 +969,9 @@ func TransitSecretBackendKey_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -920,6 +980,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) AddOverride(path *string, value inte
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -933,6 +996,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetAnyMapAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -946,6 +1012,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -959,6 +1028,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetBooleanMapAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -972,6 +1044,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetListAttribute(terraformAttribute 
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -985,6 +1060,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetNumberAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -998,6 +1076,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetNumberListAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1011,6 +1092,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetNumberMapAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1024,6 +1108,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetStringAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1037,6 +1124,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) GetStringMapAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1050,6 +1140,9 @@ func (t *jsiiProxy_TransitSecretBackendKey) InterpolationForAttribute(terraformA
 }
 
 func (t *jsiiProxy_TransitSecretBackendKey) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

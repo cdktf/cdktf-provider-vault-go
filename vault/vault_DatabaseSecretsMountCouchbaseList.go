@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) WrapsSet() *bool {
 func NewDatabaseSecretsMountCouchbaseList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCouchbaseList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountCouchbaseListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountCouchbaseList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountCouchbaseList_Override(d DatabaseSecretsMountCouchba
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountCouchbaseList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Get(index *float64) DatabaseSecretsMountCouchbaseOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountCouchbaseOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Get(index *float64) Databa
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountCouchbaseList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -343,6 +343,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) Usern
 func NewDatabaseSecretBackendConnectionRedshiftOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionRedshiftOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionRedshiftOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference{}
 
 	_jsii_.Create(
@@ -364,7 +367,10 @@ func NewDatabaseSecretBackendConnectionRedshiftOutputReference_Override(d Databa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -372,7 +378,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -380,7 +389,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -388,7 +400,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetCo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetDisableEscaping(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetDisableEscaping(val interface{}) {
+	if err := j.validateSetDisableEscapingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableEscaping",
@@ -396,7 +411,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetDi
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionRedshift) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionRedshift) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -404,7 +422,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetIn
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -412,7 +433,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -420,7 +444,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -428,7 +455,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetMa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -436,7 +466,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetPa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -444,7 +477,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -452,7 +488,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetTe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -460,7 +499,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetUs
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -482,6 +524,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) Compu
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +540,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetAn
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +556,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetBo
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +572,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetBo
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +588,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetLi
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +604,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNu
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +620,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNu
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +636,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetNu
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +652,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetSt
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +681,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) Inter
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -689,6 +761,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) Reset
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

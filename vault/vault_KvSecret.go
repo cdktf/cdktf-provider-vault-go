@@ -372,6 +372,9 @@ func (j *jsiiProxy_KvSecret) TerraformResourceType() *string {
 func NewKvSecret(scope constructs.Construct, id *string, config *KvSecretConfig) KvSecret {
 	_init_.Initialize()
 
+	if err := validateNewKvSecretParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KvSecret{}
 
 	_jsii_.Create(
@@ -394,7 +397,10 @@ func NewKvSecret_Override(k KvSecret, scope constructs.Construct, id *string, co
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetConnection(val interface{}) {
+func (j *jsiiProxy_KvSecret)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -402,7 +408,7 @@ func (j *jsiiProxy_KvSecret) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetCount(val *float64) {
+func (j *jsiiProxy_KvSecret)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -410,7 +416,10 @@ func (j *jsiiProxy_KvSecret) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetDataJson(val *string) {
+func (j *jsiiProxy_KvSecret)SetDataJson(val *string) {
+	if err := j.validateSetDataJsonParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"dataJson",
@@ -418,7 +427,7 @@ func (j *jsiiProxy_KvSecret) SetDataJson(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KvSecret)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -426,7 +435,7 @@ func (j *jsiiProxy_KvSecret) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KvSecret)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -434,7 +443,10 @@ func (j *jsiiProxy_KvSecret) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetId(val *string) {
+func (j *jsiiProxy_KvSecret)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -442,7 +454,10 @@ func (j *jsiiProxy_KvSecret) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KvSecret)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -450,7 +465,10 @@ func (j *jsiiProxy_KvSecret) SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetNamespace(val *string) {
+func (j *jsiiProxy_KvSecret)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -458,7 +476,10 @@ func (j *jsiiProxy_KvSecret) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetPath(val *string) {
+func (j *jsiiProxy_KvSecret)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -466,7 +487,7 @@ func (j *jsiiProxy_KvSecret) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KvSecret)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -474,7 +495,10 @@ func (j *jsiiProxy_KvSecret) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KvSecret) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KvSecret)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -502,6 +526,9 @@ func (j *jsiiProxy_KvSecret) SetProvisioners(val *[]interface{}) {
 func KvSecret_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateKvSecret_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -526,6 +553,9 @@ func KvSecret_TfResourceType() *string {
 }
 
 func (k *jsiiProxy_KvSecret) AddOverride(path *string, value interface{}) {
+	if err := k.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
@@ -534,6 +564,9 @@ func (k *jsiiProxy_KvSecret) AddOverride(path *string, value interface{}) {
 }
 
 func (k *jsiiProxy_KvSecret) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -547,6 +580,9 @@ func (k *jsiiProxy_KvSecret) GetAnyMapAttribute(terraformAttribute *string) *map
 }
 
 func (k *jsiiProxy_KvSecret) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -560,6 +596,9 @@ func (k *jsiiProxy_KvSecret) GetBooleanAttribute(terraformAttribute *string) cdk
 }
 
 func (k *jsiiProxy_KvSecret) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -573,6 +612,9 @@ func (k *jsiiProxy_KvSecret) GetBooleanMapAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_KvSecret) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -586,6 +628,9 @@ func (k *jsiiProxy_KvSecret) GetListAttribute(terraformAttribute *string) *[]*st
 }
 
 func (k *jsiiProxy_KvSecret) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -599,6 +644,9 @@ func (k *jsiiProxy_KvSecret) GetNumberAttribute(terraformAttribute *string) *flo
 }
 
 func (k *jsiiProxy_KvSecret) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -612,6 +660,9 @@ func (k *jsiiProxy_KvSecret) GetNumberListAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_KvSecret) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -625,6 +676,9 @@ func (k *jsiiProxy_KvSecret) GetNumberMapAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_KvSecret) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -638,6 +692,9 @@ func (k *jsiiProxy_KvSecret) GetStringAttribute(terraformAttribute *string) *str
 }
 
 func (k *jsiiProxy_KvSecret) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -651,6 +708,9 @@ func (k *jsiiProxy_KvSecret) GetStringMapAttribute(terraformAttribute *string) *
 }
 
 func (k *jsiiProxy_KvSecret) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -664,6 +724,9 @@ func (k *jsiiProxy_KvSecret) InterpolationForAttribute(terraformAttribute *strin
 }
 
 func (k *jsiiProxy_KvSecret) OverrideLogicalId(newLogicalId *string) {
+	if err := k.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",

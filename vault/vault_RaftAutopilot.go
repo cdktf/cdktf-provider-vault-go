@@ -459,6 +459,9 @@ func (j *jsiiProxy_RaftAutopilot) TerraformResourceType() *string {
 func NewRaftAutopilot(scope constructs.Construct, id *string, config *RaftAutopilotConfig) RaftAutopilot {
 	_init_.Initialize()
 
+	if err := validateNewRaftAutopilotParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RaftAutopilot{}
 
 	_jsii_.Create(
@@ -481,7 +484,10 @@ func NewRaftAutopilot_Override(r RaftAutopilot, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetCleanupDeadServers(val interface{}) {
+func (j *jsiiProxy_RaftAutopilot)SetCleanupDeadServers(val interface{}) {
+	if err := j.validateSetCleanupDeadServersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cleanupDeadServers",
@@ -489,7 +495,10 @@ func (j *jsiiProxy_RaftAutopilot) SetCleanupDeadServers(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetConnection(val interface{}) {
+func (j *jsiiProxy_RaftAutopilot)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -497,7 +506,7 @@ func (j *jsiiProxy_RaftAutopilot) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetCount(val *float64) {
+func (j *jsiiProxy_RaftAutopilot)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -505,7 +514,10 @@ func (j *jsiiProxy_RaftAutopilot) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetDeadServerLastContactThreshold(val *string) {
+func (j *jsiiProxy_RaftAutopilot)SetDeadServerLastContactThreshold(val *string) {
+	if err := j.validateSetDeadServerLastContactThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"deadServerLastContactThreshold",
@@ -513,7 +525,7 @@ func (j *jsiiProxy_RaftAutopilot) SetDeadServerLastContactThreshold(val *string)
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RaftAutopilot)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -521,7 +533,7 @@ func (j *jsiiProxy_RaftAutopilot) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RaftAutopilot)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -529,7 +541,10 @@ func (j *jsiiProxy_RaftAutopilot) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetId(val *string) {
+func (j *jsiiProxy_RaftAutopilot)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -537,7 +552,10 @@ func (j *jsiiProxy_RaftAutopilot) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetLastContactThreshold(val *string) {
+func (j *jsiiProxy_RaftAutopilot)SetLastContactThreshold(val *string) {
+	if err := j.validateSetLastContactThresholdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lastContactThreshold",
@@ -545,7 +563,10 @@ func (j *jsiiProxy_RaftAutopilot) SetLastContactThreshold(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RaftAutopilot)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -553,7 +574,10 @@ func (j *jsiiProxy_RaftAutopilot) SetLifecycle(val *cdktf.TerraformResourceLifec
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetMaxTrailingLogs(val *float64) {
+func (j *jsiiProxy_RaftAutopilot)SetMaxTrailingLogs(val *float64) {
+	if err := j.validateSetMaxTrailingLogsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTrailingLogs",
@@ -561,7 +585,10 @@ func (j *jsiiProxy_RaftAutopilot) SetMaxTrailingLogs(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetMinQuorum(val *float64) {
+func (j *jsiiProxy_RaftAutopilot)SetMinQuorum(val *float64) {
+	if err := j.validateSetMinQuorumParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minQuorum",
@@ -569,7 +596,10 @@ func (j *jsiiProxy_RaftAutopilot) SetMinQuorum(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetNamespace(val *string) {
+func (j *jsiiProxy_RaftAutopilot)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -577,7 +607,7 @@ func (j *jsiiProxy_RaftAutopilot) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RaftAutopilot)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -585,7 +615,10 @@ func (j *jsiiProxy_RaftAutopilot) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RaftAutopilot)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -593,7 +626,10 @@ func (j *jsiiProxy_RaftAutopilot) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot) SetServerStabilizationTime(val *string) {
+func (j *jsiiProxy_RaftAutopilot)SetServerStabilizationTime(val *string) {
+	if err := j.validateSetServerStabilizationTimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serverStabilizationTime",
@@ -621,6 +657,9 @@ func (j *jsiiProxy_RaftAutopilot) SetServerStabilizationTime(val *string) {
 func RaftAutopilot_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRaftAutopilot_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -645,6 +684,9 @@ func RaftAutopilot_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RaftAutopilot) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -653,6 +695,9 @@ func (r *jsiiProxy_RaftAutopilot) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -666,6 +711,9 @@ func (r *jsiiProxy_RaftAutopilot) GetAnyMapAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -679,6 +727,9 @@ func (r *jsiiProxy_RaftAutopilot) GetBooleanAttribute(terraformAttribute *string
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -692,6 +743,9 @@ func (r *jsiiProxy_RaftAutopilot) GetBooleanMapAttribute(terraformAttribute *str
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -705,6 +759,9 @@ func (r *jsiiProxy_RaftAutopilot) GetListAttribute(terraformAttribute *string) *
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -718,6 +775,9 @@ func (r *jsiiProxy_RaftAutopilot) GetNumberAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -731,6 +791,9 @@ func (r *jsiiProxy_RaftAutopilot) GetNumberListAttribute(terraformAttribute *str
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -744,6 +807,9 @@ func (r *jsiiProxy_RaftAutopilot) GetNumberMapAttribute(terraformAttribute *stri
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -757,6 +823,9 @@ func (r *jsiiProxy_RaftAutopilot) GetStringAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RaftAutopilot) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -770,6 +839,9 @@ func (r *jsiiProxy_RaftAutopilot) GetStringMapAttribute(terraformAttribute *stri
 }
 
 func (r *jsiiProxy_RaftAutopilot) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -783,6 +855,9 @@ func (r *jsiiProxy_RaftAutopilot) InterpolationForAttribute(terraformAttribute *
 }
 
 func (r *jsiiProxy_RaftAutopilot) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",

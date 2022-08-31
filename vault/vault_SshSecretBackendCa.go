@@ -411,6 +411,9 @@ func (j *jsiiProxy_SshSecretBackendCa) TerraformResourceType() *string {
 func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) SshSecretBackendCa {
 	_init_.Initialize()
 
+	if err := validateNewSshSecretBackendCaParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SshSecretBackendCa{}
 
 	_jsii_.Create(
@@ -433,7 +436,10 @@ func NewSshSecretBackendCa_Override(s SshSecretBackendCa, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetBackend(val *string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -441,7 +447,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetConnection(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendCa)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -449,7 +458,7 @@ func (j *jsiiProxy_SshSecretBackendCa) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetCount(val *float64) {
+func (j *jsiiProxy_SshSecretBackendCa)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -457,7 +466,7 @@ func (j *jsiiProxy_SshSecretBackendCa) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -465,7 +474,7 @@ func (j *jsiiProxy_SshSecretBackendCa) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SshSecretBackendCa)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -473,7 +482,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetGenerateSigningKey(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendCa)SetGenerateSigningKey(val interface{}) {
+	if err := j.validateSetGenerateSigningKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"generateSigningKey",
@@ -481,7 +493,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetGenerateSigningKey(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetId(val *string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -489,7 +504,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SshSecretBackendCa)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -497,7 +515,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetNamespace(val *string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -505,7 +526,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetPrivateKey(val *string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -513,7 +537,7 @@ func (j *jsiiProxy_SshSecretBackendCa) SetPrivateKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SshSecretBackendCa)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -521,7 +545,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SshSecretBackendCa)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -529,7 +556,10 @@ func (j *jsiiProxy_SshSecretBackendCa) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendCa) SetPublicKey(val *string) {
+func (j *jsiiProxy_SshSecretBackendCa)SetPublicKey(val *string) {
+	if err := j.validateSetPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicKey",
@@ -557,6 +587,9 @@ func (j *jsiiProxy_SshSecretBackendCa) SetPublicKey(val *string) {
 func SshSecretBackendCa_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSshSecretBackendCa_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -581,6 +614,9 @@ func SshSecretBackendCa_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -589,6 +625,9 @@ func (s *jsiiProxy_SshSecretBackendCa) AddOverride(path *string, value interface
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -602,6 +641,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -615,6 +657,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -628,6 +673,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -641,6 +689,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetListAttribute(terraformAttribute *stri
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -654,6 +705,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetNumberAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -667,6 +721,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetNumberListAttribute(terraformAttribute
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -680,6 +737,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -693,6 +753,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetStringAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -706,6 +769,9 @@ func (s *jsiiProxy_SshSecretBackendCa) GetStringMapAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -719,6 +785,9 @@ func (s *jsiiProxy_SshSecretBackendCa) InterpolationForAttribute(terraformAttrib
 }
 
 func (s *jsiiProxy_SshSecretBackendCa) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",

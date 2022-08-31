@@ -197,6 +197,9 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) TerraformResource() c
 func NewGcpSecretRolesetBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GcpSecretRolesetBindingOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewGcpSecretRolesetBindingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GcpSecretRolesetBindingOutputReference{}
 
 	_jsii_.Create(
@@ -218,7 +221,10 @@ func NewGcpSecretRolesetBindingOutputReference_Override(g GcpSecretRolesetBindin
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -226,7 +232,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetComplexObjectIndex
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -234,7 +243,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetComplexObjectIsFro
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -242,7 +254,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetInternalValue(val 
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetResource(val *string) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetResource(val *string) {
+	if err := j.validateSetResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"resource",
@@ -250,7 +265,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetResource(val *stri
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetRoles(val *[]*string) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetRoles(val *[]*string) {
+	if err := j.validateSetRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roles",
@@ -258,7 +276,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetRoles(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -266,7 +287,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GcpSecretRolesetBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -288,6 +312,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) ComputeFqn() *string 
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -301,6 +328,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetAnyMapAttribute(te
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -314,6 +344,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanAttribute(t
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -327,6 +360,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetBooleanMapAttribut
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -340,6 +376,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetListAttribute(terr
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -353,6 +392,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberAttribute(te
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -366,6 +408,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberListAttribut
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -379,6 +424,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetNumberMapAttribute
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -392,6 +440,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetStringAttribute(te
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -418,6 +469,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationAsList()
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -431,6 +485,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) InterpolationForAttri
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

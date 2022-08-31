@@ -384,6 +384,9 @@ func (j *jsiiProxy_RgpPolicy) TerraformResourceType() *string {
 func NewRgpPolicy(scope constructs.Construct, id *string, config *RgpPolicyConfig) RgpPolicy {
 	_init_.Initialize()
 
+	if err := validateNewRgpPolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RgpPolicy{}
 
 	_jsii_.Create(
@@ -406,7 +409,10 @@ func NewRgpPolicy_Override(r RgpPolicy, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetConnection(val interface{}) {
+func (j *jsiiProxy_RgpPolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -414,7 +420,7 @@ func (j *jsiiProxy_RgpPolicy) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetCount(val *float64) {
+func (j *jsiiProxy_RgpPolicy)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -422,7 +428,7 @@ func (j *jsiiProxy_RgpPolicy) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RgpPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -430,7 +436,10 @@ func (j *jsiiProxy_RgpPolicy) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetEnforcementLevel(val *string) {
+func (j *jsiiProxy_RgpPolicy)SetEnforcementLevel(val *string) {
+	if err := j.validateSetEnforcementLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforcementLevel",
@@ -438,7 +447,7 @@ func (j *jsiiProxy_RgpPolicy) SetEnforcementLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RgpPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -446,7 +455,10 @@ func (j *jsiiProxy_RgpPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetId(val *string) {
+func (j *jsiiProxy_RgpPolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -454,7 +466,10 @@ func (j *jsiiProxy_RgpPolicy) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RgpPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -462,7 +477,10 @@ func (j *jsiiProxy_RgpPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetName(val *string) {
+func (j *jsiiProxy_RgpPolicy)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -470,7 +488,10 @@ func (j *jsiiProxy_RgpPolicy) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetNamespace(val *string) {
+func (j *jsiiProxy_RgpPolicy)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -478,7 +499,10 @@ func (j *jsiiProxy_RgpPolicy) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetPolicy(val *string) {
+func (j *jsiiProxy_RgpPolicy)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policy",
@@ -486,7 +510,7 @@ func (j *jsiiProxy_RgpPolicy) SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RgpPolicy)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -494,7 +518,10 @@ func (j *jsiiProxy_RgpPolicy) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_RgpPolicy) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RgpPolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -522,6 +549,9 @@ func (j *jsiiProxy_RgpPolicy) SetProvisioners(val *[]interface{}) {
 func RgpPolicy_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRgpPolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -546,6 +576,9 @@ func RgpPolicy_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RgpPolicy) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -554,6 +587,9 @@ func (r *jsiiProxy_RgpPolicy) AddOverride(path *string, value interface{}) {
 }
 
 func (r *jsiiProxy_RgpPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -567,6 +603,9 @@ func (r *jsiiProxy_RgpPolicy) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (r *jsiiProxy_RgpPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -580,6 +619,9 @@ func (r *jsiiProxy_RgpPolicy) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (r *jsiiProxy_RgpPolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -593,6 +635,9 @@ func (r *jsiiProxy_RgpPolicy) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RgpPolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -606,6 +651,9 @@ func (r *jsiiProxy_RgpPolicy) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (r *jsiiProxy_RgpPolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -619,6 +667,9 @@ func (r *jsiiProxy_RgpPolicy) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (r *jsiiProxy_RgpPolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -632,6 +683,9 @@ func (r *jsiiProxy_RgpPolicy) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (r *jsiiProxy_RgpPolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -645,6 +699,9 @@ func (r *jsiiProxy_RgpPolicy) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RgpPolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -658,6 +715,9 @@ func (r *jsiiProxy_RgpPolicy) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (r *jsiiProxy_RgpPolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -671,6 +731,9 @@ func (r *jsiiProxy_RgpPolicy) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (r *jsiiProxy_RgpPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -684,6 +747,9 @@ func (r *jsiiProxy_RgpPolicy) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (r *jsiiProxy_RgpPolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",

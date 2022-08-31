@@ -343,6 +343,9 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) TokenTypeInput() *strin
 func NewGithubAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GithubAuthBackendTuneOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewGithubAuthBackendTuneOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GithubAuthBackendTuneOutputReference{}
 
 	_jsii_.Create(
@@ -364,7 +367,10 @@ func NewGithubAuthBackendTuneOutputReference_Override(g GithubAuthBackendTuneOut
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAllowedResponseHeaders(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedResponseHeaders",
@@ -372,7 +378,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAllowedResponseHeade
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAuditNonHmacRequestKeys(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"auditNonHmacRequestKeys",
@@ -380,7 +389,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAuditNonHmacRequestK
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAuditNonHmacResponseKeys(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"auditNonHmacResponseKeys",
@@ -388,7 +400,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetAuditNonHmacResponse
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -396,7 +411,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetComplexObjectIndex(v
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -404,7 +422,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetComplexObjectIsFromS
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetDefaultLeaseTtl(val *string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetDefaultLeaseTtl(val *string) {
+	if err := j.validateSetDefaultLeaseTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtl",
@@ -412,7 +433,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetDefaultLeaseTtl(val 
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -420,7 +444,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetListingVisibility(val *string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"listingVisibility",
@@ -428,7 +455,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetListingVisibility(va
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetMaxLeaseTtl(val *string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetMaxLeaseTtl(val *string) {
+	if err := j.validateSetMaxLeaseTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxLeaseTtl",
@@ -436,7 +466,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetMaxLeaseTtl(val *str
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetPassthroughRequestHeaders(val *[]*string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passthroughRequestHeaders",
@@ -444,7 +477,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetPassthroughRequestHe
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -452,7 +488,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -460,7 +499,10 @@ func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_GithubAuthBackendTuneOutputReference) SetTokenType(val *string) {
+func (j *jsiiProxy_GithubAuthBackendTuneOutputReference)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -482,6 +524,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +540,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetAnyMapAttribute(terr
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +556,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetBooleanAttribute(ter
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +572,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetBooleanMapAttribute(
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +588,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetListAttribute(terraf
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +604,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberAttribute(terr
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +620,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberListAttribute(
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +636,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetNumberMapAttribute(t
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +652,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetStringAttribute(terr
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +681,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) InterpolationAsList() c
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -689,6 +761,9 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) ResetTokenType() {
 }
 
 func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

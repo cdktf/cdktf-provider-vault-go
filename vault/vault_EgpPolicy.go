@@ -407,6 +407,9 @@ func (j *jsiiProxy_EgpPolicy) TerraformResourceType() *string {
 func NewEgpPolicy(scope constructs.Construct, id *string, config *EgpPolicyConfig) EgpPolicy {
 	_init_.Initialize()
 
+	if err := validateNewEgpPolicyParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_EgpPolicy{}
 
 	_jsii_.Create(
@@ -429,7 +432,10 @@ func NewEgpPolicy_Override(e EgpPolicy, scope constructs.Construct, id *string, 
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetConnection(val interface{}) {
+func (j *jsiiProxy_EgpPolicy)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -437,7 +443,7 @@ func (j *jsiiProxy_EgpPolicy) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetCount(val *float64) {
+func (j *jsiiProxy_EgpPolicy)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -445,7 +451,7 @@ func (j *jsiiProxy_EgpPolicy) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_EgpPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -453,7 +459,10 @@ func (j *jsiiProxy_EgpPolicy) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetEnforcementLevel(val *string) {
+func (j *jsiiProxy_EgpPolicy)SetEnforcementLevel(val *string) {
+	if err := j.validateSetEnforcementLevelParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"enforcementLevel",
@@ -461,7 +470,7 @@ func (j *jsiiProxy_EgpPolicy) SetEnforcementLevel(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_EgpPolicy)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -469,7 +478,10 @@ func (j *jsiiProxy_EgpPolicy) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetId(val *string) {
+func (j *jsiiProxy_EgpPolicy)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -477,7 +489,10 @@ func (j *jsiiProxy_EgpPolicy) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_EgpPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -485,7 +500,10 @@ func (j *jsiiProxy_EgpPolicy) SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetName(val *string) {
+func (j *jsiiProxy_EgpPolicy)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -493,7 +511,10 @@ func (j *jsiiProxy_EgpPolicy) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetNamespace(val *string) {
+func (j *jsiiProxy_EgpPolicy)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -501,7 +522,10 @@ func (j *jsiiProxy_EgpPolicy) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetPaths(val *[]*string) {
+func (j *jsiiProxy_EgpPolicy)SetPaths(val *[]*string) {
+	if err := j.validateSetPathsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"paths",
@@ -509,7 +533,10 @@ func (j *jsiiProxy_EgpPolicy) SetPaths(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetPolicy(val *string) {
+func (j *jsiiProxy_EgpPolicy)SetPolicy(val *string) {
+	if err := j.validateSetPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policy",
@@ -517,7 +544,7 @@ func (j *jsiiProxy_EgpPolicy) SetPolicy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_EgpPolicy)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -525,7 +552,10 @@ func (j *jsiiProxy_EgpPolicy) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_EgpPolicy) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_EgpPolicy)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -553,6 +583,9 @@ func (j *jsiiProxy_EgpPolicy) SetProvisioners(val *[]interface{}) {
 func EgpPolicy_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateEgpPolicy_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -577,6 +610,9 @@ func EgpPolicy_TfResourceType() *string {
 }
 
 func (e *jsiiProxy_EgpPolicy) AddOverride(path *string, value interface{}) {
+	if err := e.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"addOverride",
@@ -585,6 +621,9 @@ func (e *jsiiProxy_EgpPolicy) AddOverride(path *string, value interface{}) {
 }
 
 func (e *jsiiProxy_EgpPolicy) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := e.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -598,6 +637,9 @@ func (e *jsiiProxy_EgpPolicy) GetAnyMapAttribute(terraformAttribute *string) *ma
 }
 
 func (e *jsiiProxy_EgpPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -611,6 +653,9 @@ func (e *jsiiProxy_EgpPolicy) GetBooleanAttribute(terraformAttribute *string) cd
 }
 
 func (e *jsiiProxy_EgpPolicy) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := e.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -624,6 +669,9 @@ func (e *jsiiProxy_EgpPolicy) GetBooleanMapAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EgpPolicy) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := e.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -637,6 +685,9 @@ func (e *jsiiProxy_EgpPolicy) GetListAttribute(terraformAttribute *string) *[]*s
 }
 
 func (e *jsiiProxy_EgpPolicy) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := e.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -650,6 +701,9 @@ func (e *jsiiProxy_EgpPolicy) GetNumberAttribute(terraformAttribute *string) *fl
 }
 
 func (e *jsiiProxy_EgpPolicy) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := e.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -663,6 +717,9 @@ func (e *jsiiProxy_EgpPolicy) GetNumberListAttribute(terraformAttribute *string)
 }
 
 func (e *jsiiProxy_EgpPolicy) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := e.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -676,6 +733,9 @@ func (e *jsiiProxy_EgpPolicy) GetNumberMapAttribute(terraformAttribute *string) 
 }
 
 func (e *jsiiProxy_EgpPolicy) GetStringAttribute(terraformAttribute *string) *string {
+	if err := e.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -689,6 +749,9 @@ func (e *jsiiProxy_EgpPolicy) GetStringAttribute(terraformAttribute *string) *st
 }
 
 func (e *jsiiProxy_EgpPolicy) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := e.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -702,6 +765,9 @@ func (e *jsiiProxy_EgpPolicy) GetStringMapAttribute(terraformAttribute *string) 
 }
 
 func (e *jsiiProxy_EgpPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -715,6 +781,9 @@ func (e *jsiiProxy_EgpPolicy) InterpolationForAttribute(terraformAttribute *stri
 }
 
 func (e *jsiiProxy_EgpPolicy) OverrideLogicalId(newLogicalId *string) {
+	if err := e.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
 		"overrideLogicalId",

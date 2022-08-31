@@ -462,6 +462,9 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) VerifyConnectionIn
 func NewDatabaseSecretsMountOracleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountOracleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountOracleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountOracleOutputReference{}
 
 	_jsii_.Create(
@@ -483,7 +486,10 @@ func NewDatabaseSecretsMountOracleOutputReference_Override(d DatabaseSecretsMoun
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -491,7 +497,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetAllowedRoles(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -499,7 +508,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetComplexObjectIn
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -507,7 +519,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetComplexObjectIs
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -515,7 +530,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetConnectionUrl(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -523,7 +541,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetData(val *map[s
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -531,7 +552,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetInternalValue(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -539,7 +563,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxConnectionLi
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -547,7 +574,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxIdleConnecti
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -555,7 +585,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetMaxOpenConnecti
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -563,7 +596,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetName(val *strin
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -571,7 +607,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetPassword(val *s
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -579,7 +618,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetPluginName(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -587,7 +629,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetRootRotationSta
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -595,7 +640,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -603,7 +651,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetTerraformResour
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -611,7 +662,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetUsername(val *s
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -619,7 +673,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetUsernameTemplat
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -641,6 +698,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ComputeFqn() *stri
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -654,6 +714,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetAnyMapAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -667,6 +730,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetBooleanAttribut
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -680,6 +746,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetBooleanMapAttri
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -693,6 +762,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetListAttribute(t
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -706,6 +778,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -719,6 +794,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberListAttri
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -732,6 +810,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetNumberMapAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -745,6 +826,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetStringAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -771,6 +855,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) InterpolationAsLis
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -880,6 +967,9 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetVerifyConnect
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) WrapsSet() *boo
 func NewSshSecretBackendRoleAllowedUserKeyConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SshSecretBackendRoleAllowedUserKeyConfigList {
 	_init_.Initialize()
 
+	if err := validateNewSshSecretBackendRoleAllowedUserKeyConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewSshSecretBackendRoleAllowedUserKeyConfigList_Override(s SshSecretBackend
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetInternalValu
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetTerraformRes
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) ComputeFqn() *s
 }
 
 func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) Get(index *float64) SshSecretBackendRoleAllowedUserKeyConfigOutputReference {
+	if err := s.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns SshSecretBackendRoleAllowedUserKeyConfigOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) Get(index *floa
 }
 
 func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -531,6 +531,9 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) VerifyConne
 func NewDatabaseSecretsMountElasticsearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountElasticsearchOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountElasticsearchOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference{}
 
 	_jsii_.Create(
@@ -552,7 +555,10 @@ func NewDatabaseSecretsMountElasticsearchOutputReference_Override(d DatabaseSecr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -560,7 +566,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetAllowedR
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetCaCert(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetCaCert(val *string) {
+	if err := j.validateSetCaCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caCert",
@@ -568,7 +577,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetCaCert(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetCaPath(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetCaPath(val *string) {
+	if err := j.validateSetCaPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caPath",
@@ -576,7 +588,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetCaPath(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetClientCert(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetClientCert(val *string) {
+	if err := j.validateSetClientCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientCert",
@@ -584,7 +599,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetClientCe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetClientKey(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetClientKey(val *string) {
+	if err := j.validateSetClientKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientKey",
@@ -592,7 +610,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetClientKe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -600,7 +621,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -608,7 +632,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -616,7 +643,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetData(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetInsecure(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecure",
@@ -624,7 +654,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetInsecure
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -632,7 +665,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -640,7 +676,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetName(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -648,7 +687,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetPassword
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -656,7 +698,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetPluginNa
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -664,7 +709,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetRootRota
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -672,7 +720,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -680,7 +731,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTlsServerName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetTlsServerName(val *string) {
+	if err := j.validateSetTlsServerNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsServerName",
@@ -688,7 +742,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetTlsServe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -696,7 +753,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUrl(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -704,7 +764,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUsername
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -712,7 +775,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetUsername
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -734,6 +800,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ComputeFqn(
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -747,6 +816,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetAnyMapAt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -760,6 +832,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanA
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -773,6 +848,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetBooleanM
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -786,6 +864,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetListAttr
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -799,6 +880,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberAt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -812,6 +896,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberLi
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -825,6 +912,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetNumberMa
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -838,6 +928,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetStringAt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -864,6 +957,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Interpolati
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -973,6 +1069,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetVerify
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

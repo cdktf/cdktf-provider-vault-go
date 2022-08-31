@@ -111,6 +111,9 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) WrapsSet() *bool {
 func NewPkiSecretBackendRolePolicyIdentifierList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PkiSecretBackendRolePolicyIdentifierList {
 	_init_.Initialize()
 
+	if err := validateNewPkiSecretBackendRolePolicyIdentifierListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PkiSecretBackendRolePolicyIdentifierList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewPkiSecretBackendRolePolicyIdentifierList_Override(p PkiSecretBackendRole
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) ComputeFqn() *strin
 }
 
 func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) Get(index *float64) PkiSecretBackendRolePolicyIdentifierOutputReference {
+	if err := p.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns PkiSecretBackendRolePolicyIdentifierOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) Get(index *float64)
 }
 
 func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

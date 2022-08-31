@@ -568,6 +568,9 @@ func (j *jsiiProxy_VaultProvider) TokenNameInput() *string {
 func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProviderConfig) VaultProvider {
 	_init_.Initialize()
 
+	if err := validateNewVaultProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_VaultProvider{}
 
 	_jsii_.Create(
@@ -590,7 +593,7 @@ func NewVaultProvider_Override(v VaultProvider, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetAddAddressToEnv(val *string) {
+func (j *jsiiProxy_VaultProvider)SetAddAddressToEnv(val *string) {
 	_jsii_.Set(
 		j,
 		"addAddressToEnv",
@@ -598,7 +601,7 @@ func (j *jsiiProxy_VaultProvider) SetAddAddressToEnv(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetAddress(val *string) {
+func (j *jsiiProxy_VaultProvider)SetAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"address",
@@ -606,7 +609,7 @@ func (j *jsiiProxy_VaultProvider) SetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetAlias(val *string) {
+func (j *jsiiProxy_VaultProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -614,7 +617,10 @@ func (j *jsiiProxy_VaultProvider) SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetAuthLogin(val interface{}) {
+func (j *jsiiProxy_VaultProvider)SetAuthLogin(val interface{}) {
+	if err := j.validateSetAuthLoginParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"authLogin",
@@ -622,7 +628,7 @@ func (j *jsiiProxy_VaultProvider) SetAuthLogin(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetCaCertDir(val *string) {
+func (j *jsiiProxy_VaultProvider)SetCaCertDir(val *string) {
 	_jsii_.Set(
 		j,
 		"caCertDir",
@@ -630,7 +636,7 @@ func (j *jsiiProxy_VaultProvider) SetCaCertDir(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetCaCertFile(val *string) {
+func (j *jsiiProxy_VaultProvider)SetCaCertFile(val *string) {
 	_jsii_.Set(
 		j,
 		"caCertFile",
@@ -638,7 +644,10 @@ func (j *jsiiProxy_VaultProvider) SetCaCertFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetClientAuth(val interface{}) {
+func (j *jsiiProxy_VaultProvider)SetClientAuth(val interface{}) {
+	if err := j.validateSetClientAuthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientAuth",
@@ -646,7 +655,10 @@ func (j *jsiiProxy_VaultProvider) SetClientAuth(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetHeaders(val interface{}) {
+func (j *jsiiProxy_VaultProvider)SetHeaders(val interface{}) {
+	if err := j.validateSetHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"headers",
@@ -654,7 +666,7 @@ func (j *jsiiProxy_VaultProvider) SetHeaders(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetMaxLeaseTtlSeconds(val *float64) {
+func (j *jsiiProxy_VaultProvider)SetMaxLeaseTtlSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxLeaseTtlSeconds",
@@ -662,7 +674,7 @@ func (j *jsiiProxy_VaultProvider) SetMaxLeaseTtlSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetMaxRetries(val *float64) {
+func (j *jsiiProxy_VaultProvider)SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
@@ -670,7 +682,7 @@ func (j *jsiiProxy_VaultProvider) SetMaxRetries(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetMaxRetriesCcc(val *float64) {
+func (j *jsiiProxy_VaultProvider)SetMaxRetriesCcc(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetriesCcc",
@@ -678,7 +690,7 @@ func (j *jsiiProxy_VaultProvider) SetMaxRetriesCcc(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetNamespace(val *string) {
+func (j *jsiiProxy_VaultProvider)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -686,7 +698,10 @@ func (j *jsiiProxy_VaultProvider) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetSkipChildToken(val interface{}) {
+func (j *jsiiProxy_VaultProvider)SetSkipChildToken(val interface{}) {
+	if err := j.validateSetSkipChildTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipChildToken",
@@ -694,7 +709,10 @@ func (j *jsiiProxy_VaultProvider) SetSkipChildToken(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetSkipTlsVerify(val interface{}) {
+func (j *jsiiProxy_VaultProvider)SetSkipTlsVerify(val interface{}) {
+	if err := j.validateSetSkipTlsVerifyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"skipTlsVerify",
@@ -702,7 +720,7 @@ func (j *jsiiProxy_VaultProvider) SetSkipTlsVerify(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetTlsServerName(val *string) {
+func (j *jsiiProxy_VaultProvider)SetTlsServerName(val *string) {
 	_jsii_.Set(
 		j,
 		"tlsServerName",
@@ -710,7 +728,7 @@ func (j *jsiiProxy_VaultProvider) SetTlsServerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetToken(val *string) {
+func (j *jsiiProxy_VaultProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
@@ -718,7 +736,7 @@ func (j *jsiiProxy_VaultProvider) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider) SetTokenName(val *string) {
+func (j *jsiiProxy_VaultProvider)SetTokenName(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenName",
@@ -746,6 +764,9 @@ func (j *jsiiProxy_VaultProvider) SetTokenName(val *string) {
 func VaultProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateVaultProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -770,6 +791,9 @@ func VaultProvider_TfResourceType() *string {
 }
 
 func (v *jsiiProxy_VaultProvider) AddOverride(path *string, value interface{}) {
+	if err := v.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"addOverride",
@@ -778,6 +802,9 @@ func (v *jsiiProxy_VaultProvider) AddOverride(path *string, value interface{}) {
 }
 
 func (v *jsiiProxy_VaultProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := v.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		v,
 		"overrideLogicalId",

@@ -722,6 +722,9 @@ func (j *jsiiProxy_AzureAuthBackendRole) TokenTypeInput() *string {
 func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *AzureAuthBackendRoleConfig) AzureAuthBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewAzureAuthBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureAuthBackendRole{}
 
 	_jsii_.Create(
@@ -744,7 +747,10 @@ func NewAzureAuthBackendRole_Override(a AzureAuthBackendRole, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -752,7 +758,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundGroupIds(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundGroupIds(val *[]*string) {
+	if err := j.validateSetBoundGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundGroupIds",
@@ -760,7 +769,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundGroupIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundLocations(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundLocations(val *[]*string) {
+	if err := j.validateSetBoundLocationsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundLocations",
@@ -768,7 +780,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundLocations(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundResourceGroups(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundResourceGroups(val *[]*string) {
+	if err := j.validateSetBoundResourceGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundResourceGroups",
@@ -776,7 +791,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundResourceGroups(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundScaleSets(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundScaleSets(val *[]*string) {
+	if err := j.validateSetBoundScaleSetsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundScaleSets",
@@ -784,7 +802,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundScaleSets(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundServicePrincipalIds(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundServicePrincipalIds(val *[]*string) {
+	if err := j.validateSetBoundServicePrincipalIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundServicePrincipalIds",
@@ -792,7 +813,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundServicePrincipalIds(val *[]*str
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetBoundSubscriptionIds(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetBoundSubscriptionIds(val *[]*string) {
+	if err := j.validateSetBoundSubscriptionIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"boundSubscriptionIds",
@@ -800,7 +824,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetBoundSubscriptionIds(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -808,7 +835,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -816,7 +843,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -824,7 +851,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -832,7 +859,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetId(val *string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -840,7 +870,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -848,7 +881,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -856,7 +892,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -864,7 +900,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -872,7 +911,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetRole(val *string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -880,7 +922,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenBoundCidrs",
@@ -888,7 +933,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenExplicitMaxTtl",
@@ -896,7 +944,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenMaxTtl(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenMaxTtl",
@@ -904,7 +955,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNoDefaultPolicy",
@@ -912,7 +966,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenNumUses(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNumUses",
@@ -920,7 +977,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenNumUses(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenPeriod(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPeriod",
@@ -928,7 +988,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenPeriod(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenPolicies(val *[]*string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPolicies",
@@ -936,7 +999,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenTtl(val *float64) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenTtl",
@@ -944,7 +1010,10 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AzureAuthBackendRole) SetTokenType(val *string) {
+func (j *jsiiProxy_AzureAuthBackendRole)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -972,6 +1041,9 @@ func (j *jsiiProxy_AzureAuthBackendRole) SetTokenType(val *string) {
 func AzureAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAzureAuthBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -996,6 +1068,9 @@ func AzureAuthBackendRole_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -1004,6 +1079,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) AddOverride(path *string, value interfa
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1017,6 +1095,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1030,6 +1111,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1043,6 +1127,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1056,6 +1143,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetListAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1069,6 +1159,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetNumberAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1082,6 +1175,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetNumberListAttribute(terraformAttribu
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1095,6 +1191,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetNumberMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1108,6 +1207,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetStringAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1121,6 +1223,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) GetStringMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1134,6 +1239,9 @@ func (a *jsiiProxy_AzureAuthBackendRole) InterpolationForAttribute(terraformAttr
 }
 
 func (a *jsiiProxy_AzureAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

@@ -388,6 +388,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 func NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionElasticsearchOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionElasticsearchOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference{}
 
 	_jsii_.Create(
@@ -409,7 +412,10 @@ func NewDatabaseSecretBackendConnectionElasticsearchOutputReference_Override(d D
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetCaCert(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetCaCert(val *string) {
+	if err := j.validateSetCaCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caCert",
@@ -417,7 +423,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetCaPath(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetCaPath(val *string) {
+	if err := j.validateSetCaPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caPath",
@@ -425,7 +434,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetClientCert(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetClientCert(val *string) {
+	if err := j.validateSetClientCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientCert",
@@ -433,7 +445,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetClientKey(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetClientKey(val *string) {
+	if err := j.validateSetClientKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientKey",
@@ -441,7 +456,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -449,7 +467,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -457,7 +478,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetInsecure(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInsecure(val interface{}) {
+	if err := j.validateSetInsecureParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecure",
@@ -465,7 +489,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionElasticsearch) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionElasticsearch) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -473,7 +500,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -481,7 +511,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -489,7 +522,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -497,7 +533,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetTlsServerName(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetTlsServerName(val *string) {
+	if err := j.validateSetTlsServerNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsServerName",
@@ -505,7 +544,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetUrl(val *string) {
+	if err := j.validateSetUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"url",
@@ -513,7 +555,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -521,7 +566,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -543,6 +591,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -556,6 +607,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -569,6 +623,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -582,6 +639,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -595,6 +655,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -608,6 +671,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -621,6 +687,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -634,6 +703,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -647,6 +719,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -673,6 +748,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -742,6 +820,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

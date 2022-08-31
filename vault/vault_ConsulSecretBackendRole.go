@@ -626,6 +626,9 @@ func (j *jsiiProxy_ConsulSecretBackendRole) TtlInput() *float64 {
 func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) ConsulSecretBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewConsulSecretBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_ConsulSecretBackendRole{}
 
 	_jsii_.Create(
@@ -648,7 +651,10 @@ func NewConsulSecretBackendRole_Override(c ConsulSecretBackendRole, scope constr
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -656,7 +662,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -664,7 +673,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulNamespace(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetConsulNamespace(val *string) {
+	if err := j.validateSetConsulNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consulNamespace",
@@ -672,7 +684,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulPolicies(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetConsulPolicies(val *[]*string) {
+	if err := j.validateSetConsulPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consulPolicies",
@@ -680,7 +695,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulRoles(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetConsulRoles(val *[]*string) {
+	if err := j.validateSetConsulRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"consulRoles",
@@ -688,7 +706,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetConsulRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -696,7 +714,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -704,7 +722,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -712,7 +730,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetId(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -720,7 +741,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -728,7 +752,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetLocal(val interface{}) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"local",
@@ -736,7 +763,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetLocal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetMaxTtl(val *float64) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -744,7 +774,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetName(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -752,7 +785,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -760,7 +796,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetNodeIdentities(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetNodeIdentities(val *[]*string) {
+	if err := j.validateSetNodeIdentitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"nodeIdentities",
@@ -768,7 +807,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetNodeIdentities(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetPartition(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetPartition(val *string) {
+	if err := j.validateSetPartitionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"partition",
@@ -776,7 +818,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetPartition(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetPolicies(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetPolicies(val *[]*string) {
+	if err := j.validateSetPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policies",
@@ -784,7 +829,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -792,7 +837,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -800,7 +848,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetServiceIdentities(val *[]*string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetServiceIdentities(val *[]*string) {
+	if err := j.validateSetServiceIdentitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"serviceIdentities",
@@ -808,7 +859,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetServiceIdentities(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetTokenType(val *string) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -816,7 +870,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetTokenType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) SetTtl(val *float64) {
+func (j *jsiiProxy_ConsulSecretBackendRole)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -844,6 +901,9 @@ func (j *jsiiProxy_ConsulSecretBackendRole) SetTtl(val *float64) {
 func ConsulSecretBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateConsulSecretBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -868,6 +928,9 @@ func ConsulSecretBackendRole_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -876,6 +939,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) AddOverride(path *string, value inte
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -889,6 +955,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetAnyMapAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -902,6 +971,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetBooleanAttribute(terraformAttribu
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -915,6 +987,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetBooleanMapAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -928,6 +1003,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetListAttribute(terraformAttribute 
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -941,6 +1019,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -954,6 +1035,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberListAttribute(terraformAttr
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -967,6 +1051,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetNumberMapAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -980,6 +1067,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetStringAttribute(terraformAttribut
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -993,6 +1083,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) GetStringMapAttribute(terraformAttri
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1006,6 +1099,9 @@ func (c *jsiiProxy_ConsulSecretBackendRole) InterpolationForAttribute(terraformA
 }
 
 func (c *jsiiProxy_ConsulSecretBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",

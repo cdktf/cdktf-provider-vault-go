@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraList) WrapsSet() *bool {
 func NewDatabaseSecretsMountCassandraList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountCassandraList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountCassandraListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountCassandraList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountCassandraList_Override(d DatabaseSecretsMountCassand
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountCassandraList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountCassandraList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountCassandraList) Get(index *float64) DatabaseSecretsMountCassandraOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountCassandraOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraList) Get(index *float64) Databa
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountCassandraList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

@@ -111,6 +111,9 @@ func (j *jsiiProxy_GcpSecretRolesetBindingList) WrapsSet() *bool {
 func NewGcpSecretRolesetBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GcpSecretRolesetBindingList {
 	_init_.Initialize()
 
+	if err := validateNewGcpSecretRolesetBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GcpSecretRolesetBindingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewGcpSecretRolesetBindingList_Override(g GcpSecretRolesetBindingList, terr
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GcpSecretRolesetBindingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingList) SetInternalValue(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GcpSecretRolesetBindingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingList) SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GcpSecretRolesetBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_GcpSecretRolesetBindingList) SetTerraformResource(val cdktf.I
 	)
 }
 
-func (j *jsiiProxy_GcpSecretRolesetBindingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GcpSecretRolesetBindingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingList) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingList) Get(index *float64) GcpSecretRolesetBindingOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns GcpSecretRolesetBindingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (g *jsiiProxy_GcpSecretRolesetBindingList) Get(index *float64) GcpSecretRol
 }
 
 func (g *jsiiProxy_GcpSecretRolesetBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

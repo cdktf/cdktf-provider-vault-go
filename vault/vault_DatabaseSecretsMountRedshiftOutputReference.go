@@ -486,6 +486,9 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) VerifyConnection
 func NewDatabaseSecretsMountRedshiftOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountRedshiftOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountRedshiftOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountRedshiftOutputReference{}
 
 	_jsii_.Create(
@@ -507,7 +510,10 @@ func NewDatabaseSecretsMountRedshiftOutputReference_Override(d DatabaseSecretsMo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -515,7 +521,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetAllowedRoles(
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -523,7 +532,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -531,7 +543,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetComplexObject
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -539,7 +554,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetConnectionUrl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -547,7 +565,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetData(val *map
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetDisableEscaping(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetDisableEscaping(val interface{}) {
+	if err := j.validateSetDisableEscapingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableEscaping",
@@ -555,7 +576,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetDisableEscapi
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -563,7 +587,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetInternalValue
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -571,7 +598,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxConnection
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -579,7 +609,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxIdleConnec
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -587,7 +620,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetMaxOpenConnec
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -595,7 +631,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetName(val *str
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -603,7 +642,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetPassword(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -611,7 +653,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetPluginName(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -619,7 +664,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetRootRotationS
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -627,7 +675,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -635,7 +686,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetTerraformReso
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -643,7 +697,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetUsername(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -651,7 +708,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetUsernameTempl
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -673,6 +733,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) ComputeFqn() *st
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -686,6 +749,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetAnyMapAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -699,6 +765,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetBooleanAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -712,6 +781,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetBooleanMapAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -725,6 +797,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetListAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -738,6 +813,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -751,6 +829,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberListAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -764,6 +845,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetNumberMapAttr
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -777,6 +861,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetStringAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -803,6 +890,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) InterpolationAsL
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -920,6 +1010,9 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) ResetVerifyConne
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

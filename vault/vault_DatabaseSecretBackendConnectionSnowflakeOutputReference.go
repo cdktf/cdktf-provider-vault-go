@@ -319,6 +319,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) User
 func NewDatabaseSecretBackendConnectionSnowflakeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionSnowflakeOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionSnowflakeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference{}
 
 	_jsii_.Create(
@@ -340,7 +343,10 @@ func NewDatabaseSecretBackendConnectionSnowflakeOutputReference_Override(d Datab
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -348,7 +354,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -356,7 +365,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -364,7 +376,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionSnowflake) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionSnowflake) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -372,7 +387,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -380,7 +398,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -388,7 +409,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -396,7 +420,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetM
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -404,7 +431,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -412,7 +442,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -420,7 +453,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -428,7 +464,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetU
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -450,6 +489,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Comp
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -463,6 +505,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetA
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -476,6 +521,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetB
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -489,6 +537,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetB
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -502,6 +553,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetL
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -515,6 +569,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -528,6 +585,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -541,6 +601,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -554,6 +617,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetS
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -580,6 +646,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Inte
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -649,6 +718,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Rese
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

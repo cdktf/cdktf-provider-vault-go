@@ -410,6 +410,9 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) TerraformResourceType() *string {
 func NewPkiSecretBackendConfigUrls(scope constructs.Construct, id *string, config *PkiSecretBackendConfigUrlsConfig) PkiSecretBackendConfigUrls {
 	_init_.Initialize()
 
+	if err := validateNewPkiSecretBackendConfigUrlsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_PkiSecretBackendConfigUrls{}
 
 	_jsii_.Create(
@@ -432,7 +435,10 @@ func NewPkiSecretBackendConfigUrls_Override(p PkiSecretBackendConfigUrls, scope 
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetBackend(val *string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -440,7 +446,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetConnection(val interface{}) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -448,7 +457,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetCount(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -456,7 +465,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetCrlDistributionPoints(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetCrlDistributionPoints(val *[]*string) {
+	if err := j.validateSetCrlDistributionPointsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"crlDistributionPoints",
@@ -464,7 +476,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetCrlDistributionPoints(val *[]*
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -472,7 +484,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -480,7 +492,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetForEach(val cdktf.ITerraformIt
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetId(val *string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -488,7 +503,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetIssuingCertificates(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetIssuingCertificates(val *[]*string) {
+	if err := j.validateSetIssuingCertificatesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"issuingCertificates",
@@ -496,7 +514,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetIssuingCertificates(val *[]*st
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -504,7 +525,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetLifecycle(val *cdktf.Terraform
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetNamespace(val *string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -512,7 +536,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetOcspServers(val *[]*string) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetOcspServers(val *[]*string) {
+	if err := j.validateSetOcspServersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ocspServers",
@@ -520,7 +547,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetOcspServers(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -528,7 +555,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetProvider(val cdktf.TerraformPr
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -556,6 +586,9 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) SetProvisioners(val *[]interface{
 func PkiSecretBackendConfigUrls_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validatePkiSecretBackendConfigUrls_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -580,6 +613,9 @@ func PkiSecretBackendConfigUrls_TfResourceType() *string {
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"addOverride",
@@ -588,6 +624,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) AddOverride(path *string, value i
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -601,6 +640,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetAnyMapAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -614,6 +656,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetBooleanAttribute(terraformAttr
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -627,6 +672,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetBooleanMapAttribute(terraformA
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -640,6 +688,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetListAttribute(terraformAttribu
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -653,6 +704,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -666,6 +720,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberListAttribute(terraformA
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -679,6 +736,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetNumberMapAttribute(terraformAt
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -692,6 +752,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetStringAttribute(terraformAttri
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -705,6 +768,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) GetStringMapAttribute(terraformAt
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -718,6 +784,9 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) InterpolationForAttribute(terrafo
 }
 
 func (p *jsiiProxy_PkiSecretBackendConfigUrls) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		p,
 		"overrideLogicalId",

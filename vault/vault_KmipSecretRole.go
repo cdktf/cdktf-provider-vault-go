@@ -792,6 +792,9 @@ func (j *jsiiProxy_KmipSecretRole) TlsClientTtlInput() *float64 {
 func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecretRoleConfig) KmipSecretRole {
 	_init_.Initialize()
 
+	if err := validateNewKmipSecretRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_KmipSecretRole{}
 
 	_jsii_.Create(
@@ -814,7 +817,10 @@ func NewKmipSecretRole_Override(k KmipSecretRole, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -822,7 +828,7 @@ func (j *jsiiProxy_KmipSecretRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetCount(val *float64) {
+func (j *jsiiProxy_KmipSecretRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -830,7 +836,7 @@ func (j *jsiiProxy_KmipSecretRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_KmipSecretRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -838,7 +844,7 @@ func (j *jsiiProxy_KmipSecretRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_KmipSecretRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -846,7 +852,10 @@ func (j *jsiiProxy_KmipSecretRole) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetId(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -854,7 +863,10 @@ func (j *jsiiProxy_KmipSecretRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_KmipSecretRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -862,7 +874,10 @@ func (j *jsiiProxy_KmipSecretRole) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetNamespace(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -870,7 +885,10 @@ func (j *jsiiProxy_KmipSecretRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationActivate(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationActivate(val interface{}) {
+	if err := j.validateSetOperationActivateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationActivate",
@@ -878,7 +896,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationActivate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationAddAttribute(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationAddAttribute(val interface{}) {
+	if err := j.validateSetOperationAddAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationAddAttribute",
@@ -886,7 +907,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationAddAttribute(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationAll(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationAll(val interface{}) {
+	if err := j.validateSetOperationAllParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationAll",
@@ -894,7 +918,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationAll(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationCreate(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationCreate(val interface{}) {
+	if err := j.validateSetOperationCreateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationCreate",
@@ -902,7 +929,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationCreate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationDestroy(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationDestroy(val interface{}) {
+	if err := j.validateSetOperationDestroyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationDestroy",
@@ -910,7 +940,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationDestroy(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationDiscoverVersions(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationDiscoverVersions(val interface{}) {
+	if err := j.validateSetOperationDiscoverVersionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationDiscoverVersions",
@@ -918,7 +951,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationDiscoverVersions(val interface{})
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationGet(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationGet(val interface{}) {
+	if err := j.validateSetOperationGetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationGet",
@@ -926,7 +962,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationGet(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationGetAttributeList(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationGetAttributeList(val interface{}) {
+	if err := j.validateSetOperationGetAttributeListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationGetAttributeList",
@@ -934,7 +973,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationGetAttributeList(val interface{})
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationGetAttributes(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationGetAttributes(val interface{}) {
+	if err := j.validateSetOperationGetAttributesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationGetAttributes",
@@ -942,7 +984,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationGetAttributes(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationLocate(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationLocate(val interface{}) {
+	if err := j.validateSetOperationLocateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationLocate",
@@ -950,7 +995,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationLocate(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationNone(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationNone(val interface{}) {
+	if err := j.validateSetOperationNoneParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationNone",
@@ -958,7 +1006,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationNone(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationRegister(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationRegister(val interface{}) {
+	if err := j.validateSetOperationRegisterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationRegister",
@@ -966,7 +1017,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationRegister(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationRekey(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationRekey(val interface{}) {
+	if err := j.validateSetOperationRekeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationRekey",
@@ -974,7 +1028,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationRekey(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetOperationRevoke(val interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetOperationRevoke(val interface{}) {
+	if err := j.validateSetOperationRevokeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"operationRevoke",
@@ -982,7 +1039,10 @@ func (j *jsiiProxy_KmipSecretRole) SetOperationRevoke(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetPath(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -990,7 +1050,7 @@ func (j *jsiiProxy_KmipSecretRole) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_KmipSecretRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -998,7 +1058,10 @@ func (j *jsiiProxy_KmipSecretRole) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_KmipSecretRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1006,7 +1069,10 @@ func (j *jsiiProxy_KmipSecretRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetRole(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -1014,7 +1080,10 @@ func (j *jsiiProxy_KmipSecretRole) SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetScope(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetScope(val *string) {
+	if err := j.validateSetScopeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"scope",
@@ -1022,7 +1091,10 @@ func (j *jsiiProxy_KmipSecretRole) SetScope(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetTlsClientKeyBits(val *float64) {
+func (j *jsiiProxy_KmipSecretRole)SetTlsClientKeyBits(val *float64) {
+	if err := j.validateSetTlsClientKeyBitsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsClientKeyBits",
@@ -1030,7 +1102,10 @@ func (j *jsiiProxy_KmipSecretRole) SetTlsClientKeyBits(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetTlsClientKeyType(val *string) {
+func (j *jsiiProxy_KmipSecretRole)SetTlsClientKeyType(val *string) {
+	if err := j.validateSetTlsClientKeyTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsClientKeyType",
@@ -1038,7 +1113,10 @@ func (j *jsiiProxy_KmipSecretRole) SetTlsClientKeyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_KmipSecretRole) SetTlsClientTtl(val *float64) {
+func (j *jsiiProxy_KmipSecretRole)SetTlsClientTtl(val *float64) {
+	if err := j.validateSetTlsClientTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tlsClientTtl",
@@ -1066,6 +1144,9 @@ func (j *jsiiProxy_KmipSecretRole) SetTlsClientTtl(val *float64) {
 func KmipSecretRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateKmipSecretRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1090,6 +1171,9 @@ func KmipSecretRole_TfResourceType() *string {
 }
 
 func (k *jsiiProxy_KmipSecretRole) AddOverride(path *string, value interface{}) {
+	if err := k.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"addOverride",
@@ -1098,6 +1182,9 @@ func (k *jsiiProxy_KmipSecretRole) AddOverride(path *string, value interface{}) 
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := k.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1111,6 +1198,9 @@ func (k *jsiiProxy_KmipSecretRole) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1124,6 +1214,9 @@ func (k *jsiiProxy_KmipSecretRole) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := k.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1137,6 +1230,9 @@ func (k *jsiiProxy_KmipSecretRole) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := k.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1150,6 +1246,9 @@ func (k *jsiiProxy_KmipSecretRole) GetListAttribute(terraformAttribute *string) 
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := k.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1163,6 +1262,9 @@ func (k *jsiiProxy_KmipSecretRole) GetNumberAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := k.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1176,6 +1278,9 @@ func (k *jsiiProxy_KmipSecretRole) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := k.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1189,6 +1294,9 @@ func (k *jsiiProxy_KmipSecretRole) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := k.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1202,6 +1310,9 @@ func (k *jsiiProxy_KmipSecretRole) GetStringAttribute(terraformAttribute *string
 }
 
 func (k *jsiiProxy_KmipSecretRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := k.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1215,6 +1326,9 @@ func (k *jsiiProxy_KmipSecretRole) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (k *jsiiProxy_KmipSecretRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1228,6 +1342,9 @@ func (k *jsiiProxy_KmipSecretRole) InterpolationForAttribute(terraformAttribute 
 }
 
 func (k *jsiiProxy_KmipSecretRole) OverrideLogicalId(newLogicalId *string) {
+	if err := k.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		k,
 		"overrideLogicalId",

@@ -505,6 +505,9 @@ func (j *jsiiProxy_TransformTransformation) TypeInput() *string {
 func NewTransformTransformation(scope constructs.Construct, id *string, config *TransformTransformationConfig) TransformTransformation {
 	_init_.Initialize()
 
+	if err := validateNewTransformTransformationParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TransformTransformation{}
 
 	_jsii_.Create(
@@ -527,7 +530,10 @@ func NewTransformTransformation_Override(t TransformTransformation, scope constr
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_TransformTransformation)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -535,7 +541,10 @@ func (j *jsiiProxy_TransformTransformation) SetAllowedRoles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetConnection(val interface{}) {
+func (j *jsiiProxy_TransformTransformation)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -543,7 +552,7 @@ func (j *jsiiProxy_TransformTransformation) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetCount(val *float64) {
+func (j *jsiiProxy_TransformTransformation)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -551,7 +560,7 @@ func (j *jsiiProxy_TransformTransformation) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TransformTransformation)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -559,7 +568,7 @@ func (j *jsiiProxy_TransformTransformation) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TransformTransformation)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -567,7 +576,10 @@ func (j *jsiiProxy_TransformTransformation) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetId(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -575,7 +587,10 @@ func (j *jsiiProxy_TransformTransformation) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TransformTransformation)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -583,7 +598,10 @@ func (j *jsiiProxy_TransformTransformation) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetMaskingCharacter(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetMaskingCharacter(val *string) {
+	if err := j.validateSetMaskingCharacterParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maskingCharacter",
@@ -591,7 +609,10 @@ func (j *jsiiProxy_TransformTransformation) SetMaskingCharacter(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetName(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -599,7 +620,10 @@ func (j *jsiiProxy_TransformTransformation) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetNamespace(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -607,7 +631,10 @@ func (j *jsiiProxy_TransformTransformation) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetPath(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -615,7 +642,7 @@ func (j *jsiiProxy_TransformTransformation) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TransformTransformation)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -623,7 +650,10 @@ func (j *jsiiProxy_TransformTransformation) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TransformTransformation)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -631,7 +661,10 @@ func (j *jsiiProxy_TransformTransformation) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetTemplate(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetTemplate(val *string) {
+	if err := j.validateSetTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"template",
@@ -639,7 +672,10 @@ func (j *jsiiProxy_TransformTransformation) SetTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetTemplates(val *[]*string) {
+func (j *jsiiProxy_TransformTransformation)SetTemplates(val *[]*string) {
+	if err := j.validateSetTemplatesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"templates",
@@ -647,7 +683,10 @@ func (j *jsiiProxy_TransformTransformation) SetTemplates(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetTweakSource(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetTweakSource(val *string) {
+	if err := j.validateSetTweakSourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tweakSource",
@@ -655,7 +694,10 @@ func (j *jsiiProxy_TransformTransformation) SetTweakSource(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TransformTransformation) SetType(val *string) {
+func (j *jsiiProxy_TransformTransformation)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"type",
@@ -683,6 +725,9 @@ func (j *jsiiProxy_TransformTransformation) SetType(val *string) {
 func TransformTransformation_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTransformTransformation_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -707,6 +752,9 @@ func TransformTransformation_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TransformTransformation) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -715,6 +763,9 @@ func (t *jsiiProxy_TransformTransformation) AddOverride(path *string, value inte
 }
 
 func (t *jsiiProxy_TransformTransformation) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -728,6 +779,9 @@ func (t *jsiiProxy_TransformTransformation) GetAnyMapAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransformTransformation) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -741,6 +795,9 @@ func (t *jsiiProxy_TransformTransformation) GetBooleanAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TransformTransformation) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -754,6 +811,9 @@ func (t *jsiiProxy_TransformTransformation) GetBooleanMapAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TransformTransformation) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -767,6 +827,9 @@ func (t *jsiiProxy_TransformTransformation) GetListAttribute(terraformAttribute 
 }
 
 func (t *jsiiProxy_TransformTransformation) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -780,6 +843,9 @@ func (t *jsiiProxy_TransformTransformation) GetNumberAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransformTransformation) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -793,6 +859,9 @@ func (t *jsiiProxy_TransformTransformation) GetNumberListAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TransformTransformation) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -806,6 +875,9 @@ func (t *jsiiProxy_TransformTransformation) GetNumberMapAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TransformTransformation) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -819,6 +891,9 @@ func (t *jsiiProxy_TransformTransformation) GetStringAttribute(terraformAttribut
 }
 
 func (t *jsiiProxy_TransformTransformation) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -832,6 +907,9 @@ func (t *jsiiProxy_TransformTransformation) GetStringMapAttribute(terraformAttri
 }
 
 func (t *jsiiProxy_TransformTransformation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -845,6 +923,9 @@ func (t *jsiiProxy_TransformTransformation) InterpolationForAttribute(terraformA
 }
 
 func (t *jsiiProxy_TransformTransformation) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

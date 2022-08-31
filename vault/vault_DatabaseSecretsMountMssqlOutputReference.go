@@ -510,6 +510,9 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) VerifyConnectionInp
 func NewDatabaseSecretsMountMssqlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountMssqlOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountMssqlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountMssqlOutputReference{}
 
 	_jsii_.Create(
@@ -531,7 +534,10 @@ func NewDatabaseSecretsMountMssqlOutputReference_Override(d DatabaseSecretsMount
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -539,7 +545,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetAllowedRoles(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -547,7 +556,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetComplexObjectInd
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -555,7 +567,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetComplexObjectIsF
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetConnectionUrl(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetConnectionUrl(val *string) {
+	if err := j.validateSetConnectionUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connectionUrl",
@@ -563,7 +578,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetConnectionUrl(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetContainedDb(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetContainedDb(val interface{}) {
+	if err := j.validateSetContainedDbParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"containedDb",
@@ -571,7 +589,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetContainedDb(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -579,7 +600,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetData(val *map[st
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetDisableEscaping(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetDisableEscaping(val interface{}) {
+	if err := j.validateSetDisableEscapingParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disableEscaping",
@@ -587,7 +611,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetDisableEscaping(
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetInternalValue(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxConnectionLifetime(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetMaxConnectionLifetime(val *float64) {
+	if err := j.validateSetMaxConnectionLifetimeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxConnectionLifetime",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxConnectionLif
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxIdleConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetMaxIdleConnections(val *float64) {
+	if err := j.validateSetMaxIdleConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxIdleConnections",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxIdleConnectio
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxOpenConnections(val *float64) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetMaxOpenConnections(val *float64) {
+	if err := j.validateSetMaxOpenConnectionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxOpenConnections",
@@ -619,7 +655,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetMaxOpenConnectio
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -627,7 +666,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetName(val *string
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -635,7 +677,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetPassword(val *st
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -643,7 +688,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetPluginName(val *
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -651,7 +699,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetRootRotationStat
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -659,7 +710,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -667,7 +721,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetTerraformResourc
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -675,7 +732,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetUsername(val *st
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -683,7 +743,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetUsernameTemplate
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -705,6 +768,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ComputeFqn() *strin
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -718,6 +784,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetAnyMapAttribute(
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -731,6 +800,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanAttribute
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -744,6 +816,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetBooleanMapAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -757,6 +832,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetListAttribute(te
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -770,6 +848,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberAttribute(
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -783,6 +864,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberListAttrib
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -796,6 +880,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetNumberMapAttribu
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -809,6 +896,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetStringAttribute(
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -835,6 +925,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationAsList
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -960,6 +1053,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) ResetVerifyConnecti
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

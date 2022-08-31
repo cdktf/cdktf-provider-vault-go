@@ -433,6 +433,9 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
+	if err := validateNewQuotaRateLimitParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_QuotaRateLimit{}
 
 	_jsii_.Create(
@@ -455,7 +458,10 @@ func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetBlockInterval(val *float64) {
+func (j *jsiiProxy_QuotaRateLimit)SetBlockInterval(val *float64) {
+	if err := j.validateSetBlockIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"blockInterval",
@@ -463,7 +469,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetBlockInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetConnection(val interface{}) {
+func (j *jsiiProxy_QuotaRateLimit)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -471,7 +480,7 @@ func (j *jsiiProxy_QuotaRateLimit) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetCount(val *float64) {
+func (j *jsiiProxy_QuotaRateLimit)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -479,7 +488,7 @@ func (j *jsiiProxy_QuotaRateLimit) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_QuotaRateLimit)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -487,7 +496,7 @@ func (j *jsiiProxy_QuotaRateLimit) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_QuotaRateLimit)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -495,7 +504,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetId(val *string) {
+func (j *jsiiProxy_QuotaRateLimit)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -503,7 +515,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetInterval(val *float64) {
+func (j *jsiiProxy_QuotaRateLimit)SetInterval(val *float64) {
+	if err := j.validateSetIntervalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"interval",
@@ -511,7 +526,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetInterval(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_QuotaRateLimit)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -519,7 +537,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetName(val *string) {
+func (j *jsiiProxy_QuotaRateLimit)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -527,7 +548,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetNamespace(val *string) {
+func (j *jsiiProxy_QuotaRateLimit)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -535,7 +559,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetPath(val *string) {
+func (j *jsiiProxy_QuotaRateLimit)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -543,7 +570,7 @@ func (j *jsiiProxy_QuotaRateLimit) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_QuotaRateLimit)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -551,7 +578,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_QuotaRateLimit)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -559,7 +589,10 @@ func (j *jsiiProxy_QuotaRateLimit) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QuotaRateLimit) SetRate(val *float64) {
+func (j *jsiiProxy_QuotaRateLimit)SetRate(val *float64) {
+	if err := j.validateSetRateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rate",
@@ -587,6 +620,9 @@ func (j *jsiiProxy_QuotaRateLimit) SetRate(val *float64) {
 func QuotaRateLimit_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateQuotaRateLimit_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -611,6 +647,9 @@ func QuotaRateLimit_TfResourceType() *string {
 }
 
 func (q *jsiiProxy_QuotaRateLimit) AddOverride(path *string, value interface{}) {
+	if err := q.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		q,
 		"addOverride",
@@ -619,6 +658,9 @@ func (q *jsiiProxy_QuotaRateLimit) AddOverride(path *string, value interface{}) 
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := q.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -632,6 +674,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetAnyMapAttribute(terraformAttribute *string
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -645,6 +690,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetBooleanAttribute(terraformAttribute *strin
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := q.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -658,6 +706,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetBooleanMapAttribute(terraformAttribute *st
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := q.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -671,6 +722,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetListAttribute(terraformAttribute *string) 
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := q.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -684,6 +738,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetNumberAttribute(terraformAttribute *string
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := q.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -697,6 +754,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetNumberListAttribute(terraformAttribute *st
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := q.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -710,6 +770,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetNumberMapAttribute(terraformAttribute *str
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetStringAttribute(terraformAttribute *string) *string {
+	if err := q.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -723,6 +786,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetStringAttribute(terraformAttribute *string
 }
 
 func (q *jsiiProxy_QuotaRateLimit) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := q.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -736,6 +802,9 @@ func (q *jsiiProxy_QuotaRateLimit) GetStringMapAttribute(terraformAttribute *str
 }
 
 func (q *jsiiProxy_QuotaRateLimit) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -749,6 +818,9 @@ func (q *jsiiProxy_QuotaRateLimit) InterpolationForAttribute(terraformAttribute 
 }
 
 func (q *jsiiProxy_QuotaRateLimit) OverrideLogicalId(newLogicalId *string) {
+	if err := q.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		q,
 		"overrideLogicalId",

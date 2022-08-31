@@ -865,6 +865,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) VerifyConnectionInput() inte
 func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnection{}
 
 	_jsii_.Create(
@@ -887,7 +890,10 @@ func NewDatabaseSecretBackendConnection_Override(d DatabaseSecretBackendConnecti
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -895,7 +901,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetAllowedRoles(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetBackend(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -903,7 +912,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -911,7 +923,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetCount(val *float64) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -919,7 +931,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -927,7 +942,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetData(val *map[string]*str
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -935,7 +950,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -943,7 +958,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetId(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -951,7 +969,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -959,7 +980,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -967,7 +991,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetNamespace(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -975,7 +1002,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -983,7 +1013,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetPluginName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -991,7 +1021,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -999,7 +1032,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetProvisioners(val *[]inter
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -1007,7 +1043,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetRootRotationStatements(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnection) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -1035,6 +1074,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) SetVerifyConnection(val inte
 func DatabaseSecretBackendConnection_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDatabaseSecretBackendConnection_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1059,6 +1101,9 @@ func DatabaseSecretBackendConnection_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -1067,6 +1112,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1080,6 +1128,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1093,6 +1144,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1106,6 +1160,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1119,6 +1176,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1132,6 +1192,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1145,6 +1208,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1158,6 +1224,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1171,6 +1240,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1184,6 +1256,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1197,6 +1272,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -1205,6 +1283,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) OverrideLogicalId(newLogical
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutCassandra(value *DatabaseSecretBackendConnectionCassandra) {
+	if err := d.validatePutCassandraParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCassandra",
@@ -1213,6 +1294,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutCassandra(value *Database
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutCouchbase(value *DatabaseSecretBackendConnectionCouchbase) {
+	if err := d.validatePutCouchbaseParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putCouchbase",
@@ -1221,6 +1305,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutCouchbase(value *Database
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutElasticsearch(value *DatabaseSecretBackendConnectionElasticsearch) {
+	if err := d.validatePutElasticsearchParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putElasticsearch",
@@ -1229,6 +1316,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutElasticsearch(value *Data
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutHana(value *DatabaseSecretBackendConnectionHana) {
+	if err := d.validatePutHanaParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putHana",
@@ -1237,6 +1327,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutHana(value *DatabaseSecre
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutInfluxdb(value *DatabaseSecretBackendConnectionInfluxdb) {
+	if err := d.validatePutInfluxdbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putInfluxdb",
@@ -1245,6 +1338,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutInfluxdb(value *DatabaseS
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMongodb(value *DatabaseSecretBackendConnectionMongodb) {
+	if err := d.validatePutMongodbParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMongodb",
@@ -1253,6 +1349,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMongodb(value *DatabaseSe
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMongodbatlas(value *DatabaseSecretBackendConnectionMongodbatlas) {
+	if err := d.validatePutMongodbatlasParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMongodbatlas",
@@ -1261,6 +1360,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMongodbatlas(value *Datab
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMssql(value *DatabaseSecretBackendConnectionMssql) {
+	if err := d.validatePutMssqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMssql",
@@ -1269,6 +1371,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMssql(value *DatabaseSecr
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysql(value *DatabaseSecretBackendConnectionMysql) {
+	if err := d.validatePutMysqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMysql",
@@ -1277,6 +1382,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysql(value *DatabaseSecr
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlAurora(value *DatabaseSecretBackendConnectionMysqlAurora) {
+	if err := d.validatePutMysqlAuroraParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMysqlAurora",
@@ -1285,6 +1393,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlAurora(value *Databa
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlLegacy(value *DatabaseSecretBackendConnectionMysqlLegacy) {
+	if err := d.validatePutMysqlLegacyParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMysqlLegacy",
@@ -1293,6 +1404,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlLegacy(value *Databa
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlRds(value *DatabaseSecretBackendConnectionMysqlRds) {
+	if err := d.validatePutMysqlRdsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putMysqlRds",
@@ -1301,6 +1415,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutMysqlRds(value *DatabaseS
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutOracle(value *DatabaseSecretBackendConnectionOracle) {
+	if err := d.validatePutOracleParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putOracle",
@@ -1309,6 +1426,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutOracle(value *DatabaseSec
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutPostgresql(value *DatabaseSecretBackendConnectionPostgresql) {
+	if err := d.validatePutPostgresqlParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putPostgresql",
@@ -1317,6 +1437,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutPostgresql(value *Databas
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedshift(value *DatabaseSecretBackendConnectionRedshift) {
+	if err := d.validatePutRedshiftParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putRedshift",
@@ -1325,6 +1448,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedshift(value *DatabaseS
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutSnowflake(value *DatabaseSecretBackendConnectionSnowflake) {
+	if err := d.validatePutSnowflakeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putSnowflake",

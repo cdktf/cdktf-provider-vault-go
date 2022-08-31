@@ -959,6 +959,9 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) TerraformResourceType() *string {
 func NewRaftSnapshotAgentConfig(scope constructs.Construct, id *string, config *RaftSnapshotAgentConfigConfig) RaftSnapshotAgentConfig {
 	_init_.Initialize()
 
+	if err := validateNewRaftSnapshotAgentConfigParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_RaftSnapshotAgentConfig{}
 
 	_jsii_.Create(
@@ -981,7 +984,10 @@ func NewRaftSnapshotAgentConfig_Override(r RaftSnapshotAgentConfig, scope constr
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsAccessKeyId(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsAccessKeyId(val *string) {
+	if err := j.validateSetAwsAccessKeyIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsAccessKeyId",
@@ -989,7 +995,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsAccessKeyId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Bucket(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3Bucket(val *string) {
+	if err := j.validateSetAwsS3BucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3Bucket",
@@ -997,7 +1006,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Bucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3DisableTls(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3DisableTls(val interface{}) {
+	if err := j.validateSetAwsS3DisableTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3DisableTls",
@@ -1005,7 +1017,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3DisableTls(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3EnableKms(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3EnableKms(val interface{}) {
+	if err := j.validateSetAwsS3EnableKmsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3EnableKms",
@@ -1013,7 +1028,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3EnableKms(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Endpoint(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3Endpoint(val *string) {
+	if err := j.validateSetAwsS3EndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3Endpoint",
@@ -1021,7 +1039,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Endpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ForcePathStyle(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3ForcePathStyle(val interface{}) {
+	if err := j.validateSetAwsS3ForcePathStyleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3ForcePathStyle",
@@ -1029,7 +1050,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ForcePathStyle(val interface
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3KmsKey(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3KmsKey(val *string) {
+	if err := j.validateSetAwsS3KmsKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3KmsKey",
@@ -1037,7 +1061,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3KmsKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Region(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3Region(val *string) {
+	if err := j.validateSetAwsS3RegionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3Region",
@@ -1045,7 +1072,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3Region(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ServerSideEncryption(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsS3ServerSideEncryption(val interface{}) {
+	if err := j.validateSetAwsS3ServerSideEncryptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsS3ServerSideEncryption",
@@ -1053,7 +1083,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsS3ServerSideEncryption(val int
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSecretAccessKey(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsSecretAccessKey(val *string) {
+	if err := j.validateSetAwsSecretAccessKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsSecretAccessKey",
@@ -1061,7 +1094,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSecretAccessKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSessionToken(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAwsSessionToken(val *string) {
+	if err := j.validateSetAwsSessionTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"awsSessionToken",
@@ -1069,7 +1105,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAwsSessionToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountKey(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureAccountKey(val *string) {
+	if err := j.validateSetAzureAccountKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureAccountKey",
@@ -1077,7 +1116,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountName(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureAccountName(val *string) {
+	if err := j.validateSetAzureAccountNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureAccountName",
@@ -1085,7 +1127,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureAccountName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureBlobEnvironment(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureBlobEnvironment(val *string) {
+	if err := j.validateSetAzureBlobEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureBlobEnvironment",
@@ -1093,7 +1138,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureBlobEnvironment(val *string)
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureContainerName(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureContainerName(val *string) {
+	if err := j.validateSetAzureContainerNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureContainerName",
@@ -1101,7 +1149,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureContainerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureEndpoint(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetAzureEndpoint(val *string) {
+	if err := j.validateSetAzureEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"azureEndpoint",
@@ -1109,7 +1160,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetAzureEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetConnection(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1117,7 +1171,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetCount(val *float64) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1125,7 +1179,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1133,7 +1187,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetFilePrefix(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetFilePrefix(val *string) {
+	if err := j.validateSetFilePrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filePrefix",
@@ -1141,7 +1198,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetFilePrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1149,7 +1206,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetForEach(val cdktf.ITerraformItera
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleDisableTls(val interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetGoogleDisableTls(val interface{}) {
+	if err := j.validateSetGoogleDisableTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleDisableTls",
@@ -1157,7 +1217,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleDisableTls(val interface{})
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleEndpoint(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetGoogleEndpoint(val *string) {
+	if err := j.validateSetGoogleEndpointParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleEndpoint",
@@ -1165,7 +1228,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleGcsBucket(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetGoogleGcsBucket(val *string) {
+	if err := j.validateSetGoogleGcsBucketParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleGcsBucket",
@@ -1173,7 +1239,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleGcsBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleServiceAccountKey(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetGoogleServiceAccountKey(val *string) {
+	if err := j.validateSetGoogleServiceAccountKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"googleServiceAccountKey",
@@ -1181,7 +1250,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetGoogleServiceAccountKey(val *stri
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetId(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1189,7 +1261,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetIntervalSeconds(val *float64) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetIntervalSeconds(val *float64) {
+	if err := j.validateSetIntervalSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"intervalSeconds",
@@ -1197,7 +1272,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetIntervalSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1205,7 +1283,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLocalMaxSpace(val *float64) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetLocalMaxSpace(val *float64) {
+	if err := j.validateSetLocalMaxSpaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"localMaxSpace",
@@ -1213,7 +1294,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetLocalMaxSpace(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetName(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1221,7 +1305,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetNamespace(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -1229,7 +1316,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetPathPrefix(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetPathPrefix(val *string) {
+	if err := j.validateSetPathPrefixParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pathPrefix",
@@ -1237,7 +1327,7 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetPathPrefix(val *string) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1245,7 +1335,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvider(val cdktf.TerraformProvi
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1253,7 +1346,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetProvisioners(val *[]interface{}) 
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetRetain(val *float64) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetRetain(val *float64) {
+	if err := j.validateSetRetainParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"retain",
@@ -1261,7 +1357,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetRetain(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_RaftSnapshotAgentConfig) SetStorageType(val *string) {
+func (j *jsiiProxy_RaftSnapshotAgentConfig)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"storageType",
@@ -1289,6 +1388,9 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) SetStorageType(val *string) {
 func RaftSnapshotAgentConfig_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateRaftSnapshotAgentConfig_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1313,6 +1415,9 @@ func RaftSnapshotAgentConfig_TfResourceType() *string {
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) AddOverride(path *string, value interface{}) {
+	if err := r.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"addOverride",
@@ -1321,6 +1426,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) AddOverride(path *string, value inte
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := r.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1334,6 +1442,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetAnyMapAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1347,6 +1458,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanAttribute(terraformAttribu
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := r.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1360,6 +1474,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetBooleanMapAttribute(terraformAttr
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := r.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1373,6 +1490,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetListAttribute(terraformAttribute 
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := r.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1386,6 +1506,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := r.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1399,6 +1522,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberListAttribute(terraformAttr
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := r.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1412,6 +1538,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetNumberMapAttribute(terraformAttri
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringAttribute(terraformAttribute *string) *string {
+	if err := r.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1425,6 +1554,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringAttribute(terraformAttribut
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := r.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1438,6 +1570,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) GetStringMapAttribute(terraformAttri
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1451,6 +1586,9 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) InterpolationForAttribute(terraformA
 }
 
 func (r *jsiiProxy_RaftSnapshotAgentConfig) OverrideLogicalId(newLogicalId *string) {
+	if err := r.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		r,
 		"overrideLogicalId",

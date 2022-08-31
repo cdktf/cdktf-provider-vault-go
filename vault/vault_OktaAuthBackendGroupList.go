@@ -111,6 +111,9 @@ func (j *jsiiProxy_OktaAuthBackendGroupList) WrapsSet() *bool {
 func NewOktaAuthBackendGroupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OktaAuthBackendGroupList {
 	_init_.Initialize()
 
+	if err := validateNewOktaAuthBackendGroupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_OktaAuthBackendGroupList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewOktaAuthBackendGroupList_Override(o OktaAuthBackendGroupList, terraformR
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OktaAuthBackendGroupList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_OktaAuthBackendGroupList) SetInternalValue(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_OktaAuthBackendGroupList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_OktaAuthBackendGroupList) SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OktaAuthBackendGroupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_OktaAuthBackendGroupList) SetTerraformResource(val cdktf.IInt
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_OktaAuthBackendGroupList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (o *jsiiProxy_OktaAuthBackendGroupList) ComputeFqn() *string {
 }
 
 func (o *jsiiProxy_OktaAuthBackendGroupList) Get(index *float64) OktaAuthBackendGroupOutputReference {
+	if err := o.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns OktaAuthBackendGroupOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (o *jsiiProxy_OktaAuthBackendGroupList) Get(index *float64) OktaAuthBackend
 }
 
 func (o *jsiiProxy_OktaAuthBackendGroupList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

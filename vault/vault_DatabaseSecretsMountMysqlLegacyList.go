@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) WrapsSet() *bool {
 func NewDatabaseSecretsMountMysqlLegacyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlLegacyList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountMysqlLegacyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountMysqlLegacyList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountMysqlLegacyList_Override(d DatabaseSecretsMountMysql
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetInternalValue(val int
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetTerraformResource(val
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) Get(index *float64) DatabaseSecretsMountMysqlLegacyOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountMysqlLegacyOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) Get(index *float64) Data
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

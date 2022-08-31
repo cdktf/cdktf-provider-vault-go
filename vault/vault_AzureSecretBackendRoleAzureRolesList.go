@@ -111,6 +111,9 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) WrapsSet() *bool {
 func NewAzureSecretBackendRoleAzureRolesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AzureSecretBackendRoleAzureRolesList {
 	_init_.Initialize()
 
+	if err := validateNewAzureSecretBackendRoleAzureRolesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureSecretBackendRoleAzureRolesList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewAzureSecretBackendRoleAzureRolesList_Override(a AzureSecretBackendRoleAz
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetInternalValue(val in
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetTerraformResource(va
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesList) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesList) Get(index *float64) AzureSecretBackendRoleAzureRolesOutputReference {
+	if err := a.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns AzureSecretBackendRoleAzureRolesOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesList) Get(index *float64) Azu
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

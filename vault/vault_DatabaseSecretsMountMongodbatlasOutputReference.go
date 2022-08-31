@@ -363,6 +363,9 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) VerifyConnec
 func NewDatabaseSecretsMountMongodbatlasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseSecretsMountMongodbatlasOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountMongodbatlasOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference{}
 
 	_jsii_.Create(
@@ -384,7 +387,10 @@ func NewDatabaseSecretsMountMongodbatlasOutputReference_Override(d DatabaseSecre
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetAllowedRoles(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetAllowedRoles(val *[]*string) {
+	if err := j.validateSetAllowedRolesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedRoles",
@@ -392,7 +398,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetAllowedRo
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -400,7 +409,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -408,7 +420,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetData(val *map[string]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetData(val *map[string]*string) {
+	if err := j.validateSetDataParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"data",
@@ -416,7 +431,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetData(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -424,7 +442,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetInternalV
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -432,7 +453,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetName(val 
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPluginName(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPluginName(val *string) {
+	if err := j.validateSetPluginNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pluginName",
@@ -440,7 +464,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPluginNam
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPrivateKey(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"privateKey",
@@ -448,7 +475,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPrivateKe
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetProjectId(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"projectId",
@@ -456,7 +486,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetProjectId
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPublicKey(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetPublicKey(val *string) {
+	if err := j.validateSetPublicKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"publicKey",
@@ -464,7 +497,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetPublicKey
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetRootRotationStatements(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetRootRotationStatements(val *[]*string) {
+	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
@@ -472,7 +508,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetRootRotat
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -480,7 +519,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -488,7 +530,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) SetVerifyConnection(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference)SetVerifyConnection(val interface{}) {
+	if err := j.validateSetVerifyConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"verifyConnection",
@@ -510,6 +555,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ComputeFqn()
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -523,6 +571,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetAnyMapAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -536,6 +587,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetBooleanAt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -549,6 +603,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetBooleanMa
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -562,6 +619,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetListAttri
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -575,6 +635,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -588,6 +651,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberLis
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -601,6 +667,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetNumberMap
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -614,6 +683,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetStringAtt
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -640,6 +712,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) Interpolatio
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -693,6 +768,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) ResetVerifyC
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

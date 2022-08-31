@@ -567,6 +567,9 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) ValidateCredsInput() interfa
 func NewDataVaultAzureAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAzureAccessCredentialsConfig) DataVaultAzureAccessCredentials {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultAzureAccessCredentialsParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultAzureAccessCredentials{}
 
 	_jsii_.Create(
@@ -589,7 +592,10 @@ func NewDataVaultAzureAccessCredentials_Override(d DataVaultAzureAccessCredentia
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetBackend(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -597,7 +603,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -605,7 +611,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -613,7 +619,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetEnvironment(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetEnvironment(val *string) {
+	if err := j.validateSetEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"environment",
@@ -621,7 +630,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetEnvironment(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -629,7 +638,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetId(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -637,7 +649,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -645,7 +660,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetMaxCredValidationSeconds(val *float64) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetMaxCredValidationSeconds(val *float64) {
+	if err := j.validateSetMaxCredValidationSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxCredValidationSeconds",
@@ -653,7 +671,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetMaxCredValidationSeconds(
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -661,7 +682,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNumSecondsBetweenTests(val *float64) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetNumSecondsBetweenTests(val *float64) {
+	if err := j.validateSetNumSecondsBetweenTestsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numSecondsBetweenTests",
@@ -669,7 +693,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNumSecondsBetweenTests(va
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNumSequentialSuccesses(val *float64) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetNumSequentialSuccesses(val *float64) {
+	if err := j.validateSetNumSequentialSuccessesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"numSequentialSuccesses",
@@ -677,7 +704,7 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetNumSequentialSuccesses(va
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -685,7 +712,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetProvider(val cdktf.Terraf
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetRole(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"role",
@@ -693,7 +723,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetRole(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetSubscriptionId(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetSubscriptionId(val *string) {
+	if err := j.validateSetSubscriptionIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"subscriptionId",
@@ -701,7 +734,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetSubscriptionId(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetTenantId(val *string) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetTenantId(val *string) {
+	if err := j.validateSetTenantIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tenantId",
@@ -709,7 +745,10 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetTenantId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetValidateCreds(val interface{}) {
+func (j *jsiiProxy_DataVaultAzureAccessCredentials)SetValidateCreds(val interface{}) {
+	if err := j.validateSetValidateCredsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"validateCreds",
@@ -737,6 +776,9 @@ func (j *jsiiProxy_DataVaultAzureAccessCredentials) SetValidateCreds(val interfa
 func DataVaultAzureAccessCredentials_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultAzureAccessCredentials_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -761,6 +803,9 @@ func DataVaultAzureAccessCredentials_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -769,6 +814,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -782,6 +830,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -795,6 +846,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -808,6 +862,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -821,6 +878,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -834,6 +894,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -847,6 +910,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -860,6 +926,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -873,6 +942,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -886,6 +958,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -899,6 +974,9 @@ func (d *jsiiProxy_DataVaultAzureAccessCredentials) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataVaultAzureAccessCredentials) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

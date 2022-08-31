@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) WrapsSet() *bool {
 func NewDatabaseSecretsMountElasticsearchList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountElasticsearchList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountElasticsearchListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountElasticsearchList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountElasticsearchList_Override(d DatabaseSecretsMountEla
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetInternalValue(val i
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetTerraformResource(v
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) Get(index *float64) DatabaseSecretsMountElasticsearchOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountElasticsearchOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) Get(index *float64) Da
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

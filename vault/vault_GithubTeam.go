@@ -386,6 +386,9 @@ func (j *jsiiProxy_GithubTeam) TerraformResourceType() *string {
 func NewGithubTeam(scope constructs.Construct, id *string, config *GithubTeamConfig) GithubTeam {
 	_init_.Initialize()
 
+	if err := validateNewGithubTeamParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GithubTeam{}
 
 	_jsii_.Create(
@@ -408,7 +411,10 @@ func NewGithubTeam_Override(g GithubTeam, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetBackend(val *string) {
+func (j *jsiiProxy_GithubTeam)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -416,7 +422,10 @@ func (j *jsiiProxy_GithubTeam) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetConnection(val interface{}) {
+func (j *jsiiProxy_GithubTeam)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -424,7 +433,7 @@ func (j *jsiiProxy_GithubTeam) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetCount(val *float64) {
+func (j *jsiiProxy_GithubTeam)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -432,7 +441,7 @@ func (j *jsiiProxy_GithubTeam) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_GithubTeam)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -440,7 +449,7 @@ func (j *jsiiProxy_GithubTeam) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_GithubTeam)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -448,7 +457,10 @@ func (j *jsiiProxy_GithubTeam) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetId(val *string) {
+func (j *jsiiProxy_GithubTeam)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -456,7 +468,10 @@ func (j *jsiiProxy_GithubTeam) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_GithubTeam)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -464,7 +479,10 @@ func (j *jsiiProxy_GithubTeam) SetLifecycle(val *cdktf.TerraformResourceLifecycl
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetNamespace(val *string) {
+func (j *jsiiProxy_GithubTeam)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -472,7 +490,10 @@ func (j *jsiiProxy_GithubTeam) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetPolicies(val *[]*string) {
+func (j *jsiiProxy_GithubTeam)SetPolicies(val *[]*string) {
+	if err := j.validateSetPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policies",
@@ -480,7 +501,7 @@ func (j *jsiiProxy_GithubTeam) SetPolicies(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_GithubTeam)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -488,7 +509,10 @@ func (j *jsiiProxy_GithubTeam) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_GithubTeam)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -496,7 +520,10 @@ func (j *jsiiProxy_GithubTeam) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GithubTeam) SetTeam(val *string) {
+func (j *jsiiProxy_GithubTeam)SetTeam(val *string) {
+	if err := j.validateSetTeamParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"team",
@@ -524,6 +551,9 @@ func (j *jsiiProxy_GithubTeam) SetTeam(val *string) {
 func GithubTeam_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateGithubTeam_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -548,6 +578,9 @@ func GithubTeam_TfResourceType() *string {
 }
 
 func (g *jsiiProxy_GithubTeam) AddOverride(path *string, value interface{}) {
+	if err := g.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"addOverride",
@@ -556,6 +589,9 @@ func (g *jsiiProxy_GithubTeam) AddOverride(path *string, value interface{}) {
 }
 
 func (g *jsiiProxy_GithubTeam) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := g.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -569,6 +605,9 @@ func (g *jsiiProxy_GithubTeam) GetAnyMapAttribute(terraformAttribute *string) *m
 }
 
 func (g *jsiiProxy_GithubTeam) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -582,6 +621,9 @@ func (g *jsiiProxy_GithubTeam) GetBooleanAttribute(terraformAttribute *string) c
 }
 
 func (g *jsiiProxy_GithubTeam) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := g.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -595,6 +637,9 @@ func (g *jsiiProxy_GithubTeam) GetBooleanMapAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GithubTeam) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := g.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -608,6 +653,9 @@ func (g *jsiiProxy_GithubTeam) GetListAttribute(terraformAttribute *string) *[]*
 }
 
 func (g *jsiiProxy_GithubTeam) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := g.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -621,6 +669,9 @@ func (g *jsiiProxy_GithubTeam) GetNumberAttribute(terraformAttribute *string) *f
 }
 
 func (g *jsiiProxy_GithubTeam) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := g.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -634,6 +685,9 @@ func (g *jsiiProxy_GithubTeam) GetNumberListAttribute(terraformAttribute *string
 }
 
 func (g *jsiiProxy_GithubTeam) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := g.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -647,6 +701,9 @@ func (g *jsiiProxy_GithubTeam) GetNumberMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GithubTeam) GetStringAttribute(terraformAttribute *string) *string {
+	if err := g.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -660,6 +717,9 @@ func (g *jsiiProxy_GithubTeam) GetStringAttribute(terraformAttribute *string) *s
 }
 
 func (g *jsiiProxy_GithubTeam) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := g.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -673,6 +733,9 @@ func (g *jsiiProxy_GithubTeam) GetStringMapAttribute(terraformAttribute *string)
 }
 
 func (g *jsiiProxy_GithubTeam) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -686,6 +749,9 @@ func (g *jsiiProxy_GithubTeam) InterpolationForAttribute(terraformAttribute *str
 }
 
 func (g *jsiiProxy_GithubTeam) OverrideLogicalId(newLogicalId *string) {
+	if err := g.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		g,
 		"overrideLogicalId",

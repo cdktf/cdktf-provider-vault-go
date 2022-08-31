@@ -864,6 +864,9 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewSshSecretBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_SshSecretBackendRole{}
 
 	_jsii_.Create(
@@ -886,7 +889,10 @@ func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAlgorithmSigner(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAlgorithmSigner(val *string) {
+	if err := j.validateSetAlgorithmSignerParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"algorithmSigner",
@@ -894,7 +900,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAlgorithmSigner(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowBareDomains(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowBareDomains(val interface{}) {
+	if err := j.validateSetAllowBareDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowBareDomains",
@@ -902,7 +911,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowBareDomains(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedCriticalOptions(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedCriticalOptions(val *string) {
+	if err := j.validateSetAllowedCriticalOptionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedCriticalOptions",
@@ -910,7 +922,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedCriticalOptions(val *string) 
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedDomains(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedDomains(val *string) {
+	if err := j.validateSetAllowedDomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedDomains",
@@ -918,7 +933,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedDomains(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedExtensions(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedExtensions(val *string) {
+	if err := j.validateSetAllowedExtensionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedExtensions",
@@ -926,7 +944,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedExtensions(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUserKeyLengths(val *map[string]*float64) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedUserKeyLengths(val *map[string]*float64) {
+	if err := j.validateSetAllowedUserKeyLengthsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedUserKeyLengths",
@@ -934,7 +955,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUserKeyLengths(val *map[strin
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUsers(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedUsers(val *string) {
+	if err := j.validateSetAllowedUsersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedUsers",
@@ -942,7 +966,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUsers(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUsersTemplate(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedUsersTemplate(val interface{}) {
+	if err := j.validateSetAllowedUsersTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedUsersTemplate",
@@ -950,7 +977,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowedUsersTemplate(val interface{}
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowHostCertificates(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowHostCertificates(val interface{}) {
+	if err := j.validateSetAllowHostCertificatesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowHostCertificates",
@@ -958,7 +988,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowHostCertificates(val interface{
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowSubdomains(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowSubdomains(val interface{}) {
+	if err := j.validateSetAllowSubdomainsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowSubdomains",
@@ -966,7 +999,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowSubdomains(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowUserCertificates(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowUserCertificates(val interface{}) {
+	if err := j.validateSetAllowUserCertificatesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowUserCertificates",
@@ -974,7 +1010,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowUserCertificates(val interface{
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetAllowUserKeyIds(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowUserKeyIds(val interface{}) {
+	if err := j.validateSetAllowUserKeyIdsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowUserKeyIds",
@@ -982,7 +1021,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetAllowUserKeyIds(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -990,7 +1032,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetCidrList(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetCidrList(val *string) {
+	if err := j.validateSetCidrListParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"cidrList",
@@ -998,7 +1043,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetCidrList(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -1006,7 +1054,7 @@ func (j *jsiiProxy_SshSecretBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_SshSecretBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -1014,7 +1062,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetDefaultCriticalOptions(val *map[string]*string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetDefaultCriticalOptions(val *map[string]*string) {
+	if err := j.validateSetDefaultCriticalOptionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultCriticalOptions",
@@ -1022,7 +1073,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetDefaultCriticalOptions(val *map[stri
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetDefaultExtensions(val *map[string]*string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetDefaultExtensions(val *map[string]*string) {
+	if err := j.validateSetDefaultExtensionsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultExtensions",
@@ -1030,7 +1084,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetDefaultExtensions(val *map[string]*s
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetDefaultUser(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetDefaultUser(val *string) {
+	if err := j.validateSetDefaultUserParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultUser",
@@ -1038,7 +1095,7 @@ func (j *jsiiProxy_SshSecretBackendRole) SetDefaultUser(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -1046,7 +1103,7 @@ func (j *jsiiProxy_SshSecretBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_SshSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -1054,7 +1111,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetId(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -1062,7 +1122,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetKeyIdFormat(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetKeyIdFormat(val *string) {
+	if err := j.validateSetKeyIdFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyIdFormat",
@@ -1070,7 +1133,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetKeyIdFormat(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetKeyType(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetKeyType(val *string) {
+	if err := j.validateSetKeyTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"keyType",
@@ -1078,7 +1144,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetKeyType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_SshSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -1086,7 +1155,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetMaxTtl(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetMaxTtl(val *string) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -1094,7 +1166,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetMaxTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetName(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -1102,7 +1177,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -1110,7 +1188,7 @@ func (j *jsiiProxy_SshSecretBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_SshSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -1118,7 +1196,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_SshSecretBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -1126,7 +1207,10 @@ func (j *jsiiProxy_SshSecretBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) SetTtl(val *string) {
+func (j *jsiiProxy_SshSecretBackendRole)SetTtl(val *string) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -1154,6 +1238,9 @@ func (j *jsiiProxy_SshSecretBackendRole) SetTtl(val *string) {
 func SshSecretBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateSshSecretBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -1178,6 +1265,9 @@ func SshSecretBackendRole_TfResourceType() *string {
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) AddOverride(path *string, value interface{}) {
+	if err := s.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"addOverride",
@@ -1186,6 +1276,9 @@ func (s *jsiiProxy_SshSecretBackendRole) AddOverride(path *string, value interfa
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := s.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -1199,6 +1292,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1212,6 +1308,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetBooleanAttribute(terraformAttribute 
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := s.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -1225,6 +1324,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := s.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -1238,6 +1340,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetListAttribute(terraformAttribute *st
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := s.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -1251,6 +1356,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetNumberAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := s.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -1264,6 +1372,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetNumberListAttribute(terraformAttribu
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := s.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -1277,6 +1388,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetNumberMapAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := s.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -1290,6 +1404,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetStringAttribute(terraformAttribute *
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := s.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -1303,6 +1420,9 @@ func (s *jsiiProxy_SshSecretBackendRole) GetStringMapAttribute(terraformAttribut
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1316,6 +1436,9 @@ func (s *jsiiProxy_SshSecretBackendRole) InterpolationForAttribute(terraformAttr
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := s.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"overrideLogicalId",
@@ -1324,6 +1447,9 @@ func (s *jsiiProxy_SshSecretBackendRole) OverrideLogicalId(newLogicalId *string)
 }
 
 func (s *jsiiProxy_SshSecretBackendRole) PutAllowedUserKeyConfig(value interface{}) {
+	if err := s.validatePutAllowedUserKeyConfigParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		s,
 		"putAllowedUserKeyConfig",

@@ -341,6 +341,9 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) TerraformResource
 func NewDataVaultPolicyDocumentRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataVaultPolicyDocumentRuleOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultPolicyDocumentRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultPolicyDocumentRuleOutputReference{}
 
 	_jsii_.Create(
@@ -362,7 +365,10 @@ func NewDataVaultPolicyDocumentRuleOutputReference_Override(d DataVaultPolicyDoc
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetCapabilities(val *[]*string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetCapabilities(val *[]*string) {
+	if err := j.validateSetCapabilitiesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"capabilities",
@@ -370,7 +376,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetCapabilities(v
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -378,7 +387,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -386,7 +398,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetDescription(val *string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -394,7 +409,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetDescription(va
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -402,7 +420,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetInternalValue(
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetMaxWrappingTtl(val *string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetMaxWrappingTtl(val *string) {
+	if err := j.validateSetMaxWrappingTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxWrappingTtl",
@@ -410,7 +431,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetMaxWrappingTtl
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetMinWrappingTtl(val *string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetMinWrappingTtl(val *string) {
+	if err := j.validateSetMinWrappingTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"minWrappingTtl",
@@ -418,7 +442,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetMinWrappingTtl
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetPath(val *string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -426,7 +453,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetPath(val *stri
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetRequiredParameters(val *[]*string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetRequiredParameters(val *[]*string) {
+	if err := j.validateSetRequiredParametersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"requiredParameters",
@@ -434,7 +464,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetRequiredParame
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -442,7 +475,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -464,6 +500,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) ComputeFqn() *str
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -477,6 +516,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetAnyMapAttribut
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -490,6 +532,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetBooleanAttribu
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -503,6 +548,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetBooleanMapAttr
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -516,6 +564,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetListAttribute(
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -529,6 +580,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberAttribut
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -542,6 +596,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberListAttr
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -555,6 +612,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetNumberMapAttri
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -568,6 +628,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetStringAttribut
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -594,6 +657,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) InterpolationAsLi
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -607,6 +673,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) InterpolationForA
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) PutAllowedParameter(value interface{}) {
+	if err := d.validatePutAllowedParameterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putAllowedParameter",
@@ -615,6 +684,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) PutAllowedParamet
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) PutDeniedParameter(value interface{}) {
+	if err := d.validatePutDeniedParameterParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putDeniedParameter",
@@ -671,6 +743,9 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) ResetRequiredPara
 }
 
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

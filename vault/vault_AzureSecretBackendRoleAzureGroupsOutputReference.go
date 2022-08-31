@@ -185,6 +185,9 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) TerraformRe
 func NewAzureSecretBackendRoleAzureGroupsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AzureSecretBackendRoleAzureGroupsOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAzureSecretBackendRoleAzureGroupsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference{}
 
 	_jsii_.Create(
@@ -206,7 +209,10 @@ func NewAzureSecretBackendRoleAzureGroupsOutputReference_Override(a AzureSecretB
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -214,7 +220,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -222,7 +231,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetComplexO
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetGroupName(val *string) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetGroupName(val *string) {
+	if err := j.validateSetGroupNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"groupName",
@@ -230,7 +242,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetGroupNam
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -238,7 +253,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetInternal
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -246,7 +264,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -268,6 +289,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) ComputeFqn(
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -281,6 +305,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetAnyMapAt
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -294,6 +321,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetBooleanA
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -307,6 +337,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetBooleanM
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -320,6 +353,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetListAttr
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -333,6 +369,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberAt
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -346,6 +385,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberLi
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -359,6 +401,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetNumberMa
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -372,6 +417,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetStringAt
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -398,6 +446,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) Interpolati
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -411,6 +462,9 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) Interpolati
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

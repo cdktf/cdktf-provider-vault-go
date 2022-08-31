@@ -576,6 +576,9 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewAwsSecretBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AwsSecretBackendRole{}
 
 	_jsii_.Create(
@@ -598,7 +601,10 @@ func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -606,7 +612,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -614,7 +623,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -622,7 +631,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetCredentialType(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetCredentialType(val *string) {
+	if err := j.validateSetCredentialTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"credentialType",
@@ -630,7 +642,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetCredentialType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetDefaultStsTtl(val *float64) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetDefaultStsTtl(val *float64) {
+	if err := j.validateSetDefaultStsTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultStsTtl",
@@ -638,7 +653,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetDefaultStsTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -646,7 +661,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -654,7 +669,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetIamGroups(val *[]*string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetIamGroups(val *[]*string) {
+	if err := j.validateSetIamGroupsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"iamGroups",
@@ -662,7 +680,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetIamGroups(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetId(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -670,7 +691,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -678,7 +702,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetLifecycle(val *cdktf.TerraformResour
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetMaxStsTtl(val *float64) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetMaxStsTtl(val *float64) {
+	if err := j.validateSetMaxStsTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxStsTtl",
@@ -686,7 +713,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetMaxStsTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetName(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -694,7 +724,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -702,7 +735,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetPermissionsBoundaryArn(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetPermissionsBoundaryArn(val *string) {
+	if err := j.validateSetPermissionsBoundaryArnParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"permissionsBoundaryArn",
@@ -710,7 +746,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetPermissionsBoundaryArn(val *string) 
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetPolicyArns(val *[]*string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetPolicyArns(val *[]*string) {
+	if err := j.validateSetPolicyArnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyArns",
@@ -718,7 +757,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetPolicyArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetPolicyDocument(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetPolicyDocument(val *string) {
+	if err := j.validateSetPolicyDocumentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"policyDocument",
@@ -726,7 +768,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetPolicyDocument(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -734,7 +776,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetProvider(val cdktf.TerraformProvider
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -742,7 +787,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetRoleArns(val *[]*string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetRoleArns(val *[]*string) {
+	if err := j.validateSetRoleArnsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleArns",
@@ -750,7 +798,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetRoleArns(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsSecretBackendRole) SetUserPath(val *string) {
+func (j *jsiiProxy_AwsSecretBackendRole)SetUserPath(val *string) {
+	if err := j.validateSetUserPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userPath",
@@ -778,6 +829,9 @@ func (j *jsiiProxy_AwsSecretBackendRole) SetUserPath(val *string) {
 func AwsSecretBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAwsSecretBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -802,6 +856,9 @@ func AwsSecretBackendRole_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -810,6 +867,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) AddOverride(path *string, value interfa
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -823,6 +883,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetAnyMapAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -836,6 +899,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanAttribute(terraformAttribute 
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -849,6 +915,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetBooleanMapAttribute(terraformAttribu
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -862,6 +931,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetListAttribute(terraformAttribute *st
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -875,6 +947,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetNumberAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -888,6 +963,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetNumberListAttribute(terraformAttribu
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -901,6 +979,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetNumberMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -914,6 +995,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetStringAttribute(terraformAttribute *
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -927,6 +1011,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) GetStringMapAttribute(terraformAttribut
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -940,6 +1027,9 @@ func (a *jsiiProxy_AwsSecretBackendRole) InterpolationForAttribute(terraformAttr
 }
 
 func (a *jsiiProxy_AwsSecretBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

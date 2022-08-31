@@ -627,6 +627,9 @@ func (j *jsiiProxy_NomadSecretBackend) TtlInput() *float64 {
 func NewNomadSecretBackend(scope constructs.Construct, id *string, config *NomadSecretBackendConfig) NomadSecretBackend {
 	_init_.Initialize()
 
+	if err := validateNewNomadSecretBackendParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_NomadSecretBackend{}
 
 	_jsii_.Create(
@@ -649,7 +652,10 @@ func NewNomadSecretBackend_Override(n NomadSecretBackend, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetAddress(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetAddress(val *string) {
+	if err := j.validateSetAddressParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"address",
@@ -657,7 +663,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetAddress(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetBackend(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -665,7 +674,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetCaCert(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetCaCert(val *string) {
+	if err := j.validateSetCaCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"caCert",
@@ -673,7 +685,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetCaCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetClientCert(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetClientCert(val *string) {
+	if err := j.validateSetClientCertParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientCert",
@@ -681,7 +696,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetClientCert(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetClientKey(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetClientKey(val *string) {
+	if err := j.validateSetClientKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"clientKey",
@@ -689,7 +707,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetClientKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetConnection(val interface{}) {
+func (j *jsiiProxy_NomadSecretBackend)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -697,7 +718,7 @@ func (j *jsiiProxy_NomadSecretBackend) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetCount(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -705,7 +726,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetDefaultLeaseTtlSeconds(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetDefaultLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtlSeconds",
@@ -713,7 +737,7 @@ func (j *jsiiProxy_NomadSecretBackend) SetDefaultLeaseTtlSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_NomadSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -721,7 +745,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetDescription(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"description",
@@ -729,7 +756,7 @@ func (j *jsiiProxy_NomadSecretBackend) SetDescription(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_NomadSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -737,7 +764,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetForEach(val cdktf.ITerraformIterator) 
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetId(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -745,7 +775,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_NomadSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -753,7 +786,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetLifecycle(val *cdktf.TerraformResource
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetLocal(val interface{}) {
+func (j *jsiiProxy_NomadSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"local",
@@ -761,7 +797,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetLocal(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetMaxLeaseTtlSeconds(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetMaxLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxLeaseTtlSeconds",
@@ -769,7 +808,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetMaxLeaseTtlSeconds(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetMaxTokenNameLength(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetMaxTokenNameLength(val *float64) {
+	if err := j.validateSetMaxTokenNameLengthParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTokenNameLength",
@@ -777,7 +819,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetMaxTokenNameLength(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetMaxTtl(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -785,7 +830,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetNamespace(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -793,7 +841,7 @@ func (j *jsiiProxy_NomadSecretBackend) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_NomadSecretBackend)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -801,7 +849,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetProvider(val cdktf.TerraformProvider) 
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_NomadSecretBackend)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -809,7 +860,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetToken(val *string) {
+func (j *jsiiProxy_NomadSecretBackend)SetToken(val *string) {
+	if err := j.validateSetTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"token",
@@ -817,7 +871,10 @@ func (j *jsiiProxy_NomadSecretBackend) SetToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_NomadSecretBackend) SetTtl(val *float64) {
+func (j *jsiiProxy_NomadSecretBackend)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -845,6 +902,9 @@ func (j *jsiiProxy_NomadSecretBackend) SetTtl(val *float64) {
 func NomadSecretBackend_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateNomadSecretBackend_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -869,6 +929,9 @@ func NomadSecretBackend_TfResourceType() *string {
 }
 
 func (n *jsiiProxy_NomadSecretBackend) AddOverride(path *string, value interface{}) {
+	if err := n.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"addOverride",
@@ -877,6 +940,9 @@ func (n *jsiiProxy_NomadSecretBackend) AddOverride(path *string, value interface
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -890,6 +956,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetAnyMapAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -903,6 +972,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetBooleanAttribute(terraformAttribute *s
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -916,6 +988,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetBooleanMapAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -929,6 +1004,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetListAttribute(terraformAttribute *stri
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -942,6 +1020,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetNumberAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -955,6 +1036,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetNumberListAttribute(terraformAttribute
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -968,6 +1052,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetNumberMapAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetStringAttribute(terraformAttribute *string) *string {
+	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -981,6 +1068,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetStringAttribute(terraformAttribute *st
 }
 
 func (n *jsiiProxy_NomadSecretBackend) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -994,6 +1084,9 @@ func (n *jsiiProxy_NomadSecretBackend) GetStringMapAttribute(terraformAttribute 
 }
 
 func (n *jsiiProxy_NomadSecretBackend) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -1007,6 +1100,9 @@ func (n *jsiiProxy_NomadSecretBackend) InterpolationForAttribute(terraformAttrib
 }
 
 func (n *jsiiProxy_NomadSecretBackend) OverrideLogicalId(newLogicalId *string) {
+	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		n,
 		"overrideLogicalId",

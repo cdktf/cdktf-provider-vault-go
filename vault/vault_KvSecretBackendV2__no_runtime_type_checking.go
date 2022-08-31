@@ -1,0 +1,100 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (k *jsiiProxy_KvSecretBackendV2) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretBackendV2) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKvSecretBackendV2_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetCasRequiredParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetDeleteVersionAfterParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetMaxVersionsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetMountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretBackendV2) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func validateNewKvSecretBackendV2Parameters(scope constructs.Construct, id *string, config *KvSecretBackendV2Config) error {
+	return nil
+}
+

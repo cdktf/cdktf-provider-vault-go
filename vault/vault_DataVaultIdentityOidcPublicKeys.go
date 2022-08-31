@@ -321,6 +321,9 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) TerraformResourceType() *str
 func NewDataVaultIdentityOidcPublicKeys(scope constructs.Construct, id *string, config *DataVaultIdentityOidcPublicKeysConfig) DataVaultIdentityOidcPublicKeys {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultIdentityOidcPublicKeysParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultIdentityOidcPublicKeys{}
 
 	_jsii_.Create(
@@ -343,7 +346,7 @@ func NewDataVaultIdentityOidcPublicKeys_Override(d DataVaultIdentityOidcPublicKe
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -351,7 +354,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -359,7 +362,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetDependsOn(val *[]*string)
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -367,7 +370,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetForEach(val cdktf.ITerraf
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetId(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -375,7 +381,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -383,7 +392,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetLifecycle(val *cdktf.Terr
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetName(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -391,7 +403,10 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -399,7 +414,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,6 +442,9 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) SetProvider(val cdktf.Terraf
 func DataVaultIdentityOidcPublicKeys_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultIdentityOidcPublicKeys_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -451,6 +469,9 @@ func DataVaultIdentityOidcPublicKeys_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -459,6 +480,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) AddOverride(path *string, va
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -472,6 +496,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetAnyMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -485,6 +512,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetBooleanAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -498,6 +528,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetBooleanMapAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -511,6 +544,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetListAttribute(terraformAt
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -524,6 +560,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -537,6 +576,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberListAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -550,6 +592,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetNumberMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -563,6 +608,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetStringAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -576,6 +624,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) GetStringMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -589,6 +640,9 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) InterpolationForAttribute(te
 }
 
 func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

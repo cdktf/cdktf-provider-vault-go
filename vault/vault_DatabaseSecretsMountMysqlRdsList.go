@@ -111,6 +111,9 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) WrapsSet() *bool {
 func NewDatabaseSecretsMountMysqlRdsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatabaseSecretsMountMysqlRdsList {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretsMountMysqlRdsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretsMountMysqlRdsList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewDatabaseSecretsMountMysqlRdsList_Override(d DatabaseSecretsMountMysqlRds
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetInternalValue(val interf
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetTerraformResource(val cd
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) ComputeFqn() *string {
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) Get(index *float64) DatabaseSecretsMountMysqlRdsOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns DatabaseSecretsMountMysqlRdsOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) Get(index *float64) Databas
 }
 
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

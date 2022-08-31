@@ -386,6 +386,9 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) TerraformResourceType() *stri
 func NewAwsAuthBackendRoletagBlacklist(scope constructs.Construct, id *string, config *AwsAuthBackendRoletagBlacklistConfig) AwsAuthBackendRoletagBlacklist {
 	_init_.Initialize()
 
+	if err := validateNewAwsAuthBackendRoletagBlacklistParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AwsAuthBackendRoletagBlacklist{}
 
 	_jsii_.Create(
@@ -408,7 +411,10 @@ func NewAwsAuthBackendRoletagBlacklist_Override(a AwsAuthBackendRoletagBlacklist
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetBackend(val *string) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -416,7 +422,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetConnection(val interface{}) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -424,7 +433,7 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetCount(val *float64) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -432,7 +441,7 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -440,7 +449,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetDisablePeriodicTidy(val interface{}) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetDisablePeriodicTidy(val interface{}) {
+	if err := j.validateSetDisablePeriodicTidyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"disablePeriodicTidy",
@@ -448,7 +460,7 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetDisablePeriodicTidy(val in
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +468,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetForEach(val cdktf.ITerrafo
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetId(val *string) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -464,7 +479,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -472,7 +490,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetLifecycle(val *cdktf.Terra
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetNamespace(val *string) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -480,7 +501,7 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -488,7 +509,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetProvider(val cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -496,7 +520,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetProvisioners(val *[]interf
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetSafetyBuffer(val *float64) {
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist)SetSafetyBuffer(val *float64) {
+	if err := j.validateSetSafetyBufferParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"safetyBuffer",
@@ -524,6 +551,9 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) SetSafetyBuffer(val *float64)
 func AwsAuthBackendRoletagBlacklist_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateAwsAuthBackendRoletagBlacklist_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -548,6 +578,9 @@ func AwsAuthBackendRoletagBlacklist_TfResourceType() *string {
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) AddOverride(path *string, value interface{}) {
+	if err := a.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"addOverride",
@@ -556,6 +589,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) AddOverride(path *string, val
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -569,6 +605,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetAnyMapAttribute(terraformA
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -582,6 +621,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetBooleanAttribute(terraform
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -595,6 +637,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetBooleanMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -608,6 +653,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetListAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -621,6 +669,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberAttribute(terraformA
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -634,6 +685,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberListAttribute(terraf
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -647,6 +701,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetNumberMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -660,6 +717,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetStringAttribute(terraformA
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -673,6 +733,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) GetStringMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -686,6 +749,9 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) InterpolationForAttribute(ter
 }
 
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) OverrideLogicalId(newLogicalId *string) {
+	if err := a.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		a,
 		"overrideLogicalId",

@@ -478,6 +478,9 @@ func (j *jsiiProxy_MfaDuo) UsernameFormatInput() *string {
 func NewMfaDuo(scope constructs.Construct, id *string, config *MfaDuoConfig) MfaDuo {
 	_init_.Initialize()
 
+	if err := validateNewMfaDuoParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MfaDuo{}
 
 	_jsii_.Create(
@@ -500,7 +503,10 @@ func NewMfaDuo_Override(m MfaDuo, scope constructs.Construct, id *string, config
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetApiHostname(val *string) {
+func (j *jsiiProxy_MfaDuo)SetApiHostname(val *string) {
+	if err := j.validateSetApiHostnameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiHostname",
@@ -508,7 +514,10 @@ func (j *jsiiProxy_MfaDuo) SetApiHostname(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetConnection(val interface{}) {
+func (j *jsiiProxy_MfaDuo)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -516,7 +525,7 @@ func (j *jsiiProxy_MfaDuo) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetCount(val *float64) {
+func (j *jsiiProxy_MfaDuo)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -524,7 +533,7 @@ func (j *jsiiProxy_MfaDuo) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MfaDuo)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -532,7 +541,7 @@ func (j *jsiiProxy_MfaDuo) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MfaDuo)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -540,7 +549,10 @@ func (j *jsiiProxy_MfaDuo) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetId(val *string) {
+func (j *jsiiProxy_MfaDuo)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -548,7 +560,10 @@ func (j *jsiiProxy_MfaDuo) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetIntegrationKey(val *string) {
+func (j *jsiiProxy_MfaDuo)SetIntegrationKey(val *string) {
+	if err := j.validateSetIntegrationKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"integrationKey",
@@ -556,7 +571,10 @@ func (j *jsiiProxy_MfaDuo) SetIntegrationKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MfaDuo)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -564,7 +582,10 @@ func (j *jsiiProxy_MfaDuo) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetMountAccessor(val *string) {
+func (j *jsiiProxy_MfaDuo)SetMountAccessor(val *string) {
+	if err := j.validateSetMountAccessorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mountAccessor",
@@ -572,7 +593,10 @@ func (j *jsiiProxy_MfaDuo) SetMountAccessor(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetName(val *string) {
+func (j *jsiiProxy_MfaDuo)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -580,7 +604,10 @@ func (j *jsiiProxy_MfaDuo) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetNamespace(val *string) {
+func (j *jsiiProxy_MfaDuo)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -588,7 +615,7 @@ func (j *jsiiProxy_MfaDuo) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MfaDuo)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -596,7 +623,10 @@ func (j *jsiiProxy_MfaDuo) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MfaDuo)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -604,7 +634,10 @@ func (j *jsiiProxy_MfaDuo) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetPushInfo(val *string) {
+func (j *jsiiProxy_MfaDuo)SetPushInfo(val *string) {
+	if err := j.validateSetPushInfoParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"pushInfo",
@@ -612,7 +645,10 @@ func (j *jsiiProxy_MfaDuo) SetPushInfo(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetSecretKey(val *string) {
+func (j *jsiiProxy_MfaDuo)SetSecretKey(val *string) {
+	if err := j.validateSetSecretKeyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"secretKey",
@@ -620,7 +656,10 @@ func (j *jsiiProxy_MfaDuo) SetSecretKey(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaDuo) SetUsernameFormat(val *string) {
+func (j *jsiiProxy_MfaDuo)SetUsernameFormat(val *string) {
+	if err := j.validateSetUsernameFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameFormat",
@@ -648,6 +687,9 @@ func (j *jsiiProxy_MfaDuo) SetUsernameFormat(val *string) {
 func MfaDuo_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMfaDuo_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -672,6 +714,9 @@ func MfaDuo_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MfaDuo) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -680,6 +725,9 @@ func (m *jsiiProxy_MfaDuo) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MfaDuo) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -693,6 +741,9 @@ func (m *jsiiProxy_MfaDuo) GetAnyMapAttribute(terraformAttribute *string) *map[s
 }
 
 func (m *jsiiProxy_MfaDuo) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -706,6 +757,9 @@ func (m *jsiiProxy_MfaDuo) GetBooleanAttribute(terraformAttribute *string) cdktf
 }
 
 func (m *jsiiProxy_MfaDuo) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -719,6 +773,9 @@ func (m *jsiiProxy_MfaDuo) GetBooleanMapAttribute(terraformAttribute *string) *m
 }
 
 func (m *jsiiProxy_MfaDuo) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -732,6 +789,9 @@ func (m *jsiiProxy_MfaDuo) GetListAttribute(terraformAttribute *string) *[]*stri
 }
 
 func (m *jsiiProxy_MfaDuo) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -745,6 +805,9 @@ func (m *jsiiProxy_MfaDuo) GetNumberAttribute(terraformAttribute *string) *float
 }
 
 func (m *jsiiProxy_MfaDuo) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -758,6 +821,9 @@ func (m *jsiiProxy_MfaDuo) GetNumberListAttribute(terraformAttribute *string) *[
 }
 
 func (m *jsiiProxy_MfaDuo) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -771,6 +837,9 @@ func (m *jsiiProxy_MfaDuo) GetNumberMapAttribute(terraformAttribute *string) *ma
 }
 
 func (m *jsiiProxy_MfaDuo) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -784,6 +853,9 @@ func (m *jsiiProxy_MfaDuo) GetStringAttribute(terraformAttribute *string) *strin
 }
 
 func (m *jsiiProxy_MfaDuo) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -797,6 +869,9 @@ func (m *jsiiProxy_MfaDuo) GetStringMapAttribute(terraformAttribute *string) *ma
 }
 
 func (m *jsiiProxy_MfaDuo) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -810,6 +885,9 @@ func (m *jsiiProxy_MfaDuo) InterpolationForAttribute(terraformAttribute *string)
 }
 
 func (m *jsiiProxy_MfaDuo) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

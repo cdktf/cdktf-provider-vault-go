@@ -1,0 +1,84 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+// Prebuilt vault Provider for Terraform CDK (cdktf)
+package vault
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDataVaultApproleAuthBackendRoleId_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetBackendParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetRoleNameParameters(val *string) error {
+	return nil
+}
+
+func validateNewDataVaultApproleAuthBackendRoleIdParameters(scope constructs.Construct, id *string, config *DataVaultApproleAuthBackendRoleIdConfig) error {
+	return nil
+}
+

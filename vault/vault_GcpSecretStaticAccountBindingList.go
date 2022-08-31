@@ -111,6 +111,9 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) WrapsSet() *bool {
 func NewGcpSecretStaticAccountBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GcpSecretStaticAccountBindingList {
 	_init_.Initialize()
 
+	if err := validateNewGcpSecretStaticAccountBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_GcpSecretStaticAccountBindingList{}
 
 	_jsii_.Create(
@@ -132,7 +135,10 @@ func NewGcpSecretStaticAccountBindingList_Override(g GcpSecretStaticAccountBindi
 	)
 }
 
-func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GcpSecretStaticAccountBindingList)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -140,7 +146,10 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetInternalValue(val inter
 	)
 }
 
-func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_GcpSecretStaticAccountBindingList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -148,7 +157,10 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GcpSecretStaticAccountBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -156,7 +168,10 @@ func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetTerraformResource(val c
 	)
 }
 
-func (j *jsiiProxy_GcpSecretStaticAccountBindingList) SetWrapsSet(val *bool) {
+func (j *jsiiProxy_GcpSecretStaticAccountBindingList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"wrapsSet",
@@ -178,6 +193,9 @@ func (g *jsiiProxy_GcpSecretStaticAccountBindingList) ComputeFqn() *string {
 }
 
 func (g *jsiiProxy_GcpSecretStaticAccountBindingList) Get(index *float64) GcpSecretStaticAccountBindingOutputReference {
+	if err := g.validateGetParameters(index); err != nil {
+		panic(err)
+	}
 	var returns GcpSecretStaticAccountBindingOutputReference
 
 	_jsii_.Invoke(
@@ -191,6 +209,9 @@ func (g *jsiiProxy_GcpSecretStaticAccountBindingList) Get(index *float64) GcpSec
 }
 
 func (g *jsiiProxy_GcpSecretStaticAccountBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

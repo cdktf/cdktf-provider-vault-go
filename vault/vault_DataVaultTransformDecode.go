@@ -477,6 +477,9 @@ func (j *jsiiProxy_DataVaultTransformDecode) ValueInput() *string {
 func NewDataVaultTransformDecode(scope constructs.Construct, id *string, config *DataVaultTransformDecodeConfig) DataVaultTransformDecode {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultTransformDecodeParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultTransformDecode{}
 
 	_jsii_.Create(
@@ -499,7 +502,10 @@ func NewDataVaultTransformDecode_Override(d DataVaultTransformDecode, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetBatchInput(val interface{}) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetBatchInput(val interface{}) {
+	if err := j.validateSetBatchInputParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"batchInput",
@@ -507,7 +513,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetBatchInput(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetBatchResults(val interface{}) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetBatchResults(val interface{}) {
+	if err := j.validateSetBatchResultsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"batchResults",
@@ -515,7 +524,7 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetBatchResults(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -523,7 +532,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetDecodedValue(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetDecodedValue(val *string) {
+	if err := j.validateSetDecodedValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"decodedValue",
@@ -531,7 +543,7 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetDecodedValue(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -539,7 +551,7 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -547,7 +559,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetId(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -555,7 +570,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -563,7 +581,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -571,7 +592,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetPath(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"path",
@@ -579,7 +603,7 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetPath(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -587,7 +611,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetRoleName(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetRoleName(val *string) {
+	if err := j.validateSetRoleNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleName",
@@ -595,7 +622,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetRoleName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetTransformation(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetTransformation(val *string) {
+	if err := j.validateSetTransformationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"transformation",
@@ -603,7 +633,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetTransformation(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetTweak(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetTweak(val *string) {
+	if err := j.validateSetTweakParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tweak",
@@ -611,7 +644,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetTweak(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) SetValue(val *string) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetValue(val *string) {
+	if err := j.validateSetValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"value",
@@ -639,6 +675,9 @@ func (j *jsiiProxy_DataVaultTransformDecode) SetValue(val *string) {
 func DataVaultTransformDecode_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultTransformDecode_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -663,6 +702,9 @@ func DataVaultTransformDecode_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -671,6 +713,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) AddOverride(path *string, value int
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -684,6 +729,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetAnyMapAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -697,6 +745,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetBooleanAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -710,6 +761,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetBooleanMapAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -723,6 +777,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetListAttribute(terraformAttribute
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -736,6 +793,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetNumberAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -749,6 +809,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetNumberListAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -762,6 +825,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetNumberMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -775,6 +841,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetStringAttribute(terraformAttribu
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -788,6 +857,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) GetStringMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -801,6 +873,9 @@ func (d *jsiiProxy_DataVaultTransformDecode) InterpolationForAttribute(terraform
 }
 
 func (d *jsiiProxy_DataVaultTransformDecode) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

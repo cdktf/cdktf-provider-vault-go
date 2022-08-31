@@ -482,6 +482,9 @@ func (j *jsiiProxy_TerraformCloudSecretRole) UserIdInput() *string {
 func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) TerraformCloudSecretRole {
 	_init_.Initialize()
 
+	if err := validateNewTerraformCloudSecretRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TerraformCloudSecretRole{}
 
 	_jsii_.Create(
@@ -504,7 +507,10 @@ func NewTerraformCloudSecretRole_Override(t TerraformCloudSecretRole, scope cons
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetBackend(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -512,7 +518,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetConnection(val interface{}) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -520,7 +529,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetCount(val *float64) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -528,7 +537,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -536,7 +545,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -544,7 +553,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetId(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -552,7 +564,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -560,7 +575,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetMaxTtl(val *float64) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxTtl",
@@ -568,7 +586,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetMaxTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetName(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -576,7 +597,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetNamespace(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -584,7 +608,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetOrganization(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetOrganization(val *string) {
+	if err := j.validateSetOrganizationParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"organization",
@@ -592,7 +619,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetOrganization(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -600,7 +627,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetProvider(val cdktf.TerraformProv
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -608,7 +638,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetProvisioners(val *[]interface{})
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetTeamId(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetTeamId(val *string) {
+	if err := j.validateSetTeamIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"teamId",
@@ -616,7 +649,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetTeamId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetTtl(val *float64) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"ttl",
@@ -624,7 +660,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetTtl(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_TerraformCloudSecretRole) SetUserId(val *string) {
+func (j *jsiiProxy_TerraformCloudSecretRole)SetUserId(val *string) {
+	if err := j.validateSetUserIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"userId",
@@ -652,6 +691,9 @@ func (j *jsiiProxy_TerraformCloudSecretRole) SetUserId(val *string) {
 func TerraformCloudSecretRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTerraformCloudSecretRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -676,6 +718,9 @@ func TerraformCloudSecretRole_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -684,6 +729,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) AddOverride(path *string, value int
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := t.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -697,6 +745,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetAnyMapAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -710,6 +761,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetBooleanAttribute(terraformAttrib
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := t.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -723,6 +777,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetBooleanMapAttribute(terraformAtt
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := t.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -736,6 +793,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetListAttribute(terraformAttribute
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := t.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -749,6 +809,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := t.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -762,6 +825,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberListAttribute(terraformAtt
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := t.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -775,6 +841,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetNumberMapAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := t.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -788,6 +857,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetStringAttribute(terraformAttribu
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := t.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -801,6 +873,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) GetStringMapAttribute(terraformAttr
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -814,6 +889,9 @@ func (t *jsiiProxy_TerraformCloudSecretRole) InterpolationForAttribute(terraform
 }
 
 func (t *jsiiProxy_TerraformCloudSecretRole) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

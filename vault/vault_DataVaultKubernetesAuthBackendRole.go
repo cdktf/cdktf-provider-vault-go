@@ -607,6 +607,9 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) TokenTypeInput() *string 
 func NewDataVaultKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendRoleConfig) DataVaultKubernetesAuthBackendRole {
 	_init_.Initialize()
 
+	if err := validateNewDataVaultKubernetesAuthBackendRoleParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataVaultKubernetesAuthBackendRole{}
 
 	_jsii_.Create(
@@ -629,7 +632,10 @@ func NewDataVaultKubernetesAuthBackendRole_Override(d DataVaultKubernetesAuthBac
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetAudience(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetAudience(val *string) {
+	if err := j.validateSetAudienceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"audience",
@@ -637,7 +643,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetAudience(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetBackend(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetBackend(val *string) {
+	if err := j.validateSetBackendParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"backend",
@@ -645,7 +654,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -653,7 +662,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -661,7 +670,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -669,7 +678,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetForEach(val cdktf.ITer
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetId(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -677,7 +689,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -685,7 +700,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetLifecycle(val *cdktf.T
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -693,7 +711,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetNamespace(val *string)
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -701,7 +719,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetProvider(val cdktf.Ter
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetRoleName(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetRoleName(val *string) {
+	if err := j.validateSetRoleNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"roleName",
@@ -709,7 +730,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetRoleName(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenBoundCidrs(val *[]*string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenBoundCidrs",
@@ -717,7 +741,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenBoundCidrs(val *[
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenExplicitMaxTtl(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenExplicitMaxTtl",
@@ -725,7 +752,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenExplicitMaxTtl(va
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenMaxTtl(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenMaxTtl",
@@ -733,7 +763,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenMaxTtl(val *float
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenNoDefaultPolicy(val interface{}) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNoDefaultPolicy",
@@ -741,7 +774,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenNoDefaultPolicy(v
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenNumUses(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenNumUses",
@@ -749,7 +785,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenNumUses(val *floa
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenPeriod(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPeriod",
@@ -757,7 +796,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenPeriod(val *float
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenPolicies(val *[]*string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenPolicies",
@@ -765,7 +807,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenPolicies(val *[]*
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenTtl(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenTtl",
@@ -773,7 +818,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenTtl(val *float64)
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenType(val *string) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -801,6 +849,9 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) SetTokenType(val *string)
 func DataVaultKubernetesAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataVaultKubernetesAuthBackendRole_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -825,6 +876,9 @@ func DataVaultKubernetesAuthBackendRole_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -833,6 +887,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) AddOverride(path *string,
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -846,6 +903,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetAnyMapAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -859,6 +919,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanAttribute(terra
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -872,6 +935,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetBooleanMapAttribute(te
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -885,6 +951,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetListAttribute(terrafor
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -898,6 +967,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -911,6 +983,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberListAttribute(te
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -924,6 +999,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetNumberMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -937,6 +1015,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetStringAttribute(terraf
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -950,6 +1031,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) GetStringMapAttribute(ter
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -963,6 +1047,9 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) InterpolationForAttribute
 }
 
 func (d *jsiiProxy_DataVaultKubernetesAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",

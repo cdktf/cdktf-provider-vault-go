@@ -343,6 +343,9 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) TokenTypeInput() *string {
 func NewAuthBackendTuneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AuthBackendTuneOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewAuthBackendTuneOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_AuthBackendTuneOutputReference{}
 
 	_jsii_.Create(
@@ -364,7 +367,10 @@ func NewAuthBackendTuneOutputReference_Override(a AuthBackendTuneOutputReference
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAllowedResponseHeaders(val *[]*string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"allowedResponseHeaders",
@@ -372,7 +378,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAllowedResponseHeaders(val
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAuditNonHmacRequestKeys(val *[]*string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"auditNonHmacRequestKeys",
@@ -380,7 +389,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAuditNonHmacRequestKeys(va
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAuditNonHmacResponseKeys(val *[]*string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"auditNonHmacResponseKeys",
@@ -388,7 +400,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetAuditNonHmacResponseKeys(v
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -396,7 +411,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetComplexObjectIndex(val int
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -404,7 +422,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetComplexObjectIsFromSet(val
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetDefaultLeaseTtl(val *string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetDefaultLeaseTtl(val *string) {
+	if err := j.validateSetDefaultLeaseTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtl",
@@ -412,7 +433,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetDefaultLeaseTtl(val *strin
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -420,7 +444,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetInternalValue(val interfac
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetListingVisibility(val *string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"listingVisibility",
@@ -428,7 +455,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetListingVisibility(val *str
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetMaxLeaseTtl(val *string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetMaxLeaseTtl(val *string) {
+	if err := j.validateSetMaxLeaseTtlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"maxLeaseTtl",
@@ -436,7 +466,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetMaxLeaseTtl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetPassthroughRequestHeaders(val *[]*string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"passthroughRequestHeaders",
@@ -444,7 +477,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetPassthroughRequestHeaders(
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -452,7 +488,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -460,7 +499,10 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) SetTerraformResource(val cdkt
 	)
 }
 
-func (j *jsiiProxy_AuthBackendTuneOutputReference) SetTokenType(val *string) {
+func (j *jsiiProxy_AuthBackendTuneOutputReference)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tokenType",
@@ -482,6 +524,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) ComputeFqn() *string {
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := a.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -495,6 +540,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetAnyMapAttribute(terraformA
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -508,6 +556,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetBooleanAttribute(terraform
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := a.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -521,6 +572,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetBooleanMapAttribute(terraf
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := a.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -534,6 +588,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetListAttribute(terraformAtt
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := a.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -547,6 +604,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberAttribute(terraformA
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := a.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -560,6 +620,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberListAttribute(terraf
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := a.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -573,6 +636,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetNumberMapAttribute(terrafo
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := a.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -586,6 +652,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) GetStringAttribute(terraformA
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := a.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -612,6 +681,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) InterpolationAsList() cdktf.I
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -689,6 +761,9 @@ func (a *jsiiProxy_AuthBackendTuneOutputReference) ResetTokenType() {
 }
 
 func (a *jsiiProxy_AuthBackendTuneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

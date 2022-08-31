@@ -479,6 +479,9 @@ func (j *jsiiProxy_MfaOkta) UsernameFormatInput() *string {
 func NewMfaOkta(scope constructs.Construct, id *string, config *MfaOktaConfig) MfaOkta {
 	_init_.Initialize()
 
+	if err := validateNewMfaOktaParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_MfaOkta{}
 
 	_jsii_.Create(
@@ -501,7 +504,10 @@ func NewMfaOkta_Override(m MfaOkta, scope constructs.Construct, id *string, conf
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetApiToken(val *string) {
+func (j *jsiiProxy_MfaOkta)SetApiToken(val *string) {
+	if err := j.validateSetApiTokenParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"apiToken",
@@ -509,7 +515,10 @@ func (j *jsiiProxy_MfaOkta) SetApiToken(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetBaseUrl(val *string) {
+func (j *jsiiProxy_MfaOkta)SetBaseUrl(val *string) {
+	if err := j.validateSetBaseUrlParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"baseUrl",
@@ -517,7 +526,10 @@ func (j *jsiiProxy_MfaOkta) SetBaseUrl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetConnection(val interface{}) {
+func (j *jsiiProxy_MfaOkta)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -525,7 +537,7 @@ func (j *jsiiProxy_MfaOkta) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetCount(val *float64) {
+func (j *jsiiProxy_MfaOkta)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -533,7 +545,7 @@ func (j *jsiiProxy_MfaOkta) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_MfaOkta)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -541,7 +553,7 @@ func (j *jsiiProxy_MfaOkta) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_MfaOkta)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -549,7 +561,10 @@ func (j *jsiiProxy_MfaOkta) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetId(val *string) {
+func (j *jsiiProxy_MfaOkta)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -557,7 +572,10 @@ func (j *jsiiProxy_MfaOkta) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_MfaOkta)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -565,7 +583,10 @@ func (j *jsiiProxy_MfaOkta) SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetMountAccessor(val *string) {
+func (j *jsiiProxy_MfaOkta)SetMountAccessor(val *string) {
+	if err := j.validateSetMountAccessorParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mountAccessor",
@@ -573,7 +594,10 @@ func (j *jsiiProxy_MfaOkta) SetMountAccessor(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetName(val *string) {
+func (j *jsiiProxy_MfaOkta)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"name",
@@ -581,7 +605,10 @@ func (j *jsiiProxy_MfaOkta) SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetNamespace(val *string) {
+func (j *jsiiProxy_MfaOkta)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"namespace",
@@ -589,7 +616,10 @@ func (j *jsiiProxy_MfaOkta) SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetOrgName(val *string) {
+func (j *jsiiProxy_MfaOkta)SetOrgName(val *string) {
+	if err := j.validateSetOrgNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"orgName",
@@ -597,7 +627,10 @@ func (j *jsiiProxy_MfaOkta) SetOrgName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetPrimaryEmail(val interface{}) {
+func (j *jsiiProxy_MfaOkta)SetPrimaryEmail(val interface{}) {
+	if err := j.validateSetPrimaryEmailParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"primaryEmail",
@@ -605,7 +638,7 @@ func (j *jsiiProxy_MfaOkta) SetPrimaryEmail(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_MfaOkta)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -613,7 +646,10 @@ func (j *jsiiProxy_MfaOkta) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_MfaOkta)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -621,7 +657,10 @@ func (j *jsiiProxy_MfaOkta) SetProvisioners(val *[]interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MfaOkta) SetUsernameFormat(val *string) {
+func (j *jsiiProxy_MfaOkta)SetUsernameFormat(val *string) {
+	if err := j.validateSetUsernameFormatParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameFormat",
@@ -649,6 +688,9 @@ func (j *jsiiProxy_MfaOkta) SetUsernameFormat(val *string) {
 func MfaOkta_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateMfaOkta_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -673,6 +715,9 @@ func MfaOkta_TfResourceType() *string {
 }
 
 func (m *jsiiProxy_MfaOkta) AddOverride(path *string, value interface{}) {
+	if err := m.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"addOverride",
@@ -681,6 +726,9 @@ func (m *jsiiProxy_MfaOkta) AddOverride(path *string, value interface{}) {
 }
 
 func (m *jsiiProxy_MfaOkta) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := m.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -694,6 +742,9 @@ func (m *jsiiProxy_MfaOkta) GetAnyMapAttribute(terraformAttribute *string) *map[
 }
 
 func (m *jsiiProxy_MfaOkta) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -707,6 +758,9 @@ func (m *jsiiProxy_MfaOkta) GetBooleanAttribute(terraformAttribute *string) cdkt
 }
 
 func (m *jsiiProxy_MfaOkta) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := m.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -720,6 +774,9 @@ func (m *jsiiProxy_MfaOkta) GetBooleanMapAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MfaOkta) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := m.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -733,6 +790,9 @@ func (m *jsiiProxy_MfaOkta) GetListAttribute(terraformAttribute *string) *[]*str
 }
 
 func (m *jsiiProxy_MfaOkta) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := m.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -746,6 +806,9 @@ func (m *jsiiProxy_MfaOkta) GetNumberAttribute(terraformAttribute *string) *floa
 }
 
 func (m *jsiiProxy_MfaOkta) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := m.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -759,6 +822,9 @@ func (m *jsiiProxy_MfaOkta) GetNumberListAttribute(terraformAttribute *string) *
 }
 
 func (m *jsiiProxy_MfaOkta) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := m.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -772,6 +838,9 @@ func (m *jsiiProxy_MfaOkta) GetNumberMapAttribute(terraformAttribute *string) *m
 }
 
 func (m *jsiiProxy_MfaOkta) GetStringAttribute(terraformAttribute *string) *string {
+	if err := m.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -785,6 +854,9 @@ func (m *jsiiProxy_MfaOkta) GetStringAttribute(terraformAttribute *string) *stri
 }
 
 func (m *jsiiProxy_MfaOkta) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := m.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -798,6 +870,9 @@ func (m *jsiiProxy_MfaOkta) GetStringMapAttribute(terraformAttribute *string) *m
 }
 
 func (m *jsiiProxy_MfaOkta) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -811,6 +886,9 @@ func (m *jsiiProxy_MfaOkta) InterpolationForAttribute(terraformAttribute *string
 }
 
 func (m *jsiiProxy_MfaOkta) OverrideLogicalId(newLogicalId *string) {
+	if err := m.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		m,
 		"overrideLogicalId",

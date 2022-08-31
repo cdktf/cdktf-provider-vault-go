@@ -340,6 +340,9 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) User
 func NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCouchbaseOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDatabaseSecretBackendConnectionCouchbaseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference{}
 
 	_jsii_.Create(
@@ -361,7 +364,10 @@ func NewDatabaseSecretBackendConnectionCouchbaseOutputReference_Override(d Datab
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetBase64Pem(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetBase64Pem(val *string) {
+	if err := j.validateSetBase64PemParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"base64Pem",
@@ -369,7 +375,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetB
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetBucketName(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"bucketName",
@@ -377,7 +386,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetB
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -385,7 +397,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -393,7 +408,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetC
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetHosts(val *[]*string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetHosts(val *[]*string) {
+	if err := j.validateSetHostsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"hosts",
@@ -401,7 +419,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetH
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetInsecureTls(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetInsecureTls(val interface{}) {
+	if err := j.validateSetInsecureTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"insecureTls",
@@ -409,7 +430,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetInternalValue(val *DatabaseSecretBackendConnectionCouchbase) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionCouchbase) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -417,7 +441,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetI
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetPassword(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetPassword(val *string) {
+	if err := j.validateSetPasswordParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"password",
@@ -425,7 +452,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetP
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -433,7 +463,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -441,7 +474,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetTls(val interface{}) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetTls(val interface{}) {
+	if err := j.validateSetTlsParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"tls",
@@ -449,7 +485,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetT
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetUsername(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetUsername(val *string) {
+	if err := j.validateSetUsernameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"username",
@@ -457,7 +496,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetU
 	)
 }
 
-func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) SetUsernameTemplate(val *string) {
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference)SetUsernameTemplate(val *string) {
+	if err := j.validateSetUsernameTemplateParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"usernameTemplate",
@@ -479,6 +521,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Comp
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -492,6 +537,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetA
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -505,6 +553,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetB
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -518,6 +569,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetB
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -531,6 +585,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetL
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -544,6 +601,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -557,6 +617,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -570,6 +633,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetN
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -583,6 +649,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetS
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -609,6 +678,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Inte
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -662,6 +734,9 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Rese
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnectionCouchbaseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(
