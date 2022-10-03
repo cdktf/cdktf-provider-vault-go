@@ -1,0 +1,115 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package identitygroup
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (i *jsiiProxy_IdentityGroup) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIdentityGroup_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetExternalMemberEntityIdsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetExternalPoliciesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetMemberEntityIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetMemberGroupIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func validateNewIdentityGroupParameters(scope constructs.Construct, id *string, config *IdentityGroupConfig) error {
+	return nil
+}
+

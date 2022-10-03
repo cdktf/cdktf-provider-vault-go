@@ -1,0 +1,95 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package githubuser
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (g *jsiiProxy_GithubUser) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGithubUser_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetBackendParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GithubUser) validateSetUserParameters(val *string) error {
+	return nil
+}
+
+func validateNewGithubUserParameters(scope constructs.Construct, id *string, config *GithubUserConfig) error {
+	return nil
+}
+

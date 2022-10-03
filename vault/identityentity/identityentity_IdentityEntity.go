@@ -1,0 +1,947 @@
+package identityentity
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/hashicorp/cdktf-provider-vault-go/vault/v3/jsii"
+
+	"github.com/aws/constructs-go/constructs/v10"
+	"github.com/hashicorp/cdktf-provider-vault-go/vault/v3/identityentity/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+// Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_entity vault_identity_entity}.
+type IdentityEntity interface {
+	cdktf.TerraformResource
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
+	ExternalPolicies() interface{}
+	SetExternalPolicies(val interface{})
+	ExternalPoliciesInput() interface{}
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
+	// The tree node.
+	Node() constructs.Node
+	Policies() *[]*string
+	SetPolicies(val *[]*string)
+	PoliciesInput() *[]*string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	ResetDisabled()
+	ResetExternalPolicies()
+	ResetId()
+	ResetMetadata()
+	ResetName()
+	ResetNamespace()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetPolicies()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for IdentityEntity
+type jsiiProxy_IdentityEntity struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_IdentityEntity) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) ExternalPolicies() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) ExternalPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Policies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) PoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"policiesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityEntity) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_entity vault_identity_entity} Resource.
+func NewIdentityEntity(scope constructs.Construct, id *string, config *IdentityEntityConfig) IdentityEntity {
+	_init_.Initialize()
+
+	if err := validateNewIdentityEntityParameters(scope, id, config); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_IdentityEntity{}
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.identityEntity.IdentityEntity",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_entity vault_identity_entity} Resource.
+func NewIdentityEntity_Override(i IdentityEntity, scope constructs.Construct, id *string, config *IdentityEntityConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-vault.identityEntity.IdentityEntity",
+		[]interface{}{scope, id, config},
+		i,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetExternalPolicies(val interface{}) {
+	if err := j.validateSetExternalPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalPolicies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetPolicies(val *[]*string) {
+	if err := j.validateSetPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityEntity)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func IdentityEntity_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIdentityEntity_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.identityEntity.IdentityEntity",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func IdentityEntity_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-vault.identityEntity.IdentityEntity",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) AddOverride(path *string, value interface{}) {
+	if err := i.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := i.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := i.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := i.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		i,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := i.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := i.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := i.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetStringAttribute(terraformAttribute *string) *string {
+	if err := i.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := i.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		i,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) OverrideLogicalId(newLogicalId *string) {
+	if err := i.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetDisabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetExternalPolicies() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetExternalPolicies",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetMetadata",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetName() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) ResetPolicies() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPolicies",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityEntity) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IdentityEntity) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
