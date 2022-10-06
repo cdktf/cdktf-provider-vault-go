@@ -49,6 +49,9 @@ type NomadSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type NomadSecretBackend interface {
 	ResetClientKey()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
@@ -346,6 +350,26 @@ func (j *jsiiProxy_NomadSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NomadSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -751,6 +775,17 @@ func (j *jsiiProxy_NomadSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NomadSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (n *jsiiProxy_NomadSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NomadSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

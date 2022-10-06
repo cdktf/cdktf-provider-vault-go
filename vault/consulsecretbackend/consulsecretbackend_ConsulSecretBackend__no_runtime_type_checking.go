@@ -89,6 +89,10 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

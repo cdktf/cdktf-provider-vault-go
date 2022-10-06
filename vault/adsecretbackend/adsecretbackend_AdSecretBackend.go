@@ -61,6 +61,9 @@ type AdSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	Discoverdn() interface{}
 	SetDiscoverdn(val interface{})
 	DiscoverdnInput() interface{}
@@ -200,6 +203,7 @@ type AdSecretBackend interface {
 	ResetDefaultLeaseTtlSeconds()
 	ResetDenyNullBind()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetDiscoverdn()
 	ResetFormatter()
 	ResetGroupattr()
@@ -508,6 +512,26 @@ func (j *jsiiProxy_AdSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AdSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -1301,6 +1325,17 @@ func (j *jsiiProxy_AdSecretBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AdSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AdSecretBackend)SetDiscoverdn(val interface{}) {
 	if err := j.validateSetDiscoverdnParameters(val); err != nil {
 		panic(err)
@@ -1910,6 +1945,14 @@ func (a *jsiiProxy_AdSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AdSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

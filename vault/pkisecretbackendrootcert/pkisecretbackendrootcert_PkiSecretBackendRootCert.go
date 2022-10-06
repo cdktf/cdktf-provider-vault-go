@@ -75,6 +75,12 @@ type PkiSecretBackendRootCert interface {
 	Locality() *string
 	SetLocality(val *string)
 	LocalityInput() *string
+	ManagedKeyId() *string
+	SetManagedKeyId(val *string)
+	ManagedKeyIdInput() *string
+	ManagedKeyName() *string
+	SetManagedKeyName(val *string)
+	ManagedKeyNameInput() *string
 	MaxPathLength() *float64
 	SetMaxPathLength(val *float64)
 	MaxPathLengthInput() *float64
@@ -168,6 +174,8 @@ type PkiSecretBackendRootCert interface {
 	ResetKeyBits()
 	ResetKeyType()
 	ResetLocality()
+	ResetManagedKeyId()
+	ResetManagedKeyName()
 	ResetMaxPathLength()
 	ResetNamespace()
 	ResetOrganization()
@@ -523,6 +531,46 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) LocalityInput() *string {
 	_jsii_.Get(
 		j,
 		"localityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ManagedKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ManagedKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ManagedKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ManagedKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -1075,6 +1123,28 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetLocality(val *string) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetManagedKeyId(val *string) {
+	if err := j.validateSetManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetManagedKeyName(val *string) {
+	if err := j.validateSetManagedKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert)SetMaxPathLength(val *float64) {
 	if err := j.validateSetMaxPathLengthParameters(val); err != nil {
 		panic(err)
@@ -1533,6 +1603,22 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetLocality() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetLocality",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetManagedKeyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetManagedKeyName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedKeyName",
 		nil, // no parameters
 	)
 }

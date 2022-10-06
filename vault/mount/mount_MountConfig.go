@@ -27,6 +27,10 @@ type MountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#type Mount#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// List of managed key registry entry names that the mount in question is allowed to access.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#allowed_managed_keys Mount#allowed_managed_keys}
+	AllowedManagedKeys *[]*string `field:"optional" json:"allowedManagedKeys" yaml:"allowedManagedKeys"`
 	// Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/mount#audit_non_hmac_request_keys Mount#audit_non_hmac_request_keys}

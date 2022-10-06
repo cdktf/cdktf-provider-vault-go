@@ -43,6 +43,9 @@ type TerraformCloudSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -115,6 +118,7 @@ type TerraformCloudSecretBackend interface {
 	ResetBasePath()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -585,6 +609,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -935,6 +970,14 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

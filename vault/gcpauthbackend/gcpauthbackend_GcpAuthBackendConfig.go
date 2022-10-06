@@ -31,6 +31,10 @@ type GcpAuthBackendConfig struct {
 	CustomEndpoint *GcpAuthBackendCustomEndpoint `field:"optional" json:"customEndpoint" yaml:"customEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#description GcpAuthBackend#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#disable_remount GcpAuthBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/gcp_auth_backend#id GcpAuthBackend#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

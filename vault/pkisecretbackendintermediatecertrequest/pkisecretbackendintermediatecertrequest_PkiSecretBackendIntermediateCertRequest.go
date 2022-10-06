@@ -74,6 +74,12 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	Locality() *string
 	SetLocality(val *string)
 	LocalityInput() *string
+	ManagedKeyId() *string
+	SetManagedKeyId(val *string)
+	ManagedKeyIdInput() *string
+	ManagedKeyName() *string
+	SetManagedKeyName(val *string)
+	ManagedKeyNameInput() *string
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -158,6 +164,8 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	ResetKeyBits()
 	ResetKeyType()
 	ResetLocality()
+	ResetManagedKeyId()
+	ResetManagedKeyName()
 	ResetNamespace()
 	ResetOrganization()
 	ResetOtherSans()
@@ -500,6 +508,46 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) LocalityInput() *str
 	_jsii_.Get(
 		j,
 		"localityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ManagedKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ManagedKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ManagedKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ManagedKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -992,6 +1040,28 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetLocality(val *stri
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetManagedKeyId(val *string) {
+	if err := j.validateSetManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetManagedKeyName(val *string) {
+	if err := j.validateSetManagedKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -1417,6 +1487,22 @@ func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetLocality() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetLocality",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetManagedKeyId() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetManagedKeyName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedKeyName",
 		nil, // no parameters
 	)
 }

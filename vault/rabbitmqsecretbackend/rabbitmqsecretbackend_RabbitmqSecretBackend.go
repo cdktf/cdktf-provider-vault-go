@@ -37,6 +37,9 @@ type RabbitmqSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -121,6 +124,7 @@ type RabbitmqSecretBackend interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_RabbitmqSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -636,6 +660,17 @@ func (j *jsiiProxy_RabbitmqSecretBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1013,6 +1048,14 @@ func (r *jsiiProxy_RabbitmqSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RabbitmqSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

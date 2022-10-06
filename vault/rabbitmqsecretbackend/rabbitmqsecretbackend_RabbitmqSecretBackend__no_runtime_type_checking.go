@@ -73,6 +73,10 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDescriptionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

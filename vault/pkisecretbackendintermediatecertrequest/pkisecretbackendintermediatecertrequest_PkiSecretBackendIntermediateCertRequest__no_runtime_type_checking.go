@@ -109,6 +109,14 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetLocalityP
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetManagedKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetManagedKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

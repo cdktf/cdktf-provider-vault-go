@@ -97,6 +97,7 @@ type PkiSecretBackendCert interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RenewPending() cdktf.IResolvable
 	Revoke() interface{}
 	SetRevoke(val interface{})
 	RevokeInput() interface{}
@@ -614,6 +615,16 @@ func (j *jsiiProxy_PkiSecretBackendCert) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCert) RenewPending() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"renewPending",
 		&returns,
 	)
 	return returns

@@ -109,6 +109,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutPostgresqlParameters(value i
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedisElasticacheParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedshiftParameters(value interface{}) error {
 	return nil
 }
@@ -118,6 +122,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutSnowflakeParameters(value in
 }
 
 func validateDatabaseSecretsMount_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetAllowedManagedKeysParameters(val *[]*string) error {
 	return nil
 }
 

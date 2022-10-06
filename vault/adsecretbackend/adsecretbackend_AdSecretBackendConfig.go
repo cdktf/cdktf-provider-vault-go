@@ -63,6 +63,10 @@ type AdSecretBackendConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_backend#description AdSecretBackend#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Use anonymous bind to discover the bind DN of a user.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}

@@ -37,6 +37,10 @@ type LdapAuthBackendConfig struct {
 	DenyNullBind interface{} `field:"optional" json:"denyNullBind" yaml:"denyNullBind"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#description LdapAuthBackend#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#disable_remount LdapAuthBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#discoverdn LdapAuthBackend#discoverdn}.
 	Discoverdn interface{} `field:"optional" json:"discoverdn" yaml:"discoverdn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend#groupattr LdapAuthBackend#groupattr}.

@@ -23,6 +23,10 @@ type DatabaseSecretsMountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#path DatabaseSecretsMount#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
+	// List of managed key registry entry names that the mount in question is allowed to access.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
+	AllowedManagedKeys *[]*string `field:"optional" json:"allowedManagedKeys" yaml:"allowedManagedKeys"`
 	// Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
@@ -120,6 +124,10 @@ type DatabaseSecretsMountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
 	Postgresql interface{} `field:"optional" json:"postgresql" yaml:"postgresql"`
+	// redis_elasticache block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
+	RedisElasticache interface{} `field:"optional" json:"redisElasticache" yaml:"redisElasticache"`
 	// redshift block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redshift DatabaseSecretsMount#redshift}

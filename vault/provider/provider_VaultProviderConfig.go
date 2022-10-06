@@ -17,7 +17,47 @@ type VaultProviderConfig struct {
 	// auth_login block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login VaultProvider#auth_login}
-	AuthLogin interface{} `field:"optional" json:"authLogin" yaml:"authLogin"`
+	AuthLogin *VaultProviderAuthLogin `field:"optional" json:"authLogin" yaml:"authLogin"`
+	// auth_login_aws block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_aws VaultProvider#auth_login_aws}
+	AuthLoginAws *VaultProviderAuthLoginAws `field:"optional" json:"authLoginAws" yaml:"authLoginAws"`
+	// auth_login_azure block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_azure VaultProvider#auth_login_azure}
+	AuthLoginAzure *VaultProviderAuthLoginAzure `field:"optional" json:"authLoginAzure" yaml:"authLoginAzure"`
+	// auth_login_cert block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_cert VaultProvider#auth_login_cert}
+	AuthLoginCert *VaultProviderAuthLoginCert `field:"optional" json:"authLoginCert" yaml:"authLoginCert"`
+	// auth_login_gcp block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_gcp VaultProvider#auth_login_gcp}
+	AuthLoginGcp *VaultProviderAuthLoginGcp `field:"optional" json:"authLoginGcp" yaml:"authLoginGcp"`
+	// auth_login_jwt block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_jwt VaultProvider#auth_login_jwt}
+	AuthLoginJwt *VaultProviderAuthLoginJwt `field:"optional" json:"authLoginJwt" yaml:"authLoginJwt"`
+	// auth_login_kerberos block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_kerberos VaultProvider#auth_login_kerberos}
+	AuthLoginKerberos *VaultProviderAuthLoginKerberos `field:"optional" json:"authLoginKerberos" yaml:"authLoginKerberos"`
+	// auth_login_oci block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_oci VaultProvider#auth_login_oci}
+	AuthLoginOci *VaultProviderAuthLoginOci `field:"optional" json:"authLoginOci" yaml:"authLoginOci"`
+	// auth_login_oidc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_oidc VaultProvider#auth_login_oidc}
+	AuthLoginOidc *VaultProviderAuthLoginOidc `field:"optional" json:"authLoginOidc" yaml:"authLoginOidc"`
+	// auth_login_radius block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_radius VaultProvider#auth_login_radius}
+	AuthLoginRadius *VaultProviderAuthLoginRadius `field:"optional" json:"authLoginRadius" yaml:"authLoginRadius"`
+	// auth_login_userpass block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#auth_login_userpass VaultProvider#auth_login_userpass}
+	AuthLoginUserpass *VaultProviderAuthLoginUserpass `field:"optional" json:"authLoginUserpass" yaml:"authLoginUserpass"`
 	// Path to directory containing CA certificate files to validate the server's certificate.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#ca_cert_dir VaultProvider#ca_cert_dir}
@@ -29,7 +69,7 @@ type VaultProviderConfig struct {
 	// client_auth block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#client_auth VaultProvider#client_auth}
-	ClientAuth interface{} `field:"optional" json:"clientAuth" yaml:"clientAuth"`
+	ClientAuth *VaultProviderClientAuth `field:"optional" json:"clientAuth" yaml:"clientAuth"`
 	// headers block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#headers VaultProvider#headers}

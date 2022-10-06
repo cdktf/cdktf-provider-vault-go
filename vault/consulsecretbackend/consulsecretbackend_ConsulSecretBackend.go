@@ -49,6 +49,9 @@ type ConsulSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -131,6 +134,7 @@ type ConsulSecretBackend interface {
 	ResetClientKey()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
@@ -341,6 +345,26 @@ func (j *jsiiProxy_ConsulSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -726,6 +750,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -1117,6 +1152,14 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

@@ -47,6 +47,10 @@ type NomadSecretBackendConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/nomad_secret_backend#description NomadSecretBackend#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/nomad_secret_backend#id NomadSecretBackend#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

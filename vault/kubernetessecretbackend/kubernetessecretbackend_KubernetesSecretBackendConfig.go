@@ -23,6 +23,10 @@ type KubernetesSecretBackendConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#path KubernetesSecretBackend#path}
 	Path *string `field:"required" json:"path" yaml:"path"`
+	// List of managed key registry entry names that the mount in question is allowed to access.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#allowed_managed_keys KubernetesSecretBackend#allowed_managed_keys}
+	AllowedManagedKeys *[]*string `field:"optional" json:"allowedManagedKeys" yaml:"allowedManagedKeys"`
 	// Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kubernetes_secret_backend#audit_non_hmac_request_keys KubernetesSecretBackend#audit_non_hmac_request_keys}

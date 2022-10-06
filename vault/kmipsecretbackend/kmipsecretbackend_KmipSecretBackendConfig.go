@@ -39,6 +39,10 @@ type KmipSecretBackendConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend#description KmipSecretBackend#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend#disable_remount KmipSecretBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kmip_secret_backend#id KmipSecretBackend#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

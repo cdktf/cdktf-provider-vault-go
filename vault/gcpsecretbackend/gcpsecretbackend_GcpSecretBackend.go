@@ -37,6 +37,9 @@ type GcpSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -110,6 +113,7 @@ type GcpSecretBackend interface {
 	ResetCredentials()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
@@ -238,6 +242,26 @@ func (j *jsiiProxy_GcpSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -539,6 +563,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -884,6 +919,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

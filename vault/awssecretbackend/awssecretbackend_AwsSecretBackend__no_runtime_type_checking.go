@@ -73,6 +73,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetIamEndpointParameters(val *string) error {
 	return nil
 }

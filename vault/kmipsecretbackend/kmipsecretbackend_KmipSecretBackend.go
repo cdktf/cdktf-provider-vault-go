@@ -40,6 +40,9 @@ type KmipSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -126,6 +129,7 @@ type KmipSecretBackend interface {
 	ResetDefaultTlsClientKeyType()
 	ResetDefaultTlsClientTtl()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetListenAddrs()
 	ResetNamespace()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_KmipSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -669,6 +693,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -1066,6 +1101,14 @@ func (k *jsiiProxy_KmipSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

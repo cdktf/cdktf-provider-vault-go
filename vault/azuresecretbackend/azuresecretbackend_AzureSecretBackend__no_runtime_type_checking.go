@@ -73,6 +73,10 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetDescriptionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

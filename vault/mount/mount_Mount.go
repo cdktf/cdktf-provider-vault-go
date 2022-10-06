@@ -13,6 +13,9 @@ import (
 type Mount interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -123,6 +126,7 @@ type Mount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetDefaultLeaseTtlSeconds()
@@ -157,6 +161,26 @@ func (j *jsiiProxy_Mount) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Mount) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Mount) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
 		&returns,
 	)
 	return returns
@@ -612,6 +636,17 @@ func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *
 	)
 }
 
+func (j *jsiiProxy_Mount)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Mount)SetAuditNonHmacRequestKeys(val *[]*string) {
 	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
 		panic(err)
@@ -1045,6 +1080,14 @@ func (m *jsiiProxy_Mount) OverrideLogicalId(newLogicalId *string) {
 		m,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_Mount) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
 	)
 }
 

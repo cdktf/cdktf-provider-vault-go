@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedManagedKeys", GoGetter: "AllowedManagedKeys"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedManagedKeysInput", GoGetter: "AllowedManagedKeysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacRequestKeys", GoGetter: "AuditNonHmacRequestKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacRequestKeysInput", GoGetter: "AuditNonHmacRequestKeysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacResponseKeys", GoGetter: "AuditNonHmacResponseKeys"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedManagedKeys", GoMethod: "ResetAllowedManagedKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacRequestKeys", GoMethod: "ResetAuditNonHmacRequestKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacResponseKeys", GoMethod: "ResetAuditNonHmacResponseKeys"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLeaseTtlSeconds", GoMethod: "ResetDefaultLeaseTtlSeconds"},

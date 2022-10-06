@@ -68,6 +68,14 @@ type PkiSecretBackendIntermediateCertRequestConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#locality PkiSecretBackendIntermediateCertRequest#locality}
 	Locality *string `field:"optional" json:"locality" yaml:"locality"`
+	// The ID of the previously configured managed key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#managed_key_id PkiSecretBackendIntermediateCertRequest#managed_key_id}
+	ManagedKeyId *string `field:"optional" json:"managedKeyId" yaml:"managedKeyId"`
+	// The name of the previously configured managed key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#managed_key_name PkiSecretBackendIntermediateCertRequest#managed_key_name}
+	ManagedKeyName *string `field:"optional" json:"managedKeyName" yaml:"managedKeyName"`
 	// Target namespace. (requires Enterprise).
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#namespace PkiSecretBackendIntermediateCertRequest#namespace}

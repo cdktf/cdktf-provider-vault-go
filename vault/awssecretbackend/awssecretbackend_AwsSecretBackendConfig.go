@@ -31,6 +31,10 @@ type AwsSecretBackendConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_secret_backend#description AwsSecretBackend#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// If set, opts out of mount migration on path updates.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+	DisableRemount interface{} `field:"optional" json:"disableRemount" yaml:"disableRemount"`
 	// Specifies a custom HTTP IAM endpoint to use.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}

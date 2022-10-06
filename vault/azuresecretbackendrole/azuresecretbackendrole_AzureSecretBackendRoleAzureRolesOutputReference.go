@@ -30,6 +30,8 @@ type AzureSecretBackendRoleAzureRolesOutputReference interface {
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
 	RoleName() *string
 	SetRoleName(val *string)
 	RoleNameInput() *string
@@ -68,6 +70,8 @@ type AzureSecretBackendRoleAzureRolesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRoleId()
+	ResetRoleName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +142,16 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) RoleId() *st
 	_jsii_.Get(
 		j,
 		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +274,17 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference)SetInternalVa
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
 		val,
 	)
 }
@@ -492,6 +517,22 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoleId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) ResetRoleName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoleName",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

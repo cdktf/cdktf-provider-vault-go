@@ -53,6 +53,9 @@ type LdapAuthBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	Discoverdn() interface{}
 	SetDiscoverdn(val interface{})
 	DiscoverdnInput() interface{}
@@ -200,6 +203,7 @@ type LdapAuthBackend interface {
 	ResetClientTlsKey()
 	ResetDenyNullBind()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetDiscoverdn()
 	ResetGroupattr()
 	ResetGroupdn()
@@ -460,6 +464,26 @@ func (j *jsiiProxy_LdapAuthBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -1280,6 +1304,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LdapAuthBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapAuthBackend)SetDiscoverdn(val interface{}) {
 	if err := j.validateSetDiscoverdnParameters(val); err != nil {
 		panic(err)
@@ -1914,6 +1949,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

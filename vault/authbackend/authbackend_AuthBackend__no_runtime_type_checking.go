@@ -69,6 +69,10 @@ func (j *jsiiProxy_AuthBackend) validateSetDescriptionParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_AuthBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

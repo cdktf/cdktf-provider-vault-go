@@ -19,7 +19,27 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasInput", GoGetter: "AliasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authLogin", GoGetter: "AuthLogin"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginAws", GoGetter: "AuthLoginAws"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginAwsInput", GoGetter: "AuthLoginAwsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginAzure", GoGetter: "AuthLoginAzure"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginAzureInput", GoGetter: "AuthLoginAzureInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginCert", GoGetter: "AuthLoginCert"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginCertInput", GoGetter: "AuthLoginCertInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginGcp", GoGetter: "AuthLoginGcp"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginGcpInput", GoGetter: "AuthLoginGcpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authLoginInput", GoGetter: "AuthLoginInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginJwt", GoGetter: "AuthLoginJwt"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginJwtInput", GoGetter: "AuthLoginJwtInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginKerberos", GoGetter: "AuthLoginKerberos"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginKerberosInput", GoGetter: "AuthLoginKerberosInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginOci", GoGetter: "AuthLoginOci"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginOciInput", GoGetter: "AuthLoginOciInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginOidc", GoGetter: "AuthLoginOidc"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginOidcInput", GoGetter: "AuthLoginOidcInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginRadius", GoGetter: "AuthLoginRadius"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginRadiusInput", GoGetter: "AuthLoginRadiusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginUserpass", GoGetter: "AuthLoginUserpass"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginUserpassInput", GoGetter: "AuthLoginUserpassInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertDir", GoGetter: "CaCertDir"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertDirInput", GoGetter: "CaCertDirInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertFile", GoGetter: "CaCertFile"},
@@ -47,6 +67,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAddAddressToEnv", GoMethod: "ResetAddAddressToEnv"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthLogin", GoMethod: "ResetAuthLogin"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginAws", GoMethod: "ResetAuthLoginAws"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginAzure", GoMethod: "ResetAuthLoginAzure"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginCert", GoMethod: "ResetAuthLoginCert"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginGcp", GoMethod: "ResetAuthLoginGcp"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginJwt", GoMethod: "ResetAuthLoginJwt"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginKerberos", GoMethod: "ResetAuthLoginKerberos"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginOci", GoMethod: "ResetAuthLoginOci"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginOidc", GoMethod: "ResetAuthLoginOidc"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginRadius", GoMethod: "ResetAuthLoginRadius"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginUserpass", GoMethod: "ResetAuthLoginUserpass"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCertDir", GoMethod: "ResetCaCertDir"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCertFile", GoMethod: "ResetCaCertFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientAuth", GoMethod: "ResetClientAuth"},
@@ -88,6 +118,46 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.provider.VaultProviderAuthLogin",
 		reflect.TypeOf((*VaultProviderAuthLogin)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginAws",
+		reflect.TypeOf((*VaultProviderAuthLoginAws)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginAzure",
+		reflect.TypeOf((*VaultProviderAuthLoginAzure)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginCert",
+		reflect.TypeOf((*VaultProviderAuthLoginCert)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginGcp",
+		reflect.TypeOf((*VaultProviderAuthLoginGcp)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginJwt",
+		reflect.TypeOf((*VaultProviderAuthLoginJwt)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginKerberos",
+		reflect.TypeOf((*VaultProviderAuthLoginKerberos)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginOci",
+		reflect.TypeOf((*VaultProviderAuthLoginOci)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginOidc",
+		reflect.TypeOf((*VaultProviderAuthLoginOidc)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius",
+		reflect.TypeOf((*VaultProviderAuthLoginRadius)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass",
+		reflect.TypeOf((*VaultProviderAuthLoginUserpass)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.provider.VaultProviderClientAuth",

@@ -57,6 +57,10 @@ func validateKubernetesSecretBackend_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	return nil
 }

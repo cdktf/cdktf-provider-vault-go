@@ -35,6 +35,9 @@ type GithubAuthBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -137,6 +140,7 @@ type GithubAuthBackend interface {
 	PutTune(value interface{})
 	ResetBaseUrl()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetNamespace()
 	ResetOrganizationId()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_GithubAuthBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubAuthBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubAuthBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -758,6 +782,17 @@ func (j *jsiiProxy_GithubAuthBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GithubAuthBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GithubAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1201,6 +1236,14 @@ func (g *jsiiProxy_GithubAuthBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GithubAuthBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

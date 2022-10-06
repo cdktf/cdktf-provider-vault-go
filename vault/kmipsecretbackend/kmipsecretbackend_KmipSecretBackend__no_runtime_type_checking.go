@@ -77,6 +77,10 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

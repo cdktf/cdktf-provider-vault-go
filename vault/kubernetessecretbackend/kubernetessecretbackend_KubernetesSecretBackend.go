@@ -13,6 +13,9 @@ import (
 type KubernetesSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -132,6 +135,7 @@ type KubernetesSecretBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetDefaultLeaseTtlSeconds()
@@ -170,6 +174,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
 		&returns,
 	)
 	return returns
@@ -685,6 +709,17 @@ func NewKubernetesSecretBackend_Override(k KubernetesSecretBackend, scope constr
 	)
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
 	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
 		panic(err)
@@ -1151,6 +1186,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) OverrideLogicalId(newLogicalId *stri
 		k,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
 	)
 }
 

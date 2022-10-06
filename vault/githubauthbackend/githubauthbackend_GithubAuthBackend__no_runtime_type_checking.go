@@ -73,6 +73,10 @@ func (j *jsiiProxy_GithubAuthBackend) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GithubAuthBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GithubAuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

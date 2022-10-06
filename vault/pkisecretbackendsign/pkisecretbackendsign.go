@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "renewPending", GoGetter: "RenewPending"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAltNames", GoMethod: "ResetAltNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRenew", GoMethod: "ResetAutoRenew"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCnFromSans", GoMethod: "ResetExcludeCnFromSans"},

@@ -101,6 +101,8 @@ type DatabaseSecretBackendConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedisElasticache() DatabaseSecretBackendConnectionRedisElasticacheOutputReference
+	RedisElasticacheInput() *DatabaseSecretBackendConnectionRedisElasticache
 	Redshift() DatabaseSecretBackendConnectionRedshiftOutputReference
 	RedshiftInput() *DatabaseSecretBackendConnectionRedshift
 	RootRotationStatements() *[]*string
@@ -156,6 +158,7 @@ type DatabaseSecretBackendConnection interface {
 	PutMysqlRds(value *DatabaseSecretBackendConnectionMysqlRds)
 	PutOracle(value *DatabaseSecretBackendConnectionOracle)
 	PutPostgresql(value *DatabaseSecretBackendConnectionPostgresql)
+	PutRedisElasticache(value *DatabaseSecretBackendConnectionRedisElasticache)
 	PutRedshift(value *DatabaseSecretBackendConnectionRedshift)
 	PutSnowflake(value *DatabaseSecretBackendConnectionSnowflake)
 	ResetAllowedRoles()
@@ -180,6 +183,7 @@ type DatabaseSecretBackendConnection interface {
 	ResetOverrideLogicalId()
 	ResetPluginName()
 	ResetPostgresql()
+	ResetRedisElasticache()
 	ResetRedshift()
 	ResetRootRotationStatements()
 	ResetSnowflake()
@@ -744,6 +748,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RedisElasticache() DatabaseSecretBackendConnectionRedisElasticacheOutputReference {
+	var returns DatabaseSecretBackendConnectionRedisElasticacheOutputReference
+	_jsii_.Get(
+		j,
+		"redisElasticache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RedisElasticacheInput() *DatabaseSecretBackendConnectionRedisElasticache {
+	var returns *DatabaseSecretBackendConnectionRedisElasticache
+	_jsii_.Get(
+		j,
+		"redisElasticacheInput",
 		&returns,
 	)
 	return returns
@@ -1435,6 +1459,17 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutPostgresql(value *Databas
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedisElasticache(value *DatabaseSecretBackendConnectionRedisElasticache) {
+	if err := d.validatePutRedisElasticacheParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedisElasticache",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedshift(value *DatabaseSecretBackendConnectionRedshift) {
 	if err := d.validatePutRedshiftParameters(value); err != nil {
 		panic(err)
@@ -1613,6 +1648,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetPostgresql() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresql",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRedisElasticache() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedisElasticache",
 		nil, // no parameters
 	)
 }

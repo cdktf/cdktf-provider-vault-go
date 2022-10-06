@@ -109,6 +109,14 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetLocalityParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetManagedKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetManagedKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetMaxPathLengthParameters(val *float64) error {
 	return nil
 }

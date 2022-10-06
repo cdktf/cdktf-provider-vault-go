@@ -77,6 +77,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

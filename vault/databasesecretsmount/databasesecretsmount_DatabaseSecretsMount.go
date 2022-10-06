@@ -13,6 +13,9 @@ import (
 type DatabaseSecretsMount interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -115,6 +118,8 @@ type DatabaseSecretsMount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedisElasticache() DatabaseSecretsMountRedisElasticacheList
+	RedisElasticacheInput() interface{}
 	Redshift() DatabaseSecretsMountRedshiftList
 	RedshiftInput() interface{}
 	SealWrap() interface{}
@@ -167,8 +172,10 @@ type DatabaseSecretsMount interface {
 	PutMysqlRds(value interface{})
 	PutOracle(value interface{})
 	PutPostgresql(value interface{})
+	PutRedisElasticache(value interface{})
 	PutRedshift(value interface{})
 	PutSnowflake(value interface{})
+	ResetAllowedManagedKeys()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetCassandra()
@@ -196,6 +203,7 @@ type DatabaseSecretsMount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostgresql()
+	ResetRedisElasticache()
 	ResetRedshift()
 	ResetSealWrap()
 	ResetSnowflake()
@@ -219,6 +227,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
 		&returns,
 	)
 	return returns
@@ -864,6 +892,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) RedisElasticache() DatabaseSecretsMountRedisElasticacheList {
+	var returns DatabaseSecretsMountRedisElasticacheList
+	_jsii_.Get(
+		j,
+		"redisElasticache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) RedisElasticacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redisElasticacheInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) Redshift() DatabaseSecretsMountRedshiftList {
 	var returns DatabaseSecretsMountRedshiftList
 	_jsii_.Get(
@@ -981,6 +1029,17 @@ func NewDatabaseSecretsMount_Override(d DatabaseSecretsMount, scope constructs.C
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMount",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
 	)
 }
 
@@ -1563,6 +1622,17 @@ func (d *jsiiProxy_DatabaseSecretsMount) PutPostgresql(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) PutRedisElasticache(value interface{}) {
+	if err := d.validatePutRedisElasticacheParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedisElasticache",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) PutRedshift(value interface{}) {
 	if err := d.validatePutRedshiftParameters(value); err != nil {
 		panic(err)
@@ -1582,6 +1652,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) PutSnowflake(value interface{}) {
 		d,
 		"putSnowflake",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
 	)
 }
 
@@ -1781,6 +1859,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetPostgresql() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresql",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetRedisElasticache() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedisElasticache",
 		nil, // no parameters
 	)
 }

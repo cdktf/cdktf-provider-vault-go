@@ -89,6 +89,10 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetDescriptionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -93,6 +93,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetDescriptionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetDiscoverdnParameters(val interface{}) error {
 	return nil
 }

@@ -17,11 +17,51 @@ func validateVaultProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val interface{}) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val *VaultProviderAuthLogin) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val interface{}) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val *VaultProviderAuthLoginAws) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val *VaultProviderAuthLoginAzure) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val *VaultProviderAuthLoginCert) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val *VaultProviderAuthLoginGcp) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val *VaultProviderAuthLoginJwt) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val *VaultProviderAuthLoginKerberos) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val *VaultProviderAuthLoginOci) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val *VaultProviderAuthLoginOidc) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val *VaultProviderAuthLoginRadius) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val *VaultProviderAuthLoginUserpass) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val *VaultProviderClientAuth) error {
 	return nil
 }
 

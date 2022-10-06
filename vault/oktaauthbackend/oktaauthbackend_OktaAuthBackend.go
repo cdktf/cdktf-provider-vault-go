@@ -38,6 +38,9 @@ type OktaAuthBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -123,6 +126,7 @@ type OktaAuthBackend interface {
 	ResetBaseUrl()
 	ResetBypassOktaMfa()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetGroup()
 	ResetId()
 	ResetMaxTtl()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_OktaAuthBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -645,6 +669,17 @@ func (j *jsiiProxy_OktaAuthBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
 		val,
 	)
 }
@@ -1034,6 +1069,14 @@ func (o *jsiiProxy_OktaAuthBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

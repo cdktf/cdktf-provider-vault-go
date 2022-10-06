@@ -95,6 +95,7 @@ type PkiSecretBackendSign interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RenewPending() cdktf.IResolvable
 	Serial() *string
 	SerialNumber() *string
 	// Experimental.
@@ -588,6 +589,16 @@ func (j *jsiiProxy_PkiSecretBackendSign) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign) RenewPending() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"renewPending",
 		&returns,
 	)
 	return returns

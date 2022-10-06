@@ -68,6 +68,14 @@ type PkiSecretBackendRootCertConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
 	Locality *string `field:"optional" json:"locality" yaml:"locality"`
+	// The ID of the previously configured managed key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
+	ManagedKeyId *string `field:"optional" json:"managedKeyId" yaml:"managedKeyId"`
+	// The name of the previously configured managed key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
+	ManagedKeyName *string `field:"optional" json:"managedKeyName" yaml:"managedKeyName"`
 	// The maximum path length to encode in the generated certificate.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}

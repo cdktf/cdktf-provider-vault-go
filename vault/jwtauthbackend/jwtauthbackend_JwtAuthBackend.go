@@ -38,6 +38,9 @@ type JwtAuthBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableRemount() interface{}
+	SetDisableRemount(val interface{})
+	DisableRemountInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -150,6 +153,7 @@ type JwtAuthBackend interface {
 	ResetBoundIssuer()
 	ResetDefaultRole()
 	ResetDescription()
+	ResetDisableRemount()
 	ResetId()
 	ResetJwksCaPem()
 	ResetJwksUrl()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_JwtAuthBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) DisableRemount() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) DisableRemountInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableRemountInput",
 		&returns,
 	)
 	return returns
@@ -866,6 +890,17 @@ func (j *jsiiProxy_JwtAuthBackend)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_JwtAuthBackend)SetDisableRemount(val interface{}) {
+	if err := j.validateSetDisableRemountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableRemount",
+		val,
+	)
+}
+
 func (j *jsiiProxy_JwtAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1350,6 +1385,14 @@ func (j *jsiiProxy_JwtAuthBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend) ResetDisableRemount() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetDisableRemount",
 		nil, // no parameters
 	)
 }

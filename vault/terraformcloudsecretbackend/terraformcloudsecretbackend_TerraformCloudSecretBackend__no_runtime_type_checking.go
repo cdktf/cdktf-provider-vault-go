@@ -81,6 +81,10 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDescriptionParameters
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -57,6 +57,10 @@ func validateMount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	return nil
 }

@@ -30,7 +30,7 @@ type DataVaultAzureAccessCredentialsConfig struct {
 	// The Azure environment to use during credential validation.
 	//
 	// Defaults to the environment configured in the Vault backend.
-	// Some possible values: AzurePublicCloud, AzureGovernmentCloud
+	// Some possible values: AzurePublicCloud, AzureUSGovernmentCloud
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/d/azure_access_credentials#environment DataVaultAzureAccessCredentials#environment}
 	Environment *string `field:"optional" json:"environment" yaml:"environment"`

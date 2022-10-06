@@ -105,6 +105,10 @@ func (j *jsiiProxy_AdSecretBackend) validateSetDescriptionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AdSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretBackend) validateSetDiscoverdnParameters(val interface{}) error {
 	return nil
 }

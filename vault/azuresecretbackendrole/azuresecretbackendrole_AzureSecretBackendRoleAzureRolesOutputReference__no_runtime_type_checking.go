@@ -61,6 +61,10 @@ func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) validateSetRoleIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRoleAzureRolesOutputReference) validateSetRoleNameParameters(val *string) error {
 	return nil
 }
