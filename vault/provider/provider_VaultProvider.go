@@ -95,6 +95,9 @@ type VaultProvider interface {
 	SkipChildToken() interface{}
 	SetSkipChildToken(val interface{})
 	SkipChildTokenInput() interface{}
+	SkipGetVaultVersion() interface{}
+	SetSkipGetVaultVersion(val interface{})
+	SkipGetVaultVersionInput() interface{}
 	SkipTlsVerify() interface{}
 	SetSkipTlsVerify(val interface{})
 	SkipTlsVerifyInput() interface{}
@@ -113,6 +116,9 @@ type VaultProvider interface {
 	TokenName() *string
 	SetTokenName(val *string)
 	TokenNameInput() *string
+	VaultVersionOverride() *string
+	SetVaultVersionOverride(val *string)
+	VaultVersionOverrideInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
@@ -143,10 +149,12 @@ type VaultProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSkipChildToken()
+	ResetSkipGetVaultVersion()
 	ResetSkipTlsVerify()
 	ResetTlsServerName()
 	ResetToken()
 	ResetTokenName()
+	ResetVaultVersionOverride()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -692,6 +700,26 @@ func (j *jsiiProxy_VaultProvider) SkipChildTokenInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VaultProvider) SkipGetVaultVersion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGetVaultVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) SkipGetVaultVersionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGetVaultVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultProvider) SkipTlsVerify() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -797,6 +825,26 @@ func (j *jsiiProxy_VaultProvider) TokenNameInput() *string {
 	_jsii_.Get(
 		j,
 		"tokenNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) VaultVersionOverride() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultVersionOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) VaultVersionOverrideInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vaultVersionOverrideInput",
 		&returns,
 	)
 	return returns
@@ -1058,6 +1106,17 @@ func (j *jsiiProxy_VaultProvider)SetSkipChildToken(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_VaultProvider)SetSkipGetVaultVersion(val interface{}) {
+	if err := j.validateSetSkipGetVaultVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipGetVaultVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VaultProvider)SetSkipTlsVerify(val interface{}) {
 	if err := j.validateSetSkipTlsVerifyParameters(val); err != nil {
 		panic(err)
@@ -1089,6 +1148,14 @@ func (j *jsiiProxy_VaultProvider)SetTokenName(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultProvider)SetVaultVersionOverride(val *string) {
+	_jsii_.Set(
+		j,
+		"vaultVersionOverride",
 		val,
 	)
 }
@@ -1345,6 +1412,14 @@ func (v *jsiiProxy_VaultProvider) ResetSkipChildToken() {
 	)
 }
 
+func (v *jsiiProxy_VaultProvider) ResetSkipGetVaultVersion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSkipGetVaultVersion",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VaultProvider) ResetSkipTlsVerify() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1373,6 +1448,14 @@ func (v *jsiiProxy_VaultProvider) ResetTokenName() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTokenName",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultProvider) ResetVaultVersionOverride() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVaultVersionOverride",
 		nil, // no parameters
 	)
 }

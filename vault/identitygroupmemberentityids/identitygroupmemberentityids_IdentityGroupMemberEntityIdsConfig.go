@@ -23,7 +23,9 @@ type IdentityGroupMemberEntityIdsConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
 	GroupId *string `field:"required" json:"groupId" yaml:"groupId"`
-	// Should the resource manage member entity ids  exclusively? Beware of race conditions when disabling exclusive management.
+	// If set to true, allows the resource to manage member entity ids exclusively.
+	//
+	// Beware of race conditions when disabling exclusive management
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
 	Exclusive interface{} `field:"optional" json:"exclusive" yaml:"exclusive"`

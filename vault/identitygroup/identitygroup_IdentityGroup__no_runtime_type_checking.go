@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package identitygroup
 
@@ -62,6 +61,10 @@ func (j *jsiiProxy_IdentityGroup) validateSetConnectionParameters(val interface{
 }
 
 func (j *jsiiProxy_IdentityGroup) validateSetExternalMemberEntityIdsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_IdentityGroup) validateSetExternalMemberGroupIdsParameters(val interface{}) error {
 	return nil
 }
 

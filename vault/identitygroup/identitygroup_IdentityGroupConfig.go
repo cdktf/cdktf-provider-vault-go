@@ -19,10 +19,14 @@ type IdentityGroupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Manage member entities externally through `vault_identity_group_policies_member_entity_ids`.
+	// Manage member entities externally through `vault_identity_group_member_entity_ids`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_entity_ids IdentityGroup#external_member_entity_ids}
 	ExternalMemberEntityIds interface{} `field:"optional" json:"externalMemberEntityIds" yaml:"externalMemberEntityIds"`
+	// Manage member groups externally through `vault_identity_group_member_group_ids`.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_member_group_ids IdentityGroup#external_member_group_ids}
+	ExternalMemberGroupIds interface{} `field:"optional" json:"externalMemberGroupIds" yaml:"externalMemberGroupIds"`
 	// Manage policies externally through `vault_identity_group_policies`, allows using group ID in assigned policies.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_group#external_policies IdentityGroup#external_policies}

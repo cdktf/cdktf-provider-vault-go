@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package provider
 
@@ -70,6 +69,10 @@ func (j *jsiiProxy_VaultProvider) validateSetHeadersParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_VaultProvider) validateSetSkipChildTokenParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_VaultProvider) validateSetSkipGetVaultVersionParameters(val interface{}) error {
 	return nil
 }
 

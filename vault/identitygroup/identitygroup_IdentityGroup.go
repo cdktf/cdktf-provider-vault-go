@@ -31,6 +31,9 @@ type IdentityGroup interface {
 	ExternalMemberEntityIds() interface{}
 	SetExternalMemberEntityIds(val interface{})
 	ExternalMemberEntityIdsInput() interface{}
+	ExternalMemberGroupIds() interface{}
+	SetExternalMemberGroupIds(val interface{})
+	ExternalMemberGroupIdsInput() interface{}
 	ExternalPolicies() interface{}
 	SetExternalPolicies(val interface{})
 	ExternalPoliciesInput() interface{}
@@ -114,6 +117,7 @@ type IdentityGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetExternalMemberEntityIds()
+	ResetExternalMemberGroupIds()
 	ResetExternalPolicies()
 	ResetId()
 	ResetMemberEntityIds()
@@ -206,6 +210,26 @@ func (j *jsiiProxy_IdentityGroup) ExternalMemberEntityIdsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"externalMemberEntityIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityGroup) ExternalMemberGroupIds() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalMemberGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IdentityGroup) ExternalMemberGroupIdsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalMemberGroupIdsInput",
 		&returns,
 	)
 	return returns
@@ -565,6 +589,17 @@ func (j *jsiiProxy_IdentityGroup)SetExternalMemberEntityIds(val interface{}) {
 	_jsii_.Set(
 		j,
 		"externalMemberEntityIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityGroup)SetExternalMemberGroupIds(val interface{}) {
+	if err := j.validateSetExternalMemberGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalMemberGroupIds",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (i *jsiiProxy_IdentityGroup) ResetExternalMemberEntityIds() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetExternalMemberEntityIds",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityGroup) ResetExternalMemberGroupIds() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetExternalMemberGroupIds",
 		nil, // no parameters
 	)
 }

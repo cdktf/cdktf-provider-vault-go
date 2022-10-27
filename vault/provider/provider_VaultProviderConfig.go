@@ -94,6 +94,10 @@ type VaultProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#skip_child_token VaultProvider#skip_child_token}
 	SkipChildToken interface{} `field:"optional" json:"skipChildToken" yaml:"skipChildToken"`
+	// Skip the dynamic fetching of the Vault server version.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#skip_get_vault_version VaultProvider#skip_get_vault_version}
+	SkipGetVaultVersion interface{} `field:"optional" json:"skipGetVaultVersion" yaml:"skipGetVaultVersion"`
 	// Set this to true only if the target Vault server is an insecure development instance.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#skip_tls_verify VaultProvider#skip_tls_verify}
@@ -110,5 +114,9 @@ type VaultProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#token_name VaultProvider#token_name}
 	TokenName *string `field:"optional" json:"tokenName" yaml:"tokenName"`
+	// Override the Vault server version, which is normally determined dynamically from the target Vault server.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault#vault_version_override VaultProvider#vault_version_override}
+	VaultVersionOverride *string `field:"optional" json:"vaultVersionOverride" yaml:"vaultVersionOverride"`
 }
 
