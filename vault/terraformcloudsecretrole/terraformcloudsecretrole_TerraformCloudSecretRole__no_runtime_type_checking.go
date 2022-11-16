@@ -56,6 +56,14 @@ func validateTerraformCloudSecretRole_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateTerraformCloudSecretRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTerraformCloudSecretRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

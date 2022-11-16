@@ -56,6 +56,14 @@ func validateAdSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAdSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretBackend) validateSetAnonymousGroupSearchParameters(val interface{}) error {
 	return nil
 }

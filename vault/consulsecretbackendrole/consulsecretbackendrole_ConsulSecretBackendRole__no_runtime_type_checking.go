@@ -56,6 +56,14 @@ func validateConsulSecretBackendRole_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateConsulSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsulSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateTransitSecretBackendKey_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateTransitSecretBackendKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransitSecretBackendKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetAllowPlaintextBackupParameters(val interface{}) error {
 	return nil
 }

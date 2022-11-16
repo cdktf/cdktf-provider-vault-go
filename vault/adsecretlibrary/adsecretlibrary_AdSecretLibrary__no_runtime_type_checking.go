@@ -56,6 +56,14 @@ func validateAdSecretLibrary_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAdSecretLibrary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdSecretLibrary_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretLibrary) validateSetBackendParameters(val *string) error {
 	return nil
 }

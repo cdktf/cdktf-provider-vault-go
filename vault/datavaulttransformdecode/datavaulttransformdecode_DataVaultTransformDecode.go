@@ -2,10 +2,10 @@ package datavaulttransformdecode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/datavaulttransformdecode/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/datavaulttransformdecode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -682,6 +682,44 @@ func DataVaultTransformDecode_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVaultTransformDecode_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVaultTransformDecode_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataVaultTransformDecode_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataVaultTransformDecode_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.dataVaultTransformDecode.DataVaultTransformDecode",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

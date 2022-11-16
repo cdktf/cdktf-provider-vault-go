@@ -56,6 +56,14 @@ func validatePkiSecretBackendCert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePkiSecretBackendCert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePkiSecretBackendCert_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCert) validateSetAltNamesParameters(val *[]*string) error {
 	return nil
 }

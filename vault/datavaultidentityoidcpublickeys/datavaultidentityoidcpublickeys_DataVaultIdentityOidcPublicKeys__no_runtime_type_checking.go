@@ -56,6 +56,14 @@ func validateDataVaultIdentityOidcPublicKeys_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataVaultIdentityOidcPublicKeys_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultIdentityOidcPublicKeys_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

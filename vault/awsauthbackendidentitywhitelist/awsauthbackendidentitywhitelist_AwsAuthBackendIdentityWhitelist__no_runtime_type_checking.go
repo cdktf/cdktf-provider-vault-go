@@ -56,6 +56,14 @@ func validateAwsAuthBackendIdentityWhitelist_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateAwsAuthBackendIdentityWhitelist_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsAuthBackendIdentityWhitelist_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateSetBackendParameters(val *string) error {
 	return nil
 }

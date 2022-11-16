@@ -2,10 +2,10 @@ package certauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/certauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/certauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1187,6 +1187,44 @@ func CertAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CertAuthBackendRole_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCertAuthBackendRole_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CertAuthBackendRole_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCertAuthBackendRole_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.certAuthBackendRole.CertAuthBackendRole",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateRabbitmqSecretBackendRole_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateRabbitmqSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRabbitmqSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIdentityGroupAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentityGroupAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityGroupAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityGroupAlias) validateSetCanonicalIdParameters(val *string) error {
 	return nil
 }

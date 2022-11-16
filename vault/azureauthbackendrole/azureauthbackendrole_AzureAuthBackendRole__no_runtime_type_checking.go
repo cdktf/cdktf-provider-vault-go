@@ -56,6 +56,14 @@ func validateAzureAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

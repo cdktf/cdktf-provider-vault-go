@@ -2,10 +2,10 @@ package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/oktaauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/oktaauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -827,6 +827,44 @@ func OktaAuthBackend_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OktaAuthBackend_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOktaAuthBackend_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OktaAuthBackend_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOktaAuthBackend_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackend",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

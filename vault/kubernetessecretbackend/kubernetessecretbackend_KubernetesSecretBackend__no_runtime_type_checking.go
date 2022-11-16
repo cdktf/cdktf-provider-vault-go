@@ -56,6 +56,14 @@ func validateKubernetesSecretBackend_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateKubernetesSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
 	return nil
 }

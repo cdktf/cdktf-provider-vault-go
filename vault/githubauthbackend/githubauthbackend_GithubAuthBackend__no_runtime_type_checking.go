@@ -60,6 +60,14 @@ func validateGithubAuthBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGithubAuthBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGithubAuthBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GithubAuthBackend) validateSetBaseUrlParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDatabaseSecretBackendStaticRole_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDatabaseSecretBackendStaticRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatabaseSecretBackendStaticRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

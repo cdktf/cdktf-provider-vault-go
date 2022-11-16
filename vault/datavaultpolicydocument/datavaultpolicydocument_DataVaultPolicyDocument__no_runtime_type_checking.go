@@ -60,6 +60,14 @@ func validateDataVaultPolicyDocument_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataVaultPolicyDocument_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultPolicyDocument_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPolicyDocument) validateSetIdParameters(val *string) error {
 	return nil
 }

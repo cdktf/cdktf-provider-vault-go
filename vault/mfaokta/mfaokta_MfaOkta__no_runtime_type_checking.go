@@ -56,6 +56,14 @@ func validateMfaOkta_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMfaOkta_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMfaOkta_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaOkta) validateSetApiTokenParameters(val *string) error {
 	return nil
 }

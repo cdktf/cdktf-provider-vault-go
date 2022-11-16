@@ -56,6 +56,14 @@ func validateJwtAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateJwtAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateJwtAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateSetAllowedRedirectUrisParameters(val *[]*string) error {
 	return nil
 }

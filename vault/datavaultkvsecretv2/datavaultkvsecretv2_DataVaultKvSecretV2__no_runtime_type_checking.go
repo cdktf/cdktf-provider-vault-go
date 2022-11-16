@@ -56,6 +56,14 @@ func validateDataVaultKvSecretV2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataVaultKvSecretV2_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultKvSecretV2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKvSecretV2) validateSetIdParameters(val *string) error {
 	return nil
 }

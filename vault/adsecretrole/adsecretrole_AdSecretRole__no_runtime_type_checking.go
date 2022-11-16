@@ -56,6 +56,14 @@ func validateAdSecretRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAdSecretRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAdSecretRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

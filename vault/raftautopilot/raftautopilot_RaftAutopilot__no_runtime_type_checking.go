@@ -56,6 +56,14 @@ func validateRaftAutopilot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRaftAutopilot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRaftAutopilot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftAutopilot) validateSetCleanupDeadServersParameters(val interface{}) error {
 	return nil
 }

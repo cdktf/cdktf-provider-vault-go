@@ -56,6 +56,14 @@ func validateDataVaultAwsAccessCredentials_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataVaultAwsAccessCredentials_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultAwsAccessCredentials_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultAwsAccessCredentials) validateSetBackendParameters(val *string) error {
 	return nil
 }

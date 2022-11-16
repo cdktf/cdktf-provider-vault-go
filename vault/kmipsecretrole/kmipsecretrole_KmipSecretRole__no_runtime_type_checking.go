@@ -56,6 +56,14 @@ func validateKmipSecretRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmipSecretRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmipSecretRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

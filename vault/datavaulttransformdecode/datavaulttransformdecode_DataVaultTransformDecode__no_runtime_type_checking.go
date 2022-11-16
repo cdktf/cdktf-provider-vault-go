@@ -56,6 +56,14 @@ func validateDataVaultTransformDecode_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataVaultTransformDecode_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultTransformDecode_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransformDecode) validateSetBatchInputParameters(val interface{}) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateRabbitmqSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRabbitmqSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateRabbitmqSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -60,6 +60,14 @@ func validateGcpSecretStaticAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGcpSecretStaticAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGcpSecretStaticAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretStaticAccount) validateSetBackendParameters(val *string) error {
 	return nil
 }

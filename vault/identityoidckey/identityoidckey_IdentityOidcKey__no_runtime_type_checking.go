@@ -56,6 +56,14 @@ func validateIdentityOidcKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentityOidcKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityOidcKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityOidcKey) validateSetAlgorithmParameters(val *string) error {
 	return nil
 }

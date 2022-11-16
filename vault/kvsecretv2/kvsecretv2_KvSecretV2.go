@@ -2,10 +2,10 @@ package kvsecretv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/kvsecretv2/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/kvsecretv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -729,6 +729,44 @@ func KvSecretV2_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KvSecretV2_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKvSecretV2_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KvSecretV2_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKvSecretV2_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.kvSecretV2.KvSecretV2",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

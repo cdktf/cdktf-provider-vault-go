@@ -56,6 +56,14 @@ func validateGithubUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGithubUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGithubUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GithubUser) validateSetBackendParameters(val *string) error {
 	return nil
 }

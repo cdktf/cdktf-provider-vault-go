@@ -60,6 +60,14 @@ func validatePkiSecretBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePkiSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePkiSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowAnyNameParameters(val interface{}) error {
 	return nil
 }

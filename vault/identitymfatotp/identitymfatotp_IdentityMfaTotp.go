@@ -2,10 +2,10 @@ package identitymfatotp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/identitymfatotp/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/identitymfatotp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -786,6 +786,44 @@ func IdentityMfaTotp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IdentityMfaTotp_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIdentityMfaTotp_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IdentityMfaTotp_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIdentityMfaTotp_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateRabbitmqSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRabbitmqSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRabbitmqSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

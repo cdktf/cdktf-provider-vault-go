@@ -56,6 +56,14 @@ func validateGenericSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGenericSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGenericSecret_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GenericSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

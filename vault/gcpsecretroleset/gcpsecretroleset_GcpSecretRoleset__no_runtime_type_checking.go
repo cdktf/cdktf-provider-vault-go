@@ -60,6 +60,14 @@ func validateGcpSecretRoleset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGcpSecretRoleset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGcpSecretRoleset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretRoleset) validateSetBackendParameters(val *string) error {
 	return nil
 }

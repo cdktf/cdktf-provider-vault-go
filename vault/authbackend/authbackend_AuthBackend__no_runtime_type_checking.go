@@ -60,6 +60,14 @@ func validateAuthBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAuthBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAuthBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuthBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

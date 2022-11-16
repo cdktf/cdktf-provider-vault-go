@@ -56,6 +56,14 @@ func validateDataVaultTransitEncrypt_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataVaultTransitEncrypt_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultTransitEncrypt_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetBackendParameters(val *string) error {
 	return nil
 }

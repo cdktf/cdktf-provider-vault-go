@@ -56,6 +56,14 @@ func validateTokenAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTokenAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTokenAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TokenAuthBackendRole) validateSetAllowedEntityAliasesParameters(val *[]*string) error {
 	return nil
 }

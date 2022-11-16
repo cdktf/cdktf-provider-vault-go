@@ -56,6 +56,14 @@ func validateQuotaLeaseCount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQuotaLeaseCount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQuotaLeaseCount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuotaLeaseCount) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

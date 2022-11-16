@@ -56,6 +56,14 @@ func validateGcpSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGcpSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGcpSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

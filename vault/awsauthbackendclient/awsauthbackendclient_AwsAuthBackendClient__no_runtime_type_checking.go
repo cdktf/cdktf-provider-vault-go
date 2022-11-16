@@ -56,6 +56,14 @@ func validateAwsAuthBackendClient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsAuthBackendClient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsAuthBackendClient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetAccessKeyParameters(val *string) error {
 	return nil
 }

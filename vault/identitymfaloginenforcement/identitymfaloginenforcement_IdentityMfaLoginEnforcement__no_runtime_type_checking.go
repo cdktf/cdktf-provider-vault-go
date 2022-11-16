@@ -56,6 +56,14 @@ func validateIdentityMfaLoginEnforcement_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateIdentityMfaLoginEnforcement_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityMfaLoginEnforcement_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityMfaLoginEnforcement) validateSetAuthMethodAccessorsParameters(val *[]*string) error {
 	return nil
 }

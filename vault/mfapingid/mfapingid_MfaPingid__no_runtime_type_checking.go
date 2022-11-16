@@ -56,6 +56,14 @@ func validateMfaPingid_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMfaPingid_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMfaPingid_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaPingid) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

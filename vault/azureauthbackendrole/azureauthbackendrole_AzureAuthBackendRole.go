@@ -2,10 +2,10 @@ package azureauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/azureauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/azureauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1048,6 +1048,44 @@ func AzureAuthBackendRole_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzureAuthBackendRole_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzureAuthBackendRole_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AzureAuthBackendRole_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAzureAuthBackendRole_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

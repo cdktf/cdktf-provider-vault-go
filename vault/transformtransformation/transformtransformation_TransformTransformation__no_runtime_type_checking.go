@@ -56,6 +56,14 @@ func validateTransformTransformation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateTransformTransformation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransformTransformation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetAllowedRolesParameters(val *[]*string) error {
 	return nil
 }

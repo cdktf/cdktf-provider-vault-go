@@ -56,6 +56,14 @@ func validateDataVaultNomadAccessToken_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataVaultNomadAccessToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultNomadAccessToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultNomadAccessToken) validateSetBackendParameters(val *string) error {
 	return nil
 }

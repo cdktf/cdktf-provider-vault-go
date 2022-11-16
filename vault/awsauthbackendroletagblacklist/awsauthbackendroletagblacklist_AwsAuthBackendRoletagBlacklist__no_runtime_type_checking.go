@@ -56,6 +56,14 @@ func validateAwsAuthBackendRoletagBlacklist_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateAwsAuthBackendRoletagBlacklist_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsAuthBackendRoletagBlacklist_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateSetBackendParameters(val *string) error {
 	return nil
 }

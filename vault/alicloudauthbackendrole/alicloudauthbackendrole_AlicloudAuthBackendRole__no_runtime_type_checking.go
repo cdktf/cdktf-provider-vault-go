@@ -56,6 +56,14 @@ func validateAlicloudAuthBackendRole_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAlicloudAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlicloudAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetArnParameters(val *string) error {
 	return nil
 }

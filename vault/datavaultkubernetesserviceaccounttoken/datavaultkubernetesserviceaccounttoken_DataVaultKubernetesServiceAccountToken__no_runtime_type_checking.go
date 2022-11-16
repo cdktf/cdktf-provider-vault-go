@@ -56,6 +56,14 @@ func validateDataVaultKubernetesServiceAccountToken_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataVaultKubernetesServiceAccountToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultKubernetesServiceAccountToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) validateSetBackendParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGcpAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGcpAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGcpAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackendRole) validateSetAddGroupAliasesParameters(val interface{}) error {
 	return nil
 }

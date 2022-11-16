@@ -56,6 +56,14 @@ func validateAwsSecretBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

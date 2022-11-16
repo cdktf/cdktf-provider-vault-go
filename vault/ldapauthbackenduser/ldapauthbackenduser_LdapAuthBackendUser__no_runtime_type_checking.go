@@ -56,6 +56,14 @@ func validateLdapAuthBackendUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLdapAuthBackendUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLdapAuthBackendUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackendUser) validateSetBackendParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateRaftSnapshotAgentConfig_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRaftSnapshotAgentConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRaftSnapshotAgentConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetAwsAccessKeyIdParameters(val *string) error {
 	return nil
 }

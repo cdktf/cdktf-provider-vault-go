@@ -56,6 +56,14 @@ func validateAzureSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetClientIdParameters(val *string) error {
 	return nil
 }

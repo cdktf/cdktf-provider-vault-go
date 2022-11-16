@@ -56,6 +56,14 @@ func validateDataVaultIdentityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataVaultIdentityGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultIdentityGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultIdentityGroup) validateSetAliasIdParameters(val *string) error {
 	return nil
 }

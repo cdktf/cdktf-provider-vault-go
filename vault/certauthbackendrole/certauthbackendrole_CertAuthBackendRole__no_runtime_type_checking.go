@@ -56,6 +56,14 @@ func validateCertAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCertAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCertAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) validateSetAllowedCommonNamesParameters(val *[]*string) error {
 	return nil
 }

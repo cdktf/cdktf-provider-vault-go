@@ -56,6 +56,14 @@ func validateSshSecretBackendCa_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSshSecretBackendCa_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSshSecretBackendCa_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetBackendParameters(val *string) error {
 	return nil
 }

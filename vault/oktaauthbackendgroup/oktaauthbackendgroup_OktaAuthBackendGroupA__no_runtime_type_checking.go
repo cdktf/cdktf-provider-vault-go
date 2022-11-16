@@ -56,6 +56,14 @@ func validateOktaAuthBackendGroupA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOktaAuthBackendGroupA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOktaAuthBackendGroupA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackendGroupA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateKvSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKvSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKvSecret_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KvSecret) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

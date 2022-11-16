@@ -56,6 +56,14 @@ func validateMfaTotp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMfaTotp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMfaTotp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaTotp) validateSetAlgorithmParameters(val *string) error {
 	return nil
 }

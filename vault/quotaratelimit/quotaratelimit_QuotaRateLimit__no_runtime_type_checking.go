@@ -56,6 +56,14 @@ func validateQuotaRateLimit_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQuotaRateLimit_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQuotaRateLimit_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuotaRateLimit) validateSetBlockIntervalParameters(val *float64) error {
 	return nil
 }

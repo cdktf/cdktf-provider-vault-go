@@ -56,6 +56,14 @@ func validateDataVaultGcpAuthBackendRole_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataVaultGcpAuthBackendRole_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultGcpAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

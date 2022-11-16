@@ -56,6 +56,14 @@ func validateKubernetesAuthBackendRole_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateKubernetesAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetAliasNameSourceParameters(val *string) error {
 	return nil
 }

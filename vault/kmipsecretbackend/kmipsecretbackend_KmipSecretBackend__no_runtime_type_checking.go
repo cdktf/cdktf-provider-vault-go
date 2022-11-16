@@ -56,6 +56,14 @@ func validateKmipSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmipSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmipSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

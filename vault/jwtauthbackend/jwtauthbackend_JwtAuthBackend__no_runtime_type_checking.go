@@ -60,6 +60,14 @@ func validateJwtAuthBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateJwtAuthBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateJwtAuthBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateSetBoundIssuerParameters(val *string) error {
 	return nil
 }

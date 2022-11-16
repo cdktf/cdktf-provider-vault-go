@@ -56,6 +56,14 @@ func validateDataVaultAuthBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataVaultAuthBackend_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultAuthBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultAuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

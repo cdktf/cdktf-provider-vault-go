@@ -56,6 +56,14 @@ func validateRgpPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRgpPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRgpPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RgpPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

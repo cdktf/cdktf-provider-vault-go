@@ -2,10 +2,10 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/databasesecretbackendconnection/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/databasesecretbackendconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1105,6 +1105,44 @@ func DatabaseSecretBackendConnection_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatabaseSecretBackendConnection_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatabaseSecretBackendConnection_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatabaseSecretBackendConnection_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatabaseSecretBackendConnection_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateMfaDuo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMfaDuo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMfaDuo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaDuo) validateSetApiHostnameParameters(val *string) error {
 	return nil
 }

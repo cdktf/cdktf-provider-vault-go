@@ -56,6 +56,14 @@ func validateTransformTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTransformTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransformTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTemplate) validateSetAlphabetParameters(val *string) error {
 	return nil
 }

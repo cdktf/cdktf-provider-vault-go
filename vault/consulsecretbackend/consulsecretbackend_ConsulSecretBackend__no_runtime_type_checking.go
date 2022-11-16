@@ -56,6 +56,14 @@ func validateConsulSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConsulSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConsulSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetAddressParameters(val *string) error {
 	return nil
 }

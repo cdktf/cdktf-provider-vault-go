@@ -56,6 +56,14 @@ func validateDataVaultApproleAuthBackendRoleId_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataVaultApproleAuthBackendRoleId_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataVaultApproleAuthBackendRoleId_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultApproleAuthBackendRoleId) validateSetBackendParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateKmipSecretScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmipSecretScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmipSecretScope_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretScope) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateKubernetesSecretBackendRole_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateKubernetesSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKubernetesSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetAllowedKubernetesNamespacesParameters(val *[]*string) error {
 	return nil
 }

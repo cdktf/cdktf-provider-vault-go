@@ -56,6 +56,14 @@ func validateApproleAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApproleAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApproleAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApproleAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

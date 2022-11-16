@@ -56,6 +56,14 @@ func validateIdentityOidcClient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentityOidcClient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentityOidcClient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityOidcClient) validateSetAccessTokenTtlParameters(val *float64) error {
 	return nil
 }

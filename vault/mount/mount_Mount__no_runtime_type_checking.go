@@ -56,6 +56,14 @@ func validateMount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetAllowedManagedKeysParameters(val *[]*string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateAwsAuthBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsAuthBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsAuthBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendRole) validateSetAllowInstanceMigrationParameters(val interface{}) error {
 	return nil
 }

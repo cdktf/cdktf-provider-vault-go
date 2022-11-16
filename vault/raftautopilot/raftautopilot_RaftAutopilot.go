@@ -2,10 +2,10 @@ package raftautopilot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/raftautopilot/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/raftautopilot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -664,6 +664,44 @@ func RaftAutopilot_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.raftAutopilot.RaftAutopilot",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RaftAutopilot_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRaftAutopilot_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.raftAutopilot.RaftAutopilot",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RaftAutopilot_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRaftAutopilot_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.raftAutopilot.RaftAutopilot",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

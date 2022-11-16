@@ -16,6 +16,14 @@ func validateVaultProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVaultProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVaultProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val *VaultProviderAuthLogin) error {
 	return nil
 }

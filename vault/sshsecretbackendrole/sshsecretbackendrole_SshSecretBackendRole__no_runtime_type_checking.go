@@ -60,6 +60,14 @@ func validateSshSecretBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSshSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSshSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetAlgorithmSignerParameters(val *string) error {
 	return nil
 }

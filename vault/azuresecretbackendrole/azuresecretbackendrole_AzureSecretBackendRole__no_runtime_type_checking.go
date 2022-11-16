@@ -64,6 +64,14 @@ func validateAzureSecretBackendRole_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAzureSecretBackendRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzureSecretBackendRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetApplicationObjectIdParameters(val *string) error {
 	return nil
 }

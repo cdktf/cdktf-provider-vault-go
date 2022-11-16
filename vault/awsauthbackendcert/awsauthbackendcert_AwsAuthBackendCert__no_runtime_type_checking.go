@@ -56,6 +56,14 @@ func validateAwsAuthBackendCert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsAuthBackendCert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsAuthBackendCert_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendCert) validateSetAwsPublicCertParameters(val *string) error {
 	return nil
 }

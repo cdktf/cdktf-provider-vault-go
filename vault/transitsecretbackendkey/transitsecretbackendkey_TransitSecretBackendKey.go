@@ -2,10 +2,10 @@ package transitsecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v3/transitsecretbackendkey/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/transitsecretbackendkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -949,6 +949,44 @@ func TransitSecretBackendKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TransitSecretBackendKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTransitSecretBackendKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TransitSecretBackendKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTransitSecretBackendKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

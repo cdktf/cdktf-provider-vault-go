@@ -56,6 +56,14 @@ func validateNomadSecretBackend_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNomadSecretBackend_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNomadSecretBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetAddressParameters(val *string) error {
 	return nil
 }

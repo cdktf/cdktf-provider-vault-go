@@ -119,6 +119,22 @@ func validatePkiSecretBackendIntermediateSetSigned_IsConstructParameters(x inter
 	return nil
 }
 
+func validatePkiSecretBackendIntermediateSetSigned_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validatePkiSecretBackendIntermediateSetSigned_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) validateSetBackendParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
