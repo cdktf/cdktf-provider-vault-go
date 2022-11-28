@@ -91,12 +91,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMysqlRds", GoMethod: "PutMysqlRds"},
 			_jsii_.MemberMethod{JsiiMethod: "putOracle", GoMethod: "PutOracle"},
 			_jsii_.MemberMethod{JsiiMethod: "putPostgresql", GoMethod: "PutPostgresql"},
+			_jsii_.MemberMethod{JsiiMethod: "putRedis", GoMethod: "PutRedis"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedisElasticache", GoMethod: "PutRedisElasticache"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedshift", GoMethod: "PutRedshift"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnowflake", GoMethod: "PutSnowflake"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "redis", GoGetter: "Redis"},
 			_jsii_.MemberProperty{JsiiProperty: "redisElasticache", GoGetter: "RedisElasticache"},
 			_jsii_.MemberProperty{JsiiProperty: "redisElasticacheInput", GoGetter: "RedisElasticacheInput"},
+			_jsii_.MemberProperty{JsiiProperty: "redisInput", GoGetter: "RedisInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redshift", GoGetter: "Redshift"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftInput", GoGetter: "RedshiftInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedRoles", GoMethod: "ResetAllowedRoles"},
@@ -119,6 +122,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPluginName", GoMethod: "ResetPluginName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPostgresql", GoMethod: "ResetPostgresql"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedis", GoMethod: "ResetRedis"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedisElasticache", GoMethod: "ResetRedisElasticache"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedshift", GoMethod: "ResetRedshift"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRootRotationStatements", GoMethod: "ResetRootRotationStatements"},
@@ -968,6 +972,10 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis",
+		reflect.TypeOf((*DatabaseSecretBackendConnectionRedis)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache",
 		reflect.TypeOf((*DatabaseSecretBackendConnectionRedisElasticache)(nil)).Elem(),
 	)
@@ -1010,6 +1018,56 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatabaseSecretBackendConnectionRedisElasticacheOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisOutputReference",
+		reflect.TypeOf((*DatabaseSecretBackendConnectionRedisOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "caCert", GoGetter: "CaCert"},
+			_jsii_.MemberProperty{JsiiProperty: "caCertInput", GoGetter: "CaCertInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "host", GoGetter: "Host"},
+			_jsii_.MemberProperty{JsiiProperty: "hostInput", GoGetter: "HostInput"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureTls", GoGetter: "InsecureTls"},
+			_jsii_.MemberProperty{JsiiProperty: "insecureTlsInput", GoGetter: "InsecureTlsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "password", GoGetter: "Password"},
+			_jsii_.MemberProperty{JsiiProperty: "passwordInput", GoGetter: "PasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
+			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCaCert", GoMethod: "ResetCaCert"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInsecureTls", GoMethod: "ResetInsecureTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTls", GoMethod: "ResetTls"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tls", GoGetter: "Tls"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsInput", GoGetter: "TlsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
+			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DatabaseSecretBackendConnectionRedisOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -101,8 +101,10 @@ type DatabaseSecretBackendConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Redis() DatabaseSecretBackendConnectionRedisOutputReference
 	RedisElasticache() DatabaseSecretBackendConnectionRedisElasticacheOutputReference
 	RedisElasticacheInput() *DatabaseSecretBackendConnectionRedisElasticache
+	RedisInput() *DatabaseSecretBackendConnectionRedis
 	Redshift() DatabaseSecretBackendConnectionRedshiftOutputReference
 	RedshiftInput() *DatabaseSecretBackendConnectionRedshift
 	RootRotationStatements() *[]*string
@@ -158,6 +160,7 @@ type DatabaseSecretBackendConnection interface {
 	PutMysqlRds(value *DatabaseSecretBackendConnectionMysqlRds)
 	PutOracle(value *DatabaseSecretBackendConnectionOracle)
 	PutPostgresql(value *DatabaseSecretBackendConnectionPostgresql)
+	PutRedis(value *DatabaseSecretBackendConnectionRedis)
 	PutRedisElasticache(value *DatabaseSecretBackendConnectionRedisElasticache)
 	PutRedshift(value *DatabaseSecretBackendConnectionRedshift)
 	PutSnowflake(value *DatabaseSecretBackendConnectionSnowflake)
@@ -183,6 +186,7 @@ type DatabaseSecretBackendConnection interface {
 	ResetOverrideLogicalId()
 	ResetPluginName()
 	ResetPostgresql()
+	ResetRedis()
 	ResetRedisElasticache()
 	ResetRedshift()
 	ResetRootRotationStatements()
@@ -753,6 +757,16 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) Redis() DatabaseSecretBackendConnectionRedisOutputReference {
+	var returns DatabaseSecretBackendConnectionRedisOutputReference
+	_jsii_.Get(
+		j,
+		"redis",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) RedisElasticache() DatabaseSecretBackendConnectionRedisElasticacheOutputReference {
 	var returns DatabaseSecretBackendConnectionRedisElasticacheOutputReference
 	_jsii_.Get(
@@ -768,6 +782,16 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) RedisElasticacheInput() *Dat
 	_jsii_.Get(
 		j,
 		"redisElasticacheInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RedisInput() *DatabaseSecretBackendConnectionRedis {
+	var returns *DatabaseSecretBackendConnectionRedis
+	_jsii_.Get(
+		j,
+		"redisInput",
 		&returns,
 	)
 	return returns
@@ -1497,6 +1521,17 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) PutPostgresql(value *Databas
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedis(value *DatabaseSecretBackendConnectionRedis) {
+	if err := d.validatePutRedisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedis",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) PutRedisElasticache(value *DatabaseSecretBackendConnectionRedisElasticache) {
 	if err := d.validatePutRedisElasticacheParameters(value); err != nil {
 		panic(err)
@@ -1686,6 +1721,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetPostgresql() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresql",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRedis() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedis",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func validatePkiSecretBackendIntermediateCertRequest_IsTerraformResourceParamete
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetAddBasicConstraintsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetAltNamesParameters(val *[]*string) error {
 	return nil
 }

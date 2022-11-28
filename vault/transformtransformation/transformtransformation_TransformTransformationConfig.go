@@ -31,6 +31,10 @@ type TransformTransformationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 	AllowedRoles *[]*string `field:"optional" json:"allowedRoles" yaml:"allowedRoles"`
+	// If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+	DeletionAllowed interface{} `field:"optional" json:"deletionAllowed" yaml:"deletionAllowed"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/transform_transformation#id TransformTransformation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

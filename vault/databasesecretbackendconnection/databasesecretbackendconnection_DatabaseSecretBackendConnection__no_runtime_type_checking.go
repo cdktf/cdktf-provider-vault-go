@@ -108,6 +108,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) validatePutPostgresqlParamet
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) validatePutRedisParameters(value *DatabaseSecretBackendConnectionRedis) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) validatePutRedisElasticacheParameters(value *DatabaseSecretBackendConnectionRedisElasticache) error {
 	return nil
 }

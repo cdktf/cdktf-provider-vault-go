@@ -108,6 +108,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutPostgresqlParameters(value i
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedisParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedisElasticacheParameters(value interface{}) error {
 	return nil
 }

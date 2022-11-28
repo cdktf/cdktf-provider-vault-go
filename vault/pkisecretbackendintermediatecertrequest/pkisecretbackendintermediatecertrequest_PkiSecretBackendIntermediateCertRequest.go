@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
 type PkiSecretBackendIntermediateCertRequest interface {
 	cdktf.TerraformResource
+	AddBasicConstraints() interface{}
+	SetAddBasicConstraints(val interface{})
+	AddBasicConstraintsInput() interface{}
 	AltNames() *[]*string
 	SetAltNames(val *[]*string)
 	AltNamesInput() *[]*string
@@ -155,6 +158,7 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAddBasicConstraints()
 	ResetAltNames()
 	ResetCountry()
 	ResetExcludeCnFromSans()
@@ -191,6 +195,26 @@ type PkiSecretBackendIntermediateCertRequest interface {
 // The jsii proxy struct for PkiSecretBackendIntermediateCertRequest
 type jsiiProxy_PkiSecretBackendIntermediateCertRequest struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) AddBasicConstraints() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addBasicConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) AddBasicConstraintsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"addBasicConstraintsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) AltNames() *[]*string {
@@ -873,6 +897,17 @@ func NewPkiSecretBackendIntermediateCertRequest_Override(p PkiSecretBackendInter
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetAddBasicConstraints(val interface{}) {
+	if err := j.validateSetAddBasicConstraintsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addBasicConstraints",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetAltNames(val *[]*string) {
 	if err := j.validateSetAltNamesParameters(val); err != nil {
 		panic(err)
@@ -1454,6 +1489,14 @@ func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) OverrideLogicalId(ne
 		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetAddBasicConstraints() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAddBasicConstraints",
+		nil, // no parameters
 	)
 }
 

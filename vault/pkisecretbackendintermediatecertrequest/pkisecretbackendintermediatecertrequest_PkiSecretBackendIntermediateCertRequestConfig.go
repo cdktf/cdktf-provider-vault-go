@@ -31,6 +31,13 @@ type PkiSecretBackendIntermediateCertRequestConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#type PkiSecretBackendIntermediateCertRequest#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// Set 'CA: true' in a Basic Constraints extension.
+	//
+	// Only needed as
+	// a workaround in some compatibility scenarios with Active Directory Certificate Services.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#add_basic_constraints PkiSecretBackendIntermediateCertRequest#add_basic_constraints}
+	AddBasicConstraints interface{} `field:"optional" json:"addBasicConstraints" yaml:"addBasicConstraints"`
 	// List of alternative names.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request#alt_names PkiSecretBackendIntermediateCertRequest#alt_names}

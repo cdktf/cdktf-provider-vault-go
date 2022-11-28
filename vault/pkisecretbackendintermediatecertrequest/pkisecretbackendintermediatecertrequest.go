@@ -11,6 +11,8 @@ func init() {
 		"@cdktf/provider-vault.pkiSecretBackendIntermediateCertRequest.PkiSecretBackendIntermediateCertRequest",
 		reflect.TypeOf((*PkiSecretBackendIntermediateCertRequest)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "addBasicConstraints", GoGetter: "AddBasicConstraints"},
+			_jsii_.MemberProperty{JsiiProperty: "addBasicConstraintsInput", GoGetter: "AddBasicConstraintsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "altNames", GoGetter: "AltNames"},
 			_jsii_.MemberProperty{JsiiProperty: "altNamesInput", GoGetter: "AltNamesInput"},
@@ -79,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provinceInput", GoGetter: "ProvinceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAddBasicConstraints", GoMethod: "ResetAddBasicConstraints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAltNames", GoMethod: "ResetAltNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCountry", GoMethod: "ResetCountry"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCnFromSans", GoMethod: "ResetExcludeCnFromSans"},

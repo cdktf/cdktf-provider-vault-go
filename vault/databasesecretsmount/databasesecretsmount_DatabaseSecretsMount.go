@@ -118,8 +118,10 @@ type DatabaseSecretsMount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Redis() DatabaseSecretsMountRedisList
 	RedisElasticache() DatabaseSecretsMountRedisElasticacheList
 	RedisElasticacheInput() interface{}
+	RedisInput() interface{}
 	Redshift() DatabaseSecretsMountRedshiftList
 	RedshiftInput() interface{}
 	SealWrap() interface{}
@@ -172,6 +174,7 @@ type DatabaseSecretsMount interface {
 	PutMysqlRds(value interface{})
 	PutOracle(value interface{})
 	PutPostgresql(value interface{})
+	PutRedis(value interface{})
 	PutRedisElasticache(value interface{})
 	PutRedshift(value interface{})
 	PutSnowflake(value interface{})
@@ -203,6 +206,7 @@ type DatabaseSecretsMount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPostgresql()
+	ResetRedis()
 	ResetRedisElasticache()
 	ResetRedshift()
 	ResetSealWrap()
@@ -892,6 +896,16 @@ func (j *jsiiProxy_DatabaseSecretsMount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) Redis() DatabaseSecretsMountRedisList {
+	var returns DatabaseSecretsMountRedisList
+	_jsii_.Get(
+		j,
+		"redis",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) RedisElasticache() DatabaseSecretsMountRedisElasticacheList {
 	var returns DatabaseSecretsMountRedisElasticacheList
 	_jsii_.Get(
@@ -907,6 +921,16 @@ func (j *jsiiProxy_DatabaseSecretsMount) RedisElasticacheInput() interface{} {
 	_jsii_.Get(
 		j,
 		"redisElasticacheInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) RedisInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"redisInput",
 		&returns,
 	)
 	return returns
@@ -1660,6 +1684,17 @@ func (d *jsiiProxy_DatabaseSecretsMount) PutPostgresql(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) PutRedis(value interface{}) {
+	if err := d.validatePutRedisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedis",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) PutRedisElasticache(value interface{}) {
 	if err := d.validatePutRedisElasticacheParameters(value); err != nil {
 		panic(err)
@@ -1897,6 +1932,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetPostgresql() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPostgresql",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetRedis() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedis",
 		nil, // no parameters
 	)
 }

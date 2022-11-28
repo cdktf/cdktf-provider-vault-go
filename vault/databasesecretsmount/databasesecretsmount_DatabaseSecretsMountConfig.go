@@ -124,6 +124,10 @@ type DatabaseSecretsMountConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
 	Postgresql interface{} `field:"optional" json:"postgresql" yaml:"postgresql"`
+	// redis block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis DatabaseSecretsMount#redis}
+	Redis interface{} `field:"optional" json:"redis" yaml:"redis"`
 	// redis_elasticache block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}

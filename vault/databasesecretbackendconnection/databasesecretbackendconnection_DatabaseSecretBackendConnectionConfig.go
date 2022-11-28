@@ -106,6 +106,10 @@ type DatabaseSecretBackendConnectionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#postgresql DatabaseSecretBackendConnection#postgresql}
 	Postgresql *DatabaseSecretBackendConnectionPostgresql `field:"optional" json:"postgresql" yaml:"postgresql"`
+	// redis block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redis DatabaseSecretBackendConnection#redis}
+	Redis *DatabaseSecretBackendConnectionRedis `field:"optional" json:"redis" yaml:"redis"`
 	// redis_elasticache block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/database_secret_backend_connection#redis_elasticache DatabaseSecretBackendConnection#redis_elasticache}

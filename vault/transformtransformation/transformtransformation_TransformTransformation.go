@@ -27,6 +27,9 @@ type TransformTransformation interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionAllowed() interface{}
+	SetDeletionAllowed(val interface{})
+	DeletionAllowedInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -114,6 +117,7 @@ type TransformTransformation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowedRoles()
+	ResetDeletionAllowed()
 	ResetId()
 	ResetMaskingCharacter()
 	ResetNamespace()
@@ -194,6 +198,26 @@ func (j *jsiiProxy_TransformTransformation) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) DeletionAllowed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionAllowed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransformTransformation) DeletionAllowedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionAllowedInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (j *jsiiProxy_TransformTransformation)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransformTransformation)SetDeletionAllowed(val interface{}) {
+	if err := j.validateSetDeletionAllowedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionAllowed",
 		val,
 	)
 }
@@ -974,6 +1009,14 @@ func (t *jsiiProxy_TransformTransformation) ResetAllowedRoles() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetAllowedRoles",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransformTransformation) ResetDeletionAllowed() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDeletionAllowed",
 		nil, // no parameters
 	)
 }
