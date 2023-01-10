@@ -23,10 +23,26 @@ type PkiSecretBackendCrlConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#backend PkiSecretBackendCrlConfig#backend}
 	Backend *string `field:"required" json:"backend" yaml:"backend"`
+	// Enables or disables periodic rebuilding of the CRL upon expiry.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#auto_rebuild PkiSecretBackendCrlConfig#auto_rebuild}
+	AutoRebuild interface{} `field:"optional" json:"autoRebuild" yaml:"autoRebuild"`
+	// Grace period before CRL expiry to attempt rebuild of CRL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#auto_rebuild_grace_period PkiSecretBackendCrlConfig#auto_rebuild_grace_period}
+	AutoRebuildGracePeriod *string `field:"optional" json:"autoRebuildGracePeriod" yaml:"autoRebuildGracePeriod"`
+	// Interval to check for new revocations on, to regenerate the delta CRL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#delta_rebuild_interval PkiSecretBackendCrlConfig#delta_rebuild_interval}
+	DeltaRebuildInterval *string `field:"optional" json:"deltaRebuildInterval" yaml:"deltaRebuildInterval"`
 	// Disables or enables CRL building.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#disable PkiSecretBackendCrlConfig#disable}
 	Disable interface{} `field:"optional" json:"disable" yaml:"disable"`
+	// Enables or disables building of delta CRLs with up-to-date revocation information, augmenting the last complete CRL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#enable_delta PkiSecretBackendCrlConfig#enable_delta}
+	EnableDelta interface{} `field:"optional" json:"enableDelta" yaml:"enableDelta"`
 	// Specifies the time until expiration.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#expiry PkiSecretBackendCrlConfig#expiry}
@@ -40,5 +56,13 @@ type PkiSecretBackendCrlConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#namespace PkiSecretBackendCrlConfig#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
+	// Disables or enables the OCSP responder in Vault.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_disable PkiSecretBackendCrlConfig#ocsp_disable}
+	OcspDisable interface{} `field:"optional" json:"ocspDisable" yaml:"ocspDisable"`
+	// The amount of time an OCSP response can be cached for, useful for OCSP stapling refresh durations.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
+	OcspExpiry *string `field:"optional" json:"ocspExpiry" yaml:"ocspExpiry"`
 }
 

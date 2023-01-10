@@ -39,6 +39,10 @@ type KvSecretV2Config struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#cas KvSecretV2#cas}
 	Cas *float64 `field:"optional" json:"cas" yaml:"cas"`
+	// custom_metadata block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+	CustomMetadata *KvSecretV2CustomMetadata `field:"optional" json:"customMetadata" yaml:"customMetadata"`
 	// If set to true, permanently deletes all versions for the specified key.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}

@@ -12,6 +12,12 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config}.
 type PkiSecretBackendCrlConfig interface {
 	cdktf.TerraformResource
+	AutoRebuild() interface{}
+	SetAutoRebuild(val interface{})
+	AutoRebuildGracePeriod() *string
+	SetAutoRebuildGracePeriod(val *string)
+	AutoRebuildGracePeriodInput() *string
+	AutoRebuildInput() interface{}
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -27,6 +33,9 @@ type PkiSecretBackendCrlConfig interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeltaRebuildInterval() *string
+	SetDeltaRebuildInterval(val *string)
+	DeltaRebuildIntervalInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -34,6 +43,9 @@ type PkiSecretBackendCrlConfig interface {
 	Disable() interface{}
 	SetDisable(val interface{})
 	DisableInput() interface{}
+	EnableDelta() interface{}
+	SetEnableDelta(val interface{})
+	EnableDeltaInput() interface{}
 	Expiry() *string
 	SetExpiry(val *string)
 	ExpiryInput() *string
@@ -57,6 +69,12 @@ type PkiSecretBackendCrlConfig interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OcspDisable() interface{}
+	SetOcspDisable(val interface{})
+	OcspDisableInput() interface{}
+	OcspExpiry() *string
+	SetOcspExpiry(val *string)
+	OcspExpiryInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -98,10 +116,16 @@ type PkiSecretBackendCrlConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoRebuild()
+	ResetAutoRebuildGracePeriod()
+	ResetDeltaRebuildInterval()
 	ResetDisable()
+	ResetEnableDelta()
 	ResetExpiry()
 	ResetId()
 	ResetNamespace()
+	ResetOcspDisable()
+	ResetOcspExpiry()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -118,6 +142,46 @@ type PkiSecretBackendCrlConfig interface {
 // The jsii proxy struct for PkiSecretBackendCrlConfig
 type jsiiProxy_PkiSecretBackendCrlConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) AutoRebuild() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRebuild",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) AutoRebuildGracePeriod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoRebuildGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) AutoRebuildGracePeriodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoRebuildGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) AutoRebuildInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRebuildInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) Backend() *string {
@@ -180,6 +244,26 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) Count() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) DeltaRebuildInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deltaRebuildInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) DeltaRebuildIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deltaRebuildIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -205,6 +289,26 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) DisableInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) EnableDelta() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDelta",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) EnableDeltaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDeltaInput",
 		&returns,
 	)
 	return returns
@@ -320,6 +424,46 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) OcspDisable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspDisable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) OcspDisableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspDisableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) OcspExpiry() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ocspExpiry",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) OcspExpiryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ocspExpiryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -410,6 +554,28 @@ func NewPkiSecretBackendCrlConfig_Override(p PkiSecretBackendCrlConfig, scope co
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetAutoRebuild(val interface{}) {
+	if err := j.validateSetAutoRebuildParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRebuild",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetAutoRebuildGracePeriod(val *string) {
+	if err := j.validateSetAutoRebuildGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRebuildGracePeriod",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetBackend(val *string) {
 	if err := j.validateSetBackendParameters(val); err != nil {
 		panic(err)
@@ -440,6 +606,17 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetDeltaRebuildInterval(val *string) {
+	if err := j.validateSetDeltaRebuildIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deltaRebuildInterval",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -455,6 +632,17 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetDisable(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetEnableDelta(val interface{}) {
+	if err := j.validateSetEnableDeltaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDelta",
 		val,
 	)
 }
@@ -507,6 +695,28 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetOcspDisable(val interface{}) {
+	if err := j.validateSetOcspDisableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspDisable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetOcspExpiry(val *string) {
+	if err := j.validateSetOcspExpiryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspExpiry",
 		val,
 	)
 }
@@ -796,10 +1006,42 @@ func (p *jsiiProxy_PkiSecretBackendCrlConfig) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetAutoRebuild() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoRebuild",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetAutoRebuildGracePeriod() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAutoRebuildGracePeriod",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetDeltaRebuildInterval() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDeltaRebuildInterval",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetDisable() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDisable",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetEnableDelta() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnableDelta",
 		nil, // no parameters
 	)
 }
@@ -824,6 +1066,22 @@ func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetOcspDisable() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOcspDisable",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetOcspExpiry() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetOcspExpiry",
 		nil, // no parameters
 	)
 }

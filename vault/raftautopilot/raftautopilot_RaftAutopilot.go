@@ -34,6 +34,9 @@ type RaftAutopilot interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableUpgradeMigration() interface{}
+	SetDisableUpgradeMigration(val interface{})
+	DisableUpgradeMigrationInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -109,6 +112,7 @@ type RaftAutopilot interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetCleanupDeadServers()
 	ResetDeadServerLastContactThreshold()
+	ResetDisableUpgradeMigration()
 	ResetId()
 	ResetLastContactThreshold()
 	ResetMaxTrailingLogs()
@@ -218,6 +222,26 @@ func (j *jsiiProxy_RaftAutopilot) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftAutopilot) DisableUpgradeMigration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpgradeMigration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RaftAutopilot) DisableUpgradeMigrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableUpgradeMigrationInput",
 		&returns,
 	)
 	return returns
@@ -528,6 +552,17 @@ func (j *jsiiProxy_RaftAutopilot)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RaftAutopilot)SetDisableUpgradeMigration(val interface{}) {
+	if err := j.validateSetDisableUpgradeMigrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableUpgradeMigration",
 		val,
 	)
 }
@@ -914,6 +949,14 @@ func (r *jsiiProxy_RaftAutopilot) ResetDeadServerLastContactThreshold() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDeadServerLastContactThreshold",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RaftAutopilot) ResetDisableUpgradeMigration() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDisableUpgradeMigration",
 		nil, // no parameters
 	)
 }

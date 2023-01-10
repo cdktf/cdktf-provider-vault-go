@@ -64,6 +64,14 @@ func validatePkiSecretBackendCrlConfig_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetAutoRebuildParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetAutoRebuildGracePeriodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetBackendParameters(val *string) error {
 	return nil
 }
@@ -72,7 +80,15 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetDeltaRebuildIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetDisableParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetEnableDeltaParameters(val interface{}) error {
 	return nil
 }
 
@@ -89,6 +105,14 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetLifecycleParameters(val
 }
 
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetOcspDisableParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetOcspExpiryParameters(val *string) error {
 	return nil
 }
 

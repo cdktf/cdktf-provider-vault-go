@@ -76,6 +76,10 @@ func (j *jsiiProxy_RaftAutopilot) validateSetDeadServerLastContactThresholdParam
 	return nil
 }
 
+func (j *jsiiProxy_RaftAutopilot) validateSetDisableUpgradeMigrationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftAutopilot) validateSetIdParameters(val *string) error {
 	return nil
 }

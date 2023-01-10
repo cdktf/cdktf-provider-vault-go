@@ -18,6 +18,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetadata", GoGetter: "CustomMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "customMetadataInput", GoGetter: "CustomMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "data", GoGetter: "Data"},
 			_jsii_.MemberProperty{JsiiProperty: "dataJson", GoGetter: "DataJson"},
 			_jsii_.MemberProperty{JsiiProperty: "dataJsonInput", GoGetter: "DataJsonInput"},
@@ -56,8 +58,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "path", GoGetter: "Path"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomMetadata", GoMethod: "PutCustomMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCas", GoMethod: "ResetCas"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetadata", GoMethod: "ResetCustomMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeleteAllVersions", GoMethod: "ResetDeleteAllVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableRead", GoMethod: "ResetDisableRead"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -81,5 +85,53 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.kvSecretV2.KvSecretV2Config",
 		reflect.TypeOf((*KvSecretV2Config)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadata",
+		reflect.TypeOf((*KvSecretV2CustomMetadata)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vault.kvSecretV2.KvSecretV2CustomMetadataOutputReference",
+		reflect.TypeOf((*KvSecretV2CustomMetadataOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "casRequired", GoGetter: "CasRequired"},
+			_jsii_.MemberProperty{JsiiProperty: "casRequiredInput", GoGetter: "CasRequiredInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "data", GoGetter: "Data"},
+			_jsii_.MemberProperty{JsiiProperty: "dataInput", GoGetter: "DataInput"},
+			_jsii_.MemberProperty{JsiiProperty: "deleteVersionAfter", GoGetter: "DeleteVersionAfter"},
+			_jsii_.MemberProperty{JsiiProperty: "deleteVersionAfterInput", GoGetter: "DeleteVersionAfterInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxVersions", GoGetter: "MaxVersions"},
+			_jsii_.MemberProperty{JsiiProperty: "maxVersionsInput", GoGetter: "MaxVersionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCasRequired", GoMethod: "ResetCasRequired"},
+			_jsii_.MemberMethod{JsiiMethod: "resetData", GoMethod: "ResetData"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDeleteVersionAfter", GoMethod: "ResetDeleteVersionAfter"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxVersions", GoMethod: "ResetMaxVersions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KvSecretV2CustomMetadataOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 }

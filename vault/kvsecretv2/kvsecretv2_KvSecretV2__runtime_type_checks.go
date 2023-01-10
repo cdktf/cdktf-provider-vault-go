@@ -111,6 +111,17 @@ func (k *jsiiProxy_KvSecretV2) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (k *jsiiProxy_KvSecretV2) validatePutCustomMetadataParameters(value *KvSecretV2CustomMetadata) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateKvSecretV2_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

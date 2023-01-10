@@ -52,6 +52,10 @@ func (k *jsiiProxy_KvSecretV2) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (k *jsiiProxy_KvSecretV2) validatePutCustomMetadataParameters(value *KvSecretV2CustomMetadata) error {
+	return nil
+}
+
 func validateKvSecretV2_IsConstructParameters(x interface{}) error {
 	return nil
 }

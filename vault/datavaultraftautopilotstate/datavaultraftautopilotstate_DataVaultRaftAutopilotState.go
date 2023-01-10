@@ -1,23 +1,19 @@
-package namespace
+package datavaultraftautopilotstate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/namespace/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/datavaultraftautopilotstate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/namespace vault_namespace}.
-type Namespace interface {
-	cdktf.TerraformResource
+// Represents a {@link https://www.terraform.io/docs/providers/vault/d/raft_autopilot_state vault_raft_autopilot_state}.
+type DataVaultRaftAutopilotState interface {
+	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	// Experimental.
-	Connection() interface{}
-	// Experimental.
-	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,6 +24,7 @@ type Namespace interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	FailureTolerance() *float64
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -36,41 +33,40 @@ type Namespace interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Healthy() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Leader() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Namespace() *string
 	SetNamespace(val *string)
-	NamespaceId() *string
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
-	Path() *string
-	SetPath(val *string)
-	PathFq() *string
-	SetPathFq(val *string)
-	PathFqInput() *string
-	PathInput() *string
+	OptimisticFailureTolerance() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
-	Provisioners() *[]interface{}
-	// Experimental.
-	SetProvisioners(val *[]interface{})
-	// Experimental.
 	RawOverrides() interface{}
+	RedundancyZones() cdktf.StringMap
+	RedundancyZonesJson() *string
+	Servers() cdktf.StringMap
+	ServersJson() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UpgradeInfo() cdktf.StringMap
+	UpgradeInfoJson() *string
+	Voters() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +97,6 @@ type Namespace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPathFq()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -112,12 +107,12 @@ type Namespace interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for Namespace
-type jsiiProxy_Namespace struct {
-	internal.Type__cdktfTerraformResource
+// The jsii proxy struct for DataVaultRaftAutopilotState
+type jsiiProxy_DataVaultRaftAutopilotState struct {
+	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_Namespace) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -127,17 +122,7 @@ func (j *jsiiProxy_Namespace) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Connection() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"connection",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -147,7 +132,7 @@ func (j *jsiiProxy_Namespace) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Count() *float64 {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Count() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
@@ -157,7 +142,7 @@ func (j *jsiiProxy_Namespace) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) DependsOn() *[]*string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -167,7 +152,17 @@ func (j *jsiiProxy_Namespace) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) FailureTolerance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"failureTolerance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -177,7 +172,7 @@ func (j *jsiiProxy_Namespace) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Fqn() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -187,7 +182,7 @@ func (j *jsiiProxy_Namespace) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -197,7 +192,17 @@ func (j *jsiiProxy_Namespace) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Id() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Healthy() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"healthy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -207,7 +212,7 @@ func (j *jsiiProxy_Namespace) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) IdInput() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -217,7 +222,17 @@ func (j *jsiiProxy_Namespace) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Leader() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"leader",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -227,7 +242,7 @@ func (j *jsiiProxy_Namespace) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Namespace() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -237,17 +252,7 @@ func (j *jsiiProxy_Namespace) Namespace() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) NamespaceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"namespaceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) NamespaceInput() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) NamespaceInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -257,7 +262,7 @@ func (j *jsiiProxy_Namespace) NamespaceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Node() constructs.Node {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -267,47 +272,17 @@ func (j *jsiiProxy_Namespace) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Path() *string {
-	var returns *string
+func (j *jsiiProxy_DataVaultRaftAutopilotState) OptimisticFailureTolerance() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
-		"path",
+		"optimisticFailureTolerance",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) PathFq() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathFq",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) PathFqInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathFqInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) PathInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"pathInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -317,17 +292,7 @@ func (j *jsiiProxy_Namespace) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) Provisioners() *[]interface{} {
-	var returns *[]interface{}
-	_jsii_.Get(
-		j,
-		"provisioners",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Namespace) RawOverrides() interface{} {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -337,7 +302,47 @@ func (j *jsiiProxy_Namespace) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) RedundancyZones() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"redundancyZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) RedundancyZonesJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundancyZonesJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Servers() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"servers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) ServersJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serversJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -347,7 +352,7 @@ func (j *jsiiProxy_Namespace) TerraformGeneratorMetadata() *cdktf.TerraformProvi
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -357,7 +362,7 @@ func (j *jsiiProxy_Namespace) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -367,18 +372,48 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultRaftAutopilotState) UpgradeInfo() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"upgradeInfo",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/namespace vault_namespace} Resource.
-func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
+func (j *jsiiProxy_DataVaultRaftAutopilotState) UpgradeInfoJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"upgradeInfoJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultRaftAutopilotState) Voters() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"voters",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/vault/d/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) DataVaultRaftAutopilotState {
 	_init_.Initialize()
 
-	if err := validateNewNamespaceParameters(scope, id, config); err != nil {
+	if err := validateNewDataVaultRaftAutopilotStateParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_Namespace{}
+	j := jsiiProxy_DataVaultRaftAutopilotState{}
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.namespace.Namespace",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -386,29 +421,18 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/namespace vault_namespace} Resource.
-func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
+// Create a new {@link https://www.terraform.io/docs/providers/vault/d/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+func NewDataVaultRaftAutopilotState_Override(d DataVaultRaftAutopilotState, scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-vault.namespace.Namespace",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		[]interface{}{scope, id, config},
-		n,
+		d,
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetConnection(val interface{}) {
-	if err := j.validateSetConnectionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Namespace)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -416,7 +440,7 @@ func (j *jsiiProxy_Namespace)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -424,7 +448,7 @@ func (j *jsiiProxy_Namespace)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -432,7 +456,7 @@ func (j *jsiiProxy_Namespace)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetId(val *string) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +467,7 @@ func (j *jsiiProxy_Namespace)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -454,7 +478,7 @@ func (j *jsiiProxy_Namespace)SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetNamespace(val *string) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,43 +489,10 @@ func (j *jsiiProxy_Namespace)SetNamespace(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Namespace)SetPath(val *string) {
-	if err := j.validateSetPathParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"path",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Namespace)SetPathFq(val *string) {
-	if err := j.validateSetPathFqParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"pathFq",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Namespace)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataVaultRaftAutopilotState)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Namespace)SetProvisioners(val *[]interface{}) {
-	if err := j.validateSetProvisionersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"provisioners",
 		val,
 	)
 }
@@ -523,16 +514,16 @@ func (j *jsiiProxy_Namespace)SetProvisioners(val *[]interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func Namespace_IsConstruct(x interface{}) *bool {
+func DataVaultRaftAutopilotState_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateNamespace_IsConstructParameters(x); err != nil {
+	if err := validateDataVaultRaftAutopilotState_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.namespace.Namespace",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -542,17 +533,17 @@ func Namespace_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func Namespace_IsTerraformElement(x interface{}) *bool {
+func DataVaultRaftAutopilotState_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateNamespace_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataVaultRaftAutopilotState_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.namespace.Namespace",
-		"isTerraformElement",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
 	)
@@ -561,17 +552,17 @@ func Namespace_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func Namespace_IsTerraformResource(x interface{}) *bool {
+func DataVaultRaftAutopilotState_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateNamespace_IsTerraformResourceParameters(x); err != nil {
+	if err := validateDataVaultRaftAutopilotState_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-vault.namespace.Namespace",
-		"isTerraformResource",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)
@@ -579,36 +570,36 @@ func Namespace_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func Namespace_TfResourceType() *string {
+func DataVaultRaftAutopilotState_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-vault.namespace.Namespace",
+		"@cdktf/provider-vault.dataVaultRaftAutopilotState.DataVaultRaftAutopilotState",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) AddOverride(path *string, value interface{}) {
-	if err := n.validateAddOverrideParameters(path, value); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (n *jsiiProxy_Namespace) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := n.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -617,14 +608,14 @@ func (n *jsiiProxy_Namespace) GetAnyMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -633,14 +624,14 @@ func (n *jsiiProxy_Namespace) GetBooleanAttribute(terraformAttribute *string) cd
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := n.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -649,14 +640,14 @@ func (n *jsiiProxy_Namespace) GetBooleanMapAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := n.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -665,14 +656,14 @@ func (n *jsiiProxy_Namespace) GetListAttribute(terraformAttribute *string) *[]*s
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := n.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -681,14 +672,14 @@ func (n *jsiiProxy_Namespace) GetNumberAttribute(terraformAttribute *string) *fl
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := n.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -697,14 +688,14 @@ func (n *jsiiProxy_Namespace) GetNumberListAttribute(terraformAttribute *string)
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := n.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -713,14 +704,14 @@ func (n *jsiiProxy_Namespace) GetNumberMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetStringAttribute(terraformAttribute *string) *string {
-	if err := n.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -729,14 +720,14 @@ func (n *jsiiProxy_Namespace) GetStringAttribute(terraformAttribute *string) *st
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := n.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -745,14 +736,14 @@ func (n *jsiiProxy_Namespace) GetStringMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -761,54 +752,46 @@ func (n *jsiiProxy_Namespace) InterpolationForAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) OverrideLogicalId(newLogicalId *string) {
-	if err := n.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (n *jsiiProxy_Namespace) ResetId() {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ResetId() {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_Namespace) ResetNamespace() {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ResetNamespace() {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"resetNamespace",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_Namespace) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		n,
+		d,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (n *jsiiProxy_Namespace) ResetPathFq() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetPathFq",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_Namespace) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -817,11 +800,11 @@ func (n *jsiiProxy_Namespace) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) ToMetadata() interface{} {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -830,11 +813,11 @@ func (n *jsiiProxy_Namespace) ToMetadata() interface{} {
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) ToString() *string {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -843,11 +826,11 @@ func (n *jsiiProxy_Namespace) ToString() *string {
 	return returns
 }
 
-func (n *jsiiProxy_Namespace) ToTerraform() interface{} {
+func (d *jsiiProxy_DataVaultRaftAutopilotState) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		n,
+		d,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

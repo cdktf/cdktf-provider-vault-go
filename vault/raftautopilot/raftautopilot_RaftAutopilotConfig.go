@@ -31,6 +31,10 @@ type RaftAutopilotConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 	DeadServerLastContactThreshold *string `field:"optional" json:"deadServerLastContactThreshold" yaml:"deadServerLastContactThreshold"`
+	// Disables automatically upgrading Vault using autopilot. (Enterprise-only).
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+	DisableUpgradeMigration interface{} `field:"optional" json:"disableUpgradeMigration" yaml:"disableUpgradeMigration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot#id RaftAutopilot#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

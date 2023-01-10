@@ -84,6 +84,10 @@ func (j *jsiiProxy_Namespace) validateSetPathParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Namespace) validateSetPathFqParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Namespace) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

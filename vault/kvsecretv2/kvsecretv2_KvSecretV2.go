@@ -27,6 +27,8 @@ type KvSecretV2 interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomMetadata() KvSecretV2CustomMetadataOutputReference
+	CustomMetadataInput() *KvSecretV2CustomMetadata
 	Data() cdktf.StringMap
 	DataJson() *string
 	SetDataJson(val *string)
@@ -113,7 +115,9 @@ type KvSecretV2 interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCustomMetadata(value *KvSecretV2CustomMetadata)
 	ResetCas()
+	ResetCustomMetadata()
 	ResetDeleteAllVersions()
 	ResetDisableRead()
 	ResetId()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_KvSecretV2) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) CustomMetadata() KvSecretV2CustomMetadataOutputReference {
+	var returns KvSecretV2CustomMetadataOutputReference
+	_jsii_.Get(
+		j,
+		"customMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) CustomMetadataInput() *KvSecretV2CustomMetadata {
+	var returns *KvSecretV2CustomMetadata
+	_jsii_.Get(
+		j,
+		"customMetadataInput",
 		&returns,
 	)
 	return returns
@@ -967,10 +991,29 @@ func (k *jsiiProxy_KvSecretV2) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KvSecretV2) PutCustomMetadata(value *KvSecretV2CustomMetadata) {
+	if err := k.validatePutCustomMetadataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putCustomMetadata",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KvSecretV2) ResetCas() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCas",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KvSecretV2) ResetCustomMetadata() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomMetadata",
 		nil, // no parameters
 	)
 }
