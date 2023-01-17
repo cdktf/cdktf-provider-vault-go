@@ -2,9 +2,9 @@ package sshsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v4/sshsecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v5/sshsecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
