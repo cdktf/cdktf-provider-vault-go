@@ -140,6 +140,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultUserParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultUserTemplateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

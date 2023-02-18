@@ -63,6 +63,8 @@ type SshSecretBackendRoleConfig struct {
 	DefaultExtensions *map[string]*string `field:"optional" json:"defaultExtensions" yaml:"defaultExtensions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_role#default_user SshSecretBackendRole#default_user}.
 	DefaultUser *string `field:"optional" json:"defaultUser" yaml:"defaultUser"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}.
+	DefaultUserTemplate interface{} `field:"optional" json:"defaultUserTemplate" yaml:"defaultUserTemplate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/ssh_secret_backend_role#id SshSecretBackendRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

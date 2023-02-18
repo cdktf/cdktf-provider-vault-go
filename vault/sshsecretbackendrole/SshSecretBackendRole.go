@@ -77,6 +77,9 @@ type SshSecretBackendRole interface {
 	DefaultUser() *string
 	SetDefaultUser(val *string)
 	DefaultUserInput() *string
+	DefaultUserTemplate() interface{}
+	SetDefaultUserTemplate(val interface{})
+	DefaultUserTemplateInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -175,6 +178,7 @@ type SshSecretBackendRole interface {
 	ResetDefaultCriticalOptions()
 	ResetDefaultExtensions()
 	ResetDefaultUser()
+	ResetDefaultUserTemplate()
 	ResetId()
 	ResetKeyIdFormat()
 	ResetMaxTtl()
@@ -593,6 +597,26 @@ func (j *jsiiProxy_SshSecretBackendRole) DefaultUserInput() *string {
 	_jsii_.Get(
 		j,
 		"defaultUserInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) DefaultUserTemplate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUserTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) DefaultUserTemplateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUserTemplateInput",
 		&returns,
 	)
 	return returns
@@ -1090,6 +1114,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetDefaultUser(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultUser",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendRole)SetDefaultUserTemplate(val interface{}) {
+	if err := j.validateSetDefaultUserTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultUserTemplate",
 		val,
 	)
 }
@@ -1626,6 +1661,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultUser() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetDefaultUser",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) ResetDefaultUserTemplate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultUserTemplate",
 		nil, // no parameters
 	)
 }
