@@ -33,6 +33,9 @@ type PkiSecretBackendCrlConfig interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CrossClusterRevocation() interface{}
+	SetCrossClusterRevocation(val interface{})
+	CrossClusterRevocationInput() interface{}
 	DeltaRebuildInterval() *string
 	SetDeltaRebuildInterval(val *string)
 	DeltaRebuildIntervalInput() *string
@@ -91,6 +94,12 @@ type PkiSecretBackendCrlConfig interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UnifiedCrl() interface{}
+	SetUnifiedCrl(val interface{})
+	UnifiedCrlInput() interface{}
+	UnifiedCrlOnExistingPaths() interface{}
+	SetUnifiedCrlOnExistingPaths(val interface{})
+	UnifiedCrlOnExistingPathsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -118,6 +127,7 @@ type PkiSecretBackendCrlConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAutoRebuild()
 	ResetAutoRebuildGracePeriod()
+	ResetCrossClusterRevocation()
 	ResetDeltaRebuildInterval()
 	ResetDisable()
 	ResetEnableDelta()
@@ -129,6 +139,8 @@ type PkiSecretBackendCrlConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetUnifiedCrl()
+	ResetUnifiedCrlOnExistingPaths()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -239,6 +251,26 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) CrossClusterRevocation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossClusterRevocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) CrossClusterRevocationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"crossClusterRevocationInput",
 		&returns,
 	)
 	return returns
@@ -524,6 +556,46 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unifiedCrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unifiedCrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrlOnExistingPaths() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unifiedCrlOnExistingPaths",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrlOnExistingPathsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unifiedCrlOnExistingPathsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
 func NewPkiSecretBackendCrlConfig(scope constructs.Construct, id *string, config *PkiSecretBackendCrlConfigConfig) PkiSecretBackendCrlConfig {
@@ -602,6 +674,17 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetCrossClusterRevocation(val interface{}) {
+	if err := j.validateSetCrossClusterRevocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"crossClusterRevocation",
 		val,
 	)
 }
@@ -736,6 +819,28 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetUnifiedCrl(val interface{}) {
+	if err := j.validateSetUnifiedCrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unifiedCrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetUnifiedCrlOnExistingPaths(val interface{}) {
+	if err := j.validateSetUnifiedCrlOnExistingPathsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unifiedCrlOnExistingPaths",
 		val,
 	)
 }
@@ -1022,6 +1127,14 @@ func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetAutoRebuildGracePeriod() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetCrossClusterRevocation() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCrossClusterRevocation",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetDeltaRebuildInterval() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1090,6 +1203,22 @@ func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetUnifiedCrl() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUnifiedCrl",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetUnifiedCrlOnExistingPaths() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUnifiedCrlOnExistingPaths",
 		nil, // no parameters
 	)
 }

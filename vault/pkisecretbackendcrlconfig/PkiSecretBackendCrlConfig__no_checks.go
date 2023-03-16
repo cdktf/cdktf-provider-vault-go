@@ -80,6 +80,10 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetCrossClusterRevocationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetDeltaRebuildIntervalParameters(val *string) error {
 	return nil
 }
@@ -117,6 +121,14 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetOcspExpiryParameters(va
 }
 
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetUnifiedCrlParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetUnifiedCrlOnExistingPathsParameters(val interface{}) error {
 	return nil
 }
 

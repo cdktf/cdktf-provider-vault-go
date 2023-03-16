@@ -31,6 +31,10 @@ type PkiSecretBackendCrlConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#auto_rebuild_grace_period PkiSecretBackendCrlConfig#auto_rebuild_grace_period}
 	AutoRebuildGracePeriod *string `field:"optional" json:"autoRebuildGracePeriod" yaml:"autoRebuildGracePeriod"`
+	// Enable cross-cluster revocation request queues.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#cross_cluster_revocation PkiSecretBackendCrlConfig#cross_cluster_revocation}
+	CrossClusterRevocation interface{} `field:"optional" json:"crossClusterRevocation" yaml:"crossClusterRevocation"`
 	// Interval to check for new revocations on, to regenerate the delta CRL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#delta_rebuild_interval PkiSecretBackendCrlConfig#delta_rebuild_interval}
@@ -64,5 +68,13 @@ type PkiSecretBackendCrlConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#ocsp_expiry PkiSecretBackendCrlConfig#ocsp_expiry}
 	OcspExpiry *string `field:"optional" json:"ocspExpiry" yaml:"ocspExpiry"`
+	// Enables unified CRL and OCSP building.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl PkiSecretBackendCrlConfig#unified_crl}
+	UnifiedCrl interface{} `field:"optional" json:"unifiedCrl" yaml:"unifiedCrl"`
+	// Enables serving the unified CRL and OCSP on the existing, previously cluster-local paths.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_crl_config#unified_crl_on_existing_paths PkiSecretBackendCrlConfig#unified_crl_on_existing_paths}
+	UnifiedCrlOnExistingPaths interface{} `field:"optional" json:"unifiedCrlOnExistingPaths" yaml:"unifiedCrlOnExistingPaths"`
 }
 
