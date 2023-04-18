@@ -76,6 +76,10 @@ func (j *jsiiProxy_IdentityMfaOkta) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_IdentityMfaOkta) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityMfaOkta) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetIdParameters(val *string) error {
 	return nil
 }

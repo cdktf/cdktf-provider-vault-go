@@ -76,6 +76,10 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) validateSetIdParameters(val *string) error {
 	return nil
 }

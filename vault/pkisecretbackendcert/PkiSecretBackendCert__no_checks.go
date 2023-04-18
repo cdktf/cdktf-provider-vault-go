@@ -84,6 +84,10 @@ func (j *jsiiProxy_PkiSecretBackendCert) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCert) validateSetExcludeCnFromSansParameters(val interface{}) error {
 	return nil
 }

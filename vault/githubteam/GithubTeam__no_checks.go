@@ -72,6 +72,10 @@ func (j *jsiiProxy_GithubTeam) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_GithubTeam) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GithubTeam) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateSetDefaultRoleParameters(val *string) error {
 	return nil
 }

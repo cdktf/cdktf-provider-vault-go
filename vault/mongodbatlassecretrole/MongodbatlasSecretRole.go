@@ -2,14 +2,14 @@ package mongodbatlassecretrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/mongodbatlassecretrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/mongodbatlassecretrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
 type MongodbatlasSecretRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type MongodbatlasSecretRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_MongodbatlasSecretRole) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_MongodbatlasSecretRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MongodbatlasSecretRole) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_MongodbatlasSecretRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
 func NewMongodbatlasSecretRole(scope constructs.Construct, id *string, config *MongodbatlasSecretRoleConfig) MongodbatlasSecretRole {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewMongodbatlasSecretRole(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
 func NewMongodbatlasSecretRole_Override(m MongodbatlasSecretRole, scope constructs.Construct, id *string, config *MongodbatlasSecretRoleConfig) {
 	_init_.Initialize()
 
@@ -598,7 +598,10 @@ func (j *jsiiProxy_MongodbatlasSecretRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MongodbatlasSecretRole)SetCount(val *float64) {
+func (j *jsiiProxy_MongodbatlasSecretRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -88,6 +88,10 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

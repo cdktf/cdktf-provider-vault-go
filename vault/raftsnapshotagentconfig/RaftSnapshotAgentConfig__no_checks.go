@@ -132,6 +132,10 @@ func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftSnapshotAgentConfig) validateSetFilePrefixParameters(val *string) error {
 	return nil
 }

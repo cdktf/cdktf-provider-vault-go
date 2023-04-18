@@ -100,6 +100,10 @@ func (j *jsiiProxy_AdSecretBackend) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AdSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

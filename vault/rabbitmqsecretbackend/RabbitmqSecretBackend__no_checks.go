@@ -72,6 +72,10 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetConnectionUriParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

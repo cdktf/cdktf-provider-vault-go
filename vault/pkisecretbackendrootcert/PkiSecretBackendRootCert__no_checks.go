@@ -80,6 +80,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetCountryParameters(val *string) error {
 	return nil
 }

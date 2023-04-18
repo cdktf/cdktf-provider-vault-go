@@ -2,14 +2,14 @@ package adsecretlibrary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/adsecretlibrary/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/adsecretlibrary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library vault_ad_secret_library}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 type AdSecretLibrary interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -24,9 +24,9 @@ type AdSecretLibrary interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_AdSecretLibrary) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_AdSecretLibrary) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AdSecretLibrary) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_AdSecretLibrary) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecretLibraryConfig) AdSecretLibrary {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecret
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary_Override(a AdSecretLibrary, scope constructs.Construct, id *string, config *AdSecretLibraryConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_AdSecretLibrary)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretLibrary)SetCount(val *float64) {
+func (j *jsiiProxy_AdSecretLibrary)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

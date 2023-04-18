@@ -80,6 +80,10 @@ func (j *jsiiProxy_IdentityOidcClient) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_IdentityOidcClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityOidcClient) validateSetIdParameters(val *string) error {
 	return nil
 }

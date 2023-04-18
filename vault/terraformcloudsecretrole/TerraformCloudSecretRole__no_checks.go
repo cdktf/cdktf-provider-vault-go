@@ -72,6 +72,10 @@ func (j *jsiiProxy_TerraformCloudSecretRole) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole) validateSetIdParameters(val *string) error {
 	return nil
 }

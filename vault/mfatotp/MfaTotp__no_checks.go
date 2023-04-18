@@ -72,6 +72,10 @@ func (j *jsiiProxy_MfaTotp) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_MfaTotp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaTotp) validateSetDigitsParameters(val *float64) error {
 	return nil
 }

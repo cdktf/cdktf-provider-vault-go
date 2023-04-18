@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) validateSetBackendParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultAwsAccessCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultAwsAccessCredentials) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package oktaauthbackendgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/oktaauthbackendgroup/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/oktaauthbackendgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_backend_group vault_okta_auth_backend_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
 type OktaAuthBackendGroupA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type OktaAuthBackendGroupA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_OktaAuthBackendGroupA) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OktaAuthBackendGroupA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_OktaAuthBackendGroupA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) OktaAuthBackendGroupA {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *Ok
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA_Override(o OktaAuthBackendGroupA, scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_OktaAuthBackendGroupA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OktaAuthBackendGroupA)SetCount(val *float64) {
+func (j *jsiiProxy_OktaAuthBackendGroupA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

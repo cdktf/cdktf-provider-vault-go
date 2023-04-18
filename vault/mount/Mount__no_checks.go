@@ -80,6 +80,10 @@ func (j *jsiiProxy_Mount) validateSetConnectionParameters(val interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

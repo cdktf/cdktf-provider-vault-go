@@ -2,14 +2,14 @@ package datavaultidentityentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentityentity/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultidentityentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/identity_entity vault_identity_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_entity vault_identity_entity}.
 type DataVaultIdentityEntity interface {
 	cdktf.TerraformDataSource
 	Aliases() DataVaultIdentityEntityAliasesList
@@ -27,9 +27,9 @@ type DataVaultIdentityEntity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *string
 	DataJson() *string
 	// Experimental.
@@ -223,8 +223,8 @@ func (j *jsiiProxy_DataVaultIdentityEntity) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultIdentityEntity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_DataVaultIdentityEntity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) DataVaultIdentityEntity {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity_Override(d DataVaultIdentityEntity, scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) {
 	_init_.Initialize()
 
@@ -596,7 +596,10 @@ func (j *jsiiProxy_DataVaultIdentityEntity)SetAliasName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityEntity)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultIdentityEntity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

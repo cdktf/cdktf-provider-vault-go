@@ -68,6 +68,10 @@ func (j *jsiiProxy_KmipSecretRole) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretRole) validateSetIdParameters(val *string) error {
 	return nil
 }

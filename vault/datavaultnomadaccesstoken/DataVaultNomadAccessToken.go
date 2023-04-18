@@ -2,14 +2,14 @@ package datavaultnomadaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultnomadaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultnomadaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/nomad_access_token vault_nomad_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token}.
 type DataVaultNomadAccessToken interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -21,9 +21,9 @@ type DataVaultNomadAccessToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultNomadAccessToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) DataVaultNomadAccessToken {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken_Override(d DataVaultNomadAccessToken, scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) {
 	_init_.Initialize()
 
@@ -390,7 +390,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken)SetBackend(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultNomadAccessToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultNomadAccessToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

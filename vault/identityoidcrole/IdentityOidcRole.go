@@ -2,14 +2,14 @@ package identityoidcrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityoidcrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/identityoidcrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_role vault_identity_oidc_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_role vault_identity_oidc_role}.
 type IdentityOidcRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type IdentityOidcRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_IdentityOidcRole) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_IdentityOidcRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityOidcRole) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,7 +428,7 @@ func (j *jsiiProxy_IdentityOidcRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_role vault_identity_oidc_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
 func NewIdentityOidcRole(scope constructs.Construct, id *string, config *IdentityOidcRoleConfig) IdentityOidcRole {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewIdentityOidcRole(scope constructs.Construct, id *string, config *Identit
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_oidc_role vault_identity_oidc_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_oidc_role vault_identity_oidc_role} Resource.
 func NewIdentityOidcRole_Override(i IdentityOidcRole, scope constructs.Construct, id *string, config *IdentityOidcRoleConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_IdentityOidcRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityOidcRole)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityOidcRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

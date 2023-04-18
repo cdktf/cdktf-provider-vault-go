@@ -64,6 +64,10 @@ func validateDataVaultIdentityOidcOpenidConfig_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultIdentityOidcOpenidConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

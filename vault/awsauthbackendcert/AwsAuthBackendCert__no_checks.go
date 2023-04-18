@@ -80,6 +80,10 @@ func (j *jsiiProxy_AwsAuthBackendCert) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendCert) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendCert) validateSetIdParameters(val *string) error {
 	return nil
 }

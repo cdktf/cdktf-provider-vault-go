@@ -2,14 +2,14 @@ package datavaultauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/auth_backend vault_auth_backend}.
 type DataVaultAuthBackend interface {
 	cdktf.TerraformDataSource
 	Accessor() *string
@@ -18,9 +18,9 @@ type DataVaultAuthBackend interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultLeaseTtlSeconds() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataVaultAuthBackend) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultAuthBackend) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultAuthBackend) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataVaultAuthBackend) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) DataVaultAuthBackend {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataVaultAuthBackend(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/auth_backend vault_auth_backend} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/auth_backend vault_auth_backend} Data Source.
 func NewDataVaultAuthBackend_Override(d DataVaultAuthBackend, scope constructs.Construct, id *string, config *DataVaultAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -411,7 +411,10 @@ func NewDataVaultAuthBackend_Override(d DataVaultAuthBackend, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataVaultAuthBackend)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultAuthBackend)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

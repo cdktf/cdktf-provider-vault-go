@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataVaultIdentityGroup) validateSetAliasNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultIdentityGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultIdentityGroup) validateSetGroupIdParameters(val *string) error {
 	return nil
 }

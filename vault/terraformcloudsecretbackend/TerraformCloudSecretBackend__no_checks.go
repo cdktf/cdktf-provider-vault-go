@@ -80,6 +80,10 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

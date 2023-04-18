@@ -68,6 +68,10 @@ func (j *jsiiProxy_IdentityEntityPolicies) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_IdentityEntityPolicies) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityEntityPolicies) validateSetEntityIdParameters(val *string) error {
 	return nil
 }

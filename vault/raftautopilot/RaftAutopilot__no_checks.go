@@ -72,6 +72,10 @@ func (j *jsiiProxy_RaftAutopilot) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RaftAutopilot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RaftAutopilot) validateSetDeadServerLastContactThresholdParameters(val *string) error {
 	return nil
 }

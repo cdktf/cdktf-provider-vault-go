@@ -80,6 +80,10 @@ func (j *jsiiProxy_TokenAuthBackendRole) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_TokenAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TokenAuthBackendRole) validateSetDisallowedPoliciesParameters(val *[]*string) error {
 	return nil
 }

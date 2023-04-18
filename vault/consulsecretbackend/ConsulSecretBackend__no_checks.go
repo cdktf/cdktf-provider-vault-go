@@ -88,6 +88,10 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

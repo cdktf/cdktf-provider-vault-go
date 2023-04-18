@@ -76,6 +76,10 @@ func (j *jsiiProxy_GcpSecretStaticAccount) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretStaticAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretStaticAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

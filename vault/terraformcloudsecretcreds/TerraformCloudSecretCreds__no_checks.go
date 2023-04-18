@@ -72,6 +72,10 @@ func (j *jsiiProxy_TerraformCloudSecretCreds) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretCreds) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretCreds) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_NomadSecretRole) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretRole) validateSetGlobalParameters(val interface{}) error {
 	return nil
 }

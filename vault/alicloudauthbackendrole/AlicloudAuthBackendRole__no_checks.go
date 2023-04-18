@@ -76,6 +76,10 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

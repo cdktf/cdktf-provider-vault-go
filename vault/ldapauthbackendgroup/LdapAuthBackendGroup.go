@@ -2,14 +2,14 @@ package ldapauthbackendgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/ldapauthbackendgroup/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/ldapauthbackendgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend_group vault_ldap_auth_backend_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group}.
 type LdapAuthBackendGroup interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -24,9 +24,9 @@ type LdapAuthBackendGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_LdapAuthBackendGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_LdapAuthBackendGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LdapAuthBackendGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_LdapAuthBackendGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource.
 func NewLdapAuthBackendGroup(scope constructs.Construct, id *string, config *LdapAuthBackendGroupConfig) LdapAuthBackendGroup {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewLdapAuthBackendGroup(scope constructs.Construct, id *string, config *Lda
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group} Resource.
 func NewLdapAuthBackendGroup_Override(l LdapAuthBackendGroup, scope constructs.Construct, id *string, config *LdapAuthBackendGroupConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_LdapAuthBackendGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LdapAuthBackendGroup)SetCount(val *float64) {
+func (j *jsiiProxy_LdapAuthBackendGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

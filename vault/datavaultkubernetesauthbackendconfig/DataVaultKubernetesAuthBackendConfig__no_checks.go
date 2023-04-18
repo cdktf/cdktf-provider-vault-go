@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) validateSetBackendParam
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) validateSetDisableIssValidationParameters(val interface{}) error {
 	return nil
 }

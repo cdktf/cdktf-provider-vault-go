@@ -72,6 +72,10 @@ func (j *jsiiProxy_TransformTransformation) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransformTransformation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTransformation) validateSetDeletionAllowedParameters(val interface{}) error {
 	return nil
 }

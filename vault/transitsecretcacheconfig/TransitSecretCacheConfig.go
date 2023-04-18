@@ -2,14 +2,14 @@ package transitsecretcacheconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretcacheconfig/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/transitsecretcacheconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_cache_config vault_transit_secret_cache_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
 type TransitSecretCacheConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -24,9 +24,9 @@ type TransitSecretCacheConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_TransitSecretCacheConfig) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretCacheConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TransitSecretCacheConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_TransitSecretCacheConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) TransitSecretCacheConfig {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig_Override(t TransitSecretCacheConfig, scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_TransitSecretCacheConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransitSecretCacheConfig)SetCount(val *float64) {
+func (j *jsiiProxy_TransitSecretCacheConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

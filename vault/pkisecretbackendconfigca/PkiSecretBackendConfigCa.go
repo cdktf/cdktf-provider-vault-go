@@ -2,14 +2,14 @@ package pkisecretbackendconfigca
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/pkisecretbackendconfigca/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/pkisecretbackendconfigca/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
 type PkiSecretBackendConfigCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -24,9 +24,9 @@ type PkiSecretBackendConfigCa interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_PkiSecretBackendConfigCa) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigCa) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PkiSecretBackendConfigCa) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) PkiSecretBackendConfigCa {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa_Override(p PkiSecretBackendConfigCa, scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigCa)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendConfigCa)SetCount(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendConfigCa)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -142,13 +142,13 @@ func (j *jsiiProxy_DataVaultTransformEncode) validateSetBatchInputParameters(val
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *map[string]*string:
+	case *[]*map[string]*string:
 		// ok
-	case map[string]*string:
+	case []*map[string]*string:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*string; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*map[string]*string; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -162,13 +162,70 @@ func (j *jsiiProxy_DataVaultTransformEncode) validateSetBatchResultsParameters(v
 	switch val.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *map[string]*string:
+	case *[]*map[string]*string:
 		// ok
-	case map[string]*string:
+	case []*map[string]*string:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *map[string]*string; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*map[string]*string; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultTransformEncode) validateSetCountParameters(val interface{}) error {
+	switch val.(type) {
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 

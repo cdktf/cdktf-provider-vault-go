@@ -2,14 +2,14 @@ package awsauthbackendroletag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendroletag/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/awsauthbackendroletag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}.
 type AwsAuthBackendRoleTag interface {
 	cdktf.TerraformResource
 	AllowInstanceMigration() interface{}
@@ -27,9 +27,9 @@ type AwsAuthBackendRoleTag interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -208,8 +208,8 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AwsAuthBackendRoleTag) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -499,7 +499,7 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) AwsAuthBackendRoleTag {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewAwsAuthBackendRoleTag(scope constructs.Construct, id *string, config *Aw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource.
 func NewAwsAuthBackendRoleTag_Override(a AwsAuthBackendRoleTag, scope constructs.Construct, id *string, config *AwsAuthBackendRoleTagConfig) {
 	_init_.Initialize()
 
@@ -561,7 +561,10 @@ func (j *jsiiProxy_AwsAuthBackendRoleTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendRoleTag)SetCount(val *float64) {
+func (j *jsiiProxy_AwsAuthBackendRoleTag)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

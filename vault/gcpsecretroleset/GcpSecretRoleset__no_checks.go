@@ -76,6 +76,10 @@ func (j *jsiiProxy_GcpSecretRoleset) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretRoleset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretRoleset) validateSetIdParameters(val *string) error {
 	return nil
 }

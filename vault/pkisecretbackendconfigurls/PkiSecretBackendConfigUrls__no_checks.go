@@ -72,6 +72,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigUrls) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigUrls) validateSetCrlDistributionPointsParameters(val *[]*string) error {
 	return nil
 }

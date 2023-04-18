@@ -2,14 +2,14 @@ package datavaultkubernetesauthbackendconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkubernetesauthbackendconfig/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkubernetesauthbackendconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
 type DataVaultKubernetesAuthBackendConfig interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -20,9 +20,9 @@ type DataVaultKubernetesAuthBackendConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) DataVaultKubernetesAuthBackendConfig {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig_Override(d DataVaultKubernetesAuthBackendConfig, scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig)SetBackend(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

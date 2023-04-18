@@ -132,6 +132,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetCountryParameters(val *[]*string) error {
 	return nil
 }

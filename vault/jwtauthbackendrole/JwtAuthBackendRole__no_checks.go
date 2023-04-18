@@ -100,6 +100,10 @@ func (j *jsiiProxy_JwtAuthBackendRole) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateSetDisableBoundClaimsParsingParameters(val interface{}) error {
 	return nil
 }

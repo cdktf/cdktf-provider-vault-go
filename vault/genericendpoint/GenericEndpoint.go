@@ -2,14 +2,14 @@ package genericendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/genericendpoint/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/genericendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint vault_generic_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 type GenericEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GenericEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataJson() *string
 	SetDataJson(val *string)
 	DataJsonInput() *string
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GenericEndpoint) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GenericEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GenericEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_GenericEndpoint) WriteFieldsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericEndpointConfig) GenericEndpoint {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint_Override(g GenericEndpoint, scope constructs.Construct, id *string, config *GenericEndpointConfig) {
 	_init_.Initialize()
 
@@ -514,7 +514,10 @@ func (j *jsiiProxy_GenericEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GenericEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_GenericEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

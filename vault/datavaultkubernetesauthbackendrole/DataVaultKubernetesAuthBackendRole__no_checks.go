@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetBackendParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

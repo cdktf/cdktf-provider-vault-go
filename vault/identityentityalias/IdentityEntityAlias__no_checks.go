@@ -72,6 +72,10 @@ func (j *jsiiProxy_IdentityEntityAlias) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_IdentityEntityAlias) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityEntityAlias) validateSetCustomMetadataParameters(val *map[string]*string) error {
 	return nil
 }

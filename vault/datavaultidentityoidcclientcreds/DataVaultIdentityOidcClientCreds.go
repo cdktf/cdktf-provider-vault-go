@@ -2,14 +2,14 @@ package datavaultidentityoidcclientcreds
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultidentityoidcclientcreds/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultidentityoidcclientcreds/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_client_creds vault_identity_oidc_client_creds}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds}.
 type DataVaultIdentityOidcClientCreds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -19,9 +19,9 @@ type DataVaultIdentityOidcClientCreds interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) DataVaultIdentityOidcClientCreds {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds_Override(d DataVaultIdentityOidcClientCreds, scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) {
 	_init_.Initialize()
 
@@ -356,7 +356,10 @@ func NewDataVaultIdentityOidcClientCreds_Override(d DataVaultIdentityOidcClientC
 	)
 }
 
-func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultIdentityOidcClientCreds)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

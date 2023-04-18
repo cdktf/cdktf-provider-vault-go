@@ -2,14 +2,14 @@ package datavaulttransitencrypt
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaulttransitencrypt/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaulttransitencrypt/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/transit_encrypt vault_transit_encrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transit_encrypt vault_transit_encrypt}.
 type DataVaultTransitEncrypt interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -24,9 +24,9 @@ type DataVaultTransitEncrypt interface {
 	SetContext(val *string)
 	ContextInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) ContextInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultTransitEncrypt) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) DataVaultTransitEncrypt {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataVaultTransitEncrypt(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/transit_encrypt vault_transit_encrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source.
 func NewDataVaultTransitEncrypt_Override(d DataVaultTransitEncrypt, scope constructs.Construct, id *string, config *DataVaultTransitEncryptConfig) {
 	_init_.Initialize()
 
@@ -461,7 +461,10 @@ func (j *jsiiProxy_DataVaultTransitEncrypt)SetContext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransitEncrypt)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultTransitEncrypt)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

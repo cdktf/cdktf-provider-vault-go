@@ -72,6 +72,10 @@ func (j *jsiiProxy_TransformTemplate) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_TransformTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformTemplate) validateSetDecodeFormatsParameters(val *map[string]*string) error {
 	return nil
 }

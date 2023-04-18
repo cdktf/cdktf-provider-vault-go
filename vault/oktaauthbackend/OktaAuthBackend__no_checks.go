@@ -84,6 +84,10 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_OktaAuthBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

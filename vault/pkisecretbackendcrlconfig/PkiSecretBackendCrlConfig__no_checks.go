@@ -80,6 +80,10 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetCrossClusterRevocationParameters(val interface{}) error {
 	return nil
 }

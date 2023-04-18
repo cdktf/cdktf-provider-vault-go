@@ -72,6 +72,10 @@ func (j *jsiiProxy_SshSecretBackendCa) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetGenerateSigningKeyParameters(val interface{}) error {
 	return nil
 }

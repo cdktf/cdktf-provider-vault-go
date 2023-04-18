@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetContextParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransitEncrypt) validateSetIdParameters(val *string) error {
 	return nil
 }

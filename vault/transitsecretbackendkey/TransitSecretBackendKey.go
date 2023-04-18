@@ -2,14 +2,14 @@ package transitsecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/transitsecretbackendkey/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/transitsecretbackendkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktf.TerraformResource
 	AllowPlaintextBackup() interface{}
@@ -36,9 +36,9 @@ type TransitSecretBackendKey interface {
 	SetConvergentEncryption(val interface{})
 	ConvergentEncryptionInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionAllowed() interface{}
 	SetDeletionAllowed(val interface{})
 	DeletionAllowedInput() interface{}
@@ -292,8 +292,8 @@ func (j *jsiiProxy_TransitSecretBackendKey) ConvergentEncryptionInput() interfac
 	return returns
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TransitSecretBackendKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -673,7 +673,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -691,7 +691,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -768,7 +768,10 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetConvergentEncryption(val interface
 	)
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey)SetCount(val *float64) {
+func (j *jsiiProxy_TransitSecretBackendKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

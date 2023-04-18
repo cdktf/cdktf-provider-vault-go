@@ -2,14 +2,14 @@ package datavaulttransformdecode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaulttransformdecode/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaulttransformdecode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/transform_decode vault_transform_decode}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode vault_transform_decode}.
 type DataVaultTransformDecode interface {
 	cdktf.TerraformDataSource
 	BatchInput() interface{}
@@ -23,9 +23,9 @@ type DataVaultTransformDecode interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DecodedValue() *string
 	SetDecodedValue(val *string)
 	DecodedValueInput() *string
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataVaultTransformDecode) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultTransformDecode) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_DataVaultTransformDecode) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/transform_decode vault_transform_decode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode vault_transform_decode} Data Source.
 func NewDataVaultTransformDecode(scope constructs.Construct, id *string, config *DataVaultTransformDecodeConfig) DataVaultTransformDecode {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewDataVaultTransformDecode(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/transform_decode vault_transform_decode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/transform_decode vault_transform_decode} Data Source.
 func NewDataVaultTransformDecode_Override(d DataVaultTransformDecode, scope constructs.Construct, id *string, config *DataVaultTransformDecodeConfig) {
 	_init_.Initialize()
 
@@ -523,7 +523,10 @@ func (j *jsiiProxy_DataVaultTransformDecode)SetBatchResults(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataVaultTransformDecode)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultTransformDecode)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

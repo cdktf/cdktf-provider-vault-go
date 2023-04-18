@@ -76,6 +76,10 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackendRole) validateSetExtraAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

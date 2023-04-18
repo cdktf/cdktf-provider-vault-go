@@ -68,6 +68,10 @@ func validateDataVaultPolicyDocument_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultPolicyDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPolicyDocument) validateSetIdParameters(val *string) error {
 	return nil
 }

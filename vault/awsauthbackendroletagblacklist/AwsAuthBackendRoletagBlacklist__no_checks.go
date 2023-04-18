@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateSetDisablePeriodicTidyParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MongodbatlasSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

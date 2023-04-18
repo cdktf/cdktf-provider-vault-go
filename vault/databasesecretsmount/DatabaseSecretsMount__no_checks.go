@@ -152,6 +152,10 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

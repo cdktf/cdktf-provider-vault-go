@@ -88,6 +88,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetConvergentEncryptionParam
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetDeletionAllowedParameters(val interface{}) error {
 	return nil
 }

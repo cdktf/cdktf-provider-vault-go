@@ -68,6 +68,10 @@ func (j *jsiiProxy_RgpPolicy) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_RgpPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RgpPolicy) validateSetEnforcementLevelParameters(val *string) error {
 	return nil
 }

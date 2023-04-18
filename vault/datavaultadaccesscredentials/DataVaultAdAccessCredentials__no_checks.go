@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataVaultAdAccessCredentials) validateSetBackendParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultAdAccessCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultAdAccessCredentials) validateSetIdParameters(val *string) error {
 	return nil
 }

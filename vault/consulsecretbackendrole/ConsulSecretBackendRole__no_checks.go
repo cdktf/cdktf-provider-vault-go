@@ -84,6 +84,10 @@ func (j *jsiiProxy_ConsulSecretBackendRole) validateSetConsulRolesParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

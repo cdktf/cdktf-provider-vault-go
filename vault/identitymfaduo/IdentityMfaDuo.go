@@ -2,14 +2,14 @@ package identitymfaduo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfaduo/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/identitymfaduo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo vault_identity_mfa_duo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}.
 type IdentityMfaDuo interface {
 	cdktf.TerraformResource
 	ApiHostname() *string
@@ -24,9 +24,9 @@ type IdentityMfaDuo interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_IdentityMfaDuo) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_IdentityMfaDuo) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityMfaDuo) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -528,7 +528,7 @@ func (j *jsiiProxy_IdentityMfaDuo) Uuid() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo vault_identity_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
 func NewIdentityMfaDuo(scope constructs.Construct, id *string, config *IdentityMfaDuoConfig) IdentityMfaDuo {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewIdentityMfaDuo(scope constructs.Construct, id *string, config *IdentityM
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_duo vault_identity_mfa_duo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource.
 func NewIdentityMfaDuo_Override(i IdentityMfaDuo, scope constructs.Construct, id *string, config *IdentityMfaDuoConfig) {
 	_init_.Initialize()
 
@@ -579,7 +579,10 @@ func (j *jsiiProxy_IdentityMfaDuo)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityMfaDuo)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityMfaDuo)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

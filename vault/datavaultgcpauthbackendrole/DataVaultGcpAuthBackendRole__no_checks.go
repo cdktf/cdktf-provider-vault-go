@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetBackendParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

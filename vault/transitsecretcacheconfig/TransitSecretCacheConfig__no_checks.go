@@ -72,6 +72,10 @@ func (j *jsiiProxy_TransitSecretCacheConfig) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretCacheConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretCacheConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

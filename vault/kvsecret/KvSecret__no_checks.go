@@ -68,6 +68,10 @@ func (j *jsiiProxy_KvSecret) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_KvSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KvSecret) validateSetDataJsonParameters(val *string) error {
 	return nil
 }

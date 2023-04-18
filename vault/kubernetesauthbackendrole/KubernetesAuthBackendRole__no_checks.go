@@ -88,6 +88,10 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

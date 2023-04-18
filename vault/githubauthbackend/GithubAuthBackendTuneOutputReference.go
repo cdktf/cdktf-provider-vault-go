@@ -2,9 +2,9 @@ package githubauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/githubauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/githubauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

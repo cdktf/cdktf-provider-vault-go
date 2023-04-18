@@ -68,6 +68,10 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetDefaultTlsClientKeyBitsParameters(val *float64) error {
 	return nil
 }

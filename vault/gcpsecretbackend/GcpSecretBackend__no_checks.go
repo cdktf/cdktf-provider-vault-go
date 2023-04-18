@@ -68,6 +68,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsParameters(val *string) error {
 	return nil
 }

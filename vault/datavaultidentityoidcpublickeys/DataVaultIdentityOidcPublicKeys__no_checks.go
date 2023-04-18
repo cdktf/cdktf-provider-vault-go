@@ -64,6 +64,10 @@ func validateDataVaultIdentityOidcPublicKeys_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetDenyNullBindParameters(val interface{}) error {
 	return nil
 }

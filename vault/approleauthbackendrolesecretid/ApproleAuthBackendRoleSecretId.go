@@ -2,14 +2,14 @@ package approleauthbackendrolesecretid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/approleauthbackendrolesecretid/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/approleauthbackendrolesecretid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
 type ApproleAuthBackendRoleSecretId interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -28,9 +28,9 @@ type ApproleAuthBackendRoleSecretId interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -219,8 +219,8 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) WrappingTtlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) ApproleAuthBackendRoleSecretId {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId_Override(a ApproleAuthBackendRoleSecretId, scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) {
 	_init_.Initialize()
 
@@ -572,7 +572,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetCount(val *float64) {
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

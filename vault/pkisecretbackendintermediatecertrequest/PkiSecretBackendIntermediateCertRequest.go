@@ -2,14 +2,14 @@ package pkisecretbackendintermediatecertrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/pkisecretbackendintermediatecertrequest/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/pkisecretbackendintermediatecertrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
 type PkiSecretBackendIntermediateCertRequest interface {
 	cdktf.TerraformResource
 	AddBasicConstraints() interface{}
@@ -33,9 +33,9 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Country() *string
 	SetCountry(val *string)
 	CountryInput() *string
@@ -307,8 +307,8 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -868,7 +868,7 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) UriSansInput() *[]*s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) PkiSecretBackendIntermediateCertRequest {
 	_init_.Initialize()
 
@@ -886,7 +886,7 @@ func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest_Override(p PkiSecretBackendIntermediateCertRequest, scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) {
 	_init_.Initialize()
 
@@ -952,7 +952,10 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetCount(val *float64) {
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

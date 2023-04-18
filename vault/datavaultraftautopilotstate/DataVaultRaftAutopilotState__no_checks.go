@@ -64,6 +64,10 @@ func validateDataVaultRaftAutopilotState_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultRaftAutopilotState) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultRaftAutopilotState) validateSetIdParameters(val *string) error {
 	return nil
 }

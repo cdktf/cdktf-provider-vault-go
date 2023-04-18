@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateSetDisablePeriodicTidyParameters(val interface{}) error {
 	return nil
 }

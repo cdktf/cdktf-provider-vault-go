@@ -104,6 +104,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

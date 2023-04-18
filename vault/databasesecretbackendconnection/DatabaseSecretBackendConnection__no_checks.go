@@ -148,6 +148,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) validateSetDataParameters(val *map[string]*string) error {
 	return nil
 }

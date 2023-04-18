@@ -2,14 +2,14 @@ package approleauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/approleauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/approleauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role vault_approle_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role}.
 type ApproleAuthBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -27,9 +27,9 @@ type ApproleAuthBackendRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_ApproleAuthBackendRole) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApproleAuthBackendRole) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -693,7 +693,7 @@ func (j *jsiiProxy_ApproleAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
 func NewApproleAuthBackendRole(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleConfig) ApproleAuthBackendRole {
 	_init_.Initialize()
 
@@ -711,7 +711,7 @@ func NewApproleAuthBackendRole(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/approle_auth_backend_role vault_approle_auth_backend_role} Resource.
 func NewApproleAuthBackendRole_Override(a ApproleAuthBackendRole, scope constructs.Construct, id *string, config *ApproleAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -755,7 +755,10 @@ func (j *jsiiProxy_ApproleAuthBackendRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApproleAuthBackendRole)SetCount(val *float64) {
+func (j *jsiiProxy_ApproleAuthBackendRole)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

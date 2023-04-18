@@ -2,14 +2,14 @@ package raftautopilot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/raftautopilot/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/raftautopilot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot vault_raft_autopilot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot vault_raft_autopilot}.
 type RaftAutopilot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type RaftAutopilot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadServerLastContactThreshold() *string
 	SetDeadServerLastContactThreshold(val *string)
 	DeadServerLastContactThresholdInput() *string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_RaftAutopilot) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RaftAutopilot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RaftAutopilot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -478,7 +478,7 @@ func (j *jsiiProxy_RaftAutopilot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot vault_raft_autopilot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
 func NewRaftAutopilot(scope constructs.Construct, id *string, config *RaftAutopilotConfig) RaftAutopilot {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewRaftAutopilot(scope constructs.Construct, id *string, config *RaftAutopi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/raft_autopilot vault_raft_autopilot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
 func NewRaftAutopilot_Override(r RaftAutopilot, scope constructs.Construct, id *string, config *RaftAutopilotConfig) {
 	_init_.Initialize()
 
@@ -529,7 +529,10 @@ func (j *jsiiProxy_RaftAutopilot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RaftAutopilot)SetCount(val *float64) {
+func (j *jsiiProxy_RaftAutopilot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

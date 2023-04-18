@@ -72,6 +72,10 @@ func (j *jsiiProxy_TransformAlphabet) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_TransformAlphabet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransformAlphabet) validateSetIdParameters(val *string) error {
 	return nil
 }

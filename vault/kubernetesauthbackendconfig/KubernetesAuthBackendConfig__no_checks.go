@@ -72,6 +72,10 @@ func (j *jsiiProxy_KubernetesAuthBackendConfig) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesAuthBackendConfig) validateSetDisableIssValidationParameters(val interface{}) error {
 	return nil
 }

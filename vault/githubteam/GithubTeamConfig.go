@@ -8,7 +8,7 @@ type GithubTeamConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,24 +21,24 @@ type GithubTeamConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// GitHub team name in "slugified" format.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#team GithubTeam#team}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#team GithubTeam#team}
 	Team *string `field:"required" json:"team" yaml:"team"`
 	// Auth backend to which team mapping will be congigured.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#backend GithubTeam#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#backend GithubTeam#backend}
 	Backend *string `field:"optional" json:"backend" yaml:"backend"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#id GithubTeam#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#id GithubTeam#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#namespace GithubTeam#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#namespace GithubTeam#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Policies to be assigned to this team.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/github_team#policies GithubTeam#policies}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/github_team#policies GithubTeam#policies}
 	Policies *[]*string `field:"optional" json:"policies" yaml:"policies"`
 }
 

@@ -84,6 +84,10 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

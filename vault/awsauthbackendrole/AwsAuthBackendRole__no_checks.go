@@ -116,6 +116,10 @@ func (j *jsiiProxy_AwsAuthBackendRole) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendRole) validateSetDisallowReauthenticationParameters(val interface{}) error {
 	return nil
 }

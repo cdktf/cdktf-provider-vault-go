@@ -68,6 +68,10 @@ func (j *jsiiProxy_GenericSecret) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GenericSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GenericSecret) validateSetDataJsonParameters(val *string) error {
 	return nil
 }

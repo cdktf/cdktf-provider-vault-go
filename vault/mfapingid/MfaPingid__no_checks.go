@@ -68,6 +68,10 @@ func (j *jsiiProxy_MfaPingid) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_MfaPingid) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MfaPingid) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataVaultTransformDecode) validateSetBatchResultsParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultTransformDecode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransformDecode) validateSetDecodedValueParameters(val *string) error {
 	return nil
 }

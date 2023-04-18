@@ -72,6 +72,10 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCreationStatementsParameters(val *[]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package datavaultkvsecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkvsecret/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkvsecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/kv_secret vault_kv_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secret vault_kv_secret}.
 type DataVaultKvSecret interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataVaultKvSecret interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Data() cdktf.StringMap
 	DataJson() *string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataVaultKvSecret) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKvSecret) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultKvSecret) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataVaultKvSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kv_secret vault_kv_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
 func NewDataVaultKvSecret(scope constructs.Construct, id *string, config *DataVaultKvSecretConfig) DataVaultKvSecret {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataVaultKvSecret(scope constructs.Construct, id *string, config *DataVa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kv_secret vault_kv_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kv_secret vault_kv_secret} Data Source.
 func NewDataVaultKvSecret_Override(d DataVaultKvSecret, scope constructs.Construct, id *string, config *DataVaultKvSecretConfig) {
 	_init_.Initialize()
 
@@ -389,7 +389,10 @@ func NewDataVaultKvSecret_Override(d DataVaultKvSecret, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataVaultKvSecret)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultKvSecret)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

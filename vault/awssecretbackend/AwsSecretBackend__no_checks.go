@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

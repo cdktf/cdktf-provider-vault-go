@@ -72,6 +72,10 @@ func (j *jsiiProxy_GcpSecretImpersonatedAccount) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretImpersonatedAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretImpersonatedAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

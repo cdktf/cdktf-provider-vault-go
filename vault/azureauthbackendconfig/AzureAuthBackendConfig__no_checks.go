@@ -80,6 +80,10 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package awsauthbackendidentitywhitelist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/awsauthbackendidentitywhitelist/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/awsauthbackendidentitywhitelist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist}.
 type AwsAuthBackendIdentityWhitelist interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -24,9 +24,9 @@ type AwsAuthBackendIdentityWhitelist interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) AwsAuthBackendIdentityWhitelist {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewAwsAuthBackendIdentityWhitelist(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/aws_auth_backend_identity_whitelist vault_aws_auth_backend_identity_whitelist} Resource.
 func NewAwsAuthBackendIdentityWhitelist_Override(a AwsAuthBackendIdentityWhitelist, scope constructs.Construct, id *string, config *AwsAuthBackendIdentityWhitelistConfig) {
 	_init_.Initialize()
 
@@ -433,7 +433,10 @@ func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist)SetCount(val *float64) {
+func (j *jsiiProxy_AwsAuthBackendIdentityWhitelist)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetCredentialTypeParameters(val *string) error {
 	return nil
 }

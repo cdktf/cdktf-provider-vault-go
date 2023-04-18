@@ -68,6 +68,10 @@ func (j *jsiiProxy_AuditRequestHeader) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AuditRequestHeader) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditRequestHeader) validateSetHmacParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_LdapAuthBackendUser) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackendUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackendUser) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }

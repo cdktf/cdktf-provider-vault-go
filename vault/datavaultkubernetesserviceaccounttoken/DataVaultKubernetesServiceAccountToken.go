@@ -2,14 +2,14 @@ package datavaultkubernetesserviceaccounttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/datavaultkubernetesserviceaccounttoken/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/datavaultkubernetesserviceaccounttoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}.
 type DataVaultKubernetesServiceAccountToken interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -23,9 +23,9 @@ type DataVaultKubernetesServiceAccountToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -465,7 +465,7 @@ func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TtlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
 func NewDataVaultKubernetesServiceAccountToken(scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) DataVaultKubernetesServiceAccountToken {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewDataVaultKubernetesServiceAccountToken(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/d/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
 func NewDataVaultKubernetesServiceAccountToken_Override(d DataVaultKubernetesServiceAccountToken, scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) {
 	_init_.Initialize()
 
@@ -516,7 +516,10 @@ func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken)SetClusterRoleBinding(
 	)
 }
 
-func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

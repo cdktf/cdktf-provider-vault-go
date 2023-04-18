@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) validateSetClusterRol
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) validateSetIdParameters(val *string) error {
 	return nil
 }

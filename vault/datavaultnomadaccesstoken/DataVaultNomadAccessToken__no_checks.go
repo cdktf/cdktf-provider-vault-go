@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) validateSetBackendParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultNomadAccessToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultNomadAccessToken) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_AdSecretRole) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AdSecretRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AdSecretRole) validateSetIdParameters(val *string) error {
 	return nil
 }

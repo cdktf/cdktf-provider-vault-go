@@ -2,14 +2,14 @@ package identityentityalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/identityentityalias/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v7/identityentityalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias vault_identity_entity_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 type IdentityEntityAlias interface {
 	cdktf.TerraformResource
 	CanonicalId() *string
@@ -24,9 +24,9 @@ type IdentityEntityAlias interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomMetadata() *map[string]*string
 	SetCustomMetadata(val *map[string]*string)
 	CustomMetadataInput() *map[string]*string
@@ -172,8 +172,8 @@ func (j *jsiiProxy_IdentityEntityAlias) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_IdentityEntityAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentityEntityAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_IdentityEntityAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) IdentityEntityAlias {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *Iden
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/vault/r/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias_Override(i IdentityEntityAlias, scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_IdentityEntityAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentityEntityAlias)SetCount(val *float64) {
+func (j *jsiiProxy_IdentityEntityAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

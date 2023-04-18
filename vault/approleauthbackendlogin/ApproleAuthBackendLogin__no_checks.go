@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApproleAuthBackendLogin) validateSetIdParameters(val *string) error {
 	return nil
 }

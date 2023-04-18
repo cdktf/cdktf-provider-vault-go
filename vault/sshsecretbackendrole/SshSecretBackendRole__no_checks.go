@@ -128,6 +128,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetDefaultCriticalOptionsParameters(val *map[string]*string) error {
 	return nil
 }
