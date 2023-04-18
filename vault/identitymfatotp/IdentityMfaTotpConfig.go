@@ -52,6 +52,10 @@ type IdentityMfaTotpConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#period IdentityMfaTotp#period}
 	Period *float64 `field:"optional" json:"period" yaml:"period"`
+	// The pixel size of the generated square QR code.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/vault/r/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+	QrSize *float64 `field:"optional" json:"qrSize" yaml:"qrSize"`
 	// The number of delay periods that are allowed when validating a TOTP token.
 	//
 	// This value can either be 0 or 1.

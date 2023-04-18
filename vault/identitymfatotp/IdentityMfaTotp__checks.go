@@ -286,6 +286,14 @@ func (j *jsiiProxy_IdentityMfaTotp) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_IdentityMfaTotp) validateSetQrSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IdentityMfaTotp) validateSetSkewParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

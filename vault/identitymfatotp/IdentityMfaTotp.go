@@ -2,10 +2,10 @@ package identitymfatotp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v5/identitymfatotp/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v6/identitymfatotp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,8 @@ type IdentityMfaTotp interface {
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	QrSize() *float64
+	SetQrSize(val *float64)
+	QrSizeInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
 	Skew() *float64
@@ -128,6 +130,7 @@ type IdentityMfaTotp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPeriod()
+	ResetQrSize()
 	ResetSkew()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -484,6 +487,16 @@ func (j *jsiiProxy_IdentityMfaTotp) QrSize() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_IdentityMfaTotp) QrSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"qrSizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IdentityMfaTotp) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -743,6 +756,17 @@ func (j *jsiiProxy_IdentityMfaTotp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IdentityMfaTotp)SetQrSize(val *float64) {
+	if err := j.validateSetQrSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"qrSize",
 		val,
 	)
 }
@@ -1084,6 +1108,14 @@ func (i *jsiiProxy_IdentityMfaTotp) ResetPeriod() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetPeriod",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IdentityMfaTotp) ResetQrSize() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetQrSize",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_IdentityMfaTotp) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_IdentityMfaTotp) validateSetQrSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentityMfaTotp) validateSetSkewParameters(val *float64) error {
 	return nil
 }
