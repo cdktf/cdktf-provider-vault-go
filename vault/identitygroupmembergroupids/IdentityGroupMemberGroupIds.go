@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids}.
 type IdentityGroupMemberGroupIds interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_IdentityGroupMemberGroupIds) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource.
 func NewIdentityGroupMemberGroupIds(scope constructs.Construct, id *string, config *IdentityGroupMemberGroupIdsConfig) IdentityGroupMemberGroupIds {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewIdentityGroupMemberGroupIds(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_group_member_group_ids vault_identity_group_member_group_ids} Resource.
 func NewIdentityGroupMemberGroupIds_Override(i IdentityGroupMemberGroupIds, scope constructs.Construct, id *string, config *IdentityGroupMemberGroupIdsConfig) {
 	_init_.Initialize()
 

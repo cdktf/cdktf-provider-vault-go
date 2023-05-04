@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -695,7 +695,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -713,7 +713,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 

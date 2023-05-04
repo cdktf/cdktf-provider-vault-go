@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/nomad_access_token vault_nomad_access_token}.
 type DataVaultNomadAccessToken interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) DataVaultNomadAccessToken {
 	_init_.Initialize()
 
@@ -368,7 +368,7 @@ func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken_Override(d DataVaultNomadAccessToken, scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) {
 	_init_.Initialize()
 

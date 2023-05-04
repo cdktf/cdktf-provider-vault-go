@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user}.
 type LdapAuthBackendUser interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_LdapAuthBackendUser) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource.
 func NewLdapAuthBackendUser(scope constructs.Construct, id *string, config *LdapAuthBackendUserConfig) LdapAuthBackendUser {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewLdapAuthBackendUser(scope constructs.Construct, id *string, config *Ldap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.0/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/ldap_auth_backend_user vault_ldap_auth_backend_user} Resource.
 func NewLdapAuthBackendUser_Override(l LdapAuthBackendUser, scope constructs.Construct, id *string, config *LdapAuthBackendUserConfig) {
 	_init_.Initialize()
 
