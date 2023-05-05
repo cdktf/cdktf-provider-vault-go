@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
 type PkiSecretBackendRootSignIntermediate interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -877,7 +877,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UseCsrValuesInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
@@ -895,7 +895,7 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSignIntermediate, scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) {
 	_init_.Initialize()
 

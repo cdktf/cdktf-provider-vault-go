@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state}.
 type DataVaultRaftAutopilotState interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataVaultRaftAutopilotState) Voters() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
 func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) DataVaultRaftAutopilotState {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataVaultRaftAutopilotState(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/raft_autopilot_state vault_raft_autopilot_state} Data Source.
 func NewDataVaultRaftAutopilotState_Override(d DataVaultRaftAutopilotState, scope constructs.Construct, id *string, config *DataVaultRaftAutopilotStateConfig) {
 	_init_.Initialize()
 

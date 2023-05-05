@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
 	cdktf.TerraformResource
 	AllowedCommonNames() *[]*string
@@ -812,7 +812,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -830,7 +830,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 

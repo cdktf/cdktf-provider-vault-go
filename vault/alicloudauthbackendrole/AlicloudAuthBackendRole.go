@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
 type AlicloudAuthBackendRole interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -596,7 +596,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) AlicloudAuthBackendRole {
 	_init_.Initialize()
 
@@ -614,7 +614,7 @@ func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole_Override(a AlicloudAuthBackendRole, scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) {
 	_init_.Initialize()
 

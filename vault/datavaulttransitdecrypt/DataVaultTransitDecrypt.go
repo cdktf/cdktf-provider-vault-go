@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/transit_decrypt vault_transit_decrypt}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/transit_decrypt vault_transit_decrypt}.
 type DataVaultTransitDecrypt interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataVaultTransitDecrypt) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source.
 func NewDataVaultTransitDecrypt(scope constructs.Construct, id *string, config *DataVaultTransitDecryptConfig) DataVaultTransitDecrypt {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewDataVaultTransitDecrypt(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source.
 func NewDataVaultTransitDecrypt_Override(d DataVaultTransitDecrypt, scope constructs.Construct, id *string, config *DataVaultTransitDecryptConfig) {
 	_init_.Initialize()
 

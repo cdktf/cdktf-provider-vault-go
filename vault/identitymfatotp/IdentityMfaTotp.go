@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
 type IdentityMfaTotp interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -578,7 +578,7 @@ func (j *jsiiProxy_IdentityMfaTotp) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
 func NewIdentityMfaTotp(scope constructs.Construct, id *string, config *IdentityMfaTotpConfig) IdentityMfaTotp {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewIdentityMfaTotp(scope constructs.Construct, id *string, config *Identity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.1/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
 func NewIdentityMfaTotp_Override(i IdentityMfaTotp, scope constructs.Construct, id *string, config *IdentityMfaTotpConfig) {
 	_init_.Initialize()
 
