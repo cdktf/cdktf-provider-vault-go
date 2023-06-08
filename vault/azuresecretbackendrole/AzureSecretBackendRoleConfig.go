@@ -21,44 +21,44 @@ type AzureSecretBackendRoleConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the role to create.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
 	Role *string `field:"required" json:"role" yaml:"role"`
 	// Application Object ID for an existing service principal that will be used instead of creating dynamic service principals.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
 	ApplicationObjectId *string `field:"optional" json:"applicationObjectId" yaml:"applicationObjectId"`
 	// azure_groups block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
 	AzureGroups interface{} `field:"optional" json:"azureGroups" yaml:"azureGroups"`
 	// azure_roles block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
 	AzureRoles interface{} `field:"optional" json:"azureRoles" yaml:"azureRoles"`
 	// Unique name of the auth backend to configure.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
 	Backend *string `field:"optional" json:"backend" yaml:"backend"`
 	// Human-friendly description of the mount for the backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Human-friendly description of the mount for the backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
 	MaxTtl *string `field:"optional" json:"maxTtl" yaml:"maxTtl"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Human-friendly description of the mount for the backend.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
 	Ttl *string `field:"optional" json:"ttl" yaml:"ttl"`
 }
 

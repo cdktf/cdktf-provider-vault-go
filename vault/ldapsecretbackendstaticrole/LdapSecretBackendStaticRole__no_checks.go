@@ -1,0 +1,114 @@
+//go:build no_runtime_type_checking
+
+package ldapsecretbackendstaticrole
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLdapSecretBackendStaticRole_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLdapSecretBackendStaticRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLdapSecretBackendStaticRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetDnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetMountParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRoleNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetUsernameParameters(val *string) error {
+	return nil
+}
+
+func validateNewLdapSecretBackendStaticRoleParameters(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) error {
+	return nil
+}
+

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktf.TerraformResource
 	AlgorithmSigner() *string
@@ -24,6 +24,9 @@ type SshSecretBackendRole interface {
 	AllowedDomains() *string
 	SetAllowedDomains(val *string)
 	AllowedDomainsInput() *string
+	AllowedDomainsTemplate() interface{}
+	SetAllowedDomainsTemplate(val interface{})
+	AllowedDomainsTemplateInput() interface{}
 	AllowedExtensions() *string
 	SetAllowedExtensions(val *string)
 	AllowedExtensionsInput() *string
@@ -165,6 +168,7 @@ type SshSecretBackendRole interface {
 	ResetAllowBareDomains()
 	ResetAllowedCriticalOptions()
 	ResetAllowedDomains()
+	ResetAllowedDomainsTemplate()
 	ResetAllowedExtensions()
 	ResetAllowedUserKeyConfig()
 	ResetAllowedUserKeyLengths()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_SshSecretBackendRole) AllowedDomainsInput() *string {
 	_jsii_.Get(
 		j,
 		"allowedDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) AllowedDomainsTemplate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedDomainsTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) AllowedDomainsTemplateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedDomainsTemplateInput",
 		&returns,
 	)
 	return returns
@@ -883,7 +907,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -901,7 +925,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.15.2/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -952,6 +976,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetAllowedDomains(val *string) {
 	_jsii_.Set(
 		j,
 		"allowedDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendRole)SetAllowedDomainsTemplate(val interface{}) {
+	if err := j.validateSetAllowedDomainsTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedDomainsTemplate",
 		val,
 	)
 }
@@ -1560,6 +1595,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetAllowedDomains() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowedDomains",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) ResetAllowedDomainsTemplate() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedDomainsTemplate",
 		nil, // no parameters
 	)
 }

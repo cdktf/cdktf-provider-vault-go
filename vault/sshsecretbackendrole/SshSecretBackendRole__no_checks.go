@@ -84,6 +84,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedDomainsParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedDomainsTemplateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedExtensionsParameters(val *string) error {
 	return nil
 }
