@@ -2,14 +2,14 @@ package pkisecretbackendintermediatecertrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendintermediatecertrequest/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendintermediatecertrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
 type PkiSecretBackendIntermediateCertRequest interface {
 	cdktf.TerraformResource
 	AddBasicConstraints() interface{}
@@ -67,6 +67,13 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	KeyBits() *float64
 	SetKeyBits(val *float64)
 	KeyBitsInput() *float64
+	KeyId() *string
+	KeyName() *string
+	SetKeyName(val *string)
+	KeyNameInput() *string
+	KeyRef() *string
+	SetKeyRef(val *string)
+	KeyRefInput() *string
 	KeyType() *string
 	SetKeyType(val *string)
 	KeyTypeInput() *string
@@ -166,6 +173,8 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	ResetId()
 	ResetIpSans()
 	ResetKeyBits()
+	ResetKeyName()
+	ResetKeyRef()
 	ResetKeyType()
 	ResetLocality()
 	ResetManagedKeyId()
@@ -482,6 +491,56 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyBitsInput() *floa
 	_jsii_.Get(
 		j,
 		"keyBitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyRef() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyRefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRefInput",
 		&returns,
 	)
 	return returns
@@ -868,7 +927,7 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) UriSansInput() *[]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) PkiSecretBackendIntermediateCertRequest {
 	_init_.Initialize()
 
@@ -886,7 +945,7 @@ func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest_Override(p PkiSecretBackendIntermediateCertRequest, scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1100,28 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetKeyBits(val *float
 	_jsii_.Set(
 		j,
 		"keyBits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetKeyName(val *string) {
+	if err := j.validateSetKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetKeyRef(val *string) {
+	if err := j.validateSetKeyRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRef",
 		val,
 	)
 }
@@ -1555,6 +1636,22 @@ func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetKeyBits() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetKeyBits",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetKeyName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetKeyRef() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyRef",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,14 @@ package consulsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/consulsecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/consulsecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 type ConsulSecretBackend interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_ConsulSecretBackend) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend(scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) ConsulSecretBackend {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewConsulSecretBackend(scope constructs.Construct, id *string, config *Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend_Override(c ConsulSecretBackend, scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) {
 	_init_.Initialize()
 

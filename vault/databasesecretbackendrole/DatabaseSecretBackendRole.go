@@ -2,14 +2,14 @@ package databasesecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/databasesecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/databasesecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}.
 type DatabaseSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -30,6 +30,12 @@ type DatabaseSecretBackendRole interface {
 	CreationStatements() *[]*string
 	SetCreationStatements(val *[]*string)
 	CreationStatementsInput() *[]*string
+	CredentialConfig() *map[string]*string
+	SetCredentialConfig(val *map[string]*string)
+	CredentialConfigInput() *map[string]*string
+	CredentialType() *string
+	SetCredentialType(val *string)
+	CredentialTypeInput() *string
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -116,6 +122,8 @@ type DatabaseSecretBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCredentialConfig()
+	ResetCredentialType()
 	ResetDefaultTtl()
 	ResetId()
 	ResetMaxTtl()
@@ -216,6 +224,46 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) CreationStatementsInput() *[]*stri
 	_jsii_.Get(
 		j,
 		"creationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) CredentialConfig() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) CredentialConfigInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) CredentialType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) CredentialTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialTypeInput",
 		&returns,
 	)
 	return returns
@@ -522,7 +570,7 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
 func NewDatabaseSecretBackendRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendRoleConfig) DatabaseSecretBackendRole {
 	_init_.Initialize()
 
@@ -540,7 +588,7 @@ func NewDatabaseSecretBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource.
 func NewDatabaseSecretBackendRole_Override(d DatabaseSecretBackendRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -591,6 +639,28 @@ func (j *jsiiProxy_DatabaseSecretBackendRole)SetCreationStatements(val *[]*strin
 	_jsii_.Set(
 		j,
 		"creationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole)SetCredentialConfig(val *map[string]*string) {
+	if err := j.validateSetCredentialConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole)SetCredentialType(val *string) {
+	if err := j.validateSetCredentialTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialType",
 		val,
 	)
 }
@@ -1003,6 +1073,22 @@ func (d *jsiiProxy_DatabaseSecretBackendRole) OverrideLogicalId(newLogicalId *st
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendRole) ResetCredentialConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendRole) ResetCredentialType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialType",
+		nil, // no parameters
 	)
 }
 

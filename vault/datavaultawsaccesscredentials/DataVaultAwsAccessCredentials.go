@@ -2,14 +2,14 @@ package datavaultawsaccesscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaultawsaccesscredentials/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultawsaccesscredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials}.
 type DataVaultAwsAccessCredentials interface {
 	cdktf.TerraformDataSource
 	AccessKey() *string
@@ -501,7 +501,7 @@ func (j *jsiiProxy_DataVaultAwsAccessCredentials) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
 func NewDataVaultAwsAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAwsAccessCredentialsConfig) DataVaultAwsAccessCredentials {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewDataVaultAwsAccessCredentials(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/aws_access_credentials vault_aws_access_credentials} Data Source.
 func NewDataVaultAwsAccessCredentials_Override(d DataVaultAwsAccessCredentials, scope constructs.Construct, id *string, config *DataVaultAwsAccessCredentialsConfig) {
 	_init_.Initialize()
 

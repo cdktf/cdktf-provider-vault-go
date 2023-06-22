@@ -2,14 +2,14 @@ package jwtauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/jwtauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/jwtauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 type JwtAuthBackendRole interface {
 	cdktf.TerraformResource
 	AllowedRedirectUris() *[]*string
@@ -980,7 +980,7 @@ func (j *jsiiProxy_JwtAuthBackendRole) VerboseOidcLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) JwtAuthBackendRole {
 	_init_.Initialize()
 
@@ -998,7 +998,7 @@ func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole_Override(j JwtAuthBackendRole, scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) {
 	_init_.Initialize()
 

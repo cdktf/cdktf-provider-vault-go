@@ -2,14 +2,14 @@ package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/oktaauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/oktaauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -584,7 +584,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 

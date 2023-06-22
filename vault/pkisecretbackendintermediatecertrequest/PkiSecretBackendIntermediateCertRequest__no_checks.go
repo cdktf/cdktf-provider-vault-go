@@ -112,6 +112,14 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyBitsPa
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyRefParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyTypeParameters(val *string) error {
 	return nil
 }

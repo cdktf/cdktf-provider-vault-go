@@ -2,14 +2,14 @@ package approleauthbackendlogin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/approleauthbackendlogin/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/approleauthbackendlogin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}.
 type ApproleAuthBackendLogin interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -458,7 +458,7 @@ func (j *jsiiProxy_ApproleAuthBackendLogin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource.
 func NewApproleAuthBackendLogin(scope constructs.Construct, id *string, config *ApproleAuthBackendLoginConfig) ApproleAuthBackendLogin {
 	_init_.Initialize()
 
@@ -476,7 +476,7 @@ func NewApproleAuthBackendLogin(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource.
 func NewApproleAuthBackendLogin_Override(a ApproleAuthBackendLogin, scope constructs.Construct, id *string, config *ApproleAuthBackendLoginConfig) {
 	_init_.Initialize()
 

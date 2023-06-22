@@ -197,6 +197,8 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) validateSetDefaultLeaseTtlPar
 
 func (j *jsiiProxy_AuthBackendTuneOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AuthBackendTune:
 		val := val.(*AuthBackendTune)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -208,11 +210,9 @@ func (j *jsiiProxy_AuthBackendTuneOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AuthBackendTune, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AuthBackendTune; received %#v (a %T)", val, val)
 		}
 	}
 

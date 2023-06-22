@@ -225,6 +225,8 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetInse
 
 func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DatabaseSecretsMountCouchbase:
 		val := val.(*DatabaseSecretsMountCouchbase)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -236,11 +238,9 @@ func (j *jsiiProxy_DatabaseSecretsMountCouchbaseOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DatabaseSecretsMountCouchbase, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DatabaseSecretsMountCouchbase; received %#v (a %T)", val, val)
 		}
 	}
 

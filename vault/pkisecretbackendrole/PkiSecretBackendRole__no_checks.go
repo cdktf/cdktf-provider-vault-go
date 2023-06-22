@@ -96,6 +96,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowedUriSansParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowedUriSansTemplateParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowGlobDomainsParameters(val interface{}) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowLocalhostParameters(val
 }
 
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowSubdomainsParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowWildcardCertificatesParameters(val interface{}) error {
 	return nil
 }
 
@@ -157,6 +165,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetGenerateLeaseParameters(val 
 }
 
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetIssuerRefParameters(val *string) error {
 	return nil
 }
 

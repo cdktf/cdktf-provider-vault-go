@@ -2,14 +2,14 @@ package pkisecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -33,6 +33,9 @@ type PkiSecretBackendRole interface {
 	AllowedUriSans() *[]*string
 	SetAllowedUriSans(val *[]*string)
 	AllowedUriSansInput() *[]*string
+	AllowedUriSansTemplate() interface{}
+	SetAllowedUriSansTemplate(val interface{})
+	AllowedUriSansTemplateInput() interface{}
 	AllowGlobDomains() interface{}
 	SetAllowGlobDomains(val interface{})
 	AllowGlobDomainsInput() interface{}
@@ -45,6 +48,9 @@ type PkiSecretBackendRole interface {
 	AllowSubdomains() interface{}
 	SetAllowSubdomains(val interface{})
 	AllowSubdomainsInput() interface{}
+	AllowWildcardCertificates() interface{}
+	SetAllowWildcardCertificates(val interface{})
+	AllowWildcardCertificatesInput() interface{}
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -99,6 +105,9 @@ type PkiSecretBackendRole interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IssuerRef() *string
+	SetIssuerRef(val *string)
+	IssuerRefInput() *string
 	KeyBits() *float64
 	SetKeyBits(val *float64)
 	KeyBitsInput() *float64
@@ -216,10 +225,12 @@ type PkiSecretBackendRole interface {
 	ResetAllowedOtherSans()
 	ResetAllowedSerialNumbers()
 	ResetAllowedUriSans()
+	ResetAllowedUriSansTemplate()
 	ResetAllowGlobDomains()
 	ResetAllowIpSans()
 	ResetAllowLocalhost()
 	ResetAllowSubdomains()
+	ResetAllowWildcardCertificates()
 	ResetBasicConstraintsValidForNonCa()
 	ResetClientFlag()
 	ResetCodeSigningFlag()
@@ -229,6 +240,7 @@ type PkiSecretBackendRole interface {
 	ResetExtKeyUsage()
 	ResetGenerateLease()
 	ResetId()
+	ResetIssuerRef()
 	ResetKeyBits()
 	ResetKeyType()
 	ResetKeyUsage()
@@ -407,6 +419,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSansInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSansTemplate() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedUriSansTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSansTemplateInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowedUriSansTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) AllowGlobDomains() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -482,6 +514,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) AllowSubdomainsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowSubdomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowWildcardCertificates() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowWildcardCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowWildcardCertificatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowWildcardCertificatesInput",
 		&returns,
 	)
 	return returns
@@ -762,6 +814,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) IssuerRef() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) IssuerRefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerRefInput",
 		&returns,
 	)
 	return returns
@@ -1268,7 +1340,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1286,7 +1358,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1374,6 +1446,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedUriSans(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedUriSansTemplate(val interface{}) {
+	if err := j.validateSetAllowedUriSansTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedUriSansTemplate",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole)SetAllowGlobDomains(val interface{}) {
 	if err := j.validateSetAllowGlobDomainsParameters(val); err != nil {
 		panic(err)
@@ -1414,6 +1497,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetAllowSubdomains(val interface{}) {
 	_jsii_.Set(
 		j,
 		"allowSubdomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowWildcardCertificates(val interface{}) {
+	if err := j.validateSetAllowWildcardCertificatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowWildcardCertificates",
 		val,
 	)
 }
@@ -1562,6 +1656,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetIssuerRef(val *string) {
+	if err := j.validateSetIssuerRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuerRef",
 		val,
 	)
 }
@@ -2149,6 +2254,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedUriSans() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedUriSansTemplate() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedUriSansTemplate",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowGlobDomains() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2177,6 +2290,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowSubdomains() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAllowSubdomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowWildcardCertificates() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowWildcardCertificates",
 		nil, // no parameters
 	)
 }
@@ -2249,6 +2370,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetIssuerRef() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIssuerRef",
 		nil, // no parameters
 	)
 }

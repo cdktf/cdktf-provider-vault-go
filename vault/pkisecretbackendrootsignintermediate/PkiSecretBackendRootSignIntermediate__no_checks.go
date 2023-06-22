@@ -108,6 +108,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetIpSansParame
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetIssuerRefParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

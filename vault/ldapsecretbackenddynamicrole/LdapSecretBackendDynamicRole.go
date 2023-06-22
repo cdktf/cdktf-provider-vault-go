@@ -2,14 +2,14 @@ package ldapsecretbackenddynamicrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/ldapsecretbackenddynamicrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapsecretbackenddynamicrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
 type LdapSecretBackendDynamicRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_LdapSecretBackendDynamicRole) UsernameTemplateInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
 func NewLdapSecretBackendDynamicRole(scope constructs.Construct, id *string, config *LdapSecretBackendDynamicRoleConfig) LdapSecretBackendDynamicRole {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewLdapSecretBackendDynamicRole(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role} Resource.
 func NewLdapSecretBackendDynamicRole_Override(l LdapSecretBackendDynamicRole, scope constructs.Construct, id *string, config *LdapSecretBackendDynamicRoleConfig) {
 	_init_.Initialize()
 

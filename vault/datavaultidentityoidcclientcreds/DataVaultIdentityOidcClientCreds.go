@@ -2,14 +2,14 @@ package datavaultidentityoidcclientcreds
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaultidentityoidcclientcreds/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityoidcclientcreds/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds}.
 type DataVaultIdentityOidcClientCreds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -327,7 +327,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcClientCreds) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) DataVaultIdentityOidcClientCreds {
 	_init_.Initialize()
 
@@ -345,7 +345,7 @@ func NewDataVaultIdentityOidcClientCreds(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_oidc_client_creds vault_identity_oidc_client_creds} Data Source.
 func NewDataVaultIdentityOidcClientCreds_Override(d DataVaultIdentityOidcClientCreds, scope constructs.Construct, id *string, config *DataVaultIdentityOidcClientCredsConfig) {
 	_init_.Initialize()
 

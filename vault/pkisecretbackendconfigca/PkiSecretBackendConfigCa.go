@@ -2,14 +2,14 @@ package pkisecretbackendconfigca
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendconfigca/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendconfigca/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
 type PkiSecretBackendConfigCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) PkiSecretBackendConfigCa {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa_Override(p PkiSecretBackendConfigCa, scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) {
 	_init_.Initialize()
 

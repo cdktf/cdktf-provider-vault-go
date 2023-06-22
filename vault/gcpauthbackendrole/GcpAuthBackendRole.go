@@ -2,14 +2,14 @@ package gcpauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/gcpauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/gcpauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
 type GcpAuthBackendRole interface {
 	cdktf.TerraformResource
 	AddGroupAliases() interface{}
@@ -812,7 +812,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) GcpAuthBackendRole {
 	_init_.Initialize()
 
@@ -830,7 +830,7 @@ func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole_Override(g GcpAuthBackendRole, scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) {
 	_init_.Initialize()
 

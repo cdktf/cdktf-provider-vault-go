@@ -2,14 +2,14 @@ package pkisecretbackendsign
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendsign/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendsign/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -66,6 +66,9 @@ type PkiSecretBackendSign interface {
 	IpSans() *[]*string
 	SetIpSans(val *[]*string)
 	IpSansInput() *[]*string
+	IssuerRef() *string
+	SetIssuerRef(val *string)
+	IssuerRefInput() *string
 	IssuingCa() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -141,6 +144,7 @@ type PkiSecretBackendSign interface {
 	ResetFormat()
 	ResetId()
 	ResetIpSans()
+	ResetIssuerRef()
 	ResetMinSecondsRemaining()
 	ResetNamespace()
 	ResetOtherSans()
@@ -454,6 +458,26 @@ func (j *jsiiProxy_PkiSecretBackendSign) IpSansInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendSign) IssuerRef() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign) IssuerRefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerRefInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendSign) IssuingCa() *string {
 	var returns *string
 	_jsii_.Get(
@@ -695,7 +719,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -713,7 +737,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 
@@ -857,6 +881,17 @@ func (j *jsiiProxy_PkiSecretBackendSign)SetIpSans(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"ipSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign)SetIssuerRef(val *string) {
+	if err := j.validateSetIssuerRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuerRef",
 		val,
 	)
 }
@@ -1267,6 +1302,14 @@ func (p *jsiiProxy_PkiSecretBackendSign) ResetIpSans() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIpSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendSign) ResetIssuerRef() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIssuerRef",
 		nil, // no parameters
 	)
 }

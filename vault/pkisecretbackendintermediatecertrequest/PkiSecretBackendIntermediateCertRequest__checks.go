@@ -329,6 +329,22 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyBitsPa
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyRefParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

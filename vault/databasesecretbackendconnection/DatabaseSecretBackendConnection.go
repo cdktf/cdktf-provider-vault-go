@@ -2,14 +2,14 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/databasesecretbackendconnection/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/databasesecretbackendconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
 type DatabaseSecretBackendConnection interface {
 	cdktf.TerraformResource
 	AllowedRoles() *[]*string
@@ -908,7 +908,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) VerifyConnectionInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection {
 	_init_.Initialize()
 
@@ -926,7 +926,7 @@ func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection_Override(d DatabaseSecretBackendConnection, scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) {
 	_init_.Initialize()
 

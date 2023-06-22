@@ -2,9 +2,9 @@ package gcpauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/gcpauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/gcpauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

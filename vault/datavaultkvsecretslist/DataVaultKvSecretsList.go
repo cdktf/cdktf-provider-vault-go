@@ -2,14 +2,14 @@ package datavaultkvsecretslist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaultkvsecretslist/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultkvsecretslist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list}.
 type DataVaultKvSecretsList interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataVaultKvSecretsList) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
 func NewDataVaultKvSecretsList(scope constructs.Construct, id *string, config *DataVaultKvSecretsListConfig) DataVaultKvSecretsList {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataVaultKvSecretsList(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/kv_secrets_list vault_kv_secrets_list} Data Source.
 func NewDataVaultKvSecretsList_Override(d DataVaultKvSecretsList, scope constructs.Construct, id *string, config *DataVaultKvSecretsListConfig) {
 	_init_.Initialize()
 

@@ -140,6 +140,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetLocalParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetMaxPageSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

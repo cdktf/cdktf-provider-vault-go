@@ -104,7 +104,19 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetIpSansParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetIssuerNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyBitsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetKeyRefParameters(val *string) error {
 	return nil
 }
 

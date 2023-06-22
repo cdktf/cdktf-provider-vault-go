@@ -2,14 +2,14 @@ package ldapauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/ldapauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/ldapauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 type LdapAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -89,6 +89,9 @@ type LdapAuthBackend interface {
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
+	MaxPageSize() *float64
+	SetMaxPageSize(val *float64)
+	MaxPageSizeInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -211,6 +214,7 @@ type LdapAuthBackend interface {
 	ResetId()
 	ResetInsecureTls()
 	ResetLocal()
+	ResetMaxPageSize()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -664,6 +668,26 @@ func (j *jsiiProxy_LdapAuthBackend) LocalInput() interface{} {
 	_jsii_.Get(
 		j,
 		"localInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) MaxPageSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxPageSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) MaxPageSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxPageSizeInput",
 		&returns,
 	)
 	return returns
@@ -1160,7 +1184,7 @@ func (j *jsiiProxy_LdapAuthBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuthBackendConfig) LdapAuthBackend {
 	_init_.Initialize()
 
@@ -1178,7 +1202,7 @@ func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, id *string, config *LdapAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1410,6 +1434,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetLocal(val interface{}) {
 	_jsii_.Set(
 		j,
 		"local",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetMaxPageSize(val *float64) {
+	if err := j.validateSetMaxPageSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxPageSize",
 		val,
 	)
 }
@@ -2054,6 +2089,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLocal",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetMaxPageSize() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaxPageSize",
 		nil, // no parameters
 	)
 }

@@ -80,6 +80,14 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCreationStatementsParam
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCredentialConfigParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCredentialTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetDbNameParameters(val *string) error {
 	return nil
 }

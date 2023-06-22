@@ -2,14 +2,14 @@ package audit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/audit/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/audit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit vault_audit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit vault_audit}.
 type Audit interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_Audit) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit vault_audit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit vault_audit} Resource.
 func NewAudit(scope constructs.Construct, id *string, config *AuditConfig) Audit {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewAudit(scope constructs.Construct, id *string, config *AuditConfig) Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit vault_audit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit vault_audit} Resource.
 func NewAudit_Override(a Audit, scope constructs.Construct, id *string, config *AuditConfig) {
 	_init_.Initialize()
 

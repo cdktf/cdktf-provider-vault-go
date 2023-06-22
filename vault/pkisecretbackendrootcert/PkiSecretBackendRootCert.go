@@ -2,14 +2,14 @@ package pkisecretbackendrootcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendrootcert/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendrootcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -61,10 +61,21 @@ type PkiSecretBackendRootCert interface {
 	IpSans() *[]*string
 	SetIpSans(val *[]*string)
 	IpSansInput() *[]*string
+	IssuerId() *string
+	IssuerName() *string
+	SetIssuerName(val *string)
+	IssuerNameInput() *string
 	IssuingCa() *string
 	KeyBits() *float64
 	SetKeyBits(val *float64)
 	KeyBitsInput() *float64
+	KeyId() *string
+	KeyName() *string
+	SetKeyName(val *string)
+	KeyNameInput() *string
+	KeyRef() *string
+	SetKeyRef(val *string)
+	KeyRefInput() *string
 	KeyType() *string
 	SetKeyType(val *string)
 	KeyTypeInput() *string
@@ -171,7 +182,10 @@ type PkiSecretBackendRootCert interface {
 	ResetFormat()
 	ResetId()
 	ResetIpSans()
+	ResetIssuerName()
 	ResetKeyBits()
+	ResetKeyName()
+	ResetKeyRef()
 	ResetKeyType()
 	ResetLocality()
 	ResetManagedKeyId()
@@ -456,6 +470,36 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) IpSansInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) IssuerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) IssuerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) IssuerNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"issuerNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) IssuingCa() *string {
 	var returns *string
 	_jsii_.Get(
@@ -481,6 +525,56 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) KeyBitsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"keyBitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyRef() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRef",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) KeyRefInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRefInput",
 		&returns,
 	)
 	return returns
@@ -927,7 +1021,7 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -945,7 +1039,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1176,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetIpSans(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetIssuerName(val *string) {
+	if err := j.validateSetIssuerNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"issuerName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyBits(val *float64) {
 	if err := j.validateSetKeyBitsParameters(val); err != nil {
 		panic(err)
@@ -1089,6 +1194,28 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyBits(val *float64) {
 	_jsii_.Set(
 		j,
 		"keyBits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyName(val *string) {
+	if err := j.validateSetKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetKeyRef(val *string) {
+	if err := j.validateSetKeyRefParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRef",
 		val,
 	)
 }
@@ -1624,10 +1751,34 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetIpSans() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetIssuerName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIssuerName",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) ResetKeyBits() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetKeyBits",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetKeyName() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyName",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetKeyRef() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyRef",
 		nil, // no parameters
 	)
 }

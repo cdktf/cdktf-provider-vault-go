@@ -2,14 +2,14 @@ package pkisecretbackendintermediatesetsigned
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/pkisecretbackendintermediatesetsigned/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/pkisecretbackendintermediatesetsigned/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed}.
 type PkiSecretBackendIntermediateSetSigned interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -45,6 +45,8 @@ type PkiSecretBackendIntermediateSetSigned interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportedIssuers() *[]*string
+	ImportedKeys() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -255,6 +257,26 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) ImportedIssuers() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importedIssuers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) ImportedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"importedKeys",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -356,7 +378,7 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateSetSigned) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed} Resource.
 func NewPkiSecretBackendIntermediateSetSigned(scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateSetSignedConfig) PkiSecretBackendIntermediateSetSigned {
 	_init_.Initialize()
 
@@ -374,7 +396,7 @@ func NewPkiSecretBackendIntermediateSetSigned(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_intermediate_set_signed vault_pki_secret_backend_intermediate_set_signed} Resource.
 func NewPkiSecretBackendIntermediateSetSigned_Override(p PkiSecretBackendIntermediateSetSigned, scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateSetSignedConfig) {
 	_init_.Initialize()
 

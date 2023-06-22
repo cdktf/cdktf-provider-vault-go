@@ -2,14 +2,14 @@ package identityoidc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/identityoidc/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityoidc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc vault_identity_oidc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc vault_identity_oidc}.
 type IdentityOidc interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -334,7 +334,7 @@ func (j *jsiiProxy_IdentityOidc) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc vault_identity_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc vault_identity_oidc} Resource.
 func NewIdentityOidc(scope constructs.Construct, id *string, config *IdentityOidcConfig) IdentityOidc {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewIdentityOidc(scope constructs.Construct, id *string, config *IdentityOid
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_oidc vault_identity_oidc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc vault_identity_oidc} Resource.
 func NewIdentityOidc_Override(i IdentityOidc, scope constructs.Construct, id *string, config *IdentityOidcConfig) {
 	_init_.Initialize()
 

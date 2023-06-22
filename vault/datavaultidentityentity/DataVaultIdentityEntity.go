@@ -2,14 +2,14 @@ package datavaultidentityentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/datavaultidentityentity/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/datavaultidentityentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_entity vault_identity_entity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_entity vault_identity_entity}.
 type DataVaultIdentityEntity interface {
 	cdktf.TerraformDataSource
 	Aliases() DataVaultIdentityEntityAliasesList
@@ -534,7 +534,7 @@ func (j *jsiiProxy_DataVaultIdentityEntity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) DataVaultIdentityEntity {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewDataVaultIdentityEntity(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/data-sources/identity_entity vault_identity_entity} Data Source.
 func NewDataVaultIdentityEntity_Override(d DataVaultIdentityEntity, scope constructs.Construct, id *string, config *DataVaultIdentityEntityConfig) {
 	_init_.Initialize()
 

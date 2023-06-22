@@ -2,14 +2,14 @@ package auditrequestheader
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/auditrequestheader/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/auditrequestheader/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit_request_header vault_audit_request_header}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header vault_audit_request_header}.
 type AuditRequestHeader interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_AuditRequestHeader) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader(scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) AuditRequestHeader {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewAuditRequestHeader(scope constructs.Construct, id *string, config *Audit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/audit_request_header vault_audit_request_header} Resource.
 func NewAuditRequestHeader_Override(a AuditRequestHeader, scope constructs.Construct, id *string, config *AuditRequestHeaderConfig) {
 	_init_.Initialize()
 

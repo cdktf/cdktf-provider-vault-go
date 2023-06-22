@@ -241,6 +241,22 @@ func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCreationStatementsParam
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCredentialConfigParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetCredentialTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendRole) validateSetDbNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

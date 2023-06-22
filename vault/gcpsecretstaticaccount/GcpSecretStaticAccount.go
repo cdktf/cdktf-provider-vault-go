@@ -2,14 +2,14 @@ package gcpsecretstaticaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/gcpsecretstaticaccount/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/gcpsecretstaticaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}.
 type GcpSecretStaticAccount interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GcpSecretStaticAccount) TokenScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
 func NewGcpSecretStaticAccount(scope constructs.Construct, id *string, config *GcpSecretStaticAccountConfig) GcpSecretStaticAccount {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGcpSecretStaticAccount(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
 func NewGcpSecretStaticAccount_Override(g GcpSecretStaticAccount, scope constructs.Construct, id *string, config *GcpSecretStaticAccountConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package sshsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/sshsecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/sshsecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktf.TerraformResource
 	AlgorithmSigner() *string
@@ -907,7 +907,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -925,7 +925,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 

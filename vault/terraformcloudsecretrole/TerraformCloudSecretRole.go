@@ -2,14 +2,14 @@ package terraformcloudsecretrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/terraformcloudsecretrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/terraformcloudsecretrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
 type TerraformCloudSecretRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) TerraformCloudSecretRole {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole_Override(t TerraformCloudSecretRole, scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) {
 	_init_.Initialize()
 

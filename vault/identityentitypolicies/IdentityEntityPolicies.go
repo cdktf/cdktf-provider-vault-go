@@ -2,14 +2,14 @@ package identityentitypolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v8/identityentitypolicies/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v9/identityentitypolicies/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
 type IdentityEntityPolicies interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_IdentityEntityPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) IdentityEntityPolicies {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.16.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies_Override(i IdentityEntityPolicies, scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) {
 	_init_.Initialize()
 
