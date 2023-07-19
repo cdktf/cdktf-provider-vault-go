@@ -38,6 +38,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "authLoginOidcInput", GoGetter: "AuthLoginOidcInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authLoginRadius", GoGetter: "AuthLoginRadius"},
 			_jsii_.MemberProperty{JsiiProperty: "authLoginRadiusInput", GoGetter: "AuthLoginRadiusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginTokenFile", GoGetter: "AuthLoginTokenFile"},
+			_jsii_.MemberProperty{JsiiProperty: "authLoginTokenFileInput", GoGetter: "AuthLoginTokenFileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authLoginUserpass", GoGetter: "AuthLoginUserpass"},
 			_jsii_.MemberProperty{JsiiProperty: "authLoginUserpassInput", GoGetter: "AuthLoginUserpassInput"},
 			_jsii_.MemberProperty{JsiiProperty: "caCertDir", GoGetter: "CaCertDir"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginOci", GoMethod: "ResetAuthLoginOci"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginOidc", GoMethod: "ResetAuthLoginOidc"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginRadius", GoMethod: "ResetAuthLoginRadius"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginTokenFile", GoMethod: "ResetAuthLoginTokenFile"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthLoginUserpass", GoMethod: "ResetAuthLoginUserpass"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCertDir", GoMethod: "ResetCaCertDir"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCaCertFile", GoMethod: "ResetCaCertFile"},
@@ -160,6 +163,10 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.provider.VaultProviderAuthLoginRadius",
 		reflect.TypeOf((*VaultProviderAuthLoginRadius)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.provider.VaultProviderAuthLoginTokenFile",
+		reflect.TypeOf((*VaultProviderAuthLoginTokenFile)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-vault.provider.VaultProviderAuthLoginUserpass",

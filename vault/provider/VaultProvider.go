@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs vault}.
 type VaultProvider interface {
 	cdktf.TerraformProvider
 	AddAddressToEnv() *string
@@ -51,6 +51,9 @@ type VaultProvider interface {
 	AuthLoginRadius() *VaultProviderAuthLoginRadius
 	SetAuthLoginRadius(val *VaultProviderAuthLoginRadius)
 	AuthLoginRadiusInput() *VaultProviderAuthLoginRadius
+	AuthLoginTokenFile() *VaultProviderAuthLoginTokenFile
+	SetAuthLoginTokenFile(val *VaultProviderAuthLoginTokenFile)
+	AuthLoginTokenFileInput() *VaultProviderAuthLoginTokenFile
 	AuthLoginUserpass() *VaultProviderAuthLoginUserpass
 	SetAuthLoginUserpass(val *VaultProviderAuthLoginUserpass)
 	AuthLoginUserpassInput() *VaultProviderAuthLoginUserpass
@@ -136,6 +139,7 @@ type VaultProvider interface {
 	ResetAuthLoginOci()
 	ResetAuthLoginOidc()
 	ResetAuthLoginRadius()
+	ResetAuthLoginTokenFile()
 	ResetAuthLoginUserpass()
 	ResetCaCertDir()
 	ResetCaCertFile()
@@ -425,6 +429,26 @@ func (j *jsiiProxy_VaultProvider) AuthLoginRadiusInput() *VaultProviderAuthLogin
 	_jsii_.Get(
 		j,
 		"authLoginRadiusInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) AuthLoginTokenFile() *VaultProviderAuthLoginTokenFile {
+	var returns *VaultProviderAuthLoginTokenFile
+	_jsii_.Get(
+		j,
+		"authLoginTokenFile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) AuthLoginTokenFileInput() *VaultProviderAuthLoginTokenFile {
+	var returns *VaultProviderAuthLoginTokenFile
+	_jsii_.Get(
+		j,
+		"authLoginTokenFileInput",
 		&returns,
 	)
 	return returns
@@ -851,7 +875,7 @@ func (j *jsiiProxy_VaultProvider) VaultVersionOverrideInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs vault} Resource.
 func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProviderConfig) VaultProvider {
 	_init_.Initialize()
 
@@ -869,7 +893,7 @@ func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs vault} Resource.
 func NewVaultProvider_Override(v VaultProvider, scope constructs.Construct, id *string, config *VaultProviderConfig) {
 	_init_.Initialize()
 
@@ -1010,6 +1034,17 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginRadius(val *VaultProviderAuthLoginR
 	_jsii_.Set(
 		j,
 		"authLoginRadius",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultProvider)SetAuthLoginTokenFile(val *VaultProviderAuthLoginTokenFile) {
+	if err := j.validateSetAuthLoginTokenFileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authLoginTokenFile",
 		val,
 	)
 }
@@ -1358,6 +1393,14 @@ func (v *jsiiProxy_VaultProvider) ResetAuthLoginRadius() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAuthLoginRadius",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultProvider) ResetAuthLoginTokenFile() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAuthLoginTokenFile",
 		nil, // no parameters
 	)
 }

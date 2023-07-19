@@ -135,6 +135,14 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val *Vaul
 	return nil
 }
 
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val *VaultProviderAuthLoginTokenFile) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val *VaultProviderAuthLoginUserpass) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

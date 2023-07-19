@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -1340,7 +1340,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1358,7 +1358,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 

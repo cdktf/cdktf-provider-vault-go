@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}.
 type IdentityOidcAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_IdentityOidcAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource.
 func NewIdentityOidcAssignment(scope constructs.Construct, id *string, config *IdentityOidcAssignmentConfig) IdentityOidcAssignment {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewIdentityOidcAssignment(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.17.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource.
 func NewIdentityOidcAssignment_Override(i IdentityOidcAssignment, scope constructs.Construct, id *string, config *IdentityOidcAssignmentConfig) {
 	_init_.Initialize()
 

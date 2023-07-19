@@ -64,6 +64,10 @@ func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val *Vaul
 	return nil
 }
 
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val *VaultProviderAuthLoginTokenFile) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val *VaultProviderAuthLoginUserpass) error {
 	return nil
 }
