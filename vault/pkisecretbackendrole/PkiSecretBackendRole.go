@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -36,6 +36,9 @@ type PkiSecretBackendRole interface {
 	AllowedUriSansTemplate() interface{}
 	SetAllowedUriSansTemplate(val interface{})
 	AllowedUriSansTemplateInput() interface{}
+	AllowedUserIds() *[]*string
+	SetAllowedUserIds(val *[]*string)
+	AllowedUserIdsInput() *[]*string
 	AllowGlobDomains() interface{}
 	SetAllowGlobDomains(val interface{})
 	AllowGlobDomainsInput() interface{}
@@ -226,6 +229,7 @@ type PkiSecretBackendRole interface {
 	ResetAllowedSerialNumbers()
 	ResetAllowedUriSans()
 	ResetAllowedUriSansTemplate()
+	ResetAllowedUserIds()
 	ResetAllowGlobDomains()
 	ResetAllowIpSans()
 	ResetAllowLocalhost()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) AllowedUriSansTemplateInput() interface
 	_jsii_.Get(
 		j,
 		"allowedUriSansTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUserIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUserIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) AllowedUserIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedUserIdsInput",
 		&returns,
 	)
 	return returns
@@ -1340,7 +1364,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1358,7 +1382,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1453,6 +1477,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedUriSansTemplate(val interface{
 	_jsii_.Set(
 		j,
 		"allowedUriSansTemplate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetAllowedUserIds(val *[]*string) {
+	if err := j.validateSetAllowedUserIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedUserIds",
 		val,
 	)
 }
@@ -2258,6 +2293,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedUriSansTemplate() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetAllowedUriSansTemplate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetAllowedUserIds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetAllowedUserIds",
 		nil, // no parameters
 	)
 }

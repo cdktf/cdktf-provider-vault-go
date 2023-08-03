@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 type ConsulSecretBackend interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_ConsulSecretBackend) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend(scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) ConsulSecretBackend {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewConsulSecretBackend(scope constructs.Construct, id *string, config *Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend_Override(c ConsulSecretBackend, scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) {
 	_init_.Initialize()
 

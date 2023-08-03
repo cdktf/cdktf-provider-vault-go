@@ -148,6 +148,10 @@ func (j *jsiiProxy_PkiSecretBackendCert) validateSetUriSansParameters(val *[]*st
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) validateSetUserIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewPkiSecretBackendCertParameters(scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) error {
 	return nil
 }

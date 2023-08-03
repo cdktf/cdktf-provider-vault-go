@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials}.
 type DataVaultAdAccessCredentials interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataVaultAdAccessCredentials) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials} Data Source.
 func NewDataVaultAdAccessCredentials(scope constructs.Construct, id *string, config *DataVaultAdAccessCredentialsConfig) DataVaultAdAccessCredentials {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataVaultAdAccessCredentials(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/data-sources/ad_access_credentials vault_ad_access_credentials} Data Source.
 func NewDataVaultAdAccessCredentials_Override(d DataVaultAdAccessCredentials, scope constructs.Construct, id *string, config *DataVaultAdAccessCredentialsConfig) {
 	_init_.Initialize()
 

@@ -100,6 +100,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowedUriSansTemplateParame
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowedUserIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetAllowGlobDomainsParameters(val interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend}.
 type MongodbatlasSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_MongodbatlasSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) MongodbatlasSecretBackend {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewMongodbatlasSecretBackend(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/mongodbatlas_secret_backend vault_mongodbatlas_secret_backend} Resource.
 func NewMongodbatlasSecretBackend_Override(m MongodbatlasSecretBackend, scope constructs.Construct, id *string, config *MongodbatlasSecretBackendConfig) {
 	_init_.Initialize()
 

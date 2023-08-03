@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 type PkiSecretBackendCert interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -117,6 +117,9 @@ type PkiSecretBackendCert interface {
 	UriSans() *[]*string
 	SetUriSans(val *[]*string)
 	UriSansInput() *[]*string
+	UserIds() *[]*string
+	SetUserIds(val *[]*string)
+	UserIdsInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -159,6 +162,7 @@ type PkiSecretBackendCert interface {
 	ResetRevoke()
 	ResetTtl()
 	ResetUriSans()
+	ResetUserIds()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -754,8 +758,28 @@ func (j *jsiiProxy_PkiSecretBackendCert) UriSansInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) UserIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIds",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+func (j *jsiiProxy_PkiSecretBackendCert) UserIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"userIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) PkiSecretBackendCert {
 	_init_.Initialize()
 
@@ -773,7 +797,7 @@ func NewPkiSecretBackendCert(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource.
 func NewPkiSecretBackendCert_Override(p PkiSecretBackendCert, scope constructs.Construct, id *string, config *PkiSecretBackendCertConfig) {
 	_init_.Initialize()
 
@@ -1035,6 +1059,17 @@ func (j *jsiiProxy_PkiSecretBackendCert)SetUriSans(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"uriSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCert)SetUserIds(val *[]*string) {
+	if err := j.validateSetUserIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userIds",
 		val,
 	)
 }
@@ -1421,6 +1456,14 @@ func (p *jsiiProxy_PkiSecretBackendCert) ResetUriSans() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetUriSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCert) ResetUserIds() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUserIds",
 		nil, // no parameters
 	)
 }

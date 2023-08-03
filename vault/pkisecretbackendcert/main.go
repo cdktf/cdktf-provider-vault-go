@@ -86,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRevoke", GoMethod: "ResetRevoke"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUriSans", GoMethod: "ResetUriSans"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUserIds", GoMethod: "ResetUserIds"},
 			_jsii_.MemberProperty{JsiiProperty: "revoke", GoGetter: "Revoke"},
 			_jsii_.MemberProperty{JsiiProperty: "revokeInput", GoGetter: "RevokeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
@@ -100,6 +101,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uriSans", GoGetter: "UriSans"},
 			_jsii_.MemberProperty{JsiiProperty: "uriSansInput", GoGetter: "UriSansInput"},
+			_jsii_.MemberProperty{JsiiProperty: "userIds", GoGetter: "UserIds"},
+			_jsii_.MemberProperty{JsiiProperty: "userIdsInput", GoGetter: "UserIdsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PkiSecretBackendCert{}

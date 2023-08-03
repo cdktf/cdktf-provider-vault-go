@@ -100,6 +100,10 @@ func (j *jsiiProxy_AwsAuthBackendConfigIdentity) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendConfigIdentity) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendConfigIdentity) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

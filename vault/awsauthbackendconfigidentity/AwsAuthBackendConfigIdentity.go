@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}.
 type AwsAuthBackendConfigIdentity interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -58,6 +58,9 @@ type AwsAuthBackendConfigIdentity interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Namespace() *string
+	SetNamespace(val *string)
+	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -107,6 +110,7 @@ type AwsAuthBackendConfigIdentity interface {
 	ResetIamAlias()
 	ResetIamMetadata()
 	ResetId()
+	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -335,6 +339,26 @@ func (j *jsiiProxy_AwsAuthBackendConfigIdentity) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_AwsAuthBackendConfigIdentity) Namespace() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespace",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendConfigIdentity) NamespaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namespaceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsAuthBackendConfigIdentity) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -406,7 +430,7 @@ func (j *jsiiProxy_AwsAuthBackendConfigIdentity) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
 func NewAwsAuthBackendConfigIdentity(scope constructs.Construct, id *string, config *AwsAuthBackendConfigIdentityConfig) AwsAuthBackendConfigIdentity {
 	_init_.Initialize()
 
@@ -424,7 +448,7 @@ func NewAwsAuthBackendConfigIdentity(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.18.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource.
 func NewAwsAuthBackendConfigIdentity_Override(a AwsAuthBackendConfigIdentity, scope constructs.Construct, id *string, config *AwsAuthBackendConfigIdentityConfig) {
 	_init_.Initialize()
 
@@ -546,6 +570,17 @@ func (j *jsiiProxy_AwsAuthBackendConfigIdentity)SetLifecycle(val *cdktf.Terrafor
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendConfigIdentity)SetNamespace(val *string) {
+	if err := j.validateSetNamespaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namespace",
 		val,
 	)
 }
@@ -879,6 +914,14 @@ func (a *jsiiProxy_AwsAuthBackendConfigIdentity) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendConfigIdentity) ResetNamespace() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNamespace",
 		nil, // no parameters
 	)
 }
