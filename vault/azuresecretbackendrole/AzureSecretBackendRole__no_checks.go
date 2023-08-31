@@ -111,6 +111,10 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetNamespaceParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetPermanentlyDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretKey", GoMethod: "ResetSecretKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsEndpoint", GoMethod: "ResetStsEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStsRegion", GoMethod: "ResetStsRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseStsRegionFromClient", GoMethod: "ResetUseStsRegionFromClient"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKey", GoGetter: "SecretKey"},
 			_jsii_.MemberProperty{JsiiProperty: "secretKeyInput", GoGetter: "SecretKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "stsEndpoint", GoGetter: "StsEndpoint"},
@@ -77,6 +78,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "useStsRegionFromClient", GoGetter: "UseStsRegionFromClient"},
+			_jsii_.MemberProperty{JsiiProperty: "useStsRegionFromClientInput", GoGetter: "UseStsRegionFromClientInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AwsAuthBackendClient{}

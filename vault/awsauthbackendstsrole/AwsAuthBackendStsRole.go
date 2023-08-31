@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}.
 type AwsAuthBackendStsRole interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_AwsAuthBackendStsRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
 func NewAwsAuthBackendStsRole(scope constructs.Construct, id *string, config *AwsAuthBackendStsRoleConfig) AwsAuthBackendStsRole {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewAwsAuthBackendStsRole(scope constructs.Construct, id *string, config *Aw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
 func NewAwsAuthBackendStsRole_Override(a AwsAuthBackendStsRole, scope constructs.Construct, id *string, config *AwsAuthBackendStsRoleConfig) {
 	_init_.Initialize()
 

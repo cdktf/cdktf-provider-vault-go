@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_team vault_github_team}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_team vault_github_team}.
 type GithubTeam interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GithubTeam) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_team vault_github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_team vault_github_team} Resource.
 func NewGithubTeam(scope constructs.Construct, id *string, config *GithubTeamConfig) GithubTeam {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewGithubTeam(scope constructs.Construct, id *string, config *GithubTeamCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/github_team vault_github_team} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_team vault_github_team} Resource.
 func NewGithubTeam_Override(g GithubTeam, scope constructs.Construct, id *string, config *GithubTeamConfig) {
 	_init_.Initialize()
 

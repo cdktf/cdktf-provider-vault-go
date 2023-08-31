@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}.
 type RabbitmqSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -431,7 +431,7 @@ func (j *jsiiProxy_RabbitmqSecretBackendRole) VhostTopicInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
 func NewRabbitmqSecretBackendRole(scope constructs.Construct, id *string, config *RabbitmqSecretBackendRoleConfig) RabbitmqSecretBackendRole {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewRabbitmqSecretBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource.
 func NewRabbitmqSecretBackendRole_Override(r RabbitmqSecretBackendRole, scope constructs.Construct, id *string, config *RabbitmqSecretBackendRoleConfig) {
 	_init_.Initialize()
 

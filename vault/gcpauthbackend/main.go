@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vault.gcpAuthBackend.GcpAuthBackend",
 		reflect.TypeOf((*GcpAuthBackend)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessor", GoGetter: "Accessor"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "clientEmail", GoGetter: "ClientEmail"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
 type AzureSecretBackendRole interface {
 	cdktf.TerraformResource
 	ApplicationObjectId() *string
@@ -67,6 +67,9 @@ type AzureSecretBackendRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PermanentlyDelete() interface{}
+	SetPermanentlyDelete(val interface{})
+	PermanentlyDeleteInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -127,6 +130,7 @@ type AzureSecretBackendRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPermanentlyDelete()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -403,6 +407,26 @@ func (j *jsiiProxy_AzureSecretBackendRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) PermanentlyDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentlyDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole) PermanentlyDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"permanentlyDeleteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -504,7 +528,7 @@ func (j *jsiiProxy_AzureSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
 func NewAzureSecretBackendRole(scope constructs.Construct, id *string, config *AzureSecretBackendRoleConfig) AzureSecretBackendRole {
 	_init_.Initialize()
 
@@ -522,7 +546,7 @@ func NewAzureSecretBackendRole(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
 func NewAzureSecretBackendRole_Override(a AzureSecretBackendRole, scope constructs.Construct, id *string, config *AzureSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -644,6 +668,17 @@ func (j *jsiiProxy_AzureSecretBackendRole)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole)SetPermanentlyDelete(val interface{}) {
+	if err := j.validateSetPermanentlyDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permanentlyDelete",
 		val,
 	)
 }
@@ -1045,6 +1080,14 @@ func (a *jsiiProxy_AzureSecretBackendRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendRole) ResetPermanentlyDelete() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPermanentlyDelete",
 		nil, // no parameters
 	)
 }

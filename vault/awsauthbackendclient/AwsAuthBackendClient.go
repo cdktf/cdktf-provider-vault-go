@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 type AwsAuthBackendClient interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -91,6 +91,9 @@ type AwsAuthBackendClient interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseStsRegionFromClient() interface{}
+	SetUseStsRegionFromClient(val interface{})
+	UseStsRegionFromClientInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -129,6 +132,7 @@ type AwsAuthBackendClient interface {
 	ResetSecretKey()
 	ResetStsEndpoint()
 	ResetStsRegion()
+	ResetUseStsRegionFromClient()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -504,8 +508,28 @@ func (j *jsiiProxy_AwsAuthBackendClient) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClient() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useStsRegionFromClient",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClientInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useStsRegionFromClientInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) AwsAuthBackendClient {
 	_init_.Initialize()
 
@@ -523,7 +547,7 @@ func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient_Override(a AwsAuthBackendClient, scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) {
 	_init_.Initialize()
 
@@ -708,6 +732,17 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetStsRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"stsRegion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetUseStsRegionFromClient(val interface{}) {
+	if err := j.validateSetUseStsRegionFromClientParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useStsRegionFromClient",
 		val,
 	)
 }
@@ -1062,6 +1097,14 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetStsRegion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStsRegion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetUseStsRegionFromClient() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUseStsRegionFromClient",
 		nil, // no parameters
 	)
 }

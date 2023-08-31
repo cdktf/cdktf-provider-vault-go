@@ -123,6 +123,10 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetStsRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetUseStsRegionFromClientParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewAwsAuthBackendClientParameters(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) error {
 	return nil
 }

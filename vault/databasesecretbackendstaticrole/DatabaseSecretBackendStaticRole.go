@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
 type DatabaseSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) DatabaseSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole_Override(d DatabaseSecretBackendStaticRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 type GcpAuthBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientEmail() *string
@@ -150,6 +151,16 @@ type GcpAuthBackend interface {
 // The jsii proxy struct for GcpAuthBackend
 type jsiiProxy_GcpAuthBackend struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GcpAuthBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GcpAuthBackend) CdktfStack() cdktf.TerraformStack {
@@ -553,7 +564,7 @@ func (j *jsiiProxy_GcpAuthBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBackendConfig) GcpAuthBackend {
 	_init_.Initialize()
 
@@ -571,7 +582,7 @@ func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.19.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend_Override(g GcpAuthBackend, scope constructs.Construct, id *string, config *GcpAuthBackendConfig) {
 	_init_.Initialize()
 
