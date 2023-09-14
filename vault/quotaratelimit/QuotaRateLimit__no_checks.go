@@ -111,6 +111,10 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetRateParameters(val *float64) error
 	return nil
 }
 
+func (j *jsiiProxy_QuotaRateLimit) validateSetRoleParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuotaRateLimitParameters(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) error {
 	return nil
 }

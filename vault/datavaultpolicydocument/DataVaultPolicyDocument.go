@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/policy_document vault_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/policy_document vault_policy_document}.
 type DataVaultPolicyDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -320,7 +320,7 @@ func (j *jsiiProxy_DataVaultPolicyDocument) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/policy_document vault_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/policy_document vault_policy_document} Data Source.
 func NewDataVaultPolicyDocument(scope constructs.Construct, id *string, config *DataVaultPolicyDocumentConfig) DataVaultPolicyDocument {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewDataVaultPolicyDocument(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/policy_document vault_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/policy_document vault_policy_document} Data Source.
 func NewDataVaultPolicyDocument_Override(d DataVaultPolicyDocument, scope constructs.Construct, id *string, config *DataVaultPolicyDocumentConfig) {
 	_init_.Initialize()
 

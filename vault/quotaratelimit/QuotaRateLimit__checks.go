@@ -338,6 +338,14 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetRateParameters(val *float64) error
 	return nil
 }
 
+func (j *jsiiProxy_QuotaRateLimit) validateSetRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewQuotaRateLimitParameters(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

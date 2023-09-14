@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials}.
 type DataVaultLdapDynamicCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataVaultLdapDynamicCredentials) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source.
 func NewDataVaultLdapDynamicCredentials(scope constructs.Construct, id *string, config *DataVaultLdapDynamicCredentialsConfig) DataVaultLdapDynamicCredentials {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataVaultLdapDynamicCredentials(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/ldap_dynamic_credentials vault_ldap_dynamic_credentials} Data Source.
 func NewDataVaultLdapDynamicCredentials_Override(d DataVaultLdapDynamicCredentials, scope constructs.Construct, id *string, config *DataVaultLdapDynamicCredentialsConfig) {
 	_init_.Initialize()
 

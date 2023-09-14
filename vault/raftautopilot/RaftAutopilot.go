@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/raft_autopilot vault_raft_autopilot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/raft_autopilot vault_raft_autopilot}.
 type RaftAutopilot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -481,7 +481,7 @@ func (j *jsiiProxy_RaftAutopilot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
 func NewRaftAutopilot(scope constructs.Construct, id *string, config *RaftAutopilotConfig) RaftAutopilot {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewRaftAutopilot(scope constructs.Construct, id *string, config *RaftAutopi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/raft_autopilot vault_raft_autopilot} Resource.
 func NewRaftAutopilot_Override(r RaftAutopilot, scope constructs.Construct, id *string, config *RaftAutopilotConfig) {
 	_init_.Initialize()
 

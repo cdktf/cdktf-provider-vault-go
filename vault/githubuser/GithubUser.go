@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_user vault_github_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/github_user vault_github_user}.
 type GithubUser interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_GithubUser) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_user vault_github_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/github_user vault_github_user} Resource.
 func NewGithubUser(scope constructs.Construct, id *string, config *GithubUserConfig) GithubUser {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewGithubUser(scope constructs.Construct, id *string, config *GithubUserCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/github_user vault_github_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/github_user vault_github_user} Resource.
 func NewGithubUser_Override(g GithubUser, scope constructs.Construct, id *string, config *GithubUserConfig) {
 	_init_.Initialize()
 

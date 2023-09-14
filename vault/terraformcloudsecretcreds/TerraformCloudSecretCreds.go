@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds}.
 type TerraformCloudSecretCreds interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_TerraformCloudSecretCreds) TokenId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource.
 func NewTerraformCloudSecretCreds(scope constructs.Construct, id *string, config *TerraformCloudSecretCredsConfig) TerraformCloudSecretCreds {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewTerraformCloudSecretCreds(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/terraform_cloud_secret_creds vault_terraform_cloud_secret_creds} Resource.
 func NewTerraformCloudSecretCreds_Override(t TerraformCloudSecretCreds, scope constructs.Construct, id *string, config *TerraformCloudSecretCredsConfig) {
 	_init_.Initialize()
 

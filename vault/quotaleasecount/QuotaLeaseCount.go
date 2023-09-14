@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_lease_count vault_quota_lease_count}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_lease_count vault_quota_lease_count}.
 type QuotaLeaseCount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,9 @@ type QuotaLeaseCount interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Role() *string
+	SetRole(val *string)
+	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,6 +110,7 @@ type QuotaLeaseCount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetRole()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -352,6 +356,26 @@ func (j *jsiiProxy_QuotaLeaseCount) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_QuotaLeaseCount) Role() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"role",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaLeaseCount) RoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuotaLeaseCount) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -383,7 +407,7 @@ func (j *jsiiProxy_QuotaLeaseCount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) QuotaLeaseCount {
 	_init_.Initialize()
 
@@ -401,7 +425,7 @@ func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount_Override(q QuotaLeaseCount, scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) {
 	_init_.Initialize()
 
@@ -531,6 +555,17 @@ func (j *jsiiProxy_QuotaLeaseCount)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuotaLeaseCount)SetRole(val *string) {
+	if err := j.validateSetRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"role",
 		val,
 	)
 }
@@ -829,6 +864,14 @@ func (q *jsiiProxy_QuotaLeaseCount) ResetPath() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuotaLeaseCount) ResetRole() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRole",
 		nil, // no parameters
 	)
 }

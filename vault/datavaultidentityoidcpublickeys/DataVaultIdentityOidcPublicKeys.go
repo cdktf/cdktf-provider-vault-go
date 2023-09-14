@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys}.
 type DataVaultIdentityOidcPublicKeys interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -319,7 +319,7 @@ func (j *jsiiProxy_DataVaultIdentityOidcPublicKeys) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys} Data Source.
 func NewDataVaultIdentityOidcPublicKeys(scope constructs.Construct, id *string, config *DataVaultIdentityOidcPublicKeysConfig) DataVaultIdentityOidcPublicKeys {
 	_init_.Initialize()
 
@@ -337,7 +337,7 @@ func NewDataVaultIdentityOidcPublicKeys(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/data-sources/identity_oidc_public_keys vault_identity_oidc_public_keys} Data Source.
 func NewDataVaultIdentityOidcPublicKeys_Override(d DataVaultIdentityOidcPublicKeys, scope constructs.Construct, id *string, config *DataVaultIdentityOidcPublicKeysConfig) {
 	_init_.Initialize()
 

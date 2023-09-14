@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_client vault_identity_oidc_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_client vault_identity_oidc_client}.
 type IdentityOidcClient interface {
 	cdktf.TerraformResource
 	AccessTokenTtl() *float64
@@ -502,7 +502,7 @@ func (j *jsiiProxy_IdentityOidcClient) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
 func NewIdentityOidcClient(scope constructs.Construct, id *string, config *IdentityOidcClientConfig) IdentityOidcClient {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewIdentityOidcClient(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource.
 func NewIdentityOidcClient_Override(i IdentityOidcClient, scope constructs.Construct, id *string, config *IdentityOidcClientConfig) {
 	_init_.Initialize()
 

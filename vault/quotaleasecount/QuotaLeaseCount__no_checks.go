@@ -103,6 +103,10 @@ func (j *jsiiProxy_QuotaLeaseCount) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_QuotaLeaseCount) validateSetRoleParameters(val *string) error {
+	return nil
+}
+
 func validateNewQuotaLeaseCountParameters(scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) error {
 	return nil
 }
