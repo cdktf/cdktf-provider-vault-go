@@ -109,6 +109,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetAllowedR
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -263,6 +271,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPluginNa
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

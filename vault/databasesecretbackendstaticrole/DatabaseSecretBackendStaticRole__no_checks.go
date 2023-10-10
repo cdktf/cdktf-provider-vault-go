@@ -107,7 +107,15 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationPeriodPar
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

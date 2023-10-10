@@ -16,6 +16,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -65,6 +68,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	ServiceAccountJson() *string
+	SetServiceAccountJson(val *string)
+	ServiceAccountJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -107,6 +113,7 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowedRoles()
+	ResetAuthType()
 	ResetConnectionUrl()
 	ResetData()
 	ResetDisableEscaping()
@@ -116,6 +123,7 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetServiceAccountJson()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -149,6 +157,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) AllowedRolesIn
 	_jsii_.Get(
 		j,
 		"allowedRolesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
 		&returns,
 	)
 	return returns
@@ -404,6 +432,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) RootRotationSt
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ServiceAccountJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ServiceAccountJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -519,6 +567,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetAllowedRoles
 	_jsii_.Set(
 		j,
 		"allowedRoles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
 		val,
 	)
 }
@@ -662,6 +721,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetRootRotation
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetServiceAccountJson(val *string) {
+	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJson",
 		val,
 	)
 }
@@ -915,6 +985,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetAllowedRo
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetConnectionUrl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -983,6 +1061,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetRootRotat
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetServiceAccountJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountJson",
 		nil, // no parameters
 	)
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetLocalParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

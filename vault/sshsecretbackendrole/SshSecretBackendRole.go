@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktf.TerraformResource
 	AlgorithmSigner() *string
@@ -122,6 +122,9 @@ type SshSecretBackendRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotBeforeDuration() *string
+	SetNotBeforeDuration(val *string)
+	NotBeforeDurationInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -190,6 +193,7 @@ type SshSecretBackendRole interface {
 	ResetKeyIdFormat()
 	ResetMaxTtl()
 	ResetNamespace()
+	ResetNotBeforeDuration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -829,6 +833,26 @@ func (j *jsiiProxy_SshSecretBackendRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) NotBeforeDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendRole) NotBeforeDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -910,7 +934,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -928,7 +952,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1259,6 +1283,17 @@ func (j *jsiiProxy_SshSecretBackendRole)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendRole)SetNotBeforeDuration(val *string) {
+	if err := j.validateSetNotBeforeDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notBeforeDuration",
 		val,
 	)
 }
@@ -1750,6 +1785,14 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendRole) ResetNotBeforeDuration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNotBeforeDuration",
 		nil, // no parameters
 	)
 }

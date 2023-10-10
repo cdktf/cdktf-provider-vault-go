@@ -55,6 +55,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetAllowedR
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetPluginNa
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }
 

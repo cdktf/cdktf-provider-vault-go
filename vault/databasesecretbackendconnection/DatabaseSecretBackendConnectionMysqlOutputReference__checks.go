@@ -101,6 +101,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -207,6 +215,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validate
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetPasswordParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

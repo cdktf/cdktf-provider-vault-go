@@ -111,6 +111,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetKeySizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

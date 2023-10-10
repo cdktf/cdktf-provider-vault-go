@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
 type DatabaseSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -73,9 +73,15 @@ type DatabaseSecretBackendStaticRole interface {
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
 	RotationStatements() *[]*string
 	SetRotationStatements(val *[]*string)
 	RotationStatementsInput() *[]*string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -115,7 +121,10 @@ type DatabaseSecretBackendStaticRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
 	ResetRotationStatements()
+	ResetRotationWindow()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -381,6 +390,26 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationPeriodInput() *float
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationStatements() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -396,6 +425,26 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationStatementsInput() *[
 	_jsii_.Get(
 		j,
 		"rotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -452,7 +501,7 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) DatabaseSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -470,7 +519,7 @@ func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole_Override(d DatabaseSecretBackendStaticRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -615,6 +664,17 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationPeriod(val *float6
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationStatements(val *[]*string) {
 	if err := j.validateSetRotationStatementsParameters(val); err != nil {
 		panic(err)
@@ -622,6 +682,17 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationStatements(val *[]
 	_jsii_.Set(
 		j,
 		"rotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -927,10 +998,34 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetRotationStatements() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

@@ -16,6 +16,9 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -62,6 +65,9 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	ServiceAccountJson() *string
+	SetServiceAccountJson(val *string)
+	ServiceAccountJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -110,6 +116,7 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowedRoles()
+	ResetAuthType()
 	ResetConnectionUrl()
 	ResetData()
 	ResetMaxConnectionLifetime()
@@ -118,6 +125,7 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetServiceAccountJson()
 	ResetTlsCa()
 	ResetTlsCertificateKey()
 	ResetUsername()
@@ -153,6 +161,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) AllowedRolesInput()
 	_jsii_.Get(
 		j,
 		"allowedRolesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
 		&returns,
 	)
 	return returns
@@ -388,6 +416,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RootRotationStateme
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ServiceAccountJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ServiceAccountJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -547,6 +595,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetAllowedRoles(val 
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -675,6 +734,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetRootRotationState
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetServiceAccountJson(val *string) {
+	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJson",
 		val,
 	)
 }
@@ -950,6 +1020,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetAllowedRoles()
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetConnectionUrl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1010,6 +1088,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetRootRotationSt
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetServiceAccountJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountJson",
 		nil, // no parameters
 	)
 }

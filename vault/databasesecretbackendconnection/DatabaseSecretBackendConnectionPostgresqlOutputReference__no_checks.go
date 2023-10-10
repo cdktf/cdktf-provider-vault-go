@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }
 

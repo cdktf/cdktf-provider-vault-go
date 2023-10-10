@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 type SshSecretBackendCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -409,7 +409,7 @@ func (j *jsiiProxy_SshSecretBackendCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) SshSecretBackendCa {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa_Override(s SshSecretBackendCa, scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) {
 	_init_.Initialize()
 

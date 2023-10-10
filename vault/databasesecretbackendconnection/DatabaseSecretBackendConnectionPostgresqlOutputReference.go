@@ -13,6 +13,9 @@ import (
 
 type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	cdktf.ComplexObject
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,6 +53,9 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ServiceAccountJson() *string
+	SetServiceAccountJson(val *string)
+	ServiceAccountJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -88,12 +94,14 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthType()
 	ResetConnectionUrl()
 	ResetDisableEscaping()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetServiceAccountJson()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -109,6 +117,26 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 // The jsii proxy struct for DatabaseSecretBackendConnectionPostgresqlOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ComplexObjectIndex() interface{} {
@@ -281,6 +309,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Pas
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ServiceAccountJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ServiceAccountJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -366,6 +414,17 @@ func NewDatabaseSecretBackendConnectionPostgresqlOutputReference_Override(d Data
 		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
 	)
 }
 
@@ -464,6 +523,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetP
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetServiceAccountJson(val *string) {
+	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJson",
 		val,
 	)
 }
@@ -698,6 +768,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Int
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetConnectionUrl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -742,6 +820,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Res
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetServiceAccountJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountJson",
 		nil, // no parameters
 	)
 }

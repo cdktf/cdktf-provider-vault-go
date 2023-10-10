@@ -55,6 +55,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetAll
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPlu
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }
 

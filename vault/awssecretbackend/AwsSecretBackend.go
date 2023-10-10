@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 type AwsSecretBackend interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -61,6 +61,9 @@ type AwsSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
 	MaxLeaseTtlSeconds() *float64
 	SetMaxLeaseTtlSeconds(val *float64)
 	MaxLeaseTtlSecondsInput() *float64
@@ -131,6 +134,7 @@ type AwsSecretBackend interface {
 	ResetDisableRemount()
 	ResetIamEndpoint()
 	ResetId()
+	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -366,6 +370,26 @@ func (j *jsiiProxy_AwsSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) MaxLeaseTtlSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -577,7 +601,7 @@ func (j *jsiiProxy_AwsSecretBackend) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecretBackendConfig) AwsSecretBackend {
 	_init_.Initialize()
 
@@ -595,7 +619,7 @@ func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend_Override(a AwsSecretBackend, scope constructs.Construct, id *string, config *AwsSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -717,6 +741,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLif
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
 		val,
 	)
 }
@@ -1127,6 +1162,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetLocal() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLocal",
 		nil, // no parameters
 	)
 }

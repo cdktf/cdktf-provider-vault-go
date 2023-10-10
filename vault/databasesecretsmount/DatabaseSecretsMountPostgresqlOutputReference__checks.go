@@ -109,6 +109,14 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetAll
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -283,6 +291,14 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPlu
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

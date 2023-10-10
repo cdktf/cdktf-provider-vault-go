@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validate
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }
 

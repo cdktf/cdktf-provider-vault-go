@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktf.TerraformResource
 	AllowPlaintextBackup() interface{}
@@ -67,6 +67,9 @@ type TransitSecretBackendKey interface {
 	SetId(val *string)
 	IdInput() *string
 	Keys() cdktf.StringMapList
+	KeySize() *float64
+	SetKeySize(val *float64)
+	KeySizeInput() *float64
 	LatestVersion() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -143,6 +146,7 @@ type TransitSecretBackendKey interface {
 	ResetDerived()
 	ResetExportable()
 	ResetId()
+	ResetKeySize()
 	ResetMinDecryptionVersion()
 	ResetMinEncryptionVersion()
 	ResetNamespace()
@@ -435,6 +439,26 @@ func (j *jsiiProxy_TransitSecretBackendKey) Keys() cdktf.StringMapList {
 	return returns
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) KeySize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keySize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) KeySizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keySizeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) LatestVersion() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -676,7 +700,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -694,7 +718,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -838,6 +862,17 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetKeySize(val *float64) {
+	if err := j.validateSetKeySizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keySize",
 		val,
 	)
 }
@@ -1253,6 +1288,14 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) ResetKeySize() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetKeySize",
 		nil, // no parameters
 	)
 }

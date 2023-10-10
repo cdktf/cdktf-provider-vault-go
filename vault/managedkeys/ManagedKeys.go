@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/managed_keys vault_managed_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/managed_keys vault_managed_keys}.
 type ManagedKeys interface {
 	cdktf.TerraformResource
 	Aws() ManagedKeysAwsList
@@ -385,7 +385,7 @@ func (j *jsiiProxy_ManagedKeys) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/managed_keys vault_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/managed_keys vault_managed_keys} Resource.
 func NewManagedKeys(scope constructs.Construct, id *string, config *ManagedKeysConfig) ManagedKeys {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewManagedKeys(scope constructs.Construct, id *string, config *ManagedKeysC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.20.1/docs/resources/managed_keys vault_managed_keys} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/managed_keys vault_managed_keys} Resource.
 func NewManagedKeys_Override(m ManagedKeys, scope constructs.Construct, id *string, config *ManagedKeysConfig) {
 	_init_.Initialize()
 

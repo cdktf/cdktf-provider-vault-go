@@ -183,6 +183,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetNamespaceParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetNotBeforeDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
