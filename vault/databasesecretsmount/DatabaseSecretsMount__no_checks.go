@@ -7,6 +7,10 @@ package databasesecretsmount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseSecretsMount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseSecretsMount) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -124,6 +136,10 @@ func (d *jsiiProxy_DatabaseSecretsMount) validatePutRedshiftParameters(value int
 }
 
 func (d *jsiiProxy_DatabaseSecretsMount) validatePutSnowflakeParameters(value interface{}) error {
+	return nil
+}
+
+func validateDatabaseSecretsMount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

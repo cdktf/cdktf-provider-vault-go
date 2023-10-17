@@ -7,6 +7,10 @@ package transformrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransformRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransformRole) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (t *jsiiProxy_TransformRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransformRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransformRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

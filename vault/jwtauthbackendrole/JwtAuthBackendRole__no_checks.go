@@ -7,6 +7,10 @@ package jwtauthbackendrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (j *jsiiProxy_JwtAuthBackendRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (j *jsiiProxy_JwtAuthBackendRole) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateJwtAuthBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

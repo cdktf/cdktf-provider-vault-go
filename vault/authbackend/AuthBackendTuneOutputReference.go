@@ -5,9 +5,9 @@ package authbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v10/authbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v11/authbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

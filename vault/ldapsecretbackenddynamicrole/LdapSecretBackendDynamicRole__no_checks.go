@@ -7,6 +7,10 @@ package ldapsecretbackenddynamicrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateGetStringMapAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackendDynamicRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLdapSecretBackendDynamicRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

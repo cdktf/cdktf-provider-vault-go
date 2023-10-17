@@ -7,6 +7,10 @@ package mfaduo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MfaDuo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaDuo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MfaDuo) validateGetStringMapAttributeParameters(terraformAttr
 	return nil
 }
 
+func (m *jsiiProxy_MfaDuo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaDuo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MfaDuo) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaDuo) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMfaDuo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

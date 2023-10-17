@@ -7,6 +7,10 @@ package oktaauthbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OktaAuthBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OktaAuthBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OktaAuthBackend) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (o *jsiiProxy_OktaAuthBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OktaAuthBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OktaAuthBackend) validatePutGroupParameters(value interface{}
 }
 
 func (o *jsiiProxy_OktaAuthBackend) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func validateOktaAuthBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultKvSecretsList) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataVaultKvSecretsList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultKvSecretsList_IsConstructParameters(x interface{}) error {
 	return nil
 }

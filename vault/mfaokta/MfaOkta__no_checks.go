@@ -7,6 +7,10 @@ package mfaokta
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MfaOkta) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaOkta) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MfaOkta) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (m *jsiiProxy_MfaOkta) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaOkta) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MfaOkta) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MfaOkta) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMfaOkta_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

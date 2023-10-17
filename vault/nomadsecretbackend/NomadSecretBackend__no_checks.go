@@ -7,6 +7,10 @@ package nomadsecretbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NomadSecretBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NomadSecretBackend) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNomadSecretBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

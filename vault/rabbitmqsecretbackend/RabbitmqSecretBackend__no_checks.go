@@ -7,6 +7,10 @@ package rabbitmqsecretbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RabbitmqSecretBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RabbitmqSecretBackend) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RabbitmqSecretBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RabbitmqSecretBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRabbitmqSecretBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package token
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_Token) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Token) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_Token) validateGetStringMapAttributeParameters(terraformAttri
 	return nil
 }
 
+func (t *jsiiProxy_Token) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_Token) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_Token) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_Token) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

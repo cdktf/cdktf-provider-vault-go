@@ -7,6 +7,10 @@ package awsauthbackendcert
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AwsAuthBackendCert) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendCert) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AwsAuthBackendCert) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendCert) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendCert) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendCert) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAwsAuthBackendCert_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

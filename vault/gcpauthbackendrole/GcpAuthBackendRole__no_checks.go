@@ -7,6 +7,10 @@ package gcpauthbackendrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GcpAuthBackendRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpAuthBackendRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GcpAuthBackendRole) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GcpAuthBackendRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpAuthBackendRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GcpAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGcpAuthBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

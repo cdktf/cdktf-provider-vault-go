@@ -7,6 +7,10 @@ package gcpsecretimpersonatedaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGcpSecretImpersonatedAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

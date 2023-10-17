@@ -5,10 +5,10 @@ package datavaultpkisecretbackendissuer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v10/datavaultpkisecretbackendissuer/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v11/datavaultpkisecretbackendissuer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -536,6 +536,25 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer)SetProvider(val cdktf.Terrafo
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataVaultPkiSecretBackendIssuer resource upon running "cdktf plan <stack-name>".
+func DataVaultPkiSecretBackendIssuer_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataVaultPkiSecretBackendIssuer_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-vault.dataVaultPkiSecretBackendIssuer.DataVaultPkiSecretBackendIssuer",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

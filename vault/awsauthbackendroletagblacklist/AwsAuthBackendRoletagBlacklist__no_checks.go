@@ -7,6 +7,10 @@ package awsauthbackendroletagblacklist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateGetStringMapAttribute
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendRoletagBlacklist) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAwsAuthBackendRoletagBlacklist_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

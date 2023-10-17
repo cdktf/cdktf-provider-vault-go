@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vault.raftAutopilot.RaftAutopilot",
 		reflect.TypeOf((*RaftAutopilot)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "cleanupDeadServers", GoGetter: "CleanupDeadServers"},
@@ -40,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastContactThreshold", GoGetter: "LastContactThreshold"},
 			_jsii_.MemberProperty{JsiiProperty: "lastContactThresholdInput", GoGetter: "LastContactThresholdInput"},
@@ -48,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxTrailingLogsInput", GoGetter: "MaxTrailingLogsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minQuorum", GoGetter: "MinQuorum"},
 			_jsii_.MemberProperty{JsiiProperty: "minQuorumInput", GoGetter: "MinQuorumInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultIdentityOidcPublicKeys) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataVaultIdentityOidcPublicKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultIdentityOidcPublicKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

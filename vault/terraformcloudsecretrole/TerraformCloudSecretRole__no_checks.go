@@ -7,6 +7,10 @@ package terraformcloudsecretrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TerraformCloudSecretRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TerraformCloudSecretRole) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TerraformCloudSecretRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TerraformCloudSecretRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTerraformCloudSecretRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

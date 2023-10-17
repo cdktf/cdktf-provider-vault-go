@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey",
 		reflect.TypeOf((*TransitSecretBackendKey)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaintextBackup", GoGetter: "AllowPlaintextBackup"},
 			_jsii_.MemberProperty{JsiiProperty: "allowPlaintextBackupInput", GoGetter: "AllowPlaintextBackupInput"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keys", GoGetter: "Keys"},
 			_jsii_.MemberProperty{JsiiProperty: "keySize", GoGetter: "KeySize"},
@@ -61,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minDecryptionVersionInput", GoGetter: "MinDecryptionVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minEncryptionVersion", GoGetter: "MinEncryptionVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "minEncryptionVersionInput", GoGetter: "MinEncryptionVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},

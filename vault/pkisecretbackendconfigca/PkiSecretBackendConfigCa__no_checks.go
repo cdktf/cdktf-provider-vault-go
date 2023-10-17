@@ -7,6 +7,10 @@ package pkisecretbackendconfigca
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PkiSecretBackendConfigCa) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendConfigCa) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PkiSecretBackendConfigCa) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendConfigCa) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendConfigCa) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendConfigCa) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendConfigCa) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePkiSecretBackendConfigCa_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

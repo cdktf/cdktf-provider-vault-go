@@ -7,6 +7,10 @@ package approleauthbackendrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApproleAuthBackendRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApproleAuthBackendRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApproleAuthBackendRole) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_ApproleAuthBackendRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApproleAuthBackendRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApproleAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApproleAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApproleAuthBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

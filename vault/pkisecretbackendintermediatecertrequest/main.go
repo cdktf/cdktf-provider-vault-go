@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addBasicConstraints", GoGetter: "AddBasicConstraints"},
 			_jsii_.MemberProperty{JsiiProperty: "addBasicConstraintsInput", GoGetter: "AddBasicConstraintsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "altNames", GoGetter: "AltNames"},
 			_jsii_.MemberProperty{JsiiProperty: "altNamesInput", GoGetter: "AltNamesInput"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipSans", GoGetter: "IpSans"},
 			_jsii_.MemberProperty{JsiiProperty: "ipSansInput", GoGetter: "IpSansInput"},
@@ -68,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "managedKeyIdInput", GoGetter: "ManagedKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "managedKeyName", GoGetter: "ManagedKeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "managedKeyNameInput", GoGetter: "ManagedKeyNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

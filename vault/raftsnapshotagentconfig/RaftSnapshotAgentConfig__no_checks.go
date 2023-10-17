@@ -7,6 +7,10 @@ package raftsnapshotagentconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRaftSnapshotAgentConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

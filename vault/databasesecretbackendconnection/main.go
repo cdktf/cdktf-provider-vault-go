@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection",
 		reflect.TypeOf((*DatabaseSecretBackendConnection)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedRoles", GoGetter: "AllowedRoles"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedRolesInput", GoGetter: "AllowedRolesInput"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hanaInput", GoGetter: "HanaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdb", GoGetter: "Influxdb"},
 			_jsii_.MemberProperty{JsiiProperty: "influxdbInput", GoGetter: "InfluxdbInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlas", GoGetter: "Mongodbatlas"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlasInput", GoGetter: "MongodbatlasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbInput", GoGetter: "MongodbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "mssql", GoGetter: "Mssql"},
 			_jsii_.MemberProperty{JsiiProperty: "mssqlInput", GoGetter: "MssqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mysql", GoGetter: "Mysql"},

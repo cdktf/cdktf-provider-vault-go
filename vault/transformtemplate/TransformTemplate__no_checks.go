@@ -7,6 +7,10 @@ package transformtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransformTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransformTemplate) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (t *jsiiProxy_TransformTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransformTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformTemplate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransformTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

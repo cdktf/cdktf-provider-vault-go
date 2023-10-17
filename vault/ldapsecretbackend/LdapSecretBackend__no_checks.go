@@ -7,6 +7,10 @@ package ldapsecretbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LdapSecretBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LdapSecretBackend) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LdapSecretBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LdapSecretBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLdapSecretBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

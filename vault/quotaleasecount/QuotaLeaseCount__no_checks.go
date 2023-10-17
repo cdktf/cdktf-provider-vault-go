@@ -7,6 +7,10 @@ package quotaleasecount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuotaLeaseCount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaLeaseCount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (q *jsiiProxy_QuotaLeaseCount) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (q *jsiiProxy_QuotaLeaseCount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaLeaseCount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (q *jsiiProxy_QuotaLeaseCount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuotaLeaseCount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateQuotaLeaseCount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package pkisecretbackendsign
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PkiSecretBackendSign) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendSign) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PkiSecretBackendSign) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendSign) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendSign) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendSign) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendSign) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePkiSecretBackendSign_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

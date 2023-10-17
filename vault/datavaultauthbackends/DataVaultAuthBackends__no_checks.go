@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultAuthBackends) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataVaultAuthBackends_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultAuthBackends_IsConstructParameters(x interface{}) error {
 	return nil
 }

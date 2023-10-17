@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-vault.pkiSecretBackendRole.PkiSecretBackendRole",
 		reflect.TypeOf((*PkiSecretBackendRole)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAnyName", GoGetter: "AllowAnyName"},
 			_jsii_.MemberProperty{JsiiProperty: "allowAnyNameInput", GoGetter: "AllowAnyNameInput"},
@@ -80,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerRef", GoGetter: "IssuerRef"},
 			_jsii_.MemberProperty{JsiiProperty: "issuerRefInput", GoGetter: "IssuerRefInput"},
@@ -94,6 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localityInput", GoGetter: "LocalityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtl", GoGetter: "MaxTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "maxTtlInput", GoGetter: "MaxTtlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},

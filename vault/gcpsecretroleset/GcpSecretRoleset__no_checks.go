@@ -7,6 +7,10 @@ package gcpsecretroleset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GcpSecretRoleset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretRoleset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GcpSecretRoleset) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretRoleset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretRoleset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretRoleset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GcpSecretRoleset) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (g *jsiiProxy_GcpSecretRoleset) validatePutBindingParameters(value interface{}) error {
+	return nil
+}
+
+func validateGcpSecretRoleset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

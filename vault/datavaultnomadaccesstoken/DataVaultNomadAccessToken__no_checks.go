@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultNomadAccessToken) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataVaultNomadAccessToken_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultNomadAccessToken_IsConstructParameters(x interface{}) error {
 	return nil
 }

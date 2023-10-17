@@ -7,6 +7,10 @@ package ldapauthbackenduser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LdapAuthBackendUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapAuthBackendUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LdapAuthBackendUser) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LdapAuthBackendUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapAuthBackendUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LdapAuthBackendUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapAuthBackendUser) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLdapAuthBackendUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

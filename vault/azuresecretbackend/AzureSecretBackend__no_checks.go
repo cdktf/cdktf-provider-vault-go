@@ -7,6 +7,10 @@ package azuresecretbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AzureSecretBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureSecretBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AzureSecretBackend) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AzureSecretBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureSecretBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AzureSecretBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureSecretBackend) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAzureSecretBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

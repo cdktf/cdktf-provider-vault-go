@@ -7,6 +7,10 @@ package databasesecretbackendconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -124,6 +136,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) validatePutRedshiftParameter
 }
 
 func (d *jsiiProxy_DatabaseSecretBackendConnection) validatePutSnowflakeParameters(value *DatabaseSecretBackendConnectionSnowflake) error {
+	return nil
+}
+
+func validateDatabaseSecretBackendConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

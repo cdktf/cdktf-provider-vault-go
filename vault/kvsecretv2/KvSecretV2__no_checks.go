@@ -7,6 +7,10 @@ package kvsecretv2
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KvSecretV2) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KvSecretV2) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KvSecretV2) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (k *jsiiProxy_KvSecretV2) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KvSecretV2) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecretV2) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KvSecretV2) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (k *jsiiProxy_KvSecretV2) validatePutCustomMetadataParameters(value *KvSecretV2CustomMetadata) error {
+	return nil
+}
+
+func validateKvSecretV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

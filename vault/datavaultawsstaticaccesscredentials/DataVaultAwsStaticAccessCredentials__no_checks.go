@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultAwsStaticAccessCredentials) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataVaultAwsStaticAccessCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultAwsStaticAccessCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }

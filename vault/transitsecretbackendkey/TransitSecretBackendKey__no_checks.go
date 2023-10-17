@@ -7,6 +7,10 @@ package transitsecretbackendkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransitSecretBackendKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransitSecretBackendKey) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (t *jsiiProxy_TransitSecretBackendKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransitSecretBackendKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransitSecretBackendKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

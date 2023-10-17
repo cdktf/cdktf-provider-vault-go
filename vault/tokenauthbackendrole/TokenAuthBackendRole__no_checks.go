@@ -7,6 +7,10 @@ package tokenauthbackendrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TokenAuthBackendRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TokenAuthBackendRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TokenAuthBackendRole) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (t *jsiiProxy_TokenAuthBackendRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TokenAuthBackendRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TokenAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TokenAuthBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTokenAuthBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

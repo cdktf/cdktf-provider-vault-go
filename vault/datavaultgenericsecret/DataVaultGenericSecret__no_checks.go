@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultGenericSecret) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataVaultGenericSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultGenericSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }

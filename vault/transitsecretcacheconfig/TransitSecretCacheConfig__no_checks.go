@@ -7,6 +7,10 @@ package transitsecretcacheconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransitSecretCacheConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretCacheConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransitSecretCacheConfig) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TransitSecretCacheConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretCacheConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransitSecretCacheConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretCacheConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransitSecretCacheConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

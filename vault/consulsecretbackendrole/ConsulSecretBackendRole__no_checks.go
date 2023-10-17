@@ -7,6 +7,10 @@ package consulsecretbackendrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConsulSecretBackendRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsulSecretBackendRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ConsulSecretBackendRole) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConsulSecretBackendRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsulSecretBackendRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ConsulSecretBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsulSecretBackendRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateConsulSecretBackendRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

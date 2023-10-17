@@ -7,6 +7,10 @@ package nomadsecretrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NomadSecretRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (n *jsiiProxy_NomadSecretRole) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateNomadSecretRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package transformalphabet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransformAlphabet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformAlphabet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransformAlphabet) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (t *jsiiProxy_TransformAlphabet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformAlphabet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransformAlphabet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformAlphabet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransformAlphabet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package jwtauthbackend
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (j *jsiiProxy_JwtAuthBackend) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (j *jsiiProxy_JwtAuthBackend) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_JwtAuthBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (j *jsiiProxy_JwtAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
+func validateJwtAuthBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package githubuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GithubUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GithubUser) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (g *jsiiProxy_GithubUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GithubUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubUser) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGithubUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

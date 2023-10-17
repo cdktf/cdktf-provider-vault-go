@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataVaultLdapDynamicCredentials) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataVaultLdapDynamicCredentials_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataVaultLdapDynamicCredentials_IsConstructParameters(x interface{}) error {
 	return nil
 }

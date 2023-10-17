@@ -7,6 +7,10 @@ package gcpsecretstaticaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GcpSecretStaticAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretStaticAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GcpSecretStaticAccount) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretStaticAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretStaticAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretStaticAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GcpSecretStaticAccount) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GcpSecretStaticAccount) validatePutBindingParameters(value interface{}) error {
+	return nil
+}
+
+func validateGcpSecretStaticAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
