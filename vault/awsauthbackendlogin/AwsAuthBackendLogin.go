@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
 type AwsAuthBackendLogin interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -649,7 +649,7 @@ func (j *jsiiProxy_AwsAuthBackendLogin) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
 func NewAwsAuthBackendLogin(scope constructs.Construct, id *string, config *AwsAuthBackendLoginConfig) AwsAuthBackendLogin {
 	_init_.Initialize()
 
@@ -667,7 +667,7 @@ func NewAwsAuthBackendLogin(scope constructs.Construct, id *string, config *AwsA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource.
 func NewAwsAuthBackendLogin_Override(a AwsAuthBackendLogin, scope constructs.Construct, id *string, config *AwsAuthBackendLoginConfig) {
 	_init_.Initialize()
 

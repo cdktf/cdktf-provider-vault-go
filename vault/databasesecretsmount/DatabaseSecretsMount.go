@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 type DatabaseSecretsMount interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -1038,7 +1038,7 @@ func (j *jsiiProxy_DatabaseSecretsMount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) DatabaseSecretsMount {
 	_init_.Initialize()
 
@@ -1056,7 +1056,7 @@ func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount_Override(d DatabaseSecretsMount, scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) {
 	_init_.Initialize()
 

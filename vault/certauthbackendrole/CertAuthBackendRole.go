@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
 	cdktf.TerraformResource
 	AllowedCommonNames() *[]*string
@@ -84,6 +84,21 @@ type CertAuthBackendRole interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OcspCaCertificates() *string
+	SetOcspCaCertificates(val *string)
+	OcspCaCertificatesInput() *string
+	OcspEnabled() interface{}
+	SetOcspEnabled(val interface{})
+	OcspEnabledInput() interface{}
+	OcspFailOpen() interface{}
+	SetOcspFailOpen(val interface{})
+	OcspFailOpenInput() interface{}
+	OcspQueryAllServers() interface{}
+	SetOcspQueryAllServers(val interface{})
+	OcspQueryAllServersInput() interface{}
+	OcspServersOverride() *[]*string
+	SetOcspServersOverride(val *[]*string)
+	OcspServersOverrideInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -174,6 +189,11 @@ type CertAuthBackendRole interface {
 	ResetDisplayName()
 	ResetId()
 	ResetNamespace()
+	ResetOcspCaCertificates()
+	ResetOcspEnabled()
+	ResetOcspFailOpen()
+	ResetOcspQueryAllServers()
+	ResetOcspServersOverride()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -562,6 +582,106 @@ func (j *jsiiProxy_CertAuthBackendRole) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) OcspCaCertificates() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ocspCaCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspCaCertificatesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ocspCaCertificatesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspFailOpen() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspFailOpen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspFailOpenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspFailOpenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspQueryAllServers() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspQueryAllServers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspQueryAllServersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ocspQueryAllServersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspServersOverride() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ocspServersOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) OcspServersOverrideInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ocspServersOverrideInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -823,7 +943,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -841,7 +961,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1160,61 @@ func (j *jsiiProxy_CertAuthBackendRole)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspCaCertificates(val *string) {
+	if err := j.validateSetOcspCaCertificatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspCaCertificates",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspEnabled(val interface{}) {
+	if err := j.validateSetOcspEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspFailOpen(val interface{}) {
+	if err := j.validateSetOcspFailOpenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspFailOpen",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspQueryAllServers(val interface{}) {
+	if err := j.validateSetOcspQueryAllServersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspQueryAllServers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CertAuthBackendRole)SetOcspServersOverride(val *[]*string) {
+	if err := j.validateSetOcspServersOverrideParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ocspServersOverride",
 		val,
 	)
 }
@@ -1575,6 +1750,46 @@ func (c *jsiiProxy_CertAuthBackendRole) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspCaCertificates() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspCaCertificates",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspFailOpen() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspFailOpen",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspQueryAllServers() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspQueryAllServers",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) ResetOcspServersOverride() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOcspServersOverride",
 		nil, // no parameters
 	)
 }

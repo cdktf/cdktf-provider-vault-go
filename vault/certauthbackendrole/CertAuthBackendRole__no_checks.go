@@ -147,6 +147,26 @@ func (j *jsiiProxy_CertAuthBackendRole) validateSetNamespaceParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) validateSetOcspCaCertificatesParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetOcspEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetOcspFailOpenParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetOcspQueryAllServersParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CertAuthBackendRole) validateSetOcspServersOverrideParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

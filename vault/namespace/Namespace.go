@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/namespace vault_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace vault_namespace}.
 type Namespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type Namespace interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomMetadata() *map[string]*string
+	SetCustomMetadata(val *map[string]*string)
+	CustomMetadataInput() *map[string]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -107,6 +110,7 @@ type Namespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCustomMetadata()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_Namespace) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) CustomMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Namespace) CustomMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"customMetadataInput",
 		&returns,
 	)
 	return returns
@@ -379,7 +403,7 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
 	_init_.Initialize()
 
@@ -397,7 +421,7 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
 	_init_.Initialize()
 
@@ -426,6 +450,17 @@ func (j *jsiiProxy_Namespace)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Namespace)SetCustomMetadata(val *map[string]*string) {
+	if err := j.validateSetCustomMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customMetadata",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (n *jsiiProxy_Namespace) OverrideLogicalId(newLogicalId *string) {
 		n,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_Namespace) ResetCustomMetadata() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCustomMetadata",
+		nil, // no parameters
 	)
 }
 

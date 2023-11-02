@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs vault}.
 type VaultProvider interface {
 	cdktf.TerraformProvider
 	AddAddressToEnv() *string
@@ -98,6 +98,9 @@ type VaultProvider interface {
 	Node() constructs.Node
 	// Experimental.
 	RawOverrides() interface{}
+	SetNamespaceFromToken() interface{}
+	SetSetNamespaceFromToken(val interface{})
+	SetNamespaceFromTokenInput() interface{}
 	SkipChildToken() interface{}
 	SetSkipChildToken(val interface{})
 	SkipChildTokenInput() interface{}
@@ -155,6 +158,7 @@ type VaultProvider interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSetNamespaceFromToken()
 	ResetSkipChildToken()
 	ResetSkipGetVaultVersion()
 	ResetSkipTlsVerify()
@@ -707,6 +711,26 @@ func (j *jsiiProxy_VaultProvider) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VaultProvider) SetNamespaceFromToken() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setNamespaceFromToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VaultProvider) SetNamespaceFromTokenInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"setNamespaceFromTokenInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VaultProvider) SkipChildToken() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -878,7 +902,7 @@ func (j *jsiiProxy_VaultProvider) VaultVersionOverrideInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs vault} Resource.
 func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProviderConfig) VaultProvider {
 	_init_.Initialize()
 
@@ -896,7 +920,7 @@ func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs vault} Resource.
 func NewVaultProvider_Override(v VaultProvider, scope constructs.Construct, id *string, config *VaultProviderConfig) {
 	_init_.Initialize()
 
@@ -1129,6 +1153,17 @@ func (j *jsiiProxy_VaultProvider)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VaultProvider)SetSetNamespaceFromToken(val interface{}) {
+	if err := j.validateSetSetNamespaceFromTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"setNamespaceFromToken",
 		val,
 	)
 }
@@ -1503,6 +1538,14 @@ func (v *jsiiProxy_VaultProvider) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultProvider) ResetSetNamespaceFromToken() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSetNamespaceFromToken",
 		nil, // no parameters
 	)
 }

@@ -91,6 +91,10 @@ func (j *jsiiProxy_Namespace) validateSetCountParameters(val interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_Namespace) validateSetCustomMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Namespace) validateSetIdParameters(val *string) error {
 	return nil
 }

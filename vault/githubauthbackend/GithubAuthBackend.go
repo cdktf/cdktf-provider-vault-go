@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/github_auth_backend vault_github_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/github_auth_backend vault_github_auth_backend}.
 type GithubAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -715,7 +715,7 @@ func (j *jsiiProxy_GithubAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend(scope constructs.Construct, id *string, config *GithubAuthBackendConfig) GithubAuthBackend {
 	_init_.Initialize()
 
@@ -733,7 +733,7 @@ func NewGithubAuthBackend(scope constructs.Construct, id *string, config *Github
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.21.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend_Override(g GithubAuthBackend, scope constructs.Construct, id *string, config *GithubAuthBackendConfig) {
 	_init_.Initialize()
 

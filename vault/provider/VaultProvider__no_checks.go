@@ -87,6 +87,10 @@ func (j *jsiiProxy_VaultProvider) validateSetHeadersParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_VaultProvider) validateSetSetNamespaceFromTokenParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VaultProvider) validateSetSkipChildTokenParameters(val interface{}) error {
 	return nil
 }
