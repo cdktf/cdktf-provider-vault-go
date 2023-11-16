@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
 type SamlAuthBackendRole interface {
 	cdktf.TerraformResource
 	BoundAttributes() *map[string]*string
@@ -703,7 +703,7 @@ func (j *jsiiProxy_SamlAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) SamlAuthBackendRole {
 	_init_.Initialize()
 
@@ -721,7 +721,7 @@ func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *Saml
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.22.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole_Override(s SamlAuthBackendRole, scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) {
 	_init_.Initialize()
 
