@@ -59,7 +59,15 @@ func (j *jsiiProxy_JwtAuthBackendRole) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

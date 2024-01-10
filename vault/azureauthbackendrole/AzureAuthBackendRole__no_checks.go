@@ -59,7 +59,15 @@ func (a *jsiiProxy_AzureAuthBackendRole) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AzureAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AzureAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AzureAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

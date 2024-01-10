@@ -59,7 +59,15 @@ func (t *jsiiProxy_TokenAuthBackendRole) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TokenAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TokenAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TokenAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

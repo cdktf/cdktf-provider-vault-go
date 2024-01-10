@@ -59,7 +59,15 @@ func (e *jsiiProxy_EgpPolicy) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EgpPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EgpPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EgpPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

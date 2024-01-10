@@ -59,7 +59,15 @@ func (s *jsiiProxy_SshSecretBackendCa) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_SshSecretBackendCa) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SshSecretBackendCa) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

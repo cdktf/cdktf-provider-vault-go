@@ -59,7 +59,15 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AlicloudAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlicloudAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlicloudAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

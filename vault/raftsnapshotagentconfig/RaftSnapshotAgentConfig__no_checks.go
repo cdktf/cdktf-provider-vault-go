@@ -59,7 +59,15 @@ func (r *jsiiProxy_RaftSnapshotAgentConfig) validateInterpolationForAttributePar
 	return nil
 }
 
+func (r *jsiiProxy_RaftSnapshotAgentConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftSnapshotAgentConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RaftSnapshotAgentConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

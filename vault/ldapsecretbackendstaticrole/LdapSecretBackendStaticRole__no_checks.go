@@ -59,7 +59,15 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) validateInterpolationForAttribut
 	return nil
 }
 
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapSecretBackendStaticRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

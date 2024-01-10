@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

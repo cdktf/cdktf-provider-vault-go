@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "hana", GoGetter: "Hana"},
 			_jsii_.MemberProperty{JsiiProperty: "hanaInput", GoGetter: "HanaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "hasResourceMove", GoMethod: "HasResourceMove"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
@@ -70,7 +71,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlas", GoGetter: "Mongodbatlas"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbatlasInput", GoGetter: "MongodbatlasInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbInput", GoGetter: "MongodbInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
+			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
 			_jsii_.MemberProperty{JsiiProperty: "mssql", GoGetter: "Mssql"},
 			_jsii_.MemberProperty{JsiiProperty: "mssqlInput", GoGetter: "MssqlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mysql", GoGetter: "Mysql"},
@@ -156,9 +159,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "snowflake", GoGetter: "Snowflake"},
 			_jsii_.MemberProperty{JsiiProperty: "snowflakeInput", GoGetter: "SnowflakeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -177,6 +182,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCassandraList",
 		reflect.TypeOf((*DatabaseSecretsMountCassandraList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -285,6 +291,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountCouchbaseList",
 		reflect.TypeOf((*DatabaseSecretsMountCouchbaseList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -380,6 +387,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountElasticsearchList",
 		reflect.TypeOf((*DatabaseSecretsMountElasticsearchList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -481,6 +489,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaList",
 		reflect.TypeOf((*DatabaseSecretsMountHanaList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -576,6 +585,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountInfluxdbList",
 		reflect.TypeOf((*DatabaseSecretsMountInfluxdbList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -677,6 +687,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbList",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -772,6 +783,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbatlasList",
 		reflect.TypeOf((*DatabaseSecretsMountMongodbatlasList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -852,6 +864,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlList",
 		reflect.TypeOf((*DatabaseSecretsMountMssqlList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -957,6 +970,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlAuroraList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1052,6 +1066,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlLegacyList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1143,6 +1158,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1250,6 +1266,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsList",
 		reflect.TypeOf((*DatabaseSecretsMountMysqlRdsList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1345,6 +1362,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleList",
 		reflect.TypeOf((*DatabaseSecretsMountOracleList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1440,6 +1458,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlList",
 		reflect.TypeOf((*DatabaseSecretsMountPostgresqlList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1548,6 +1567,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisElasticacheList",
 		reflect.TypeOf((*DatabaseSecretsMountRedisElasticacheList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1629,6 +1649,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedisList",
 		reflect.TypeOf((*DatabaseSecretsMountRedisList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1721,6 +1742,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftList",
 		reflect.TypeOf((*DatabaseSecretsMountRedshiftList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -1819,6 +1841,7 @@ func init() {
 		"@cdktf/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeList",
 		reflect.TypeOf((*DatabaseSecretsMountSnowflakeList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

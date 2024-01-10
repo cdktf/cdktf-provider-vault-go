@@ -59,7 +59,15 @@ func (t *jsiiProxy_TerraformCloudSecretCreds) validateInterpolationForAttributeP
 	return nil
 }
 
+func (t *jsiiProxy_TerraformCloudSecretCreds) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretCreds) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TerraformCloudSecretCreds) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

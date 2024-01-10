@@ -59,7 +59,15 @@ func (o *jsiiProxy_OktaAuthBackendGroupA) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OktaAuthBackendGroupA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OktaAuthBackendGroupA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (r *jsiiProxy_RabbitmqSecretBackendRole) validateInterpolationForAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RabbitmqSecretBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RabbitmqSecretBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RabbitmqSecretBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

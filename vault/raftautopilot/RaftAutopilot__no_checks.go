@@ -59,7 +59,15 @@ func (r *jsiiProxy_RaftAutopilot) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RaftAutopilot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RaftAutopilot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RaftAutopilot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

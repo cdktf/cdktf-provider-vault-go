@@ -59,7 +59,15 @@ func (c *jsiiProxy_CertAuthBackendRole) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CertAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CertAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CertAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

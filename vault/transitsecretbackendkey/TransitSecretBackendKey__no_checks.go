@@ -59,7 +59,15 @@ func (t *jsiiProxy_TransitSecretBackendKey) validateInterpolationForAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TransitSecretBackendKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

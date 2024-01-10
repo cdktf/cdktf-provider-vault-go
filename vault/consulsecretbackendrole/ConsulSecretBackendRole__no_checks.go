@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConsulSecretBackendRole) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ConsulSecretBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConsulSecretBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConsulSecretBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

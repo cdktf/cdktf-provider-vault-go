@@ -7,6 +7,10 @@ package datavaultpolicydocument
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleAllowedParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataVaultPolicyDocumentRuleAllowedParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

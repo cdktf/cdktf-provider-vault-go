@@ -59,7 +59,15 @@ func (m *jsiiProxy_MongodbatlasSecretRole) validateInterpolationForAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MongodbatlasSecretRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MongodbatlasSecretRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MongodbatlasSecretRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

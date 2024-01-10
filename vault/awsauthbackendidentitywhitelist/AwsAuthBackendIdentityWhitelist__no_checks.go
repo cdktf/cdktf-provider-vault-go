@@ -59,7 +59,15 @@ func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsAuthBackendIdentityWhitelist) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

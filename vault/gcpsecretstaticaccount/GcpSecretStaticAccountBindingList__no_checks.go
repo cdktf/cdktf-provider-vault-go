@@ -7,6 +7,10 @@ package gcpsecretstaticaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NomadSecretBackend) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (n *jsiiProxy_NomadSecretBackend) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NomadSecretBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NomadSecretBackend) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

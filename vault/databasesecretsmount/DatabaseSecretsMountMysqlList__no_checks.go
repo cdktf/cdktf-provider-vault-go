@@ -7,6 +7,10 @@ package databasesecretsmount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlList) validateGetParameters(index *float64) error {
 	return nil
 }

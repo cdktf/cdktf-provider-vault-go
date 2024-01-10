@@ -59,7 +59,15 @@ func (t *jsiiProxy_TerraformCloudSecretRole) validateInterpolationForAttributePa
 	return nil
 }
 
+func (t *jsiiProxy_TerraformCloudSecretRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TerraformCloudSecretRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TerraformCloudSecretRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

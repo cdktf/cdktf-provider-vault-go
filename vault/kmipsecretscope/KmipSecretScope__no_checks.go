@@ -59,7 +59,15 @@ func (k *jsiiProxy_KmipSecretScope) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (k *jsiiProxy_KmipSecretScope) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmipSecretScope) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmipSecretScope) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

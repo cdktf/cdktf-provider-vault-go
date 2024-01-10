@@ -59,7 +59,15 @@ func (p *jsiiProxy_PkiSecretBackendConfigIssuers) validateInterpolationForAttrib
 	return nil
 }
 
+func (p *jsiiProxy_PkiSecretBackendConfigIssuers) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PkiSecretBackendConfigIssuers) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigIssuers) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

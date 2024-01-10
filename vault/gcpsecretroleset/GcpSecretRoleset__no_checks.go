@@ -59,7 +59,15 @@ func (g *jsiiProxy_GcpSecretRoleset) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GcpSecretRoleset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GcpSecretRoleset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GcpSecretRoleset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

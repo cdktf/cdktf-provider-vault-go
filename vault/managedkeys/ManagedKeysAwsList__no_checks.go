@@ -7,6 +7,10 @@ package managedkeys
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_ManagedKeysAwsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKeysAwsList) validateGetParameters(index *float64) error {
 	return nil
 }

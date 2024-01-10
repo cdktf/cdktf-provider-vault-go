@@ -59,7 +59,15 @@ func (a *jsiiProxy_AwsSecretBackendStaticRole) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_AwsSecretBackendStaticRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AwsSecretBackendStaticRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AwsSecretBackendStaticRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

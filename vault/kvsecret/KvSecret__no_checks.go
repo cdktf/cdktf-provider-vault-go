@@ -59,7 +59,15 @@ func (k *jsiiProxy_KvSecret) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (k *jsiiProxy_KvSecret) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KvSecret) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KvSecret) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

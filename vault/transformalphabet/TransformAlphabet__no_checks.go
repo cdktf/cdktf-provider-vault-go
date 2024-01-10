@@ -59,7 +59,15 @@ func (t *jsiiProxy_TransformAlphabet) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (t *jsiiProxy_TransformAlphabet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransformAlphabet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransformAlphabet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

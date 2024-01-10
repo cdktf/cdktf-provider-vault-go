@@ -59,7 +59,15 @@ func (g *jsiiProxy_GithubUser) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GithubUser) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GithubUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GithubUser) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

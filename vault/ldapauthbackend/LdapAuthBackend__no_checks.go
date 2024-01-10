@@ -59,7 +59,15 @@ func (l *jsiiProxy_LdapAuthBackend) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LdapAuthBackend) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LdapAuthBackend) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LdapAuthBackend) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

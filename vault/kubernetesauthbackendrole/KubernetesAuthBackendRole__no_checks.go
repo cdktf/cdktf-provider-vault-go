@@ -59,7 +59,15 @@ func (k *jsiiProxy_KubernetesAuthBackendRole) validateInterpolationForAttributeP
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesAuthBackendRole) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KubernetesAuthBackendRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KubernetesAuthBackendRole) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

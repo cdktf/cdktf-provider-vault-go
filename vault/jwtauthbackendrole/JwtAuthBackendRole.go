@@ -5,10 +5,10 @@ package jwtauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v11/jwtauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/jwtauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -175,12 +175,22 @@ type JwtAuthBackendRole interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -216,6 +226,9 @@ type JwtAuthBackendRole interface {
 	ResetUserClaimJsonPointer()
 	ResetVerboseOidcLogging()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1687,6 +1700,19 @@ func (j *jsiiProxy_JwtAuthBackendRole) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := j.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1714,6 +1740,17 @@ func (j *jsiiProxy_JwtAuthBackendRole) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (j *jsiiProxy_JwtAuthBackendRole) MoveFromId(id *string) {
+	if err := j.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (j *jsiiProxy_JwtAuthBackendRole) MoveTo(moveTarget *string, index interface{}) {
 	if err := j.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1722,6 +1759,17 @@ func (j *jsiiProxy_JwtAuthBackendRole) MoveTo(moveTarget *string, index interfac
 		j,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) MoveToId(id *string) {
+	if err := j.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		j,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1974,6 +2022,32 @@ func (j *jsiiProxy_JwtAuthBackendRole) SynthesizeAttributes() *map[string]interf
 	_jsii_.Invoke(
 		j,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		j,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		j,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)
