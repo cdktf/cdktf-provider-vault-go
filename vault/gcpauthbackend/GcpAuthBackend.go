@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 type GcpAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -97,6 +97,8 @@ type GcpAuthBackend interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tune() GcpAuthBackendTuneList
+	TuneInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -141,6 +143,7 @@ type GcpAuthBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomEndpoint(value *GcpAuthBackendCustomEndpoint)
+	PutTune(value interface{})
 	ResetClientEmail()
 	ResetClientId()
 	ResetCredentials()
@@ -156,6 +159,7 @@ type GcpAuthBackend interface {
 	ResetPath()
 	ResetPrivateKeyId()
 	ResetProjectId()
+	ResetTune()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -584,8 +588,28 @@ func (j *jsiiProxy_GcpAuthBackend) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpAuthBackend) Tune() GcpAuthBackendTuneList {
+	var returns GcpAuthBackendTuneList
+	_jsii_.Get(
+		j,
+		"tune",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+func (j *jsiiProxy_GcpAuthBackend) TuneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tuneInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBackendConfig) GcpAuthBackend {
 	_init_.Initialize()
 
@@ -603,7 +627,7 @@ func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend_Override(g GcpAuthBackend, scope constructs.Construct, id *string, config *GcpAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1167,6 +1191,17 @@ func (g *jsiiProxy_GcpAuthBackend) PutCustomEndpoint(value *GcpAuthBackendCustom
 	)
 }
 
+func (g *jsiiProxy_GcpAuthBackend) PutTune(value interface{}) {
+	if err := g.validatePutTuneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTune",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GcpAuthBackend) ResetClientEmail() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1267,6 +1302,14 @@ func (g *jsiiProxy_GcpAuthBackend) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetTune() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTune",
 		nil, // no parameters
 	)
 }

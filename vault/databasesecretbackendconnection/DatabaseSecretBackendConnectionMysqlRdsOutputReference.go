@@ -13,6 +13,9 @@ import (
 
 type DatabaseSecretBackendConnectionMysqlRdsOutputReference interface {
 	cdktf.ComplexObject
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,6 +50,9 @@ type DatabaseSecretBackendConnectionMysqlRdsOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ServiceAccountJson() *string
+	SetServiceAccountJson(val *string)
+	ServiceAccountJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -55,6 +61,12 @@ type DatabaseSecretBackendConnectionMysqlRdsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCa() *string
+	SetTlsCa(val *string)
+	TlsCaInput() *string
+	TlsCertificateKey() *string
+	SetTlsCertificateKey(val *string)
+	TlsCertificateKeyInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -85,11 +97,15 @@ type DatabaseSecretBackendConnectionMysqlRdsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthType()
 	ResetConnectionUrl()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetServiceAccountJson()
+	ResetTlsCa()
+	ResetTlsCertificateKey()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -105,6 +121,26 @@ type DatabaseSecretBackendConnectionMysqlRdsOutputReference interface {
 // The jsii proxy struct for DatabaseSecretBackendConnectionMysqlRdsOutputReference
 type jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ComplexObjectIndex() interface{} {
@@ -257,6 +293,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) Passw
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ServiceAccountJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ServiceAccountJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -272,6 +328,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) Terra
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) TlsCa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) TlsCaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) TlsCertificateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) TlsCertificateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKeyInput",
 		&returns,
 	)
 	return returns
@@ -342,6 +438,17 @@ func NewDatabaseSecretBackendConnectionMysqlRdsOutputReference_Override(d Databa
 		"@cdktf/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
+		val,
 	)
 }
 
@@ -433,6 +540,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetPas
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetServiceAccountJson(val *string) {
+	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJson",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -451,6 +569,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetTer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetTlsCa(val *string) {
+	if err := j.validateSetTlsCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference)SetTlsCertificateKey(val *string) {
+	if err := j.validateSetTlsCertificateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCertificateKey",
 		val,
 	)
 }
@@ -663,6 +803,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) Inter
 	return returns
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ResetConnectionUrl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -699,6 +847,30 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ResetServiceAccountJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ResetTlsCa() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCa",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) ResetTlsCertificateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCertificateKey",
 		nil, // no parameters
 	)
 }

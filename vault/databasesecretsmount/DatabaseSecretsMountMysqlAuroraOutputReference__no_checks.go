@@ -55,6 +55,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetAl
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -103,11 +107,23 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetRo
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	return nil
 }
 

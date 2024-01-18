@@ -16,6 +16,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	AllowedRoles() *[]*string
 	SetAllowedRoles(val *[]*string)
 	AllowedRolesInput() *[]*string
+	AuthType() *string
+	SetAuthType(val *string)
+	AuthTypeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -62,6 +65,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	ServiceAccountJson() *string
+	SetServiceAccountJson(val *string)
+	ServiceAccountJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +76,12 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCa() *string
+	SetTlsCa(val *string)
+	TlsCaInput() *string
+	TlsCertificateKey() *string
+	SetTlsCertificateKey(val *string)
+	TlsCertificateKeyInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -104,6 +116,7 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowedRoles()
+	ResetAuthType()
 	ResetConnectionUrl()
 	ResetData()
 	ResetMaxConnectionLifetime()
@@ -112,6 +125,9 @@ type DatabaseSecretsMountMysqlRdsOutputReference interface {
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetServiceAccountJson()
+	ResetTlsCa()
+	ResetTlsCertificateKey()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -145,6 +161,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) AllowedRolesInpu
 	_jsii_.Get(
 		j,
 		"allowedRolesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) AuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) AuthTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTypeInput",
 		&returns,
 	)
 	return returns
@@ -380,6 +416,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) RootRotationStat
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ServiceAccountJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ServiceAccountJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -395,6 +451,46 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TlsCa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TlsCaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TlsCertificateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) TlsCertificateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateKeyInput",
 		&returns,
 	)
 	return returns
@@ -495,6 +591,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetAllowedRoles(v
 	_jsii_.Set(
 		j,
 		"allowedRoles",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetAuthType(val *string) {
+	if err := j.validateSetAuthTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authType",
 		val,
 	)
 }
@@ -631,6 +738,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetRootRotationSt
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetServiceAccountJson(val *string) {
+	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountJson",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -649,6 +767,28 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTlsCa(val *string) {
+	if err := j.validateSetTlsCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference)SetTlsCertificateKey(val *string) {
+	if err := j.validateSetTlsCertificateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCertificateKey",
 		val,
 	)
 }
@@ -880,6 +1020,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetAllowedRole
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetAuthType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetConnectionUrl() {
 	_jsii_.InvokeVoid(
 		d,
@@ -940,6 +1088,30 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetRootRotatio
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetServiceAccountJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetTlsCa() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCa",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) ResetTlsCertificateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCertificateKey",
 		nil, // no parameters
 	)
 }

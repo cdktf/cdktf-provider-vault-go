@@ -109,6 +109,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetAllow
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -270,6 +278,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetRootR
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -279,6 +295,22 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerra
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTlsCaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -147,6 +147,14 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetRoleParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetSignInAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetTagsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetTtlParameters(val *string) error {
 	return nil
 }

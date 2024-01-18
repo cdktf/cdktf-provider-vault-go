@@ -79,6 +79,10 @@ func (g *jsiiProxy_GcpAuthBackend) validatePutCustomEndpointParameters(value *Gc
 	return nil
 }
 
+func (g *jsiiProxy_GcpAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
 func validateGcpAuthBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

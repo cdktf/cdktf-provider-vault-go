@@ -109,6 +109,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetAl
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -270,6 +278,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetRo
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -279,6 +295,22 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetTe
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetTlsCaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

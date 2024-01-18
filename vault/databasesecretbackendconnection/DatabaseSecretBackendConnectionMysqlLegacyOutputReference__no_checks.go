@@ -51,6 +51,10 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -83,11 +87,23 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	return nil
 }
 

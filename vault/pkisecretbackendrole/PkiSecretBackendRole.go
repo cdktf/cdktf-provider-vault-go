@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -97,6 +97,9 @@ type PkiSecretBackendRole interface {
 	ExtKeyUsage() *[]*string
 	SetExtKeyUsage(val *[]*string)
 	ExtKeyUsageInput() *[]*string
+	ExtKeyUsageOids() *[]*string
+	SetExtKeyUsageOids(val *[]*string)
+	ExtKeyUsageOidsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -263,6 +266,7 @@ type PkiSecretBackendRole interface {
 	ResetEmailProtectionFlag()
 	ResetEnforceHostnames()
 	ResetExtKeyUsage()
+	ResetExtKeyUsageOids()
 	ResetGenerateLease()
 	ResetId()
 	ResetIssuerRef()
@@ -792,6 +796,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) ExtKeyUsageInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"extKeyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ExtKeyUsageOids() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extKeyUsageOids",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) ExtKeyUsageOidsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"extKeyUsageOidsInput",
 		&returns,
 	)
 	return returns
@@ -1388,7 +1412,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1406,7 +1430,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1685,6 +1709,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetExtKeyUsage(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"extKeyUsage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetExtKeyUsageOids(val *[]*string) {
+	if err := j.validateSetExtKeyUsageOidsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"extKeyUsageOids",
 		val,
 	)
 }
@@ -2508,6 +2543,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetExtKeyUsage() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetExtKeyUsage",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetExtKeyUsageOids() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExtKeyUsageOids",
 		nil, // no parameters
 	)
 }

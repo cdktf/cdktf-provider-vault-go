@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}.
 type TransitSecretCacheConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_TransitSecretCacheConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) TransitSecretCacheConfig {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewTransitSecretCacheConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.23.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource.
 func NewTransitSecretCacheConfig_Override(t TransitSecretCacheConfig, scope constructs.Construct, id *string, config *TransitSecretCacheConfigConfig) {
 	_init_.Initialize()
 

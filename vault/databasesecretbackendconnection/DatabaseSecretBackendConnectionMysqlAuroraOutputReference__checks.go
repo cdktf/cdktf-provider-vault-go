@@ -101,6 +101,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetAuthTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -214,6 +222,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -223,6 +239,22 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) va
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetTlsCaParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

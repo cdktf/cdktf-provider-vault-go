@@ -191,6 +191,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetExtKeyUsageParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetExtKeyUsageOidsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetGenerateLeaseParameters(val interface{}) error {
 	return nil
 }

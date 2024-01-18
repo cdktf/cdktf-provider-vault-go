@@ -55,6 +55,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetAllow
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetAuthTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -103,11 +107,23 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetRootR
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetTlsCertificateKeyParameters(val *string) error {
 	return nil
 }
 
