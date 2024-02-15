@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
 type ConsulSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -645,7 +645,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) ConsulSecretBackendRole {
 	_init_.Initialize()
 
@@ -663,7 +663,7 @@ func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole_Override(c ConsulSecretBackendRole, scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) {
 	_init_.Initialize()
 

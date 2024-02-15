@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 type AwsSecretBackend interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -56,6 +56,15 @@ type AwsSecretBackend interface {
 	IamEndpointInput() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -88,6 +97,9 @@ type AwsSecretBackend interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -152,6 +164,9 @@ type AwsSecretBackend interface {
 	ResetDisableRemount()
 	ResetIamEndpoint()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenKey()
+	ResetIdentityTokenTtl()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -160,6 +175,7 @@ type AwsSecretBackend interface {
 	ResetOverrideLogicalId()
 	ResetPath()
 	ResetRegion()
+	ResetRoleArn()
 	ResetSecretKey()
 	ResetStsEndpoint()
 	ResetUsernameTemplate()
@@ -371,6 +387,66 @@ func (j *jsiiProxy_AwsSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -531,6 +607,26 @@ func (j *jsiiProxy_AwsSecretBackend) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) SecretKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -622,7 +718,7 @@ func (j *jsiiProxy_AwsSecretBackend) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecretBackendConfig) AwsSecretBackend {
 	_init_.Initialize()
 
@@ -640,7 +736,7 @@ func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend_Override(a AwsSecretBackend, scope constructs.Construct, id *string, config *AwsSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -755,6 +851,39 @@ func (j *jsiiProxy_AwsSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AwsSecretBackend)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AwsSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -836,6 +965,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
 		val,
 	)
 }
@@ -1274,6 +1414,30 @@ func (a *jsiiProxy_AwsSecretBackend) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackend) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1318,6 +1482,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetRegion() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoleArn",
 		nil, // no parameters
 	)
 }

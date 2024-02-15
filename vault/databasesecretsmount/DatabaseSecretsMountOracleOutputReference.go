@@ -37,6 +37,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DisconnectSessions() interface{}
+	SetDisconnectSessions(val interface{})
+	DisconnectSessionsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -62,6 +65,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	SplitStatements() interface{}
+	SetSplitStatements(val interface{})
+	SplitStatementsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -106,12 +112,14 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	ResetAllowedRoles()
 	ResetConnectionUrl()
 	ResetData()
+	ResetDisconnectSessions()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -215,6 +223,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DataInput() *map[s
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DisconnectSessions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectSessions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DisconnectSessionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectSessionsInput",
 		&returns,
 	)
 	return returns
@@ -375,6 +403,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RootRotationStatem
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SplitStatements() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splitStatements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SplitStatementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splitStatementsInput",
 		&returns,
 	)
 	return returns
@@ -543,6 +591,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetData(val *map[st
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetDisconnectSessions(val interface{}) {
+	if err := j.validateSetDisconnectSessionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disconnectSessions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -627,6 +686,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRootRotationStat
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetSplitStatements(val interface{}) {
+	if err := j.validateSetSplitStatementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"splitStatements",
 		val,
 	)
 }
@@ -896,6 +966,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetData() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetDisconnectSessions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisconnectSessions",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetMaxConnectionLifetime() {
 	_jsii_.InvokeVoid(
 		d,
@@ -940,6 +1018,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRootRotationS
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetSplitStatements() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSplitStatements",
 		nil, // no parameters
 	)
 }

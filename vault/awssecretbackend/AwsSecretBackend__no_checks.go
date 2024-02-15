@@ -123,6 +123,18 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -148,6 +160,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetRoleArnParameters(val *string) error {
 	return nil
 }
 

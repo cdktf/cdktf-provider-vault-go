@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role}.
 type MongodbatlasSecretRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -571,7 +571,7 @@ func (j *jsiiProxy_MongodbatlasSecretRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
 func NewMongodbatlasSecretRole(scope constructs.Construct, id *string, config *MongodbatlasSecretRoleConfig) MongodbatlasSecretRole {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewMongodbatlasSecretRole(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.24.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mongodbatlas_secret_role vault_mongodbatlas_secret_role} Resource.
 func NewMongodbatlasSecretRole_Override(m MongodbatlasSecretRole, scope constructs.Construct, id *string, config *MongodbatlasSecretRoleConfig) {
 	_init_.Initialize()
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetDataPar
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetDisconnectSessionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPluginN
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetSplitStatementsParameters(val interface{}) error {
 	return nil
 }
 

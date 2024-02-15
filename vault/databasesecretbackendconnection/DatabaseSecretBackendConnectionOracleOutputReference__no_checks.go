@@ -63,6 +63,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetDisconnectSessionsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetInternalValueParameters(val *DatabaseSecretBackendConnectionOracle) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validat
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetSplitStatementsParameters(val interface{}) error {
 	return nil
 }
 

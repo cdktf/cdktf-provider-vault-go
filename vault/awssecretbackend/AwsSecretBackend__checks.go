@@ -397,6 +397,30 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenAudienceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetIdentityTokenTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -496,6 +520,14 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -31,6 +31,9 @@ type DatabaseSecretBackendConnectionOracleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisconnectSessions() interface{}
+	SetDisconnectSessions(val interface{})
+	DisconnectSessionsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DatabaseSecretBackendConnectionOracle
@@ -47,6 +50,9 @@ type DatabaseSecretBackendConnectionOracleOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	SplitStatements() interface{}
+	SetSplitStatements(val interface{})
+	SplitStatementsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -86,10 +92,12 @@ type DatabaseSecretBackendConnectionOracleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionUrl()
+	ResetDisconnectSessions()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -152,6 +160,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) Creatio
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) DisconnectSessions() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectSessions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) DisconnectSessionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disconnectSessionsInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +280,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) Passwor
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) SplitStatements() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splitStatements",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) SplitStatementsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"splitStatementsInput",
 		&returns,
 	)
 	return returns
@@ -378,6 +426,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetConne
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetDisconnectSessions(val interface{}) {
+	if err := j.validateSetDisconnectSessionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disconnectSessions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetInternalValue(val *DatabaseSecretBackendConnectionOracle) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -429,6 +488,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetPassw
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetSplitStatements(val interface{}) {
+	if err := j.validateSetSplitStatementsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"splitStatements",
 		val,
 	)
 }
@@ -671,6 +741,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetCo
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetDisconnectSessions() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisconnectSessions",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetMaxConnectionLifetime() {
 	_jsii_.InvokeVoid(
 		d,
@@ -699,6 +777,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetPa
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetSplitStatements() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSplitStatements",
 		nil, // no parameters
 	)
 }
