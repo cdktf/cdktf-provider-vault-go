@@ -5,14 +5,14 @@ package datavaultpkisecretbackendkeys
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultpkisecretbackendkeys/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultpkisecretbackendkeys/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys}.
 type DataVaultPkiSecretBackendKeys interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendKeys) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
 func NewDataVaultPkiSecretBackendKeys(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeysConfig) DataVaultPkiSecretBackendKeys {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewDataVaultPkiSecretBackendKeys(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/pki_secret_backend_keys vault_pki_secret_backend_keys} Data Source.
 func NewDataVaultPkiSecretBackendKeys_Override(d DataVaultPkiSecretBackendKeys, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendKeysConfig) {
 	_init_.Initialize()
 

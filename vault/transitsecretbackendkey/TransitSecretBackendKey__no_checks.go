@@ -95,10 +95,6 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetAllowPlaintextBackupParam
 	return nil
 }
 
-func (j *jsiiProxy_TransitSecretBackendKey) validateSetAutoRotateIntervalParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetAutoRotatePeriodParameters(val *float64) error {
 	return nil
 }

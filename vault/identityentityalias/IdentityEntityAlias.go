@@ -5,14 +5,14 @@ package identityentityalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/identityentityalias/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/identityentityalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 type IdentityEntityAlias interface {
 	cdktf.TerraformResource
 	CanonicalId() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_IdentityEntityAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) IdentityEntityAlias {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewIdentityEntityAlias(scope constructs.Construct, id *string, config *Iden
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_entity_alias vault_identity_entity_alias} Resource.
 func NewIdentityEntityAlias_Override(i IdentityEntityAlias, scope constructs.Construct, id *string, config *IdentityEntityAliasConfig) {
 	_init_.Initialize()
 

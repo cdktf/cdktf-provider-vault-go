@@ -5,14 +5,14 @@ package identitygroupmemberentityids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/identitygroupmemberentityids/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/identitygroupmemberentityids/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}.
 type IdentityGroupMemberEntityIds interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,7 +45,6 @@ type IdentityGroupMemberEntityIds interface {
 	GroupId() *string
 	SetGroupId(val *string)
 	GroupIdInput() *string
-	GroupName() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -265,16 +264,6 @@ func (j *jsiiProxy_IdentityGroupMemberEntityIds) GroupIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentityGroupMemberEntityIds) GroupName() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"groupName",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IdentityGroupMemberEntityIds) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -416,7 +405,7 @@ func (j *jsiiProxy_IdentityGroupMemberEntityIds) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) IdentityGroupMemberEntityIds {
 	_init_.Initialize()
 
@@ -434,7 +423,7 @@ func NewIdentityGroupMemberEntityIds(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource.
 func NewIdentityGroupMemberEntityIds_Override(i IdentityGroupMemberEntityIds, scope constructs.Construct, id *string, config *IdentityGroupMemberEntityIdsConfig) {
 	_init_.Initialize()
 

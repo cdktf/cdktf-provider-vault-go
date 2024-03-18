@@ -5,14 +5,14 @@ package identitymfatotp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/identitymfatotp/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/identitymfatotp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
 type IdentityMfaTotp interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -602,7 +602,7 @@ func (j *jsiiProxy_IdentityMfaTotp) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
 func NewIdentityMfaTotp(scope constructs.Construct, id *string, config *IdentityMfaTotpConfig) IdentityMfaTotp {
 	_init_.Initialize()
 
@@ -620,7 +620,7 @@ func NewIdentityMfaTotp(scope constructs.Construct, id *string, config *Identity
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp} Resource.
 func NewIdentityMfaTotp_Override(i IdentityMfaTotp, scope constructs.Construct, id *string, config *IdentityMfaTotpConfig) {
 	_init_.Initialize()
 

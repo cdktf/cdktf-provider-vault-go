@@ -5,14 +5,14 @@ package datavaultkubernetesserviceaccounttoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaultkubernetesserviceaccounttoken/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaultkubernetesserviceaccounttoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}.
 type DataVaultKubernetesServiceAccountToken interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_DataVaultKubernetesServiceAccountToken) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
 func NewDataVaultKubernetesServiceAccountToken(scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) DataVaultKubernetesServiceAccountToken {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewDataVaultKubernetesServiceAccountToken(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source.
 func NewDataVaultKubernetesServiceAccountToken_Override(d DataVaultKubernetesServiceAccountToken, scope constructs.Construct, id *string, config *DataVaultKubernetesServiceAccountTokenConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datavaulttransformencode
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/datavaulttransformencode/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/datavaulttransformencode/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transform_encode vault_transform_encode}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transform_encode vault_transform_encode}.
 type DataVaultTransformEncode interface {
 	cdktf.TerraformDataSource
 	BatchInput() interface{}
@@ -479,7 +479,7 @@ func (j *jsiiProxy_DataVaultTransformEncode) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
 func NewDataVaultTransformEncode(scope constructs.Construct, id *string, config *DataVaultTransformEncodeConfig) DataVaultTransformEncode {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewDataVaultTransformEncode(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/data-sources/transform_encode vault_transform_encode} Data Source.
 func NewDataVaultTransformEncode_Override(d DataVaultTransformEncode, scope constructs.Construct, id *string, config *DataVaultTransformEncodeConfig) {
 	_init_.Initialize()
 

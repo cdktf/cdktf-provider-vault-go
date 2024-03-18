@@ -5,14 +5,14 @@ package kmipsecretrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/kmipsecretrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/kmipsecretrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kmip_secret_role vault_kmip_secret_role}.
 type KmipSecretRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -811,7 +811,7 @@ func (j *jsiiProxy_KmipSecretRole) TlsClientTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecretRoleConfig) KmipSecretRole {
 	_init_.Initialize()
 
@@ -829,7 +829,7 @@ func NewKmipSecretRole(scope constructs.Construct, id *string, config *KmipSecre
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kmip_secret_role vault_kmip_secret_role} Resource.
 func NewKmipSecretRole_Override(k KmipSecretRole, scope constructs.Construct, id *string, config *KmipSecretRoleConfig) {
 	_init_.Initialize()
 

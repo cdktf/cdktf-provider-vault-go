@@ -5,14 +5,14 @@ package pkisecretbackendsign
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendsign/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendsign/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -102,7 +102,6 @@ type PkiSecretBackendSign interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RenewPending() cdktf.IResolvable
-	Serial() *string
 	SerialNumber() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -652,16 +651,6 @@ func (j *jsiiProxy_PkiSecretBackendSign) RenewPending() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_PkiSecretBackendSign) Serial() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serial",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_PkiSecretBackendSign) SerialNumber() *string {
 	var returns *string
 	_jsii_.Get(
@@ -743,7 +732,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -761,7 +750,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 

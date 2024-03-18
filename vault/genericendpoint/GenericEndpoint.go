@@ -5,14 +5,14 @@ package genericendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/genericendpoint/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/genericendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/generic_endpoint vault_generic_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/generic_endpoint vault_generic_endpoint}.
 type GenericEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GenericEndpoint) WriteFieldsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericEndpointConfig) GenericEndpoint {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewGenericEndpoint(scope constructs.Construct, id *string, config *GenericE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource.
 func NewGenericEndpoint_Override(g GenericEndpoint, scope constructs.Construct, id *string, config *GenericEndpointConfig) {
 	_init_.Initialize()
 

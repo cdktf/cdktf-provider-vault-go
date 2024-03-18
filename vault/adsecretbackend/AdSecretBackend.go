@@ -5,14 +5,14 @@ package adsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/adsecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/adsecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend vault_ad_secret_backend}.
 type AdSecretBackend interface {
 	cdktf.TerraformResource
 	AnonymousGroupSearch() interface{}
@@ -74,9 +74,6 @@ type AdSecretBackend interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
-	Formatter() *string
-	SetFormatter(val *string)
-	FormatterInput() *string
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -99,9 +96,6 @@ type AdSecretBackend interface {
 	LastRotationTolerance() *float64
 	SetLastRotationTolerance(val *float64)
 	LastRotationToleranceInput() *float64
-	Length() *float64
-	SetLength(val *float64)
-	LengthInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -226,14 +220,12 @@ type AdSecretBackend interface {
 	ResetDescription()
 	ResetDisableRemount()
 	ResetDiscoverdn()
-	ResetFormatter()
 	ResetGroupattr()
 	ResetGroupdn()
 	ResetGroupfilter()
 	ResetId()
 	ResetInsecureTls()
 	ResetLastRotationTolerance()
-	ResetLength()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetMaxTtl()
@@ -591,26 +583,6 @@ func (j *jsiiProxy_AdSecretBackend) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_AdSecretBackend) Formatter() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"formatter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AdSecretBackend) FormatterInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"formatterInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AdSecretBackend) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -746,26 +718,6 @@ func (j *jsiiProxy_AdSecretBackend) LastRotationToleranceInput() *float64 {
 	_jsii_.Get(
 		j,
 		"lastRotationToleranceInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AdSecretBackend) Length() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"length",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AdSecretBackend) LengthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"lengthInput",
 		&returns,
 	)
 	return returns
@@ -1172,7 +1124,7 @@ func (j *jsiiProxy_AdSecretBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
 func NewAdSecretBackend(scope constructs.Construct, id *string, config *AdSecretBackendConfig) AdSecretBackend {
 	_init_.Initialize()
 
@@ -1190,7 +1142,7 @@ func NewAdSecretBackend(scope constructs.Construct, id *string, config *AdSecret
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource.
 func NewAdSecretBackend_Override(a AdSecretBackend, scope constructs.Construct, id *string, config *AdSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1382,17 +1334,6 @@ func (j *jsiiProxy_AdSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_AdSecretBackend)SetFormatter(val *string) {
-	if err := j.validateSetFormatterParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"formatter",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AdSecretBackend)SetGroupattr(val *string) {
 	if err := j.validateSetGroupattrParameters(val); err != nil {
 		panic(err)
@@ -1455,17 +1396,6 @@ func (j *jsiiProxy_AdSecretBackend)SetLastRotationTolerance(val *float64) {
 	_jsii_.Set(
 		j,
 		"lastRotationTolerance",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AdSecretBackend)SetLength(val *float64) {
-	if err := j.validateSetLengthParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"length",
 		val,
 	)
 }
@@ -2117,14 +2047,6 @@ func (a *jsiiProxy_AdSecretBackend) ResetDiscoverdn() {
 	)
 }
 
-func (a *jsiiProxy_AdSecretBackend) ResetFormatter() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetFormatter",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AdSecretBackend) ResetGroupattr() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2169,14 +2091,6 @@ func (a *jsiiProxy_AdSecretBackend) ResetLastRotationTolerance() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLastRotationTolerance",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AdSecretBackend) ResetLength() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetLength",
 		nil, // no parameters
 	)
 }

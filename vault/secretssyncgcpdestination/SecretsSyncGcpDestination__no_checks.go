@@ -123,6 +123,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetNamespaceParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProjectIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

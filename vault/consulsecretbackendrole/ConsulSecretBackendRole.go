@@ -5,14 +5,14 @@ package consulsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/consulsecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/consulsecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
 type ConsulSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -100,9 +100,6 @@ type ConsulSecretBackendRole interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TokenType() *string
-	SetTokenType(val *string)
-	TokenTypeInput() *string
 	Ttl() *float64
 	SetTtl(val *float64)
 	TtlInput() *float64
@@ -164,7 +161,6 @@ type ConsulSecretBackendRole interface {
 	ResetPartition()
 	ResetPolicies()
 	ResetServiceIdentities()
-	ResetTokenType()
 	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -604,26 +600,6 @@ func (j *jsiiProxy_ConsulSecretBackendRole) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConsulSecretBackendRole) TokenType() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tokenType",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ConsulSecretBackendRole) TokenTypeInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"tokenTypeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ConsulSecretBackendRole) Ttl() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -645,7 +621,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) ConsulSecretBackendRole {
 	_init_.Initialize()
 
@@ -663,7 +639,7 @@ func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole_Override(c ConsulSecretBackendRole, scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -881,17 +857,6 @@ func (j *jsiiProxy_ConsulSecretBackendRole)SetServiceIdentities(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"serviceIdentities",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ConsulSecretBackendRole)SetTokenType(val *string) {
-	if err := j.validateSetTokenTypeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tokenType",
 		val,
 	)
 }
@@ -1360,14 +1325,6 @@ func (c *jsiiProxy_ConsulSecretBackendRole) ResetServiceIdentities() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetServiceIdentities",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_ConsulSecretBackendRole) ResetTokenType() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetTokenType",
 		nil, // no parameters
 	)
 }

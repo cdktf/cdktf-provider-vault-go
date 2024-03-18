@@ -5,14 +5,14 @@ package secretssyncgcpdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncgcpdestination/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncgcpdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
 type SecretsSyncGcpDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -60,6 +60,9 @@ type SecretsSyncGcpDestination interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ProjectId() *string
+	SetProjectId(val *string)
+	ProjectIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -130,6 +133,7 @@ type SecretsSyncGcpDestination interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProjectId()
 	ResetSecretNameTemplate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -349,6 +353,26 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) ProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination) ProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -440,7 +464,7 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) SecretsSyncGcpDestination {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination_Override(s SecretsSyncGcpDestination, scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_SecretsSyncGcpDestination)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGcpDestination)SetProjectId(val *string) {
+	if err := j.validateSetProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projectId",
 		val,
 	)
 }
@@ -992,6 +1027,14 @@ func (s *jsiiProxy_SecretsSyncGcpDestination) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGcpDestination) ResetProjectId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProjectId",
 		nil, // no parameters
 	)
 }

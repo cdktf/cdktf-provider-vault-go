@@ -5,14 +5,14 @@ package certauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/certauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/certauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}.
 type CertAuthBackendRole interface {
 	cdktf.TerraformResource
 	AllowedCommonNames() *[]*string
@@ -30,9 +30,6 @@ type CertAuthBackendRole interface {
 	AllowedOrganizationalUnits() *[]*string
 	SetAllowedOrganizationalUnits(val *[]*string)
 	AllowedOrganizationalUnitsInput() *[]*string
-	AllowedOrganizationUnits() *[]*string
-	SetAllowedOrganizationUnits(val *[]*string)
-	AllowedOrganizationUnitsInput() *[]*string
 	AllowedUriSans() *[]*string
 	SetAllowedUriSans(val *[]*string)
 	AllowedUriSansInput() *[]*string
@@ -193,7 +190,6 @@ type CertAuthBackendRole interface {
 	ResetAllowedEmailSans()
 	ResetAllowedNames()
 	ResetAllowedOrganizationalUnits()
-	ResetAllowedOrganizationUnits()
 	ResetAllowedUriSans()
 	ResetBackend()
 	ResetDisplayName()
@@ -330,26 +326,6 @@ func (j *jsiiProxy_CertAuthBackendRole) AllowedOrganizationalUnitsInput() *[]*st
 	_jsii_.Get(
 		j,
 		"allowedOrganizationalUnitsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertAuthBackendRole) AllowedOrganizationUnits() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"allowedOrganizationUnits",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_CertAuthBackendRole) AllowedOrganizationUnitsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"allowedOrganizationUnitsInput",
 		&returns,
 	)
 	return returns
@@ -956,7 +932,7 @@ func (j *jsiiProxy_CertAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) CertAuthBackendRole {
 	_init_.Initialize()
 
@@ -974,7 +950,7 @@ func NewCertAuthBackendRole(scope constructs.Construct, id *string, config *Cert
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource.
 func NewCertAuthBackendRole_Override(c CertAuthBackendRole, scope constructs.Construct, id *string, config *CertAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1036,17 +1012,6 @@ func (j *jsiiProxy_CertAuthBackendRole)SetAllowedOrganizationalUnits(val *[]*str
 	_jsii_.Set(
 		j,
 		"allowedOrganizationalUnits",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CertAuthBackendRole)SetAllowedOrganizationUnits(val *[]*string) {
-	if err := j.validateSetAllowedOrganizationUnitsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowedOrganizationUnits",
 		val,
 	)
 }
@@ -1750,14 +1715,6 @@ func (c *jsiiProxy_CertAuthBackendRole) ResetAllowedOrganizationalUnits() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAllowedOrganizationalUnits",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CertAuthBackendRole) ResetAllowedOrganizationUnits() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetAllowedOrganizationUnits",
 		nil, // no parameters
 	)
 }

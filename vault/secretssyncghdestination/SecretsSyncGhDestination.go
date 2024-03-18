@@ -5,19 +5,22 @@ package secretssyncghdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncghdestination/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncghdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
 type SecretsSyncGhDestination interface {
 	cdktf.TerraformResource
 	AccessToken() *string
 	SetAccessToken(val *string)
 	AccessTokenInput() *string
+	AppName() *string
+	SetAppName(val *string)
+	AppNameInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -45,6 +48,9 @@ type SecretsSyncGhDestination interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstallationId() *float64
+	SetInstallationId(val *float64)
+	InstallationIdInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -127,7 +133,9 @@ type SecretsSyncGhDestination interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessToken()
+	ResetAppName()
 	ResetId()
+	ResetInstallationId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -168,6 +176,26 @@ func (j *jsiiProxy_SecretsSyncGhDestination) AccessTokenInput() *string {
 	_jsii_.Get(
 		j,
 		"accessTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AppName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) AppNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appNameInput",
 		&returns,
 	)
 	return returns
@@ -268,6 +296,26 @@ func (j *jsiiProxy_SecretsSyncGhDestination) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) InstallationId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"installationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) InstallationIdInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"installationIdInput",
 		&returns,
 	)
 	return returns
@@ -464,7 +512,7 @@ func (j *jsiiProxy_SecretsSyncGhDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) SecretsSyncGhDestination {
 	_init_.Initialize()
 
@@ -482,7 +530,7 @@ func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination_Override(s SecretsSyncGhDestination, scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) {
 	_init_.Initialize()
 
@@ -500,6 +548,17 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetAccessToken(val *string) {
 	_jsii_.Set(
 		j,
 		"accessToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetAppName(val *string) {
+	if err := j.validateSetAppNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appName",
 		val,
 	)
 }
@@ -549,6 +608,17 @@ func (j *jsiiProxy_SecretsSyncGhDestination)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination)SetInstallationId(val *float64) {
+	if err := j.validateSetInstallationIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"installationId",
 		val,
 	)
 }
@@ -999,10 +1069,26 @@ func (s *jsiiProxy_SecretsSyncGhDestination) ResetAccessToken() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetAppName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncGhDestination) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncGhDestination) ResetInstallationId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInstallationId",
 		nil, // no parameters
 	)
 }

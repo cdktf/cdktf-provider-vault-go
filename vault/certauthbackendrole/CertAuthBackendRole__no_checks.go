@@ -111,10 +111,6 @@ func (j *jsiiProxy_CertAuthBackendRole) validateSetAllowedOrganizationalUnitsPar
 	return nil
 }
 
-func (j *jsiiProxy_CertAuthBackendRole) validateSetAllowedOrganizationUnitsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_CertAuthBackendRole) validateSetAllowedUriSansParameters(val *[]*string) error {
 	return nil
 }

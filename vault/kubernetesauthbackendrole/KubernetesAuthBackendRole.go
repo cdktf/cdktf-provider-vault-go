@@ -5,14 +5,14 @@ package kubernetesauthbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/kubernetesauthbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/kubernetesauthbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 type KubernetesAuthBackendRole interface {
 	cdktf.TerraformResource
 	AliasNameSource() *string
@@ -691,7 +691,7 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) KubernetesAuthBackendRole {
 	_init_.Initialize()
 
@@ -709,7 +709,7 @@ func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole_Override(k KubernetesAuthBackendRole, scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) {
 	_init_.Initialize()
 

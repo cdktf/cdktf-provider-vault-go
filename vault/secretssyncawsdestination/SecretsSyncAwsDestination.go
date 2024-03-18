@@ -5,14 +5,14 @@ package secretssyncawsdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/secretssyncawsdestination/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/secretssyncawsdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
 type SecretsSyncAwsDestination interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -37,6 +37,9 @@ type SecretsSyncAwsDestination interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +76,9 @@ type SecretsSyncAwsDestination interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	SecretAccessKey() *string
 	SetSecretAccessKey(val *string)
 	SecretAccessKeyInput() *string
@@ -131,12 +137,14 @@ type SecretsSyncAwsDestination interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessKeyId()
 	ResetCustomTags()
+	ResetExternalId()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRegion()
+	ResetRoleArn()
 	ResetSecretAccessKey()
 	ResetSecretNameTemplate()
 	SynthesizeAttributes() *map[string]interface{}
@@ -242,6 +250,26 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +435,26 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) SecretAccessKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -488,7 +536,7 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) SecretsSyncAwsDestination {
 	_init_.Initialize()
 
@@ -506,7 +554,7 @@ func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination_Override(s SecretsSyncAwsDestination, scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) {
 	_init_.Initialize()
 
@@ -565,6 +613,17 @@ func (j *jsiiProxy_SecretsSyncAwsDestination)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
 		val,
 	)
 }
@@ -647,6 +706,17 @@ func (j *jsiiProxy_SecretsSyncAwsDestination)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
 		val,
 	)
 }
@@ -1042,6 +1112,14 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) ResetCustomTags() {
 	)
 }
 
+func (s *jsiiProxy_SecretsSyncAwsDestination) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetExternalId",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecretsSyncAwsDestination) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1070,6 +1148,14 @@ func (s *jsiiProxy_SecretsSyncAwsDestination) ResetRegion() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAwsDestination) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRoleArn",
 		nil, // no parameters
 	)
 }

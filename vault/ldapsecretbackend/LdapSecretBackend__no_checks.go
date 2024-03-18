@@ -159,10 +159,6 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetInsecureTlsParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_LdapSecretBackend) validateSetLengthParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_LdapSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -204,6 +200,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetSchemaParameters(val *string) e
 }
 
 func (j *jsiiProxy_LdapSecretBackend) validateSetSealWrapParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetSkipStaticRoleImportRotationParameters(val interface{}) error {
 	return nil
 }
 

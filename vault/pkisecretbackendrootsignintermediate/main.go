@@ -111,7 +111,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetUseCsrValues", GoMethod: "ResetUseCsrValues"},
 			_jsii_.MemberProperty{JsiiProperty: "revoke", GoGetter: "Revoke"},
 			_jsii_.MemberProperty{JsiiProperty: "revokeInput", GoGetter: "RevokeInput"},
-			_jsii_.MemberProperty{JsiiProperty: "serial", GoGetter: "Serial"},
 			_jsii_.MemberProperty{JsiiProperty: "serialNumber", GoGetter: "SerialNumber"},
 			_jsii_.MemberProperty{JsiiProperty: "streetAddress", GoGetter: "StreetAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "streetAddressInput", GoGetter: "StreetAddressInput"},

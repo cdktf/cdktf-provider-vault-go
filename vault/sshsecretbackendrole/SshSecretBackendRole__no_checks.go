@@ -119,10 +119,6 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedExtensionsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedUserKeyLengthsParameters(val *map[string]*float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedUsersParameters(val *string) error {
 	return nil
 }

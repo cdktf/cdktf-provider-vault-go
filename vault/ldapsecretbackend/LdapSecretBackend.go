@@ -5,14 +5,14 @@ package ldapsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/ldapsecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -85,9 +85,6 @@ type LdapSecretBackend interface {
 	InsecureTls() interface{}
 	SetInsecureTls(val interface{})
 	InsecureTlsInput() interface{}
-	Length() *float64
-	SetLength(val *float64)
-	LengthInput() *float64
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -131,6 +128,9 @@ type LdapSecretBackend interface {
 	SealWrap() interface{}
 	SetSealWrap(val interface{})
 	SealWrapInput() interface{}
+	SkipStaticRoleImportRotation() interface{}
+	SetSkipStaticRoleImportRotation(val interface{})
+	SkipStaticRoleImportRotationInput() interface{}
 	Starttls() interface{}
 	SetStarttls(val interface{})
 	StarttlsInput() interface{}
@@ -208,7 +208,6 @@ type LdapSecretBackend interface {
 	ResetExternalEntropyAccess()
 	ResetId()
 	ResetInsecureTls()
-	ResetLength()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -221,6 +220,7 @@ type LdapSecretBackend interface {
 	ResetRequestTimeout()
 	ResetSchema()
 	ResetSealWrap()
+	ResetSkipStaticRoleImportRotation()
 	ResetStarttls()
 	ResetUpndomain()
 	ResetUrl()
@@ -634,26 +634,6 @@ func (j *jsiiProxy_LdapSecretBackend) InsecureTlsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_LdapSecretBackend) Length() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"length",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LdapSecretBackend) LengthInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"lengthInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LdapSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -884,6 +864,26 @@ func (j *jsiiProxy_LdapSecretBackend) SealWrapInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackend) SkipStaticRoleImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) SkipStaticRoleImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipStaticRoleImportRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackend) Starttls() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1015,7 +1015,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1033,7 +1033,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1247,17 +1247,6 @@ func (j *jsiiProxy_LdapSecretBackend)SetInsecureTls(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LdapSecretBackend)SetLength(val *float64) {
-	if err := j.validateSetLengthParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"length",
-		val,
-	)
-}
-
 func (j *jsiiProxy_LdapSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1383,6 +1372,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetSealWrap(val interface{}) {
 	_jsii_.Set(
 		j,
 		"sealWrap",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetSkipStaticRoleImportRotation(val interface{}) {
+	if err := j.validateSetSkipStaticRoleImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipStaticRoleImportRotation",
 		val,
 	)
 }
@@ -1899,14 +1899,6 @@ func (l *jsiiProxy_LdapSecretBackend) ResetInsecureTls() {
 	)
 }
 
-func (l *jsiiProxy_LdapSecretBackend) ResetLength() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetLength",
-		nil, // no parameters
-	)
-}
-
 func (l *jsiiProxy_LdapSecretBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1983,6 +1975,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetSealWrap() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSealWrap",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetSkipStaticRoleImportRotation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSkipStaticRoleImportRotation",
 		nil, // no parameters
 	)
 }

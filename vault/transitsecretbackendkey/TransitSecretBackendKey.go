@@ -5,22 +5,19 @@ package transitsecretbackendkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/transitsecretbackendkey/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/transitsecretbackendkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktf.TerraformResource
 	AllowPlaintextBackup() interface{}
 	SetAllowPlaintextBackup(val interface{})
 	AllowPlaintextBackupInput() interface{}
-	AutoRotateInterval() *float64
-	SetAutoRotateInterval(val *float64)
-	AutoRotateIntervalInput() *float64
 	AutoRotatePeriod() *float64
 	SetAutoRotatePeriod(val *float64)
 	AutoRotatePeriodInput() *float64
@@ -157,7 +154,6 @@ type TransitSecretBackendKey interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowPlaintextBackup()
-	ResetAutoRotateInterval()
 	ResetAutoRotatePeriod()
 	ResetConvergentEncryption()
 	ResetDeletionAllowed()
@@ -205,26 +201,6 @@ func (j *jsiiProxy_TransitSecretBackendKey) AllowPlaintextBackupInput() interfac
 	_jsii_.Get(
 		j,
 		"allowPlaintextBackupInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TransitSecretBackendKey) AutoRotateInterval() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoRotateInterval",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_TransitSecretBackendKey) AutoRotateIntervalInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"autoRotateIntervalInput",
 		&returns,
 	)
 	return returns
@@ -721,7 +697,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -739,7 +715,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -757,17 +733,6 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetAllowPlaintextBackup(val interface
 	_jsii_.Set(
 		j,
 		"allowPlaintextBackup",
-		val,
-	)
-}
-
-func (j *jsiiProxy_TransitSecretBackendKey)SetAutoRotateInterval(val *float64) {
-	if err := j.validateSetAutoRotateIntervalParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"autoRotateInterval",
 		val,
 	)
 }
@@ -1340,14 +1305,6 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetAllowPlaintextBackup() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetAllowPlaintextBackup",
-		nil, // no parameters
-	)
-}
-
-func (t *jsiiProxy_TransitSecretBackendKey) ResetAutoRotateInterval() {
-	_jsii_.InvokeVoid(
-		t,
-		"resetAutoRotateInterval",
 		nil, // no parameters
 	)
 }

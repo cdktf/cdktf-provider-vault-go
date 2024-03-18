@@ -5,14 +5,14 @@ package ldapsecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/ldapsecretbackendstaticrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/ldapsecretbackendstaticrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 type LdapSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -73,6 +73,9 @@ type LdapSecretBackendStaticRole interface {
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
+	SkipImportRotation() interface{}
+	SetSkipImportRotation(val interface{})
+	SkipImportRotationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +135,7 @@ type LdapSecretBackendStaticRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipImportRotation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -400,6 +404,26 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) RotationPeriodInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) SkipImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole) SkipImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipImportRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -451,7 +475,7 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) LdapSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -469,7 +493,7 @@ func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -610,6 +634,17 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole)SetRotationPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackendStaticRole)SetSkipImportRotation(val interface{}) {
+	if err := j.validateSetSkipImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipImportRotation",
 		val,
 	)
 }
@@ -1014,6 +1049,14 @@ func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackendStaticRole) ResetSkipImportRotation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSkipImportRotation",
 		nil, // no parameters
 	)
 }

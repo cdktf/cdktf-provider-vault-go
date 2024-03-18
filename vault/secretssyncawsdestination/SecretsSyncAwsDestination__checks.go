@@ -353,6 +353,14 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetCustomTagsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetExternalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -432,6 +440,14 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

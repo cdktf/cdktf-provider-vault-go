@@ -5,14 +5,14 @@ package awssecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/awssecretbackendstaticrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/awssecretbackendstaticrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
 type AwsSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
 func NewAwsSecretBackendStaticRole(scope constructs.Construct, id *string, config *AwsSecretBackendStaticRoleConfig) AwsSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAwsSecretBackendStaticRole(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
 func NewAwsSecretBackendStaticRole_Override(a AwsSecretBackendStaticRole, scope constructs.Construct, id *string, config *AwsSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 

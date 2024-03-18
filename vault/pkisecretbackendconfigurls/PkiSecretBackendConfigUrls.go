@@ -5,14 +5,14 @@ package pkisecretbackendconfigurls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/pkisecretbackendconfigurls/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/pkisecretbackendconfigurls/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
 type PkiSecretBackendConfigUrls interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -37,6 +37,9 @@ type PkiSecretBackendConfigUrls interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableTemplating() interface{}
+	SetEnableTemplating(val interface{})
+	EnableTemplatingInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -123,6 +126,7 @@ type PkiSecretBackendConfigUrls interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCrlDistributionPoints()
+	ResetEnableTemplating()
 	ResetId()
 	ResetIssuingCertificates()
 	ResetNamespace()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigUrls) EnableTemplating() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTemplating",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigUrls) EnableTemplatingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTemplatingInput",
 		&returns,
 	)
 	return returns
@@ -429,7 +453,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
 func NewPkiSecretBackendConfigUrls(scope constructs.Construct, id *string, config *PkiSecretBackendConfigUrlsConfig) PkiSecretBackendConfigUrls {
 	_init_.Initialize()
 
@@ -447,7 +471,7 @@ func NewPkiSecretBackendConfigUrls(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource.
 func NewPkiSecretBackendConfigUrls_Override(p PkiSecretBackendConfigUrls, scope constructs.Construct, id *string, config *PkiSecretBackendConfigUrlsConfig) {
 	_init_.Initialize()
 
@@ -506,6 +530,17 @@ func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigUrls)SetEnableTemplating(val interface{}) {
+	if err := j.validateSetEnableTemplatingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableTemplating",
 		val,
 	)
 }
@@ -949,6 +984,14 @@ func (p *jsiiProxy_PkiSecretBackendConfigUrls) ResetCrlDistributionPoints() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCrlDistributionPoints",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigUrls) ResetEnableTemplating() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnableTemplating",
 		nil, // no parameters
 	)
 }

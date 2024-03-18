@@ -5,14 +5,14 @@ package sshsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/sshsecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/sshsecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}.
 type SshSecretBackendRole interface {
 	cdktf.TerraformResource
 	AlgorithmSigner() *string
@@ -35,9 +35,6 @@ type SshSecretBackendRole interface {
 	AllowedExtensionsInput() *string
 	AllowedUserKeyConfig() SshSecretBackendRoleAllowedUserKeyConfigList
 	AllowedUserKeyConfigInput() interface{}
-	AllowedUserKeyLengths() *map[string]*float64
-	SetAllowedUserKeyLengths(val *map[string]*float64)
-	AllowedUserKeyLengthsInput() *map[string]*float64
 	AllowedUsers() *string
 	SetAllowedUsers(val *string)
 	AllowedUsersInput() *string
@@ -195,7 +192,6 @@ type SshSecretBackendRole interface {
 	ResetAllowedDomainsTemplate()
 	ResetAllowedExtensions()
 	ResetAllowedUserKeyConfig()
-	ResetAllowedUserKeyLengths()
 	ResetAllowedUsers()
 	ResetAllowedUsersTemplate()
 	ResetAllowHostCertificates()
@@ -369,26 +365,6 @@ func (j *jsiiProxy_SshSecretBackendRole) AllowedUserKeyConfigInput() interface{}
 	_jsii_.Get(
 		j,
 		"allowedUserKeyConfigInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SshSecretBackendRole) AllowedUserKeyLengths() *map[string]*float64 {
-	var returns *map[string]*float64
-	_jsii_.Get(
-		j,
-		"allowedUserKeyLengths",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SshSecretBackendRole) AllowedUserKeyLengthsInput() *map[string]*float64 {
-	var returns *map[string]*float64
-	_jsii_.Get(
-		j,
-		"allowedUserKeyLengthsInput",
 		&returns,
 	)
 	return returns
@@ -955,7 +931,7 @@ func (j *jsiiProxy_SshSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) SshSecretBackendRole {
 	_init_.Initialize()
 
@@ -973,7 +949,7 @@ func NewSshSecretBackendRole(scope constructs.Construct, id *string, config *Ssh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource.
 func NewSshSecretBackendRole_Override(s SshSecretBackendRole, scope constructs.Construct, id *string, config *SshSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1046,17 +1022,6 @@ func (j *jsiiProxy_SshSecretBackendRole)SetAllowedExtensions(val *string) {
 	_jsii_.Set(
 		j,
 		"allowedExtensions",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SshSecretBackendRole)SetAllowedUserKeyLengths(val *map[string]*float64) {
-	if err := j.validateSetAllowedUserKeyLengthsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowedUserKeyLengths",
 		val,
 	)
 }
@@ -1765,14 +1730,6 @@ func (s *jsiiProxy_SshSecretBackendRole) ResetAllowedUserKeyConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllowedUserKeyConfig",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SshSecretBackendRole) ResetAllowedUserKeyLengths() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetAllowedUserKeyLengths",
 		nil, // no parameters
 	)
 }

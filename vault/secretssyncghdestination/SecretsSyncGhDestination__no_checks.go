@@ -95,6 +95,10 @@ func (j *jsiiProxy_SecretsSyncGhDestination) validateSetAccessTokenParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGhDestination) validateSetAppNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGhDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_SecretsSyncGhDestination) validateSetCountParameters(val inte
 }
 
 func (j *jsiiProxy_SecretsSyncGhDestination) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncGhDestination) validateSetInstallationIdParameters(val *float64) error {
 	return nil
 }
 

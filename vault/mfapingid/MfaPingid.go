@@ -5,14 +5,14 @@ package mfapingid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v12/mfapingid/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v13/mfapingid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mfa_pingid vault_mfa_pingid}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_pingid vault_mfa_pingid}.
 type MfaPingid interface {
 	cdktf.TerraformResource
 	AdminUrl() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_MfaPingid) UseSignature() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mfa_pingid vault_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_pingid vault_mfa_pingid} Resource.
 func NewMfaPingid(scope constructs.Construct, id *string, config *MfaPingidConfig) MfaPingid {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewMfaPingid(scope constructs.Construct, id *string, config *MfaPingidConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/3.25.0/docs/resources/mfa_pingid vault_mfa_pingid} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/mfa_pingid vault_mfa_pingid} Resource.
 func NewMfaPingid_Override(m MfaPingid, scope constructs.Construct, id *string, config *MfaPingidConfig) {
 	_init_.Initialize()
 

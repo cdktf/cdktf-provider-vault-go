@@ -151,10 +151,6 @@ func (j *jsiiProxy_AdSecretBackend) validateSetDiscoverdnParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_AdSecretBackend) validateSetFormatterParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AdSecretBackend) validateSetGroupattrParameters(val *string) error {
 	return nil
 }
@@ -176,10 +172,6 @@ func (j *jsiiProxy_AdSecretBackend) validateSetInsecureTlsParameters(val interfa
 }
 
 func (j *jsiiProxy_AdSecretBackend) validateSetLastRotationToleranceParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_AdSecretBackend) validateSetLengthParameters(val *float64) error {
 	return nil
 }
 

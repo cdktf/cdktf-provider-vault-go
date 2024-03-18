@@ -107,6 +107,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetCustomTagsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -128,6 +132,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetProvisionersParameters(
 }
 
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetRoleArnParameters(val *string) error {
 	return nil
 }
 

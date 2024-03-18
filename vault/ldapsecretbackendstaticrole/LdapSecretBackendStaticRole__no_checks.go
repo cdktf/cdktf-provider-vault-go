@@ -131,6 +131,10 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetRotationPeriodParamet
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetSkipImportRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackendStaticRole) validateSetUsernameParameters(val *string) error {
 	return nil
 }
