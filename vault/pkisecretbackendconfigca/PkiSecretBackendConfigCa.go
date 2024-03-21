@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca}.
 type PkiSecretBackendConfigCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) PkiSecretBackendConfigCa {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewPkiSecretBackendConfigCa(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.0.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/pki_secret_backend_config_ca vault_pki_secret_backend_config_ca} Resource.
 func NewPkiSecretBackendConfigCa_Override(p PkiSecretBackendConfigCa, scope constructs.Construct, id *string, config *PkiSecretBackendConfigCaConfig) {
 	_init_.Initialize()
 
