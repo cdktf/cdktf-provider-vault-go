@@ -107,6 +107,10 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetDeploymentEnvironmen
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetGranularityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

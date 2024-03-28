@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
 type SecretsSyncVercelDestination interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -45,6 +45,9 @@ type SecretsSyncVercelDestination interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Granularity() *string
+	SetGranularity(val *string)
+	GranularityInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -129,6 +132,7 @@ type SecretsSyncVercelDestination interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetGranularity()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -269,6 +273,26 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncVercelDestination) Granularity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"granularity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncVercelDestination) GranularityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"granularityInput",
 		&returns,
 	)
 	return returns
@@ -485,7 +509,7 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) SecretsSyncVercelDestination {
 	_init_.Initialize()
 
@@ -503,7 +527,7 @@ func NewSecretsSyncVercelDestination(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination} Resource.
 func NewSecretsSyncVercelDestination_Override(s SecretsSyncVercelDestination, scope constructs.Construct, id *string, config *SecretsSyncVercelDestinationConfig) {
 	_init_.Initialize()
 
@@ -570,6 +594,17 @@ func (j *jsiiProxy_SecretsSyncVercelDestination)SetForEach(val cdktf.ITerraformI
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncVercelDestination)SetGranularity(val *string) {
+	if err := j.validateSetGranularityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"granularity",
 		val,
 	)
 }
@@ -1020,6 +1055,14 @@ func (s *jsiiProxy_SecretsSyncVercelDestination) OverrideLogicalId(newLogicalId 
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncVercelDestination) ResetGranularity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGranularity",
+		nil, // no parameters
 	)
 }
 

@@ -353,6 +353,14 @@ func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetDeploymentEnvironmen
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetGranularityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncVercelDestination) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

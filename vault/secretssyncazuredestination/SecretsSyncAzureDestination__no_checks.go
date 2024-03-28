@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetCustomTagsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetGranularityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

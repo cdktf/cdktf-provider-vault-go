@@ -107,6 +107,10 @@ func (j *jsiiProxy_SecretsSyncGhDestination) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGhDestination) validateSetGranularityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGhDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

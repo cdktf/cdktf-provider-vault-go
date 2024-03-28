@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}.
 type GcpSecretRoleset interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GcpSecretRoleset) TokenScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource.
 func NewGcpSecretRoleset(scope constructs.Construct, id *string, config *GcpSecretRolesetConfig) GcpSecretRoleset {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGcpSecretRoleset(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource.
 func NewGcpSecretRoleset_Override(g GcpSecretRoleset, scope constructs.Construct, id *string, config *GcpSecretRolesetConfig) {
 	_init_.Initialize()
 

@@ -111,6 +111,10 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetExternalIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetGranularityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAwsDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

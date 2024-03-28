@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}.
 type KubernetesSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowedKubernetesNamespaces() *[]*string
 	SetAllowedKubernetesNamespaces(val *[]*string)
+	AllowedKubernetesNamespaceSelector() *string
+	SetAllowedKubernetesNamespaceSelector(val *string)
+	AllowedKubernetesNamespaceSelectorInput() *string
 	AllowedKubernetesNamespacesInput() *[]*string
 	Backend() *string
 	SetBackend(val *string)
@@ -146,6 +149,8 @@ type KubernetesSecretBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedKubernetesNamespaces()
+	ResetAllowedKubernetesNamespaceSelector()
 	ResetExtraAnnotations()
 	ResetExtraLabels()
 	ResetGeneratedRoleRules()
@@ -183,6 +188,26 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) AllowedKubernetesNamespaces() *[
 	_jsii_.Get(
 		j,
 		"allowedKubernetesNamespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackendRole) AllowedKubernetesNamespaceSelector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedKubernetesNamespaceSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackendRole) AllowedKubernetesNamespaceSelectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"allowedKubernetesNamespaceSelectorInput",
 		&returns,
 	)
 	return returns
@@ -619,7 +644,7 @@ func (j *jsiiProxy_KubernetesSecretBackendRole) TokenMaxTtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) KubernetesSecretBackendRole {
 	_init_.Initialize()
 
@@ -637,7 +662,7 @@ func NewKubernetesSecretBackendRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource.
 func NewKubernetesSecretBackendRole_Override(k KubernetesSecretBackendRole, scope constructs.Construct, id *string, config *KubernetesSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -655,6 +680,17 @@ func (j *jsiiProxy_KubernetesSecretBackendRole)SetAllowedKubernetesNamespaces(va
 	_jsii_.Set(
 		j,
 		"allowedKubernetesNamespaces",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackendRole)SetAllowedKubernetesNamespaceSelector(val *string) {
+	if err := j.validateSetAllowedKubernetesNamespaceSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedKubernetesNamespaceSelector",
 		val,
 	)
 }
@@ -1220,6 +1256,22 @@ func (k *jsiiProxy_KubernetesSecretBackendRole) OverrideLogicalId(newLogicalId *
 		k,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackendRole) ResetAllowedKubernetesNamespaces() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedKubernetesNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackendRole) ResetAllowedKubernetesNamespaceSelector() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedKubernetesNamespaceSelector",
+		nil, // no parameters
 	)
 }
 

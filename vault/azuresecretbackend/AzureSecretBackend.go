@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +548,7 @@ func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApiInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 

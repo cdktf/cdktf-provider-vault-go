@@ -369,6 +369,14 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetCustomTagsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetGranularityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncAzureDestination) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

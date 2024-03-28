@@ -107,6 +107,10 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetCustomTagsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetGranularityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsSyncGcpDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

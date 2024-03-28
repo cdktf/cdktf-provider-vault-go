@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 type SecretsSyncAzureDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -51,6 +51,9 @@ type SecretsSyncAzureDestination interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Granularity() *string
+	SetGranularity(val *string)
+	GranularityInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -139,6 +142,7 @@ type SecretsSyncAzureDestination interface {
 	ResetClientSecret()
 	ResetCloud()
 	ResetCustomTags()
+	ResetGranularity()
 	ResetId()
 	ResetKeyVaultUri()
 	ResetNamespace()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) Granularity() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"granularity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination) GranularityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"granularityInput",
 		&returns,
 	)
 	return returns
@@ -536,7 +560,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination_Override(s SecretsSyncAzureDestination, scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) {
 	_init_.Initialize()
 
@@ -643,6 +667,17 @@ func (j *jsiiProxy_SecretsSyncAzureDestination)SetForEach(val cdktf.ITerraformIt
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsSyncAzureDestination)SetGranularity(val *string) {
+	if err := j.validateSetGranularityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"granularity",
 		val,
 	)
 }
@@ -1124,6 +1159,14 @@ func (s *jsiiProxy_SecretsSyncAzureDestination) ResetCustomTags() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCustomTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsSyncAzureDestination) ResetGranularity() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGranularity",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_association vault_secrets_sync_association}.
 type SecretsSyncAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,7 @@ type SecretsSyncAssociation interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() SecretsSyncAssociationMetadataList
 	Mount() *string
 	SetMount(val *string)
 	MountInput() *string
@@ -70,7 +71,6 @@ type SecretsSyncAssociation interface {
 	SecretName() *string
 	SetSecretName(val *string)
 	SecretNameInput() *string
-	SyncStatus() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -80,7 +80,6 @@ type SecretsSyncAssociation interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	UpdatedAt() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -257,6 +256,16 @@ func (j *jsiiProxy_SecretsSyncAssociation) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_SecretsSyncAssociation) Metadata() SecretsSyncAssociationMetadataList {
+	var returns SecretsSyncAssociationMetadataList
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsSyncAssociation) Mount() *string {
 	var returns *string
 	_jsii_.Get(
@@ -377,16 +386,6 @@ func (j *jsiiProxy_SecretsSyncAssociation) SecretNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAssociation) SyncStatus() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"syncStatus",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecretsSyncAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -437,18 +436,8 @@ func (j *jsiiProxy_SecretsSyncAssociation) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsSyncAssociation) UpdatedAt() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"updatedAt",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
 func NewSecretsSyncAssociation(scope constructs.Construct, id *string, config *SecretsSyncAssociationConfig) SecretsSyncAssociation {
 	_init_.Initialize()
 
@@ -466,7 +455,7 @@ func NewSecretsSyncAssociation(scope constructs.Construct, id *string, config *S
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.1.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource.
 func NewSecretsSyncAssociation_Override(s SecretsSyncAssociation, scope constructs.Construct, id *string, config *SecretsSyncAssociationConfig) {
 	_init_.Initialize()
 
