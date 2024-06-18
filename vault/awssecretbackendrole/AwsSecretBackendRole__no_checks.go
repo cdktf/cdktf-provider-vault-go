@@ -115,6 +115,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetIamGroupsParameters(val *[]*
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetIamTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

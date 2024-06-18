@@ -12,13 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 type DatabaseSecretsMount interface {
 	cdktf.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
 	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -44,6 +47,9 @@ type DatabaseSecretsMount interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -69,6 +75,9 @@ type DatabaseSecretsMount interface {
 	HanaInput() interface{}
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	Influxdb() DatabaseSecretsMountInfluxdbList
 	InfluxdbInput() interface{}
@@ -76,6 +85,9 @@ type DatabaseSecretsMount interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -106,9 +118,15 @@ type DatabaseSecretsMount interface {
 	OptionsInput() *map[string]*string
 	Oracle() DatabaseSecretsMountOracleList
 	OracleInput() interface{}
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	Postgresql() DatabaseSecretsMountPostgresqlList
 	PostgresqlInput() interface{}
 	// Experimental.
@@ -200,17 +218,21 @@ type DatabaseSecretsMount interface {
 	PutRedshift(value interface{})
 	PutSnowflake(value interface{})
 	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetCassandra()
 	ResetCouchbase()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetElasticsearch()
 	ResetExternalEntropyAccess()
 	ResetHana()
 	ResetId()
+	ResetIdentityTokenKey()
 	ResetInfluxdb()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetMongodb()
@@ -226,6 +248,8 @@ type DatabaseSecretsMount interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
+	ResetPluginVersion()
 	ResetPostgresql()
 	ResetRedis()
 	ResetRedisElasticache()
@@ -275,6 +299,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) AllowedManagedKeysInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
 		&returns,
 	)
 	return returns
@@ -420,6 +464,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) DefaultLeaseTtlSecondsInput() *float64 
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -560,6 +624,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,6 +679,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
 		&returns,
 	)
 	return returns
@@ -850,6 +954,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) OracleInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -865,6 +989,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -1051,7 +1195,7 @@ func (j *jsiiProxy_DatabaseSecretsMount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) DatabaseSecretsMount {
 	_init_.Initialize()
 
@@ -1069,7 +1213,7 @@ func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount_Override(d DatabaseSecretsMount, scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) {
 	_init_.Initialize()
 
@@ -1087,6 +1231,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetAllowedManagedKeys(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
 		val,
 	)
 }
@@ -1146,6 +1301,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetDefaultLeaseTtlSeconds(val *float64) 
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1195,6 +1361,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1202,6 +1379,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
 		val,
 	)
 }
@@ -1250,6 +1438,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetOptions(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -1257,6 +1456,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1850,6 +2060,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetAllowedManagedKeys() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) ResetAuditNonHmacRequestKeys() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1886,6 +2104,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetDefaultLeaseTtlSeconds() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDefaultLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDelegatedAuthAccessors",
 		nil, // no parameters
 	)
 }
@@ -1930,10 +2156,26 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMount) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMount) ResetInfluxdb() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetInfluxdb",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetListingVisibility",
 		nil, // no parameters
 	)
 }
@@ -2038,6 +2280,22 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 type AzureAuthBackendConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -53,6 +53,12 @@ type AzureAuthBackendConfig interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -133,6 +139,8 @@ type AzureAuthBackendConfig interface {
 	ResetClientSecret()
 	ResetEnvironment()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenTtl()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -325,6 +333,46 @@ func (j *jsiiProxy_AzureAuthBackendConfig) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -476,7 +524,7 @@ func (j *jsiiProxy_AzureAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) AzureAuthBackendConfig {
 	_init_.Initialize()
 
@@ -494,7 +542,7 @@ func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -594,6 +642,28 @@ func (j *jsiiProxy_AzureAuthBackendConfig)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
 		val,
 	)
 }
@@ -1050,6 +1120,22 @@ func (a *jsiiProxy_AzureAuthBackendConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenTtl",
 		nil, // no parameters
 	)
 }

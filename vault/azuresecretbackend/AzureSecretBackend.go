@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,15 @@ type AzureSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -143,6 +152,9 @@ type AzureSecretBackend interface {
 	ResetDisableRemount()
 	ResetEnvironment()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenKey()
+	ResetIdentityTokenTtl()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -357,6 +369,66 @@ func (j *jsiiProxy_AzureSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -548,7 +620,7 @@ func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApiInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -566,7 +638,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -677,6 +749,39 @@ func (j *jsiiProxy_AzureSecretBackend)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
 		val,
 	)
 }
@@ -1163,6 +1268,30 @@ func (a *jsiiProxy_AzureSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenTtl",
 		nil, // no parameters
 	)
 }

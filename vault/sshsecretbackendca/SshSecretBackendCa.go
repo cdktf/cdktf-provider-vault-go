@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 type SshSecretBackendCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -48,6 +48,12 @@ type SshSecretBackendCa interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyBits() *float64
+	SetKeyBits(val *float64)
+	KeyBitsInput() *float64
+	KeyType() *string
+	SetKeyType(val *string)
+	KeyTypeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -125,6 +131,8 @@ type SshSecretBackendCa interface {
 	ResetBackend()
 	ResetGenerateSigningKey()
 	ResetId()
+	ResetKeyBits()
+	ResetKeyType()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -289,6 +297,46 @@ func (j *jsiiProxy_SshSecretBackendCa) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) KeyBits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keyBits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) KeyBitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"keyBitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) KeyType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) KeyTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -430,7 +478,7 @@ func (j *jsiiProxy_SshSecretBackendCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) SshSecretBackendCa {
 	_init_.Initialize()
 
@@ -448,7 +496,7 @@ func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa_Override(s SshSecretBackendCa, scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) {
 	_init_.Initialize()
 
@@ -526,6 +574,28 @@ func (j *jsiiProxy_SshSecretBackendCa)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendCa)SetKeyBits(val *float64) {
+	if err := j.validateSetKeyBitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyBits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendCa)SetKeyType(val *string) {
+	if err := j.validateSetKeyTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyType",
 		val,
 	)
 }
@@ -966,6 +1036,22 @@ func (s *jsiiProxy_SshSecretBackendCa) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) ResetKeyBits() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKeyBits",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) ResetKeyType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKeyType",
 		nil, // no parameters
 	)
 }

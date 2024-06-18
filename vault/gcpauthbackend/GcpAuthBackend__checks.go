@@ -439,6 +439,30 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackend) validateSetIdentityTokenAudienceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIdentityTokenTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -540,6 +564,14 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetProvisionersParameters(val *[]inte
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetServiceAccountEmailParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

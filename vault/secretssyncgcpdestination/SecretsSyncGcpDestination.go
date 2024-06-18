@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
 type SecretsSyncGcpDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -488,7 +488,7 @@ func (j *jsiiProxy_SecretsSyncGcpDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) SecretsSyncGcpDestination {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewSecretsSyncGcpDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource.
 func NewSecretsSyncGcpDestination_Override(s SecretsSyncGcpDestination, scope constructs.Construct, id *string, config *SecretsSyncGcpDestinationConfig) {
 	_init_.Initialize()
 

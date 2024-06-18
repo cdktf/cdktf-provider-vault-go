@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 type AwsSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -51,6 +51,9 @@ type AwsSecretBackendRole interface {
 	IamGroups() *[]*string
 	SetIamGroups(val *[]*string)
 	IamGroupsInput() *[]*string
+	IamTags() *map[string]*string
+	SetIamTags(val *map[string]*string)
+	IamTagsInput() *map[string]*string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -145,6 +148,7 @@ type AwsSecretBackendRole interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetDefaultStsTtl()
 	ResetIamGroups()
+	ResetIamTags()
 	ResetId()
 	ResetMaxStsTtl()
 	ResetNamespace()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_AwsSecretBackendRole) IamGroupsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"iamGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) IamTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"iamTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) IamTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"iamTagsInput",
 		&returns,
 	)
 	return returns
@@ -595,7 +619,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
@@ -613,7 +637,7 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -702,6 +726,17 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetIamGroups(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"iamGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole)SetIamTags(val *map[string]*string) {
+	if err := j.validateSetIamTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamTags",
 		val,
 	)
 }
@@ -1200,6 +1235,14 @@ func (a *jsiiProxy_AwsSecretBackendRole) ResetIamGroups() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetIamGroups",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackendRole) ResetIamTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIamTags",
 		nil, // no parameters
 	)
 }

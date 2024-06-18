@@ -24,21 +24,21 @@ type SecretsSyncGhDestinationConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Unique name of the github destination.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// Fine-grained or personal access token.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
 	AccessToken *string `field:"optional" json:"accessToken" yaml:"accessToken"`
 	// The user-defined name of the GitHub App configuration.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#app_name SecretsSyncGhDestination#app_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#app_name SecretsSyncGhDestination#app_name}
 	AppName *string `field:"optional" json:"appName" yaml:"appName"`
 	// Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#granularity SecretsSyncGhDestination#granularity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#granularity SecretsSyncGhDestination#granularity}
 	Granularity *string `field:"optional" json:"granularity" yaml:"granularity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,23 +47,23 @@ type SecretsSyncGhDestinationConfig struct {
 	//
 	// Necessary if the app_name field is also provided.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#installation_id SecretsSyncGhDestination#installation_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#installation_id SecretsSyncGhDestination#installation_id}
 	InstallationId *float64 `field:"optional" json:"installationId" yaml:"installationId"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 	// Name of the repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
 	RepositoryName *string `field:"optional" json:"repositoryName" yaml:"repositoryName"`
 	// GitHub organization or username that owns the repository.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
 	RepositoryOwner *string `field:"optional" json:"repositoryOwner" yaml:"repositoryOwner"`
 	// Template describing how to generate external secret names.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
 	SecretNameTemplate *string `field:"optional" json:"secretNameTemplate" yaml:"secretNameTemplate"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 type AwsAuthBackendClient interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -56,11 +56,20 @@ type AwsAuthBackendClient interface {
 	IamServerIdHeaderValueInput() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxRetries() *float64
+	SetMaxRetries(val *float64)
+	MaxRetriesInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -76,6 +85,9 @@ type AwsAuthBackendClient interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -143,10 +155,14 @@ type AwsAuthBackendClient interface {
 	ResetIamEndpoint()
 	ResetIamServerIdHeaderValue()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenTtl()
+	ResetMaxRetries()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleArn()
 	ResetSecretKey()
 	ResetStsEndpoint()
 	ResetStsRegion()
@@ -359,6 +375,46 @@ func (j *jsiiProxy_AwsAuthBackendClient) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -374,6 +430,26 @@ func (j *jsiiProxy_AwsAuthBackendClient) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) MaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) MaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetriesInput",
 		&returns,
 	)
 	return returns
@@ -434,6 +510,26 @@ func (j *jsiiProxy_AwsAuthBackendClient) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArnInput",
 		&returns,
 	)
 	return returns
@@ -550,7 +646,7 @@ func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClientInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) AwsAuthBackendClient {
 	_init_.Initialize()
 
@@ -568,7 +664,7 @@ func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient_Override(a AwsAuthBackendClient, scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) {
 	_init_.Initialize()
 
@@ -683,6 +779,28 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -690,6 +808,17 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetMaxRetries(val *float64) {
+	if err := j.validateSetMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRetries",
 		val,
 	)
 }
@@ -720,6 +849,17 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetRoleArn(val *string) {
+	if err := j.validateSetRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleArn",
 		val,
 	)
 }
@@ -1169,6 +1309,30 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AwsAuthBackendClient) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetMaxRetries() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsAuthBackendClient) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1181,6 +1345,14 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRoleArn",
 		nil, // no parameters
 	)
 }

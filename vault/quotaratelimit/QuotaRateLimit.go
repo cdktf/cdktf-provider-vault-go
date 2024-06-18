@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 type QuotaRateLimit interface {
 	cdktf.TerraformResource
 	BlockInterval() *float64
@@ -45,6 +45,9 @@ type QuotaRateLimit interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Inheritable() interface{}
+	SetInheritable(val interface{})
+	InheritableInput() interface{}
 	Interval() *float64
 	SetInterval(val *float64)
 	IntervalInput() *float64
@@ -130,6 +133,7 @@ type QuotaRateLimit interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetBlockInterval()
 	ResetId()
+	ResetInheritable()
 	ResetInterval()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -270,6 +274,26 @@ func (j *jsiiProxy_QuotaRateLimit) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaRateLimit) Inheritable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaRateLimit) InheritableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritableInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +500,7 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
@@ -494,7 +518,7 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id *string, config *QuotaRateLimitConfig) {
 	_init_.Initialize()
 
@@ -561,6 +585,17 @@ func (j *jsiiProxy_QuotaRateLimit)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuotaRateLimit)SetInheritable(val interface{}) {
+	if err := j.validateSetInheritableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inheritable",
 		val,
 	)
 }
@@ -1026,6 +1061,14 @@ func (q *jsiiProxy_QuotaRateLimit) ResetId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuotaRateLimit) ResetInheritable() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetInheritable",
 		nil, // no parameters
 	)
 }

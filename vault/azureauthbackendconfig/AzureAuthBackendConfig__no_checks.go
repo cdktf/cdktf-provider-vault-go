@@ -119,6 +119,14 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetIdentityTokenAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -255,6 +255,14 @@ func (j *jsiiProxy_Mount) validateSetAllowedManagedKeysParameters(val *[]*string
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -369,6 +377,14 @@ func (j *jsiiProxy_Mount) validateSetDefaultLeaseTtlSecondsParameters(val *float
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -405,9 +421,25 @@ func (j *jsiiProxy_Mount) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetIdentityTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Mount) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -457,7 +489,23 @@ func (j *jsiiProxy_Mount) validateSetOptionsParameters(val *map[string]*string) 
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Mount) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

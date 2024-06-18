@@ -95,6 +95,10 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedManagedKeysParamet
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	return nil
 }
@@ -115,6 +119,10 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetDefaultLeaseTtlSecondsPar
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -131,6 +139,10 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetKubernetesCaCertParameters(val *string) error {
 	return nil
 }
@@ -140,6 +152,10 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetKubernetesHostParameters(
 }
 
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetListingVisibilityParameters(val *string) error {
 	return nil
 }
 
@@ -159,7 +175,15 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetOptionsParameters(val *ma
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 

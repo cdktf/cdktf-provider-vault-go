@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count vault_quota_lease_count}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count vault_quota_lease_count}.
 type QuotaLeaseCount interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,9 @@ type QuotaLeaseCount interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Inheritable() interface{}
+	SetInheritable(val interface{})
+	InheritableInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,7 @@ type QuotaLeaseCount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetInheritable()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -242,6 +246,26 @@ func (j *jsiiProxy_QuotaLeaseCount) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaLeaseCount) Inheritable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaLeaseCount) InheritableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"inheritableInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +452,7 @@ func (j *jsiiProxy_QuotaLeaseCount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) QuotaLeaseCount {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewQuotaLeaseCount(scope constructs.Construct, id *string, config *QuotaLea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/quota_lease_count vault_quota_lease_count} Resource.
 func NewQuotaLeaseCount_Override(q QuotaLeaseCount, scope constructs.Construct, id *string, config *QuotaLeaseCountConfig) {
 	_init_.Initialize()
 
@@ -502,6 +526,17 @@ func (j *jsiiProxy_QuotaLeaseCount)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuotaLeaseCount)SetInheritable(val interface{}) {
+	if err := j.validateSetInheritableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inheritable",
 		val,
 	)
 }
@@ -948,6 +983,14 @@ func (q *jsiiProxy_QuotaLeaseCount) ResetId() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuotaLeaseCount) ResetInheritable() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetInheritable",
 		nil, // no parameters
 	)
 }

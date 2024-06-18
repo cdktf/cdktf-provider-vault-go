@@ -103,6 +103,10 @@ func (j *jsiiProxy_QuotaLeaseCount) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_QuotaLeaseCount) validateSetInheritableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuotaLeaseCount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -385,9 +385,33 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdentityTokenAudienceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdentityTokenTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetMaxRetriesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -442,6 +466,14 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetProvisionersParameters(val *
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetRoleArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

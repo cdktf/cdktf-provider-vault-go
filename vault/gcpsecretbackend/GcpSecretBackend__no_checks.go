@@ -119,6 +119,18 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetIdentityTokenAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -140,6 +152,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetPathParameters(val *string) erro
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetServiceAccountEmailParameters(val *string) error {
 	return nil
 }
 

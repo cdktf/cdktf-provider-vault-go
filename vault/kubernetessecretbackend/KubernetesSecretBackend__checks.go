@@ -255,6 +255,14 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedManagedKeysParamet
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -369,6 +377,14 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetDefaultLeaseTtlSecondsPar
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -425,6 +441,14 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetIdParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetKubernetesCaCertParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -444,6 +468,14 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetKubernetesHostParameters(
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -493,7 +525,23 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetOptionsParameters(val *ma
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

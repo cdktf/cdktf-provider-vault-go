@@ -155,6 +155,42 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetTokenParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenBoundCidrsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenExplicitMaxTtlParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenMaxTtlParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenNoDefaultPolicyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenNumUsesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenPoliciesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTtlParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OktaAuthBackend) validateSetTtlParameters(val *string) error {
 	return nil
 }

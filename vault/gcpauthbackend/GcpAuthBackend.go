@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 type GcpAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -59,6 +59,15 @@ type GcpAuthBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -91,6 +100,9 @@ type GcpAuthBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -151,6 +163,9 @@ type GcpAuthBackend interface {
 	ResetDescription()
 	ResetDisableRemount()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenKey()
+	ResetIdentityTokenTtl()
 	ResetLocal()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -159,6 +174,7 @@ type GcpAuthBackend interface {
 	ResetPath()
 	ResetPrivateKeyId()
 	ResetProjectId()
+	ResetServiceAccountEmail()
 	ResetTune()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -398,6 +414,66 @@ func (j *jsiiProxy_GcpAuthBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpAuthBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -558,6 +634,26 @@ func (j *jsiiProxy_GcpAuthBackend) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GcpAuthBackend) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpAuthBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -609,7 +705,7 @@ func (j *jsiiProxy_GcpAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBackendConfig) GcpAuthBackend {
 	_init_.Initialize()
 
@@ -627,7 +723,7 @@ func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend_Override(g GcpAuthBackend, scope constructs.Construct, id *string, config *GcpAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -742,6 +838,39 @@ func (j *jsiiProxy_GcpAuthBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GcpAuthBackend)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -823,6 +952,17 @@ func (j *jsiiProxy_GcpAuthBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -1258,6 +1398,30 @@ func (g *jsiiProxy_GcpAuthBackend) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GcpAuthBackend) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpAuthBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1302,6 +1466,14 @@ func (g *jsiiProxy_GcpAuthBackend) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

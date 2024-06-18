@@ -167,6 +167,10 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetAllowedManagedKeysParameters
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	return nil
 }
@@ -187,6 +191,10 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetDefaultLeaseTtlSecondsParame
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -199,7 +207,15 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetListingVisibilityParameters(val *string) error {
 	return nil
 }
 
@@ -219,7 +235,15 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetOptionsParameters(val *map[s
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend vault_auth_backend}.
 type AuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -48,6 +48,9 @@ type AuthBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -132,6 +135,7 @@ type AuthBackend interface {
 	ResetDescription()
 	ResetDisableRemount()
 	ResetId()
+	ResetIdentityTokenKey()
 	ResetLocal()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_AuthBackend) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AuthBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_AuthBackend) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendConfig) AuthBackend {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend_Override(a AuthBackend, scope constructs.Construct, id *string, config *AuthBackendConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func (j *jsiiProxy_AuthBackend)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AuthBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
 		val,
 	)
 }
@@ -1046,6 +1081,14 @@ func (a *jsiiProxy_AuthBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AuthBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIdentityTokenKey",
 		nil, // no parameters
 	)
 }

@@ -373,6 +373,22 @@ func (j *jsiiProxy_SshSecretBackendCa) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) validateSetKeyBitsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) validateSetKeyTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

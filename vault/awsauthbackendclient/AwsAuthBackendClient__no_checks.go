@@ -123,7 +123,19 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdentityTokenAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetMaxRetriesParameters(val *float64) error {
 	return nil
 }
 
@@ -132,6 +144,10 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetNamespaceParameters(val *str
 }
 
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetRoleArnParameters(val *string) error {
 	return nil
 }
 

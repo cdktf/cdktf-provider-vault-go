@@ -111,6 +111,14 @@ func (j *jsiiProxy_SshSecretBackendCa) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) validateSetKeyBitsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) validateSetKeyTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

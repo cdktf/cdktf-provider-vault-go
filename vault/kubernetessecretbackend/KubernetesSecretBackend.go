@@ -12,13 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
 type KubernetesSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
 	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -40,6 +43,9 @@ type KubernetesSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -63,6 +69,9 @@ type KubernetesSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	KubernetesCaCert() *string
 	SetKubernetesCaCert(val *string)
@@ -74,6 +83,9 @@ type KubernetesSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -88,9 +100,15 @@ type KubernetesSecretBackend interface {
 	Options() *map[string]*string
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -157,15 +175,19 @@ type KubernetesSecretBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableLocalCaJwt()
 	ResetExternalEntropyAccess()
 	ResetId()
+	ResetIdentityTokenKey()
 	ResetKubernetesCaCert()
 	ResetKubernetesHost()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -173,6 +195,8 @@ type KubernetesSecretBackend interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
+	ResetPluginVersion()
 	ResetSealWrap()
 	ResetServiceAccountJwt()
 	SynthesizeAttributes() *map[string]interface{}
@@ -218,6 +242,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) AllowedManagedKeysInput() *[]*string
 	_jsii_.Get(
 		j,
 		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +362,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) DefaultLeaseTtlSecondsInput() *float
 	_jsii_.Get(
 		j,
 		"defaultLeaseTtlSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
 		&returns,
 	)
 	return returns
@@ -433,6 +497,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -488,6 +572,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) Lifecycle() *cdktf.TerraformResource
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
 		&returns,
 	)
 	return returns
@@ -583,6 +687,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) OptionsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -598,6 +722,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -704,7 +848,7 @@ func (j *jsiiProxy_KubernetesSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) KubernetesSecretBackend {
 	_init_.Initialize()
 
@@ -722,7 +866,7 @@ func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend_Override(k KubernetesSecretBackend, scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -740,6 +884,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetAllowedManagedKeys(val *[]*string)
 	_jsii_.Set(
 		j,
 		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
 		val,
 	)
 }
@@ -795,6 +950,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetDefaultLeaseTtlSeconds(val *float6
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtlSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
 		val,
 	)
 }
@@ -859,6 +1025,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend)SetKubernetesCaCert(val *string) {
 	if err := j.validateSetKubernetesCaCertParameters(val); err != nil {
 		panic(err)
@@ -888,6 +1065,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetLifecycle(val *cdktf.TerraformReso
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
 		val,
 	)
 }
@@ -936,6 +1124,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetOptions(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -943,6 +1142,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1349,6 +1559,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetAllowedManagedKeys() {
 	)
 }
 
+func (k *jsiiProxy_KubernetesSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesSecretBackend) ResetAuditNonHmacRequestKeys() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1369,6 +1587,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetDefaultLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDelegatedAuthAccessors",
 		nil, // no parameters
 	)
 }
@@ -1405,6 +1631,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetId() {
 	)
 }
 
+func (k *jsiiProxy_KubernetesSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KubernetesSecretBackend) ResetKubernetesCaCert() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1417,6 +1651,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetKubernetesHost() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetKubernetesHost",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetListingVisibility",
 		nil, // no parameters
 	)
 }
@@ -1457,6 +1699,22 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }

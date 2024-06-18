@@ -12,13 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
 	AllowedManagedKeys() *[]*string
 	SetAllowedManagedKeys(val *[]*string)
 	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
 	AuditNonHmacRequestKeys() *[]*string
 	SetAuditNonHmacRequestKeys(val *[]*string)
 	AuditNonHmacRequestKeysInput() *[]*string
@@ -58,6 +61,9 @@ type LdapSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -81,6 +87,9 @@ type LdapSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	InsecureTls() interface{}
 	SetInsecureTls(val interface{})
@@ -89,6 +98,9 @@ type LdapSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -103,12 +115,18 @@ type LdapSecretBackend interface {
 	Options() *map[string]*string
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	PasswordPolicy() *string
 	SetPasswordPolicy(val *string)
 	PasswordPolicyInput() *string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -196,6 +214,7 @@ type LdapSecretBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
 	ResetAuditNonHmacRequestKeys()
 	ResetAuditNonHmacResponseKeys()
 	ResetCertificate()
@@ -203,11 +222,14 @@ type LdapSecretBackend interface {
 	ResetClientTlsKey()
 	ResetConnectionTimeout()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableRemount()
 	ResetExternalEntropyAccess()
 	ResetId()
+	ResetIdentityTokenKey()
 	ResetInsecureTls()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -215,8 +237,10 @@ type LdapSecretBackend interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
 	ResetPasswordPolicy()
 	ResetPath()
+	ResetPluginVersion()
 	ResetRequestTimeout()
 	ResetSchema()
 	ResetSealWrap()
@@ -269,6 +293,26 @@ func (j *jsiiProxy_LdapSecretBackend) AllowedManagedKeysInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +538,26 @@ func (j *jsiiProxy_LdapSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackend) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -604,6 +668,26 @@ func (j *jsiiProxy_LdapSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -639,6 +723,26 @@ func (j *jsiiProxy_LdapSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecy
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
 		&returns,
 	)
 	return returns
@@ -734,6 +838,26 @@ func (j *jsiiProxy_LdapSecretBackend) OptionsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_LdapSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapSecretBackend) PasswordPolicy() *string {
 	var returns *string
 	_jsii_.Get(
@@ -769,6 +893,26 @@ func (j *jsiiProxy_LdapSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -1015,7 +1159,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1033,7 +1177,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1051,6 +1195,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetAllowedManagedKeys(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
 		val,
 	)
 }
@@ -1176,6 +1331,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_LdapSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1236,6 +1402,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LdapSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapSecretBackend)SetInsecureTls(val interface{}) {
 	if err := j.validateSetInsecureTlsParameters(val); err != nil {
 		panic(err)
@@ -1254,6 +1431,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLi
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
 		val,
 	)
 }
@@ -1302,6 +1490,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetOptions(val *map[string]*string) {
 	)
 }
 
+func (j *jsiiProxy_LdapSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapSecretBackend)SetPasswordPolicy(val *string) {
 	if err := j.validateSetPasswordPolicyParameters(val); err != nil {
 		panic(err)
@@ -1320,6 +1519,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1803,6 +2013,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetAllowedManagedKeys() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackend) ResetAuditNonHmacRequestKeys() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1859,6 +2077,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDelegatedAuthAccessors",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1891,10 +2117,26 @@ func (l *jsiiProxy_LdapSecretBackend) ResetId() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackend) ResetInsecureTls() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetInsecureTls",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetListingVisibility",
 		nil, // no parameters
 	)
 }
@@ -1939,6 +2181,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetOverrideLogicalId() {
 	)
 }
 
+func (l *jsiiProxy_LdapSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapSecretBackend) ResetPasswordPolicy() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1951,6 +2201,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }

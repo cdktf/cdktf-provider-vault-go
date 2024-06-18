@@ -123,6 +123,18 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetIdentityTokenAudienceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetIdentityTokenTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

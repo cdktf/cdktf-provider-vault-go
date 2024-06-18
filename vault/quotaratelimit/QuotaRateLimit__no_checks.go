@@ -107,6 +107,10 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_QuotaRateLimit) validateSetInheritableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuotaRateLimit) validateSetIntervalParameters(val *float64) error {
 	return nil
 }

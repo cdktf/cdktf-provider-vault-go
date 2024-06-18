@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -93,7 +93,34 @@ type OktaAuthBackend interface {
 	TerraformResourceType() *string
 	Token() *string
 	SetToken(val *string)
+	TokenBoundCidrs() *[]*string
+	SetTokenBoundCidrs(val *[]*string)
+	TokenBoundCidrsInput() *[]*string
+	TokenExplicitMaxTtl() *float64
+	SetTokenExplicitMaxTtl(val *float64)
+	TokenExplicitMaxTtlInput() *float64
 	TokenInput() *string
+	TokenMaxTtl() *float64
+	SetTokenMaxTtl(val *float64)
+	TokenMaxTtlInput() *float64
+	TokenNoDefaultPolicy() interface{}
+	SetTokenNoDefaultPolicy(val interface{})
+	TokenNoDefaultPolicyInput() interface{}
+	TokenNumUses() *float64
+	SetTokenNumUses(val *float64)
+	TokenNumUsesInput() *float64
+	TokenPeriod() *float64
+	SetTokenPeriod(val *float64)
+	TokenPeriodInput() *float64
+	TokenPolicies() *[]*string
+	SetTokenPolicies(val *[]*string)
+	TokenPoliciesInput() *[]*string
+	TokenTtl() *float64
+	SetTokenTtl(val *float64)
+	TokenTtlInput() *float64
+	TokenType() *string
+	SetTokenType(val *string)
+	TokenTypeInput() *string
 	Ttl() *string
 	SetTtl(val *string)
 	TtlInput() *string
@@ -157,6 +184,15 @@ type OktaAuthBackend interface {
 	ResetOverrideLogicalId()
 	ResetPath()
 	ResetToken()
+	ResetTokenBoundCidrs()
+	ResetTokenExplicitMaxTtl()
+	ResetTokenMaxTtl()
+	ResetTokenNoDefaultPolicy()
+	ResetTokenNumUses()
+	ResetTokenPeriod()
+	ResetTokenPolicies()
+	ResetTokenTtl()
+	ResetTokenType()
 	ResetTtl()
 	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
@@ -557,11 +593,191 @@ func (j *jsiiProxy_OktaAuthBackend) Token() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OktaAuthBackend) TokenBoundCidrs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenBoundCidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenBoundCidrsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenBoundCidrsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenExplicitMaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenExplicitMaxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenExplicitMaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenExplicitMaxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OktaAuthBackend) TokenInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"tokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenMaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenMaxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenMaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenMaxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenNoDefaultPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tokenNoDefaultPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenNoDefaultPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tokenNoDefaultPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenNumUses() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenNumUses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenNumUsesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenNumUsesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenPolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenPoliciesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TokenTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenTypeInput",
 		&returns,
 	)
 	return returns
@@ -608,7 +824,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -626,7 +842,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -811,6 +1027,105 @@ func (j *jsiiProxy_OktaAuthBackend)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenBoundCidrs(val *[]*string) {
+	if err := j.validateSetTokenBoundCidrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenBoundCidrs",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenExplicitMaxTtl(val *float64) {
+	if err := j.validateSetTokenExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenExplicitMaxTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenMaxTtl(val *float64) {
+	if err := j.validateSetTokenMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenMaxTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenNoDefaultPolicy(val interface{}) {
+	if err := j.validateSetTokenNoDefaultPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenNoDefaultPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenNumUses(val *float64) {
+	if err := j.validateSetTokenNumUsesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenNumUses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenPeriod(val *float64) {
+	if err := j.validateSetTokenPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenPolicies(val *[]*string) {
+	if err := j.validateSetTokenPoliciesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenPolicies",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenTtl(val *float64) {
+	if err := j.validateSetTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OktaAuthBackend)SetTokenType(val *string) {
+	if err := j.validateSetTokenTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenType",
 		val,
 	)
 }
@@ -1285,6 +1600,78 @@ func (o *jsiiProxy_OktaAuthBackend) ResetToken() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenBoundCidrs() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenBoundCidrs",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenExplicitMaxTtl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenExplicitMaxTtl",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenMaxTtl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenMaxTtl",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenNoDefaultPolicy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenNoDefaultPolicy",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenNumUses() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenNumUses",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenPeriod() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenPeriod",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenPolicies() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenPolicies",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenTtl() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenTtl",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTokenType() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTokenType",
 		nil, // no parameters
 	)
 }

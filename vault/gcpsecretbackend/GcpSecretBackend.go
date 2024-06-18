@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 type GcpSecretBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -53,6 +54,15 @@ type GcpSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenAudience() *string
+	SetIdentityTokenAudience(val *string)
+	IdentityTokenAudienceInput() *string
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
+	IdentityTokenTtl() *float64
+	SetIdentityTokenTtl(val *float64)
+	IdentityTokenTtlInput() *float64
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -82,6 +92,9 @@ type GcpSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -136,6 +149,9 @@ type GcpSecretBackend interface {
 	ResetDescription()
 	ResetDisableRemount()
 	ResetId()
+	ResetIdentityTokenAudience()
+	ResetIdentityTokenKey()
+	ResetIdentityTokenTtl()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
@@ -143,6 +159,7 @@ type GcpSecretBackend interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetServiceAccountEmail()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -159,6 +176,16 @@ type GcpSecretBackend interface {
 // The jsii proxy struct for GcpSecretBackend
 type jsiiProxy_GcpSecretBackend struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GcpSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GcpSecretBackend) CdktfStack() cdktf.TerraformStack {
@@ -331,6 +358,66 @@ func (j *jsiiProxy_GcpSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenAudience() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudience",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenAudienceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenAudienceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) IdentityTokenTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"identityTokenTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -471,6 +558,26 @@ func (j *jsiiProxy_GcpSecretBackend) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -502,7 +609,7 @@ func (j *jsiiProxy_GcpSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecretBackendConfig) GcpSecretBackend {
 	_init_.Initialize()
 
@@ -520,7 +627,7 @@ func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.2.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct, id *string, config *GcpSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -624,6 +731,39 @@ func (j *jsiiProxy_GcpSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GcpSecretBackend)SetIdentityTokenAudience(val *string) {
+	if err := j.validateSetIdentityTokenAudienceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenAudience",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetIdentityTokenTtl(val *float64) {
+	if err := j.validateSetIdentityTokenTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -694,6 +834,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -1091,6 +1242,30 @@ func (g *jsiiProxy_GcpSecretBackend) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetIdentityTokenAudience() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenAudience",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetIdentityTokenTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentityTokenTtl",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1127,6 +1302,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

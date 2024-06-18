@@ -95,6 +95,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetAllowedManagedKeysParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
 	return nil
 }
@@ -139,6 +143,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetDefaultLeaseTtlSecondsParameter
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -155,11 +163,19 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetInsecureTlsParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_LdapSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetListingVisibilityParameters(val *string) error {
 	return nil
 }
 
@@ -179,11 +195,19 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetOptionsParameters(val *map[stri
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetPasswordPolicyParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_LdapSecretBackend) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
