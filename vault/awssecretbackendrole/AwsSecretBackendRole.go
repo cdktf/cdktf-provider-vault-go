@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 type AwsSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -40,6 +40,9 @@ type AwsSecretBackendRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -94,6 +97,9 @@ type AwsSecretBackendRole interface {
 	RoleArns() *[]*string
 	SetRoleArns(val *[]*string)
 	RoleArnsInput() *[]*string
+	SessionTags() *map[string]*string
+	SetSessionTags(val *map[string]*string)
+	SessionTagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -147,6 +153,7 @@ type AwsSecretBackendRole interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDefaultStsTtl()
+	ResetExternalId()
 	ResetIamGroups()
 	ResetIamTags()
 	ResetId()
@@ -159,6 +166,7 @@ type AwsSecretBackendRole interface {
 	ResetPolicyArns()
 	ResetPolicyDocument()
 	ResetRoleArns()
+	ResetSessionTags()
 	ResetUserPath()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -283,6 +291,26 @@ func (j *jsiiProxy_AwsSecretBackendRole) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -568,6 +596,26 @@ func (j *jsiiProxy_AwsSecretBackendRole) RoleArnsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) SessionTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sessionTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) SessionTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"sessionTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -619,7 +667,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
@@ -637,7 +685,7 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -707,6 +755,17 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
 		val,
 	)
 }
@@ -855,6 +914,17 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetRoleArns(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"roleArns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole)SetSessionTags(val *map[string]*string) {
+	if err := j.validateSetSessionTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sessionTags",
 		val,
 	)
 }
@@ -1231,6 +1301,14 @@ func (a *jsiiProxy_AwsSecretBackendRole) ResetDefaultStsTtl() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackendRole) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExternalId",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackendRole) ResetIamGroups() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1307,6 +1385,14 @@ func (a *jsiiProxy_AwsSecretBackendRole) ResetRoleArns() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRoleArns",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackendRole) ResetSessionTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSessionTags",
 		nil, // no parameters
 	)
 }

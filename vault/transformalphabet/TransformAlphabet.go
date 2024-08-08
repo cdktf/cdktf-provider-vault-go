@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_alphabet vault_transform_alphabet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_alphabet vault_transform_alphabet}.
 type TransformAlphabet interface {
 	cdktf.TerraformResource
 	Alphabet() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_TransformAlphabet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
 func NewTransformAlphabet(scope constructs.Construct, id *string, config *TransformAlphabetConfig) TransformAlphabet {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewTransformAlphabet(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.3.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/transform_alphabet vault_transform_alphabet} Resource.
 func NewTransformAlphabet_Override(t TransformAlphabet, scope constructs.Construct, id *string, config *TransformAlphabetConfig) {
 	_init_.Initialize()
 

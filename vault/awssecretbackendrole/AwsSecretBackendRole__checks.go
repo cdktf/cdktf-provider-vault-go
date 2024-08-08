@@ -361,6 +361,14 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetDefaultStsTtlParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetExternalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetIamGroupsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -488,6 +496,14 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetRoleArnsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetSessionTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

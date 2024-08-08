@@ -111,6 +111,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetDefaultStsTtlParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetIamGroupsParameters(val *[]*string) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetRoleArnsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetSessionTagsParameters(val *map[string]*string) error {
 	return nil
 }
 
