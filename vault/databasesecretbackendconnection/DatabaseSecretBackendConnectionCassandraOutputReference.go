@@ -56,6 +56,9 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	ProtocolVersion() *float64
 	SetProtocolVersion(val *float64)
 	ProtocolVersionInput() *float64
+	SkipVerification() interface{}
+	SetSkipVerification(val interface{})
+	SkipVerificationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -102,6 +105,7 @@ type DatabaseSecretBackendConnectionCassandraOutputReference interface {
 	ResetPemJson()
 	ResetPort()
 	ResetProtocolVersion()
+	ResetSkipVerification()
 	ResetTls()
 	ResetUsername()
 	// Produce the Token's value at resolution time.
@@ -329,6 +333,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Prot
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) SkipVerification() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) SkipVerificationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerificationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -534,6 +558,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetPr
 	_jsii_.Set(
 		j,
 		"protocolVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference)SetSkipVerification(val interface{}) {
+	if err := j.validateSetSkipVerificationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipVerification",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetProtocolVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) ResetSkipVerification() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipVerification",
 		nil, // no parameters
 	)
 }

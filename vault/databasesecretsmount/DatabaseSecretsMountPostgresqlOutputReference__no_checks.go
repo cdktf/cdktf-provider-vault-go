@@ -107,7 +107,15 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPlu
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPrivateKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetSelfManagedParameters(val interface{}) error {
 	return nil
 }
 
@@ -120,6 +128,14 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetTer
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetTlsCertificateParameters(val *string) error {
 	return nil
 }
 

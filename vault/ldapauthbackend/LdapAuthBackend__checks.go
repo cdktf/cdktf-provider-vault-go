@@ -340,6 +340,14 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetConnectionTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

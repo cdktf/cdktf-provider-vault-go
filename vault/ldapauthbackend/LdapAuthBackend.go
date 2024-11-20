@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 type LdapAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -40,6 +40,9 @@ type LdapAuthBackend interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionTimeout() *float64
+	SetConnectionTimeout(val *float64)
+	ConnectionTimeoutInput() *float64
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -225,6 +228,7 @@ type LdapAuthBackend interface {
 	ResetCertificate()
 	ResetClientTlsCert()
 	ResetClientTlsKey()
+	ResetConnectionTimeout()
 	ResetDenyNullBind()
 	ResetDescription()
 	ResetDisableRemount()
@@ -422,6 +426,26 @@ func (j *jsiiProxy_LdapAuthBackend) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) ConnectionTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"connectionTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) ConnectionTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"connectionTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -1208,7 +1232,7 @@ func (j *jsiiProxy_LdapAuthBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuthBackendConfig) LdapAuthBackend {
 	_init_.Initialize()
 
@@ -1226,7 +1250,7 @@ func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, id *string, config *LdapAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1310,6 +1334,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetConnectionTimeout(val *float64) {
+	if err := j.validateSetConnectionTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionTimeout",
 		val,
 	)
 }
@@ -2120,6 +2155,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetClientTlsKey() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetClientTlsKey",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetConnectionTimeout() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConnectionTimeout",
 		nil, // no parameters
 	)
 }

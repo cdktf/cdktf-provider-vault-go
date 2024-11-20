@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
 type DatabaseSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -82,6 +82,9 @@ type DatabaseSecretBackendStaticRole interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SelfManagedPassword() *string
+	SetSelfManagedPassword(val *string)
+	SelfManagedPasswordInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -143,6 +146,7 @@ type DatabaseSecretBackendStaticRole interface {
 	ResetRotationSchedule()
 	ResetRotationStatements()
 	ResetRotationWindow()
+	ResetSelfManagedPassword()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -471,6 +475,26 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) RotationWindowInput() *float
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) SelfManagedPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfManagedPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) SelfManagedPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfManagedPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -522,7 +546,7 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) DatabaseSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole_Override(d DatabaseSecretBackendStaticRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetRotationWindow(val *float6
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetSelfManagedPassword(val *string) {
+	if err := j.validateSetSelfManagedPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfManagedPassword",
 		val,
 	)
 }
@@ -1134,6 +1169,14 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetSelfManagedPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfManagedPassword",
 		nil, // no parameters
 	)
 }

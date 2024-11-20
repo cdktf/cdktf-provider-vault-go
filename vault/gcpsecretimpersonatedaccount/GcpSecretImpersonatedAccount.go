@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account}.
 type GcpSecretImpersonatedAccount interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -80,6 +80,9 @@ type GcpSecretImpersonatedAccount interface {
 	TokenScopes() *[]*string
 	SetTokenScopes(val *[]*string)
 	TokenScopesInput() *[]*string
+	Ttl() *string
+	SetTtl(val *string)
+	TtlInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -129,6 +132,7 @@ type GcpSecretImpersonatedAccount interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTokenScopes()
+	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -437,8 +441,28 @@ func (j *jsiiProxy_GcpSecretImpersonatedAccount) TokenScopesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretImpersonatedAccount) Ttl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
+func (j *jsiiProxy_GcpSecretImpersonatedAccount) TtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
 func NewGcpSecretImpersonatedAccount(scope constructs.Construct, id *string, config *GcpSecretImpersonatedAccountConfig) GcpSecretImpersonatedAccount {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewGcpSecretImpersonatedAccount(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/gcp_secret_impersonated_account vault_gcp_secret_impersonated_account} Resource.
 func NewGcpSecretImpersonatedAccount_Override(g GcpSecretImpersonatedAccount, scope constructs.Construct, id *string, config *GcpSecretImpersonatedAccountConfig) {
 	_init_.Initialize()
 
@@ -597,6 +621,17 @@ func (j *jsiiProxy_GcpSecretImpersonatedAccount)SetTokenScopes(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"tokenScopes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretImpersonatedAccount)SetTtl(val *string) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ttl",
 		val,
 	)
 }
@@ -982,6 +1017,14 @@ func (g *jsiiProxy_GcpSecretImpersonatedAccount) ResetTokenScopes() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTokenScopes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretImpersonatedAccount) ResetTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTtl",
 		nil, // no parameters
 	)
 }

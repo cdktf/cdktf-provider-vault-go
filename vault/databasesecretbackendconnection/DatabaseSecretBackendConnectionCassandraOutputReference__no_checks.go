@@ -95,6 +95,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetSkipVerificationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionCassandraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

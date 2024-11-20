@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenScopes", GoMethod: "ResetTokenScopes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountEmail", GoGetter: "ServiceAccountEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountEmailInput", GoGetter: "ServiceAccountEmailInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountProject", GoGetter: "ServiceAccountProject"},
@@ -71,6 +72,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
+			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretImpersonatedAccount{}

@@ -115,6 +115,10 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) validateSetPemKeysParam
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) validateSetUseAnnotationsAsAliasMetadataParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataVaultKubernetesAuthBackendConfigParameters(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) error {
 	return nil
 }

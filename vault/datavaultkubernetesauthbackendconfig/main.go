@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPemKeys", GoMethod: "ResetPemKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseAnnotationsAsAliasMetadata", GoMethod: "ResetUseAnnotationsAsAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
@@ -74,6 +75,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "useAnnotationsAsAliasMetadata", GoGetter: "UseAnnotationsAsAliasMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "useAnnotationsAsAliasMetadataInput", GoGetter: "UseAnnotationsAsAliasMetadataInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataVaultKubernetesAuthBackendConfig{}

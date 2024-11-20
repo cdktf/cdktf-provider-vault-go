@@ -65,9 +65,15 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PrivateKey() *string
+	SetPrivateKey(val *string)
+	PrivateKeyInput() *string
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	SelfManaged() interface{}
+	SetSelfManaged(val interface{})
+	SelfManagedInput() interface{}
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
@@ -79,6 +85,12 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCa() *string
+	SetTlsCa(val *string)
+	TlsCaInput() *string
+	TlsCertificate() *string
+	SetTlsCertificate(val *string)
+	TlsCertificateInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -122,8 +134,12 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPluginName()
+	ResetPrivateKey()
 	ResetRootRotationStatements()
+	ResetSelfManaged()
 	ResetServiceAccountJson()
+	ResetTlsCa()
+	ResetTlsCertificate()
 	ResetUsername()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -412,6 +428,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PluginNameInpu
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) RootRotationStatements() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -427,6 +463,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) RootRotationSt
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) SelfManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) SelfManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManagedInput",
 		&returns,
 	)
 	return returns
@@ -467,6 +523,46 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TerraformResou
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TlsCa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TlsCaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TlsCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) TlsCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateInput",
 		&returns,
 	)
 	return returns
@@ -714,6 +810,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPluginName(v
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetRootRotationStatements(val *[]*string) {
 	if err := j.validateSetRootRotationStatementsParameters(val); err != nil {
 		panic(err)
@@ -721,6 +828,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetRootRotation
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetSelfManaged(val interface{}) {
+	if err := j.validateSetSelfManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfManaged",
 		val,
 	)
 }
@@ -754,6 +872,28 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetTlsCa(val *string) {
+	if err := j.validateSetTlsCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetTlsCertificate(val *string) {
+	if err := j.validateSetTlsCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCertificate",
 		val,
 	)
 }
@@ -1057,6 +1197,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPluginNam
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPrivateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetRootRotationStatements() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1065,10 +1213,34 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetRootRotat
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetSelfManaged() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfManaged",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetServiceAccountJson() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetTlsCa() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCa",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetTlsCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCertificate",
 		nil, // no parameters
 	)
 }

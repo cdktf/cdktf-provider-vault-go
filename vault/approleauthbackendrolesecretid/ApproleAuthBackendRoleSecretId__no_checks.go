@@ -123,6 +123,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetNamespaceParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetNumUsesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetRoleNameParameters
 }
 
 func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetSecretIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 

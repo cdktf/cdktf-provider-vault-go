@@ -91,6 +91,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetPrivateKeyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetSelfManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }
@@ -100,6 +108,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetTlsCaParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetTlsCertificateParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
 type DataVaultKubernetesAuthBackendConfig interface {
 	cdktf.TerraformDataSource
 	Backend() *string
@@ -80,6 +80,9 @@ type DataVaultKubernetesAuthBackendConfig interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseAnnotationsAsAliasMetadata() interface{}
+	SetUseAnnotationsAsAliasMetadata(val interface{})
+	UseAnnotationsAsAliasMetadataInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -117,6 +120,7 @@ type DataVaultKubernetesAuthBackendConfig interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPemKeys()
+	ResetUseAnnotationsAsAliasMetadata()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -456,8 +460,28 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) TerraformResourceType()
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) UseAnnotationsAsAliasMetadata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAnnotationsAsAliasMetadata",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig) UseAnnotationsAsAliasMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAnnotationsAsAliasMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) DataVaultKubernetesAuthBackendConfig {
 	_init_.Initialize()
 
@@ -475,7 +499,7 @@ func NewDataVaultKubernetesAuthBackendConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/data-sources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Data Source.
 func NewDataVaultKubernetesAuthBackendConfig_Override(d DataVaultKubernetesAuthBackendConfig, scope constructs.Construct, id *string, config *DataVaultKubernetesAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -627,6 +651,17 @@ func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig)SetProvider(val cdktf.Te
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendConfig)SetUseAnnotationsAsAliasMetadata(val interface{}) {
+	if err := j.validateSetUseAnnotationsAsAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useAnnotationsAsAliasMetadata",
 		val,
 	)
 }
@@ -992,6 +1027,14 @@ func (d *jsiiProxy_DataVaultKubernetesAuthBackendConfig) ResetPemKeys() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPemKeys",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultKubernetesAuthBackendConfig) ResetUseAnnotationsAsAliasMetadata() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseAnnotationsAsAliasMetadata",
 		nil, // no parameters
 	)
 }

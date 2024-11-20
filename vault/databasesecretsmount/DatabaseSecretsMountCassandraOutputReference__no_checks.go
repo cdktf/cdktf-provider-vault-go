@@ -115,6 +115,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRoot
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetSkipVerificationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

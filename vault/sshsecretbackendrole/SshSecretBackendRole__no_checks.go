@@ -127,6 +127,10 @@ func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowedUsersTemplateParamete
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowEmptyPrincipalsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendRole) validateSetAllowHostCertificatesParameters(val interface{}) error {
 	return nil
 }

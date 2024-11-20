@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id}.
 type ApproleAuthBackendRoleSecretId interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -61,6 +61,9 @@ type ApproleAuthBackendRoleSecretId interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NumUses() *float64
+	SetNumUses(val *float64)
+	NumUsesInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -83,6 +86,9 @@ type ApproleAuthBackendRoleSecretId interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Ttl() *float64
+	SetTtl(val *float64)
+	TtlInput() *float64
 	WithWrappedAccessor() interface{}
 	SetWithWrappedAccessor(val interface{})
 	WithWrappedAccessorInput() interface{}
@@ -139,10 +145,12 @@ type ApproleAuthBackendRoleSecretId interface {
 	ResetId()
 	ResetMetadata()
 	ResetNamespace()
+	ResetNumUses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecretId()
+	ResetTtl()
 	ResetWithWrappedAccessor()
 	ResetWrappingTtl()
 	SynthesizeAttributes() *map[string]interface{}
@@ -373,6 +381,26 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) NumUses() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numUses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) NumUsesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numUsesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -473,6 +501,26 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) Ttl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) TtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) WithWrappedAccessor() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -534,7 +582,7 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId) WrappingTtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) ApproleAuthBackendRoleSecretId {
 	_init_.Initialize()
 
@@ -552,7 +600,7 @@ func NewApproleAuthBackendRoleSecretId(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/approle_auth_backend_role_secret_id vault_approle_auth_backend_role_secret_id} Resource.
 func NewApproleAuthBackendRoleSecretId_Override(a ApproleAuthBackendRoleSecretId, scope constructs.Construct, id *string, config *ApproleAuthBackendRoleSecretIdConfig) {
 	_init_.Initialize()
 
@@ -667,6 +715,17 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetNumUses(val *float64) {
+	if err := j.validateSetNumUsesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numUses",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -704,6 +763,17 @@ func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetSecretId(val *string) {
 	_jsii_.Set(
 		j,
 		"secretId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApproleAuthBackendRoleSecretId)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ttl",
 		val,
 	)
 }
@@ -1123,6 +1193,14 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) ResetNamespace() {
 	)
 }
 
+func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) ResetNumUses() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNumUses",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1135,6 +1213,14 @@ func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) ResetSecretId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSecretId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApproleAuthBackendRoleSecretId) ResetTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTtl",
 		nil, // no parameters
 	)
 }

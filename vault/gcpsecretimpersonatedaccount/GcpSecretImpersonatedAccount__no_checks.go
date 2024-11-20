@@ -131,6 +131,10 @@ func (j *jsiiProxy_GcpSecretImpersonatedAccount) validateSetTokenScopesParameter
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretImpersonatedAccount) validateSetTtlParameters(val *string) error {
+	return nil
+}
+
 func validateNewGcpSecretImpersonatedAccountParameters(scope constructs.Construct, id *string, config *GcpSecretImpersonatedAccountConfig) error {
 	return nil
 }

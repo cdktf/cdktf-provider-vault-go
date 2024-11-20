@@ -147,6 +147,10 @@ func (j *jsiiProxy_KubernetesAuthBackendConfig) validateSetTokenReviewerJwtParam
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendConfig) validateSetUseAnnotationsAsAliasMetadataParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewKubernetesAuthBackendConfigParameters(scope constructs.Construct, id *string, config *KubernetesAuthBackendConfigConfig) error {
 	return nil
 }

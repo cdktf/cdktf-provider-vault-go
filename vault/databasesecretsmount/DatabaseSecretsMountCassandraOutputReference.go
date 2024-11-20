@@ -71,6 +71,9 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	SkipVerification() interface{}
+	SetSkipVerification(val interface{})
+	SkipVerificationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -124,6 +127,7 @@ type DatabaseSecretsMountCassandraOutputReference interface {
 	ResetPort()
 	ResetProtocolVersion()
 	ResetRootRotationStatements()
+	ResetSkipVerification()
 	ResetTls()
 	ResetUsername()
 	ResetVerifyConnection()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) RootRotationSta
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) SkipVerification() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) SkipVerificationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipVerificationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -732,6 +756,17 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetRootRotationS
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference)SetSkipVerification(val interface{}) {
+	if err := j.validateSetSkipVerificationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipVerification",
 		val,
 	)
 }
@@ -1069,6 +1104,14 @@ func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetRootRotati
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) ResetSkipVerification() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipVerification",
 		nil, // no parameters
 	)
 }

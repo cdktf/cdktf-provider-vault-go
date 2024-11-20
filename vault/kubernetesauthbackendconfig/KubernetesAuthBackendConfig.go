@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config}.
 type KubernetesAuthBackendConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -91,6 +91,9 @@ type KubernetesAuthBackendConfig interface {
 	TokenReviewerJwt() *string
 	SetTokenReviewerJwt(val *string)
 	TokenReviewerJwtInput() *string
+	UseAnnotationsAsAliasMetadata() interface{}
+	SetUseAnnotationsAsAliasMetadata(val interface{})
+	UseAnnotationsAsAliasMetadataInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,6 +149,7 @@ type KubernetesAuthBackendConfig interface {
 	ResetOverrideLogicalId()
 	ResetPemKeys()
 	ResetTokenReviewerJwt()
+	ResetUseAnnotationsAsAliasMetadata()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -524,8 +528,28 @@ func (j *jsiiProxy_KubernetesAuthBackendConfig) TokenReviewerJwtInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendConfig) UseAnnotationsAsAliasMetadata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAnnotationsAsAliasMetadata",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
+func (j *jsiiProxy_KubernetesAuthBackendConfig) UseAnnotationsAsAliasMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useAnnotationsAsAliasMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
 func NewKubernetesAuthBackendConfig(scope constructs.Construct, id *string, config *KubernetesAuthBackendConfigConfig) KubernetesAuthBackendConfig {
 	_init_.Initialize()
 
@@ -543,7 +567,7 @@ func NewKubernetesAuthBackendConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.4.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/kubernetes_auth_backend_config vault_kubernetes_auth_backend_config} Resource.
 func NewKubernetesAuthBackendConfig_Override(k KubernetesAuthBackendConfig, scope constructs.Construct, id *string, config *KubernetesAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -728,6 +752,17 @@ func (j *jsiiProxy_KubernetesAuthBackendConfig)SetTokenReviewerJwt(val *string) 
 	_jsii_.Set(
 		j,
 		"tokenReviewerJwt",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesAuthBackendConfig)SetUseAnnotationsAsAliasMetadata(val interface{}) {
+	if err := j.validateSetUseAnnotationsAsAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useAnnotationsAsAliasMetadata",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (k *jsiiProxy_KubernetesAuthBackendConfig) ResetTokenReviewerJwt() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTokenReviewerJwt",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesAuthBackendConfig) ResetUseAnnotationsAsAliasMetadata() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUseAnnotationsAsAliasMetadata",
 		nil, // no parameters
 	)
 }

@@ -143,6 +143,10 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationWindowPar
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetSelfManagedPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetUsernameParameters(val *string) error {
 	return nil
 }

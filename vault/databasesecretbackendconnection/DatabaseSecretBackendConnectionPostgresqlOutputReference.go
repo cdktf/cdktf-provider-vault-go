@@ -53,6 +53,12 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PrivateKey() *string
+	SetPrivateKey(val *string)
+	PrivateKeyInput() *string
+	SelfManaged() interface{}
+	SetSelfManaged(val interface{})
+	SelfManagedInput() interface{}
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
@@ -64,6 +70,12 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsCa() *string
+	SetTlsCa(val *string)
+	TlsCaInput() *string
+	TlsCertificate() *string
+	SetTlsCertificate(val *string)
+	TlsCertificateInput() *string
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -101,7 +113,11 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPrivateKey()
+	ResetSelfManaged()
 	ResetServiceAccountJson()
+	ResetTlsCa()
+	ResetTlsCertificate()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -309,6 +325,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Pas
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) SelfManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) SelfManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManagedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ServiceAccountJson() *string {
 	var returns *string
 	_jsii_.Get(
@@ -344,6 +400,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Ter
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TlsCa() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TlsCaInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TlsCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) TlsCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsCertificateInput",
 		&returns,
 	)
 	return returns
@@ -527,6 +623,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetP
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetPrivateKey(val *string) {
+	if err := j.validateSetPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetSelfManaged(val interface{}) {
+	if err := j.validateSetSelfManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfManaged",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetServiceAccountJson(val *string) {
 	if err := j.validateSetServiceAccountJsonParameters(val); err != nil {
 		panic(err)
@@ -556,6 +674,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetTlsCa(val *string) {
+	if err := j.validateSetTlsCaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCa",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetTlsCertificate(val *string) {
+	if err := j.validateSetTlsCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsCertificate",
 		val,
 	)
 }
@@ -824,10 +964,42 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Res
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetPrivateKey() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetSelfManaged() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfManaged",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetServiceAccountJson() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetServiceAccountJson",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetTlsCa() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCa",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetTlsCertificate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTlsCertificate",
 		nil, // no parameters
 	)
 }
