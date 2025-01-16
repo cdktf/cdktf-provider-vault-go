@@ -61,6 +61,9 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	NameInput() *string
 	Password() *string
 	SetPassword(val *string)
+	PasswordAuthentication() *string
+	SetPasswordAuthentication(val *string)
+	PasswordAuthenticationInput() *string
 	PasswordInput() *string
 	PluginName() *string
 	SetPluginName(val *string)
@@ -133,6 +136,7 @@ type DatabaseSecretsMountPostgresqlOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordAuthentication()
 	ResetPluginName()
 	ResetPrivateKey()
 	ResetRootRotationStatements()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) Password() *st
 	_jsii_.Get(
 		j,
 		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordAuthentication() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) PasswordAuthenticationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -799,6 +823,17 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPassword(val
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPasswordAuthentication(val *string) {
+	if err := j.validateSetPasswordAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordAuthentication",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference)SetPluginName(val *string) {
 	if err := j.validateSetPluginNameParameters(val); err != nil {
 		panic(err)
@@ -1185,6 +1220,14 @@ func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPassword(
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) ResetPasswordAuthentication() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordAuthentication",
 		nil, // no parameters
 	)
 }

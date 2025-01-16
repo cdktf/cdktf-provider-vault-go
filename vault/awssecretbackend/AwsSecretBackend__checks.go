@@ -551,6 +551,30 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetStsEndpointParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsFallbackEndpointsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsFallbackRegionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetUsernameTemplateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

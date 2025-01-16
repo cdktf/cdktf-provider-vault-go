@@ -91,6 +91,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetPasswordAuthenticationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) validateSetPrivateKeyParameters(val *string) error {
 	return nil
 }

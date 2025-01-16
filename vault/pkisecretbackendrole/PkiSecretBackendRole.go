@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -68,6 +68,9 @@ type PkiSecretBackendRole interface {
 	ClientFlag() interface{}
 	SetClientFlag(val interface{})
 	ClientFlagInput() interface{}
+	CnValidations() *[]*string
+	SetCnValidations(val *[]*string)
+	CnValidationsInput() *[]*string
 	CodeSigningFlag() interface{}
 	SetCodeSigningFlag(val interface{})
 	CodeSigningFlagInput() interface{}
@@ -261,6 +264,7 @@ type PkiSecretBackendRole interface {
 	ResetAllowWildcardCertificates()
 	ResetBasicConstraintsValidForNonCa()
 	ResetClientFlag()
+	ResetCnValidations()
 	ResetCodeSigningFlag()
 	ResetCountry()
 	ResetEmailProtectionFlag()
@@ -656,6 +660,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) ClientFlagInput() interface{} {
 	_jsii_.Get(
 		j,
 		"clientFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CnValidations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cnValidations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) CnValidationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cnValidationsInput",
 		&returns,
 	)
 	return returns
@@ -1412,7 +1436,7 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1430,7 +1454,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1624,6 +1648,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetClientFlag(val interface{}) {
 	_jsii_.Set(
 		j,
 		"clientFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetCnValidations(val *[]*string) {
+	if err := j.validateSetCnValidationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cnValidations",
 		val,
 	)
 }
@@ -2503,6 +2538,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetClientFlag() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetClientFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetCnValidations() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCnValidations",
 		nil, // no parameters
 	)
 }

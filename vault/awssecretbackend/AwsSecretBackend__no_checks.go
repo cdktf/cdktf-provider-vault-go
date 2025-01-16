@@ -175,6 +175,18 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetStsEndpointParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsFallbackEndpointsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsFallbackRegionsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetStsRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetUsernameTemplateParameters(val *string) error {
 	return nil
 }

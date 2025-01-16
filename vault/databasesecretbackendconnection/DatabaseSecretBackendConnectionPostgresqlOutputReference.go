@@ -52,6 +52,9 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	MaxOpenConnectionsInput() *float64
 	Password() *string
 	SetPassword(val *string)
+	PasswordAuthentication() *string
+	SetPasswordAuthentication(val *string)
+	PasswordAuthenticationInput() *string
 	PasswordInput() *string
 	PrivateKey() *string
 	SetPrivateKey(val *string)
@@ -113,6 +116,7 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordAuthentication()
 	ResetPrivateKey()
 	ResetSelfManaged()
 	ResetServiceAccountJson()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Pas
 	_jsii_.Get(
 		j,
 		"password",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordAuthentication() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordAuthenticationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -619,6 +643,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetP
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetPasswordAuthentication(val *string) {
+	if err := j.validateSetPasswordAuthenticationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordAuthentication",
 		val,
 	)
 }
@@ -960,6 +995,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Res
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetPasswordAuthentication() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordAuthentication",
 		nil, // no parameters
 	)
 }

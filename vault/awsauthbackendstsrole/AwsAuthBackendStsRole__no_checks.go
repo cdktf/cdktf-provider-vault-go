@@ -107,6 +107,10 @@ func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetExternalIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendStsRole) validateSetIdParameters(val *string) error {
 	return nil
 }

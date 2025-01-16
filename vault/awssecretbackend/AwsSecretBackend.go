@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 type AwsSecretBackend interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -106,6 +106,15 @@ type AwsSecretBackend interface {
 	StsEndpoint() *string
 	SetStsEndpoint(val *string)
 	StsEndpointInput() *string
+	StsFallbackEndpoints() *[]*string
+	SetStsFallbackEndpoints(val *[]*string)
+	StsFallbackEndpointsInput() *[]*string
+	StsFallbackRegions() *[]*string
+	SetStsFallbackRegions(val *[]*string)
+	StsFallbackRegionsInput() *[]*string
+	StsRegion() *string
+	SetStsRegion(val *string)
+	StsRegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -178,6 +187,9 @@ type AwsSecretBackend interface {
 	ResetRoleArn()
 	ResetSecretKey()
 	ResetStsEndpoint()
+	ResetStsFallbackEndpoints()
+	ResetStsFallbackRegions()
+	ResetStsRegion()
 	ResetUsernameTemplate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -667,6 +679,66 @@ func (j *jsiiProxy_AwsSecretBackend) StsEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) StsFallbackEndpoints() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stsFallbackEndpoints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) StsFallbackEndpointsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stsFallbackEndpointsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) StsFallbackRegions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stsFallbackRegions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) StsFallbackRegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stsFallbackRegionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) StsRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stsRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) StsRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -718,7 +790,7 @@ func (j *jsiiProxy_AwsSecretBackend) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecretBackendConfig) AwsSecretBackend {
 	_init_.Initialize()
 
@@ -736,7 +808,7 @@ func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend_Override(a AwsSecretBackend, scope constructs.Construct, id *string, config *AwsSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -998,6 +1070,39 @@ func (j *jsiiProxy_AwsSecretBackend)SetStsEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"stsEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetStsFallbackEndpoints(val *[]*string) {
+	if err := j.validateSetStsFallbackEndpointsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stsFallbackEndpoints",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetStsFallbackRegions(val *[]*string) {
+	if err := j.validateSetStsFallbackRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stsFallbackRegions",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetStsRegion(val *string) {
+	if err := j.validateSetStsRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stsRegion",
 		val,
 	)
 }
@@ -1506,6 +1611,30 @@ func (a *jsiiProxy_AwsSecretBackend) ResetStsEndpoint() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStsEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetStsFallbackEndpoints() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStsFallbackEndpoints",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetStsFallbackRegions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStsFallbackRegions",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetStsRegion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStsRegion",
 		nil, // no parameters
 	)
 }

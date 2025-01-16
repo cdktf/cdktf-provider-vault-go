@@ -163,6 +163,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetClientFlagParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetCnValidationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetCodeSigningFlagParameters(val interface{}) error {
 	return nil
 }

@@ -282,6 +282,14 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPas
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordAuthenticationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPluginNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -103,6 +103,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPas
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordAuthenticationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

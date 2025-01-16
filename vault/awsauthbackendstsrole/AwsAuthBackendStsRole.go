@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role}.
 type AwsAuthBackendStsRole interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -37,6 +37,9 @@ type AwsAuthBackendStsRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -120,6 +123,7 @@ type AwsAuthBackendStsRole interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBackend()
+	ResetExternalId()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -228,6 +232,26 @@ func (j *jsiiProxy_AwsAuthBackendStsRole) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendStsRole) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendStsRole) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -404,7 +428,7 @@ func (j *jsiiProxy_AwsAuthBackendStsRole) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
 func NewAwsAuthBackendStsRole(scope constructs.Construct, id *string, config *AwsAuthBackendStsRoleConfig) AwsAuthBackendStsRole {
 	_init_.Initialize()
 
@@ -422,7 +446,7 @@ func NewAwsAuthBackendStsRole(scope constructs.Construct, id *string, config *Aw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.5.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_sts_role vault_aws_auth_backend_sts_role} Resource.
 func NewAwsAuthBackendStsRole_Override(a AwsAuthBackendStsRole, scope constructs.Construct, id *string, config *AwsAuthBackendStsRoleConfig) {
 	_init_.Initialize()
 
@@ -481,6 +505,17 @@ func (j *jsiiProxy_AwsAuthBackendStsRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendStsRole)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
 		val,
 	)
 }
@@ -913,6 +948,14 @@ func (a *jsiiProxy_AwsAuthBackendStsRole) ResetBackend() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBackend",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendStsRole) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExternalId",
 		nil, // no parameters
 	)
 }
