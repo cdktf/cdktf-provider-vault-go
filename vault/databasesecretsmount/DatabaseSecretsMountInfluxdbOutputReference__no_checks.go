@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetDataP
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetHostParameters(val *string) error {
 	return nil
 }
@@ -108,6 +112,18 @@ func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetPortP
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountInfluxdbOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

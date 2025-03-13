@@ -12,9 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role}.
 type AwsSecretBackendStaticRole interface {
 	cdktf.TerraformResource
+	AssumeRoleArn() *string
+	SetAssumeRoleArn(val *string)
+	AssumeRoleArnInput() *string
+	AssumeRoleSessionName() *string
+	SetAssumeRoleSessionName(val *string)
+	AssumeRoleSessionNameInput() *string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -34,6 +40,9 @@ type AwsSecretBackendStaticRole interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalId() *string
+	SetExternalId(val *string)
+	ExternalIdInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -122,7 +131,10 @@ type AwsSecretBackendStaticRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAssumeRoleArn()
+	ResetAssumeRoleSessionName()
 	ResetBackend()
+	ResetExternalId()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -144,6 +156,46 @@ type AwsSecretBackendStaticRole interface {
 // The jsii proxy struct for AwsSecretBackendStaticRole
 type jsiiProxy_AwsSecretBackendStaticRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) AssumeRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) AssumeRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) AssumeRoleSessionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRoleSessionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) AssumeRoleSessionNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assumeRoleSessionNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AwsSecretBackendStaticRole) Backend() *string {
@@ -211,6 +263,26 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) ExternalId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) ExternalIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"externalIdInput",
 		&returns,
 	)
 	return returns
@@ -427,7 +499,7 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
 func NewAwsSecretBackendStaticRole(scope constructs.Construct, id *string, config *AwsSecretBackendStaticRoleConfig) AwsSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -445,7 +517,7 @@ func NewAwsSecretBackendStaticRole(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_secret_backend_static_role vault_aws_secret_backend_static_role} Resource.
 func NewAwsSecretBackendStaticRole_Override(a AwsSecretBackendStaticRole, scope constructs.Construct, id *string, config *AwsSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -453,6 +525,28 @@ func NewAwsSecretBackendStaticRole_Override(a AwsSecretBackendStaticRole, scope 
 		"@cdktf/provider-vault.awsSecretBackendStaticRole.AwsSecretBackendStaticRole",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole)SetAssumeRoleArn(val *string) {
+	if err := j.validateSetAssumeRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assumeRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole)SetAssumeRoleSessionName(val *string) {
+	if err := j.validateSetAssumeRoleSessionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assumeRoleSessionName",
+		val,
 	)
 }
 
@@ -493,6 +587,17 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole)SetExternalId(val *string) {
+	if err := j.validateSetExternalIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalId",
 		val,
 	)
 }
@@ -943,10 +1048,34 @@ func (a *jsiiProxy_AwsSecretBackendStaticRole) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackendStaticRole) ResetAssumeRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAssumeRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackendStaticRole) ResetAssumeRoleSessionName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAssumeRoleSessionName",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackendStaticRole) ResetBackend() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBackend",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackendStaticRole) ResetExternalId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExternalId",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetDa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,18 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetPl
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

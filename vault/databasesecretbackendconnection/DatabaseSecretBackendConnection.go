@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
 type DatabaseSecretBackendConnection interface {
 	cdktf.TerraformResource
 	AllowedRoles() *[]*string
@@ -44,6 +44,9 @@ type DatabaseSecretBackendConnection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	Elasticsearch() DatabaseSecretBackendConnectionElasticsearchOutputReference
 	ElasticsearchInput() *DatabaseSecretBackendConnectionElasticsearch
 	// Experimental.
@@ -113,6 +116,15 @@ type DatabaseSecretBackendConnection interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	Snowflake() DatabaseSecretBackendConnectionSnowflakeOutputReference
 	SnowflakeInput() *DatabaseSecretBackendConnectionSnowflake
 	// Experimental.
@@ -189,6 +201,7 @@ type DatabaseSecretBackendConnection interface {
 	ResetCassandra()
 	ResetCouchbase()
 	ResetData()
+	ResetDisableAutomatedRotation()
 	ResetElasticsearch()
 	ResetHana()
 	ResetId()
@@ -211,6 +224,9 @@ type DatabaseSecretBackendConnection interface {
 	ResetRedisElasticache()
 	ResetRedshift()
 	ResetRootRotationStatements()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetSnowflake()
 	ResetVerifyConnection()
 	SynthesizeAttributes() *map[string]interface{}
@@ -376,6 +392,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -861,6 +897,66 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) RootRotationStatementsInput(
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnection) Snowflake() DatabaseSecretBackendConnectionSnowflakeOutputReference {
 	var returns DatabaseSecretBackendConnectionSnowflakeOutputReference
 	_jsii_.Get(
@@ -932,7 +1028,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) VerifyConnectionInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection {
 	_init_.Initialize()
 
@@ -950,7 +1046,7 @@ func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection_Override(d DatabaseSecretBackendConnection, scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) {
 	_init_.Initialize()
 
@@ -1020,6 +1116,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -1113,6 +1220,39 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRootRotationStatements(val
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnection)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1711,6 +1851,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetData() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetElasticsearch() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1867,6 +2015,30 @@ func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRootRotationStatements(
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnection) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

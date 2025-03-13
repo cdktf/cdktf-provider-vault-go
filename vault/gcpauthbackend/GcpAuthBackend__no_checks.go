@@ -123,6 +123,10 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetDescriptionParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -168,6 +172,18 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetProjectIdParameters(val *string) e
 }
 
 func (j *jsiiProxy_GcpAuthBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

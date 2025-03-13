@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config}.
 type PkiSecretBackendCrlConfig interface {
 	cdktf.TerraformResource
 	AutoRebuild() interface{}
@@ -70,6 +70,9 @@ type PkiSecretBackendCrlConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxCrlEntries() *float64
+	SetMaxCrlEntries(val *float64)
+	MaxCrlEntriesInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -154,6 +157,7 @@ type PkiSecretBackendCrlConfig interface {
 	ResetEnableDelta()
 	ResetExpiry()
 	ResetId()
+	ResetMaxCrlEntries()
 	ResetNamespace()
 	ResetOcspDisable()
 	ResetOcspExpiry()
@@ -450,6 +454,26 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) MaxCrlEntries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCrlEntries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) MaxCrlEntriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxCrlEntriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -621,7 +645,7 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) UnifiedCrlOnExistingPathsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
 func NewPkiSecretBackendCrlConfig(scope constructs.Construct, id *string, config *PkiSecretBackendCrlConfigConfig) PkiSecretBackendCrlConfig {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewPkiSecretBackendCrlConfig(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_crl_config vault_pki_secret_backend_crl_config} Resource.
 func NewPkiSecretBackendCrlConfig_Override(p PkiSecretBackendCrlConfig, scope constructs.Construct, id *string, config *PkiSecretBackendCrlConfigConfig) {
 	_init_.Initialize()
 
@@ -794,6 +818,17 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendCrlConfig)SetMaxCrlEntries(val *float64) {
+	if err := j.validateSetMaxCrlEntriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxCrlEntries",
 		val,
 	)
 }
@@ -1285,6 +1320,14 @@ func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendCrlConfig) ResetMaxCrlEntries() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMaxCrlEntries",
 		nil, // no parameters
 	)
 }

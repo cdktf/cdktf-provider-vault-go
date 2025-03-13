@@ -40,6 +40,9 @@ type DatabaseSecretsMountMysqlLegacyOutputReference interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -65,6 +68,15 @@ type DatabaseSecretsMountMysqlLegacyOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
@@ -119,12 +131,16 @@ type DatabaseSecretsMountMysqlLegacyOutputReference interface {
 	ResetAuthType()
 	ResetConnectionUrl()
 	ResetData()
+	ResetDisableAutomatedRotation()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetServiceAccountJson()
 	ResetTlsCa()
 	ResetTlsCertificateKey()
@@ -251,6 +267,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) DataInput() *
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -411,6 +447,66 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RootRotationS
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +746,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetData(val *m
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -734,6 +841,39 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetRootRotatio
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1044,6 +1184,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetData() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetMaxConnectionLifetime() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1088,6 +1236,30 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetRootRota
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyOutputReference) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

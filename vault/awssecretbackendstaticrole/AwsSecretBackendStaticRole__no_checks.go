@@ -91,6 +91,14 @@ func validateAwsSecretBackendStaticRole_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetAssumeRoleArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetAssumeRoleSessionNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetBackendParameters(val *string) error {
 	return nil
 }
@@ -100,6 +108,10 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetConnectionParameters(v
 }
 
 func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetExternalIdParameters(val *string) error {
 	return nil
 }
 

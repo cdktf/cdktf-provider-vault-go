@@ -389,6 +389,38 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludeCnFromSansParamet
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedDnsDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedEmailAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedUriDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetFormatParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -501,6 +533,14 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNamespaceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNotAfterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetOrganizationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -526,6 +566,30 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetOuParameters(val *string
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedDnsDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedEmailAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedUriDomainsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -598,6 +662,14 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetProvisionersParameters(v
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetSignatureBitsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

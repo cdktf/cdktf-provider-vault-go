@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetData
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -100,6 +104,18 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPlug
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

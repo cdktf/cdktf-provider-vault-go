@@ -111,6 +111,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -152,6 +156,18 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetPathParameters(val *string) erro
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

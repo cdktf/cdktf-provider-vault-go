@@ -397,6 +397,38 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludeCnFro
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedDnsDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedEmailAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedUriDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetFormatParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -461,6 +493,22 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNamespacePar
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNotAfterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNotBeforeDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetOrganizationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -486,6 +534,30 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetOuParameters
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedDnsDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedEmailAddressesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedIpRangesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedUriDomainsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -575,6 +647,22 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetRevokeParame
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetSignatureBitsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetSkidParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetStreetAddressParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -600,6 +688,26 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUriSansParam
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUseCsrValuesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUsePssParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

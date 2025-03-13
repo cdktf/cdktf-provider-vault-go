@@ -441,6 +441,14 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetMaxTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

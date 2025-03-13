@@ -107,6 +107,10 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetEc2EndpointParameters(val *string) error {
 	return nil
 }
@@ -148,6 +152,18 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetRoleArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}.
 type GcpSecretStaticAccount interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_GcpSecretStaticAccount) TokenScopesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
 func NewGcpSecretStaticAccount(scope constructs.Construct, id *string, config *GcpSecretStaticAccountConfig) GcpSecretStaticAccount {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewGcpSecretStaticAccount(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource.
 func NewGcpSecretStaticAccount_Override(g GcpSecretStaticAccount, scope constructs.Construct, id *string, config *GcpSecretStaticAccountConfig) {
 	_init_.Initialize()
 

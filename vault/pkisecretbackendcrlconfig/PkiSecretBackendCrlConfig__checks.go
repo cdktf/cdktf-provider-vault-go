@@ -465,6 +465,14 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetMaxCrlEntriesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

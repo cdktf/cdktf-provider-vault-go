@@ -107,6 +107,22 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetCrlDistributionPointsParam
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDisableCriticalExtensionChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDisableNameChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDisableNameConstraintChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetDisablePathLengthChecksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIssuer) validateSetEnableAiaUrlTemplatingParameters(val interface{}) error {
 	return nil
 }

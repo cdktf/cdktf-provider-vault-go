@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetDataParam
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetDisableEscapingParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,18 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPluginNam
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

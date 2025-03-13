@@ -46,6 +46,9 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Insecure() interface{}
@@ -65,6 +68,15 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -118,9 +130,13 @@ type DatabaseSecretsMountElasticsearchOutputReference interface {
 	ResetClientCert()
 	ResetClientKey()
 	ResetData()
+	ResetDisableAutomatedRotation()
 	ResetInsecure()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetTlsServerName()
 	ResetUsernameTemplate()
 	ResetVerifyConnection()
@@ -289,6 +305,26 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) DataInput()
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -404,6 +440,66 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RootRotatio
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -645,6 +741,17 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetData(val 
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetInsecure(val interface{}) {
 	if err := j.validateSetInsecureParameters(val); err != nil {
 		panic(err)
@@ -707,6 +814,39 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRootRotat
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1022,6 +1162,14 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetData()
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetInsecure() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1042,6 +1190,30 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetRootRo
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

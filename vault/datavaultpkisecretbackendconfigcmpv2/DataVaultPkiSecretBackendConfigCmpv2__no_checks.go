@@ -79,6 +79,10 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2) validateSetCountParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2) validateSetDisabledValidationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type AzureSecretBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
@@ -88,6 +91,15 @@ type AzureSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	SubscriptionId() *string
 	SetSubscriptionId(val *string)
 	SubscriptionIdInput() *string
@@ -149,6 +161,7 @@ type AzureSecretBackend interface {
 	ResetClientId()
 	ResetClientSecret()
 	ResetDescription()
+	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
 	ResetEnvironment()
 	ResetId()
@@ -160,6 +173,9 @@ type AzureSecretBackend interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetUseMicrosoftGraphApi()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -284,6 +300,26 @@ func (j *jsiiProxy_AzureSecretBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -529,6 +565,66 @@ func (j *jsiiProxy_AzureSecretBackend) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackend) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackend) SubscriptionId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -620,7 +716,7 @@ func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApiInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -638,7 +734,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -708,6 +804,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -834,6 +941,39 @@ func (j *jsiiProxy_AzureSecretBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1248,6 +1388,14 @@ func (a *jsiiProxy_AzureSecretBackend) ResetDescription() {
 	)
 }
 
+func (a *jsiiProxy_AzureSecretBackend) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureSecretBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1316,6 +1464,30 @@ func (a *jsiiProxy_AzureSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,10 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetDat
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetDisableEscapingParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,18 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPri
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

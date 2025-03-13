@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}.
 type PkiSecretBackendSign interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -28,6 +28,9 @@ type PkiSecretBackendSign interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Certificate() *string
+	CertMetadata() *string
+	SetCertMetadata(val *string)
+	CertMetadataInput() *string
 	CommonName() *string
 	SetCommonName(val *string)
 	CommonNameInput() *string
@@ -88,6 +91,9 @@ type PkiSecretBackendSign interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotAfter() *string
+	SetNotAfter(val *string)
+	NotAfterInput() *string
 	OtherSans() *[]*string
 	SetOtherSans(val *[]*string)
 	OtherSansInput() *[]*string
@@ -160,6 +166,7 @@ type PkiSecretBackendSign interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAltNames()
 	ResetAutoRenew()
+	ResetCertMetadata()
 	ResetExcludeCnFromSans()
 	ResetFormat()
 	ResetId()
@@ -167,6 +174,7 @@ type PkiSecretBackendSign interface {
 	ResetIssuerRef()
 	ResetMinSecondsRemaining()
 	ResetNamespace()
+	ResetNotAfter()
 	ResetOtherSans()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -276,6 +284,26 @@ func (j *jsiiProxy_PkiSecretBackendSign) Certificate() *string {
 	_jsii_.Get(
 		j,
 		"certificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign) CertMetadata() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign) CertMetadataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certMetadataInput",
 		&returns,
 	)
 	return returns
@@ -591,6 +619,26 @@ func (j *jsiiProxy_PkiSecretBackendSign) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendSign) NotAfter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign) NotAfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendSign) OtherSans() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -732,7 +780,7 @@ func (j *jsiiProxy_PkiSecretBackendSign) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) PkiSecretBackendSign {
 	_init_.Initialize()
 
@@ -750,7 +798,7 @@ func NewPkiSecretBackendSign(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource.
 func NewPkiSecretBackendSign_Override(p PkiSecretBackendSign, scope constructs.Construct, id *string, config *PkiSecretBackendSignConfig) {
 	_init_.Initialize()
 
@@ -790,6 +838,17 @@ func (j *jsiiProxy_PkiSecretBackendSign)SetBackend(val *string) {
 	_jsii_.Set(
 		j,
 		"backend",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign)SetCertMetadata(val *string) {
+	if err := j.validateSetCertMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certMetadata",
 		val,
 	)
 }
@@ -949,6 +1008,17 @@ func (j *jsiiProxy_PkiSecretBackendSign)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendSign)SetNotAfter(val *string) {
+	if err := j.validateSetNotAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notAfter",
 		val,
 	)
 }
@@ -1374,6 +1444,14 @@ func (p *jsiiProxy_PkiSecretBackendSign) ResetAutoRenew() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendSign) ResetCertMetadata() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCertMetadata",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendSign) ResetExcludeCnFromSans() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1426,6 +1504,14 @@ func (p *jsiiProxy_PkiSecretBackendSign) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendSign) ResetNotAfter() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotAfter",
 		nil, // no parameters
 	)
 }

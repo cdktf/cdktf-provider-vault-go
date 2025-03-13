@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetCredentialConfigParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetCredentialTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetDbNameParameters(val *string) error {
 	return nil
 }
@@ -144,6 +152,10 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetRotationWindowPar
 }
 
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetSelfManagedPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetSkipImportRotationParameters(val interface{}) error {
 	return nil
 }
 

@@ -247,6 +247,14 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetNoStoreParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetNoStoreMetadataParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetNotAfterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetNotBeforeDurationParameters(val *string) error {
 	return nil
 }
@@ -279,7 +287,15 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetRequireCnParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetSerialNumberSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetServerFlagParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetSignatureBitsParameters(val *float64) error {
 	return nil
 }
 
@@ -296,6 +312,10 @@ func (j *jsiiProxy_PkiSecretBackendRole) validateSetUseCsrCommonNameParameters(v
 }
 
 func (j *jsiiProxy_PkiSecretBackendRole) validateSetUseCsrSansParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) validateSetUsePssParameters(val interface{}) error {
 	return nil
 }
 

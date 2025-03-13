@@ -40,6 +40,9 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -65,6 +68,15 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	ServiceAccountJson() *string
 	SetServiceAccountJson(val *string)
 	ServiceAccountJsonInput() *string
@@ -119,12 +131,16 @@ type DatabaseSecretsMountMysqlOutputReference interface {
 	ResetAuthType()
 	ResetConnectionUrl()
 	ResetData()
+	ResetDisableAutomatedRotation()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetServiceAccountJson()
 	ResetTlsCa()
 	ResetTlsCertificateKey()
@@ -251,6 +267,26 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) DataInput() *map[st
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -411,6 +447,66 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RootRotationStateme
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -650,6 +746,17 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetData(val *map[str
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -734,6 +841,39 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetRootRotationState
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlOutputReference)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1044,6 +1184,14 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetData() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetMaxConnectionLifetime() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1088,6 +1236,30 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetRootRotationSt
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountMysqlOutputReference) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

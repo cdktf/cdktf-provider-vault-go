@@ -79,6 +79,22 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetDisableCriticalExtensionChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetDisableNameChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetDisableNameConstraintChecksParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetDisablePathLengthChecksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPkiSecretBackendIssuer) validateSetIdParameters(val *string) error {
 	return nil
 }

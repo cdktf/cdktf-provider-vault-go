@@ -111,6 +111,10 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetDescriptionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -148,6 +152,18 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetPathParameters(val *string) er
 }
 
 func (j *jsiiProxy_AzureSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

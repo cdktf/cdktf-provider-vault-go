@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 type AwsAuthBackendClient interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -37,6 +37,9 @@ type AwsAuthBackendClient interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	Ec2Endpoint() *string
 	SetEc2Endpoint(val *string)
 	Ec2EndpointInput() *string
@@ -88,6 +91,15 @@ type AwsAuthBackendClient interface {
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -151,6 +163,7 @@ type AwsAuthBackendClient interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessKey()
 	ResetBackend()
+	ResetDisableAutomatedRotation()
 	ResetEc2Endpoint()
 	ResetIamEndpoint()
 	ResetIamServerIdHeaderValue()
@@ -163,6 +176,9 @@ type AwsAuthBackendClient interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetSecretKey()
 	ResetStsEndpoint()
 	ResetStsRegion()
@@ -270,6 +286,26 @@ func (j *jsiiProxy_AwsAuthBackendClient) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +571,66 @@ func (j *jsiiProxy_AwsAuthBackendClient) RoleArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) SecretKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -646,7 +742,7 @@ func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClientInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) AwsAuthBackendClient {
 	_init_.Initialize()
 
@@ -664,7 +760,7 @@ func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient_Override(a AwsAuthBackendClient, scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) {
 	_init_.Initialize()
 
@@ -723,6 +819,17 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -860,6 +967,39 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1277,6 +1417,14 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetBackend() {
 	)
 }
 
+func (a *jsiiProxy_AwsAuthBackendClient) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsAuthBackendClient) ResetEc2Endpoint() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1353,6 +1501,30 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

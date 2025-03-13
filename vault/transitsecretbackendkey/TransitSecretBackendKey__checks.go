@@ -453,6 +453,22 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetExportableParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetHybridKeyTypeEcParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetHybridKeyTypePqcParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -502,6 +518,14 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetNameParameters(val *strin
 }
 
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetParameterSetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

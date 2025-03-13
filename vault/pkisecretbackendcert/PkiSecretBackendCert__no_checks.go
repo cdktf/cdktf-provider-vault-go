@@ -103,6 +103,10 @@ func (j *jsiiProxy_PkiSecretBackendCert) validateSetBackendParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) validateSetCertMetadataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCert) validateSetCommonNameParameters(val *string) error {
 	return nil
 }
@@ -151,6 +155,10 @@ func (j *jsiiProxy_PkiSecretBackendCert) validateSetNamespaceParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCert) validateSetNotAfterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCert) validateSetOtherSansParameters(val *[]*string) error {
 	return nil
 }
@@ -164,6 +172,10 @@ func (j *jsiiProxy_PkiSecretBackendCert) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_PkiSecretBackendCert) validateSetRevokeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendCert) validateSetRevokeWithKeyParameters(val interface{}) error {
 	return nil
 }
 

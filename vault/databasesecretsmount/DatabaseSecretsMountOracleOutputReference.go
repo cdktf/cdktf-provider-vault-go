@@ -37,6 +37,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	Data() *map[string]*string
 	SetData(val *map[string]*string)
 	DataInput() *map[string]*string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	DisconnectSessions() interface{}
 	SetDisconnectSessions(val interface{})
 	DisconnectSessionsInput() interface{}
@@ -65,6 +68,15 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	SplitStatements() interface{}
 	SetSplitStatements(val interface{})
 	SplitStatementsInput() interface{}
@@ -112,6 +124,7 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	ResetAllowedRoles()
 	ResetConnectionUrl()
 	ResetData()
+	ResetDisableAutomatedRotation()
 	ResetDisconnectSessions()
 	ResetMaxConnectionLifetime()
 	ResetMaxIdleConnections()
@@ -119,6 +132,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	ResetPassword()
 	ResetPluginName()
 	ResetRootRotationStatements()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
@@ -223,6 +239,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DataInput() *map[s
 	_jsii_.Get(
 		j,
 		"dataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -403,6 +439,66 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RootRotationStatem
 	_jsii_.Get(
 		j,
 		"rootRotationStatementsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
 		&returns,
 	)
 	return returns
@@ -591,6 +687,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetData(val *map[st
 	)
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetDisconnectSessions(val interface{}) {
 	if err := j.validateSetDisconnectSessionsParameters(val); err != nil {
 		panic(err)
@@ -686,6 +793,39 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRootRotationStat
 	_jsii_.Set(
 		j,
 		"rootRotationStatements",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -966,6 +1106,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetData() {
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetDisconnectSessions() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1018,6 +1166,30 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRootRotationS
 	_jsii_.InvokeVoid(
 		d,
 		"resetRootRotationStatements",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

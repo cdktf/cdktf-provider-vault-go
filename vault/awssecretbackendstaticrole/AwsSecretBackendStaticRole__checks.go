@@ -247,6 +247,22 @@ func validateAwsSecretBackendStaticRole_IsTerraformResourceParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetAssumeRoleArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetAssumeRoleSessionNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetBackendParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -340,6 +356,14 @@ func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetCountParameters(val in
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackendStaticRole) validateSetExternalIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
 type ConfigUiCustomMessage interface {
 	cdktf.TerraformResource
 	Authenticated() interface{}
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ConfigUiCustomMessage) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
 func NewConfigUiCustomMessage(scope constructs.Construct, id *string, config *ConfigUiCustomMessageConfig) ConfigUiCustomMessage {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewConfigUiCustomMessage(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource.
 func NewConfigUiCustomMessage_Override(c ConfigUiCustomMessage, scope constructs.Construct, id *string, config *ConfigUiCustomMessageConfig) {
 	_init_.Initialize()
 

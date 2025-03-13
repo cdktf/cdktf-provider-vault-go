@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 type GcpAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -46,6 +46,9 @@ type GcpAuthBackend interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
@@ -100,6 +103,15 @@ type GcpAuthBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -161,6 +173,7 @@ type GcpAuthBackend interface {
 	ResetCredentials()
 	ResetCustomEndpoint()
 	ResetDescription()
+	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
 	ResetId()
 	ResetIdentityTokenAudience()
@@ -174,6 +187,9 @@ type GcpAuthBackend interface {
 	ResetPath()
 	ResetPrivateKeyId()
 	ResetProjectId()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	ResetServiceAccountEmail()
 	ResetTune()
 	SynthesizeAttributes() *map[string]interface{}
@@ -349,6 +365,26 @@ func (j *jsiiProxy_GcpAuthBackend) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -634,6 +670,66 @@ func (j *jsiiProxy_GcpAuthBackend) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GcpAuthBackend) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpAuthBackend) ServiceAccountEmail() *string {
 	var returns *string
 	_jsii_.Get(
@@ -705,7 +801,7 @@ func (j *jsiiProxy_GcpAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBackendConfig) GcpAuthBackend {
 	_init_.Initialize()
 
@@ -723,7 +819,7 @@ func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend_Override(g GcpAuthBackend, scope constructs.Construct, id *string, config *GcpAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -804,6 +900,17 @@ func (j *jsiiProxy_GcpAuthBackend)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -952,6 +1059,39 @@ func (j *jsiiProxy_GcpAuthBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1382,6 +1522,14 @@ func (g *jsiiProxy_GcpAuthBackend) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GcpAuthBackend) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpAuthBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1466,6 +1614,30 @@ func (g *jsiiProxy_GcpAuthBackend) ResetProjectId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjectId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

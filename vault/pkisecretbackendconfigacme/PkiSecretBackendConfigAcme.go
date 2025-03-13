@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
 type PkiSecretBackendConfigAcme interface {
 	cdktf.TerraformResource
 	AllowedIssuers() *[]*string
@@ -70,6 +70,9 @@ type PkiSecretBackendConfigAcme interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxTtl() *float64
+	SetMaxTtl(val *float64)
+	MaxTtlInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -141,6 +144,7 @@ type PkiSecretBackendConfigAcme interface {
 	ResetDnsResolver()
 	ResetEabPolicy()
 	ResetId()
+	ResetMaxTtl()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -433,6 +437,26 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) Lifecycle() *cdktf.TerraformResou
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) MaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) MaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigAcme) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,7 +548,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) PkiSecretBackendConfigAcme {
 	_init_.Initialize()
 
@@ -542,7 +566,7 @@ func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme_Override(p PkiSecretBackendConfigAcme, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) {
 	_init_.Initialize()
 
@@ -697,6 +721,17 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme)SetLifecycle(val *cdktf.TerraformR
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigAcme)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTtl",
 		val,
 	)
 }
@@ -1136,6 +1171,14 @@ func (p *jsiiProxy_PkiSecretBackendConfigAcme) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigAcme) ResetMaxTtl() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetMaxTtl",
 		nil, // no parameters
 	)
 }

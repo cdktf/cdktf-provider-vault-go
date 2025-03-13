@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 type AzureAuthBackendConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -40,6 +40,9 @@ type AzureAuthBackendConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableAutomatedRotation() interface{}
+	SetDisableAutomatedRotation(val interface{})
+	DisableAutomatedRotationInput() interface{}
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
@@ -82,6 +85,15 @@ type AzureAuthBackendConfig interface {
 	Resource() *string
 	SetResource(val *string)
 	ResourceInput() *string
+	RotationPeriod() *float64
+	SetRotationPeriod(val *float64)
+	RotationPeriodInput() *float64
+	RotationSchedule() *string
+	SetRotationSchedule(val *string)
+	RotationScheduleInput() *string
+	RotationWindow() *float64
+	SetRotationWindow(val *float64)
+	RotationWindowInput() *float64
 	TenantId() *string
 	SetTenantId(val *string)
 	TenantIdInput() *string
@@ -137,6 +149,7 @@ type AzureAuthBackendConfig interface {
 	ResetBackend()
 	ResetClientId()
 	ResetClientSecret()
+	ResetDisableAutomatedRotation()
 	ResetEnvironment()
 	ResetId()
 	ResetIdentityTokenAudience()
@@ -145,6 +158,9 @@ type AzureAuthBackendConfig interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationPeriod()
+	ResetRotationSchedule()
+	ResetRotationWindow()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -268,6 +284,26 @@ func (j *jsiiProxy_AzureAuthBackendConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) DisableAutomatedRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) DisableAutomatedRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableAutomatedRotationInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +509,66 @@ func (j *jsiiProxy_AzureAuthBackendConfig) ResourceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationSchedule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationScheduleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rotationScheduleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationWindow() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RotationWindowInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) TenantId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -524,7 +620,7 @@ func (j *jsiiProxy_AzureAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) AzureAuthBackendConfig {
 	_init_.Initialize()
 
@@ -542,7 +638,7 @@ func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -612,6 +708,17 @@ func (j *jsiiProxy_AzureAuthBackendConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetDisableAutomatedRotation(val interface{}) {
+	if err := j.validateSetDisableAutomatedRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableAutomatedRotation",
 		val,
 	)
 }
@@ -716,6 +823,39 @@ func (j *jsiiProxy_AzureAuthBackendConfig)SetResource(val *string) {
 	_jsii_.Set(
 		j,
 		"resource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetRotationPeriod(val *float64) {
+	if err := j.validateSetRotationPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetRotationSchedule(val *string) {
+	if err := j.validateSetRotationScheduleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationSchedule",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetRotationWindow(val *float64) {
+	if err := j.validateSetRotationWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationWindow",
 		val,
 	)
 }
@@ -1108,6 +1248,14 @@ func (a *jsiiProxy_AzureAuthBackendConfig) ResetClientSecret() {
 	)
 }
 
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetDisableAutomatedRotation() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDisableAutomatedRotation",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureAuthBackendConfig) ResetEnvironment() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1152,6 +1300,30 @@ func (a *jsiiProxy_AzureAuthBackendConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetRotationPeriod() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationPeriod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetRotationSchedule() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationSchedule",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetRotationWindow() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRotationWindow",
 		nil, // no parameters
 	)
 }

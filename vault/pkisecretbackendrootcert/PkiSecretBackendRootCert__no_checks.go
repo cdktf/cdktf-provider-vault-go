@@ -119,6 +119,22 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludeCnFromSansParamet
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedDnsDomainsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedEmailAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetExcludedUriDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetFormatParameters(val *string) error {
 	return nil
 }
@@ -175,6 +191,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNamespaceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNotAfterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetOrganizationParameters(val *string) error {
 	return nil
 }
@@ -191,6 +211,18 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedDnsDomainsParam
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedEmailAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPermittedUriDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetPostalCodeParameters(val *string) error {
 	return nil
 }
@@ -204,6 +236,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetProvinceParameters(val *
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetSignatureBitsParameters(val *float64) error {
 	return nil
 }
 

@@ -67,6 +67,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -88,6 +92,18 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

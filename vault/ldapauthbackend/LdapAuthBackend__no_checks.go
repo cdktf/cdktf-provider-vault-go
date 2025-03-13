@@ -135,6 +135,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetDescriptionParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -184,6 +188,18 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetPathParameters(val *string) error
 }
 
 func (j *jsiiProxy_LdapAuthBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

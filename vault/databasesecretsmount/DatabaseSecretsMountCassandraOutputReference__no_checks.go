@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetData
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetHostsParameters(val *[]*string) error {
 	return nil
 }
@@ -112,6 +116,18 @@ func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetProt
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountCassandraOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

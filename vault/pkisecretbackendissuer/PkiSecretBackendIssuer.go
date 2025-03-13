@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 type PkiSecretBackendIssuer interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -37,6 +37,18 @@ type PkiSecretBackendIssuer interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableCriticalExtensionChecks() interface{}
+	SetDisableCriticalExtensionChecks(val interface{})
+	DisableCriticalExtensionChecksInput() interface{}
+	DisableNameChecks() interface{}
+	SetDisableNameChecks(val interface{})
+	DisableNameChecksInput() interface{}
+	DisableNameConstraintChecks() interface{}
+	SetDisableNameConstraintChecks(val interface{})
+	DisableNameConstraintChecksInput() interface{}
+	DisablePathLengthChecks() interface{}
+	SetDisablePathLengthChecks(val interface{})
+	DisablePathLengthChecksInput() interface{}
 	EnableAiaUrlTemplating() interface{}
 	SetEnableAiaUrlTemplating(val interface{})
 	EnableAiaUrlTemplatingInput() interface{}
@@ -145,6 +157,10 @@ type PkiSecretBackendIssuer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCrlDistributionPoints()
+	ResetDisableCriticalExtensionChecks()
+	ResetDisableNameChecks()
+	ResetDisableNameConstraintChecks()
+	ResetDisablePathLengthChecks()
 	ResetEnableAiaUrlTemplating()
 	ResetId()
 	ResetIssuerName()
@@ -261,6 +277,86 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableCriticalExtensionChecks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCriticalExtensionChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableCriticalExtensionChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableCriticalExtensionChecksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableNameChecks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableNameChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableNameChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableNameChecksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableNameConstraintChecks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableNameConstraintChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisableNameConstraintChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableNameConstraintChecksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisablePathLengthChecks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePathLengthChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer) DisablePathLengthChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disablePathLengthChecksInput",
 		&returns,
 	)
 	return returns
@@ -607,7 +703,7 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) PkiSecretBackendIssuer {
 	_init_.Initialize()
 
@@ -625,7 +721,7 @@ func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer_Override(p PkiSecretBackendIssuer, scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) {
 	_init_.Initialize()
 
@@ -684,6 +780,50 @@ func (j *jsiiProxy_PkiSecretBackendIssuer)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer)SetDisableCriticalExtensionChecks(val interface{}) {
+	if err := j.validateSetDisableCriticalExtensionChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableCriticalExtensionChecks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer)SetDisableNameChecks(val interface{}) {
+	if err := j.validateSetDisableNameChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableNameChecks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer)SetDisableNameConstraintChecks(val interface{}) {
+	if err := j.validateSetDisableNameConstraintChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableNameConstraintChecks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIssuer)SetDisablePathLengthChecks(val interface{}) {
+	if err := j.validateSetDisablePathLengthChecksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disablePathLengthChecks",
 		val,
 	)
 }
@@ -1204,6 +1344,38 @@ func (p *jsiiProxy_PkiSecretBackendIssuer) ResetCrlDistributionPoints() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetCrlDistributionPoints",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIssuer) ResetDisableCriticalExtensionChecks() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisableCriticalExtensionChecks",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIssuer) ResetDisableNameChecks() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisableNameChecks",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIssuer) ResetDisableNameConstraintChecks() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisableNameConstraintChecks",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIssuer) ResetDisablePathLengthChecks() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisablePathLengthChecks",
 		nil, // no parameters
 	)
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetMaxTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigAcme) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

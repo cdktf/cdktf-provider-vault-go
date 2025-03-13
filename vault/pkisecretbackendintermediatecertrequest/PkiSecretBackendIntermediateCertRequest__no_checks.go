@@ -151,6 +151,10 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyTypePa
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetKeyUsageParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -196,6 +200,14 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetProvinceP
 }
 
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetSerialNumberParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) validateSetSignatureBitsParameters(val *float64) error {
 	return nil
 }
 

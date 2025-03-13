@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}.
 type DatabaseSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -30,6 +30,12 @@ type DatabaseSecretBackendStaticRole interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialConfig() *map[string]*string
+	SetCredentialConfig(val *map[string]*string)
+	CredentialConfigInput() *map[string]*string
+	CredentialType() *string
+	SetCredentialType(val *string)
+	CredentialTypeInput() *string
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -85,6 +91,9 @@ type DatabaseSecretBackendStaticRole interface {
 	SelfManagedPassword() *string
 	SetSelfManagedPassword(val *string)
 	SelfManagedPasswordInput() *string
+	SkipImportRotation() interface{}
+	SetSkipImportRotation(val interface{})
+	SkipImportRotationInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,6 +146,8 @@ type DatabaseSecretBackendStaticRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCredentialConfig()
+	ResetCredentialType()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -147,6 +158,7 @@ type DatabaseSecretBackendStaticRole interface {
 	ResetRotationStatements()
 	ResetRotationWindow()
 	ResetSelfManagedPassword()
+	ResetSkipImportRotation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -220,6 +232,46 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) CredentialConfig() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) CredentialConfigInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"credentialConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) CredentialType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) CredentialTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialTypeInput",
 		&returns,
 	)
 	return returns
@@ -495,6 +547,26 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) SelfManagedPasswordInput() *
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) SkipImportRotation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipImportRotation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) SkipImportRotationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipImportRotationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -546,7 +618,7 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) DatabaseSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -564,7 +636,7 @@ func NewDatabaseSecretBackendStaticRole(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource.
 func NewDatabaseSecretBackendStaticRole_Override(d DatabaseSecretBackendStaticRole, scope constructs.Construct, id *string, config *DatabaseSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 
@@ -604,6 +676,28 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetCredentialConfig(val *map[string]*string) {
+	if err := j.validateSetCredentialConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialConfig",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetCredentialType(val *string) {
+	if err := j.validateSetCredentialTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialType",
 		val,
 	)
 }
@@ -749,6 +843,17 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetSelfManagedPassword(val *s
 	_jsii_.Set(
 		j,
 		"selfManagedPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole)SetSkipImportRotation(val interface{}) {
+	if err := j.validateSetSkipImportRotationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipImportRotation",
 		val,
 	)
 }
@@ -1117,6 +1222,22 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) OverrideLogicalId(newLogical
 	)
 }
 
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetCredentialConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialConfig",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetCredentialType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCredentialType",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1177,6 +1298,14 @@ func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetSelfManagedPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSelfManagedPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendStaticRole) ResetSkipImportRotation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipImportRotation",
 		nil, // no parameters
 	)
 }

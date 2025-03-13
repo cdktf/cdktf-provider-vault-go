@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetDataP
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetDisableEscapingParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,18 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPlugi
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

@@ -151,6 +151,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetDescriptionParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -216,6 +220,18 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetProvisionersParameters(val *[]i
 }
 
 func (j *jsiiProxy_LdapSecretBackend) validateSetRequestTimeoutParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

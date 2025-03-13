@@ -75,6 +75,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetDataPara
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetDisableEscapingParameters(val interface{}) error {
 	return nil
 }
@@ -108,6 +112,18 @@ func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetPluginNa
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMssqlOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

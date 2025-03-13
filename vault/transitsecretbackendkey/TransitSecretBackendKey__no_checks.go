@@ -127,6 +127,14 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetExportableParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetHybridKeyTypeEcParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetHybridKeyTypePqcParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -152,6 +160,10 @@ func (j *jsiiProxy_TransitSecretBackendKey) validateSetNameParameters(val *strin
 }
 
 func (j *jsiiProxy_TransitSecretBackendKey) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) validateSetParameterSetParameters(val *string) error {
 	return nil
 }
 

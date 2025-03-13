@@ -123,6 +123,22 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludeCnFro
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedDnsDomainsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedEmailAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetExcludedUriDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetFormatParameters(val *string) error {
 	return nil
 }
@@ -155,6 +171,14 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNamespacePar
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNotAfterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetNotBeforeDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetOrganizationParameters(val *string) error {
 	return nil
 }
@@ -168,6 +192,18 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetOuParameters
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedDnsDomainsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedEmailAddressesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedIpRangesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetPermittedUriDomainsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -187,6 +223,14 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetRevokeParame
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetSignatureBitsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetSkidParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetStreetAddressParameters(val *string) error {
 	return nil
 }
@@ -200,6 +244,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUriSansParam
 }
 
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUseCsrValuesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetUsePssParameters(val interface{}) error {
 	return nil
 }
 

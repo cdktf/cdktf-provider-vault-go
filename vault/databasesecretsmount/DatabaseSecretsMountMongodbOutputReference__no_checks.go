@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetDataPa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -100,6 +104,18 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPlugin
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetDataPara
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetHostParameters(val *string) error {
 	return nil
 }
@@ -100,6 +104,18 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetPortPara
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

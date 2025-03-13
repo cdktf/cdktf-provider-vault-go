@@ -111,6 +111,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
 	return nil
 }
@@ -164,6 +168,18 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetRegionParameters(val *string) er
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetRoleArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

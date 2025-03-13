@@ -83,6 +83,10 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetInsecureParameters(val interface{}) error {
 	return nil
 }
@@ -104,6 +108,18 @@ func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSet
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

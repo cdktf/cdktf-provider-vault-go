@@ -111,6 +111,10 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetCountParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }
@@ -140,6 +144,18 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetProvisionersParameters(val
 }
 
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetResourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 

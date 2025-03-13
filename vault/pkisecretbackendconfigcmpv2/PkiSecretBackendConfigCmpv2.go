@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}.
 type PkiSecretBackendConfigCmpv2 interface {
 	cdktf.TerraformResource
 	AuditFields() *[]*string
@@ -42,6 +42,9 @@ type PkiSecretBackendConfigCmpv2 interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisabledValidations() *[]*string
+	SetDisabledValidations(val *[]*string)
+	DisabledValidationsInput() *[]*string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -132,6 +135,7 @@ type PkiSecretBackendConfigCmpv2 interface {
 	ResetAuditFields()
 	ResetAuthenticators()
 	ResetDefaultPathPolicy()
+	ResetDisabledValidations()
 	ResetEnabled()
 	ResetEnableSentinelParsing()
 	ResetId()
@@ -282,6 +286,26 @@ func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) DisabledValidations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disabledValidations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) DisabledValidationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"disabledValidationsInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
 func NewPkiSecretBackendConfigCmpv2(scope constructs.Construct, id *string, config *PkiSecretBackendConfigCmpv2Config) PkiSecretBackendConfigCmpv2 {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewPkiSecretBackendConfigCmpv2(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
 func NewPkiSecretBackendConfigCmpv2_Override(p PkiSecretBackendConfigCmpv2, scope constructs.Construct, id *string, config *PkiSecretBackendConfigCmpv2Config) {
 	_init_.Initialize()
 
@@ -576,6 +600,17 @@ func (j *jsiiProxy_PkiSecretBackendConfigCmpv2)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendConfigCmpv2)SetDisabledValidations(val *[]*string) {
+	if err := j.validateSetDisabledValidationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabledValidations",
 		val,
 	)
 }
@@ -1046,6 +1081,14 @@ func (p *jsiiProxy_PkiSecretBackendConfigCmpv2) ResetDefaultPathPolicy() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetDefaultPathPolicy",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendConfigCmpv2) ResetDisabledValidations() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDisabledValidations",
 		nil, // no parameters
 	)
 }

@@ -115,6 +115,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) validateSetDefaultPathPolicyPara
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) validateSetDisabledValidationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

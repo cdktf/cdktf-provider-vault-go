@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request}.
 type PkiSecretBackendIntermediateCertRequest interface {
 	cdktf.TerraformResource
 	AddBasicConstraints() interface{}
@@ -80,6 +80,9 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	KeyType() *string
 	SetKeyType(val *string)
 	KeyTypeInput() *string
+	KeyUsage() *[]*string
+	SetKeyUsage(val *[]*string)
+	KeyUsageInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -128,6 +131,12 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SerialNumber() *string
+	SetSerialNumber(val *string)
+	SerialNumberInput() *string
+	SignatureBits() *float64
+	SetSignatureBits(val *float64)
+	SignatureBitsInput() *float64
 	StreetAddress() *string
 	SetStreetAddress(val *string)
 	StreetAddressInput() *string
@@ -197,6 +206,7 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	ResetKeyName()
 	ResetKeyRef()
 	ResetKeyType()
+	ResetKeyUsage()
 	ResetLocality()
 	ResetManagedKeyId()
 	ResetManagedKeyName()
@@ -210,6 +220,8 @@ type PkiSecretBackendIntermediateCertRequest interface {
 	ResetPostalCode()
 	ResetPrivateKeyFormat()
 	ResetProvince()
+	ResetSerialNumber()
+	ResetSignatureBits()
 	ResetStreetAddress()
 	ResetUriSans()
 	SynthesizeAttributes() *map[string]interface{}
@@ -590,6 +602,26 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyTypeInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) KeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -860,6 +892,46 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) RawOverrides() inter
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) SerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) SerialNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumberInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) SignatureBits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) SignatureBitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBitsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) StreetAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -951,7 +1023,7 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest) UriSansInput() *[]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) PkiSecretBackendIntermediateCertRequest {
 	_init_.Initialize()
 
@@ -969,7 +1041,7 @@ func NewPkiSecretBackendIntermediateCertRequest(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_intermediate_cert_request vault_pki_secret_backend_intermediate_cert_request} Resource.
 func NewPkiSecretBackendIntermediateCertRequest_Override(p PkiSecretBackendIntermediateCertRequest, scope constructs.Construct, id *string, config *PkiSecretBackendIntermediateCertRequestConfig) {
 	_init_.Initialize()
 
@@ -1161,6 +1233,17 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetKeyType(val *strin
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetKeyUsage(val *[]*string) {
+	if err := j.validateSetKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyUsage",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1297,6 +1380,28 @@ func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetProvisioners(val *
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetSerialNumber(val *string) {
+	if err := j.validateSetSerialNumberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serialNumber",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendIntermediateCertRequest)SetSignatureBits(val *float64) {
+	if err := j.validateSetSignatureBitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signatureBits",
 		val,
 	)
 }
@@ -1775,6 +1880,14 @@ func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetKeyType() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetKeyUsage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyUsage",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetLocality() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1859,6 +1972,22 @@ func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetProvince() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProvince",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetSerialNumber() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSerialNumber",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendIntermediateCertRequest) ResetSignatureBits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSignatureBits",
 		nil, // no parameters
 	)
 }

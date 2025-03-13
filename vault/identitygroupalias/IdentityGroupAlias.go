@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_group_alias vault_identity_group_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 type IdentityGroupAlias interface {
 	cdktf.TerraformResource
 	CanonicalId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_IdentityGroupAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) IdentityGroupAlias {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias_Override(i IdentityGroupAlias, scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) {
 	_init_.Initialize()
 

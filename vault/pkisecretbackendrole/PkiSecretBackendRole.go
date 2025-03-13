@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role}.
 type PkiSecretBackendRole interface {
 	cdktf.TerraformResource
 	AllowAnyName() interface{}
@@ -150,6 +150,12 @@ type PkiSecretBackendRole interface {
 	NoStore() interface{}
 	SetNoStore(val interface{})
 	NoStoreInput() interface{}
+	NoStoreMetadata() interface{}
+	SetNoStoreMetadata(val interface{})
+	NoStoreMetadataInput() interface{}
+	NotAfter() *string
+	SetNotAfter(val *string)
+	NotAfterInput() *string
 	NotBeforeDuration() *string
 	SetNotBeforeDuration(val *string)
 	NotBeforeDurationInput() *string
@@ -183,9 +189,15 @@ type PkiSecretBackendRole interface {
 	RequireCn() interface{}
 	SetRequireCn(val interface{})
 	RequireCnInput() interface{}
+	SerialNumberSource() *string
+	SetSerialNumberSource(val *string)
+	SerialNumberSourceInput() *string
 	ServerFlag() interface{}
 	SetServerFlag(val interface{})
 	ServerFlagInput() interface{}
+	SignatureBits() *float64
+	SetSignatureBits(val *float64)
+	SignatureBitsInput() *float64
 	StreetAddress() *[]*string
 	SetStreetAddress(val *[]*string)
 	StreetAddressInput() *[]*string
@@ -204,6 +216,9 @@ type PkiSecretBackendRole interface {
 	UseCsrSans() interface{}
 	SetUseCsrSans(val interface{})
 	UseCsrSansInput() interface{}
+	UsePss() interface{}
+	SetUsePss(val interface{})
+	UsePssInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -281,6 +296,8 @@ type PkiSecretBackendRole interface {
 	ResetMaxTtl()
 	ResetNamespace()
 	ResetNoStore()
+	ResetNoStoreMetadata()
+	ResetNotAfter()
 	ResetNotBeforeDuration()
 	ResetOrganization()
 	ResetOu()
@@ -292,11 +309,14 @@ type PkiSecretBackendRole interface {
 	ResetPostalCode()
 	ResetProvince()
 	ResetRequireCn()
+	ResetSerialNumberSource()
 	ResetServerFlag()
+	ResetSignatureBits()
 	ResetStreetAddress()
 	ResetTtl()
 	ResetUseCsrCommonName()
 	ResetUseCsrSans()
+	ResetUsePss()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1115,6 +1135,46 @@ func (j *jsiiProxy_PkiSecretBackendRole) NoStoreInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) NoStoreMetadata() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noStoreMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NoStoreMetadataInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noStoreMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NotAfter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) NotAfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) NotBeforeDuration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1305,6 +1365,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) RequireCnInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) SerialNumberSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumberSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SerialNumberSourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serialNumberSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole) ServerFlag() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1320,6 +1400,26 @@ func (j *jsiiProxy_PkiSecretBackendRole) ServerFlagInput() interface{} {
 	_jsii_.Get(
 		j,
 		"serverFlagInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SignatureBits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole) SignatureBitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBitsInput",
 		&returns,
 	)
 	return returns
@@ -1435,8 +1535,28 @@ func (j *jsiiProxy_PkiSecretBackendRole) UseCsrSansInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole) UsePss() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePss",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+func (j *jsiiProxy_PkiSecretBackendRole) UsePssInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"usePssInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) PkiSecretBackendRole {
 	_init_.Initialize()
 
@@ -1454,7 +1574,7 @@ func NewPkiSecretBackendRole(scope constructs.Construct, id *string, config *Pki
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_role vault_pki_secret_backend_role} Resource.
 func NewPkiSecretBackendRole_Override(p PkiSecretBackendRole, scope constructs.Construct, id *string, config *PkiSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1899,6 +2019,28 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetNoStore(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole)SetNoStoreMetadata(val interface{}) {
+	if err := j.validateSetNoStoreMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noStoreMetadata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetNotAfter(val *string) {
+	if err := j.validateSetNotAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notAfter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole)SetNotBeforeDuration(val *string) {
 	if err := j.validateSetNotBeforeDurationParameters(val); err != nil {
 		panic(err)
@@ -1995,6 +2137,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetRequireCn(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRole)SetSerialNumberSource(val *string) {
+	if err := j.validateSetSerialNumberSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serialNumberSource",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRole)SetServerFlag(val interface{}) {
 	if err := j.validateSetServerFlagParameters(val); err != nil {
 		panic(err)
@@ -2002,6 +2155,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetServerFlag(val interface{}) {
 	_jsii_.Set(
 		j,
 		"serverFlag",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetSignatureBits(val *float64) {
+	if err := j.validateSetSignatureBitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signatureBits",
 		val,
 	)
 }
@@ -2046,6 +2210,17 @@ func (j *jsiiProxy_PkiSecretBackendRole)SetUseCsrSans(val interface{}) {
 	_jsii_.Set(
 		j,
 		"useCsrSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRole)SetUsePss(val interface{}) {
+	if err := j.validateSetUsePssParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usePss",
 		val,
 	)
 }
@@ -2678,6 +2853,22 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetNoStore() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRole) ResetNoStoreMetadata() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNoStoreMetadata",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetNotAfter() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotAfter",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRole) ResetNotBeforeDuration() {
 	_jsii_.InvokeVoid(
 		p,
@@ -2750,10 +2941,26 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetRequireCn() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRole) ResetSerialNumberSource() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSerialNumberSource",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRole) ResetServerFlag() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetServerFlag",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetSignatureBits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSignatureBits",
 		nil, // no parameters
 	)
 }
@@ -2786,6 +2993,14 @@ func (p *jsiiProxy_PkiSecretBackendRole) ResetUseCsrSans() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetUseCsrSans",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRole) ResetUsePss() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetUsePss",
 		nil, // no parameters
 	)
 }

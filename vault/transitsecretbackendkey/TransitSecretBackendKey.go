@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 type TransitSecretBackendKey interface {
 	cdktf.TerraformResource
 	AllowPlaintextBackup() interface{}
@@ -60,6 +60,12 @@ type TransitSecretBackendKey interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HybridKeyTypeEc() *string
+	SetHybridKeyTypeEc(val *string)
+	HybridKeyTypeEcInput() *string
+	HybridKeyTypePqc() *string
+	SetHybridKeyTypePqc(val *string)
+	HybridKeyTypePqcInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -87,6 +93,9 @@ type TransitSecretBackendKey interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	ParameterSet() *string
+	SetParameterSet(val *string)
+	ParameterSetInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -159,6 +168,8 @@ type TransitSecretBackendKey interface {
 	ResetDeletionAllowed()
 	ResetDerived()
 	ResetExportable()
+	ResetHybridKeyTypeEc()
+	ResetHybridKeyTypePqc()
 	ResetId()
 	ResetKeySize()
 	ResetMinDecryptionVersion()
@@ -167,6 +178,7 @@ type TransitSecretBackendKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameterSet()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -406,6 +418,46 @@ func (j *jsiiProxy_TransitSecretBackendKey) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) HybridKeyTypeEc() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridKeyTypeEc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) HybridKeyTypeEcInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridKeyTypeEcInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) HybridKeyTypePqc() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridKeyTypePqc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) HybridKeyTypePqcInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hybridKeyTypePqcInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -576,6 +628,26 @@ func (j *jsiiProxy_TransitSecretBackendKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey) ParameterSet() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey) ParameterSetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterSetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -697,7 +769,7 @@ func (j *jsiiProxy_TransitSecretBackendKey) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) TransitSecretBackendKey {
 	_init_.Initialize()
 
@@ -715,7 +787,7 @@ func NewTransitSecretBackendKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key} Resource.
 func NewTransitSecretBackendKey_Override(t TransitSecretBackendKey, scope constructs.Construct, id *string, config *TransitSecretBackendKeyConfig) {
 	_init_.Initialize()
 
@@ -841,6 +913,28 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetForEach(val cdktf.ITerraformIterat
 	)
 }
 
+func (j *jsiiProxy_TransitSecretBackendKey)SetHybridKeyTypeEc(val *string) {
+	if err := j.validateSetHybridKeyTypeEcParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridKeyTypeEc",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetHybridKeyTypePqc(val *string) {
+	if err := j.validateSetHybridKeyTypePqcParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridKeyTypePqc",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TransitSecretBackendKey)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -914,6 +1008,17 @@ func (j *jsiiProxy_TransitSecretBackendKey)SetNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"namespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransitSecretBackendKey)SetParameterSet(val *string) {
+	if err := j.validateSetParameterSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameterSet",
 		val,
 	)
 }
@@ -1349,6 +1454,22 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetExportable() {
 	)
 }
 
+func (t *jsiiProxy_TransitSecretBackendKey) ResetHybridKeyTypeEc() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetHybridKeyTypeEc",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) ResetHybridKeyTypePqc() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetHybridKeyTypePqc",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TransitSecretBackendKey) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1393,6 +1514,14 @@ func (t *jsiiProxy_TransitSecretBackendKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransitSecretBackendKey) ResetParameterSet() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetParameterSet",
 		nil, // no parameters
 	)
 }

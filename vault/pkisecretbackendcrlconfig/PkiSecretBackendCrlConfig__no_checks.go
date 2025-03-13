@@ -139,6 +139,10 @@ func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetMaxCrlEntriesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendCrlConfig) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -47,6 +47,18 @@ type PkiSecretBackendRootCert interface {
 	ExcludeCnFromSans() interface{}
 	SetExcludeCnFromSans(val interface{})
 	ExcludeCnFromSansInput() interface{}
+	ExcludedDnsDomains() *[]*string
+	SetExcludedDnsDomains(val *[]*string)
+	ExcludedDnsDomainsInput() *[]*string
+	ExcludedEmailAddresses() *[]*string
+	SetExcludedEmailAddresses(val *[]*string)
+	ExcludedEmailAddressesInput() *[]*string
+	ExcludedIpRanges() *[]*string
+	SetExcludedIpRanges(val *[]*string)
+	ExcludedIpRangesInput() *[]*string
+	ExcludedUriDomains() *[]*string
+	SetExcludedUriDomains(val *[]*string)
+	ExcludedUriDomainsInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -103,6 +115,9 @@ type PkiSecretBackendRootCert interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NotAfter() *string
+	SetNotAfter(val *string)
+	NotAfterInput() *string
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
@@ -115,6 +130,15 @@ type PkiSecretBackendRootCert interface {
 	PermittedDnsDomains() *[]*string
 	SetPermittedDnsDomains(val *[]*string)
 	PermittedDnsDomainsInput() *[]*string
+	PermittedEmailAddresses() *[]*string
+	SetPermittedEmailAddresses(val *[]*string)
+	PermittedEmailAddressesInput() *[]*string
+	PermittedIpRanges() *[]*string
+	SetPermittedIpRanges(val *[]*string)
+	PermittedIpRangesInput() *[]*string
+	PermittedUriDomains() *[]*string
+	SetPermittedUriDomains(val *[]*string)
+	PermittedUriDomainsInput() *[]*string
 	PostalCode() *string
 	SetPostalCode(val *string)
 	PostalCodeInput() *string
@@ -135,6 +159,9 @@ type PkiSecretBackendRootCert interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SerialNumber() *string
+	SignatureBits() *float64
+	SetSignatureBits(val *float64)
+	SignatureBitsInput() *float64
 	StreetAddress() *string
 	SetStreetAddress(val *string)
 	StreetAddressInput() *string
@@ -199,6 +226,10 @@ type PkiSecretBackendRootCert interface {
 	ResetAltNames()
 	ResetCountry()
 	ResetExcludeCnFromSans()
+	ResetExcludedDnsDomains()
+	ResetExcludedEmailAddresses()
+	ResetExcludedIpRanges()
+	ResetExcludedUriDomains()
 	ResetFormat()
 	ResetId()
 	ResetIpSans()
@@ -212,6 +243,7 @@ type PkiSecretBackendRootCert interface {
 	ResetManagedKeyName()
 	ResetMaxPathLength()
 	ResetNamespace()
+	ResetNotAfter()
 	ResetOrganization()
 	ResetOtherSans()
 	ResetOu()
@@ -219,9 +251,13 @@ type PkiSecretBackendRootCert interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermittedDnsDomains()
+	ResetPermittedEmailAddresses()
+	ResetPermittedIpRanges()
+	ResetPermittedUriDomains()
 	ResetPostalCode()
 	ResetPrivateKeyFormat()
 	ResetProvince()
+	ResetSignatureBits()
 	ResetStreetAddress()
 	ResetTtl()
 	ResetUriSans()
@@ -398,6 +434,86 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludeCnFromSansInput() interface{
 	_jsii_.Get(
 		j,
 		"excludeCnFromSansInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedDnsDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedDnsDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedDnsDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedDnsDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedEmailAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedEmailAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedEmailAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedEmailAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedUriDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedUriDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) ExcludedUriDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"excludedUriDomainsInput",
 		&returns,
 	)
 	return returns
@@ -743,6 +859,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) NotAfter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) NotAfterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) Organization() *string {
 	var returns *string
 	_jsii_.Get(
@@ -818,6 +954,66 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedDnsDomainsInput() *[]*stri
 	_jsii_.Get(
 		j,
 		"permittedDnsDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedEmailAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedEmailAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedEmailAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedEmailAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedUriDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedUriDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) PermittedUriDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"permittedUriDomainsInput",
 		&returns,
 	)
 	return returns
@@ -918,6 +1114,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) SerialNumber() *string {
 	_jsii_.Get(
 		j,
 		"serialNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) SignatureBits() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) SignatureBitsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureBitsInput",
 		&returns,
 	)
 	return returns
@@ -1034,7 +1250,7 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -1052,7 +1268,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1360,50 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetExcludeCnFromSans(val interface{}
 	_jsii_.Set(
 		j,
 		"excludeCnFromSans",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetExcludedDnsDomains(val *[]*string) {
+	if err := j.validateSetExcludedDnsDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedDnsDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetExcludedEmailAddresses(val *[]*string) {
+	if err := j.validateSetExcludedEmailAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedEmailAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetExcludedIpRanges(val *[]*string) {
+	if err := j.validateSetExcludedIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetExcludedUriDomains(val *[]*string) {
+	if err := j.validateSetExcludedUriDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"excludedUriDomains",
 		val,
 	)
 }
@@ -1310,6 +1570,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetNotAfter(val *string) {
+	if err := j.validateSetNotAfterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notAfter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert)SetOrganization(val *string) {
 	if err := j.validateSetOrganizationParameters(val); err != nil {
 		panic(err)
@@ -1350,6 +1621,39 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetPermittedDnsDomains(val *[]*strin
 	_jsii_.Set(
 		j,
 		"permittedDnsDomains",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetPermittedEmailAddresses(val *[]*string) {
+	if err := j.validateSetPermittedEmailAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permittedEmailAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetPermittedIpRanges(val *[]*string) {
+	if err := j.validateSetPermittedIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permittedIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetPermittedUriDomains(val *[]*string) {
+	if err := j.validateSetPermittedUriDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"permittedUriDomains",
 		val,
 	)
 }
@@ -1402,6 +1706,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetSignatureBits(val *float64) {
+	if err := j.validateSetSignatureBitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signatureBits",
 		val,
 	)
 }
@@ -1827,6 +2142,38 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetExcludeCnFromSans() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetExcludedDnsDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExcludedDnsDomains",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetExcludedEmailAddresses() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExcludedEmailAddresses",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetExcludedIpRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExcludedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetExcludedUriDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetExcludedUriDomains",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) ResetFormat() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1931,6 +2278,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetNamespace() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetNotAfter() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotAfter",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) ResetOrganization() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1971,6 +2326,30 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetPermittedDnsDomains() {
 	)
 }
 
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetPermittedEmailAddresses() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPermittedEmailAddresses",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetPermittedIpRanges() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPermittedIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetPermittedUriDomains() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetPermittedUriDomains",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PkiSecretBackendRootCert) ResetPostalCode() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1991,6 +2370,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetProvince() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetProvince",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetSignatureBits() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSignatureBits",
 		nil, // no parameters
 	)
 }

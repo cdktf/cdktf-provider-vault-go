@@ -182,6 +182,26 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -239,6 +259,30 @@ func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validate
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedisElasticacheOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

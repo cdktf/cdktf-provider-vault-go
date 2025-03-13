@@ -67,6 +67,10 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetD
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetDisableAutomatedRotationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -92,6 +96,18 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetP
 }
 
 func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetRotationPeriodParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetRotationScheduleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbatlasOutputReference) validateSetRotationWindowParameters(val *float64) error {
 	return nil
 }
 
