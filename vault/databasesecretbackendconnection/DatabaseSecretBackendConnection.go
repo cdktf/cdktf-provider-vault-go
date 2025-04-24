@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection}.
 type DatabaseSecretBackendConnection interface {
 	cdktf.TerraformResource
 	AllowedRoles() *[]*string
@@ -1028,7 +1028,7 @@ func (j *jsiiProxy_DatabaseSecretBackendConnection) VerifyConnectionInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection {
 	_init_.Initialize()
 
@@ -1046,7 +1046,7 @@ func NewDatabaseSecretBackendConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secret_backend_connection vault_database_secret_backend_connection} Resource.
 func NewDatabaseSecretBackendConnection_Override(d DatabaseSecretBackendConnection, scope constructs.Construct, id *string, config *DatabaseSecretBackendConnectionConfig) {
 	_init_.Initialize()
 

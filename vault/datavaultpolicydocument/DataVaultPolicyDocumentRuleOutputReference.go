@@ -54,6 +54,9 @@ type DataVaultPolicyDocumentRuleOutputReference interface {
 	RequiredParameters() *[]*string
 	SetRequiredParameters(val *[]*string)
 	RequiredParametersInput() *[]*string
+	SubscribeEventTypes() *[]*string
+	SetSubscribeEventTypes(val *[]*string)
+	SubscribeEventTypesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +97,7 @@ type DataVaultPolicyDocumentRuleOutputReference interface {
 	ResetMaxWrappingTtl()
 	ResetMinWrappingTtl()
 	ResetRequiredParameters()
+	ResetSubscribeEventTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -319,6 +323,26 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) RequiredParameter
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SubscribeEventTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subscribeEventTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) SubscribeEventTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subscribeEventTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,6 +486,17 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetRequiredParamet
 	_jsii_.Set(
 		j,
 		"requiredParameters",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference)SetSubscribeEventTypes(val *[]*string) {
+	if err := j.validateSetSubscribeEventTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subscribeEventTypes",
 		val,
 	)
 }
@@ -740,6 +775,14 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) ResetRequiredPara
 	_jsii_.InvokeVoid(
 		d,
 		"resetRequiredParameters",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) ResetSubscribeEventTypes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSubscribeEventTypes",
 		nil, // no parameters
 	)
 }

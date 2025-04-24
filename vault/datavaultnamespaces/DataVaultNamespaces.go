@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces vault_namespaces}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces vault_namespaces}.
 type DataVaultNamespaces interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -48,12 +48,16 @@ type DataVaultNamespaces interface {
 	// The tree node.
 	Node() constructs.Node
 	Paths() *[]*string
+	PathsFq() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Recursive() interface{}
+	SetRecursive(val interface{})
+	RecursiveInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -90,6 +94,7 @@ type DataVaultNamespaces interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRecursive()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -249,6 +254,16 @@ func (j *jsiiProxy_DataVaultNamespaces) Paths() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultNamespaces) PathsFq() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"pathsFq",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultNamespaces) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -264,6 +279,26 @@ func (j *jsiiProxy_DataVaultNamespaces) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultNamespaces) Recursive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recursive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultNamespaces) RecursiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recursiveInput",
 		&returns,
 	)
 	return returns
@@ -300,7 +335,7 @@ func (j *jsiiProxy_DataVaultNamespaces) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces vault_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces vault_namespaces} Data Source.
 func NewDataVaultNamespaces(scope constructs.Construct, id *string, config *DataVaultNamespacesConfig) DataVaultNamespaces {
 	_init_.Initialize()
 
@@ -318,7 +353,7 @@ func NewDataVaultNamespaces(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/namespaces vault_namespaces} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespaces vault_namespaces} Data Source.
 func NewDataVaultNamespaces_Override(d DataVaultNamespaces, scope constructs.Construct, id *string, config *DataVaultNamespacesConfig) {
 	_init_.Initialize()
 
@@ -393,6 +428,17 @@ func (j *jsiiProxy_DataVaultNamespaces)SetProvider(val cdktf.TerraformProvider) 
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultNamespaces)SetRecursive(val interface{}) {
+	if err := j.validateSetRecursiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recursive",
 		val,
 	)
 }
@@ -702,6 +748,14 @@ func (d *jsiiProxy_DataVaultNamespaces) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultNamespaces) ResetRecursive() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRecursive",
 		nil, // no parameters
 	)
 }

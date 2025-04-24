@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateSetRequir
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateSetSubscribeEventTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

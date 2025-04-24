@@ -119,6 +119,10 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetExplicitMaxTtlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetIdParameters(val *string) error {
 	return nil
 }

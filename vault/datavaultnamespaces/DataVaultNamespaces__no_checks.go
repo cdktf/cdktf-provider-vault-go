@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataVaultNamespaces) validateSetNamespaceParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultNamespaces) validateSetRecursiveParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDataVaultNamespacesParameters(scope constructs.Construct, id *string, config *DataVaultNamespacesConfig) error {
 	return nil
 }

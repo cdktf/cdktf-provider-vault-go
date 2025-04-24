@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}.
 type AzureSecretBackendRole interface {
 	cdktf.TerraformResource
 	ApplicationObjectId() *string
@@ -44,6 +44,9 @@ type AzureSecretBackendRole interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExplicitMaxTtl() *string
+	SetExplicitMaxTtl(val *string)
+	ExplicitMaxTtlInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -148,6 +151,7 @@ type AzureSecretBackendRole interface {
 	ResetAzureRoles()
 	ResetBackend()
 	ResetDescription()
+	ResetExplicitMaxTtl()
 	ResetId()
 	ResetMaxTtl()
 	ResetNamespace()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_AzureSecretBackendRole) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole) ExplicitMaxTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"explicitMaxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole) ExplicitMaxTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"explicitMaxTtlInput",
 		&returns,
 	)
 	return returns
@@ -597,7 +621,7 @@ func (j *jsiiProxy_AzureSecretBackendRole) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
 func NewAzureSecretBackendRole(scope constructs.Construct, id *string, config *AzureSecretBackendRoleConfig) AzureSecretBackendRole {
 	_init_.Initialize()
 
@@ -615,7 +639,7 @@ func NewAzureSecretBackendRole(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource.
 func NewAzureSecretBackendRole_Override(a AzureSecretBackendRole, scope constructs.Construct, id *string, config *AzureSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -685,6 +709,17 @@ func (j *jsiiProxy_AzureSecretBackendRole)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackendRole)SetExplicitMaxTtl(val *string) {
+	if err := j.validateSetExplicitMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"explicitMaxTtl",
 		val,
 	)
 }
@@ -1226,6 +1261,14 @@ func (a *jsiiProxy_AzureSecretBackendRole) ResetDescription() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackendRole) ResetExplicitMaxTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExplicitMaxTtl",
 		nil, // no parameters
 	)
 }

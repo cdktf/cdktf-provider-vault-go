@@ -5,9 +5,13 @@ package datavaultpolicydocument
 
 
 type DataVaultPolicyDocumentRuleAllowedParameter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}.
+	// Name of permitted key.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.7.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}.
+	// A list of values what are permitted by policy rule.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
 	Value *[]*string `field:"required" json:"value" yaml:"value"`
 }
 
