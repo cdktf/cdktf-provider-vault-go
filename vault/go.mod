@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-vault-go/vault/v13
+module github.com/cdktf/cdktf-provider-vault-go/vault/v14
 
 go 1.18
 
