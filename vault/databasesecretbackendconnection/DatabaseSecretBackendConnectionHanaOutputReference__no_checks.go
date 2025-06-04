@@ -87,6 +87,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

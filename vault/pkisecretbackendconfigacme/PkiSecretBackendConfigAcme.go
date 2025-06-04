@@ -5,14 +5,14 @@ package pkisecretbackendconfigacme
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigacme/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigacme/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
 type PkiSecretBackendConfigAcme interface {
 	cdktf.TerraformResource
 	AllowedIssuers() *[]*string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigAcme) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) PkiSecretBackendConfigAcme {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewPkiSecretBackendConfigAcme(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme} Resource.
 func NewPkiSecretBackendConfigAcme_Override(p PkiSecretBackendConfigAcme, scope constructs.Construct, id *string, config *PkiSecretBackendConfigAcmeConfig) {
 	_init_.Initialize()
 

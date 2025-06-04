@@ -131,10 +131,6 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_OktaAuthBackend) validateSetMaxTtlParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_OktaAuthBackend) validateSetNamespaceParameters(val *string) error {
 	return nil
 }
@@ -188,10 +184,6 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTtlParameters(val *float64) 
 }
 
 func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTypeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_OktaAuthBackend) validateSetTtlParameters(val *string) error {
 	return nil
 }
 

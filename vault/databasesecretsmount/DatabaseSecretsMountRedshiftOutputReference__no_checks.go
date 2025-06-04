@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPassw
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

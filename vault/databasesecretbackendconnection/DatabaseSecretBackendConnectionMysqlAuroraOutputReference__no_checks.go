@@ -87,6 +87,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlAuroraOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }

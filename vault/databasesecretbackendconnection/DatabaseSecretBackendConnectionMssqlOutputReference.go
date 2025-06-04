@@ -5,9 +5,9 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/databasesecretbackendconnection/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -53,6 +53,12 @@ type DatabaseSecretBackendConnectionMssqlOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -98,6 +104,8 @@ type DatabaseSecretBackendConnectionMssqlOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -305,6 +313,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) Password
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -499,6 +547,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference)SetPasswo
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -785,6 +855,22 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) ResetPas
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

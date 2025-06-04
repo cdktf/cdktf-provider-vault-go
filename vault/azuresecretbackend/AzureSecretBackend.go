@@ -5,14 +5,14 @@ package azuresecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/azuresecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/azuresecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -112,9 +112,6 @@ type AzureSecretBackend interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	UseMicrosoftGraphApi() interface{}
-	SetUseMicrosoftGraphApi(val interface{})
-	UseMicrosoftGraphApiInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -176,7 +173,6 @@ type AzureSecretBackend interface {
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
-	ResetUseMicrosoftGraphApi()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -695,28 +691,8 @@ func (j *jsiiProxy_AzureSecretBackend) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApi() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"useMicrosoftGraphApi",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_AzureSecretBackend) UseMicrosoftGraphApiInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"useMicrosoftGraphApiInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -734,7 +710,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -996,17 +972,6 @@ func (j *jsiiProxy_AzureSecretBackend)SetTenantId(val *string) {
 	_jsii_.Set(
 		j,
 		"tenantId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AzureSecretBackend)SetUseMicrosoftGraphApi(val interface{}) {
-	if err := j.validateSetUseMicrosoftGraphApiParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"useMicrosoftGraphApi",
 		val,
 	)
 }
@@ -1488,14 +1453,6 @@ func (a *jsiiProxy_AzureSecretBackend) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRotationWindow",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AzureSecretBackend) ResetUseMicrosoftGraphApi() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetUseMicrosoftGraphApi",
 		nil, // no parameters
 	)
 }

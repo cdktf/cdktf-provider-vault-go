@@ -175,10 +175,6 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetTenantIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_AzureSecretBackend) validateSetUseMicrosoftGraphApiParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewAzureSecretBackendParameters(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) error {
 	return nil
 }

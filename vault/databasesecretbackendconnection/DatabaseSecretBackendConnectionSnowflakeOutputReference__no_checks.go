@@ -83,6 +83,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

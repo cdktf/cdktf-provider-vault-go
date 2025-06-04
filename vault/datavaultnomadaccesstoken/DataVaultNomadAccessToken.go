@@ -5,14 +5,14 @@ package datavaultnomadaccesstoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaultnomadaccesstoken/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultnomadaccesstoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/nomad_access_token vault_nomad_access_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/nomad_access_token vault_nomad_access_token}.
 type DataVaultNomadAccessToken interface {
 	cdktf.TerraformDataSource
 	AccessorId() *string
@@ -357,7 +357,7 @@ func (j *jsiiProxy_DataVaultNomadAccessToken) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) DataVaultNomadAccessToken {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewDataVaultNomadAccessToken(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/nomad_access_token vault_nomad_access_token} Data Source.
 func NewDataVaultNomadAccessToken_Override(d DataVaultNomadAccessToken, scope constructs.Construct, id *string, config *DataVaultNomadAccessTokenConfig) {
 	_init_.Initialize()
 

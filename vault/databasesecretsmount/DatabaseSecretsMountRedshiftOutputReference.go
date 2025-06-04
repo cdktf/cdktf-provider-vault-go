@@ -5,9 +5,9 @@ package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/databasesecretsmount/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -62,6 +62,12 @@ type DatabaseSecretsMountRedshiftOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
@@ -127,6 +133,8 @@ type DatabaseSecretsMountRedshiftOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetPluginName()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
@@ -395,6 +403,46 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) PasswordInput() 
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -747,6 +795,28 @@ func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetPassword(val *
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1115,6 +1185,22 @@ func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) ResetPassword() 
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountRedshiftOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

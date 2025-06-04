@@ -5,14 +5,14 @@ package awssecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/awssecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/awssecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 type AwsSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -667,7 +667,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) {
 	_init_.Initialize()
 

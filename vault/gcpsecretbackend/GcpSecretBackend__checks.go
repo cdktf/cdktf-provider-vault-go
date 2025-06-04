@@ -345,6 +345,22 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

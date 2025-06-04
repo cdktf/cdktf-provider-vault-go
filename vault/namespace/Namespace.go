@@ -5,14 +5,14 @@ package namespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/namespace/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/namespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/namespace vault_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/namespace vault_namespace}.
 type Namespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_Namespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfig) Namespace {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewNamespace(scope constructs.Construct, id *string, config *NamespaceConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/namespace vault_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/namespace vault_namespace} Resource.
 func NewNamespace_Override(n Namespace, scope constructs.Construct, id *string, config *NamespaceConfig) {
 	_init_.Initialize()
 

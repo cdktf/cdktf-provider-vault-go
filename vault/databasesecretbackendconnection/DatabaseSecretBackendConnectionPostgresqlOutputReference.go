@@ -5,9 +5,9 @@ package databasesecretbackendconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/databasesecretbackendconnection/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretbackendconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -56,6 +56,12 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	SetPasswordAuthentication(val *string)
 	PasswordAuthenticationInput() *string
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -117,6 +123,8 @@ type DatabaseSecretBackendConnectionPostgresqlOutputReference interface {
 	ResetMaxOpenConnections()
 	ResetPassword()
 	ResetPasswordAuthentication()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetPrivateKey()
 	ResetSelfManaged()
 	ResetServiceAccountJson()
@@ -344,6 +352,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Pas
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -654,6 +702,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetP
 	_jsii_.Set(
 		j,
 		"passwordAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1003,6 +1073,22 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) Res
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswordAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionPostgresqlOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

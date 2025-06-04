@@ -83,6 +83,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMongodbOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

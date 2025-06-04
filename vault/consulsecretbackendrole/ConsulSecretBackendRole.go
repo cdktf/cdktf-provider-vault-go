@@ -5,14 +5,14 @@ package consulsecretbackendrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/consulsecretbackendrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/consulsecretbackendrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role}.
 type ConsulSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_ConsulSecretBackendRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) ConsulSecretBackendRole {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewConsulSecretBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/consul_secret_backend_role vault_consul_secret_backend_role} Resource.
 func NewConsulSecretBackendRole_Override(c ConsulSecretBackendRole, scope constructs.Construct, id *string, config *ConsulSecretBackendRoleConfig) {
 	_init_.Initialize()
 

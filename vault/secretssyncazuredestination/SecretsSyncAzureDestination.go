@@ -5,14 +5,14 @@ package secretssyncazuredestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/secretssyncazuredestination/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncazuredestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 type SecretsSyncAzureDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -560,7 +560,7 @@ func (j *jsiiProxy_SecretsSyncAzureDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewSecretsSyncAzureDestination(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination} Resource.
 func NewSecretsSyncAzureDestination_Override(s SecretsSyncAzureDestination, scope constructs.Construct, id *string, config *SecretsSyncAzureDestinationConfig) {
 	_init_.Initialize()
 

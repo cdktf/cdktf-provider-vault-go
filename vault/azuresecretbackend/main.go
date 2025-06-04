@@ -85,7 +85,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationPeriod", GoMethod: "ResetRotationPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationSchedule", GoMethod: "ResetRotationSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
-			_jsii_.MemberMethod{JsiiMethod: "resetUseMicrosoftGraphApi", GoMethod: "ResetUseMicrosoftGraphApi"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationPeriod", GoGetter: "RotationPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationPeriodInput", GoGetter: "RotationPeriodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationSchedule", GoGetter: "RotationSchedule"},
@@ -105,8 +104,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
-			_jsii_.MemberProperty{JsiiProperty: "useMicrosoftGraphApi", GoGetter: "UseMicrosoftGraphApi"},
-			_jsii_.MemberProperty{JsiiProperty: "useMicrosoftGraphApiInput", GoGetter: "UseMicrosoftGraphApiInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AzureSecretBackend{}

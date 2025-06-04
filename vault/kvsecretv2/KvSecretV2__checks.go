@@ -364,6 +364,22 @@ func (j *jsiiProxy_KvSecretV2) validateSetDataJsonParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_KvSecretV2) validateSetDataJsonWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretV2) validateSetDataJsonWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KvSecretV2) validateSetDeleteAllVersionsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

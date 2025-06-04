@@ -31,55 +31,55 @@ func validateVaultProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val *VaultProviderAuthLogin) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val *VaultProviderAuthLoginAws) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAwsParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val *VaultProviderAuthLoginAzure) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginAzureParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val *VaultProviderAuthLoginCert) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginCertParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val *VaultProviderAuthLoginGcp) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginGcpParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val *VaultProviderAuthLoginJwt) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginJwtParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val *VaultProviderAuthLoginKerberos) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginKerberosParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val *VaultProviderAuthLoginOci) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOciParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val *VaultProviderAuthLoginOidc) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginOidcParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val *VaultProviderAuthLoginRadius) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginRadiusParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val *VaultProviderAuthLoginTokenFile) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginTokenFileParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val *VaultProviderAuthLoginUserpass) error {
+func (j *jsiiProxy_VaultProvider) validateSetAuthLoginUserpassParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val *VaultProviderClientAuth) error {
+func (j *jsiiProxy_VaultProvider) validateSetClientAuthParameters(val interface{}) error {
 	return nil
 }
 

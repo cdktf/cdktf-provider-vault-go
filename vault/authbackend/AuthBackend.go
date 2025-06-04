@@ -5,14 +5,14 @@ package authbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/authbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/authbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/auth_backend vault_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/auth_backend vault_auth_backend}.
 type AuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_AuthBackend) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendConfig) AuthBackend {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewAuthBackend(scope constructs.Construct, id *string, config *AuthBackendC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/auth_backend vault_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/auth_backend vault_auth_backend} Resource.
 func NewAuthBackend_Override(a AuthBackend, scope constructs.Construct, id *string, config *AuthBackendConfig) {
 	_init_.Initialize()
 

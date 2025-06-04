@@ -5,14 +5,14 @@ package identitygrouppolicies
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/identitygrouppolicies/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygrouppolicies/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_policies vault_identity_group_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_policies vault_identity_group_policies}.
 type IdentityGroupPolicies interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_IdentityGroupPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) IdentityGroupPolicies {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewIdentityGroupPolicies(scope constructs.Construct, id *string, config *Id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource.
 func NewIdentityGroupPolicies_Override(i IdentityGroupPolicies, scope constructs.Construct, id *string, config *IdentityGroupPoliciesConfig) {
 	_init_.Initialize()
 

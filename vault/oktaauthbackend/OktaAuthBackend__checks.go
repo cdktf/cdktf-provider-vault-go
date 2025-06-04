@@ -471,14 +471,6 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_OktaAuthBackend) validateSetMaxTtlParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_OktaAuthBackend) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -634,14 +626,6 @@ func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTtlParameters(val *float64) 
 }
 
 func (j *jsiiProxy_OktaAuthBackend) validateSetTokenTypeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_OktaAuthBackend) validateSetTtlParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

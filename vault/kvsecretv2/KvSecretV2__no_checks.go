@@ -111,6 +111,14 @@ func (j *jsiiProxy_KvSecretV2) validateSetDataJsonParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_KvSecretV2) validateSetDataJsonWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KvSecretV2) validateSetDataJsonWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KvSecretV2) validateSetDeleteAllVersionsParameters(val interface{}) error {
 	return nil
 }

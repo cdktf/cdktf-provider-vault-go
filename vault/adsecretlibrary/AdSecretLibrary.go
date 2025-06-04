@@ -5,14 +5,14 @@ package adsecretlibrary
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/adsecretlibrary/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/adsecretlibrary/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ad_secret_library vault_ad_secret_library}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ad_secret_library vault_ad_secret_library}.
 type AdSecretLibrary interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_AdSecretLibrary) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecretLibraryConfig) AdSecretLibrary {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewAdSecretLibrary(scope constructs.Construct, id *string, config *AdSecret
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource.
 func NewAdSecretLibrary_Override(a AdSecretLibrary, scope constructs.Construct, id *string, config *AdSecretLibraryConfig) {
 	_init_.Initialize()
 

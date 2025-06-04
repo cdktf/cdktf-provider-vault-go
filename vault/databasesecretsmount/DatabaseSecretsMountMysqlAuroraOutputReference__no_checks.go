@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswor
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

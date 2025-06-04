@@ -99,6 +99,14 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPass
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

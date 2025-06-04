@@ -111,6 +111,14 @@ func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPas
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountPostgresqlOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

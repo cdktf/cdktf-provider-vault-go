@@ -5,14 +5,14 @@ package rabbitmqsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/rabbitmqsecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/rabbitmqsecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend}.
 type RabbitmqSecretBackend interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -595,7 +595,7 @@ func (j *jsiiProxy_RabbitmqSecretBackend) VerifyConnectionInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
 func NewRabbitmqSecretBackend(scope constructs.Construct, id *string, config *RabbitmqSecretBackendConfig) RabbitmqSecretBackend {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewRabbitmqSecretBackend(scope constructs.Construct, id *string, config *Ra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/rabbitmq_secret_backend vault_rabbitmq_secret_backend} Resource.
 func NewRabbitmqSecretBackend_Override(r RabbitmqSecretBackend, scope constructs.Construct, id *string, config *RabbitmqSecretBackendConfig) {
 	_init_.Initialize()
 

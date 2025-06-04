@@ -5,14 +5,14 @@ package kvsecretv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/kvsecretv2/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/kvsecretv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}.
 type KvSecretV2 interface {
 	cdktf.TerraformResource
 	Cas() *float64
@@ -36,6 +36,12 @@ type KvSecretV2 interface {
 	DataJson() *string
 	SetDataJson(val *string)
 	DataJsonInput() *string
+	DataJsonWo() *string
+	SetDataJsonWo(val *string)
+	DataJsonWoInput() *string
+	DataJsonWoVersion() *float64
+	SetDataJsonWoVersion(val *float64)
+	DataJsonWoVersionInput() *float64
 	DeleteAllVersions() interface{}
 	SetDeleteAllVersions(val interface{})
 	DeleteAllVersionsInput() interface{}
@@ -139,6 +145,9 @@ type KvSecretV2 interface {
 	PutCustomMetadata(value *KvSecretV2CustomMetadata)
 	ResetCas()
 	ResetCustomMetadata()
+	ResetDataJson()
+	ResetDataJsonWo()
+	ResetDataJsonWoVersion()
 	ResetDeleteAllVersions()
 	ResetDisableRead()
 	ResetId()
@@ -270,6 +279,46 @@ func (j *jsiiProxy_KvSecretV2) DataJsonInput() *string {
 	_jsii_.Get(
 		j,
 		"dataJsonInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) DataJsonWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataJsonWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) DataJsonWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataJsonWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) DataJsonWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataJsonWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KvSecretV2) DataJsonWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"dataJsonWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -556,7 +605,7 @@ func (j *jsiiProxy_KvSecretV2) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
 func NewKvSecretV2(scope constructs.Construct, id *string, config *KvSecretV2Config) KvSecretV2 {
 	_init_.Initialize()
 
@@ -574,7 +623,7 @@ func NewKvSecretV2(scope constructs.Construct, id *string, config *KvSecretV2Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource.
 func NewKvSecretV2_Override(k KvSecretV2, scope constructs.Construct, id *string, config *KvSecretV2Config) {
 	_init_.Initialize()
 
@@ -625,6 +674,28 @@ func (j *jsiiProxy_KvSecretV2)SetDataJson(val *string) {
 	_jsii_.Set(
 		j,
 		"dataJson",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KvSecretV2)SetDataJsonWo(val *string) {
+	if err := j.validateSetDataJsonWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataJsonWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KvSecretV2)SetDataJsonWoVersion(val *float64) {
+	if err := j.validateSetDataJsonWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataJsonWoVersion",
 		val,
 	)
 }
@@ -1128,6 +1199,30 @@ func (k *jsiiProxy_KvSecretV2) ResetCustomMetadata() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCustomMetadata",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KvSecretV2) ResetDataJson() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDataJson",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KvSecretV2) ResetDataJsonWo() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDataJsonWo",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KvSecretV2) ResetDataJsonWoVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDataJsonWoVersion",
 		nil, // no parameters
 	)
 }

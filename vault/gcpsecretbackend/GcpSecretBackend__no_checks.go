@@ -103,6 +103,14 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetCredentialsWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

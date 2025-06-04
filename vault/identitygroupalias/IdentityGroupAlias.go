@@ -5,14 +5,14 @@ package identitygroupalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/identitygroupalias/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitygroupalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_alias vault_identity_group_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 type IdentityGroupAlias interface {
 	cdktf.TerraformResource
 	CanonicalId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_IdentityGroupAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) IdentityGroupAlias {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewIdentityGroupAlias(scope constructs.Construct, id *string, config *Ident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_group_alias vault_identity_group_alias} Resource.
 func NewIdentityGroupAlias_Override(i IdentityGroupAlias, scope constructs.Construct, id *string, config *IdentityGroupAliasConfig) {
 	_init_.Initialize()
 

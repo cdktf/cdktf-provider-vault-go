@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordP
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

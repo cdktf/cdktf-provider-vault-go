@@ -5,14 +5,14 @@ package datavaultnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/datavaultnamespace/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/datavaultnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespace vault_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/namespace vault_namespace}.
 type DataVaultNamespace interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataVaultNamespace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespace vault_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/namespace vault_namespace} Data Source.
 func NewDataVaultNamespace(scope constructs.Construct, id *string, config *DataVaultNamespaceConfig) DataVaultNamespace {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataVaultNamespace(scope constructs.Construct, id *string, config *DataV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/data-sources/namespace vault_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/namespace vault_namespace} Data Source.
 func NewDataVaultNamespace_Override(d DataVaultNamespace, scope constructs.Construct, id *string, config *DataVaultNamespaceConfig) {
 	_init_.Initialize()
 

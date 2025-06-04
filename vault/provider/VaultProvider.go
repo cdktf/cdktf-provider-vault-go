@@ -5,14 +5,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/provider/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs vault}.
 type VaultProvider interface {
 	cdktf.TerraformProvider
 	AddAddressToEnv() *string
@@ -24,42 +24,42 @@ type VaultProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
-	AuthLogin() *VaultProviderAuthLogin
-	SetAuthLogin(val *VaultProviderAuthLogin)
-	AuthLoginAws() *VaultProviderAuthLoginAws
-	SetAuthLoginAws(val *VaultProviderAuthLoginAws)
-	AuthLoginAwsInput() *VaultProviderAuthLoginAws
-	AuthLoginAzure() *VaultProviderAuthLoginAzure
-	SetAuthLoginAzure(val *VaultProviderAuthLoginAzure)
-	AuthLoginAzureInput() *VaultProviderAuthLoginAzure
-	AuthLoginCert() *VaultProviderAuthLoginCert
-	SetAuthLoginCert(val *VaultProviderAuthLoginCert)
-	AuthLoginCertInput() *VaultProviderAuthLoginCert
-	AuthLoginGcp() *VaultProviderAuthLoginGcp
-	SetAuthLoginGcp(val *VaultProviderAuthLoginGcp)
-	AuthLoginGcpInput() *VaultProviderAuthLoginGcp
-	AuthLoginInput() *VaultProviderAuthLogin
-	AuthLoginJwt() *VaultProviderAuthLoginJwt
-	SetAuthLoginJwt(val *VaultProviderAuthLoginJwt)
-	AuthLoginJwtInput() *VaultProviderAuthLoginJwt
-	AuthLoginKerberos() *VaultProviderAuthLoginKerberos
-	SetAuthLoginKerberos(val *VaultProviderAuthLoginKerberos)
-	AuthLoginKerberosInput() *VaultProviderAuthLoginKerberos
-	AuthLoginOci() *VaultProviderAuthLoginOci
-	SetAuthLoginOci(val *VaultProviderAuthLoginOci)
-	AuthLoginOciInput() *VaultProviderAuthLoginOci
-	AuthLoginOidc() *VaultProviderAuthLoginOidc
-	SetAuthLoginOidc(val *VaultProviderAuthLoginOidc)
-	AuthLoginOidcInput() *VaultProviderAuthLoginOidc
-	AuthLoginRadius() *VaultProviderAuthLoginRadius
-	SetAuthLoginRadius(val *VaultProviderAuthLoginRadius)
-	AuthLoginRadiusInput() *VaultProviderAuthLoginRadius
-	AuthLoginTokenFile() *VaultProviderAuthLoginTokenFile
-	SetAuthLoginTokenFile(val *VaultProviderAuthLoginTokenFile)
-	AuthLoginTokenFileInput() *VaultProviderAuthLoginTokenFile
-	AuthLoginUserpass() *VaultProviderAuthLoginUserpass
-	SetAuthLoginUserpass(val *VaultProviderAuthLoginUserpass)
-	AuthLoginUserpassInput() *VaultProviderAuthLoginUserpass
+	AuthLogin() interface{}
+	SetAuthLogin(val interface{})
+	AuthLoginAws() interface{}
+	SetAuthLoginAws(val interface{})
+	AuthLoginAwsInput() interface{}
+	AuthLoginAzure() interface{}
+	SetAuthLoginAzure(val interface{})
+	AuthLoginAzureInput() interface{}
+	AuthLoginCert() interface{}
+	SetAuthLoginCert(val interface{})
+	AuthLoginCertInput() interface{}
+	AuthLoginGcp() interface{}
+	SetAuthLoginGcp(val interface{})
+	AuthLoginGcpInput() interface{}
+	AuthLoginInput() interface{}
+	AuthLoginJwt() interface{}
+	SetAuthLoginJwt(val interface{})
+	AuthLoginJwtInput() interface{}
+	AuthLoginKerberos() interface{}
+	SetAuthLoginKerberos(val interface{})
+	AuthLoginKerberosInput() interface{}
+	AuthLoginOci() interface{}
+	SetAuthLoginOci(val interface{})
+	AuthLoginOciInput() interface{}
+	AuthLoginOidc() interface{}
+	SetAuthLoginOidc(val interface{})
+	AuthLoginOidcInput() interface{}
+	AuthLoginRadius() interface{}
+	SetAuthLoginRadius(val interface{})
+	AuthLoginRadiusInput() interface{}
+	AuthLoginTokenFile() interface{}
+	SetAuthLoginTokenFile(val interface{})
+	AuthLoginTokenFileInput() interface{}
+	AuthLoginUserpass() interface{}
+	SetAuthLoginUserpass(val interface{})
+	AuthLoginUserpassInput() interface{}
 	CaCertDir() *string
 	SetCaCertDir(val *string)
 	CaCertDirInput() *string
@@ -68,9 +68,9 @@ type VaultProvider interface {
 	CaCertFileInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
-	ClientAuth() *VaultProviderClientAuth
-	SetClientAuth(val *VaultProviderClientAuth)
-	ClientAuthInput() *VaultProviderClientAuth
+	ClientAuth() interface{}
+	SetClientAuth(val interface{})
+	ClientAuthInput() interface{}
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -134,6 +134,7 @@ type VaultProvider interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAddAddressToEnv()
+	ResetAddress()
 	ResetAlias()
 	ResetAuthLogin()
 	ResetAuthLoginAws()
@@ -244,8 +245,8 @@ func (j *jsiiProxy_VaultProvider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLogin() *VaultProviderAuthLogin {
-	var returns *VaultProviderAuthLogin
+func (j *jsiiProxy_VaultProvider) AuthLogin() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLogin",
@@ -254,8 +255,8 @@ func (j *jsiiProxy_VaultProvider) AuthLogin() *VaultProviderAuthLogin {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginAws() *VaultProviderAuthLoginAws {
-	var returns *VaultProviderAuthLoginAws
+func (j *jsiiProxy_VaultProvider) AuthLoginAws() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginAws",
@@ -264,8 +265,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginAws() *VaultProviderAuthLoginAws {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginAwsInput() *VaultProviderAuthLoginAws {
-	var returns *VaultProviderAuthLoginAws
+func (j *jsiiProxy_VaultProvider) AuthLoginAwsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginAwsInput",
@@ -274,8 +275,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginAwsInput() *VaultProviderAuthLoginAws
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginAzure() *VaultProviderAuthLoginAzure {
-	var returns *VaultProviderAuthLoginAzure
+func (j *jsiiProxy_VaultProvider) AuthLoginAzure() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginAzure",
@@ -284,8 +285,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginAzure() *VaultProviderAuthLoginAzure 
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginAzureInput() *VaultProviderAuthLoginAzure {
-	var returns *VaultProviderAuthLoginAzure
+func (j *jsiiProxy_VaultProvider) AuthLoginAzureInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginAzureInput",
@@ -294,8 +295,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginAzureInput() *VaultProviderAuthLoginA
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginCert() *VaultProviderAuthLoginCert {
-	var returns *VaultProviderAuthLoginCert
+func (j *jsiiProxy_VaultProvider) AuthLoginCert() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginCert",
@@ -304,8 +305,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginCert() *VaultProviderAuthLoginCert {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginCertInput() *VaultProviderAuthLoginCert {
-	var returns *VaultProviderAuthLoginCert
+func (j *jsiiProxy_VaultProvider) AuthLoginCertInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginCertInput",
@@ -314,8 +315,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginCertInput() *VaultProviderAuthLoginCe
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginGcp() *VaultProviderAuthLoginGcp {
-	var returns *VaultProviderAuthLoginGcp
+func (j *jsiiProxy_VaultProvider) AuthLoginGcp() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginGcp",
@@ -324,8 +325,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginGcp() *VaultProviderAuthLoginGcp {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginGcpInput() *VaultProviderAuthLoginGcp {
-	var returns *VaultProviderAuthLoginGcp
+func (j *jsiiProxy_VaultProvider) AuthLoginGcpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginGcpInput",
@@ -334,8 +335,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginGcpInput() *VaultProviderAuthLoginGcp
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginInput() *VaultProviderAuthLogin {
-	var returns *VaultProviderAuthLogin
+func (j *jsiiProxy_VaultProvider) AuthLoginInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginInput",
@@ -344,8 +345,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginInput() *VaultProviderAuthLogin {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginJwt() *VaultProviderAuthLoginJwt {
-	var returns *VaultProviderAuthLoginJwt
+func (j *jsiiProxy_VaultProvider) AuthLoginJwt() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginJwt",
@@ -354,8 +355,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginJwt() *VaultProviderAuthLoginJwt {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginJwtInput() *VaultProviderAuthLoginJwt {
-	var returns *VaultProviderAuthLoginJwt
+func (j *jsiiProxy_VaultProvider) AuthLoginJwtInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginJwtInput",
@@ -364,8 +365,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginJwtInput() *VaultProviderAuthLoginJwt
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginKerberos() *VaultProviderAuthLoginKerberos {
-	var returns *VaultProviderAuthLoginKerberos
+func (j *jsiiProxy_VaultProvider) AuthLoginKerberos() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginKerberos",
@@ -374,8 +375,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginKerberos() *VaultProviderAuthLoginKer
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginKerberosInput() *VaultProviderAuthLoginKerberos {
-	var returns *VaultProviderAuthLoginKerberos
+func (j *jsiiProxy_VaultProvider) AuthLoginKerberosInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginKerberosInput",
@@ -384,8 +385,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginKerberosInput() *VaultProviderAuthLog
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginOci() *VaultProviderAuthLoginOci {
-	var returns *VaultProviderAuthLoginOci
+func (j *jsiiProxy_VaultProvider) AuthLoginOci() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginOci",
@@ -394,8 +395,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginOci() *VaultProviderAuthLoginOci {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginOciInput() *VaultProviderAuthLoginOci {
-	var returns *VaultProviderAuthLoginOci
+func (j *jsiiProxy_VaultProvider) AuthLoginOciInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginOciInput",
@@ -404,8 +405,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginOciInput() *VaultProviderAuthLoginOci
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginOidc() *VaultProviderAuthLoginOidc {
-	var returns *VaultProviderAuthLoginOidc
+func (j *jsiiProxy_VaultProvider) AuthLoginOidc() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginOidc",
@@ -414,8 +415,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginOidc() *VaultProviderAuthLoginOidc {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginOidcInput() *VaultProviderAuthLoginOidc {
-	var returns *VaultProviderAuthLoginOidc
+func (j *jsiiProxy_VaultProvider) AuthLoginOidcInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginOidcInput",
@@ -424,8 +425,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginOidcInput() *VaultProviderAuthLoginOi
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginRadius() *VaultProviderAuthLoginRadius {
-	var returns *VaultProviderAuthLoginRadius
+func (j *jsiiProxy_VaultProvider) AuthLoginRadius() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginRadius",
@@ -434,8 +435,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginRadius() *VaultProviderAuthLoginRadiu
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginRadiusInput() *VaultProviderAuthLoginRadius {
-	var returns *VaultProviderAuthLoginRadius
+func (j *jsiiProxy_VaultProvider) AuthLoginRadiusInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginRadiusInput",
@@ -444,8 +445,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginRadiusInput() *VaultProviderAuthLogin
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginTokenFile() *VaultProviderAuthLoginTokenFile {
-	var returns *VaultProviderAuthLoginTokenFile
+func (j *jsiiProxy_VaultProvider) AuthLoginTokenFile() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginTokenFile",
@@ -454,8 +455,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginTokenFile() *VaultProviderAuthLoginTo
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginTokenFileInput() *VaultProviderAuthLoginTokenFile {
-	var returns *VaultProviderAuthLoginTokenFile
+func (j *jsiiProxy_VaultProvider) AuthLoginTokenFileInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginTokenFileInput",
@@ -464,8 +465,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginTokenFileInput() *VaultProviderAuthLo
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginUserpass() *VaultProviderAuthLoginUserpass {
-	var returns *VaultProviderAuthLoginUserpass
+func (j *jsiiProxy_VaultProvider) AuthLoginUserpass() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginUserpass",
@@ -474,8 +475,8 @@ func (j *jsiiProxy_VaultProvider) AuthLoginUserpass() *VaultProviderAuthLoginUse
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) AuthLoginUserpassInput() *VaultProviderAuthLoginUserpass {
-	var returns *VaultProviderAuthLoginUserpass
+func (j *jsiiProxy_VaultProvider) AuthLoginUserpassInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"authLoginUserpassInput",
@@ -534,8 +535,8 @@ func (j *jsiiProxy_VaultProvider) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) ClientAuth() *VaultProviderClientAuth {
-	var returns *VaultProviderClientAuth
+func (j *jsiiProxy_VaultProvider) ClientAuth() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"clientAuth",
@@ -544,8 +545,8 @@ func (j *jsiiProxy_VaultProvider) ClientAuth() *VaultProviderClientAuth {
 	return returns
 }
 
-func (j *jsiiProxy_VaultProvider) ClientAuthInput() *VaultProviderClientAuth {
-	var returns *VaultProviderClientAuth
+func (j *jsiiProxy_VaultProvider) ClientAuthInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"clientAuthInput",
@@ -905,7 +906,7 @@ func (j *jsiiProxy_VaultProvider) VaultVersionOverrideInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs vault} Resource.
 func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProviderConfig) VaultProvider {
 	_init_.Initialize()
 
@@ -923,7 +924,7 @@ func NewVaultProvider(scope constructs.Construct, id *string, config *VaultProvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs vault} Resource.
 func NewVaultProvider_Override(v VaultProvider, scope constructs.Construct, id *string, config *VaultProviderConfig) {
 	_init_.Initialize()
 
@@ -958,7 +959,7 @@ func (j *jsiiProxy_VaultProvider)SetAlias(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLogin(val *VaultProviderAuthLogin) {
+func (j *jsiiProxy_VaultProvider)SetAuthLogin(val interface{}) {
 	if err := j.validateSetAuthLoginParameters(val); err != nil {
 		panic(err)
 	}
@@ -969,7 +970,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLogin(val *VaultProviderAuthLogin) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginAws(val *VaultProviderAuthLoginAws) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginAws(val interface{}) {
 	if err := j.validateSetAuthLoginAwsParameters(val); err != nil {
 		panic(err)
 	}
@@ -980,7 +981,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginAws(val *VaultProviderAuthLoginAws)
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginAzure(val *VaultProviderAuthLoginAzure) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginAzure(val interface{}) {
 	if err := j.validateSetAuthLoginAzureParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,7 +992,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginAzure(val *VaultProviderAuthLoginAz
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginCert(val *VaultProviderAuthLoginCert) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginCert(val interface{}) {
 	if err := j.validateSetAuthLoginCertParameters(val); err != nil {
 		panic(err)
 	}
@@ -1002,7 +1003,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginCert(val *VaultProviderAuthLoginCer
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginGcp(val *VaultProviderAuthLoginGcp) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginGcp(val interface{}) {
 	if err := j.validateSetAuthLoginGcpParameters(val); err != nil {
 		panic(err)
 	}
@@ -1013,7 +1014,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginGcp(val *VaultProviderAuthLoginGcp)
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginJwt(val *VaultProviderAuthLoginJwt) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginJwt(val interface{}) {
 	if err := j.validateSetAuthLoginJwtParameters(val); err != nil {
 		panic(err)
 	}
@@ -1024,7 +1025,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginJwt(val *VaultProviderAuthLoginJwt)
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginKerberos(val *VaultProviderAuthLoginKerberos) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginKerberos(val interface{}) {
 	if err := j.validateSetAuthLoginKerberosParameters(val); err != nil {
 		panic(err)
 	}
@@ -1035,7 +1036,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginKerberos(val *VaultProviderAuthLogi
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginOci(val *VaultProviderAuthLoginOci) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginOci(val interface{}) {
 	if err := j.validateSetAuthLoginOciParameters(val); err != nil {
 		panic(err)
 	}
@@ -1046,7 +1047,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginOci(val *VaultProviderAuthLoginOci)
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginOidc(val *VaultProviderAuthLoginOidc) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginOidc(val interface{}) {
 	if err := j.validateSetAuthLoginOidcParameters(val); err != nil {
 		panic(err)
 	}
@@ -1057,7 +1058,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginOidc(val *VaultProviderAuthLoginOid
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginRadius(val *VaultProviderAuthLoginRadius) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginRadius(val interface{}) {
 	if err := j.validateSetAuthLoginRadiusParameters(val); err != nil {
 		panic(err)
 	}
@@ -1068,7 +1069,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginRadius(val *VaultProviderAuthLoginR
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginTokenFile(val *VaultProviderAuthLoginTokenFile) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginTokenFile(val interface{}) {
 	if err := j.validateSetAuthLoginTokenFileParameters(val); err != nil {
 		panic(err)
 	}
@@ -1079,7 +1080,7 @@ func (j *jsiiProxy_VaultProvider)SetAuthLoginTokenFile(val *VaultProviderAuthLog
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetAuthLoginUserpass(val *VaultProviderAuthLoginUserpass) {
+func (j *jsiiProxy_VaultProvider)SetAuthLoginUserpass(val interface{}) {
 	if err := j.validateSetAuthLoginUserpassParameters(val); err != nil {
 		panic(err)
 	}
@@ -1106,7 +1107,7 @@ func (j *jsiiProxy_VaultProvider)SetCaCertFile(val *string) {
 	)
 }
 
-func (j *jsiiProxy_VaultProvider)SetClientAuth(val *VaultProviderClientAuth) {
+func (j *jsiiProxy_VaultProvider)SetClientAuth(val interface{}) {
 	if err := j.validateSetClientAuthParameters(val); err != nil {
 		panic(err)
 	}
@@ -1365,6 +1366,14 @@ func (v *jsiiProxy_VaultProvider) ResetAddAddressToEnv() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAddAddressToEnv",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VaultProvider) ResetAddress() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAddress",
 		nil, // no parameters
 	)
 }

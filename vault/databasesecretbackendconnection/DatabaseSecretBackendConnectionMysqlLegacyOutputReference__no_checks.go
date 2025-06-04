@@ -87,6 +87,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionMysqlLegacyOutputReference) validateSetServiceAccountJsonParameters(val *string) error {
 	return nil
 }

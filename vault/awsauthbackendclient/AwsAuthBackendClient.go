@@ -5,14 +5,14 @@ package awsauthbackendclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/awsauthbackendclient/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/awsauthbackendclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 type AwsAuthBackendClient interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -742,7 +742,7 @@ func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClientInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) AwsAuthBackendClient {
 	_init_.Initialize()
 
@@ -760,7 +760,7 @@ func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient_Override(a AwsAuthBackendClient, scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) {
 	_init_.Initialize()
 

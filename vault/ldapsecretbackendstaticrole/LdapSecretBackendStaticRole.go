@@ -5,14 +5,14 @@ package ldapsecretbackendstaticrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/ldapsecretbackendstaticrole/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/ldapsecretbackendstaticrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 type LdapSecretBackendStaticRole interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_LdapSecretBackendStaticRole) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) LdapSecretBackendStaticRole {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewLdapSecretBackendStaticRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role} Resource.
 func NewLdapSecretBackendStaticRole_Override(l LdapSecretBackendStaticRole, scope constructs.Construct, id *string, config *LdapSecretBackendStaticRoleConfig) {
 	_init_.Initialize()
 

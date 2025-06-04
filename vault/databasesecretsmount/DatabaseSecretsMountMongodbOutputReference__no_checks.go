@@ -99,6 +99,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswo
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMongodbOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

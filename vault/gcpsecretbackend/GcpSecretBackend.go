@@ -5,14 +5,14 @@ package gcpsecretbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/gcpsecretbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/gcpsecretbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 type GcpSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -31,6 +31,12 @@ type GcpSecretBackend interface {
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
+	CredentialsWo() *string
+	SetCredentialsWo(val *string)
+	CredentialsWoInput() *string
+	CredentialsWoVersion() *float64
+	SetCredentialsWoVersion(val *float64)
+	CredentialsWoVersionInput() *float64
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
@@ -157,6 +163,8 @@ type GcpSecretBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetCredentials()
+	ResetCredentialsWo()
+	ResetCredentialsWoVersion()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDescription()
 	ResetDisableAutomatedRotation()
@@ -259,6 +267,46 @@ func (j *jsiiProxy_GcpSecretBackend) CredentialsInput() *string {
 	_jsii_.Get(
 		j,
 		"credentialsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) CredentialsWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) CredentialsWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialsWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) CredentialsWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"credentialsWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) CredentialsWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"credentialsWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -705,7 +753,7 @@ func (j *jsiiProxy_GcpSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecretBackendConfig) GcpSecretBackend {
 	_init_.Initialize()
 
@@ -723,7 +771,7 @@ func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct, id *string, config *GcpSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -763,6 +811,28 @@ func (j *jsiiProxy_GcpSecretBackend)SetCredentials(val *string) {
 	_jsii_.Set(
 		j,
 		"credentials",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetCredentialsWo(val *string) {
+	if err := j.validateSetCredentialsWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetCredentialsWoVersion(val *float64) {
+	if err := j.validateSetCredentialsWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialsWoVersion",
 		val,
 	)
 }
@@ -1346,6 +1416,22 @@ func (g *jsiiProxy_GcpSecretBackend) ResetCredentials() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCredentials",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetCredentialsWo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredentialsWo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetCredentialsWoVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCredentialsWoVersion",
 		nil, // no parameters
 	)
 }

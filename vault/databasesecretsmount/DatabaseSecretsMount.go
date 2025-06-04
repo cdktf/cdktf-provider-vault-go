@@ -5,14 +5,14 @@ package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/databasesecretsmount/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 type DatabaseSecretsMount interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -1195,7 +1195,7 @@ func (j *jsiiProxy_DatabaseSecretsMount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) DatabaseSecretsMount {
 	_init_.Initialize()
 
@@ -1213,7 +1213,7 @@ func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount_Override(d DatabaseSecretsMount, scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) {
 	_init_.Initialize()
 

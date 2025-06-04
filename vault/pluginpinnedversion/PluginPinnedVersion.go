@@ -5,14 +5,14 @@ package pluginpinnedversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/pluginpinnedversion/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pluginpinnedversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}.
 type PluginPinnedVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_PluginPinnedVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) PluginPinnedVersion {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewPluginPinnedVersion(scope constructs.Construct, id *string, config *Plug
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource.
 func NewPluginPinnedVersion_Override(p PluginPinnedVersion, scope constructs.Construct, id *string, config *PluginPinnedVersionConfig) {
 	_init_.Initialize()
 

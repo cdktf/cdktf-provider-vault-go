@@ -5,14 +5,14 @@ package pkisecretbackendconfigcmpv2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigcmpv2/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigcmpv2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}.
 type PkiSecretBackendConfigCmpv2 interface {
 	cdktf.TerraformResource
 	AuditFields() *[]*string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_PkiSecretBackendConfigCmpv2) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
 func NewPkiSecretBackendConfigCmpv2(scope constructs.Construct, id *string, config *PkiSecretBackendConfigCmpv2Config) PkiSecretBackendConfigCmpv2 {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewPkiSecretBackendConfigCmpv2(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource.
 func NewPkiSecretBackendConfigCmpv2_Override(p PkiSecretBackendConfigCmpv2, scope constructs.Construct, id *string, config *PkiSecretBackendConfigCmpv2Config) {
 	_init_.Initialize()
 

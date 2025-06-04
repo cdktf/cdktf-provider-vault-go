@@ -87,6 +87,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

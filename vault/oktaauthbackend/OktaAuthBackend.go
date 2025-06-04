@@ -5,14 +5,14 @@ package oktaauthbackend
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/oktaauthbackend/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/oktaauthbackend/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -61,9 +61,6 @@ type OktaAuthBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MaxTtl() *string
-	SetMaxTtl(val *string)
-	MaxTtlInput() *string
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -121,9 +118,6 @@ type OktaAuthBackend interface {
 	TokenType() *string
 	SetTokenType(val *string)
 	TokenTypeInput() *string
-	Ttl() *string
-	SetTtl(val *string)
-	TtlInput() *string
 	User() OktaAuthBackendUserList
 	UserInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -177,7 +171,6 @@ type OktaAuthBackend interface {
 	ResetDisableRemount()
 	ResetGroup()
 	ResetId()
-	ResetMaxTtl()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -193,7 +186,6 @@ type OktaAuthBackend interface {
 	ResetTokenPolicies()
 	ResetTokenTtl()
 	ResetTokenType()
-	ResetTtl()
 	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -428,26 +420,6 @@ func (j *jsiiProxy_OktaAuthBackend) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OktaAuthBackend) MaxTtl() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"maxTtl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OktaAuthBackend) MaxTtlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"maxTtlInput",
 		&returns,
 	)
 	return returns
@@ -783,26 +755,6 @@ func (j *jsiiProxy_OktaAuthBackend) TokenTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaAuthBackend) Ttl() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ttl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OktaAuthBackend) TtlInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ttlInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_OktaAuthBackend) User() OktaAuthBackendUserList {
 	var returns OktaAuthBackendUserList
 	_jsii_.Get(
@@ -824,7 +776,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -842,7 +794,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -953,17 +905,6 @@ func (j *jsiiProxy_OktaAuthBackend)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OktaAuthBackend)SetMaxTtl(val *string) {
-	if err := j.validateSetMaxTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"maxTtl",
 		val,
 	)
 }
@@ -1126,17 +1067,6 @@ func (j *jsiiProxy_OktaAuthBackend)SetTokenType(val *string) {
 	_jsii_.Set(
 		j,
 		"tokenType",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OktaAuthBackend)SetTtl(val *string) {
-	if err := j.validateSetTtlParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ttl",
 		val,
 	)
 }
@@ -1564,14 +1494,6 @@ func (o *jsiiProxy_OktaAuthBackend) ResetId() {
 	)
 }
 
-func (o *jsiiProxy_OktaAuthBackend) ResetMaxTtl() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetMaxTtl",
-		nil, // no parameters
-	)
-}
-
 func (o *jsiiProxy_OktaAuthBackend) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1672,14 +1594,6 @@ func (o *jsiiProxy_OktaAuthBackend) ResetTokenType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTokenType",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OktaAuthBackend) ResetTtl() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetTtl",
 		nil, // no parameters
 	)
 }

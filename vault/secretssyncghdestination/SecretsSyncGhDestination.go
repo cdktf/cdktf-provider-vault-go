@@ -5,14 +5,14 @@ package secretssyncghdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/secretssyncghdestination/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/secretssyncghdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}.
 type SecretsSyncGhDestination interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_SecretsSyncGhDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) SecretsSyncGhDestination {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewSecretsSyncGhDestination(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource.
 func NewSecretsSyncGhDestination_Override(s SecretsSyncGhDestination, scope constructs.Construct, id *string, config *SecretsSyncGhDestinationConfig) {
 	_init_.Initialize()
 

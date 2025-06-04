@@ -5,9 +5,9 @@ package databasesecretsmount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/databasesecretsmount/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/databasesecretsmount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -62,6 +62,12 @@ type DatabaseSecretsMountHanaOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordWo() *string
+	SetPasswordWo(val *string)
+	PasswordWoInput() *string
+	PasswordWoVersion() *float64
+	SetPasswordWoVersion(val *float64)
+	PasswordWoVersionInput() *float64
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
@@ -124,6 +130,8 @@ type DatabaseSecretsMountHanaOutputReference interface {
 	ResetMaxIdleConnections()
 	ResetMaxOpenConnections()
 	ResetPassword()
+	ResetPasswordWo()
+	ResetPasswordWoVersion()
 	ResetPluginName()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
@@ -391,6 +399,46 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) PasswordInput() *str
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) PasswordWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) PasswordWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"passwordWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) PasswordWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference) PasswordWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -723,6 +771,28 @@ func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference)SetPassword(val *stri
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference)SetPasswordWo(val *string) {
+	if err := j.validateSetPasswordWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountHanaOutputReference)SetPasswordWoVersion(val *float64) {
+	if err := j.validateSetPasswordWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordWoVersion",
 		val,
 	)
 }
@@ -1080,6 +1150,22 @@ func (d *jsiiProxy_DatabaseSecretsMountHanaOutputReference) ResetPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountHanaOutputReference) ResetPasswordWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountHanaOutputReference) ResetPasswordWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPasswordWoVersion",
 		nil, // no parameters
 	)
 }

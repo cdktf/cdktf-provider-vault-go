@@ -282,6 +282,22 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPa
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlAuroraOutputReference) validateSetPluginNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -103,6 +103,14 @@ func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPassw
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountMysqlRdsOutputReference) validateSetPluginNameParameters(val *string) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package quotaratelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/quotaratelimit/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/quotaratelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 type QuotaRateLimit interface {
 	cdktf.TerraformResource
 	BlockInterval() *float64
@@ -500,7 +500,7 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
@@ -518,7 +518,7 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/4.8.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id *string, config *QuotaRateLimitConfig) {
 	_init_.Initialize()
 

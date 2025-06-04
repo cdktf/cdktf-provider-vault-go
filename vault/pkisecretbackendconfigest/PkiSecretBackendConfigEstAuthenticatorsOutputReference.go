@@ -5,9 +5,9 @@ package pkisecretbackendconfigest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-vault-go/vault/v14/pkisecretbackendconfigest/internal"
+	"github.com/cdktf/cdktf-provider-vault-go/vault/v15/pkisecretbackendconfigest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
