@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_verify vault_transit_verify}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_verify vault_transit_verify}.
 type DataVaultTransitVerify interface {
 	cdktf.TerraformDataSource
 	BatchInput() interface{}
@@ -63,6 +63,9 @@ type DataVaultTransitVerify interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MacLength() *float64
+	SetMacLength(val *float64)
+	MacLengthInput() *float64
 	MarshalingAlgorithm() *string
 	SetMarshalingAlgorithm(val *string)
 	MarshalingAlgorithmInput() *string
@@ -143,6 +146,7 @@ type DataVaultTransitVerify interface {
 	ResetHmac()
 	ResetId()
 	ResetInput()
+	ResetMacLength()
 	ResetMarshalingAlgorithm()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -409,6 +413,26 @@ func (j *jsiiProxy_DataVaultTransitVerify) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultTransitVerify) MacLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"macLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultTransitVerify) MacLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"macLengthInput",
 		&returns,
 	)
 	return returns
@@ -695,7 +719,7 @@ func (j *jsiiProxy_DataVaultTransitVerify) ValidInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) DataVaultTransitVerify {
 	_init_.Initialize()
 
@@ -713,7 +737,7 @@ func NewDataVaultTransitVerify(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_verify vault_transit_verify} Data Source.
 func NewDataVaultTransitVerify_Override(d DataVaultTransitVerify, scope constructs.Construct, id *string, config *DataVaultTransitVerifyConfig) {
 	_init_.Initialize()
 
@@ -846,6 +870,17 @@ func (j *jsiiProxy_DataVaultTransitVerify)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultTransitVerify)SetMacLength(val *float64) {
+	if err := j.validateSetMacLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"macLength",
 		val,
 	)
 }
@@ -1324,6 +1359,14 @@ func (d *jsiiProxy_DataVaultTransitVerify) ResetInput() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetInput",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultTransitVerify) ResetMacLength() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMacLength",
 		nil, // no parameters
 	)
 }

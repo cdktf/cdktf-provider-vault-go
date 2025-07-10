@@ -155,6 +155,10 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetIssuerRefPar
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetKeyUsageParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

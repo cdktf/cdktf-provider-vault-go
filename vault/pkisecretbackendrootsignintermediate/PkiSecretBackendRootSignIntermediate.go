@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate}.
 type PkiSecretBackendRootSignIntermediate interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -85,6 +85,9 @@ type PkiSecretBackendRootSignIntermediate interface {
 	SetIssuerRef(val *string)
 	IssuerRefInput() *string
 	IssuingCa() *string
+	KeyUsage() *[]*string
+	SetKeyUsage(val *[]*string)
+	KeyUsageInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -228,6 +231,7 @@ type PkiSecretBackendRootSignIntermediate interface {
 	ResetId()
 	ResetIpSans()
 	ResetIssuerRef()
+	ResetKeyUsage()
 	ResetLocality()
 	ResetMaxPathLength()
 	ResetNamespace()
@@ -666,6 +670,26 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) IssuingCa() *string {
 	_jsii_.Get(
 		j,
 		"issuingCa",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) KeyUsage() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) KeyUsageInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyUsageInput",
 		&returns,
 	)
 	return returns
@@ -1202,7 +1226,7 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate) UsePssInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) PkiSecretBackendRootSignIntermediate {
 	_init_.Initialize()
 
@@ -1220,7 +1244,7 @@ func NewPkiSecretBackendRootSignIntermediate(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/pki_secret_backend_root_sign_intermediate vault_pki_secret_backend_root_sign_intermediate} Resource.
 func NewPkiSecretBackendRootSignIntermediate_Override(p PkiSecretBackendRootSignIntermediate, scope constructs.Construct, id *string, config *PkiSecretBackendRootSignIntermediateConfig) {
 	_init_.Initialize()
 
@@ -1419,6 +1443,17 @@ func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetIssuerRef(val *string
 	_jsii_.Set(
 		j,
 		"issuerRef",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootSignIntermediate)SetKeyUsage(val *[]*string) {
+	if err := j.validateSetKeyUsageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyUsage",
 		val,
 	)
 }
@@ -2132,6 +2167,14 @@ func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetIssuerRef() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetIssuerRef",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootSignIntermediate) ResetKeyUsage() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKeyUsage",
 		nil, // no parameters
 	)
 }

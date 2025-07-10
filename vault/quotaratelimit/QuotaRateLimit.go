@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit vault_quota_rate_limit}.
 type QuotaRateLimit interface {
 	cdktf.TerraformResource
 	BlockInterval() *float64
@@ -42,6 +42,9 @@ type QuotaRateLimit interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GroupBy() *string
+	SetGroupBy(val *string)
+	GroupByInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -82,6 +85,9 @@ type QuotaRateLimit interface {
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
+	SecondaryRate() *float64
+	SetSecondaryRate(val *float64)
+	SecondaryRateInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -132,6 +138,7 @@ type QuotaRateLimit interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBlockInterval()
+	ResetGroupBy()
 	ResetId()
 	ResetInheritable()
 	ResetInterval()
@@ -141,6 +148,7 @@ type QuotaRateLimit interface {
 	ResetOverrideLogicalId()
 	ResetPath()
 	ResetRole()
+	ResetSecondaryRate()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -254,6 +262,26 @@ func (j *jsiiProxy_QuotaRateLimit) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaRateLimit) GroupBy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupBy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaRateLimit) GroupByInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"groupByInput",
 		&returns,
 	)
 	return returns
@@ -469,6 +497,26 @@ func (j *jsiiProxy_QuotaRateLimit) RoleInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_QuotaRateLimit) SecondaryRate() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryRate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuotaRateLimit) SecondaryRateInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryRateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuotaRateLimit) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -500,7 +548,7 @@ func (j *jsiiProxy_QuotaRateLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRateLimitConfig) QuotaRateLimit {
 	_init_.Initialize()
 
@@ -518,7 +566,7 @@ func NewQuotaRateLimit(scope constructs.Construct, id *string, config *QuotaRate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/quota_rate_limit vault_quota_rate_limit} Resource.
 func NewQuotaRateLimit_Override(q QuotaRateLimit, scope constructs.Construct, id *string, config *QuotaRateLimitConfig) {
 	_init_.Initialize()
 
@@ -574,6 +622,17 @@ func (j *jsiiProxy_QuotaRateLimit)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuotaRateLimit)SetGroupBy(val *string) {
+	if err := j.validateSetGroupByParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"groupBy",
 		val,
 	)
 }
@@ -692,6 +751,17 @@ func (j *jsiiProxy_QuotaRateLimit)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuotaRateLimit)SetSecondaryRate(val *float64) {
+	if err := j.validateSetSecondaryRateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryRate",
 		val,
 	)
 }
@@ -1057,6 +1127,14 @@ func (q *jsiiProxy_QuotaRateLimit) ResetBlockInterval() {
 	)
 }
 
+func (q *jsiiProxy_QuotaRateLimit) ResetGroupBy() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetGroupBy",
+		nil, // no parameters
+	)
+}
+
 func (q *jsiiProxy_QuotaRateLimit) ResetId() {
 	_jsii_.InvokeVoid(
 		q,
@@ -1109,6 +1187,14 @@ func (q *jsiiProxy_QuotaRateLimit) ResetRole() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuotaRateLimit) ResetSecondaryRate() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetSecondaryRate",
 		nil, // no parameters
 	)
 }

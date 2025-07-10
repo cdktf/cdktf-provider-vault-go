@@ -103,6 +103,10 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_QuotaRateLimit) validateSetGroupByParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuotaRateLimit) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetRateParameters(val *float64) error
 }
 
 func (j *jsiiProxy_QuotaRateLimit) validateSetRoleParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_QuotaRateLimit) validateSetSecondaryRateParameters(val *float64) error {
 	return nil
 }
 

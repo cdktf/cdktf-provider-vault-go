@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_sign vault_transit_sign}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_sign vault_transit_sign}.
 type DataVaultTransitSign interface {
 	cdktf.TerraformDataSource
 	BatchInput() interface{}
@@ -647,7 +647,7 @@ func (j *jsiiProxy_DataVaultTransitSign) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_sign vault_transit_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_sign vault_transit_sign} Data Source.
 func NewDataVaultTransitSign(scope constructs.Construct, id *string, config *DataVaultTransitSignConfig) DataVaultTransitSign {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewDataVaultTransitSign(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/data-sources/transit_sign vault_transit_sign} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/transit_sign vault_transit_sign} Data Source.
 func NewDataVaultTransitSign_Override(d DataVaultTransitSign, scope constructs.Construct, id *string, config *DataVaultTransitSignConfig) {
 	_init_.Initialize()
 

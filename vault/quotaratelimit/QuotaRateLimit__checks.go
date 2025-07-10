@@ -345,6 +345,14 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_QuotaRateLimit) validateSetGroupByParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_QuotaRateLimit) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -468,6 +476,14 @@ func (j *jsiiProxy_QuotaRateLimit) validateSetRateParameters(val *float64) error
 }
 
 func (j *jsiiProxy_QuotaRateLimit) validateSetRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_QuotaRateLimit) validateSetSecondaryRateParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

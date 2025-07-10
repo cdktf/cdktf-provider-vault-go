@@ -111,6 +111,10 @@ func (j *jsiiProxy_DataVaultTransitVerify) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultTransitVerify) validateSetMacLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultTransitVerify) validateSetMarshalingAlgorithmParameters(val *string) error {
 	return nil
 }

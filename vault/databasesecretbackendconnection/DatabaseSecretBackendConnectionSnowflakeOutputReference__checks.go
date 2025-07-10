@@ -230,6 +230,22 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPrivateKeyWoParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPrivateKeyWoVersionParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

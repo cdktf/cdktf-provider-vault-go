@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}.
 type SecretsSyncGithubApps interface {
 	cdktf.TerraformResource
 	AppId() *float64
@@ -414,7 +414,7 @@ func (j *jsiiProxy_SecretsSyncGithubApps) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) SecretsSyncGithubApps {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewSecretsSyncGithubApps(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource.
 func NewSecretsSyncGithubApps_Override(s SecretsSyncGithubApps, scope constructs.Construct, id *string, config *SecretsSyncGithubAppsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope}.
 type IdentityOidcScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_IdentityOidcScope) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
 func NewIdentityOidcScope(scope constructs.Construct, id *string, config *IdentityOidcScopeConfig) IdentityOidcScope {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewIdentityOidcScope(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/identity_oidc_scope vault_identity_oidc_scope} Resource.
 func NewIdentityOidcScope_Override(i IdentityOidcScope, scope constructs.Construct, id *string, config *IdentityOidcScopeConfig) {
 	_init_.Initialize()
 

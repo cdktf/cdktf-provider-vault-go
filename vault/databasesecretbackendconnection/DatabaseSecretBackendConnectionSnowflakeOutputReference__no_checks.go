@@ -91,6 +91,14 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetPrivateKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

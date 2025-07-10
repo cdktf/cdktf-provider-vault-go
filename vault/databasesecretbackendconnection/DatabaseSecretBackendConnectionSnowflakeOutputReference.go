@@ -53,6 +53,12 @@ type DatabaseSecretBackendConnectionSnowflakeOutputReference interface {
 	PasswordWoVersion() *float64
 	SetPasswordWoVersion(val *float64)
 	PasswordWoVersionInput() *float64
+	PrivateKeyWo() *string
+	SetPrivateKeyWo(val *string)
+	PrivateKeyWoInput() *string
+	PrivateKeyWoVersion() *float64
+	SetPrivateKeyWoVersion(val *float64)
+	PrivateKeyWoVersionInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -98,6 +104,8 @@ type DatabaseSecretBackendConnectionSnowflakeOutputReference interface {
 	ResetPassword()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
+	ResetPrivateKeyWo()
+	ResetPrivateKeyWoVersion()
 	ResetUsername()
 	ResetUsernameTemplate()
 	// Produce the Token's value at resolution time.
@@ -305,6 +313,46 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Pass
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) PrivateKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) PrivateKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) PrivateKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) PrivateKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -499,6 +547,28 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetPa
 	_jsii_.Set(
 		j,
 		"passwordWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetPrivateKeyWo(val *string) {
+	if err := j.validateSetPrivateKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference)SetPrivateKeyWoVersion(val *float64) {
+	if err := j.validateSetPrivateKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWoVersion",
 		val,
 	)
 }
@@ -785,6 +855,22 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) Rese
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) ResetPrivateKeyWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionSnowflakeOutputReference) ResetPrivateKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyWoVersion",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
 type OktaAuthBackendGroupA interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_OktaAuthBackendGroupA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) OktaAuthBackendGroupA {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewOktaAuthBackendGroupA(scope constructs.Construct, id *string, config *Ok
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.0.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource.
 func NewOktaAuthBackendGroupA_Override(o OktaAuthBackendGroupA, scope constructs.Construct, id *string, config *OktaAuthBackendGroupAConfig) {
 	_init_.Initialize()
 

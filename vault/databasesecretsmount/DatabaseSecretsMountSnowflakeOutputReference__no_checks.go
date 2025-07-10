@@ -111,6 +111,14 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPlug
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPrivateKeyWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetPrivateKeyWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) validateSetRootRotationStatementsParameters(val *[]*string) error {
 	return nil
 }

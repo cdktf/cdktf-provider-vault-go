@@ -68,6 +68,12 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	PluginName() *string
 	SetPluginName(val *string)
 	PluginNameInput() *string
+	PrivateKeyWo() *string
+	SetPrivateKeyWo(val *string)
+	PrivateKeyWoInput() *string
+	PrivateKeyWoVersion() *float64
+	SetPrivateKeyWoVersion(val *float64)
+	PrivateKeyWoVersionInput() *float64
 	RootRotationStatements() *[]*string
 	SetRootRotationStatements(val *[]*string)
 	RootRotationStatementsInput() *[]*string
@@ -132,6 +138,8 @@ type DatabaseSecretsMountSnowflakeOutputReference interface {
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
 	ResetPluginName()
+	ResetPrivateKeyWo()
+	ResetPrivateKeyWoVersion()
 	ResetRootRotationStatements()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
@@ -439,6 +447,46 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PluginNameInput
 	_jsii_.Get(
 		j,
 		"pluginNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PrivateKeyWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PrivateKeyWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateKeyWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PrivateKeyWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) PrivateKeyWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"privateKeyWoVersionInput",
 		&returns,
 	)
 	return returns
@@ -793,6 +841,28 @@ func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPluginName(va
 	_jsii_.Set(
 		j,
 		"pluginName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPrivateKeyWo(val *string) {
+	if err := j.validateSetPrivateKeyWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference)SetPrivateKeyWoVersion(val *float64) {
+	if err := j.validateSetPrivateKeyWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateKeyWoVersion",
 		val,
 	)
 }
@@ -1166,6 +1236,22 @@ func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPluginName
 	_jsii_.InvokeVoid(
 		d,
 		"resetPluginName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPrivateKeyWo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyWo",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountSnowflakeOutputReference) ResetPrivateKeyWoVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPrivateKeyWoVersion",
 		nil, // no parameters
 	)
 }
