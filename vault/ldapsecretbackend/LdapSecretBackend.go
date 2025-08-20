@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -80,6 +80,9 @@ type LdapSecretBackend interface {
 	ExternalEntropyAccess() interface{}
 	SetExternalEntropyAccess(val interface{})
 	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -239,6 +242,7 @@ type LdapSecretBackend interface {
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
 	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
 	ResetIdentityTokenKey()
 	ResetInsecureTls()
@@ -659,6 +663,26 @@ func (j *jsiiProxy_LdapSecretBackend) ExternalEntropyAccessInput() interface{} {
 	_jsii_.Get(
 		j,
 		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -1255,7 +1279,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1273,7 +1297,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1486,6 +1510,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetExternalEntropyAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -2253,6 +2288,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetExternalEntropyAccess() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }

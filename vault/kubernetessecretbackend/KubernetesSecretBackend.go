@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend}.
 type KubernetesSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -59,6 +59,9 @@ type KubernetesSecretBackend interface {
 	ExternalEntropyAccess() interface{}
 	SetExternalEntropyAccess(val interface{})
 	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -183,6 +186,7 @@ type KubernetesSecretBackend interface {
 	ResetDescription()
 	ResetDisableLocalCaJwt()
 	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
 	ResetIdentityTokenKey()
 	ResetKubernetesCaCert()
@@ -452,6 +456,26 @@ func (j *jsiiProxy_KubernetesSecretBackend) ExternalEntropyAccessInput() interfa
 	_jsii_.Get(
 		j,
 		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -848,7 +872,7 @@ func (j *jsiiProxy_KubernetesSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) KubernetesSecretBackend {
 	_init_.Initialize()
 
@@ -866,7 +890,7 @@ func NewKubernetesSecretBackend(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kubernetes_secret_backend vault_kubernetes_secret_backend} Resource.
 func NewKubernetesSecretBackend_Override(k KubernetesSecretBackend, scope constructs.Construct, id *string, config *KubernetesSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1026,17 @@ func (j *jsiiProxy_KubernetesSecretBackend)SetExternalEntropyAccess(val interfac
 	_jsii_.Set(
 		j,
 		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -1619,6 +1654,14 @@ func (k *jsiiProxy_KubernetesSecretBackend) ResetExternalEntropyAccess() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }

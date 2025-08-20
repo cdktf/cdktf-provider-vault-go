@@ -95,6 +95,22 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetAccessKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,6 +123,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDefaultLeaseTtlSecondsParameters
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -116,6 +136,14 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDisableAutomatedRotationParamete
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
 	return nil
 }
 
@@ -143,6 +171,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetLocalParameters(val interface{}) error {
 	return nil
 }
@@ -155,7 +187,19 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetNamespaceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -180,6 +224,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetRotationScheduleParameters(val *
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

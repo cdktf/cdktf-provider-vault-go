@@ -123,6 +123,14 @@ func (j *jsiiProxy_SshSecretBackendCa) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) validateSetManagedKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) validateSetManagedKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

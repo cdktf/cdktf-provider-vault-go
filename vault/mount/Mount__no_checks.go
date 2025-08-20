@@ -131,6 +131,10 @@ func (j *jsiiProxy_Mount) validateSetExternalEntropyAccessParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_Mount) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Mount) validateSetIdParameters(val *string) error {
 	return nil
 }

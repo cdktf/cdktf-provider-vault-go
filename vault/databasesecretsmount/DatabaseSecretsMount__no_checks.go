@@ -203,6 +203,10 @@ func (j *jsiiProxy_DatabaseSecretsMount) validateSetExternalEntropyAccessParamet
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMount) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMount) validateSetIdParameters(val *string) error {
 	return nil
 }

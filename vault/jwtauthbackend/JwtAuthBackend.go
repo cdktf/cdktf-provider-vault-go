@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
 type JwtAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -58,6 +58,9 @@ type JwtAuthBackend interface {
 	JwksCaPem() *string
 	SetJwksCaPem(val *string)
 	JwksCaPemInput() *string
+	JwksPairs() interface{}
+	SetJwksPairs(val interface{})
+	JwksPairsInput() interface{}
 	JwksUrl() *string
 	SetJwksUrl(val *string)
 	JwksUrlInput() *string
@@ -177,6 +180,7 @@ type JwtAuthBackend interface {
 	ResetDisableRemount()
 	ResetId()
 	ResetJwksCaPem()
+	ResetJwksPairs()
 	ResetJwksUrl()
 	ResetJwtSupportedAlgs()
 	ResetJwtValidationPubkeys()
@@ -419,6 +423,26 @@ func (j *jsiiProxy_JwtAuthBackend) JwksCaPemInput() *string {
 	_jsii_.Get(
 		j,
 		"jwksCaPemInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) JwksPairs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jwksPairs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackend) JwksPairsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jwksPairsInput",
 		&returns,
 	)
 	return returns
@@ -825,7 +849,7 @@ func (j *jsiiProxy_JwtAuthBackend) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBackendConfig) JwtAuthBackend {
 	_init_.Initialize()
 
@@ -843,7 +867,7 @@ func NewJwtAuthBackend(scope constructs.Construct, id *string, config *JwtAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource.
 func NewJwtAuthBackend_Override(j JwtAuthBackend, scope constructs.Construct, id *string, config *JwtAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -954,6 +978,17 @@ func (j *jsiiProxy_JwtAuthBackend)SetJwksCaPem(val *string) {
 	_jsii_.Set(
 		j,
 		"jwksCaPem",
+		val,
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend)SetJwksPairs(val interface{}) {
+	if err := j.validateSetJwksPairsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksPairs",
 		val,
 	)
 }
@@ -1561,6 +1596,14 @@ func (j *jsiiProxy_JwtAuthBackend) ResetJwksCaPem() {
 	_jsii_.InvokeVoid(
 		j,
 		"resetJwksCaPem",
+		nil, // no parameters
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackend) ResetJwksPairs() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetJwksPairs",
 		nil, // no parameters
 	)
 }

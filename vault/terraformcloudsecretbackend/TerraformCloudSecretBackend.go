@@ -12,12 +12,25 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
 type TerraformCloudSecretBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -39,6 +52,9 @@ type TerraformCloudSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,6 +65,12 @@ type TerraformCloudSecretBackend interface {
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -59,11 +81,20 @@ type TerraformCloudSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
 	MaxLeaseTtlSeconds() *float64
 	SetMaxLeaseTtlSeconds(val *float64)
 	MaxLeaseTtlSecondsInput() *float64
@@ -72,6 +103,15 @@ type TerraformCloudSecretBackend interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +122,9 @@ type TerraformCloudSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,17 +178,31 @@ type TerraformCloudSecretBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAddress()
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
 	ResetBackend()
 	ResetBasePath()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableRemount()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
+	ResetIdentityTokenKey()
+	ResetListingVisibility()
+	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
+	ResetPluginVersion()
+	ResetSealWrap()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -165,6 +222,16 @@ type jsiiProxy_TerraformCloudSecretBackend struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) Address() *string {
 	var returns *string
 	_jsii_.Get(
@@ -180,6 +247,86 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) AddressInput() *string {
 	_jsii_.Get(
 		j,
 		"addressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +432,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) DefaultLeaseTtlSecondsInput() *f
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -335,6 +502,46 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) DisableRemountInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -375,6 +582,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -390,6 +617,46 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) Lifecycle() *cdktf.TerraformReso
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
 		&returns,
 	)
 	return returns
@@ -445,6 +712,66 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -470,6 +797,26 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
 		&returns,
 	)
 	return returns
@@ -526,7 +873,7 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) TerraformCloudSecretBackend {
 	_init_.Initialize()
 
@@ -544,7 +891,7 @@ func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend_Override(t TerraformCloudSecretBackend, scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -562,6 +909,50 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
 		val,
 	)
 }
@@ -621,6 +1012,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetDefaultLeaseTtlSeconds(val *fl
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -651,6 +1053,28 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetDisableRemount(val interface{}
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -670,6 +1094,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -677,6 +1112,28 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetLifecycle(val *cdktf.Terraform
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
 		val,
 	)
 }
@@ -703,6 +1160,39 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -718,6 +1208,17 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1094,6 +1595,38 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetAddress() {
 	)
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) ResetBackend() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1118,6 +1651,14 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	)
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDelegatedAuthAccessors",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1134,10 +1675,50 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetDisableRemount() {
 	)
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetForceNoCache",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetListingVisibility",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetLocal() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetLocal",
 		nil, // no parameters
 	)
 }
@@ -1158,10 +1739,42 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetNamespace() {
 	)
 }
 
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TerraformCloudSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetPluginVersion",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

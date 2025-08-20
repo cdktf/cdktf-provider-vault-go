@@ -12,12 +12,25 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 type AwsSecretBackend interface {
 	cdktf.TerraformResource
 	AccessKey() *string
 	SetAccessKey(val *string)
 	AccessKeyInput() *string
+	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -33,6 +46,9 @@ type AwsSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,6 +62,12 @@ type AwsSecretBackend interface {
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +95,9 @@ type AwsSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -84,9 +109,18 @@ type AwsSecretBackend interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -112,6 +146,9 @@ type AwsSecretBackend interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	SecretKey() *string
 	SetSecretKey(val *string)
 	SecretKeyInput() *string
@@ -180,27 +217,39 @@ type AwsSecretBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessKey()
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetIamEndpoint()
 	ResetId()
 	ResetIdentityTokenAudience()
 	ResetIdentityTokenKey()
 	ResetIdentityTokenTtl()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
 	ResetPath()
+	ResetPluginVersion()
 	ResetRegion()
 	ResetRoleArn()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSealWrap()
 	ResetSecretKey()
 	ResetStsEndpoint()
 	ResetStsFallbackEndpoints()
@@ -240,6 +289,96 @@ func (j *jsiiProxy_AwsSecretBackend) AccessKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"accessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +439,26 @@ func (j *jsiiProxy_AwsSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
 	_jsii_.Get(
 		j,
 		"defaultLeaseTtlSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
 		&returns,
 	)
 	return returns
@@ -370,6 +529,46 @@ func (j *jsiiProxy_AwsSecretBackend) DisableRemountInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableRemountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -515,6 +714,26 @@ func (j *jsiiProxy_AwsSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) Local() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -585,6 +804,46 @@ func (j *jsiiProxy_AwsSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -600,6 +859,26 @@ func (j *jsiiProxy_AwsSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -730,6 +1009,26 @@ func (j *jsiiProxy_AwsSecretBackend) RotationWindowInput() *float64 {
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
 		&returns,
 	)
 	return returns
@@ -886,7 +1185,7 @@ func (j *jsiiProxy_AwsSecretBackend) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecretBackendConfig) AwsSecretBackend {
 	_init_.Initialize()
 
@@ -904,7 +1203,7 @@ func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend_Override(a AwsSecretBackend, scope constructs.Construct, id *string, config *AwsSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -922,6 +1221,50 @@ func (j *jsiiProxy_AwsSecretBackend)SetAccessKey(val *string) {
 	_jsii_.Set(
 		j,
 		"accessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
 		val,
 	)
 }
@@ -955,6 +1298,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"defaultLeaseTtlSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
 		val,
 	)
 }
@@ -996,6 +1350,28 @@ func (j *jsiiProxy_AwsSecretBackend)SetDisableRemount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableRemount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -1074,6 +1450,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
+func (j *jsiiProxy_AwsSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AwsSecretBackend)SetLocal(val interface{}) {
 	if err := j.validateSetLocalParameters(val); err != nil {
 		panic(err)
@@ -1107,6 +1494,28 @@ func (j *jsiiProxy_AwsSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AwsSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AwsSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -1114,6 +1523,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1188,6 +1608,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetRotationWindow(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1619,10 +2050,50 @@ func (a *jsiiProxy_AwsSecretBackend) ResetAccessKey() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDefaultLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDelegatedAuthAccessors",
 		nil, // no parameters
 	)
 }
@@ -1647,6 +2118,22 @@ func (a *jsiiProxy_AwsSecretBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDisableRemount",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }
@@ -1691,6 +2178,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetIdentityTokenTtl() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetListingVisibility",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1715,6 +2210,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetNamespace() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1723,10 +2226,26 @@ func (a *jsiiProxy_AwsSecretBackend) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_AwsSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1767,6 +2286,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

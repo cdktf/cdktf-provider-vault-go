@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}.
 type DataVaultPkiSecretBackendConfigScep interface {
 	cdktf.TerraformDataSource
 	AllowedDigestAlgorithms() *[]*string
@@ -52,6 +52,9 @@ type DataVaultPkiSecretBackendConfigScep interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogLevel() *string
+	SetLogLevel(val *string)
+	LogLevelInput() *string
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -96,6 +99,7 @@ type DataVaultPkiSecretBackendConfigScep interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLogLevel()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -309,6 +313,26 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) Lifecycle() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) LogLevel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logLevel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) LogLevelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logLevelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -400,7 +424,7 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
 func NewDataVaultPkiSecretBackendConfigScep(scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendConfigScepConfig) DataVaultPkiSecretBackendConfigScep {
 	_init_.Initialize()
 
@@ -418,7 +442,7 @@ func NewDataVaultPkiSecretBackendConfigScep(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source.
 func NewDataVaultPkiSecretBackendConfigScep_Override(d DataVaultPkiSecretBackendConfigScep, scope constructs.Construct, id *string, config *DataVaultPkiSecretBackendConfigScepConfig) {
 	_init_.Initialize()
 
@@ -485,6 +509,17 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep)SetLifecycle(val *cdktf.T
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep)SetLogLevel(val *string) {
+	if err := j.validateSetLogLevelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logLevel",
 		val,
 	)
 }
@@ -797,6 +832,14 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScep) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScep) ResetLogLevel() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLogLevel",
 		nil, // no parameters
 	)
 }

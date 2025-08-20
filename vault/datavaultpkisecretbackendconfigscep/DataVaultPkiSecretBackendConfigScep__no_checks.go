@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) validateSetLifecyclePara
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) validateSetLogLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultPkiSecretBackendConfigScep) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

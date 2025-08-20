@@ -247,6 +247,38 @@ func validateRabbitmqSecretBackend_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -353,6 +385,14 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDefaultLeaseTtlSecondsParam
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -381,7 +421,55 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDisableRemountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -397,6 +485,34 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLocalParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -406,6 +522,22 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetMaxLeaseTtlSecondsParameter
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetNamespaceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -430,6 +562,14 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPasswordPolicyParameters(va
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -477,6 +617,26 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetProvisionersParameters(val 
 			if !_jsii_.IsAnonymousProxy(v) {
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetSealWrapParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 

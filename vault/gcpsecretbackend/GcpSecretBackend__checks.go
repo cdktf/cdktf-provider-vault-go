@@ -247,6 +247,38 @@ func validateGcpSecretBackend_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -369,6 +401,14 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetDefaultLeaseTtlSecondsParameters
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -398,6 +438,46 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetDisableAutomatedRotationParamete
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -457,6 +537,14 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetLocalParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -493,7 +581,31 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetNamespaceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -566,6 +678,26 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetRotationScheduleParameters(val *
 func (j *jsiiProxy_GcpSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetSealWrapParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

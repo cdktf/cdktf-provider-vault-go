@@ -91,6 +91,22 @@ func validateRabbitmqSecretBackend_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,6 +123,10 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDefaultLeaseTtlSecondsParam
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -115,11 +135,31 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetDisableRemountParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetLocalParameters(val interface{}) error {
 	return nil
 }
 
@@ -128,6 +168,14 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetMaxLeaseTtlSecondsParameter
 }
 
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
 	return nil
 }
 
@@ -143,7 +191,15 @@ func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPathParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetPluginVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RabbitmqSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RabbitmqSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

@@ -12,12 +12,25 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend vault_consul_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend vault_consul_secret_backend}.
 type ConsulSecretBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	Bootstrap() interface{}
 	SetBootstrap(val interface{})
 	BootstrapInput() interface{}
@@ -45,6 +58,9 @@ type ConsulSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -55,6 +71,12 @@ type ConsulSecretBackend interface {
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -65,11 +87,17 @@ type ConsulSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -81,9 +109,18 @@ type ConsulSecretBackend interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -97,6 +134,9 @@ type ConsulSecretBackend interface {
 	Scheme() *string
 	SetScheme(val *string)
 	SchemeInput() *string
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,22 +189,35 @@ type ConsulSecretBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
 	ResetBootstrap()
 	ResetCaCert()
 	ResetClientCert()
 	ResetClientKey()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableRemount()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
+	ResetIdentityTokenKey()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
 	ResetPath()
+	ResetPluginVersion()
 	ResetScheme()
+	ResetSealWrap()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -184,6 +237,16 @@ type jsiiProxy_ConsulSecretBackend struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) Address() *string {
 	var returns *string
 	_jsii_.Get(
@@ -199,6 +262,86 @@ func (j *jsiiProxy_ConsulSecretBackend) AddressInput() *string {
 	_jsii_.Get(
 		j,
 		"addressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
 		&returns,
 	)
 	return returns
@@ -344,6 +487,26 @@ func (j *jsiiProxy_ConsulSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -394,6 +557,46 @@ func (j *jsiiProxy_ConsulSecretBackend) DisableRemountInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -434,6 +637,26 @@ func (j *jsiiProxy_ConsulSecretBackend) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -449,6 +672,26 @@ func (j *jsiiProxy_ConsulSecretBackend) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
 		&returns,
 	)
 	return returns
@@ -524,6 +767,46 @@ func (j *jsiiProxy_ConsulSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -539,6 +822,26 @@ func (j *jsiiProxy_ConsulSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +892,26 @@ func (j *jsiiProxy_ConsulSecretBackend) SchemeInput() *string {
 	_jsii_.Get(
 		j,
 		"schemeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
 		&returns,
 	)
 	return returns
@@ -645,7 +968,7 @@ func (j *jsiiProxy_ConsulSecretBackend) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend(scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) ConsulSecretBackend {
 	_init_.Initialize()
 
@@ -663,7 +986,7 @@ func NewConsulSecretBackend(scope constructs.Construct, id *string, config *Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/consul_secret_backend vault_consul_secret_backend} Resource.
 func NewConsulSecretBackend_Override(c ConsulSecretBackend, scope constructs.Construct, id *string, config *ConsulSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -681,6 +1004,50 @@ func (j *jsiiProxy_ConsulSecretBackend)SetAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"address",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
 		val,
 	)
 }
@@ -762,6 +1129,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ConsulSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConsulSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -792,6 +1170,28 @@ func (j *jsiiProxy_ConsulSecretBackend)SetDisableRemount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_ConsulSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConsulSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -811,6 +1211,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ConsulSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConsulSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -818,6 +1229,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
 		val,
 	)
 }
@@ -855,6 +1277,28 @@ func (j *jsiiProxy_ConsulSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ConsulSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ConsulSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -862,6 +1306,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -892,6 +1347,17 @@ func (j *jsiiProxy_ConsulSecretBackend)SetScheme(val *string) {
 	_jsii_.Set(
 		j,
 		"scheme",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConsulSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1260,6 +1726,38 @@ func (c *jsiiProxy_ConsulSecretBackend) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_ConsulSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConsulSecretBackend) ResetBootstrap() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1300,6 +1798,14 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	)
 }
 
+func (c *jsiiProxy_ConsulSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDelegatedAuthAccessors",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConsulSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1316,10 +1822,42 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetDisableRemount() {
 	)
 }
 
+func (c *jsiiProxy_ConsulSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetForceNoCache",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConsulSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIdentityTokenKey",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetListingVisibility",
 		nil, // no parameters
 	)
 }
@@ -1348,10 +1886,26 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetNamespace() {
 	)
 }
 
+func (c *jsiiProxy_ConsulSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConsulSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPassthroughRequestHeaders",
 		nil, // no parameters
 	)
 }
@@ -1364,10 +1918,26 @@ func (c *jsiiProxy_ConsulSecretBackend) ResetPath() {
 	)
 }
 
+func (c *jsiiProxy_ConsulSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPluginVersion",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConsulSecretBackend) ResetScheme() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetScheme",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConsulSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

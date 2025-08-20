@@ -95,6 +95,22 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetAddressParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetBackendParameters(val *string) error {
 	return nil
 }
@@ -123,6 +139,10 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetDefaultLeaseTtlSecondsParamete
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -131,11 +151,27 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetDisableRemountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetListingVisibilityParameters(val *string) error {
 	return nil
 }
 
@@ -159,7 +195,23 @@ func (j *jsiiProxy_NomadSecretBackend) validateSetNamespaceParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_NomadSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetPluginVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NomadSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NomadSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

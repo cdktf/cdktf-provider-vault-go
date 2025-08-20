@@ -397,6 +397,22 @@ func (j *jsiiProxy_SshSecretBackendCa) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) validateSetManagedKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) validateSetManagedKeyNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

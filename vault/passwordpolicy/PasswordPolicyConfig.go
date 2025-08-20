@@ -24,15 +24,15 @@ type PasswordPolicyConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the password policy.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/password_policy#name PasswordPolicy#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/password_policy#name PasswordPolicy#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The password policy document.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/password_policy#policy PasswordPolicy#policy}
 	Policy *string `field:"required" json:"policy" yaml:"policy"`
 	// Target namespace. (requires Enterprise).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/password_policy#namespace PasswordPolicy#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount vault_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount vault_mount}.
 type Mount interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -56,6 +56,9 @@ type Mount interface {
 	ExternalEntropyAccess() interface{}
 	SetExternalEntropyAccess(val interface{})
 	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -173,6 +176,7 @@ type Mount interface {
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
 	ResetIdentityTokenKey()
 	ResetListingVisibility()
@@ -419,6 +423,26 @@ func (j *jsiiProxy_Mount) ExternalEntropyAccessInput() interface{} {
 	_jsii_.Get(
 		j,
 		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Mount) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Mount) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -775,7 +799,7 @@ func (j *jsiiProxy_Mount) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount vault_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount vault_mount} Resource.
 func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount {
 	_init_.Initialize()
 
@@ -793,7 +817,7 @@ func NewMount(scope constructs.Construct, id *string, config *MountConfig) Mount
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/mount vault_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/mount vault_mount} Resource.
 func NewMount_Override(m Mount, scope constructs.Construct, id *string, config *MountConfig) {
 	_init_.Initialize()
 
@@ -918,6 +942,17 @@ func (j *jsiiProxy_Mount)SetExternalEntropyAccess(val interface{}) {
 	_jsii_.Set(
 		j,
 		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Mount)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -1505,6 +1540,14 @@ func (m *jsiiProxy_Mount) ResetExternalEntropyAccess() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_Mount) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }

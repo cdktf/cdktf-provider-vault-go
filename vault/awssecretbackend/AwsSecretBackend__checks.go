@@ -255,6 +255,38 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetAccessKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
@@ -353,6 +385,14 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDefaultLeaseTtlSecondsParameters
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -382,6 +422,46 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetDisableAutomatedRotationParamete
 }
 
 func (j *jsiiProxy_AwsSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -449,6 +529,14 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetLocalParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -485,7 +573,31 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetNamespaceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -574,6 +686,26 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetRotationScheduleParameters(val *
 func (j *jsiiProxy_AwsSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AwsSecretBackend) validateSetSealWrapParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

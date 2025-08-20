@@ -127,6 +127,10 @@ func (j *jsiiProxy_JwtAuthBackend) validateSetJwksCaPemParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_JwtAuthBackend) validateSetJwksPairsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_JwtAuthBackend) validateSetJwksUrlParameters(val *string) error {
 	return nil
 }

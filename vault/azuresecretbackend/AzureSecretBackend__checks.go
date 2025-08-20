@@ -247,6 +247,38 @@ func validateAzureSecretBackend_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetClientIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -353,6 +385,22 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -409,6 +457,46 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetEnvironmentParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -449,6 +537,42 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetLocalParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -457,7 +581,31 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetNamespaceParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetPathParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -511,6 +659,14 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetProvisionersParameters(val *[]
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetRootPasswordTtlParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetRotationPeriodParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -530,6 +686,26 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetRotationScheduleParameters(val
 func (j *jsiiProxy_AzureSecretBackend) validateSetRotationWindowParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetSealWrapParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil

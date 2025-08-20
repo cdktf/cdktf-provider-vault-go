@@ -91,11 +91,31 @@ func validateKmipSecretBackend_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_KmipSecretBackend) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }
 
@@ -111,6 +131,10 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetDefaultTlsClientTtlParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -119,7 +143,19 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetDisableRemountParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
 	return nil
 }
 
@@ -131,7 +167,27 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetListenAddrsParameters(val *[]*s
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetLocalParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
 	return nil
 }
 
@@ -139,7 +195,15 @@ func (j *jsiiProxy_KmipSecretBackend) validateSetPathParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_KmipSecretBackend) validateSetPluginVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmipSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_KmipSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

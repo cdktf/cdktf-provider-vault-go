@@ -135,6 +135,10 @@ func (j *jsiiProxy_KubernetesSecretBackend) validateSetExternalEntropyAccessPara
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

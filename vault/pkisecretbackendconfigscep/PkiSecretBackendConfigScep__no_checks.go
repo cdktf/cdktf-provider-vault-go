@@ -135,6 +135,10 @@ func (j *jsiiProxy_PkiSecretBackendConfigScep) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendConfigScep) validateSetLogLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendConfigScep) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

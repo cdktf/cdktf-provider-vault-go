@@ -12,9 +12,22 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kmip_secret_backend vault_kmip_secret_backend}.
 type KmipSecretBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -27,6 +40,9 @@ type KmipSecretBackend interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultLeaseTtlSeconds() *float64
+	SetDefaultLeaseTtlSeconds(val *float64)
+	DefaultLeaseTtlSecondsInput() *float64
 	DefaultTlsClientKeyBits() *float64
 	SetDefaultTlsClientKeyBits(val *float64)
 	DefaultTlsClientKeyBitsInput() *float64
@@ -36,6 +52,9 @@ type KmipSecretBackend interface {
 	DefaultTlsClientTtl() *float64
 	SetDefaultTlsClientTtl(val *float64)
 	DefaultTlsClientTtlInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -46,6 +65,12 @@ type KmipSecretBackend interface {
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -56,6 +81,9 @@ type KmipSecretBackend interface {
 	FriendlyUniqueId() *string
 	Id() *string
 	SetId(val *string)
+	IdentityTokenKey() *string
+	SetIdentityTokenKey(val *string)
+	IdentityTokenKeyInput() *string
 	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -64,14 +92,32 @@ type KmipSecretBackend interface {
 	ListenAddrs() *[]*string
 	SetListenAddrs(val *[]*string)
 	ListenAddrsInput() *[]*string
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
+	MaxLeaseTtlSeconds() *float64
+	SetMaxLeaseTtlSeconds(val *float64)
+	MaxLeaseTtlSecondsInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -82,6 +128,9 @@ type KmipSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	ServerHostnames() *[]*string
 	SetServerHostnames(val *[]*string)
 	ServerHostnamesInput() *[]*string
@@ -146,17 +195,33 @@ type KmipSecretBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
+	ResetDefaultLeaseTtlSeconds()
 	ResetDefaultTlsClientKeyBits()
 	ResetDefaultTlsClientKeyType()
 	ResetDefaultTlsClientTtl()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableRemount()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
+	ResetIdentityTokenKey()
 	ResetListenAddrs()
+	ResetListingVisibility()
+	ResetLocal()
+	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
+	ResetPluginVersion()
+	ResetSealWrap()
 	ResetServerHostnames()
 	ResetServerIps()
 	ResetTlsCaKeyBits()
@@ -178,6 +243,96 @@ type KmipSecretBackend interface {
 // The jsii proxy struct for KmipSecretBackend
 type jsiiProxy_KmipSecretBackend struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_KmipSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KmipSecretBackend) CdktfStack() cdktf.TerraformStack {
@@ -215,6 +370,26 @@ func (j *jsiiProxy_KmipSecretBackend) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) DefaultLeaseTtlSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultLeaseTtlSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultLeaseTtlSecondsInput",
 		&returns,
 	)
 	return returns
@@ -280,6 +455,26 @@ func (j *jsiiProxy_KmipSecretBackend) DefaultTlsClientTtlInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretBackend) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -330,6 +525,46 @@ func (j *jsiiProxy_KmipSecretBackend) DisableRemountInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretBackend) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -365,6 +600,26 @@ func (j *jsiiProxy_KmipSecretBackend) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) IdentityTokenKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) IdentityTokenKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityTokenKeyInput",
 		&returns,
 	)
 	return returns
@@ -410,6 +665,66 @@ func (j *jsiiProxy_KmipSecretBackend) ListenAddrsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) MaxLeaseTtlSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLeaseTtlSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) MaxLeaseTtlSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLeaseTtlSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretBackend) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -440,6 +755,46 @@ func (j *jsiiProxy_KmipSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_KmipSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmipSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -455,6 +810,26 @@ func (j *jsiiProxy_KmipSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +860,26 @@ func (j *jsiiProxy_KmipSecretBackend) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmipSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
 		&returns,
 	)
 	return returns
@@ -621,7 +1016,7 @@ func (j *jsiiProxy_KmipSecretBackend) TlsMinVersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSecretBackendConfig) KmipSecretBackend {
 	_init_.Initialize()
 
@@ -639,7 +1034,7 @@ func NewKmipSecretBackend(scope constructs.Construct, id *string, config *KmipSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/kmip_secret_backend vault_kmip_secret_backend} Resource.
 func NewKmipSecretBackend_Override(k KmipSecretBackend, scope constructs.Construct, id *string, config *KmipSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -647,6 +1042,50 @@ func NewKmipSecretBackend_Override(k KmipSecretBackend, scope constructs.Constru
 		"@cdktf/provider-vault.kmipSecretBackend.KmipSecretBackend",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
+		val,
 	)
 }
 
@@ -668,6 +1107,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetDefaultLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultLeaseTtlSeconds",
 		val,
 	)
 }
@@ -705,6 +1155,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetDefaultTlsClientTtl(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -735,6 +1196,28 @@ func (j *jsiiProxy_KmipSecretBackend)SetDisableRemount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -750,6 +1233,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetIdentityTokenKey(val *string) {
+	if err := j.validateSetIdentityTokenKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityTokenKey",
 		val,
 	)
 }
@@ -776,6 +1270,39 @@ func (j *jsiiProxy_KmipSecretBackend)SetListenAddrs(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetMaxLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxLeaseTtlSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretBackend)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -787,6 +1314,28 @@ func (j *jsiiProxy_KmipSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_KmipSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmipSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -794,6 +1343,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -813,6 +1373,17 @@ func (j *jsiiProxy_KmipSecretBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmipSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1225,6 +1796,46 @@ func (k *jsiiProxy_KmipSecretBackend) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetDefaultLeaseTtlSeconds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDefaultLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretBackend) ResetDefaultTlsClientKeyBits() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1249,6 +1860,14 @@ func (k *jsiiProxy_KmipSecretBackend) ResetDefaultTlsClientTtl() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDelegatedAuthAccessors",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1265,10 +1884,34 @@ func (k *jsiiProxy_KmipSecretBackend) ResetDisableRemount() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetForceNoCache",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetIdentityTokenKey() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetIdentityTokenKey",
 		nil, // no parameters
 	)
 }
@@ -1281,6 +1924,30 @@ func (k *jsiiProxy_KmipSecretBackend) ResetListenAddrs() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetListingVisibility",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetLocal() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetLocal",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetMaxLeaseTtlSeconds() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMaxLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretBackend) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1289,10 +1956,42 @@ func (k *jsiiProxy_KmipSecretBackend) ResetNamespace() {
 	)
 }
 
+func (k *jsiiProxy_KmipSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KmipSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPluginVersion",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmipSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

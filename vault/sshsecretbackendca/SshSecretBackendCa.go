@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}.
 type SshSecretBackendCa interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -58,6 +58,12 @@ type SshSecretBackendCa interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedKeyId() *string
+	SetManagedKeyId(val *string)
+	ManagedKeyIdInput() *string
+	ManagedKeyName() *string
+	SetManagedKeyName(val *string)
+	ManagedKeyNameInput() *string
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -133,6 +139,8 @@ type SshSecretBackendCa interface {
 	ResetId()
 	ResetKeyBits()
 	ResetKeyType()
+	ResetManagedKeyId()
+	ResetManagedKeyName()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -347,6 +355,46 @@ func (j *jsiiProxy_SshSecretBackendCa) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_SshSecretBackendCa) ManagedKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) ManagedKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) ManagedKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SshSecretBackendCa) ManagedKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKeyNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SshSecretBackendCa) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -478,7 +526,7 @@ func (j *jsiiProxy_SshSecretBackendCa) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) SshSecretBackendCa {
 	_init_.Initialize()
 
@@ -496,7 +544,7 @@ func NewSshSecretBackendCa(scope constructs.Construct, id *string, config *SshSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource.
 func NewSshSecretBackendCa_Override(s SshSecretBackendCa, scope constructs.Construct, id *string, config *SshSecretBackendCaConfig) {
 	_init_.Initialize()
 
@@ -607,6 +655,28 @@ func (j *jsiiProxy_SshSecretBackendCa)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendCa)SetManagedKeyId(val *string) {
+	if err := j.validateSetManagedKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SshSecretBackendCa)SetManagedKeyName(val *string) {
+	if err := j.validateSetManagedKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedKeyName",
 		val,
 	)
 }
@@ -1052,6 +1122,22 @@ func (s *jsiiProxy_SshSecretBackendCa) ResetKeyType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetKeyType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) ResetManagedKeyId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedKeyId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SshSecretBackendCa) ResetManagedKeyName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetManagedKeyName",
 		nil, // no parameters
 	)
 }

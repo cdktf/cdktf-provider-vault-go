@@ -12,9 +12,22 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/azure_secret_backend vault_azure_secret_backend}.
 type AzureSecretBackend interface {
 	cdktf.TerraformResource
+	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClientId() *string
@@ -33,6 +46,12 @@ type AzureSecretBackend interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultLeaseTtlSeconds() *float64
+	SetDefaultLeaseTtlSeconds(val *float64)
+	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -49,6 +68,12 @@ type AzureSecretBackend interface {
 	Environment() *string
 	SetEnvironment(val *string)
 	EnvironmentInput() *string
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,14 +98,32 @@ type AzureSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
+	Local() interface{}
+	SetLocal(val interface{})
+	LocalInput() interface{}
+	MaxLeaseTtlSeconds() *float64
+	SetMaxLeaseTtlSeconds(val *float64)
+	MaxLeaseTtlSecondsInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -91,6 +134,9 @@ type AzureSecretBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RootPasswordTtl() *float64
+	SetRootPasswordTtl(val *float64)
+	RootPasswordTtlInput() *float64
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
@@ -100,6 +146,9 @@ type AzureSecretBackend interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	SubscriptionId() *string
 	SetSubscriptionId(val *string)
 	SubscriptionIdInput() *string
@@ -155,24 +204,40 @@ type AzureSecretBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
 	ResetClientId()
 	ResetClientSecret()
+	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
 	ResetEnvironment()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
 	ResetIdentityTokenAudience()
 	ResetIdentityTokenKey()
 	ResetIdentityTokenTtl()
+	ResetListingVisibility()
+	ResetLocal()
+	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
 	ResetPath()
+	ResetPluginVersion()
+	ResetRootPasswordTtl()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSealWrap()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -189,6 +254,96 @@ type AzureSecretBackend interface {
 // The jsii proxy struct for AzureSecretBackend
 type jsiiProxy_AzureSecretBackend struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AzureSecretBackend) Accessor() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzureSecretBackend) CdktfStack() cdktf.TerraformStack {
@@ -266,6 +421,46 @@ func (j *jsiiProxy_AzureSecretBackend) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DefaultLeaseTtlSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultLeaseTtlSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"defaultLeaseTtlSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +551,46 @@ func (j *jsiiProxy_AzureSecretBackend) EnvironmentInput() *string {
 	_jsii_.Get(
 		j,
 		"environmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +716,66 @@ func (j *jsiiProxy_AzureSecretBackend) Lifecycle() *cdktf.TerraformResourceLifec
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) Local() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"local",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) LocalInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"localInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) MaxLeaseTtlSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLeaseTtlSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) MaxLeaseTtlSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxLeaseTtlSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackend) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -511,6 +806,46 @@ func (j *jsiiProxy_AzureSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AzureSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -526,6 +861,26 @@ func (j *jsiiProxy_AzureSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -556,6 +911,26 @@ func (j *jsiiProxy_AzureSecretBackend) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RootPasswordTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rootPasswordTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) RootPasswordTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rootPasswordTtlInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +991,26 @@ func (j *jsiiProxy_AzureSecretBackend) RotationWindowInput() *float64 {
 	_jsii_.Get(
 		j,
 		"rotationWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
 		&returns,
 	)
 	return returns
@@ -692,7 +1087,7 @@ func (j *jsiiProxy_AzureSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend(scope constructs.Construct, id *string, config *AzureSecretBackendConfig) AzureSecretBackend {
 	_init_.Initialize()
 
@@ -710,7 +1105,7 @@ func NewAzureSecretBackend(scope constructs.Construct, id *string, config *Azure
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource.
 func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Construct, id *string, config *AzureSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -718,6 +1113,50 @@ func NewAzureSecretBackend_Override(a AzureSecretBackend, scope constructs.Const
 		"@cdktf/provider-vault.azureSecretBackend.AzureSecretBackend",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
+		val,
 	)
 }
 
@@ -761,6 +1200,28 @@ func (j *jsiiProxy_AzureSecretBackend)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetDefaultLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultLeaseTtlSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
 		val,
 	)
 }
@@ -813,6 +1274,28 @@ func (j *jsiiProxy_AzureSecretBackend)SetEnvironment(val *string) {
 	_jsii_.Set(
 		j,
 		"environment",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -880,6 +1363,39 @@ func (j *jsiiProxy_AzureSecretBackend)SetLifecycle(val *cdktf.TerraformResourceL
 	)
 }
 
+func (j *jsiiProxy_AzureSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetLocal(val interface{}) {
+	if err := j.validateSetLocalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"local",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
+	if err := j.validateSetMaxLeaseTtlSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxLeaseTtlSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureSecretBackend)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -891,6 +1407,28 @@ func (j *jsiiProxy_AzureSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AzureSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -898,6 +1436,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -917,6 +1466,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetRootPasswordTtl(val *float64) {
+	if err := j.validateSetRootPasswordTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rootPasswordTtl",
 		val,
 	)
 }
@@ -950,6 +1510,17 @@ func (j *jsiiProxy_AzureSecretBackend)SetRotationWindow(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1329,6 +1900,38 @@ func (a *jsiiProxy_AzureSecretBackend) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AzureSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureSecretBackend) ResetClientId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1341,6 +1944,22 @@ func (a *jsiiProxy_AzureSecretBackend) ResetClientSecret() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetDefaultLeaseTtlSeconds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDefaultLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDelegatedAuthAccessors",
 		nil, // no parameters
 	)
 }
@@ -1377,6 +1996,22 @@ func (a *jsiiProxy_AzureSecretBackend) ResetEnvironment() {
 	)
 }
 
+func (a *jsiiProxy_AzureSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetForceNoCache",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureSecretBackend) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1409,10 +2044,42 @@ func (a *jsiiProxy_AzureSecretBackend) ResetIdentityTokenTtl() {
 	)
 }
 
+func (a *jsiiProxy_AzureSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetListingVisibility",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetLocal() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLocal",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetMaxLeaseTtlSeconds() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureSecretBackend) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetNamespace",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOptions",
 		nil, // no parameters
 	)
 }
@@ -1425,10 +2092,34 @@ func (a *jsiiProxy_AzureSecretBackend) ResetOverrideLogicalId() {
 	)
 }
 
+func (a *jsiiProxy_AzureSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPluginVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetRootPasswordTtl() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRootPasswordTtl",
 		nil, // no parameters
 	)
 }
@@ -1453,6 +2144,14 @@ func (a *jsiiProxy_AzureSecretBackend) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

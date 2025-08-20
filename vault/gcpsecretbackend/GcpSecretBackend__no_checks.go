@@ -91,6 +91,22 @@ func validateGcpSecretBackend_IsTerraformResourceParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -115,6 +131,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetDefaultLeaseTtlSecondsParameters
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -124,6 +144,14 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetDisableAutomatedRotationParamete
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetDisableRemountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
 	return nil
 }
 
@@ -147,6 +175,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetLocalParameters(val interface{}) error {
 	return nil
 }
@@ -159,7 +191,19 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetNamespaceParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -176,6 +220,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetRotationScheduleParameters(val *
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

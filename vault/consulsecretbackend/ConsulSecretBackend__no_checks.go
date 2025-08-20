@@ -95,6 +95,22 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetAddressParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetBootstrapParameters(val interface{}) error {
 	return nil
 }
@@ -123,6 +139,10 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetDefaultLeaseTtlSecondsParamet
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -131,11 +151,27 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetDisableRemountParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetListingVisibilityParameters(val *string) error {
 	return nil
 }
 
@@ -151,7 +187,19 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetNamespaceParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_ConsulSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConsulSecretBackend) validateSetPathParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetPluginVersionParameters(val *string) error {
 	return nil
 }
 
@@ -160,6 +208,10 @@ func (j *jsiiProxy_ConsulSecretBackend) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_ConsulSecretBackend) validateSetSchemeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ConsulSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

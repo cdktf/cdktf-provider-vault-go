@@ -91,6 +91,22 @@ func validateAzureSecretBackend_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetClientIdParameters(val *string) error {
 	return nil
 }
@@ -107,6 +123,14 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -120,6 +144,14 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetDisableRemountParameters(val i
 }
 
 func (j *jsiiProxy_AzureSecretBackend) validateSetEnvironmentParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
 	return nil
 }
 
@@ -143,7 +175,27 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetLocalParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetNamespaceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
 	return nil
 }
 
@@ -151,7 +203,15 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetPathParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackend) validateSetPluginVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetRootPasswordTtlParameters(val *float64) error {
 	return nil
 }
 
@@ -164,6 +224,10 @@ func (j *jsiiProxy_AzureSecretBackend) validateSetRotationScheduleParameters(val
 }
 
 func (j *jsiiProxy_AzureSecretBackend) validateSetRotationWindowParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

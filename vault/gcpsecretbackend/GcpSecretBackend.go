@@ -12,10 +12,22 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 type GcpSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AllowedManagedKeys() *[]*string
+	SetAllowedManagedKeys(val *[]*string)
+	AllowedManagedKeysInput() *[]*string
+	AllowedResponseHeaders() *[]*string
+	SetAllowedResponseHeaders(val *[]*string)
+	AllowedResponseHeadersInput() *[]*string
+	AuditNonHmacRequestKeys() *[]*string
+	SetAuditNonHmacRequestKeys(val *[]*string)
+	AuditNonHmacRequestKeysInput() *[]*string
+	AuditNonHmacResponseKeys() *[]*string
+	SetAuditNonHmacResponseKeys(val *[]*string)
+	AuditNonHmacResponseKeysInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -40,6 +52,9 @@ type GcpSecretBackend interface {
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
+	DelegatedAuthAccessors() *[]*string
+	SetDelegatedAuthAccessors(val *[]*string)
+	DelegatedAuthAccessorsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -53,6 +68,12 @@ type GcpSecretBackend interface {
 	DisableRemount() interface{}
 	SetDisableRemount(val interface{})
 	DisableRemountInput() interface{}
+	ExternalEntropyAccess() interface{}
+	SetExternalEntropyAccess(val interface{})
+	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -77,6 +98,9 @@ type GcpSecretBackend interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListingVisibility() *string
+	SetListingVisibility(val *string)
+	ListingVisibilityInput() *string
 	Local() interface{}
 	SetLocal(val interface{})
 	LocalInput() interface{}
@@ -88,9 +112,18 @@ type GcpSecretBackend interface {
 	NamespaceInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Options() *map[string]*string
+	SetOptions(val *map[string]*string)
+	OptionsInput() *map[string]*string
+	PassthroughRequestHeaders() *[]*string
+	SetPassthroughRequestHeaders(val *[]*string)
+	PassthroughRequestHeadersInput() *[]*string
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	PluginVersion() *string
+	SetPluginVersion(val *string)
+	PluginVersionInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -110,6 +143,9 @@ type GcpSecretBackend interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SealWrap() interface{}
+	SetSealWrap(val interface{})
+	SealWrapInput() interface{}
 	ServiceAccountEmail() *string
 	SetServiceAccountEmail(val *string)
 	ServiceAccountEmailInput() *string
@@ -162,27 +198,39 @@ type GcpSecretBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAllowedManagedKeys()
+	ResetAllowedResponseHeaders()
+	ResetAuditNonHmacRequestKeys()
+	ResetAuditNonHmacResponseKeys()
 	ResetCredentials()
 	ResetCredentialsWo()
 	ResetCredentialsWoVersion()
 	ResetDefaultLeaseTtlSeconds()
+	ResetDelegatedAuthAccessors()
 	ResetDescription()
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
+	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetId()
 	ResetIdentityTokenAudience()
 	ResetIdentityTokenKey()
 	ResetIdentityTokenTtl()
+	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
 	ResetNamespace()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPassthroughRequestHeaders()
 	ResetPath()
+	ResetPluginVersion()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSealWrap()
 	ResetServiceAccountEmail()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -207,6 +255,86 @@ func (j *jsiiProxy_GcpSecretBackend) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AllowedManagedKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AllowedManagedKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedManagedKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AllowedResponseHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AllowedResponseHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedResponseHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AuditNonHmacRequestKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AuditNonHmacRequestKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacRequestKeysInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AuditNonHmacResponseKeys() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) AuditNonHmacResponseKeysInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"auditNonHmacResponseKeysInput",
 		&returns,
 	)
 	return returns
@@ -332,6 +460,26 @@ func (j *jsiiProxy_GcpSecretBackend) DefaultLeaseTtlSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) DelegatedAuthAccessors() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessors",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) DelegatedAuthAccessorsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"delegatedAuthAccessorsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -397,6 +545,46 @@ func (j *jsiiProxy_GcpSecretBackend) DisableRemountInput() interface{} {
 	_jsii_.Get(
 		j,
 		"disableRemountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ExternalEntropyAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ExternalEntropyAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +710,26 @@ func (j *jsiiProxy_GcpSecretBackend) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) ListingVisibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) ListingVisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listingVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) Local() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -592,6 +800,46 @@ func (j *jsiiProxy_GcpSecretBackend) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) Options() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) OptionsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) PassthroughRequestHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) PassthroughRequestHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"passthroughRequestHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) Path() *string {
 	var returns *string
 	_jsii_.Get(
@@ -607,6 +855,26 @@ func (j *jsiiProxy_GcpSecretBackend) PathInput() *string {
 	_jsii_.Get(
 		j,
 		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) PluginVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) PluginVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pluginVersionInput",
 		&returns,
 	)
 	return returns
@@ -702,6 +970,26 @@ func (j *jsiiProxy_GcpSecretBackend) RotationWindowInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) SealWrap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) SealWrapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sealWrapInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) ServiceAccountEmail() *string {
 	var returns *string
 	_jsii_.Get(
@@ -753,7 +1041,7 @@ func (j *jsiiProxy_GcpSecretBackend) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecretBackendConfig) GcpSecretBackend {
 	_init_.Initialize()
 
@@ -771,7 +1059,7 @@ func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct, id *string, config *GcpSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -779,6 +1067,50 @@ func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct
 		"@cdktf/provider-vault.gcpSecretBackend.GcpSecretBackend",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetAllowedManagedKeys(val *[]*string) {
+	if err := j.validateSetAllowedManagedKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedManagedKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetAllowedResponseHeaders(val *[]*string) {
+	if err := j.validateSetAllowedResponseHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedResponseHeaders",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetAuditNonHmacRequestKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacRequestKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacRequestKeys",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetAuditNonHmacResponseKeys(val *[]*string) {
+	if err := j.validateSetAuditNonHmacResponseKeysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"auditNonHmacResponseKeys",
+		val,
 	)
 }
 
@@ -848,6 +1180,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetDefaultLeaseTtlSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_GcpSecretBackend)SetDelegatedAuthAccessors(val *[]*string) {
+	if err := j.validateSetDelegatedAuthAccessorsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delegatedAuthAccessors",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpSecretBackend)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -885,6 +1228,28 @@ func (j *jsiiProxy_GcpSecretBackend)SetDisableRemount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"disableRemount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetExternalEntropyAccess(val interface{}) {
+	if err := j.validateSetExternalEntropyAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -952,6 +1317,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
+func (j *jsiiProxy_GcpSecretBackend)SetListingVisibility(val *string) {
+	if err := j.validateSetListingVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listingVisibility",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpSecretBackend)SetLocal(val interface{}) {
 	if err := j.validateSetLocalParameters(val); err != nil {
 		panic(err)
@@ -985,6 +1361,28 @@ func (j *jsiiProxy_GcpSecretBackend)SetNamespace(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GcpSecretBackend)SetOptions(val *map[string]*string) {
+	if err := j.validateSetOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"options",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetPassthroughRequestHeaders(val *[]*string) {
+	if err := j.validateSetPassthroughRequestHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passthroughRequestHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpSecretBackend)SetPath(val *string) {
 	if err := j.validateSetPathParameters(val); err != nil {
 		panic(err)
@@ -992,6 +1390,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetPath(val *string) {
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetPluginVersion(val *string) {
+	if err := j.validateSetPluginVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pluginVersion",
 		val,
 	)
 }
@@ -1044,6 +1453,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetRotationWindow(val *float64) {
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetSealWrap(val interface{}) {
+	if err := j.validateSetSealWrapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sealWrap",
 		val,
 	)
 }
@@ -1412,6 +1832,38 @@ func (g *jsiiProxy_GcpSecretBackend) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetAllowedManagedKeys() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowedManagedKeys",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetAllowedResponseHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowedResponseHeaders",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetAuditNonHmacRequestKeys() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuditNonHmacRequestKeys",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetAuditNonHmacResponseKeys() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuditNonHmacResponseKeys",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetCredentials() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1444,6 +1896,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetDefaultLeaseTtlSeconds() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetDelegatedAuthAccessors() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDelegatedAuthAccessors",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1464,6 +1924,22 @@ func (g *jsiiProxy_GcpSecretBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisableRemount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetExternalEntropyAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }
@@ -1500,6 +1976,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetIdentityTokenTtl() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetListingVisibility() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetListingVisibility",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetLocal() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1524,6 +2008,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetNamespace() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1532,10 +2024,26 @@ func (g *jsiiProxy_GcpSecretBackend) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetPassthroughRequestHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassthroughRequestHeaders",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetPluginVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPluginVersion",
 		nil, // no parameters
 	)
 }
@@ -1560,6 +2068,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetRotationWindow() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetSealWrap() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSealWrap",
 		nil, // no parameters
 	)
 }

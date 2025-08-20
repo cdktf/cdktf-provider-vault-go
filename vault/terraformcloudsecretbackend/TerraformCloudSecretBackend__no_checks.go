@@ -95,6 +95,22 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetAddressParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetAllowedManagedKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetAllowedResponseHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetAuditNonHmacRequestKeysParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetAuditNonHmacResponseKeysParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetBackendParameters(val *string) error {
 	return nil
 }
@@ -115,6 +131,10 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDefaultLeaseTtlSecond
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDelegatedAuthAccessorsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -123,11 +143,31 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetDisableRemountParamet
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetExternalEntropyAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetIdentityTokenKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetListingVisibilityParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetLocalParameters(val interface{}) error {
 	return nil
 }
 
@@ -139,7 +179,23 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetNamespaceParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetOptionsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetPassthroughRequestHeadersParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetPluginVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetSealWrapParameters(val interface{}) error {
 	return nil
 }
 

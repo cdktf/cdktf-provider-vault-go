@@ -163,6 +163,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetExternalEntropyAccessParameters
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetForceNoCacheParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

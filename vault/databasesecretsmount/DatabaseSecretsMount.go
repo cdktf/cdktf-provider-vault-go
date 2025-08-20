@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/database_secrets_mount vault_database_secrets_mount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/database_secrets_mount vault_database_secrets_mount}.
 type DatabaseSecretsMount interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -63,6 +63,9 @@ type DatabaseSecretsMount interface {
 	ExternalEntropyAccess() interface{}
 	SetExternalEntropyAccess(val interface{})
 	ExternalEntropyAccessInput() interface{}
+	ForceNoCache() interface{}
+	SetForceNoCache(val interface{})
+	ForceNoCacheInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -228,6 +231,7 @@ type DatabaseSecretsMount interface {
 	ResetDescription()
 	ResetElasticsearch()
 	ResetExternalEntropyAccess()
+	ResetForceNoCache()
 	ResetHana()
 	ResetId()
 	ResetIdentityTokenKey()
@@ -559,6 +563,26 @@ func (j *jsiiProxy_DatabaseSecretsMount) ExternalEntropyAccessInput() interface{
 	_jsii_.Get(
 		j,
 		"externalEntropyAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) ForceNoCache() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCache",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount) ForceNoCacheInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceNoCacheInput",
 		&returns,
 	)
 	return returns
@@ -1195,7 +1219,7 @@ func (j *jsiiProxy_DatabaseSecretsMount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) DatabaseSecretsMount {
 	_init_.Initialize()
 
@@ -1213,7 +1237,7 @@ func NewDatabaseSecretsMount(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.1.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource.
 func NewDatabaseSecretsMount_Override(d DatabaseSecretsMount, scope constructs.Construct, id *string, config *DatabaseSecretsMountConfig) {
 	_init_.Initialize()
 
@@ -1338,6 +1362,17 @@ func (j *jsiiProxy_DatabaseSecretsMount)SetExternalEntropyAccess(val interface{}
 	_jsii_.Set(
 		j,
 		"externalEntropyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMount)SetForceNoCache(val interface{}) {
+	if err := j.validateSetForceNoCacheParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceNoCache",
 		val,
 	)
 }
@@ -2136,6 +2171,14 @@ func (d *jsiiProxy_DatabaseSecretsMount) ResetExternalEntropyAccess() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExternalEntropyAccess",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMount) ResetForceNoCache() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetForceNoCache",
 		nil, // no parameters
 	)
 }
