@@ -1,6 +1,6 @@
-# CDKTF Go bindings for hashicorp/vault provider version 5.2.1
+# CDKTF Go bindings for hashicorp/vault provider version 5.3.0
 
-This repo builds and publishes the [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
@@ -23,7 +23,7 @@ This project is explicitly not tracking the Terraform vault provider version 1:1
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.2.1)
+* [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.3.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}.
 type PkiSecretBackendIssuer interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -703,7 +703,7 @@ func (j *jsiiProxy_PkiSecretBackendIssuer) UsageInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) PkiSecretBackendIssuer {
 	_init_.Initialize()
 
@@ -721,7 +721,7 @@ func NewPkiSecretBackendIssuer(scope constructs.Construct, id *string, config *P
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource.
 func NewPkiSecretBackendIssuer_Override(p PkiSecretBackendIssuer, scope constructs.Construct, id *string, config *PkiSecretBackendIssuerConfig) {
 	_init_.Initialize()
 

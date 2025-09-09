@@ -139,6 +139,10 @@ func (j *jsiiProxy_LdapSecretBackend) validateSetCountParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_LdapSecretBackend) validateSetCredentialTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapSecretBackend) validateSetDefaultLeaseTtlSecondsParameters(val *float64) error {
 	return nil
 }

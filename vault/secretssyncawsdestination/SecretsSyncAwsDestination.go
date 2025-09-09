@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}.
 type SecretsSyncAwsDestination interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_SecretsSyncAwsDestination) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) SecretsSyncAwsDestination {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewSecretsSyncAwsDestination(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource.
 func NewSecretsSyncAwsDestination_Override(s SecretsSyncAwsDestination, scope constructs.Construct, id *string, config *SecretsSyncAwsDestinationConfig) {
 	_init_.Initialize()
 

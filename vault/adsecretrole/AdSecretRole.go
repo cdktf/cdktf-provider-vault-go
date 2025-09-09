@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ad_secret_role vault_ad_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ad_secret_role vault_ad_secret_role}.
 type AdSecretRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_AdSecretRole) TtlInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
 func NewAdSecretRole(scope constructs.Construct, id *string, config *AdSecretRoleConfig) AdSecretRole {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewAdSecretRole(scope constructs.Construct, id *string, config *AdSecretRol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ad_secret_role vault_ad_secret_role} Resource.
 func NewAdSecretRole_Override(a AdSecretRole, scope constructs.Construct, id *string, config *AdSecretRoleConfig) {
 	_init_.Initialize()
 

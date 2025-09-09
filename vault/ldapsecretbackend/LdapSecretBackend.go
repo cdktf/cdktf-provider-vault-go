@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend}.
 type LdapSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -58,6 +58,9 @@ type LdapSecretBackend interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialType() *string
+	SetCredentialType(val *string)
+	CredentialTypeInput() *string
 	DefaultLeaseTtlSeconds() *float64
 	SetDefaultLeaseTtlSeconds(val *float64)
 	DefaultLeaseTtlSecondsInput() *float64
@@ -236,6 +239,7 @@ type LdapSecretBackend interface {
 	ResetClientTlsCert()
 	ResetClientTlsKey()
 	ResetConnectionTimeout()
+	ResetCredentialType()
 	ResetDefaultLeaseTtlSeconds()
 	ResetDelegatedAuthAccessors()
 	ResetDescription()
@@ -533,6 +537,26 @@ func (j *jsiiProxy_LdapSecretBackend) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) CredentialType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapSecretBackend) CredentialTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialTypeInput",
 		&returns,
 	)
 	return returns
@@ -1279,7 +1303,7 @@ func (j *jsiiProxy_LdapSecretBackend) UserdnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSecretBackendConfig) LdapSecretBackend {
 	_init_.Initialize()
 
@@ -1297,7 +1321,7 @@ func NewLdapSecretBackend(scope constructs.Construct, id *string, config *LdapSe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.2.1/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_secret_backend vault_ldap_secret_backend} Resource.
 func NewLdapSecretBackend_Override(l LdapSecretBackend, scope constructs.Construct, id *string, config *LdapSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1436,6 +1460,17 @@ func (j *jsiiProxy_LdapSecretBackend)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapSecretBackend)SetCredentialType(val *string) {
+	if err := j.validateSetCredentialTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialType",
 		val,
 	)
 }
@@ -2240,6 +2275,14 @@ func (l *jsiiProxy_LdapSecretBackend) ResetConnectionTimeout() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetConnectionTimeout",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapSecretBackend) ResetCredentialType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCredentialType",
 		nil, // no parameters
 	)
 }
