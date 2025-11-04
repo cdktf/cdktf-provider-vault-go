@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}.
 type AwsAuthBackendClient interface {
 	cdktf.TerraformResource
 	AccessKey() *string
 	SetAccessKey(val *string)
 	AccessKeyInput() *string
+	AllowedStsHeaderValues() *[]*string
+	SetAllowedStsHeaderValues(val *[]*string)
+	AllowedStsHeaderValuesInput() *[]*string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -162,6 +165,7 @@ type AwsAuthBackendClient interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccessKey()
+	ResetAllowedStsHeaderValues()
 	ResetBackend()
 	ResetDisableAutomatedRotation()
 	ResetEc2Endpoint()
@@ -216,6 +220,26 @@ func (j *jsiiProxy_AwsAuthBackendClient) AccessKeyInput() *string {
 	_jsii_.Get(
 		j,
 		"accessKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) AllowedStsHeaderValues() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedStsHeaderValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient) AllowedStsHeaderValuesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedStsHeaderValuesInput",
 		&returns,
 	)
 	return returns
@@ -742,7 +766,7 @@ func (j *jsiiProxy_AwsAuthBackendClient) UseStsRegionFromClientInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) AwsAuthBackendClient {
 	_init_.Initialize()
 
@@ -760,7 +784,7 @@ func NewAwsAuthBackendClient(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource.
 func NewAwsAuthBackendClient_Override(a AwsAuthBackendClient, scope constructs.Construct, id *string, config *AwsAuthBackendClientConfig) {
 	_init_.Initialize()
 
@@ -778,6 +802,17 @@ func (j *jsiiProxy_AwsAuthBackendClient)SetAccessKey(val *string) {
 	_jsii_.Set(
 		j,
 		"accessKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendClient)SetAllowedStsHeaderValues(val *[]*string) {
+	if err := j.validateSetAllowedStsHeaderValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedStsHeaderValues",
 		val,
 	)
 }
@@ -1405,6 +1440,14 @@ func (a *jsiiProxy_AwsAuthBackendClient) ResetAccessKey() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccessKey",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendClient) ResetAllowedStsHeaderValues() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedStsHeaderValues",
 		nil, // no parameters
 	)
 }

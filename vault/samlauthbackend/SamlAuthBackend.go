@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
 type SamlAuthBackend interface {
 	cdktf.TerraformResource
 	AcsUrls() *[]*string
@@ -94,6 +94,8 @@ type SamlAuthBackend interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Tune() SamlAuthBackendTuneList
+	TuneInput() interface{}
 	VerboseLogging() interface{}
 	SetVerboseLogging(val interface{})
 	VerboseLoggingInput() interface{}
@@ -140,6 +142,7 @@ type SamlAuthBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTune(value interface{})
 	ResetDefaultRole()
 	ResetDisableRemount()
 	ResetId()
@@ -152,6 +155,7 @@ type SamlAuthBackend interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetTune()
 	ResetVerboseLogging()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -551,6 +555,26 @@ func (j *jsiiProxy_SamlAuthBackend) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SamlAuthBackend) Tune() SamlAuthBackendTuneList {
+	var returns SamlAuthBackendTuneList
+	_jsii_.Get(
+		j,
+		"tune",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SamlAuthBackend) TuneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tuneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SamlAuthBackend) VerboseLogging() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -572,7 +596,7 @@ func (j *jsiiProxy_SamlAuthBackend) VerboseLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuthBackendConfig) SamlAuthBackend {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewSamlAuthBackend(scope constructs.Construct, id *string, config *SamlAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource.
 func NewSamlAuthBackend_Override(s SamlAuthBackend, scope constructs.Construct, id *string, config *SamlAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1154,6 +1178,17 @@ func (s *jsiiProxy_SamlAuthBackend) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SamlAuthBackend) PutTune(value interface{}) {
+	if err := s.validatePutTuneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTune",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SamlAuthBackend) ResetDefaultRole() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1230,6 +1265,14 @@ func (s *jsiiProxy_SamlAuthBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SamlAuthBackend) ResetTune() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTune",
 		nil, // no parameters
 	)
 }

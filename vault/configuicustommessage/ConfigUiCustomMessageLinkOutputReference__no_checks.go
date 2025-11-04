@@ -43,11 +43,11 @@ func (c *jsiiProxy_ConfigUiCustomMessageLinkOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ConfigUiCustomMessageLinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigUiCustomMessageLinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigUiCustomMessageLinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigUiCustomMessageLinkOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend vault_oci_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend vault_oci_auth_backend}.
 type OciAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_OciAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend vault_oci_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend vault_oci_auth_backend} Resource.
 func NewOciAuthBackend(scope constructs.Construct, id *string, config *OciAuthBackendConfig) OciAuthBackend {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewOciAuthBackend(scope constructs.Construct, id *string, config *OciAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/oci_auth_backend vault_oci_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend vault_oci_auth_backend} Resource.
 func NewOciAuthBackend_Override(o OciAuthBackend, scope constructs.Construct, id *string, config *OciAuthBackendConfig) {
 	_init_.Initialize()
 

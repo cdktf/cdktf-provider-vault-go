@@ -15,7 +15,7 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

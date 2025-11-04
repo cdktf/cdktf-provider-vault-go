@@ -95,6 +95,10 @@ func (j *jsiiProxy_AwsAuthBackendClient) validateSetAccessKeyParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendClient) validateSetAllowedStsHeaderValuesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendClient) validateSetBackendParameters(val *string) error {
 	return nil
 }

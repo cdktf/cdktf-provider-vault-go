@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionRedshiftOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

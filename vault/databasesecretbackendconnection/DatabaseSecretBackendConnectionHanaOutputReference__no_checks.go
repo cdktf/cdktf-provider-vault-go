@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionHanaOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

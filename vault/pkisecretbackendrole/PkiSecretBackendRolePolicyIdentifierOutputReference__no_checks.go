@@ -43,11 +43,11 @@ func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) validate
 	return nil
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PkiSecretBackendRolePolicyIdentifierOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

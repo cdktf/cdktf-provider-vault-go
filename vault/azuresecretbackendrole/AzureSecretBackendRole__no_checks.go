@@ -143,6 +143,10 @@ func (j *jsiiProxy_AzureSecretBackendRole) validateSetPermanentlyDeleteParameter
 	return nil
 }
 
+func (j *jsiiProxy_AzureSecretBackendRole) validateSetPersistAppParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureSecretBackendRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

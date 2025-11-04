@@ -131,6 +131,22 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetDisableRemountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackend) validateSetGceAliasParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetGceMetadataParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIamAliasParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIamMetadataParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackend) validateSetIdParameters(val *string) error {
 	return nil
 }

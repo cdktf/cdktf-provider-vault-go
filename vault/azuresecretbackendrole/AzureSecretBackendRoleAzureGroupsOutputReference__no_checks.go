@@ -43,11 +43,11 @@ func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AzureSecretBackendRoleAzureGroupsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

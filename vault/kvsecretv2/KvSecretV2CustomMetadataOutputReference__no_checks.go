@@ -43,11 +43,11 @@ func (k *jsiiProxy_KvSecretV2CustomMetadataOutputReference) validateGetStringMap
 	return nil
 }
 
-func (k *jsiiProxy_KvSecretV2CustomMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KvSecretV2CustomMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KvSecretV2CustomMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KvSecretV2CustomMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

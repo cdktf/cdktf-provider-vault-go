@@ -15,7 +15,7 @@ func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) validateGetPara
 	return nil
 }
 
-func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

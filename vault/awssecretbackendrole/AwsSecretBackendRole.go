@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role}.
 type AwsSecretBackendRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -67,6 +67,9 @@ type AwsSecretBackendRole interface {
 	MaxStsTtl() *float64
 	SetMaxStsTtl(val *float64)
 	MaxStsTtlInput() *float64
+	MfaSerialNumber() *string
+	SetMfaSerialNumber(val *string)
+	MfaSerialNumberInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -158,6 +161,7 @@ type AwsSecretBackendRole interface {
 	ResetIamTags()
 	ResetId()
 	ResetMaxStsTtl()
+	ResetMfaSerialNumber()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -436,6 +440,26 @@ func (j *jsiiProxy_AwsSecretBackendRole) MaxStsTtlInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) MfaSerialNumber() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mfaSerialNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole) MfaSerialNumberInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mfaSerialNumberInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -667,7 +691,7 @@ func (j *jsiiProxy_AwsSecretBackendRole) UserPathInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) AwsSecretBackendRole {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewAwsSecretBackendRole(scope constructs.Construct, id *string, config *Aws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend_role vault_aws_secret_backend_role} Resource.
 func NewAwsSecretBackendRole_Override(a AwsSecretBackendRole, scope constructs.Construct, id *string, config *AwsSecretBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -829,6 +853,17 @@ func (j *jsiiProxy_AwsSecretBackendRole)SetMaxStsTtl(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxStsTtl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackendRole)SetMfaSerialNumber(val *string) {
+	if err := j.validateSetMfaSerialNumberParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mfaSerialNumber",
 		val,
 	)
 }
@@ -1337,6 +1372,14 @@ func (a *jsiiProxy_AwsSecretBackendRole) ResetMaxStsTtl() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMaxStsTtl",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackendRole) ResetMfaSerialNumber() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMfaSerialNumber",
 		nil, // no parameters
 	)
 }

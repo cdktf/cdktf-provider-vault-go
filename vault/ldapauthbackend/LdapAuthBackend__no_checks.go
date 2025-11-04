@@ -75,6 +75,10 @@ func (l *jsiiProxy_LdapAuthBackend) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (l *jsiiProxy_LdapAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
 func validateLdapAuthBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func validateLdapAuthBackend_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateLdapAuthBackend_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetAnonymousGroupSearchParameters(val interface{}) error {
 	return nil
 }
 
@@ -131,6 +139,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetDenyNullBindParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetDereferenceAliasesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -144,6 +156,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetDisableRemountParameters(val inte
 }
 
 func (j *jsiiProxy_LdapAuthBackend) validateSetDiscoverdnParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetEnableSamaccountnameLoginParameters(val interface{}) error {
 	return nil
 }
 
@@ -188,6 +204,10 @@ func (j *jsiiProxy_LdapAuthBackend) validateSetPathParameters(val *string) error
 }
 
 func (j *jsiiProxy_LdapAuthBackend) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LdapAuthBackend) validateSetRequestTimeoutParameters(val *float64) error {
 	return nil
 }
 

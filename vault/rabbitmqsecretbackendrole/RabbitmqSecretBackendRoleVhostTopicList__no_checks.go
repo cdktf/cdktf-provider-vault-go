@@ -15,7 +15,7 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicList) validateGetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

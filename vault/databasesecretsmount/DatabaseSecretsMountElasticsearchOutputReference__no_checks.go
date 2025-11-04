@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountElasticsearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountMysqlLegacyList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

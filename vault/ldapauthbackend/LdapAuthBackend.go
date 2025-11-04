@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend}.
 type LdapAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AnonymousGroupSearch() interface{}
+	SetAnonymousGroupSearch(val interface{})
+	AnonymousGroupSearchInput() interface{}
 	Binddn() *string
 	SetBinddn(val *string)
 	BinddnInput() *string
@@ -56,6 +59,9 @@ type LdapAuthBackend interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DereferenceAliases() *string
+	SetDereferenceAliases(val *string)
+	DereferenceAliasesInput() *string
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -68,6 +74,9 @@ type LdapAuthBackend interface {
 	Discoverdn() interface{}
 	SetDiscoverdn(val interface{})
 	DiscoverdnInput() interface{}
+	EnableSamaccountnameLogin() interface{}
+	SetEnableSamaccountnameLogin(val interface{})
+	EnableSamaccountnameLoginInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -119,6 +128,9 @@ type LdapAuthBackend interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RequestTimeout() *float64
+	SetRequestTimeout(val *float64)
+	RequestTimeoutInput() *float64
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
@@ -170,6 +182,8 @@ type LdapAuthBackend interface {
 	TokenType() *string
 	SetTokenType(val *string)
 	TokenTypeInput() *string
+	Tune() LdapAuthBackendTuneList
+	TuneInput() interface{}
 	Upndomain() *string
 	SetUpndomain(val *string)
 	UpndomainInput() *string
@@ -234,6 +248,8 @@ type LdapAuthBackend interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTune(value interface{})
+	ResetAnonymousGroupSearch()
 	ResetBinddn()
 	ResetBindpass()
 	ResetCaseSensitiveNames()
@@ -242,10 +258,12 @@ type LdapAuthBackend interface {
 	ResetClientTlsKey()
 	ResetConnectionTimeout()
 	ResetDenyNullBind()
+	ResetDereferenceAliases()
 	ResetDescription()
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
 	ResetDiscoverdn()
+	ResetEnableSamaccountnameLogin()
 	ResetGroupattr()
 	ResetGroupdn()
 	ResetGroupfilter()
@@ -258,6 +276,7 @@ type LdapAuthBackend interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPath()
+	ResetRequestTimeout()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
@@ -273,6 +292,7 @@ type LdapAuthBackend interface {
 	ResetTokenPolicies()
 	ResetTokenTtl()
 	ResetTokenType()
+	ResetTune()
 	ResetUpndomain()
 	ResetUserattr()
 	ResetUserdn()
@@ -302,6 +322,26 @@ func (j *jsiiProxy_LdapAuthBackend) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) AnonymousGroupSearch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"anonymousGroupSearch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) AnonymousGroupSearchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"anonymousGroupSearchInput",
 		&returns,
 	)
 	return returns
@@ -517,6 +557,26 @@ func (j *jsiiProxy_LdapAuthBackend) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_LdapAuthBackend) DereferenceAliases() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dereferenceAliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) DereferenceAliasesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dereferenceAliasesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapAuthBackend) Description() *string {
 	var returns *string
 	_jsii_.Get(
@@ -592,6 +652,26 @@ func (j *jsiiProxy_LdapAuthBackend) DiscoverdnInput() interface{} {
 	_jsii_.Get(
 		j,
 		"discoverdnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) EnableSamaccountnameLogin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSamaccountnameLogin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) EnableSamaccountnameLoginInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSamaccountnameLoginInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +932,26 @@ func (j *jsiiProxy_LdapAuthBackend) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) RequestTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) RequestTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"requestTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -1187,6 +1287,26 @@ func (j *jsiiProxy_LdapAuthBackend) TokenTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LdapAuthBackend) Tune() LdapAuthBackendTuneList {
+	var returns LdapAuthBackendTuneList
+	_jsii_.Get(
+		j,
+		"tune",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LdapAuthBackend) TuneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tuneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LdapAuthBackend) Upndomain() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1328,7 +1448,7 @@ func (j *jsiiProxy_LdapAuthBackend) UseTokenGroupsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuthBackendConfig) LdapAuthBackend {
 	_init_.Initialize()
 
@@ -1346,7 +1466,7 @@ func NewLdapAuthBackend(scope constructs.Construct, id *string, config *LdapAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/ldap_auth_backend vault_ldap_auth_backend} Resource.
 func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, id *string, config *LdapAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1354,6 +1474,17 @@ func NewLdapAuthBackend_Override(l LdapAuthBackend, scope constructs.Construct, 
 		"@cdktf/provider-vault.ldapAuthBackend.LdapAuthBackend",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetAnonymousGroupSearch(val interface{}) {
+	if err := j.validateSetAnonymousGroupSearchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anonymousGroupSearch",
+		val,
 	)
 }
 
@@ -1475,6 +1606,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_LdapAuthBackend)SetDereferenceAliases(val *string) {
+	if err := j.validateSetDereferenceAliasesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dereferenceAliases",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LdapAuthBackend)SetDescription(val *string) {
 	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
@@ -1515,6 +1657,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetDiscoverdn(val interface{}) {
 	_jsii_.Set(
 		j,
 		"discoverdn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetEnableSamaccountnameLogin(val interface{}) {
+	if err := j.validateSetEnableSamaccountnameLoginParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSamaccountnameLogin",
 		val,
 	)
 }
@@ -1652,6 +1805,17 @@ func (j *jsiiProxy_LdapAuthBackend)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LdapAuthBackend)SetRequestTimeout(val *float64) {
+	if err := j.validateSetRequestTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestTimeout",
 		val,
 	)
 }
@@ -2251,6 +2415,25 @@ func (l *jsiiProxy_LdapAuthBackend) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (l *jsiiProxy_LdapAuthBackend) PutTune(value interface{}) {
+	if err := l.validatePutTuneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTune",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetAnonymousGroupSearch() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAnonymousGroupSearch",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapAuthBackend) ResetBinddn() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2315,6 +2498,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetDenyNullBind() {
 	)
 }
 
+func (l *jsiiProxy_LdapAuthBackend) ResetDereferenceAliases() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDereferenceAliases",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LdapAuthBackend) ResetDescription() {
 	_jsii_.InvokeVoid(
 		l,
@@ -2343,6 +2534,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetDiscoverdn() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDiscoverdn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetEnableSamaccountnameLogin() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnableSamaccountnameLogin",
 		nil, // no parameters
 	)
 }
@@ -2423,6 +2622,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetPath() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetRequestTimeout() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetRequestTimeout",
 		nil, // no parameters
 	)
 }
@@ -2543,6 +2750,14 @@ func (l *jsiiProxy_LdapAuthBackend) ResetTokenType() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTokenType",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LdapAuthBackend) ResetTune() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTune",
 		nil, // no parameters
 	)
 }

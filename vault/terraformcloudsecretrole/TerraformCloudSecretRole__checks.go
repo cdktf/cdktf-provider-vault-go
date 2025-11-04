@@ -345,6 +345,22 @@ func (j *jsiiProxy_TerraformCloudSecretRole) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretRole) validateSetCredentialTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

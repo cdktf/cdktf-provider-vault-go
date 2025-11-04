@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putGroup", GoMethod: "PutGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "putTune", GoMethod: "PutTune"},
 			_jsii_.MemberMethod{JsiiMethod: "putUser", GoMethod: "PutUser"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseUrl", GoMethod: "ResetBaseUrl"},
@@ -85,6 +86,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenPolicies", GoMethod: "ResetTokenPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenTtl", GoMethod: "ResetTokenTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTokenType", GoMethod: "ResetTokenType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTune", GoMethod: "ResetTune"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUser", GoMethod: "ResetUser"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -115,6 +117,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "tune", GoGetter: "Tune"},
+			_jsii_.MemberProperty{JsiiProperty: "tuneInput", GoGetter: "TuneInput"},
 			_jsii_.MemberProperty{JsiiProperty: "user", GoGetter: "User"},
 			_jsii_.MemberProperty{JsiiProperty: "userInput", GoGetter: "UserInput"},
 		},
@@ -188,6 +192,88 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_OktaAuthBackendGroupOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTune",
+		reflect.TypeOf((*OktaAuthBackendTune)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneList",
+		reflect.TypeOf((*OktaAuthBackendTuneList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OktaAuthBackendTuneList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-vault.oktaAuthBackend.OktaAuthBackendTuneOutputReference",
+		reflect.TypeOf((*OktaAuthBackendTuneOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeaders", GoGetter: "AllowedResponseHeaders"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedResponseHeadersInput", GoGetter: "AllowedResponseHeadersInput"},
+			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacRequestKeys", GoGetter: "AuditNonHmacRequestKeys"},
+			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacRequestKeysInput", GoGetter: "AuditNonHmacRequestKeysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacResponseKeys", GoGetter: "AuditNonHmacResponseKeys"},
+			_jsii_.MemberProperty{JsiiProperty: "auditNonHmacResponseKeysInput", GoGetter: "AuditNonHmacResponseKeysInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultLeaseTtl", GoGetter: "DefaultLeaseTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultLeaseTtlInput", GoGetter: "DefaultLeaseTtlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "listingVisibility", GoGetter: "ListingVisibility"},
+			_jsii_.MemberProperty{JsiiProperty: "listingVisibilityInput", GoGetter: "ListingVisibilityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxLeaseTtl", GoGetter: "MaxLeaseTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "maxLeaseTtlInput", GoGetter: "MaxLeaseTtlInput"},
+			_jsii_.MemberProperty{JsiiProperty: "passthroughRequestHeaders", GoGetter: "PassthroughRequestHeaders"},
+			_jsii_.MemberProperty{JsiiProperty: "passthroughRequestHeadersInput", GoGetter: "PassthroughRequestHeadersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedResponseHeaders", GoMethod: "ResetAllowedResponseHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacRequestKeys", GoMethod: "ResetAuditNonHmacRequestKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuditNonHmacResponseKeys", GoMethod: "ResetAuditNonHmacResponseKeys"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLeaseTtl", GoMethod: "ResetDefaultLeaseTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetListingVisibility", GoMethod: "ResetListingVisibility"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxLeaseTtl", GoMethod: "ResetMaxLeaseTtl"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPassthroughRequestHeaders", GoMethod: "ResetPassthroughRequestHeaders"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTokenType", GoMethod: "ResetTokenType"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenType", GoGetter: "TokenType"},
+			_jsii_.MemberProperty{JsiiProperty: "tokenTypeInput", GoGetter: "TokenTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_OktaAuthBackendTuneOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

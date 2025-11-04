@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScepExternalValidationOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

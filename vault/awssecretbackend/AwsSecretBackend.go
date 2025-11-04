@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 type AwsSecretBackend interface {
 	cdktf.TerraformResource
 	AccessKey() *string
@@ -104,6 +104,9 @@ type AwsSecretBackend interface {
 	MaxLeaseTtlSeconds() *float64
 	SetMaxLeaseTtlSeconds(val *float64)
 	MaxLeaseTtlSecondsInput() *float64
+	MaxRetries() *float64
+	SetMaxRetries(val *float64)
+	MaxRetriesInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -236,6 +239,7 @@ type AwsSecretBackend interface {
 	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
+	ResetMaxRetries()
 	ResetNamespace()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -774,6 +778,26 @@ func (j *jsiiProxy_AwsSecretBackend) MaxLeaseTtlSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_AwsSecretBackend) MaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsSecretBackend) MaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsSecretBackend) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1185,7 +1209,7 @@ func (j *jsiiProxy_AwsSecretBackend) UsernameTemplateInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecretBackendConfig) AwsSecretBackend {
 	_init_.Initialize()
 
@@ -1203,7 +1227,7 @@ func NewAwsSecretBackend(scope constructs.Construct, id *string, config *AwsSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_secret_backend vault_aws_secret_backend} Resource.
 func NewAwsSecretBackend_Override(a AwsSecretBackend, scope constructs.Construct, id *string, config *AwsSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1479,6 +1503,17 @@ func (j *jsiiProxy_AwsSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxLeaseTtlSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsSecretBackend)SetMaxRetries(val *float64) {
+	if err := j.validateSetMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRetries",
 		val,
 	)
 }
@@ -2198,6 +2233,14 @@ func (a *jsiiProxy_AwsSecretBackend) ResetMaxLeaseTtlSeconds() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMaxLeaseTtlSeconds",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsSecretBackend) ResetMaxRetries() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxRetries",
 		nil, // no parameters
 	)
 }

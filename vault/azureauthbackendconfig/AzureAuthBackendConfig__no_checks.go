@@ -135,6 +135,14 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetMaxRetriesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetMaxRetryDelayParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetNamespaceParameters(val *string) error {
 	return nil
 }
@@ -144,6 +152,10 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetProvisionersParameters(val
 }
 
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetResourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetRetryDelayParameters(val *float64) error {
 	return nil
 }
 

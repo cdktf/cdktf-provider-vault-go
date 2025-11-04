@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseSecretsMountInfluxdbList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountInfluxdbList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountInfluxdbList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

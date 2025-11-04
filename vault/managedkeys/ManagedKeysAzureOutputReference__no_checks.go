@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedKeysAzureOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysAzureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKeysAzureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysAzureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKeysAzureOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

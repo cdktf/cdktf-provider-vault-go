@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}.
 type TerraformCloudSecretRole interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -30,10 +30,16 @@ type TerraformCloudSecretRole interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialType() *string
+	SetCredentialType(val *string)
+	CredentialTypeInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -132,6 +138,8 @@ type TerraformCloudSecretRole interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetBackend()
+	ResetCredentialType()
+	ResetDescription()
 	ResetId()
 	ResetMaxTtl()
 	ResetNamespace()
@@ -220,11 +228,51 @@ func (j *jsiiProxy_TerraformCloudSecretRole) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretRole) CredentialType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole) CredentialTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -501,7 +549,7 @@ func (j *jsiiProxy_TerraformCloudSecretRole) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) TerraformCloudSecretRole {
 	_init_.Initialize()
 
@@ -519,7 +567,7 @@ func NewTerraformCloudSecretRole(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource.
 func NewTerraformCloudSecretRole_Override(t TerraformCloudSecretRole, scope constructs.Construct, id *string, config *TerraformCloudSecretRoleConfig) {
 	_init_.Initialize()
 
@@ -563,10 +611,32 @@ func (j *jsiiProxy_TerraformCloudSecretRole)SetCount(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_TerraformCloudSecretRole)SetCredentialType(val *string) {
+	if err := j.validateSetCredentialTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1054,6 +1124,22 @@ func (t *jsiiProxy_TerraformCloudSecretRole) ResetBackend() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetBackend",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretRole) ResetCredentialType() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetCredentialType",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretRole) ResetDescription() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

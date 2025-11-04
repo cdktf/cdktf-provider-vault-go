@@ -421,6 +421,22 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetMaxRetriesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetMaxRetryDelayParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -476,6 +492,14 @@ func (j *jsiiProxy_AzureAuthBackendConfig) validateSetProvisionersParameters(val
 }
 
 func (j *jsiiProxy_AzureAuthBackendConfig) validateSetResourceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) validateSetRetryDelayParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

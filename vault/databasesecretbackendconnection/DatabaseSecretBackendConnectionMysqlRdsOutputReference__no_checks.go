@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMysqlRdsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

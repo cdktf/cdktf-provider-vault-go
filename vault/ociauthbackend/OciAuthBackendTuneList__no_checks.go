@@ -15,7 +15,7 @@ func (o *jsiiProxy_OciAuthBackendTuneList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (o *jsiiProxy_OciAuthBackendTuneList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OciAuthBackendTuneList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

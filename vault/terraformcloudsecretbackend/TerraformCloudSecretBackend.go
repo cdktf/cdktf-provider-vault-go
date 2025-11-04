@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
 type TerraformCloudSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -134,6 +134,12 @@ type TerraformCloudSecretBackend interface {
 	Token() *string
 	SetToken(val *string)
 	TokenInput() *string
+	TokenWo() *string
+	SetTokenWo(val *string)
+	TokenWoInput() *string
+	TokenWoVersion() *float64
+	SetTokenWoVersion(val *float64)
+	TokenWoVersionInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -204,6 +210,8 @@ type TerraformCloudSecretBackend interface {
 	ResetPluginVersion()
 	ResetSealWrap()
 	ResetToken()
+	ResetTokenWo()
+	ResetTokenWoVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -872,8 +880,48 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) TokenInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) TokenWo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWo",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+func (j *jsiiProxy_TerraformCloudSecretBackend) TokenWoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tokenWoInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) TokenWoVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) TokenWoVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) TerraformCloudSecretBackend {
 	_init_.Initialize()
 
@@ -891,7 +939,7 @@ func NewTerraformCloudSecretBackend(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend} Resource.
 func NewTerraformCloudSecretBackend_Override(t TerraformCloudSecretBackend, scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1230,6 +1278,28 @@ func (j *jsiiProxy_TerraformCloudSecretBackend)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetTokenWo(val *string) {
+	if err := j.validateSetTokenWoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWo",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend)SetTokenWoVersion(val *float64) {
+	if err := j.validateSetTokenWoVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenWoVersion",
 		val,
 	)
 }
@@ -1783,6 +1853,22 @@ func (t *jsiiProxy_TerraformCloudSecretBackend) ResetToken() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetTokenWo() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTokenWo",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TerraformCloudSecretBackend) ResetTokenWoVersion() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTokenWoVersion",
 		nil, // no parameters
 	)
 }

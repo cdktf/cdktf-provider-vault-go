@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountRedisOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

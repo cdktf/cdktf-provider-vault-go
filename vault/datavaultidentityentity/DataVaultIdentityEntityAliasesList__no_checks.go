@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultIdentityEntityAliasesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

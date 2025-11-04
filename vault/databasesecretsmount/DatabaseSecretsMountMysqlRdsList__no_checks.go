@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountMysqlRdsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

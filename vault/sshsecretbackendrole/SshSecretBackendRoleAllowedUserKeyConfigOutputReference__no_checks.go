@@ -43,11 +43,11 @@ func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference) vali
 	return nil
 }
 
-func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SshSecretBackendRoleAllowedUserKeyConfigOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GithubAuthBackendTuneOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedKeysPkcsList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysPkcsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKeysPkcsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

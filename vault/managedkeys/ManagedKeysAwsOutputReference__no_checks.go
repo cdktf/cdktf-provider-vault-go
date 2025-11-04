@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedKeysAwsOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysAwsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedKeysAwsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysAwsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKeysAwsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

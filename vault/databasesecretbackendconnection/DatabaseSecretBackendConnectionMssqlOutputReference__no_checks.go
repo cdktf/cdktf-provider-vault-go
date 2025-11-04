@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionMssqlOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
 type GcpAuthBackendRole interface {
 	cdktf.TerraformResource
 	AddGroupAliases() interface{}
@@ -93,6 +93,9 @@ type GcpAuthBackendRole interface {
 	RawOverrides() interface{}
 	Role() *string
 	SetRole(val *string)
+	RoleId() *string
+	SetRoleId(val *string)
+	RoleIdInput() *string
 	RoleInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -188,6 +191,7 @@ type GcpAuthBackendRole interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRoleId()
 	ResetTokenBoundCidrs()
 	ResetTokenExplicitMaxTtl()
 	ResetTokenMaxTtl()
@@ -595,6 +599,26 @@ func (j *jsiiProxy_GcpAuthBackendRole) Role() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpAuthBackendRole) RoleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackendRole) RoleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpAuthBackendRole) RoleInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -836,7 +860,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) GcpAuthBackendRole {
 	_init_.Initialize()
 
@@ -854,7 +878,7 @@ func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole_Override(g GcpAuthBackendRole, scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1072,6 +1096,17 @@ func (j *jsiiProxy_GcpAuthBackendRole)SetRole(val *string) {
 	_jsii_.Set(
 		j,
 		"role",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackendRole)SetRoleId(val *string) {
+	if err := j.validateSetRoleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"roleId",
 		val,
 	)
 }
@@ -1639,6 +1674,14 @@ func (g *jsiiProxy_GcpAuthBackendRole) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackendRole) ResetRoleId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoleId",
 		nil, // no parameters
 	)
 }

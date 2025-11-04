@@ -43,7 +43,7 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateG
 	return nil
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -51,7 +51,7 @@ func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateP
 	return nil
 }
 
-func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RabbitmqSecretBackendRoleVhostTopicOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

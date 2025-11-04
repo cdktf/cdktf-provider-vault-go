@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

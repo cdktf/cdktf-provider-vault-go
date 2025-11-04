@@ -79,6 +79,10 @@ func (o *jsiiProxy_OktaAuthBackend) validatePutGroupParameters(value interface{}
 	return nil
 }
 
+func (o *jsiiProxy_OktaAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OktaAuthBackend) validatePutUserParameters(value interface{}) error {
 	return nil
 }

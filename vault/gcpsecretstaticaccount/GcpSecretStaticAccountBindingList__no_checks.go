@@ -15,7 +15,7 @@ func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GcpSecretStaticAccountBindingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

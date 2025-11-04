@@ -43,11 +43,11 @@ func (g *jsiiProxy_GcpAuthBackendCustomEndpointOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GcpAuthBackendCustomEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GcpAuthBackendCustomEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GcpAuthBackendCustomEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GcpAuthBackendCustomEndpointOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

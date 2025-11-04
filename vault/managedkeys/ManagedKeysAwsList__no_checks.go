@@ -15,7 +15,7 @@ func (m *jsiiProxy_ManagedKeysAwsList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKeysAwsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKeysAwsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

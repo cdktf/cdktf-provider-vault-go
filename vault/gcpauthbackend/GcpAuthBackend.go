@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend}.
 type GcpAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -60,6 +60,18 @@ type GcpAuthBackend interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GceAlias() *string
+	SetGceAlias(val *string)
+	GceAliasInput() *string
+	GceMetadata() *[]*string
+	SetGceMetadata(val *[]*string)
+	GceMetadataInput() *[]*string
+	IamAlias() *string
+	SetIamAlias(val *string)
+	IamAliasInput() *string
+	IamMetadata() *[]*string
+	SetIamMetadata(val *[]*string)
+	IamMetadataInput() *[]*string
 	Id() *string
 	SetId(val *string)
 	IdentityTokenAudience() *string
@@ -175,6 +187,10 @@ type GcpAuthBackend interface {
 	ResetDescription()
 	ResetDisableAutomatedRotation()
 	ResetDisableRemount()
+	ResetGceAlias()
+	ResetGceMetadata()
+	ResetIamAlias()
+	ResetIamMetadata()
 	ResetId()
 	ResetIdentityTokenAudience()
 	ResetIdentityTokenKey()
@@ -435,6 +451,86 @@ func (j *jsiiProxy_GcpAuthBackend) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) GceAlias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gceAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) GceAliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gceAliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) GceMetadata() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"gceMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) GceMetadataInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"gceMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IamAlias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IamAliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamAliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IamMetadata() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iamMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackend) IamMetadataInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"iamMetadataInput",
 		&returns,
 	)
 	return returns
@@ -801,7 +897,7 @@ func (j *jsiiProxy_GcpAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBackendConfig) GcpAuthBackend {
 	_init_.Initialize()
 
@@ -819,7 +915,7 @@ func NewGcpAuthBackend(scope constructs.Construct, id *string, config *GcpAuthBa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend vault_gcp_auth_backend} Resource.
 func NewGcpAuthBackend_Override(g GcpAuthBackend, scope constructs.Construct, id *string, config *GcpAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -930,6 +1026,50 @@ func (j *jsiiProxy_GcpAuthBackend)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetGceAlias(val *string) {
+	if err := j.validateSetGceAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gceAlias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetGceMetadata(val *[]*string) {
+	if err := j.validateSetGceMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gceMetadata",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetIamAlias(val *string) {
+	if err := j.validateSetIamAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamAlias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackend)SetIamMetadata(val *[]*string) {
+	if err := j.validateSetIamMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamMetadata",
 		val,
 	)
 }
@@ -1534,6 +1674,38 @@ func (g *jsiiProxy_GcpAuthBackend) ResetDisableRemount() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisableRemount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetGceAlias() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGceAlias",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetGceMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGceMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetIamAlias() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIamAlias",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackend) ResetIamMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIamMetadata",
 		nil, // no parameters
 	)
 }

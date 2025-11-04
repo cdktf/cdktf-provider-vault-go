@@ -43,11 +43,11 @@ func (p *jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) val
 	return nil
 }
 
-func (p *jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

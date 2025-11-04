@@ -29,9 +29,9 @@ func (a *jsiiProxy_AuthBackendTuneList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (a *jsiiProxy_AuthBackendTuneList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AuthBackendTuneList) validateResolveParameters(context cdktf.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil

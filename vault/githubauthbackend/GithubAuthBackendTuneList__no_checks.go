@@ -15,7 +15,7 @@ func (g *jsiiProxy_GithubAuthBackendTuneList) validateGetParameters(index *float
 	return nil
 }
 
-func (g *jsiiProxy_GithubAuthBackendTuneList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GithubAuthBackendTuneList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

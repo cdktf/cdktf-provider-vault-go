@@ -75,6 +75,10 @@ func (s *jsiiProxy_SamlAuthBackend) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SamlAuthBackend) validatePutTuneParameters(value interface{}) error {
+	return nil
+}
+
 func validateSamlAuthBackend_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

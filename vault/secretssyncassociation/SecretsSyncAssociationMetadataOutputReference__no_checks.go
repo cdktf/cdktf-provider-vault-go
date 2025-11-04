@@ -43,11 +43,11 @@ func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) validateGetStr
 	return nil
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretsSyncAssociationMetadataOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

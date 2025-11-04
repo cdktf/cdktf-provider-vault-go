@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPkiSecretBackendConfigEstAuthenticatorsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

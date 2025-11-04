@@ -43,7 +43,7 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -55,7 +55,7 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validatePutDenied
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

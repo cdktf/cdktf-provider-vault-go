@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPolicyDocumentRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

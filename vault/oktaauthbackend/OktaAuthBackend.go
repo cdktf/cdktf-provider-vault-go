@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend vault_okta_auth_backend}.
 type OktaAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -118,6 +118,8 @@ type OktaAuthBackend interface {
 	TokenType() *string
 	SetTokenType(val *string)
 	TokenTypeInput() *string
+	Tune() OktaAuthBackendTuneList
+	TuneInput() interface{}
 	User() OktaAuthBackendUserList
 	UserInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -164,6 +166,7 @@ type OktaAuthBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGroup(value interface{})
+	PutTune(value interface{})
 	PutUser(value interface{})
 	ResetBaseUrl()
 	ResetBypassOktaMfa()
@@ -186,6 +189,7 @@ type OktaAuthBackend interface {
 	ResetTokenPolicies()
 	ResetTokenTtl()
 	ResetTokenType()
+	ResetTune()
 	ResetUser()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -755,6 +759,26 @@ func (j *jsiiProxy_OktaAuthBackend) TokenTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OktaAuthBackend) Tune() OktaAuthBackendTuneList {
+	var returns OktaAuthBackendTuneList
+	_jsii_.Get(
+		j,
+		"tune",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OktaAuthBackend) TuneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tuneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OktaAuthBackend) User() OktaAuthBackendUserList {
 	var returns OktaAuthBackendUserList
 	_jsii_.Get(
@@ -776,7 +800,7 @@ func (j *jsiiProxy_OktaAuthBackend) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuthBackendConfig) OktaAuthBackend {
 	_init_.Initialize()
 
@@ -794,7 +818,7 @@ func NewOktaAuthBackend(scope constructs.Construct, id *string, config *OktaAuth
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource.
 func NewOktaAuthBackend_Override(o OktaAuthBackend, scope constructs.Construct, id *string, config *OktaAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -1435,6 +1459,17 @@ func (o *jsiiProxy_OktaAuthBackend) PutGroup(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OktaAuthBackend) PutTune(value interface{}) {
+	if err := o.validatePutTuneParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putTune",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OktaAuthBackend) PutUser(value interface{}) {
 	if err := o.validatePutUserParameters(value); err != nil {
 		panic(err)
@@ -1594,6 +1629,14 @@ func (o *jsiiProxy_OktaAuthBackend) ResetTokenType() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetTokenType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OktaAuthBackend) ResetTune() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTune",
 		nil, // no parameters
 	)
 }

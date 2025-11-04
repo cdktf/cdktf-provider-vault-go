@@ -43,11 +43,11 @@ func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GcpSecretRolesetBindingOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

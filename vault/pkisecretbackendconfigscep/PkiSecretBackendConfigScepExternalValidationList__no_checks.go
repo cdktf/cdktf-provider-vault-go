@@ -15,7 +15,7 @@ func (p *jsiiProxy_PkiSecretBackendConfigScepExternalValidationList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PkiSecretBackendConfigScepExternalValidationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PkiSecretBackendConfigScepExternalValidationList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

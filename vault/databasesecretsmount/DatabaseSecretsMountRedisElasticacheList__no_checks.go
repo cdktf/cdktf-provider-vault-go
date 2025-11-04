@@ -15,7 +15,7 @@ func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretsMountRedisElasticacheList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

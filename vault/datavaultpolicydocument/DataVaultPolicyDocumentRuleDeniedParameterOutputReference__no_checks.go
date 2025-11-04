@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataVaultPolicyDocumentRuleDeniedParameterOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

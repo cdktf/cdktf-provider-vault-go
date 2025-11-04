@@ -183,6 +183,10 @@ func (j *jsiiProxy_AwsSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackend) validateSetMaxRetriesParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackend) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "localInput", GoGetter: "LocalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxLeaseTtlSeconds", GoGetter: "MaxLeaseTtlSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "maxLeaseTtlSecondsInput", GoGetter: "MaxLeaseTtlSecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "maxTtl", GoGetter: "MaxTtl"},
+			_jsii_.MemberProperty{JsiiProperty: "maxTtlInput", GoGetter: "MaxTtlInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -119,6 +121,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetListingVisibility", GoMethod: "ResetListingVisibility"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocal", GoMethod: "ResetLocal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxLeaseTtlSeconds", GoMethod: "ResetMaxLeaseTtlSeconds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxTtl", GoMethod: "ResetMaxTtl"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamespace", GoMethod: "ResetNamespace"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptions", GoMethod: "ResetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -130,6 +133,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetRotationWindow", GoMethod: "ResetRotationWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSealWrap", GoMethod: "ResetSealWrap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountEmail", GoMethod: "ResetServiceAccountEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTtl", GoMethod: "ResetTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationPeriod", GoGetter: "RotationPeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationPeriodInput", GoGetter: "RotationPeriodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rotationSchedule", GoGetter: "RotationSchedule"},
@@ -149,6 +153,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "ttl", GoGetter: "Ttl"},
+			_jsii_.MemberProperty{JsiiProperty: "ttlInput", GoGetter: "TtlInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GcpSecretBackend{}

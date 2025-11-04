@@ -43,11 +43,11 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseSecretBackendConnectionElasticsearchOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

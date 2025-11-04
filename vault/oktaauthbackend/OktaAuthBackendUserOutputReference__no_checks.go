@@ -43,11 +43,11 @@ func (o *jsiiProxy_OktaAuthBackendUserOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (o *jsiiProxy_OktaAuthBackendUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OktaAuthBackendUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OktaAuthBackendUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OktaAuthBackendUserOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

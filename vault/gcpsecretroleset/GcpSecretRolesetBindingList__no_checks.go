@@ -15,7 +15,7 @@ func (g *jsiiProxy_GcpSecretRolesetBindingList) validateGetParameters(index *flo
 	return nil
 }
 
-func (g *jsiiProxy_GcpSecretRolesetBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GcpSecretRolesetBindingList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

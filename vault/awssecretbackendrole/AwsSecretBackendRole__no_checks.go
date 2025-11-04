@@ -135,6 +135,10 @@ func (j *jsiiProxy_AwsSecretBackendRole) validateSetMaxStsTtlParameters(val *flo
 	return nil
 }
 
+func (j *jsiiProxy_AwsSecretBackendRole) validateSetMfaSerialNumberParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsSecretBackendRole) validateSetNameParameters(val *string) error {
 	return nil
 }

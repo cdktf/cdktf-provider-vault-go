@@ -103,6 +103,14 @@ func (j *jsiiProxy_TerraformCloudSecretRole) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretRole) validateSetCredentialTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretRole) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TerraformCloudSecretRole) validateSetIdParameters(val *string) error {
 	return nil
 }

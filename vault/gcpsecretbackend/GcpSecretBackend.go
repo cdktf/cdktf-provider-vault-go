@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend}.
 type GcpSecretBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
@@ -107,6 +107,9 @@ type GcpSecretBackend interface {
 	MaxLeaseTtlSeconds() *float64
 	SetMaxLeaseTtlSeconds(val *float64)
 	MaxLeaseTtlSecondsInput() *float64
+	MaxTtl() *float64
+	SetMaxTtl(val *float64)
+	MaxTtlInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -155,6 +158,9 @@ type GcpSecretBackend interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Ttl() *float64
+	SetTtl(val *float64)
+	TtlInput() *float64
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -219,6 +225,7 @@ type GcpSecretBackend interface {
 	ResetListingVisibility()
 	ResetLocal()
 	ResetMaxLeaseTtlSeconds()
+	ResetMaxTtl()
 	ResetNamespace()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -232,6 +239,7 @@ type GcpSecretBackend interface {
 	ResetRotationWindow()
 	ResetSealWrap()
 	ResetServiceAccountEmail()
+	ResetTtl()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -770,6 +778,26 @@ func (j *jsiiProxy_GcpSecretBackend) MaxLeaseTtlSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) MaxTtl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpSecretBackend) MaxTtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxTtlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GcpSecretBackend) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1040,8 +1068,28 @@ func (j *jsiiProxy_GcpSecretBackend) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GcpSecretBackend) Ttl() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttl",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+func (j *jsiiProxy_GcpSecretBackend) TtlInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ttlInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecretBackendConfig) GcpSecretBackend {
 	_init_.Initialize()
 
@@ -1059,7 +1107,7 @@ func NewGcpSecretBackend(scope constructs.Construct, id *string, config *GcpSecr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_secret_backend vault_gcp_secret_backend} Resource.
 func NewGcpSecretBackend_Override(g GcpSecretBackend, scope constructs.Construct, id *string, config *GcpSecretBackendConfig) {
 	_init_.Initialize()
 
@@ -1350,6 +1398,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetMaxLeaseTtlSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_GcpSecretBackend)SetMaxTtl(val *float64) {
+	if err := j.validateSetMaxTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTtl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GcpSecretBackend)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -1475,6 +1534,17 @@ func (j *jsiiProxy_GcpSecretBackend)SetServiceAccountEmail(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceAccountEmail",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpSecretBackend)SetTtl(val *float64) {
+	if err := j.validateSetTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ttl",
 		val,
 	)
 }
@@ -2000,6 +2070,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetMaxLeaseTtlSeconds() {
 	)
 }
 
+func (g *jsiiProxy_GcpSecretBackend) ResetMaxTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxTtl",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GcpSecretBackend) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2084,6 +2162,14 @@ func (g *jsiiProxy_GcpSecretBackend) ResetServiceAccountEmail() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccountEmail",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpSecretBackend) ResetTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTtl",
 		nil, // no parameters
 	)
 }

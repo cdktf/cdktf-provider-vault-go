@@ -15,7 +15,7 @@ func (o *jsiiProxy_OktaAuthBackendGroupList) validateGetParameters(index *float6
 	return nil
 }
 
-func (o *jsiiProxy_OktaAuthBackendGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OktaAuthBackendGroupList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

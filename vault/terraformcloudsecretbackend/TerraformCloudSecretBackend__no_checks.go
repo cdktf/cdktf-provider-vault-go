@@ -203,6 +203,14 @@ func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetTokenParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetTokenWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_TerraformCloudSecretBackend) validateSetTokenWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func validateNewTerraformCloudSecretBackendParameters(scope constructs.Construct, id *string, config *TerraformCloudSecretBackendConfig) error {
 	return nil
 }

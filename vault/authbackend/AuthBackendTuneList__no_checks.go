@@ -15,7 +15,7 @@ func (a *jsiiProxy_AuthBackendTuneList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (a *jsiiProxy_AuthBackendTuneList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuthBackendTuneList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

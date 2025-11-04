@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 type AzureAuthBackendConfig interface {
 	cdktf.TerraformResource
 	Backend() *string
@@ -67,6 +67,12 @@ type AzureAuthBackendConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxRetries() *float64
+	SetMaxRetries(val *float64)
+	MaxRetriesInput() *float64
+	MaxRetryDelay() *float64
+	SetMaxRetryDelay(val *float64)
+	MaxRetryDelayInput() *float64
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -85,6 +91,9 @@ type AzureAuthBackendConfig interface {
 	Resource() *string
 	SetResource(val *string)
 	ResourceInput() *string
+	RetryDelay() *float64
+	SetRetryDelay(val *float64)
+	RetryDelayInput() *float64
 	RotationPeriod() *float64
 	SetRotationPeriod(val *float64)
 	RotationPeriodInput() *float64
@@ -154,10 +163,13 @@ type AzureAuthBackendConfig interface {
 	ResetId()
 	ResetIdentityTokenAudience()
 	ResetIdentityTokenTtl()
+	ResetMaxRetries()
+	ResetMaxRetryDelay()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRetryDelay()
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
@@ -429,6 +441,46 @@ func (j *jsiiProxy_AzureAuthBackendConfig) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig) MaxRetries() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetries",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) MaxRetriesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetriesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) MaxRetryDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetryDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) MaxRetryDelayInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxRetryDelayInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig) Namespace() *string {
 	var returns *string
 	_jsii_.Get(
@@ -504,6 +556,26 @@ func (j *jsiiProxy_AzureAuthBackendConfig) ResourceInput() *string {
 	_jsii_.Get(
 		j,
 		"resourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RetryDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig) RetryDelayInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retryDelayInput",
 		&returns,
 	)
 	return returns
@@ -620,7 +692,7 @@ func (j *jsiiProxy_AzureAuthBackendConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) AzureAuthBackendConfig {
 	_init_.Initialize()
 
@@ -638,7 +710,7 @@ func NewAzureAuthBackendConfig(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.3.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource.
 func NewAzureAuthBackendConfig_Override(a AzureAuthBackendConfig, scope constructs.Construct, id *string, config *AzureAuthBackendConfigConfig) {
 	_init_.Initialize()
 
@@ -786,6 +858,28 @@ func (j *jsiiProxy_AzureAuthBackendConfig)SetLifecycle(val *cdktf.TerraformResou
 	)
 }
 
+func (j *jsiiProxy_AzureAuthBackendConfig)SetMaxRetries(val *float64) {
+	if err := j.validateSetMaxRetriesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRetries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetMaxRetryDelay(val *float64) {
+	if err := j.validateSetMaxRetryDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRetryDelay",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AzureAuthBackendConfig)SetNamespace(val *string) {
 	if err := j.validateSetNamespaceParameters(val); err != nil {
 		panic(err)
@@ -823,6 +917,17 @@ func (j *jsiiProxy_AzureAuthBackendConfig)SetResource(val *string) {
 	_jsii_.Set(
 		j,
 		"resource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendConfig)SetRetryDelay(val *float64) {
+	if err := j.validateSetRetryDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"retryDelay",
 		val,
 	)
 }
@@ -1288,6 +1393,22 @@ func (a *jsiiProxy_AzureAuthBackendConfig) ResetIdentityTokenTtl() {
 	)
 }
 
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetMaxRetries() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetMaxRetryDelay() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxRetryDelay",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AzureAuthBackendConfig) ResetNamespace() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1300,6 +1421,14 @@ func (a *jsiiProxy_AzureAuthBackendConfig) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendConfig) ResetRetryDelay() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRetryDelay",
 		nil, // no parameters
 	)
 }

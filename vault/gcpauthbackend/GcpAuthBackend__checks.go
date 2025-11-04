@@ -451,6 +451,38 @@ func (j *jsiiProxy_GcpAuthBackend) validateSetDisableRemountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackend) validateSetGceAliasParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetGceMetadataParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIamAliasParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GcpAuthBackend) validateSetIamMetadataParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackend) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -187,6 +187,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetMaxLeaseTtlSecondsParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GcpSecretBackend) validateSetMaxTtlParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpSecretBackend) validateSetNamespaceParameters(val *string) error {
 	return nil
 }
@@ -228,6 +232,10 @@ func (j *jsiiProxy_GcpSecretBackend) validateSetSealWrapParameters(val interface
 }
 
 func (j *jsiiProxy_GcpSecretBackend) validateSetServiceAccountEmailParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GcpSecretBackend) validateSetTtlParameters(val *float64) error {
 	return nil
 }
 
