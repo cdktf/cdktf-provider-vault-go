@@ -91,6 +91,10 @@ func validateKubernetesAuthBackendRole_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetAliasNameSourceParameters(val *string) error {
 	return nil
 }

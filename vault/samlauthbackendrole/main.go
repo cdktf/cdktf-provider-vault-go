@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadata", GoGetter: "AliasMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadataInput", GoGetter: "AliasMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "boundAttributes", GoGetter: "BoundAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "boundAttributesInput", GoGetter: "BoundAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "boundAttributesType", GoGetter: "BoundAttributesType"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasMetadata", GoMethod: "ResetAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBoundAttributes", GoMethod: "ResetBoundAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBoundAttributesType", GoMethod: "ResetBoundAttributesType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBoundSubjects", GoMethod: "ResetBoundSubjects"},

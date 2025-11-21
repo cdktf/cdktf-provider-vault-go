@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role}.
 type AwsAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	AllowInstanceMigration() interface{}
 	SetAllowInstanceMigration(val interface{})
 	AllowInstanceMigrationInput() interface{}
@@ -192,6 +195,7 @@ type AwsAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetAllowInstanceMigration()
 	ResetAuthType()
 	ResetBackend()
@@ -239,6 +243,26 @@ type AwsAuthBackendRole interface {
 // The jsii proxy struct for AwsAuthBackendRole
 type jsiiProxy_AwsAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AwsAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AwsAuthBackendRole) AllowInstanceMigration() interface{} {
@@ -992,7 +1016,7 @@ func (j *jsiiProxy_AwsAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role} Resource.
 func NewAwsAuthBackendRole(scope constructs.Construct, id *string, config *AwsAuthBackendRoleConfig) AwsAuthBackendRole {
 	_init_.Initialize()
 
@@ -1010,7 +1034,7 @@ func NewAwsAuthBackendRole(scope constructs.Construct, id *string, config *AwsAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/aws_auth_backend_role vault_aws_auth_backend_role} Resource.
 func NewAwsAuthBackendRole_Override(a AwsAuthBackendRole, scope constructs.Construct, id *string, config *AwsAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1018,6 +1042,17 @@ func NewAwsAuthBackendRole_Override(a AwsAuthBackendRole, scope constructs.Const
 		"@cdktf/provider-vault.awsAuthBackendRole.AwsAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AwsAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1758,6 +1793,14 @@ func (a *jsiiProxy_AwsAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AwsAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

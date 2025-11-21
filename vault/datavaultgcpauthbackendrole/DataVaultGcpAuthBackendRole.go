@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
 type DataVaultGcpAuthBackendRole interface {
 	cdktf.TerraformDataSource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -125,6 +128,7 @@ type DataVaultGcpAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBackend()
 	ResetId()
 	ResetNamespace()
@@ -157,6 +161,26 @@ type DataVaultGcpAuthBackendRole interface {
 // The jsii proxy struct for DataVaultGcpAuthBackendRole
 type jsiiProxy_DataVaultGcpAuthBackendRole struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataVaultGcpAuthBackendRole) Backend() *string {
@@ -640,7 +664,7 @@ func (j *jsiiProxy_DataVaultGcpAuthBackendRole) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
 func NewDataVaultGcpAuthBackendRole(scope constructs.Construct, id *string, config *DataVaultGcpAuthBackendRoleConfig) DataVaultGcpAuthBackendRole {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewDataVaultGcpAuthBackendRole(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/gcp_auth_backend_role vault_gcp_auth_backend_role} Data Source.
 func NewDataVaultGcpAuthBackendRole_Override(d DataVaultGcpAuthBackendRole, scope constructs.Construct, id *string, config *DataVaultGcpAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -666,6 +690,17 @@ func NewDataVaultGcpAuthBackendRole_Override(d DataVaultGcpAuthBackendRole, scop
 		"@cdktf/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1140,6 +1175,14 @@ func (d *jsiiProxy_DataVaultGcpAuthBackendRole) OverrideLogicalId(newLogicalId *
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataVaultGcpAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

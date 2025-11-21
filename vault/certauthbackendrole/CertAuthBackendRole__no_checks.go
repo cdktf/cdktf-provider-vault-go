@@ -91,6 +91,10 @@ func validateCertAuthBackendRole_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_CertAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CertAuthBackendRole) validateSetAllowedCommonNamesParameters(val *[]*string) error {
 	return nil
 }

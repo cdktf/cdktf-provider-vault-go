@@ -91,6 +91,10 @@ func validateTokenAuthBackendRole_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_TokenAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TokenAuthBackendRole) validateSetAllowedEntityAliasesParameters(val *[]*string) error {
 	return nil
 }

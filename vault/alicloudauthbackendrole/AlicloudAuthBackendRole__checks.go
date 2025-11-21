@@ -247,6 +247,14 @@ func validateAlicloudAuthBackendRole_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

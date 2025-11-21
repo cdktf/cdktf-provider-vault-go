@@ -91,6 +91,10 @@ func validateAwsAuthBackendRole_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_AwsAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsAuthBackendRole) validateSetAllowInstanceMigrationParameters(val interface{}) error {
 	return nil
 }

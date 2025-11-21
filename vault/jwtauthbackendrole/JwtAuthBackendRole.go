@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 type JwtAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	AllowedRedirectUris() *[]*string
 	SetAllowedRedirectUris(val *[]*string)
 	AllowedRedirectUrisInput() *[]*string
@@ -194,6 +197,7 @@ type JwtAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetAllowedRedirectUris()
 	ResetBackend()
 	ResetBoundAudiences()
@@ -241,6 +245,26 @@ type JwtAuthBackendRole interface {
 // The jsii proxy struct for JwtAuthBackendRole
 type jsiiProxy_JwtAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_JwtAuthBackendRole) AllowedRedirectUris() *[]*string {
@@ -1004,7 +1028,7 @@ func (j *jsiiProxy_JwtAuthBackendRole) VerboseOidcLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) JwtAuthBackendRole {
 	_init_.Initialize()
 
@@ -1022,7 +1046,7 @@ func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole_Override(j JwtAuthBackendRole, scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -1030,6 +1054,17 @@ func NewJwtAuthBackendRole_Override(j JwtAuthBackendRole, scope constructs.Const
 		"@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole",
 		[]interface{}{scope, id, config},
 		j,
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1781,6 +1816,14 @@ func (j *jsiiProxy_JwtAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
 		j,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (j *jsiiProxy_JwtAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		j,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

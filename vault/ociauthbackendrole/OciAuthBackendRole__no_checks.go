@@ -91,6 +91,10 @@ func validateOciAuthBackendRole_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_OciAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OciAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

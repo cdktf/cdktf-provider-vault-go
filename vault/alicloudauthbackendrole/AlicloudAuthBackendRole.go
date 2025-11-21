@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role}.
 type AlicloudAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
@@ -146,6 +149,7 @@ type AlicloudAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBackend()
 	ResetId()
 	ResetNamespace()
@@ -177,6 +181,26 @@ type AlicloudAuthBackendRole interface {
 // The jsii proxy struct for AlicloudAuthBackendRole
 type jsiiProxy_AlicloudAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AlicloudAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlicloudAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AlicloudAuthBackendRole) Arn() *string {
@@ -620,7 +644,7 @@ func (j *jsiiProxy_AlicloudAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) AlicloudAuthBackendRole {
 	_init_.Initialize()
 
@@ -638,7 +662,7 @@ func NewAlicloudAuthBackendRole(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/alicloud_auth_backend_role vault_alicloud_auth_backend_role} Resource.
 func NewAlicloudAuthBackendRole_Override(a AlicloudAuthBackendRole, scope constructs.Construct, id *string, config *AlicloudAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -646,6 +670,17 @@ func NewAlicloudAuthBackendRole_Override(a AlicloudAuthBackendRole, scope constr
 		"@cdktf/provider-vault.alicloudAuthBackendRole.AlicloudAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AlicloudAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1221,6 +1256,14 @@ func (a *jsiiProxy_AlicloudAuthBackendRole) OverrideLogicalId(newLogicalId *stri
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AlicloudAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
 type ScepAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	AuthType() *string
 	SetAuthType(val *string)
 	AuthTypeInput() *string
@@ -152,6 +155,7 @@ type ScepAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBackend()
 	ResetChallenge()
 	ResetDisplayName()
@@ -185,6 +189,26 @@ type ScepAuthBackendRole interface {
 // The jsii proxy struct for ScepAuthBackendRole
 type jsiiProxy_ScepAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ScepAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ScepAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ScepAuthBackendRole) AuthType() *string {
@@ -668,7 +692,7 @@ func (j *jsiiProxy_ScepAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
 func NewScepAuthBackendRole(scope constructs.Construct, id *string, config *ScepAuthBackendRoleConfig) ScepAuthBackendRole {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewScepAuthBackendRole(scope constructs.Construct, id *string, config *Scep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
 func NewScepAuthBackendRole_Override(s ScepAuthBackendRole, scope constructs.Construct, id *string, config *ScepAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func NewScepAuthBackendRole_Override(s ScepAuthBackendRole, scope constructs.Con
 		"@cdktf/provider-vault.scepAuthBackendRole.ScepAuthBackendRole",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_ScepAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1291,6 +1326,14 @@ func (s *jsiiProxy_ScepAuthBackendRole) OverrideLogicalId(newLogicalId *string) 
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_ScepAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

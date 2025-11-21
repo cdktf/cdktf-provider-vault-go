@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadata", GoGetter: "AliasMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadataInput", GoGetter: "AliasMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInstanceMigration", GoGetter: "AllowInstanceMigration"},
 			_jsii_.MemberProperty{JsiiProperty: "allowInstanceMigrationInput", GoGetter: "AllowInstanceMigrationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
@@ -79,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasMetadata", GoMethod: "ResetAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowInstanceMigration", GoMethod: "ResetAllowInstanceMigration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthType", GoMethod: "ResetAuthType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackend", GoMethod: "ResetBackend"},

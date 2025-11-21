@@ -91,6 +91,10 @@ func validateScepAuthBackendRole_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_ScepAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ScepAuthBackendRole) validateSetAuthTypeParameters(val *string) error {
 	return nil
 }

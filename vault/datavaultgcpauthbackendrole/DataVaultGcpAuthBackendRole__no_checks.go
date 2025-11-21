@@ -71,6 +71,10 @@ func validateDataVaultGcpAuthBackendRole_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

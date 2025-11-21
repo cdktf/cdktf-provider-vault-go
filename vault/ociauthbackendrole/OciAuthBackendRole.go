@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role}.
 type OciAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -146,6 +149,7 @@ type OciAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBackend()
 	ResetId()
 	ResetNamespace()
@@ -178,6 +182,26 @@ type OciAuthBackendRole interface {
 // The jsii proxy struct for OciAuthBackendRole
 type jsiiProxy_OciAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OciAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OciAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OciAuthBackendRole) Backend() *string {
@@ -621,7 +645,7 @@ func (j *jsiiProxy_OciAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
 func NewOciAuthBackendRole(scope constructs.Construct, id *string, config *OciAuthBackendRoleConfig) OciAuthBackendRole {
 	_init_.Initialize()
 
@@ -639,7 +663,7 @@ func NewOciAuthBackendRole(scope constructs.Construct, id *string, config *OciAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/oci_auth_backend_role vault_oci_auth_backend_role} Resource.
 func NewOciAuthBackendRole_Override(o OciAuthBackendRole, scope constructs.Construct, id *string, config *OciAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -647,6 +671,17 @@ func NewOciAuthBackendRole_Override(o OciAuthBackendRole, scope constructs.Const
 		"@cdktf/provider-vault.ociAuthBackendRole.OciAuthBackendRole",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OciAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1222,6 +1257,14 @@ func (o *jsiiProxy_OciAuthBackendRole) OverrideLogicalId(newLogicalId *string) {
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OciAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

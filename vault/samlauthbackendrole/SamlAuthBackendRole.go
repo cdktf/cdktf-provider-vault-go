@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role}.
 type SamlAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	BoundAttributes() *map[string]*string
 	SetBoundAttributes(val *map[string]*string)
 	BoundAttributesInput() *map[string]*string
@@ -158,6 +161,7 @@ type SamlAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBoundAttributes()
 	ResetBoundAttributesType()
 	ResetBoundSubjects()
@@ -193,6 +197,26 @@ type SamlAuthBackendRole interface {
 // The jsii proxy struct for SamlAuthBackendRole
 type jsiiProxy_SamlAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SamlAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SamlAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SamlAuthBackendRole) BoundAttributes() *map[string]*string {
@@ -716,7 +740,7 @@ func (j *jsiiProxy_SamlAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) SamlAuthBackendRole {
 	_init_.Initialize()
 
@@ -734,7 +758,7 @@ func NewSamlAuthBackendRole(scope constructs.Construct, id *string, config *Saml
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/saml_auth_backend_role vault_saml_auth_backend_role} Resource.
 func NewSamlAuthBackendRole_Override(s SamlAuthBackendRole, scope constructs.Construct, id *string, config *SamlAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -742,6 +766,17 @@ func NewSamlAuthBackendRole_Override(s SamlAuthBackendRole, scope constructs.Con
 		"@cdktf/provider-vault.samlAuthBackendRole.SamlAuthBackendRole",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SamlAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1361,6 +1396,14 @@ func (s *jsiiProxy_SamlAuthBackendRole) OverrideLogicalId(newLogicalId *string) 
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SamlAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

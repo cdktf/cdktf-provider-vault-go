@@ -95,6 +95,10 @@ func (j *jsiiProxy_GcpAuthBackendRole) validateSetAddGroupAliasesParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GcpAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GcpAuthBackendRole) validateSetAllowGceInferenceParameters(val interface{}) error {
 	return nil
 }

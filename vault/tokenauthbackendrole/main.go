@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadata", GoGetter: "AliasMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadataInput", GoGetter: "AliasMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedEntityAliases", GoGetter: "AllowedEntityAliases"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedEntityAliasesInput", GoGetter: "AllowedEntityAliasesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedPolicies", GoGetter: "AllowedPolicies"},
@@ -65,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "renewable", GoGetter: "Renewable"},
 			_jsii_.MemberProperty{JsiiProperty: "renewableInput", GoGetter: "RenewableInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasMetadata", GoMethod: "ResetAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedEntityAliases", GoMethod: "ResetAllowedEntityAliases"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPolicies", GoMethod: "ResetAllowedPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedPoliciesGlob", GoMethod: "ResetAllowedPoliciesGlob"},

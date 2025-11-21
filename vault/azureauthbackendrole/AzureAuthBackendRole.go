@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role}.
 type AzureAuthBackendRole interface {
 	cdktf.TerraformResource
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	Backend() *string
 	SetBackend(val *string)
 	BackendInput() *string
@@ -161,6 +164,7 @@ type AzureAuthBackendRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAliasMetadata()
 	ResetBackend()
 	ResetBoundGroupIds()
 	ResetBoundLocations()
@@ -198,6 +202,26 @@ type AzureAuthBackendRole interface {
 // The jsii proxy struct for AzureAuthBackendRole
 type jsiiProxy_AzureAuthBackendRole struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AzureAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AzureAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AzureAuthBackendRole) Backend() *string {
@@ -741,7 +765,7 @@ func (j *jsiiProxy_AzureAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
 func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *AzureAuthBackendRoleConfig) AzureAuthBackendRole {
 	_init_.Initialize()
 
@@ -759,7 +783,7 @@ func NewAzureAuthBackendRole(scope constructs.Construct, id *string, config *Azu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/azure_auth_backend_role vault_azure_auth_backend_role} Resource.
 func NewAzureAuthBackendRole_Override(a AzureAuthBackendRole, scope constructs.Construct, id *string, config *AzureAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -767,6 +791,17 @@ func NewAzureAuthBackendRole_Override(a AzureAuthBackendRole, scope constructs.C
 		"@cdktf/provider-vault.azureAuthBackendRole.AzureAuthBackendRole",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AzureAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1397,6 +1432,14 @@ func (a *jsiiProxy_AzureAuthBackendRole) OverrideLogicalId(newLogicalId *string)
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AzureAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

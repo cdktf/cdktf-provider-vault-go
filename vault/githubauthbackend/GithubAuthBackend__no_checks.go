@@ -95,6 +95,10 @@ func validateGithubAuthBackend_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_GithubAuthBackend) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GithubAuthBackend) validateSetBaseUrlParameters(val *string) error {
 	return nil
 }

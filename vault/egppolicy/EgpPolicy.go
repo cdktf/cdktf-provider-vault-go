@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/egp_policy vault_egp_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/egp_policy vault_egp_policy}.
 type EgpPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -426,7 +426,7 @@ func (j *jsiiProxy_EgpPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/egp_policy vault_egp_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/egp_policy vault_egp_policy} Resource.
 func NewEgpPolicy(scope constructs.Construct, id *string, config *EgpPolicyConfig) EgpPolicy {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewEgpPolicy(scope constructs.Construct, id *string, config *EgpPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/egp_policy vault_egp_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/egp_policy vault_egp_policy} Resource.
 func NewEgpPolicy_Override(e EgpPolicy, scope constructs.Construct, id *string, config *EgpPolicyConfig) {
 	_init_.Initialize()
 

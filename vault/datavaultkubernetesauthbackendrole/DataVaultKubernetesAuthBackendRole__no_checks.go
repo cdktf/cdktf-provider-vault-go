@@ -71,6 +71,10 @@ func validateDataVaultKubernetesAuthBackendRole_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetAudienceParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}.
 type PkiSecretBackendRootCert interface {
 	cdktf.TerraformResource
 	AltNames() *[]*string
@@ -118,6 +118,9 @@ type PkiSecretBackendRootCert interface {
 	NotAfter() *string
 	SetNotAfter(val *string)
 	NotAfterInput() *string
+	NotBeforeDuration() *string
+	SetNotBeforeDuration(val *string)
+	NotBeforeDurationInput() *string
 	Organization() *string
 	SetOrganization(val *string)
 	OrganizationInput() *string
@@ -244,6 +247,7 @@ type PkiSecretBackendRootCert interface {
 	ResetMaxPathLength()
 	ResetNamespace()
 	ResetNotAfter()
+	ResetNotBeforeDuration()
 	ResetOrganization()
 	ResetOtherSans()
 	ResetOu()
@@ -879,6 +883,26 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) NotAfterInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) NotBeforeDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert) NotBeforeDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBeforeDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) Organization() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1250,7 +1274,7 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) UriSansInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) PkiSecretBackendRootCert {
 	_init_.Initialize()
 
@@ -1268,7 +1292,7 @@ func NewPkiSecretBackendRootCert(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource.
 func NewPkiSecretBackendRootCert_Override(p PkiSecretBackendRootCert, scope constructs.Construct, id *string, config *PkiSecretBackendRootCertConfig) {
 	_init_.Initialize()
 
@@ -1577,6 +1601,17 @@ func (j *jsiiProxy_PkiSecretBackendRootCert)SetNotAfter(val *string) {
 	_jsii_.Set(
 		j,
 		"notAfter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PkiSecretBackendRootCert)SetNotBeforeDuration(val *string) {
+	if err := j.validateSetNotBeforeDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"notBeforeDuration",
 		val,
 	)
 }
@@ -2282,6 +2317,14 @@ func (p *jsiiProxy_PkiSecretBackendRootCert) ResetNotAfter() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetNotAfter",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PkiSecretBackendRootCert) ResetNotBeforeDuration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetNotBeforeDuration",
 		nil, // no parameters
 	)
 }

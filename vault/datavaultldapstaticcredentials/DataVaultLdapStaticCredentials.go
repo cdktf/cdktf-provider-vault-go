@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
 type DataVaultLdapStaticCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataVaultLdapStaticCredentials) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
 func NewDataVaultLdapStaticCredentials(scope constructs.Construct, id *string, config *DataVaultLdapStaticCredentialsConfig) DataVaultLdapStaticCredentials {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataVaultLdapStaticCredentials(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source.
 func NewDataVaultLdapStaticCredentials_Override(d DataVaultLdapStaticCredentials, scope constructs.Construct, id *string, config *DataVaultLdapStaticCredentialsConfig) {
 	_init_.Initialize()
 

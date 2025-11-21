@@ -154,6 +154,14 @@ func validateDataVaultGcpAuthBackendRole_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultGcpAuthBackendRole) validateSetBackendParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

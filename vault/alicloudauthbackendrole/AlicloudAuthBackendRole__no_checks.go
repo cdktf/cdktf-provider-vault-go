@@ -91,6 +91,10 @@ func validateAlicloudAuthBackendRole_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlicloudAuthBackendRole) validateSetArnParameters(val *string) error {
 	return nil
 }

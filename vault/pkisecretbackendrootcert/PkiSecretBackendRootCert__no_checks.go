@@ -195,6 +195,10 @@ func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNotAfterParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetNotBeforeDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PkiSecretBackendRootCert) validateSetOrganizationParameters(val *string) error {
 	return nil
 }

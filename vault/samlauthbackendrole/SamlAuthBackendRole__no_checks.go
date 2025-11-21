@@ -91,6 +91,10 @@ func validateSamlAuthBackendRole_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_SamlAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SamlAuthBackendRole) validateSetBoundAttributesParameters(val *map[string]*string) error {
 	return nil
 }

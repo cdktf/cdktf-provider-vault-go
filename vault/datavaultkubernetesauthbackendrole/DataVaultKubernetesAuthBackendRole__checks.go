@@ -154,6 +154,14 @@ func validateDataVaultKubernetesAuthBackendRole_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataVaultKubernetesAuthBackendRole) validateSetAudienceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

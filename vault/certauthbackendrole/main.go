@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadata", GoGetter: "AliasMetadata"},
+			_jsii_.MemberProperty{JsiiProperty: "aliasMetadataInput", GoGetter: "AliasMetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedCommonNames", GoGetter: "AllowedCommonNames"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedCommonNamesInput", GoGetter: "AllowedCommonNamesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allowedDnsSans", GoGetter: "AllowedDnsSans"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredExtensions", GoGetter: "RequiredExtensions"},
 			_jsii_.MemberProperty{JsiiProperty: "requiredExtensionsInput", GoGetter: "RequiredExtensionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAliasMetadata", GoMethod: "ResetAliasMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedCommonNames", GoMethod: "ResetAllowedCommonNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedDnsSans", GoMethod: "ResetAllowedDnsSans"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedEmailSans", GoMethod: "ResetAllowedEmailSans"},

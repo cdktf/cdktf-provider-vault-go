@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}.
 type GcpAuthBackendRole interface {
 	cdktf.TerraformResource
 	AddGroupAliases() interface{}
 	SetAddGroupAliases(val interface{})
 	AddGroupAliasesInput() interface{}
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	AllowGceInference() interface{}
 	SetAllowGceInference(val interface{})
 	AllowGceInferenceInput() interface{}
@@ -177,6 +180,7 @@ type GcpAuthBackendRole interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAddGroupAliases()
+	ResetAliasMetadata()
 	ResetAllowGceInference()
 	ResetBackend()
 	ResetBoundInstanceGroups()
@@ -234,6 +238,26 @@ func (j *jsiiProxy_GcpAuthBackendRole) AddGroupAliasesInput() interface{} {
 	_jsii_.Get(
 		j,
 		"addGroupAliasesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackendRole) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GcpAuthBackendRole) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
 		&returns,
 	)
 	return returns
@@ -860,7 +884,7 @@ func (j *jsiiProxy_GcpAuthBackendRole) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) GcpAuthBackendRole {
 	_init_.Initialize()
 
@@ -878,7 +902,7 @@ func NewGcpAuthBackendRole(scope constructs.Construct, id *string, config *GcpAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource.
 func NewGcpAuthBackendRole_Override(g GcpAuthBackendRole, scope constructs.Construct, id *string, config *GcpAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -896,6 +920,17 @@ func (j *jsiiProxy_GcpAuthBackendRole)SetAddGroupAliases(val interface{}) {
 	_jsii_.Set(
 		j,
 		"addGroupAliases",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GcpAuthBackendRole)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
 		val,
 	)
 }
@@ -1578,6 +1613,14 @@ func (g *jsiiProxy_GcpAuthBackendRole) ResetAddGroupAliases() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAddGroupAliases",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GcpAuthBackendRole) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAliasMetadata",
 		nil, // no parameters
 	)
 }

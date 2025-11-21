@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend vault_github_auth_backend}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend vault_github_auth_backend}.
 type GithubAuthBackend interface {
 	cdktf.TerraformResource
 	Accessor() *string
+	AliasMetadata() *map[string]*string
+	SetAliasMetadata(val *map[string]*string)
+	AliasMetadataInput() *map[string]*string
 	BaseUrl() *string
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
@@ -159,6 +162,7 @@ type GithubAuthBackend interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTune(value interface{})
+	ResetAliasMetadata()
 	ResetBaseUrl()
 	ResetDescription()
 	ResetDisableRemount()
@@ -202,6 +206,26 @@ func (j *jsiiProxy_GithubAuthBackend) Accessor() *string {
 	_jsii_.Get(
 		j,
 		"accessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubAuthBackend) AliasMetadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GithubAuthBackend) AliasMetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"aliasMetadataInput",
 		&returns,
 	)
 	return returns
@@ -728,7 +752,7 @@ func (j *jsiiProxy_GithubAuthBackend) TuneInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend(scope constructs.Construct, id *string, config *GithubAuthBackendConfig) GithubAuthBackend {
 	_init_.Initialize()
 
@@ -746,7 +770,7 @@ func NewGithubAuthBackend(scope constructs.Construct, id *string, config *Github
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.4.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource.
 func NewGithubAuthBackend_Override(g GithubAuthBackend, scope constructs.Construct, id *string, config *GithubAuthBackendConfig) {
 	_init_.Initialize()
 
@@ -754,6 +778,17 @@ func NewGithubAuthBackend_Override(g GithubAuthBackend, scope constructs.Constru
 		"@cdktf/provider-vault.githubAuthBackend.GithubAuthBackend",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GithubAuthBackend)SetAliasMetadata(val *map[string]*string) {
+	if err := j.validateSetAliasMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"aliasMetadata",
+		val,
 	)
 }
 
@@ -1373,6 +1408,14 @@ func (g *jsiiProxy_GithubAuthBackend) PutTune(value interface{}) {
 		g,
 		"putTune",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GithubAuthBackend) ResetAliasMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAliasMetadata",
+		nil, // no parameters
 	)
 }
 

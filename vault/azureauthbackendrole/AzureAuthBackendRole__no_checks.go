@@ -91,6 +91,10 @@ func validateAzureAuthBackendRole_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_AzureAuthBackendRole) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AzureAuthBackendRole) validateSetBackendParameters(val *string) error {
 	return nil
 }

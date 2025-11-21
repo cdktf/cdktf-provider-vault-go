@@ -95,6 +95,10 @@ func validateLdapAuthBackend_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_LdapAuthBackend) validateSetAliasMetadataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LdapAuthBackend) validateSetAnonymousGroupSearchParameters(val interface{}) error {
 	return nil
 }
