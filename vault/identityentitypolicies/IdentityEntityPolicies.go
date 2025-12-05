@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity_policies vault_identity_entity_policies}.
 type IdentityEntityPolicies interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_IdentityEntityPolicies) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) IdentityEntityPolicies {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewIdentityEntityPolicies(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity_policies vault_identity_entity_policies} Resource.
 func NewIdentityEntityPolicies_Override(i IdentityEntityPolicies, scope constructs.Construct, id *string, config *IdentityEntityPoliciesConfig) {
 	_init_.Initialize()
 

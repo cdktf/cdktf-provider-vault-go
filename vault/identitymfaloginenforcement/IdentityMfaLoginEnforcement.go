@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}.
 type IdentityMfaLoginEnforcement interface {
 	cdktf.TerraformResource
 	AuthMethodAccessors() *[]*string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_IdentityMfaLoginEnforcement) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
 func NewIdentityMfaLoginEnforcement(scope constructs.Construct, id *string, config *IdentityMfaLoginEnforcementConfig) IdentityMfaLoginEnforcement {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewIdentityMfaLoginEnforcement(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource.
 func NewIdentityMfaLoginEnforcement_Override(i IdentityMfaLoginEnforcement, scope constructs.Construct, id *string, config *IdentityMfaLoginEnforcementConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
 type ScepAuthBackendRole interface {
 	cdktf.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -692,7 +692,7 @@ func (j *jsiiProxy_ScepAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
 func NewScepAuthBackendRole(scope constructs.Construct, id *string, config *ScepAuthBackendRoleConfig) ScepAuthBackendRole {
 	_init_.Initialize()
 
@@ -710,7 +710,7 @@ func NewScepAuthBackendRole(scope constructs.Construct, id *string, config *Scep
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role} Resource.
 func NewScepAuthBackendRole_Override(s ScepAuthBackendRole, scope constructs.Construct, id *string, config *ScepAuthBackendRoleConfig) {
 	_init_.Initialize()
 

@@ -83,6 +83,9 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	RotationWindow() *float64
 	SetRotationWindow(val *float64)
 	RotationWindowInput() *float64
+	SelfManaged() interface{}
+	SetSelfManaged(val interface{})
+	SelfManagedInput() interface{}
 	SplitStatements() interface{}
 	SetSplitStatements(val interface{})
 	SplitStatementsInput() interface{}
@@ -143,6 +146,7 @@ type DatabaseSecretsMountOracleOutputReference interface {
 	ResetRotationPeriod()
 	ResetRotationSchedule()
 	ResetRotationWindow()
+	ResetSelfManaged()
 	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
@@ -552,6 +556,26 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) RotationWindowInpu
 	return returns
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SelfManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SelfManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManagedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) SplitStatements() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -896,6 +920,17 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetRotationWindow(v
 	_jsii_.Set(
 		j,
 		"rotationWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference)SetSelfManaged(val interface{}) {
+	if err := j.validateSetSelfManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfManaged",
 		val,
 	)
 }
@@ -1276,6 +1311,14 @@ func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetRotationWindo
 	_jsii_.InvokeVoid(
 		d,
 		"resetRotationWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretsMountOracleOutputReference) ResetSelfManaged() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfManaged",
 		nil, // no parameters
 	)
 }

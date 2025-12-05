@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 type JwtAuthBackendRole interface {
 	cdktf.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -1028,7 +1028,7 @@ func (j *jsiiProxy_JwtAuthBackendRole) VerboseOidcLoggingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) JwtAuthBackendRole {
 	_init_.Initialize()
 
@@ -1046,7 +1046,7 @@ func NewJwtAuthBackendRole(scope constructs.Construct, id *string, config *JwtAu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource.
 func NewJwtAuthBackendRole_Override(j JwtAuthBackendRole, scope constructs.Construct, id *string, config *JwtAuthBackendRoleConfig) {
 	_init_.Initialize()
 

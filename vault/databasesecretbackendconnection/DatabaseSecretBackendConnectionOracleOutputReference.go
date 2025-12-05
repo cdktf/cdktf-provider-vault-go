@@ -56,6 +56,9 @@ type DatabaseSecretBackendConnectionOracleOutputReference interface {
 	PasswordWoVersion() *float64
 	SetPasswordWoVersion(val *float64)
 	PasswordWoVersionInput() *float64
+	SelfManaged() interface{}
+	SetSelfManaged(val interface{})
+	SelfManagedInput() interface{}
 	SplitStatements() interface{}
 	SetSplitStatements(val interface{})
 	SplitStatementsInput() interface{}
@@ -105,6 +108,7 @@ type DatabaseSecretBackendConnectionOracleOutputReference interface {
 	ResetPassword()
 	ResetPasswordWo()
 	ResetPasswordWoVersion()
+	ResetSelfManaged()
 	ResetSplitStatements()
 	ResetUsername()
 	ResetUsernameTemplate()
@@ -328,6 +332,26 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) Passwor
 	_jsii_.Get(
 		j,
 		"passwordWoVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) SelfManaged() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManaged",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) SelfManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"selfManagedInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +582,17 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetPassw
 	_jsii_.Set(
 		j,
 		"passwordWoVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference)SetSelfManaged(val interface{}) {
+	if err := j.validateSetSelfManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"selfManaged",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetPa
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswordWoVersion",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) ResetSelfManaged() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSelfManaged",
 		nil, // no parameters
 	)
 }

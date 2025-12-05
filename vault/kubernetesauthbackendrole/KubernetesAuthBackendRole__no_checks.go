@@ -115,6 +115,10 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetBoundServiceAccountName
 	return nil
 }
 
+func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetBoundServiceAccountNamespaceSelectorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KubernetesAuthBackendRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

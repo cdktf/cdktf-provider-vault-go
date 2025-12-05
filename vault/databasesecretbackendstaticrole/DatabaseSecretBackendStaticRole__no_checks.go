@@ -131,6 +131,14 @@ func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetNamespaceParamete
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetPasswordWoParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetPasswordWoVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendStaticRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

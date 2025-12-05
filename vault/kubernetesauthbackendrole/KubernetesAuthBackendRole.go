@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}.
 type KubernetesAuthBackendRole interface {
 	cdktf.TerraformResource
 	AliasMetadata() *map[string]*string
@@ -32,6 +32,9 @@ type KubernetesAuthBackendRole interface {
 	BoundServiceAccountNamesInput() *[]*string
 	BoundServiceAccountNamespaces() *[]*string
 	SetBoundServiceAccountNamespaces(val *[]*string)
+	BoundServiceAccountNamespaceSelector() *string
+	SetBoundServiceAccountNamespaceSelector(val *string)
+	BoundServiceAccountNamespaceSelectorInput() *string
 	BoundServiceAccountNamespacesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -162,6 +165,8 @@ type KubernetesAuthBackendRole interface {
 	ResetAliasNameSource()
 	ResetAudience()
 	ResetBackend()
+	ResetBoundServiceAccountNamespaces()
+	ResetBoundServiceAccountNamespaceSelector()
 	ResetId()
 	ResetNamespace()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -299,6 +304,26 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) BoundServiceAccountNamespaces() *[
 	_jsii_.Get(
 		j,
 		"boundServiceAccountNamespaces",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesAuthBackendRole) BoundServiceAccountNamespaceSelector() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"boundServiceAccountNamespaceSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KubernetesAuthBackendRole) BoundServiceAccountNamespaceSelectorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"boundServiceAccountNamespaceSelectorInput",
 		&returns,
 	)
 	return returns
@@ -715,7 +740,7 @@ func (j *jsiiProxy_KubernetesAuthBackendRole) TokenTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) KubernetesAuthBackendRole {
 	_init_.Initialize()
 
@@ -733,7 +758,7 @@ func NewKubernetesAuthBackendRole(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.5.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource.
 func NewKubernetesAuthBackendRole_Override(k KubernetesAuthBackendRole, scope constructs.Construct, id *string, config *KubernetesAuthBackendRoleConfig) {
 	_init_.Initialize()
 
@@ -806,6 +831,17 @@ func (j *jsiiProxy_KubernetesAuthBackendRole)SetBoundServiceAccountNamespaces(va
 	_jsii_.Set(
 		j,
 		"boundServiceAccountNamespaces",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KubernetesAuthBackendRole)SetBoundServiceAccountNamespaceSelector(val *string) {
+	if err := j.validateSetBoundServiceAccountNamespaceSelectorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"boundServiceAccountNamespaceSelector",
 		val,
 	)
 }
@@ -1391,6 +1427,22 @@ func (k *jsiiProxy_KubernetesAuthBackendRole) ResetBackend() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetBackend",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesAuthBackendRole) ResetBoundServiceAccountNamespaces() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBoundServiceAccountNamespaces",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KubernetesAuthBackendRole) ResetBoundServiceAccountNamespaceSelector() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBoundServiceAccountNamespaceSelector",
 		nil, // no parameters
 	)
 }

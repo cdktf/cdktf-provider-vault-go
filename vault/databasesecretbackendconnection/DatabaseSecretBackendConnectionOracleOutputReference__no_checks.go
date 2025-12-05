@@ -95,6 +95,10 @@ func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetSelfManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretBackendConnectionOracleOutputReference) validateSetSplitStatementsParameters(val interface{}) error {
 	return nil
 }

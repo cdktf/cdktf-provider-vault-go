@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "backendInput", GoGetter: "BackendInput"},
 			_jsii_.MemberProperty{JsiiProperty: "boundServiceAccountNames", GoGetter: "BoundServiceAccountNames"},
 			_jsii_.MemberProperty{JsiiProperty: "boundServiceAccountNamespaces", GoGetter: "BoundServiceAccountNamespaces"},
+			_jsii_.MemberProperty{JsiiProperty: "boundServiceAccountNamespaceSelector", GoGetter: "BoundServiceAccountNamespaceSelector"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

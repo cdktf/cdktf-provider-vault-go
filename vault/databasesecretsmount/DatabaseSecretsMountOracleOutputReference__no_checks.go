@@ -131,6 +131,10 @@ func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetRotatio
 	return nil
 }
 
+func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetSelfManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatabaseSecretsMountOracleOutputReference) validateSetSplitStatementsParameters(val interface{}) error {
 	return nil
 }
